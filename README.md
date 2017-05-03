@@ -17,14 +17,14 @@ logstash
 +-- templates  (contains index templates)
 ```
 
-Rather than edit the pipeline files in logstash/conf.d for your environment, environment variables can be used. The supported environment variables are:
+Rather than edit the pipeline files in `logstash/conf.d` for your environment, environment variables can be used. The supported environment variables are:
 
 Environment Variable | Description | Default Valaue
 --- | --- | ---
 ELASTIFLOW_NETFLOW_PORT | The UDP port to listen on for Netflow messages | 2055
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
-ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | elastic
-ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | changeme
+ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
+ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
 ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/geoipdbs
 ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/dictionaries
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/templates
