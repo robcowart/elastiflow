@@ -1,0 +1,880 @@
+[
+  {
+    "_id": "a932b600-2fd2-11e7-99ed-49759aed30f5",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Geo Location",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":5,\"id\":\"99c1a4a0-2f60-11e7-8936-6f5fd5520124\",\"panelIndex\":16,\"row\":2,\"size_x\":8,\"size_y\":6,\"type\":\"visualization\"},{\"size_x\":4,\"size_y\":2,\"panelIndex\":17,\"type\":\"visualization\",\"id\":\"6702de70-2fca-11e7-8fcd-8dc6c60d4592\",\"col\":1,\"row\":2},{\"size_x\":4,\"size_y\":2,\"panelIndex\":18,\"type\":\"visualization\",\"id\":\"793a6f00-2fdd-11e7-afd7-595689f3f18c\",\"col\":1,\"row\":4},{\"size_x\":4,\"size_y\":2,\"panelIndex\":19,\"type\":\"visualization\",\"id\":\"264fb270-2fdb-11e7-84e6-333bd21ad9fd\",\"col\":1,\"row\":6},{\"size_x\":12,\"size_y\":1,\"panelIndex\":20,\"type\":\"visualization\",\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"col\":1,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-16\":{\"mapCenter\":[20.632784250388028,16.69921875],\"mapZoom\":2}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "653cf1e0-2fd2-11e7-99ed-49759aed30f5",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Overview",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"size_x\":4,\"size_y\":3,\"panelIndex\":11,\"type\":\"visualization\",\"id\":\"3fa5f6f0-2fca-11e7-ab32-99f279b941ef\",\"col\":1,\"row\":5},{\"size_x\":4,\"size_y\":3,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"de9da770-2fcb-11e7-8df8-b363df28ab61\",\"col\":1,\"row\":2},{\"size_x\":4,\"size_y\":3,\"panelIndex\":13,\"type\":\"visualization\",\"id\":\"23d6dc80-2fd6-11e7-bc99-41245d9394f2\",\"col\":5,\"row\":2},{\"size_x\":4,\"size_y\":3,\"panelIndex\":14,\"type\":\"visualization\",\"id\":\"8dcbcce0-2fd6-11e7-a82c-3146dd695923\",\"col\":9,\"row\":2},{\"size_x\":4,\"size_y\":3,\"panelIndex\":15,\"type\":\"visualization\",\"id\":\"69f864d0-2fd7-11e7-97a8-85d8d5a99269\",\"col\":5,\"row\":5},{\"size_x\":4,\"size_y\":3,\"panelIndex\":16,\"type\":\"visualization\",\"id\":\"b88a8790-2fd7-11e7-bd03-932d3e38a4ff\",\"col\":9,\"row\":5},{\"size_x\":12,\"size_y\":1,\"panelIndex\":17,\"type\":\"visualization\",\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"col\":1,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "ca480720-2fdf-11e7-9d02-3f49bde5c1d5",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Flow Records",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"columns\":[\"netflow.src_addr\",\"netflow.src_port\",\"netflow.dst_addr\",\"netflow.dst_port\",\"netflow.protocol\",\"netflow.bytes\",\"netflow.packets\"],\"id\":\"0d0216f0-2fe0-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":1,\"row\":4,\"size_x\":12,\"size_y\":4,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":4,\"id\":\"6a7e4790-2fe0-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":2,\"row\":2,\"size_x\":9,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"bbac23d0-2fe0-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":3,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"size_x\":12,\"size_y\":1,\"panelIndex\":4,\"type\":\"visualization\",\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"col\":1,\"row\":1}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "310ae6e0-2fdf-11e7-9d02-3f49bde5c1d5",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Conversation Partners",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"a7a47e70-2fde-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":1,\"row\":4,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"col\":9,\"id\":\"de9da770-2fcb-11e7-8df8-b363df28ab61\",\"panelIndex\":2,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"4440e130-2fdd-11e7-afd7-595689f3f18c\",\"panelIndex\":3,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"4898db90-2fdb-11e7-84e6-333bd21ad9fd\",\"panelIndex\":4,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":5,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "0d0216f0-2fe0-11e7-9d02-3f49bde5c1d5",
+    "_type": "search",
+    "_source": {
+      "title": "Netflow: Flow Records",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "netflow.src_addr",
+        "netflow.src_port",
+        "netflow.dst_addr",
+        "netflow.dst_port",
+        "netflow.protocol",
+        "netflow.bytes",
+        "netflow.packets"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"highlightAll\":true,\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "6f6d05b0-2fc8-11e7-bf24-57efade8fd83",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destination Ports (flow records)",
+      "visState": "{\"title\":\"Netflow: Top Destination Ports (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_port\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "47d426a0-2fc8-11e7-8b06-97426538fddd",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destination Ports (bytes)",
+      "visState": "{\"title\":\"Netflow: Top Destination Ports (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_port\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "af1425a0-2fc7-11e7-8936-6f5fd5520124",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destinations (packets)",
+      "visState": "{\"title\":\"Netflow: Top Destinations (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "4f3525d0-2fc7-11e7-8936-6f5fd5520124",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destinations (flow records)",
+      "visState": "{\"title\":\"Netflow: Top Destinations (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "5fd2fe30-2fc7-11e7-8936-6f5fd5520124",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destinations (bytes)",
+      "visState": "{\"title\":\"Netflow: Top Destinations (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "8a52f7a0-2fc7-11e7-8936-6f5fd5520124",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Sources (packets)",
+      "visState": "{\"title\":\"Netflow: Top Sources (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "1e7d8770-2fc7-11e7-8936-6f5fd5520124",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Sources (flow records)",
+      "visState": "{\"title\":\"Netflow: Top Sources (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "7c2cfd10-2fc7-11e7-8936-6f5fd5520124",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Sources (bytes)",
+      "visState": "{\"title\":\"Netflow: Top Sources (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "99c1a4a0-2f60-11e7-8936-6f5fd5520124",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Geo Location Heatmap",
+      "visState": "{\"title\":\"Netflow: Geo Location Heatmap\",\"type\":\"tile_map\",\"params\":{\"mapType\":\"Heatmap\",\"isDesaturated\":true,\"addTooltip\":true,\"heatMaxZoom\":16,\"heatMinOpacity\":\"0.32\",\"heatRadius\":\"24\",\"heatBlur\":\"16\",\"heatNormalizeData\":true,\"legendPosition\":\"bottomright\",\"mapZoom\":2,\"mapCenter\":[15,5],\"wms\":{\"enabled\":false,\"url\":\"https://basemap.nationalmap.gov/arcgis/services/USGSTopo/MapServer/WMSServer\",\"options\":{\"version\":\"1.3.0\",\"layers\":\"0\",\"format\":\"image/png\",\"transparent\":true,\"attribution\":\"Maps provided by USGS\",\"styles\":\"\"}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.location\",\"autoPrecision\":true,\"precision\":2,\"customLabel\":\"Location\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"mapCenter\":[8.407168163601076,9.4921875]}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "7f7aac00-2fc8-11e7-8bc1-177080983dbf",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destination Ports (packets)",
+      "visState": "{\"title\":\"Netflow: Top Destination Ports (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "de9b3dd0-2fc8-11e7-844c-67b9b101127b",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Source Ports (packets)",
+      "visState": "{\"title\":\"Netflow: Top Source Ports (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_port\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "c6b36620-2fc8-11e7-87d6-cdce05879baf",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Source Ports (flow records)",
+      "visState": "{\"title\":\"Netflow: Top Source Ports (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_port\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "691cda40-2fc9-11e7-823a-89e4bb55eaa1",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Countries (packets)",
+      "visState": "{\"title\":\"Netflow: Top Countries (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.country_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Country\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "a8b68cb0-2fc8-11e7-8d8b-45ec51795dad",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Source Ports (bytes)",
+      "visState": "{\"title\":\"Netflow: Top Source Ports (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_port\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "49a2d6b0-2fc9-11e7-8224-a900ea73fa5f",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Countries (flow records)",
+      "visState": "{\"title\":\"Netflow: Top Countries (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.country_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Country\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "324b0a00-2fc9-11e7-bd31-a722d271a9cc",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Countries (bytes)",
+      "visState": "{\"title\":\"Netflow: Top Countries (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.country_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Country\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "9b5d3b80-2fc9-11e7-bd31-a722d271a9cc",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Cities (bytes)",
+      "visState": "{\"title\":\"Netflow: Top Cities (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.city_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"City\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "bb8e3d90-2fca-11e7-9fcf-99b4b8159f98",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Countries and Cities (packets)",
+      "visState": "{\"title\":\"Netflow: Top Countries and Cities (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.country_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Country\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.city_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"City\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "de9da770-2fcb-11e7-8df8-b363df28ab61",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: IP Version and Protocols (bytes)",
+      "visState": "{\"title\":\"Netflow: IP Version and Protocols (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.ip_version\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"IP Version\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.protocol\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Protocol\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "6702de70-2fca-11e7-8fcd-8dc6c60d4592",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Countries and Cities (flow records)",
+      "visState": "{\"title\":\"Netflow: Top Countries and Cities (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.country_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Country\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.city_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"City\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "3fa5f6f0-2fca-11e7-ab32-99f279b941ef",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Countries and Cities (bytes)",
+      "visState": "{\"title\":\"Netflow: Top Countries and Cities (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.country_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Country\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.city_name\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"City\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "c6319680-2fc9-11e7-823a-89e4bb55eaa1",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Cities (packets)",
+      "visState": "{\"title\":\"Netflow: Top Cities (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.city_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"City\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "af23cb20-2fc9-11e7-8224-a900ea73fa5f",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Cities (flow records)",
+      "visState": "{\"title\":\"Netflow: Top Cities (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"geoip.city_name\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"City\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "b02faaf0-2fcb-11e7-8df8-b363df28ab61",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: IP Version (bytes)",
+      "visState": "{\"title\":\"Netflow: IP Version (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.ip_version\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"IP Version\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "16438600-2fcb-11e7-befb-31e033c79e4e",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Direction",
+      "visState": "{\"title\":\"Netflow: Direction\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.direction\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Direction\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "39e3dab0-2fcb-11e7-befb-31e033c79e4e",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Version",
+      "visState": "{\"title\":\"Netflow: Version\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.version\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Version\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "d07a2870-2fcc-11e7-9bae-a35d2fe38fc2",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: IP Version and Protocols (packets)",
+      "visState": "{\"title\":\"Netflow: IP Version and Protocols (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.ip_version\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"IP Version\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.protocol\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Protocol\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "8f35efc0-2fcc-11e7-842d-39925ea8ac40",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: IP Version and Protocols (flow records)",
+      "visState": "{\"title\":\"Netflow: IP Version and Protocols (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.ip_version\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"IP Version\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.protocol\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Protocol\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "d8f24780-2fcc-11e7-9bae-a35d2fe38fc2",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Protocols (packets)",
+      "visState": "{\"title\":\"Netflow: Protocols (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.protocol\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Protocol\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "1026edb0-2fcc-11e7-842d-39925ea8ac40",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: IP Version (flow records)",
+      "visState": "{\"title\":\"Netflow: IP Version (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.ip_version\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"IP Version\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "b6a092e0-2fcc-11e7-9bae-a35d2fe38fc2",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: IP Version (packets)",
+      "visState": "{\"title\":\"Netflow: IP Version (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.ip_version\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"IP Version\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "99e49de0-2fcc-11e7-842d-39925ea8ac40",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Protocols (flow records)",
+      "visState": "{\"title\":\"Netflow: Protocols (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.protocol\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Protocol\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "f2fea250-2fcb-11e7-8df8-b363df28ab61",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Protocols (bytes)",
+      "visState": "{\"title\":\"Netflow: Protocols (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.protocol\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Protocol\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "313a9880-2fd6-11e7-bc99-41245d9394f2",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destinations and Ports (packets)",
+      "visState": "{\"title\":\"Netflow: Top Destinations and Ports (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_addr\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_port\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "44b3cb70-2fd6-11e7-bc99-41245d9394f2",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destinations and Ports (flow records)",
+      "visState": "{\"title\":\"Netflow: Top Destinations and Ports (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_addr\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_port\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "23d6dc80-2fd6-11e7-bc99-41245d9394f2",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destinations and Ports (bytes)",
+      "visState": "{\"title\":\"Netflow: Top Destinations and Ports (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_addr\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_port\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "9f9e54b0-2fd6-11e7-a82c-3146dd695923",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Sources and Ports (packets)",
+      "visState": "{\"title\":\"Netflow: Top Sources and Ports (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_addr\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_port\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "b74bbb70-2fd6-11e7-a82c-3146dd695923",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Sources and Ports (flow records)",
+      "visState": "{\"title\":\"Netflow: Top Sources and Ports (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_addr\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_port\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "8dcbcce0-2fd6-11e7-a82c-3146dd695923",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Sources and Ports (bytes)",
+      "visState": "{\"title\":\"Netflow: Top Sources and Ports (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_addr\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_port\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "69f864d0-2fd7-11e7-97a8-85d8d5a99269",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Types of Service (bytes)",
+      "visState": "{\"title\":\"Netflow: Top Types of Service (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.tos\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Type of Service\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "4dc994a0-2fd7-11e7-97a8-85d8d5a99269",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Types of Service (flow records)",
+      "visState": "{\"title\":\"Netflow: Top Types of Service (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.tos\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Type of Service\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "f8731d50-2fd6-11e7-97a8-85d8d5a99269",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Flow Exporters",
+      "visState": "{\"title\":\"Netflow: Top Flow Exporters\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"host\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Flow Exporter\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "84e4c9f0-2fd7-11e7-97a8-85d8d5a99269",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Types of Service (packets)",
+      "visState": "{\"title\":\"Netflow: Top Types of Service (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.tos\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Type of Service\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "e8251d30-2fd7-11e7-a4f6-dbb93cfb4a10",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top VLANs (packets)",
+      "visState": "{\"title\":\"Netflow: Top VLANs (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.vlan\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"VLAN\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "b88a8790-2fd7-11e7-bd03-932d3e38a4ff",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top VLANs (bytes)",
+      "visState": "{\"title\":\"Netflow: Top VLANs (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.vlan\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"VLAN\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "d297fe60-2fd7-11e7-af27-99e728e71e91",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top VLANs (flow records)",
+      "visState": "{\"title\":\"Netflow: Top VLANs (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.vlan\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"VLAN\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "5c5d6f60-2fdb-11e7-84e6-333bd21ad9fd",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destination and Source Ports (packets)",
+      "visState": "{\"title\":\"Netflow: Top Destination and Source Ports (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_port\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination Port\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_port\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "55f66b20-2fdd-11e7-afd7-595689f3f18c",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destinations and Sources (packets)",
+      "visState": "{\"title\":\"Netflow: Top Destinations and Sources (packets)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "264fb270-2fdb-11e7-84e6-333bd21ad9fd",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destination and Source Ports (flow records)",
+      "visState": "{\"title\":\"Netflow: Top Destination and Source Ports (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_port\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination Port\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_port\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "793a6f00-2fdd-11e7-afd7-595689f3f18c",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destinations and Sources (flow records)",
+      "visState": "{\"title\":\"Netflow: Top Destinations and Sources (flow records)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "4898db90-2fdb-11e7-84e6-333bd21ad9fd",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destination and Source Ports (bytes)",
+      "visState": "{\"title\":\"Netflow: Top Destination and Source Ports (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_port\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination Port\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_port\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source Port\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "4440e130-2fdd-11e7-afd7-595689f3f18c",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Destinations and Sources (bytes)",
+      "visState": "{\"title\":\"Netflow: Top Destinations and Sources (bytes)\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.dst_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.src_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "6a7e4790-2fe0-11e7-9d02-3f49bde5c1d5",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Flow Records",
+      "visState": "{\"title\":\"Netflow: Flow Records\",\"type\":\"histogram\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"scale\":\"linear\",\"mode\":\"stacked\",\"times\":[],\"addTimeMarker\":false,\"defaultYExtents\":false,\"setYExtents\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"netflow.last_switched\",\"interval\":\"auto\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Timeline\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "26e166f0-2fe2-11e7-9d02-3f49bde5c1d5",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Dashboard Navigation",
+      "visState": "{\"title\":\"Netflow: Dashboard Navigation\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Conversation Partners](#/dashboard/310ae6e0-2fdf-11e7-9d02-3f49bde5c1d5) | [Geo Location](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n***\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "bbac23d0-2fe0-11e7-9d02-3f49bde5c1d5",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Flow Records",
+      "visState": "{\"title\":\"Netflow: Flow Records\",\"type\":\"metric\",\"params\":{\"handleNoResults\":true,\"fontSize\":\"32\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "a7a47e70-2fde-11e7-9d02-3f49bde5c1d5",
+    "_type": "visualization",
+    "_source": {
+      "title": "Netflow: Top Conversation Partners",
+      "visState": "{\"title\":\"Netflow: Top Conversation Partners\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.bytes\",\"customLabel\":\"Bytes\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"netflow.packets\",\"customLabel\":\"Packets\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"netflow.src_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Source\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"netflow.dst_addr\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"Destination\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Flow Records\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  }
+]
