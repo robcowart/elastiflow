@@ -841,89 +841,89 @@
                 },
                 "netflow": {
                     "dynamic": true,
-					"type": "object",
-					"properties": {
+                    "type": "object",
+                    "properties": {
                         "bytes": {
-							"type": "long",
+                            "type": "long",
                             "include_in_all": false
-						},
+                        },
                         "direction": {
-							"type": "keyword",
+                            "type": "keyword",
                             "norms": false
-						},
+                        },
                         "dst_addr": {
-							"type": "ip"
-						},
+                            "type": "ip"
+                        },
                         "dst_mask_len": {
-							"type": "integer",
+                            "type": "integer",
                             "include_in_all": false
-						},
+                        },
                         "dst_port": {
-							"type": "integer"
-						},
+                            "type": "integer"
+                        },
                         "first_switched": {
                             "type": "date",
                             "include_in_all": false
                         },
                         "flow_seq_num": {
-							"type": "integer",
+                            "type": "integer",
                             "include_in_all": false
-						},
+                        },
                         "input_snmp": {
-							"type": "integer"
-						},
+                            "type": "integer"
+                        },
                         "ip_version": {
-							"type": "keyword",
+                            "type": "keyword",
                             "norms": false
-						},
+                        },
                         "last_switched": {
                             "type": "date",
                             "include_in_all": false
                         },
                         "next_hop": {
-							"type": "ip"
-						},
+                            "type": "ip"
+                        },
                         "output_snmp": {
-							"type": "integer"
-						},
+                            "type": "integer"
+                        },
                         "packets": {
                             "type": "long",
                             "include_in_all": false
-						},
+                        },
                         "protocol": {
-							"type": "keyword",
+                            "type": "keyword",
                             "norms": false
-						},
+                        },
                         "sampling_interval": {
-							"type": "integer",
+                            "type": "integer",
                             "include_in_all": false
-						},
+                        },
                         "src_addr": {
-							"type": "ip"
-						},
+                            "type": "ip"
+                        },
                         "src_mask_len": {
-							"type": "integer",
+                            "type": "integer",
                             "include_in_all": false
-						},
+                        },
                         "src_port": {
-							"type": "integer"
-						},
+                            "type": "integer"
+                        },
                         "tcp_flags": {
-							"type": "integer",
+                            "type": "integer",
                             "include_in_all": false
-						},
+                        },
                         "tos": {
-							"type": "integer",
+                            "type": "integer",
                             "include_in_all": false
-						},
+                        },
                         "version": {
-							"type": "integer",
+                            "type": "integer",
                             "include_in_all": false
-						},
+                        },
                         "vlan": {
-							"type": "integer",
+                            "type": "integer",
                             "include_in_all": false
-						}
+                        }
                     }
                 }
             }
