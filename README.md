@@ -3,16 +3,24 @@ ElastiFlow provides basic Netflow collection and visualization using Elastic Sta
 
 I was inspired to create ElastiFlow following the overwhelmingly positive feedback received to an article I posted on Linkedin... [WTFlow?! Are you really still paying for commercial solutions to collect and analyze network flow data?](https://www.linkedin.com/pulse/wtflow-you-really-still-paying-commercial-solutions-collect-cowart)
 
-My goal for ElastiFlow was to leverage only the functionality provided out-of-the-box by Elastic Stack, without optional plugins. This means that it doesn't provide all of the functionality displayed in the Linkedin article, but it is easier to setup and provides a good foundation upon which anyone can begin to build out a solution specific to their own requirements.
+My initial goal for ElastiFlow was to leverage only the functionality provided out-of-the-box by Elastic Stack, without optional plugins. However I felt this placed too many restrictions on the value that could be provided. So to use ElastiFlow you will need to install both the [translate](https://www.elastic.co/guide/en/logstash/current/plugins-filters-translate.html) and [cidr](https://www.elastic.co/guide/en/logstash/current/plugins-filters-cidr.html) filter plugins for Logstash.
 
 ## Getting Started
 ElastiFlow leverages Elastic Stack 5.x, including Elasticsearch, Logstash and Kibana. Currently there is no specific configuration required for Elasticsearch. As long as Kibana and Logstash can talk to your Elasticsearch cluster you should be ready to go.
 
 ### Setting up Logstash
+As mentioned above you will need to ensure that you have installed the [translate](https://www.elastic.co/guide/en/logstash/current/plugins-filters-translate.html) and [cidr](https://www.elastic.co/guide/en/logstash/current/plugins-filters-cidr.html) filter plugins for Logstash. This can achieved by running the following commands:
+
+```
+$LS_HOME/bin/logstash-plugin install logstash-filter-translate
+$LS_HOME/bin/logstash-plugin install logstash-filter-cidr
+```
+
 There are three sets of configuration files provided within the logstash folder:
 ```
 logstash
 |-- conf.d  (contains the logstash pipeline)
+|-- dictionaries (yaml files used to enrich raw flow data)
 |-- geoipdbs  (contains GeoIP databases)
 +-- templates  (contains index templates)
 ```
@@ -42,13 +50,25 @@ Finally the vizualizations and dashboards can be loaded into Kibana by importing
 The following dashboards are provided.
 
 ### Overview
-![screen shot 2017-05-03 at 18 07 59](https://cloud.githubusercontent.com/assets/10326954/25671919/f9d27604-3031-11e7-9967-7736ce2bd390.png)
+![Overview](https://user-images.githubusercontent.com/10326954/28128774-c3bb3dae-66e5-11e7-9f21-f0a6b8597eec.png)
 
 ### Conversation Partners
-![screen shot 2017-05-03 at 18 08 27](https://cloud.githubusercontent.com/assets/10326954/25672025/5e6060a4-3032-11e7-897d-5340eb0029bd.png)
+![Conversation Partners](https://user-images.githubusercontent.com/10326954/28128835-000869e4-66e6-11e7-84cf-305222d86e97.png)
+
+### Traffic Analysis
+![Traffic Analysis](https://user-images.githubusercontent.com/10326954/28128837-033bdfba-66e6-11e7-80d4-6771ef9f2d9a.png)
+
+### Top-N
+![Top-N](https://user-images.githubusercontent.com/10326954/28128851-09941f80-66e6-11e7-8fd1-c961af8dbf3f.png)
 
 ### Geo Location
-![screen shot 2017-05-03 at 18 08 54](https://cloud.githubusercontent.com/assets/10326954/25672047/6f5f1e22-3032-11e7-9a48-1488c8306fd1.png)
+![Geo Location](https://user-images.githubusercontent.com/10326954/28128859-0f2b8492-66e6-11e7-8bff-03fbbbd8ac26.png)
+
+### Autonomous Systems
+![Autonomous Systems](https://user-images.githubusercontent.com/10326954/28128864-133b65a2-66e6-11e7-904c-d7714a350032.png)
+
+### Flow Exporters
+![Flow Exporters](https://user-images.githubusercontent.com/10326954/28128878-18381384-66e6-11e7-8a20-4549a166fb1c.png)
 
 ### Flow Records
-![screen shot 2017-05-03 at 18 09 16](https://cloud.githubusercontent.com/assets/10326954/25672083/87f8ea94-3032-11e7-9825-62d6885cfdbb.png)
+![Flow Records](https://user-images.githubusercontent.com/10326954/28128880-1f3eee3c-66e6-11e7-82d5-c9797aa3e19a.png)

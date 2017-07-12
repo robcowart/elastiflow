@@ -825,6 +825,42 @@
                 "geoip": {
                     "dynamic": true,
                     "properties": {
+                        "asn": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "as_org": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "autonomous_system": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "city_name": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "continent_code": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "country_code2": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "country_code3": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "country_name": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "dma_code": {
+                            "type": "integer",
+                            "include_in_all": false
+                        },
                         "ip": {
                             "type": "ip"
                         },
@@ -836,6 +872,160 @@
                         },
                         "longitude": {
                             "type": "float"
+                        },
+                        "postal_code": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "region_code": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "region_name": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "timezone": {
+                            "type": "keyword",
+                            "norms": false
+                        }
+                    }
+                },
+                "geoip_dst": {
+                    "dynamic": true,
+                    "properties": {
+                        "asn": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "as_org": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "autonomous_system": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "city_name": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "continent_code": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "country_code2": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "country_code3": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "country_name": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "dma_code": {
+                            "type": "integer",
+                            "include_in_all": false
+                        },
+                        "ip": {
+                            "type": "ip"
+                        },
+                        "latitude": {
+                            "type": "float"
+                        },
+                        "location": {
+                            "type": "geo_point"
+                        },
+                        "longitude": {
+                            "type": "float"
+                        },
+                        "postal_code": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "region_code": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "region_name": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "timezone": {
+                            "type": "keyword",
+                            "norms": false
+                        }
+                    }
+                },
+                "geoip_src": {
+                    "dynamic": true,
+                    "properties": {
+                        "asn": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "as_org": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "autonomous_system": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "city_name": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "continent_code": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "country_code2": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "country_code3": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "country_name": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "dma_code": {
+                            "type": "integer",
+                            "include_in_all": false
+                        },
+                        "ip": {
+                            "type": "ip"
+                        },
+                        "latitude": {
+                            "type": "float"
+                        },
+                        "location": {
+                            "type": "geo_point"
+                        },
+                        "longitude": {
+                            "type": "float"
+                        },
+                        "postal_code": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "region_code": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "region_name": {
+                            "type": "keyword",
+                            "norms": false
+                        },
+                        "timezone": {
+                            "type": "keyword",
+                            "norms": false
                         }
                     }
                 },
@@ -859,18 +1049,25 @@
                             "include_in_all": false
                         },
                         "dst_port": {
-                            "type": "integer"
+                            "type": "keyword",
+                            "norms": false,
+                            "include_in_all": false
+                        },
+                        "dst_port_name": {
+                            "type": "keyword",
+                            "norms": false
                         },
                         "first_switched": {
                             "type": "date",
                             "include_in_all": false
                         },
                         "flow_seq_num": {
-                            "type": "integer",
+                            "type": "long",
                             "include_in_all": false
                         },
                         "input_snmp": {
-                            "type": "integer"
+                            "type": "keyword",
+                            "norms": false
                         },
                         "ip_version": {
                             "type": "keyword",
@@ -884,13 +1081,19 @@
                             "type": "ip"
                         },
                         "output_snmp": {
-                            "type": "integer"
+                            "type": "keyword",
+                            "norms": false
                         },
                         "packets": {
                             "type": "long",
                             "include_in_all": false
                         },
                         "protocol": {
+                            "type": "keyword",
+                            "norms": false,
+                            "include_in_all": false
+                        },
+                        "protocol_name": {
                             "type": "keyword",
                             "norms": false
                         },
@@ -906,23 +1109,33 @@
                             "include_in_all": false
                         },
                         "src_port": {
-                            "type": "integer"
+                            "type": "keyword",
+                            "norms": false,
+                            "include_in_all": false
+                        },
+                        "src_port_name": {
+                            "type": "keyword",
+                            "norms": false
                         },
                         "tcp_flags": {
                             "type": "integer",
                             "include_in_all": false
                         },
+                        "tcp_flags_label": {
+                            "type": "keyword",
+                            "norms": false
+                        },
                         "tos": {
-                            "type": "integer",
-                            "include_in_all": false
+                            "type": "keyword",
+                            "norms": false
                         },
                         "version": {
-                            "type": "integer",
-                            "include_in_all": false
+                            "type": "keyword",
+                            "norms": false
                         },
                         "vlan": {
-                            "type": "integer",
-                            "include_in_all": false
+                            "type": "keyword",
+                            "norms": false
                         }
                     }
                 }
