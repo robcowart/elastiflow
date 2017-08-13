@@ -1037,6 +1037,9 @@
                             "type": "long",
                             "include_in_all": false
                         },
+                        "client_addr": {
+                            "type": "ip"
+                        },
                         "direction": {
                             "type": "keyword",
                             "norms": false
@@ -1099,6 +1102,19 @@
                         },
                         "sampling_interval": {
                             "type": "integer",
+                            "include_in_all": false
+                        },
+                        "server_addr": {
+                            "type": "ip"
+                        },
+                        "service_name": {
+                            "type": "keyword",
+                            "norms": false,
+                            "include_in_all": false
+                        },
+                        "service_port": {
+                            "type": "keyword",
+                            "norms": false,
                             "include_in_all": false
                         },
                         "src_addr": {
