@@ -72,3 +72,6 @@ The following dashboards are provided.
 
 ### Flow Records
 ![Flow Records](https://user-images.githubusercontent.com/10326954/29495915-9e9b4558-85c8-11e7-987f-6d8b57326650.png)
+
+## Attribution
+This product includes GeoLite data created by MaxMind, available from (http://www.maxmind.com)
