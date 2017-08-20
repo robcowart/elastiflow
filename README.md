@@ -1,12 +1,12 @@
-# ElastiFlow
-ElastiFlow provides basic Netflow collection and visualization using Elastic Stack.
+# ElastiFlow&trade;
+ElastiFlow&trade; provides basic Netflow collection and visualization using Elastic Stack.
 
-I was inspired to create ElastiFlow following the overwhelmingly positive feedback received to an article I posted on Linkedin... [WTFlow?! Are you really still paying for commercial solutions to collect and analyze network flow data?](https://www.linkedin.com/pulse/wtflow-you-really-still-paying-commercial-solutions-collect-cowart)
+I was inspired to create ElastiFlow&trade; following the overwhelmingly positive feedback received to an article I posted on Linkedin... [WTFlow?! Are you really still paying for commercial solutions to collect and analyze network flow data?](https://www.linkedin.com/pulse/wtflow-you-really-still-paying-commercial-solutions-collect-cowart)
 
-My initial goal for ElastiFlow was to leverage only the functionality provided out-of-the-box by Elastic Stack, without optional plugins. However I felt this placed too many restrictions on the value that could be provided. So to use ElastiFlow you will need to install both the [translate](https://www.elastic.co/guide/en/logstash/current/plugins-filters-translate.html) and [cidr](https://www.elastic.co/guide/en/logstash/current/plugins-filters-cidr.html) filter plugins for Logstash.
+My initial goal for ElastiFlow&trade; was to leverage only the functionality provided out-of-the-box by Elastic Stack, without optional plugins. However I felt this placed too many restrictions on the value that could be provided. So to use ElastiFlow&trade; you will need to install both the [translate](https://www.elastic.co/guide/en/logstash/current/plugins-filters-translate.html) and [cidr](https://www.elastic.co/guide/en/logstash/current/plugins-filters-cidr.html) filter plugins for Logstash.
 
 ## Getting Started
-ElastiFlow leverages Elastic Stack 5.x, including Elasticsearch, Logstash and Kibana. Currently there is no specific configuration required for Elasticsearch. As long as Kibana and Logstash can talk to your Elasticsearch cluster you should be ready to go.
+ElastiFlow&trade; leverages Elastic Stack 5.x, including Elasticsearch, Logstash and Kibana. Currently there is no specific configuration required for Elasticsearch. As long as Kibana and Logstash can talk to your Elasticsearch cluster you should be ready to go.
 
 ### Setting up Logstash
 As mentioned above you will need to ensure that you have installed the [translate](https://www.elastic.co/guide/en/logstash/current/plugins-filters-translate.html) and [cidr](https://www.elastic.co/guide/en/logstash/current/plugins-filters-cidr.html) filter plugins for Logstash. This can achieved by running the following commands:
