@@ -6,7 +6,8 @@
         "index": {
             "number_of_shards": 2,
             "number_of_replicas": 1,
-            "refresh_interval": "5s"
+            "refresh_interval": "5s",
+            "codec": "best_compression"
         }
     },
     "mappings": {
