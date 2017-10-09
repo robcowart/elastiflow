@@ -1,184 +1,5 @@
 [
   {
-    "_id": "ca480720-2fdf-11e7-9d02-3f49bde5c1d5",
-    "_type": "dashboard",
-    "_source": {
-      "title": "Netflow: Flow Records",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"col\":4,\"id\":\"6a7e4790-2fe0-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":2,\"row\":2,\"size_x\":9,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"bbac23d0-2fe0-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":3,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":4,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"size_x\":12,\"size_y\":4,\"panelIndex\":5,\"type\":\"search\",\"id\":\"0d0216f0-2fe0-11e7-9d02-3f49bde5c1d5\",\"col\":1,\"row\":4,\"columns\":[\"netflow.src_addr\",\"netflow.src_port_name\",\"netflow.dst_addr\",\"netflow.dst_port_name\",\"netflow.protocol_name\",\"netflow.bytes\",\"netflow.packets\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
-      "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{\"P-3\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}}",
-      "version": 1,
-      "timeRestore": false,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
-      }
-    }
-  },
-  {
-    "_id": "04157d70-6591-11e7-bfc3-d74b7bb89482",
-    "_type": "dashboard",
-    "_source": {
-      "title": "Netflow: Flow Exporters",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"f8731d50-2fd6-11e7-97a8-85d8d5a99269\",\"panelIndex\":2,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"size_x\":4,\"size_y\":2,\"panelIndex\":3,\"type\":\"visualization\",\"id\":\"caea3760-6591-11e7-bfc3-d74b7bb89482\",\"col\":5,\"row\":2},{\"size_x\":4,\"size_y\":2,\"panelIndex\":4,\"type\":\"visualization\",\"id\":\"1fa2c100-6592-11e7-bfc3-d74b7bb89482\",\"col\":9,\"row\":2},{\"size_x\":6,\"size_y\":2,\"panelIndex\":5,\"type\":\"visualization\",\"id\":\"00248240-6593-11e7-b8de-af19b696fa44\",\"col\":7,\"row\":4},{\"size_x\":6,\"size_y\":2,\"panelIndex\":6,\"type\":\"visualization\",\"id\":\"206d6e90-6593-11e7-8b83-5b2419db46fa\",\"col\":7,\"row\":6},{\"size_x\":6,\"size_y\":2,\"panelIndex\":8,\"type\":\"visualization\",\"id\":\"e2a7fc60-6592-11e7-8b83-5b2419db46fa\",\"col\":1,\"row\":6},{\"size_x\":6,\"size_y\":2,\"panelIndex\":10,\"type\":\"visualization\",\"id\":\"9a4938d0-6592-11e7-b8de-af19b696fa44\",\"col\":1,\"row\":4}]",
-      "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{}",
-      "version": 1,
-      "timeRestore": false,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
-      }
-    }
-  },
-  {
-    "_id": "310ae6e0-2fdf-11e7-9d02-3f49bde5c1d5",
-    "_type": "dashboard",
-    "_source": {
-      "title": "Netflow: Conversation Partners",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"col\":1,\"id\":\"a7a47e70-2fde-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":1,\"row\":4,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"col\":9,\"id\":\"de9da770-2fcb-11e7-8df8-b363df28ab61\",\"panelIndex\":2,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"4440e130-2fdd-11e7-afd7-595689f3f18c\",\"panelIndex\":3,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"4898db90-2fdb-11e7-84e6-333bd21ad9fd\",\"panelIndex\":4,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":5,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"}]",
-      "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}}}",
-      "version": 1,
-      "timeRestore": false,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
-      }
-    }
-  },
-  {
-    "_id": "653cf1e0-2fd2-11e7-99ed-49759aed30f5",
-    "_type": "dashboard",
-    "_source": {
-      "title": "Netflow: Overview",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"col\":1,\"id\":\"de9da770-2fcb-11e7-8df8-b363df28ab61\",\"panelIndex\":12,\"row\":6,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"69f864d0-2fd7-11e7-97a8-85d8d5a99269\",\"panelIndex\":15,\"row\":6,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":17,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"b88a8790-2fd7-11e7-bd03-932d3e38a4ff\",\"panelIndex\":21,\"row\":8,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"ac4cbc90-622d-11e7-b0a5-e9bda2f6d168\",\"panelIndex\":22,\"row\":4,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"97f430b0-622e-11e7-b0a5-e9bda2f6d168\",\"panelIndex\":23,\"row\":6,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"f6be96c0-622f-11e7-abbc-93bb293f5057\",\"panelIndex\":24,\"row\":4,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"3fa5f6f0-2fca-11e7-ab32-99f279b941ef\",\"panelIndex\":25,\"row\":4,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"64b144f0-658e-11e7-bfc3-d74b7bb89482\",\"panelIndex\":26,\"row\":8,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"3026fe40-658f-11e7-bfc3-d74b7bb89482\",\"panelIndex\":29,\"row\":8,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"size_x\":4,\"size_y\":2,\"panelIndex\":31,\"type\":\"visualization\",\"id\":\"37a8b330-8019-11e7-af24-27fa1061e1bd\",\"col\":1,\"row\":2},{\"size_x\":4,\"size_y\":2,\"panelIndex\":32,\"type\":\"visualization\",\"id\":\"1c1f5550-801a-11e7-8b60-018ea0aa61a0\",\"col\":5,\"row\":2},{\"size_x\":4,\"size_y\":2,\"panelIndex\":34,\"type\":\"visualization\",\"id\":\"36e56dc0-801a-11e7-8b60-018ea0aa61a0\",\"col\":9,\"row\":2}]",
-      "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{}",
-      "version": 1,
-      "timeRestore": false,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
-      }
-    }
-  },
-  {
-    "_id": "10dd3210-8020-11e7-8a72-651c4183643b",
-    "_type": "dashboard",
-    "_source": {
-      "title": "Netflow: Conversations",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":5,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"6d0c50a0-801d-11e7-bcae-4bd056c878e8\",\"panelIndex\":6,\"row\":5,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"col\":5,\"id\":\"39b43340-801c-11e7-9d03-efffc8601a27\",\"panelIndex\":7,\"row\":2,\"size_x\":8,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":4,\"size_y\":3,\"panelIndex\":8,\"type\":\"visualization\",\"id\":\"cc28fff0-801f-11e7-8a72-651c4183643b\",\"col\":1,\"row\":2}]",
-      "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"}}}}}",
-      "version": 1,
-      "timeRestore": false,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
-      }
-    }
-  },
-  {
-    "_id": "10584050-6234-11e7-8236-19b4b4941e22",
-    "_type": "dashboard",
-    "_source": {
-      "title": "Netflow: Traffic Analysis",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"col\":7,\"id\":\"6a597070-6233-11e7-aa4b-5f8c56ec33b8\",\"panelIndex\":1,\"row\":22,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":4,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":7,\"id\":\"6c67b990-628c-11e7-95ed-8966ac93bd5a\",\"panelIndex\":5,\"row\":28,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"52279a00-628c-11e7-95ed-8966ac93bd5a\",\"panelIndex\":6,\"row\":28,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"2c9567c0-6289-11e7-bcd8-a16ef1d32773\",\"panelIndex\":9,\"row\":22,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"b61f84d0-6289-11e7-bcd8-a16ef1d32773\",\"panelIndex\":10,\"row\":16,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"6ad67290-6289-11e7-bcd8-a16ef1d32773\",\"panelIndex\":11,\"row\":16,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"69f864d0-2fd7-11e7-97a8-85d8d5a99269\",\"panelIndex\":19,\"row\":14,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"b88a8790-2fd7-11e7-bd03-932d3e38a4ff\",\"panelIndex\":20,\"row\":14,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"97f430b0-622e-11e7-b0a5-e9bda2f6d168\",\"panelIndex\":21,\"row\":20,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"ac4cbc90-622d-11e7-b0a5-e9bda2f6d168\",\"panelIndex\":22,\"row\":20,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"324b0a00-2fc9-11e7-bd31-a722d271a9cc\",\"panelIndex\":23,\"row\":26,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"9b5d3b80-2fc9-11e7-bd31-a722d271a9cc\",\"panelIndex\":24,\"row\":26,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"8d2cb120-6233-11e7-aa4b-5f8c56ec33b8\",\"panelIndex\":31,\"row\":24,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"99382ab0-6555-11e7-8d48-19b0c51bbbbd\",\"panelIndex\":34,\"row\":30,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"f5f79b00-6555-11e7-b27e-8f8b3770f1df\",\"panelIndex\":35,\"row\":30,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"a13402f0-6557-11e7-a3eb-4b30743c9370\",\"panelIndex\":44,\"row\":24,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"0de63e90-6558-11e7-8547-3d133170b50d\",\"panelIndex\":45,\"row\":18,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"39ecd800-6558-11e7-bea4-0f5fadb995cc\",\"panelIndex\":47,\"row\":18,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"9accd4a0-657a-11e7-8471-e5432f50acbd\",\"panelIndex\":48,\"row\":14,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":11,\"id\":\"b13956f0-657a-11e7-8471-e5432f50acbd\",\"panelIndex\":49,\"row\":14,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"size_x\":2,\"size_y\":2,\"panelIndex\":50,\"type\":\"visualization\",\"id\":\"a2099810-657b-11e7-8471-e5432f50acbd\",\"col\":11,\"row\":20},{\"size_x\":2,\"size_y\":2,\"panelIndex\":51,\"type\":\"visualization\",\"id\":\"c4987cc0-657b-11e7-8471-e5432f50acbd\",\"col\":11,\"row\":26},{\"size_x\":2,\"size_y\":2,\"panelIndex\":52,\"type\":\"visualization\",\"id\":\"b3e2af90-657b-11e7-8471-e5432f50acbd\",\"col\":5,\"row\":26},{\"size_x\":2,\"size_y\":2,\"panelIndex\":53,\"type\":\"visualization\",\"id\":\"82fcfc50-657b-11e7-8471-e5432f50acbd\",\"col\":5,\"row\":20},{\"size_x\":2,\"size_y\":2,\"panelIndex\":54,\"type\":\"visualization\",\"id\":\"1e6fb550-8017-11e7-9e6a-575834c68c0e\",\"col\":5,\"row\":2},{\"size_x\":6,\"size_y\":2,\"panelIndex\":55,\"type\":\"visualization\",\"id\":\"5dd2fc30-801b-11e7-9d03-efffc8601a27\",\"col\":1,\"row\":4},{\"size_x\":4,\"size_y\":2,\"panelIndex\":56,\"type\":\"visualization\",\"id\":\"37a8b330-8019-11e7-af24-27fa1061e1bd\",\"col\":1,\"row\":2},{\"size_x\":6,\"size_y\":2,\"panelIndex\":58,\"type\":\"visualization\",\"id\":\"81969050-801b-11e7-bb2f-971b1cdb8a78\",\"col\":1,\"row\":6},{\"size_x\":2,\"size_y\":2,\"panelIndex\":59,\"type\":\"visualization\",\"id\":\"2e450d90-8017-11e7-9e6a-575834c68c0e\",\"col\":11,\"row\":2},{\"size_x\":4,\"size_y\":2,\"panelIndex\":60,\"type\":\"visualization\",\"id\":\"1c1f5550-801a-11e7-8b60-018ea0aa61a0\",\"col\":7,\"row\":2},{\"size_x\":6,\"size_y\":2,\"panelIndex\":61,\"type\":\"visualization\",\"id\":\"aaf27c20-801b-11e7-9d03-efffc8601a27\",\"col\":7,\"row\":4},{\"size_x\":6,\"size_y\":2,\"panelIndex\":63,\"type\":\"visualization\",\"id\":\"e44e52a0-801b-11e7-bb2f-971b1cdb8a78\",\"col\":7,\"row\":6},{\"size_x\":2,\"size_y\":2,\"panelIndex\":64,\"type\":\"visualization\",\"id\":\"2f7d7110-8018-11e7-9e6a-575834c68c0e\",\"col\":5,\"row\":8},{\"size_x\":4,\"size_y\":2,\"panelIndex\":65,\"type\":\"visualization\",\"id\":\"36e56dc0-801a-11e7-8b60-018ea0aa61a0\",\"col\":1,\"row\":8},{\"size_x\":6,\"size_y\":2,\"panelIndex\":66,\"type\":\"visualization\",\"id\":\"39b43340-801c-11e7-9d03-efffc8601a27\",\"col\":1,\"row\":10},{\"size_x\":6,\"size_y\":2,\"panelIndex\":68,\"type\":\"visualization\",\"id\":\"5d9f4c90-801c-11e7-bb2f-971b1cdb8a78\",\"col\":1,\"row\":12},{\"size_x\":2,\"size_y\":2,\"panelIndex\":69,\"type\":\"visualization\",\"id\":\"1c87a220-801c-11e7-8ad4-bb5faa3d249c\",\"col\":11,\"row\":8},{\"size_x\":4,\"size_y\":2,\"panelIndex\":70,\"type\":\"visualization\",\"id\":\"f2fea250-2fcb-11e7-8df8-b363df28ab61\",\"col\":7,\"row\":8},{\"size_x\":6,\"size_y\":2,\"panelIndex\":71,\"type\":\"visualization\",\"id\":\"71294860-801c-11e7-9d03-efffc8601a27\",\"col\":7,\"row\":10},{\"size_x\":6,\"size_y\":2,\"panelIndex\":73,\"type\":\"visualization\",\"id\":\"92a73240-801c-11e7-bb2f-971b1cdb8a78\",\"col\":7,\"row\":12}]",
-      "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{\"P-48\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-49\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-50\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-51\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-52\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-53\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-54\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-59\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-64\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-27\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-30\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-29\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-26\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-69\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}}",
-      "version": 1,
-      "timeRestore": false,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
-      }
-    }
-  },
-  {
-    "_id": "d7e31d40-6589-11e7-bfc3-d74b7bb89482",
-    "_type": "dashboard",
-    "_source": {
-      "title": "Netflow: Autonomous Systems",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"f687e140-622d-11e7-b0a5-e9bda2f6d168\",\"panelIndex\":10,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"size_x\":4,\"size_y\":2,\"panelIndex\":11,\"type\":\"visualization\",\"id\":\"eada0e30-801f-11e7-8a72-651c4183643b\",\"col\":5,\"row\":2},{\"size_x\":4,\"size_y\":2,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"be065300-801a-11e7-a69e-1db8cf608fe4\",\"col\":9,\"row\":2},{\"size_x\":6,\"size_y\":2,\"panelIndex\":14,\"type\":\"visualization\",\"id\":\"6a597070-6233-11e7-aa4b-5f8c56ec33b8\",\"col\":1,\"row\":6},{\"size_x\":6,\"size_y\":2,\"panelIndex\":15,\"type\":\"visualization\",\"id\":\"dcf88c60-6233-11e7-aa4b-5f8c56ec33b8\",\"col\":1,\"row\":4},{\"size_x\":6,\"size_y\":5,\"panelIndex\":19,\"type\":\"visualization\",\"id\":\"51006340-671a-11e7-b5b8-29fbded8e37c\",\"col\":7,\"row\":4},{\"size_x\":6,\"size_y\":2,\"panelIndex\":20,\"type\":\"visualization\",\"id\":\"8d2cb120-6233-11e7-aa4b-5f8c56ec33b8\",\"col\":1,\"row\":8}]",
-      "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{\"P-19\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
-      "version": 1,
-      "timeRestore": false,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
-      }
-    }
-  },
-  {
-    "_id": "0809c1f0-6719-11e7-b5b8-29fbded8e37c",
-    "_type": "dashboard",
-    "_source": {
-      "title": "Netflow: Top-N",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":7,\"id\":\"326fae40-671a-11e7-b5b8-29fbded8e37c\",\"panelIndex\":6,\"row\":7,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"51006340-671a-11e7-b5b8-29fbded8e37c\",\"panelIndex\":7,\"row\":12,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\"},{\"col\":7,\"id\":\"d4a408a0-671a-11e7-b5b8-29fbded8e37c\",\"panelIndex\":8,\"row\":12,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\"},{\"size_x\":6,\"size_y\":5,\"panelIndex\":10,\"type\":\"visualization\",\"id\":\"bb92fa50-8020-11e7-bcae-4bd056c878e8\",\"col\":1,\"row\":2},{\"size_x\":6,\"size_y\":5,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"ce9157f0-8020-11e7-bcae-4bd056c878e8\",\"col\":7,\"row\":2},{\"size_x\":6,\"size_y\":5,\"panelIndex\":13,\"type\":\"visualization\",\"id\":\"f41316d0-8020-11e7-bcae-4bd056c878e8\",\"col\":1,\"row\":7}]",
-      "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}},\"P-10\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-12\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-13\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
-      "version": 1,
-      "timeRestore": false,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
-      }
-    }
-  },
-  {
-    "_id": "a932b600-2fd2-11e7-99ed-49759aed30f5",
-    "_type": "dashboard",
-    "_source": {
-      "title": "Netflow: Geo Location",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"col\":5,\"id\":\"99c1a4a0-2f60-11e7-8936-6f5fd5520124\",\"panelIndex\":16,\"row\":2,\"size_x\":8,\"size_y\":6,\"type\":\"visualization\"},{\"size_x\":4,\"size_y\":2,\"panelIndex\":17,\"type\":\"visualization\",\"id\":\"6702de70-2fca-11e7-8fcd-8dc6c60d4592\",\"col\":1,\"row\":2},{\"size_x\":12,\"size_y\":1,\"panelIndex\":20,\"type\":\"visualization\",\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"col\":1,\"row\":1},{\"size_x\":4,\"size_y\":2,\"panelIndex\":21,\"type\":\"visualization\",\"id\":\"be065300-801a-11e7-a69e-1db8cf608fe4\",\"col\":1,\"row\":6},{\"size_x\":4,\"size_y\":2,\"panelIndex\":22,\"type\":\"visualization\",\"id\":\"eada0e30-801f-11e7-8a72-651c4183643b\",\"col\":1,\"row\":4}]",
-      "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{\"P-16\":{\"mapCenter\":[20.632784250388028,16.69921875],\"mapZoom\":2}}",
-      "version": 1,
-      "timeRestore": false,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"_exists_:geoip.location\",\"analyze_wildcard\":true}},\"meta\":{\"index\":\"netflow-*\",\"disabled\":false,\"alias\":\"GeoIP\",\"type\":\"query_string\",\"key\":\"query\",\"value\":\"_exists_:geoip.location\",\"negate\":false},\"$state\":{\"store\":\"appState\"}},{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
-      }
-    }
-  },
-  {
-    "_id": "0d0216f0-2fe0-11e7-9d02-3f49bde5c1d5",
-    "_type": "search",
-    "_source": {
-      "title": "Netflow: Flow Records",
-      "description": "",
-      "hits": 0,
-      "columns": [
-        "netflow.src_addr",
-        "netflow.src_port_name",
-        "netflow.dst_addr",
-        "netflow.dst_port_name",
-        "netflow.protocol_name",
-        "netflow.bytes",
-        "netflow.packets"
-      ],
-      "sort": [
-        "@timestamp",
-        "desc"
-      ],
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"netflow-*\",\"highlightAll\":true,\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[],\"version\":true}"
-      }
-    }
-  },
-  {
     "_id": "6ad67290-6289-11e7-bcd8-a16ef1d32773",
     "_type": "visualization",
     "_source": {
@@ -2639,6 +2460,185 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "ca480720-2fdf-11e7-9d02-3f49bde5c1d5",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Flow Records",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":4,\"id\":\"6a7e4790-2fe0-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":2,\"row\":2,\"size_x\":9,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"bbac23d0-2fe0-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":3,\"row\":2,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":4,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"size_x\":12,\"size_y\":4,\"panelIndex\":5,\"type\":\"search\",\"id\":\"0d0216f0-2fe0-11e7-9d02-3f49bde5c1d5\",\"col\":1,\"row\":4,\"columns\":[\"netflow.src_addr\",\"netflow.src_port_name\",\"netflow.dst_addr\",\"netflow.dst_port_name\",\"netflow.protocol_name\",\"netflow.bytes\",\"netflow.packets\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-3\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "04157d70-6591-11e7-bfc3-d74b7bb89482",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Flow Exporters",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"f8731d50-2fd6-11e7-97a8-85d8d5a99269\",\"panelIndex\":2,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"size_x\":4,\"size_y\":2,\"panelIndex\":3,\"type\":\"visualization\",\"id\":\"caea3760-6591-11e7-bfc3-d74b7bb89482\",\"col\":5,\"row\":2},{\"size_x\":4,\"size_y\":2,\"panelIndex\":4,\"type\":\"visualization\",\"id\":\"1fa2c100-6592-11e7-bfc3-d74b7bb89482\",\"col\":9,\"row\":2},{\"size_x\":6,\"size_y\":2,\"panelIndex\":5,\"type\":\"visualization\",\"id\":\"00248240-6593-11e7-b8de-af19b696fa44\",\"col\":7,\"row\":4},{\"size_x\":6,\"size_y\":2,\"panelIndex\":6,\"type\":\"visualization\",\"id\":\"206d6e90-6593-11e7-8b83-5b2419db46fa\",\"col\":7,\"row\":6},{\"size_x\":6,\"size_y\":2,\"panelIndex\":8,\"type\":\"visualization\",\"id\":\"e2a7fc60-6592-11e7-8b83-5b2419db46fa\",\"col\":1,\"row\":6},{\"size_x\":6,\"size_y\":2,\"panelIndex\":10,\"type\":\"visualization\",\"id\":\"9a4938d0-6592-11e7-b8de-af19b696fa44\",\"col\":1,\"row\":4}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "310ae6e0-2fdf-11e7-9d02-3f49bde5c1d5",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Conversation Partners",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"a7a47e70-2fde-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":1,\"row\":4,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"col\":9,\"id\":\"de9da770-2fcb-11e7-8df8-b363df28ab61\",\"panelIndex\":2,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"4440e130-2fdd-11e7-afd7-595689f3f18c\",\"panelIndex\":3,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"4898db90-2fdb-11e7-84e6-333bd21ad9fd\",\"panelIndex\":4,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":5,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "653cf1e0-2fd2-11e7-99ed-49759aed30f5",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Overview",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"de9da770-2fcb-11e7-8df8-b363df28ab61\",\"panelIndex\":12,\"row\":6,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"69f864d0-2fd7-11e7-97a8-85d8d5a99269\",\"panelIndex\":15,\"row\":6,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":17,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"b88a8790-2fd7-11e7-bd03-932d3e38a4ff\",\"panelIndex\":21,\"row\":8,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"ac4cbc90-622d-11e7-b0a5-e9bda2f6d168\",\"panelIndex\":22,\"row\":4,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"97f430b0-622e-11e7-b0a5-e9bda2f6d168\",\"panelIndex\":23,\"row\":6,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"f6be96c0-622f-11e7-abbc-93bb293f5057\",\"panelIndex\":24,\"row\":4,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"3fa5f6f0-2fca-11e7-ab32-99f279b941ef\",\"panelIndex\":25,\"row\":4,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"64b144f0-658e-11e7-bfc3-d74b7bb89482\",\"panelIndex\":26,\"row\":8,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"3026fe40-658f-11e7-bfc3-d74b7bb89482\",\"panelIndex\":29,\"row\":8,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"size_x\":4,\"size_y\":2,\"panelIndex\":31,\"type\":\"visualization\",\"id\":\"37a8b330-8019-11e7-af24-27fa1061e1bd\",\"col\":1,\"row\":2},{\"size_x\":4,\"size_y\":2,\"panelIndex\":32,\"type\":\"visualization\",\"id\":\"1c1f5550-801a-11e7-8b60-018ea0aa61a0\",\"col\":5,\"row\":2},{\"size_x\":4,\"size_y\":2,\"panelIndex\":34,\"type\":\"visualization\",\"id\":\"36e56dc0-801a-11e7-8b60-018ea0aa61a0\",\"col\":9,\"row\":2}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "10dd3210-8020-11e7-8a72-651c4183643b",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Conversations",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":5,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"6d0c50a0-801d-11e7-bcae-4bd056c878e8\",\"panelIndex\":6,\"row\":5,\"size_x\":12,\"size_y\":5,\"type\":\"visualization\"},{\"col\":5,\"id\":\"39b43340-801c-11e7-9d03-efffc8601a27\",\"panelIndex\":7,\"row\":2,\"size_x\":8,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":4,\"size_y\":3,\"panelIndex\":8,\"type\":\"visualization\",\"id\":\"cc28fff0-801f-11e7-8a72-651c4183643b\",\"col\":1,\"row\":2}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "10584050-6234-11e7-8236-19b4b4941e22",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Traffic Analysis",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":7,\"id\":\"6a597070-6233-11e7-aa4b-5f8c56ec33b8\",\"panelIndex\":1,\"row\":22,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":4,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":7,\"id\":\"6c67b990-628c-11e7-95ed-8966ac93bd5a\",\"panelIndex\":5,\"row\":28,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"52279a00-628c-11e7-95ed-8966ac93bd5a\",\"panelIndex\":6,\"row\":28,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"2c9567c0-6289-11e7-bcd8-a16ef1d32773\",\"panelIndex\":9,\"row\":22,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"b61f84d0-6289-11e7-bcd8-a16ef1d32773\",\"panelIndex\":10,\"row\":16,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"6ad67290-6289-11e7-bcd8-a16ef1d32773\",\"panelIndex\":11,\"row\":16,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"69f864d0-2fd7-11e7-97a8-85d8d5a99269\",\"panelIndex\":19,\"row\":14,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"b88a8790-2fd7-11e7-bd03-932d3e38a4ff\",\"panelIndex\":20,\"row\":14,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"97f430b0-622e-11e7-b0a5-e9bda2f6d168\",\"panelIndex\":21,\"row\":20,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"ac4cbc90-622d-11e7-b0a5-e9bda2f6d168\",\"panelIndex\":22,\"row\":20,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"324b0a00-2fc9-11e7-bd31-a722d271a9cc\",\"panelIndex\":23,\"row\":26,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"9b5d3b80-2fc9-11e7-bd31-a722d271a9cc\",\"panelIndex\":24,\"row\":26,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"8d2cb120-6233-11e7-aa4b-5f8c56ec33b8\",\"panelIndex\":31,\"row\":24,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"99382ab0-6555-11e7-8d48-19b0c51bbbbd\",\"panelIndex\":34,\"row\":30,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"f5f79b00-6555-11e7-b27e-8f8b3770f1df\",\"panelIndex\":35,\"row\":30,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"a13402f0-6557-11e7-a3eb-4b30743c9370\",\"panelIndex\":44,\"row\":24,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"0de63e90-6558-11e7-8547-3d133170b50d\",\"panelIndex\":45,\"row\":18,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"39ecd800-6558-11e7-bea4-0f5fadb995cc\",\"panelIndex\":47,\"row\":18,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"9accd4a0-657a-11e7-8471-e5432f50acbd\",\"panelIndex\":48,\"row\":14,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"col\":11,\"id\":\"b13956f0-657a-11e7-8471-e5432f50acbd\",\"panelIndex\":49,\"row\":14,\"size_x\":2,\"size_y\":2,\"type\":\"visualization\"},{\"size_x\":2,\"size_y\":2,\"panelIndex\":50,\"type\":\"visualization\",\"id\":\"a2099810-657b-11e7-8471-e5432f50acbd\",\"col\":11,\"row\":20},{\"size_x\":2,\"size_y\":2,\"panelIndex\":51,\"type\":\"visualization\",\"id\":\"c4987cc0-657b-11e7-8471-e5432f50acbd\",\"col\":11,\"row\":26},{\"size_x\":2,\"size_y\":2,\"panelIndex\":52,\"type\":\"visualization\",\"id\":\"b3e2af90-657b-11e7-8471-e5432f50acbd\",\"col\":5,\"row\":26},{\"size_x\":2,\"size_y\":2,\"panelIndex\":53,\"type\":\"visualization\",\"id\":\"82fcfc50-657b-11e7-8471-e5432f50acbd\",\"col\":5,\"row\":20},{\"size_x\":2,\"size_y\":2,\"panelIndex\":54,\"type\":\"visualization\",\"id\":\"1e6fb550-8017-11e7-9e6a-575834c68c0e\",\"col\":5,\"row\":2},{\"size_x\":6,\"size_y\":2,\"panelIndex\":55,\"type\":\"visualization\",\"id\":\"5dd2fc30-801b-11e7-9d03-efffc8601a27\",\"col\":1,\"row\":4},{\"size_x\":4,\"size_y\":2,\"panelIndex\":56,\"type\":\"visualization\",\"id\":\"37a8b330-8019-11e7-af24-27fa1061e1bd\",\"col\":1,\"row\":2},{\"size_x\":6,\"size_y\":2,\"panelIndex\":58,\"type\":\"visualization\",\"id\":\"81969050-801b-11e7-bb2f-971b1cdb8a78\",\"col\":1,\"row\":6},{\"size_x\":2,\"size_y\":2,\"panelIndex\":59,\"type\":\"visualization\",\"id\":\"2e450d90-8017-11e7-9e6a-575834c68c0e\",\"col\":11,\"row\":2},{\"size_x\":4,\"size_y\":2,\"panelIndex\":60,\"type\":\"visualization\",\"id\":\"1c1f5550-801a-11e7-8b60-018ea0aa61a0\",\"col\":7,\"row\":2},{\"size_x\":6,\"size_y\":2,\"panelIndex\":61,\"type\":\"visualization\",\"id\":\"aaf27c20-801b-11e7-9d03-efffc8601a27\",\"col\":7,\"row\":4},{\"size_x\":6,\"size_y\":2,\"panelIndex\":63,\"type\":\"visualization\",\"id\":\"e44e52a0-801b-11e7-bb2f-971b1cdb8a78\",\"col\":7,\"row\":6},{\"size_x\":2,\"size_y\":2,\"panelIndex\":64,\"type\":\"visualization\",\"id\":\"2f7d7110-8018-11e7-9e6a-575834c68c0e\",\"col\":5,\"row\":8},{\"size_x\":4,\"size_y\":2,\"panelIndex\":65,\"type\":\"visualization\",\"id\":\"36e56dc0-801a-11e7-8b60-018ea0aa61a0\",\"col\":1,\"row\":8},{\"size_x\":6,\"size_y\":2,\"panelIndex\":66,\"type\":\"visualization\",\"id\":\"39b43340-801c-11e7-9d03-efffc8601a27\",\"col\":1,\"row\":10},{\"size_x\":6,\"size_y\":2,\"panelIndex\":68,\"type\":\"visualization\",\"id\":\"5d9f4c90-801c-11e7-bb2f-971b1cdb8a78\",\"col\":1,\"row\":12},{\"size_x\":2,\"size_y\":2,\"panelIndex\":69,\"type\":\"visualization\",\"id\":\"1c87a220-801c-11e7-8ad4-bb5faa3d249c\",\"col\":11,\"row\":8},{\"size_x\":4,\"size_y\":2,\"panelIndex\":70,\"type\":\"visualization\",\"id\":\"f2fea250-2fcb-11e7-8df8-b363df28ab61\",\"col\":7,\"row\":8},{\"size_x\":6,\"size_y\":2,\"panelIndex\":71,\"type\":\"visualization\",\"id\":\"71294860-801c-11e7-9d03-efffc8601a27\",\"col\":7,\"row\":10},{\"size_x\":6,\"size_y\":2,\"panelIndex\":73,\"type\":\"visualization\",\"id\":\"92a73240-801c-11e7-bb2f-971b1cdb8a78\",\"col\":7,\"row\":12}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-48\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-49\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-50\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-51\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-52\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-53\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-54\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-59\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-64\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-27\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-30\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-29\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-26\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-69\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "d7e31d40-6589-11e7-bfc3-d74b7bb89482",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Autonomous Systems",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":1,\"id\":\"f687e140-622d-11e7-b0a5-e9bda2f6d168\",\"panelIndex\":10,\"row\":2,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"size_x\":4,\"size_y\":2,\"panelIndex\":11,\"type\":\"visualization\",\"id\":\"eada0e30-801f-11e7-8a72-651c4183643b\",\"col\":5,\"row\":2},{\"size_x\":4,\"size_y\":2,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"be065300-801a-11e7-a69e-1db8cf608fe4\",\"col\":9,\"row\":2},{\"size_x\":6,\"size_y\":2,\"panelIndex\":14,\"type\":\"visualization\",\"id\":\"6a597070-6233-11e7-aa4b-5f8c56ec33b8\",\"col\":1,\"row\":6},{\"size_x\":6,\"size_y\":2,\"panelIndex\":15,\"type\":\"visualization\",\"id\":\"dcf88c60-6233-11e7-aa4b-5f8c56ec33b8\",\"col\":1,\"row\":4},{\"size_x\":6,\"size_y\":5,\"panelIndex\":19,\"type\":\"visualization\",\"id\":\"51006340-671a-11e7-b5b8-29fbded8e37c\",\"col\":7,\"row\":4},{\"size_x\":6,\"size_y\":2,\"panelIndex\":20,\"type\":\"visualization\",\"id\":\"8d2cb120-6233-11e7-aa4b-5f8c56ec33b8\",\"col\":1,\"row\":8}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-19\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "0809c1f0-6719-11e7-b5b8-29fbded8e37c",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Top-N",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":1,\"type\":\"visualization\"},{\"col\":7,\"id\":\"326fae40-671a-11e7-b5b8-29fbded8e37c\",\"panelIndex\":6,\"row\":7,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"51006340-671a-11e7-b5b8-29fbded8e37c\",\"panelIndex\":7,\"row\":12,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\"},{\"col\":7,\"id\":\"d4a408a0-671a-11e7-b5b8-29fbded8e37c\",\"panelIndex\":8,\"row\":12,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\"},{\"size_x\":6,\"size_y\":5,\"panelIndex\":10,\"type\":\"visualization\",\"id\":\"bb92fa50-8020-11e7-bcae-4bd056c878e8\",\"col\":1,\"row\":2},{\"size_x\":6,\"size_y\":5,\"panelIndex\":12,\"type\":\"visualization\",\"id\":\"ce9157f0-8020-11e7-bcae-4bd056c878e8\",\"col\":7,\"row\":2},{\"size_x\":6,\"size_y\":5,\"panelIndex\":13,\"type\":\"visualization\",\"id\":\"f41316d0-8020-11e7-bcae-4bd056c878e8\",\"col\":1,\"row\":7}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-6\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-8\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}},\"P-10\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-12\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-13\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "a932b600-2fd2-11e7-99ed-49759aed30f5",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Netflow: Geo Location",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":5,\"id\":\"99c1a4a0-2f60-11e7-8936-6f5fd5520124\",\"panelIndex\":16,\"row\":2,\"size_x\":8,\"size_y\":6,\"type\":\"visualization\"},{\"size_x\":4,\"size_y\":2,\"panelIndex\":17,\"type\":\"visualization\",\"id\":\"6702de70-2fca-11e7-8fcd-8dc6c60d4592\",\"col\":1,\"row\":2},{\"size_x\":12,\"size_y\":1,\"panelIndex\":20,\"type\":\"visualization\",\"id\":\"26e166f0-2fe2-11e7-9d02-3f49bde5c1d5\",\"col\":1,\"row\":1},{\"size_x\":4,\"size_y\":2,\"panelIndex\":21,\"type\":\"visualization\",\"id\":\"be065300-801a-11e7-a69e-1db8cf608fe4\",\"col\":1,\"row\":6},{\"size_x\":4,\"size_y\":2,\"panelIndex\":22,\"type\":\"visualization\",\"id\":\"eada0e30-801f-11e7-8a72-651c4183643b\",\"col\":1,\"row\":4}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-16\":{\"mapCenter\":[20.632784250388028,16.69921875],\"mapZoom\":2}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"_exists_:geoip.location\",\"analyze_wildcard\":true}},\"meta\":{\"index\":\"netflow-*\",\"disabled\":false,\"alias\":\"GeoIP\",\"type\":\"query_string\",\"key\":\"query\",\"value\":\"_exists_:geoip.location\",\"negate\":false},\"$state\":{\"store\":\"appState\"}},{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "0d0216f0-2fe0-11e7-9d02-3f49bde5c1d5",
+    "_type": "search",
+    "_source": {
+      "title": "Netflow: Flow Records",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "netflow.src_addr",
+        "netflow.src_port_name",
+        "netflow.dst_addr",
+        "netflow.dst_port_name",
+        "netflow.protocol_name",
+        "netflow.bytes",
+        "netflow.packets"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"netflow-*\",\"highlightAll\":true,\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[],\"version\":true}"
       }
     }
   }
