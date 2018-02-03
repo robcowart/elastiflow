@@ -1,6 +1,7 @@
 {
   "order": 0,
-  "version": 17122701,
+  "version": 18020301,
+  "index_patterns": "elastiflow-*",
   "template": "elastiflow-*",
   "settings": {
     "index": {
@@ -12,6 +13,7 @@
   },
   "mappings": {
     "_default_": {
+      "numeric_detection": true,
       "dynamic_templates": [
         {
           "ipfix.absoluteError": {
@@ -7187,7 +7189,7 @@
           "netflow.conn_id": {
             "path_match": "netflow.conn_id",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8564,6 +8566,18 @@
         "@timestamp": {
           "type": "date"
         },
+        "event": {
+          "dynamic": true,
+          "type": "object",
+          "properties": {
+            "host": {
+              "type": "keyword"
+            },
+            "type": {
+              "type": "keyword"
+            }
+          }
+        },
         "flow": {
           "dynamic": true,
           "type": "object",
@@ -8601,6 +8615,9 @@
             "dst_port": {
               "type": "keyword"
             },
+            "dst_port_name": {
+              "type": "keyword"
+            },
             "geoip": {
               "dynamic": true,
               "properties": {
@@ -8608,6 +8625,9 @@
                   "type": "keyword"
                 },
                 "city_name": {
+                  "type": "keyword"
+                },
+                "country_code2": {
                   "type": "keyword"
                 },
                 "country_name": {
@@ -8633,6 +8653,9 @@
                 "country_name": {
                   "type": "keyword"
                 },
+                "country_code2": {
+                  "type": "keyword"
+                },
                 "location": {
                   "type": "geo_point"
                 },
@@ -8648,6 +8671,9 @@
                   "type": "keyword"
                 },
                 "city_name": {
+                  "type": "keyword"
+                },
+                "country_code2": {
                   "type": "keyword"
                 },
                 "country_name": {
@@ -8670,6 +8696,9 @@
                 "city_name": {
                   "type": "keyword"
                 },
+                "country_code2": {
+                  "type": "keyword"
+                },
                 "country_name": {
                   "type": "keyword"
                 },
@@ -8688,6 +8717,9 @@
                   "type": "keyword"
                 },
                 "city_name": {
+                  "type": "keyword"
+                },
+                "country_code2": {
                   "type": "keyword"
                 },
                 "country_name": {
@@ -8721,6 +8753,9 @@
             },
             "packets": {
               "type": "long"
+            },
+            "sampling_interval": {
+              "type": "integer"
             },
             "server_addr": {
               "type": "ip"
@@ -8761,6 +8796,9 @@
             "src_port": {
               "type": "keyword"
             },
+            "src_port_name": {
+              "type": "keyword"
+            },
             "tcp_flags": {
               "type": "integer"
             },
@@ -8781,7 +8819,19 @@
             }
           }
         },
-        "type": {
+        "node": {
+          "dynamic": true,
+          "type": "object",
+          "properties": {
+            "ipaddr": {
+              "type": "ip"
+            },
+            "hostname": {
+              "type": "keyword"
+            }
+          }
+        },
+        "tags": {
           "type": "keyword"
         }
       }

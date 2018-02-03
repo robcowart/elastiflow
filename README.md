@@ -1,43 +1,53 @@
 # ElastiFlow&trade;
-ElastiFlow&trade; provides basic Netflow collection and visualization using Elastic Stack.
+ElastiFlow&trade; provides network flow data collection and visualization using the Elastic Stack.
 
 I was inspired to create ElastiFlow&trade; following the overwhelmingly positive feedback received to an article I posted on Linkedin... [WTFlow?! Are you really still paying for commercial solutions to collect and analyze network flow data?](https://www.linkedin.com/pulse/wtflow-you-really-still-paying-commercial-solutions-collect-cowart)
 
-My initial goal for ElastiFlow&trade; was to leverage only the functionality provided out-of-the-box by Elastic Stack, without optional plugins. However I felt this placed too many restrictions on the value that could be provided. So to use ElastiFlow&trade; you will need to install both the [translate](https://www.elastic.co/guide/en/logstash/current/plugins-filters-translate.html) and [cidr](https://www.elastic.co/guide/en/logstash/current/plugins-filters-cidr.html) filter plugins for Logstash.
-
 ## Getting Started
-ElastiFlow&trade; leverages Elastic Stack 5.x, including Elasticsearch, Logstash and Kibana. Currently there is no specific configuration required for Elasticsearch. As long as Kibana and Logstash can talk to your Elasticsearch cluster you should be ready to go.
+ElastiFlow&trade; 2.x leverages Elastic Stack 6.x, including Elasticsearch, Logstash and Kibana. Currently there is no specific configuration required for Elasticsearch. As long as Kibana and Logstash can talk to your Elasticsearch cluster you should be ready to go.
+
+If you are running Elastic Stack 5.x, you should use the latest 1.x release of ElastiFlow.
 
 ### Setting up Logstash
-As mentioned above you will need to ensure that you have installed the [translate](https://www.elastic.co/guide/en/logstash/current/plugins-filters-translate.html) and [cidr](https://www.elastic.co/guide/en/logstash/current/plugins-filters-cidr.html) filter plugins for Logstash. This can achieved by running the following commands:
+To use ElastiFlow&trade; you will need to install the community supported sFlow codec for Logtsash. It is also recommended that you always use the latest version of Netflow [translate](https://www.elastic.co/guide/en/logstash/current/plugins-filters-translate.html) codec. This can achieved by running the following commands:
 
 ```
-$LS_HOME/bin/logstash-plugin install logstash-filter-translate
-$LS_HOME/bin/logstash-plugin install logstash-filter-cidr
+$LS_HOME/bin/logstash-plugin install logstash-codec-sflow
+$LS_HOME/bin/logstash-plugin update logstash-codec-netflow
 ```
 
-There are three sets of configuration files provided within the logstash folder:
+There are four sets of configuration files provided within the logstash/elastiflow folder:
 ```
 logstash
-|-- conf.d  (contains the logstash pipeline)
-|-- dictionaries (yaml files used to enrich raw flow data)
-|-- geoipdbs  (contains GeoIP databases)
-+-- templates  (contains index templates)
++-- elastiflow
+    |-- conf.d  (contains the logstash pipeline)
+    |-- dictionaries (yaml files used to enrich raw flow data)
+    |-- geoipdbs  (contains GeoIP databases)
+    +-- templates  (contains index templates)
 ```
 
-Rather than edit the pipeline files in `logstash/conf.d` for your environment, environment variables can be used. The supported environment variables are:
+Rather than directly editing the pipeline configuration files in `logstash/elastiflow/conf.d` for your environment, environment variables can be used. The supported environment variables are:
 
 Environment Variable | Description | Default Valaue
 --- | --- | ---
-ELASTIFLOW_NETFLOW_PORT | The UDP port to listen on for Netflow messages | 2055
-ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
-ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
-ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
 ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/geoipdbs
 ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/dictionaries
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/templates
-
-> NOTE: If your Elasticsearch server does not require a username and password, you may need to comment out those parameters in the `elasticsearch` output.
+ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests | false
+ELASTIFLOW_NAMESERVER | The DNS server to which the dns filter should send requests | 127.0.0.1
+ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
+ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
+ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
+ELASTIFLOW_NETFLOW_HOST | The IP address from which to listen for Netflow messages | 0.0.0.0
+ELASTIFLOW_NETFLOW_PORT | The UDP port on which to listen for Netflow messages | 2055
+ELASTIFLOW_NETFLOW_LASTSW_TIMESTAMP | Enable/Disable setting `@timestamp` with the value of netflow.last_switched | false
+ELASTIFLOW_NETFLOW_TZ=UTC | The timezone of netflow.last_switched | UTC
+ELASTIFLOW_SFLOW_HOST | The IP address from which to listen for sFlow messages | 0.0.0.0
+ELASTIFLOW_SFLOW_PORT | The UDP port on which to listen for sFlow messages | 6343
+ELASTIFLOW_IPFIX_TCP_HOST | The IP address from which to listen for IPFIX messages via TCP | 0.0.0.0
+ELASTIFLOW_IPFIX_TCP_PORT | The port on which to listen for IPFIX messages via TCP | 4739
+ELASTIFLOW_IPFIX_UDP_HOST | The IP address from which to listen for IPFIX messages via UDP | 0.0.0.0
+ELASTIFLOW_IPFIX_UDP_PORT | The port on which to listen for IPFIX messages via UDP | 4739
 
 After setting environment variables as needed, you can start Logstash using the `--path.config` option to specify the location of the `logstash/conf.d` directory.
 
