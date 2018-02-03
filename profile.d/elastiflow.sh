@@ -3,7 +3,7 @@ export ELASTIFLOW_GEOIP_DB_PATH=/etc/logstash/elastiflow/geoipdbs
 export ELASTIFLOW_DICT_PATH=/etc/logstash/elastiflow/dictionaries
 export ELASTIFLOW_TEMPLATE_PATH=/etc/logstash/elastiflow/templates
 
-export ELASTIFLOW_RESOLVE_IP2HOST=true
+export ELASTIFLOW_RESOLVE_IP2HOST=false
 export ELASTIFLOW_NAMESERVER=127.0.0.1
 
 export ELASTIFLOW_ES_HOST=127.0.0.1
