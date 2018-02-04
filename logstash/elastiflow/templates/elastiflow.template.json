@@ -8613,7 +8613,7 @@
               "type": "integer"
             },
             "dst_port": {
-              "type": "keyword"
+              "type": "integer"
             },
             "dst_port_name": {
               "type": "keyword"
@@ -8766,9 +8766,6 @@
             "server_locality": {
               "type": "keyword"
             },
-            "service": {
-              "type": "keyword"
-            },
             "service_locality": {
               "type": "keyword"
             },
@@ -8776,7 +8773,7 @@
               "type": "keyword"
             },
             "service_port": {
-              "type": "keyword"
+              "type": "integer"
             },
             "src_addr": {
               "type": "ip"
@@ -8794,7 +8791,7 @@
               "type": "integer"
             },
             "src_port": {
-              "type": "keyword"
+              "type": "integer"
             },
             "src_port_name": {
               "type": "keyword"
