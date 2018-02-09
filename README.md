@@ -1,4 +1,21 @@
 # ElastiFlow&trade;
+***
+## PLEASE READ - sFlow codec issue... and fix!
+
+**Some users have reported issues with the sFlow codec when it receives malformed sFlow packets. The issue is seen in version 2.0.0 and earlier. Unfortinately an online install of the codec will install 2.0.0. A version 2.0.1 release is available on rubygems.org, which adds error handling and seems to fix the problems. However, overly strict dependencies restrict it to being installed on only a narrow selection of Logstash 5.4 releases.**
+
+**Since 2.0.1 can't be used with later Logstash versions, I submited a PR to the codec's maintainer that loosens the version dependency for `logstash-core`. Until he merges the PR and creates a release I have an installable gem available from my fork here...**
+
+https://github.com/robcowart/logstash-codec-sflow/releases/download/v2.0.2/logstash-codec-sflow-2.0.2.gem
+
+**To use this, first remove the previous version and then install the new one using these commands...**
+```
+LS_HOME/bin/logstash-plugin remove logstash-codec-sflow
+LS_HOME/bin/logstash-plugin install /PATH/TO/logstash-codec-sflow-2.0.2.gem
+```
+**Please let me know how this works for you.**
+***
+
 ElastiFlow&trade; provides network flow data collection and visualization using the Elastic Stack. As of version 2.0.0 it supports Netflow v5/v9, sFlow and IPFIX flow types (1.x versions support only Netflow v5/v9).
 
 ![Overview](https://user-images.githubusercontent.com/10326954/35780814-c015a1cc-09e1-11e8-8e7c-770ef279e9d0.png)
