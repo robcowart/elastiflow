@@ -10,12 +10,12 @@ ElastiFlow&trade; is built using the Elastic Stack, including Elasticsearch, Log
 
 Elastic Stack | ElastiFlow&trade; 1.x | ElastiFlow&trade; 2.x
 :---:|:---:|:---:
-6.2 | YES | YES
-6.1 | YES | YES
-6.0 | YES | YES
-5.6 | YES | YES
-5.5 | YES | 
-5.4 | YES | 
+6.2 | &#10003; | &#10003;
+6.1 | &#10003; | &#10003;
+6.0 | &#10003; | &#10003;
+5.6 | &#10003; | &#10003;
+5.5 | &#10003; | 
+5.4 | &#10003; | 
 
 > NOTE: The instructions that follow are for ElastiFlow&trade; 2.x.
 
@@ -56,13 +56,14 @@ ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/lo
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/templates
 ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests | false
 ELASTIFLOW_NAMESERVER | The DNS server to which the dns filter should send requests | 127.0.0.1
+ELASTIFLOW_KEEP_ORIG_DATA | If set to `false` the original `netflow`, `ipfix` and `sflow` objects will be deleted prior to indexing. This can save disk space without affecting the provided dashboards. However the original flow fields will no longer be available if they are desired for additional analytics. | true
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
 ELASTIFLOW_NETFLOW_HOST | The IP address from which to listen for Netflow messages | 0.0.0.0
 ELASTIFLOW_NETFLOW_PORT | The UDP port on which to listen for Netflow messages | 2055
 ELASTIFLOW_NETFLOW_LASTSW_TIMESTAMP | Enable/Disable setting `@timestamp` with the value of netflow.last_switched | false
-ELASTIFLOW_NETFLOW_TZ=UTC | The timezone of netflow.last_switched | UTC
+ELASTIFLOW_NETFLOW_TZ | The timezone of netflow.last_switched | UTC
 ELASTIFLOW_SFLOW_HOST | The IP address from which to listen for sFlow messages | 0.0.0.0
 ELASTIFLOW_SFLOW_PORT | The UDP port on which to listen for sFlow messages | 6343
 ELASTIFLOW_IPFIX_TCP_HOST | The IP address from which to listen for IPFIX messages via TCP | 0.0.0.0
