@@ -7258,6 +7258,22 @@
           }
         },
         {
+          "netflow.exporterIPv4Address": {
+            "path_match": "netflow.exporterIPv4Address",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.exporterIPv6Address": {
+            "path_match": "netflow.exporterIPv6Address",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
           "netflow.first_switched": {
             "path_match": "netflow.first_switched",
             "mapping": {
