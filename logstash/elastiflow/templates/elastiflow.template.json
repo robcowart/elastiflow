@@ -24,6 +24,22 @@
           }
         },
         {
+          "ipfix.afcProtocol": {
+            "path_match": "ipfix.afcProtocol",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.afcProtocolName": {
+            "path_match": "ipfix.afcProtocolName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "ipfix.anonymizationFlags": {
             "path_match": "ipfix.anonymizationFlags",
             "mapping": {
@@ -88,6 +104,22 @@
           }
         },
         {
+          "ipfix.assembledFragmentCount": {
+            "path_match": "ipfix.assembledFragmentCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "ipfix.averageInterarrivalTime": {
+            "path_match": "ipfix.averageInterarrivalTime",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "ipfix.bgpDestinationAsNumber": {
             "path_match": "ipfix.bgpDestinationAsNumber",
             "mapping": {
@@ -148,6 +180,118 @@
             "path_match": "ipfix.biflowDirection",
             "mapping": {
               "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoAppBusiness": {
+            "path_match": "ipfix.ciscoAppBusiness",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoAppGroupName": {
+            "path_match": "ipfix.ciscoAppGroupName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoAppHTTPHost": {
+            "path_match": "ipfix.ciscoAppHTTPHost",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoAppHTTPUriStatistics": {
+            "path_match": "ipfix.ciscoAppHTTPUriStatistics",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoClientBytesNetwork": {
+            "path_match": "ipfix.ciscoClientBytesNetwork",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoClientIPv4Address": {
+            "path_match": "ipfix.ciscoClientIPv4Address",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoClientL4Port": {
+            "path_match": "ipfix.ciscoClientL4Port",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoConnectionId": {
+            "path_match": "ipfix.ciscoConnectionId",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoServerBytesNetwork": {
+            "path_match": "ipfix.ciscoServerBytesNetwork",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoServerIPv4Address": {
+            "path_match": "ipfix.ciscoServerIPv4Address",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoServerL4Port": {
+            "path_match": "ipfix.ciscoServerL4Port",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoServicesWaasPassthroughReason": {
+            "path_match": "ipfix.ciscoServicesWaasPassthroughReason",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.ciscoServicesWaasSegment": {
+            "path_match": "ipfix.ciscoServicesWaasSegment",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.cisoAppCategoryName": {
+            "path_match": "ipfix.cisoAppCategoryName",
+            "mapping": {
+              "type": "keyword"
             }
           }
         },
@@ -244,6 +388,22 @@
             "path_match": "ipfix.connectionTransactionId",
             "mapping": {
               "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.conntrack_id": {
+            "path_match": "ipfix.conntrack_id",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "ipfix.dataByteCount": {
+            "path_match": "ipfix.dataByteCount",
+            "mapping": {
+              "type": "long"
             }
           }
         },
@@ -404,6 +564,206 @@
             "path_match": "ipfix.distinctCountOfSourceIPv6Address",
             "mapping": {
               "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsAuthoritative": {
+            "path_match": "ipfix.dnsAuthoritative",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsCName": {
+            "path_match": "ipfix.dnsCName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.dnsID": {
+            "path_match": "ipfix.dnsID",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsMXExchange": {
+            "path_match": "ipfix.dnsMXExchange",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.dnsMXPreference": {
+            "path_match": "ipfix.dnsMXPreference",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsNSDName": {
+            "path_match": "ipfix.dnsNSDName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.dnsNXDomain": {
+            "path_match": "ipfix.dnsNXDomain",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsPTRDName": {
+            "path_match": "ipfix.dnsPTRDName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.dnsQName": {
+            "path_match": "ipfix.dnsQName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.dnsQRType": {
+            "path_match": "ipfix.dnsQRType",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsQueryResponse": {
+            "path_match": "ipfix.dnsQueryResponse",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsRRSection": {
+            "path_match": "ipfix.dnsRRSection",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsSOAExpire": {
+            "path_match": "ipfix.dnsSOAExpire",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsSOAMinimum": {
+            "path_match": "ipfix.dnsSOAMinimum",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsSOAMName": {
+            "path_match": "ipfix.dnsSOAMName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.dnsSOARefresh": {
+            "path_match": "ipfix.dnsSOARefresh",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsSOARetry": {
+            "path_match": "ipfix.dnsSOARetry",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsSOARName": {
+            "path_match": "ipfix.dnsSOARName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.dnsSOASerial": {
+            "path_match": "ipfix.dnsSOASerial",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsSRVPort": {
+            "path_match": "ipfix.dnsSRVPort",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsSRVPriority": {
+            "path_match": "ipfix.dnsSRVPriority",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsSRVTarget": {
+            "path_match": "ipfix.dnsSRVTarget",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsSRVWeight": {
+            "path_match": "ipfix.dnsSRVWeight",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsTTL": {
+            "path_match": "ipfix.dnsTTL",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.dnsTXTData": {
+            "path_match": "ipfix.dnsTXTData",
+            "mapping": {
+              "type": "keyword"
             }
           }
         },
@@ -656,6 +1016,14 @@
           }
         },
         {
+          "ipfix.expiredFragmentCount": {
+            "path_match": "ipfix.expiredFragmentCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "ipfix.exportedFlowRecordTotalCount": {
             "path_match": "ipfix.exportedFlowRecordTotalCount",
             "mapping": {
@@ -760,6 +1128,30 @@
           }
         },
         {
+          "ipfix.firstEightNonEmptyPacketDirections": {
+            "path_match": "ipfix.firstEightNonEmptyPacketDirections",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.firstNonEmptyPacketSize": {
+            "path_match": "ipfix.firstNonEmptyPacketSize",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.firstPacketBanner": {
+            "path_match": "ipfix.firstPacketBanner",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "ipfix.flagsAndSamplerId": {
             "path_match": "ipfix.flagsAndSamplerId",
             "mapping": {
@@ -770,6 +1162,14 @@
         {
           "ipfix.flowActiveTimeout": {
             "path_match": "ipfix.flowActiveTimeout",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.flowAttributes": {
+            "path_match": "ipfix.flowAttributes",
             "mapping": {
               "type": "integer"
             }
@@ -978,6 +1378,22 @@
         {
           "ipfix.flowStartSysUpTime": {
             "path_match": "ipfix.flowStartSysUpTime",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "ipfix.flowTableFlushEventCount": {
+            "path_match": "ipfix.flowTableFlushEventCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "ipfix.flowTablePeakCount": {
+            "path_match": "ipfix.flowTablePeakCount",
             "mapping": {
               "type": "long"
             }
@@ -1320,6 +1736,14 @@
           }
         },
         {
+          "ipfix.initialTCPFlags": {
+            "path_match": "ipfix.initialTCPFlags",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "ipfix.initiatorOctets": {
             "path_match": "ipfix.initiatorOctets",
             "mapping": {
@@ -1504,6 +1928,14 @@
           }
         },
         {
+          "ipfix.largePacketCount": {
+            "path_match": "ipfix.largePacketCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "ipfix.layer2FrameDeltaCount": {
             "path_match": "ipfix.layer2FrameDeltaCount",
             "mapping": {
@@ -1600,6 +2032,14 @@
           }
         },
         {
+          "ipfix.mark": {
+            "path_match": "ipfix.mark",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "ipfix.maxExportSeconds": {
             "path_match": "ipfix.maxExportSeconds",
             "mapping": {
@@ -1658,6 +2098,30 @@
         {
           "ipfix.maximumTTL": {
             "path_match": "ipfix.maximumTTL",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.maxPacketSize": {
+            "path_match": "ipfix.maxPacketSize",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.meanFlowRate": {
+            "path_match": "ipfix.meanFlowRate",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.meanPacketRate": {
+            "path_match": "ipfix.meanPacketRate",
             "mapping": {
               "type": "integer"
             }
@@ -1960,6 +2424,46 @@
           }
         },
         {
+          "ipfix.mptcpAddressID": {
+            "path_match": "ipfix.mptcpAddressID",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.mptcpFlags": {
+            "path_match": "ipfix.mptcpFlags",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.mptcpInitialDataSequenceNumber": {
+            "path_match": "ipfix.mptcpInitialDataSequenceNumber",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "ipfix.mptcpMaximumSegmentSize": {
+            "path_match": "ipfix.mptcpMaximumSegmentSize",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.mptcpReceiverToken": {
+            "path_match": "ipfix.mptcpReceiverToken",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "ipfix.multicastReplicationFactor": {
             "path_match": "ipfix.multicastReplicationFactor",
             "mapping": {
@@ -1976,8 +2480,24 @@
           }
         },
         {
+          "ipfix.natInsideSvcid": {
+            "path_match": "ipfix.natInsideSvcid",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "ipfix.natOriginatingAddressRealm": {
             "path_match": "ipfix.natOriginatingAddressRealm",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.natOutsideSvcid": {
+            "path_match": "ipfix.natOutsideSvcid",
             "mapping": {
               "type": "integer"
             }
@@ -2000,10 +2520,26 @@
           }
         },
         {
+          "ipfix.natSubstring": {
+            "path_match": "ipfix.natSubstring",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "ipfix.natType": {
             "path_match": "ipfix.natType",
             "mapping": {
               "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.netscaleIcaClientVersion": {
+            "path_match": "ipfix.netscaleIcaClientVersion",
+            "mapping": {
+              "type": "keyword"
             }
           }
         },
@@ -2992,6 +3528,14 @@
           }
         },
         {
+          "ipfix.nonEmptyPacketCount": {
+            "path_match": "ipfix.nonEmptyPacketCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "ipfix.notSentFlowTotalCount": {
             "path_match": "ipfix.notSentFlowTotalCount",
             "mapping": {
@@ -3184,6 +3728,30 @@
           }
         },
         {
+          "ipfix.osFingerPrint": {
+            "path_match": "ipfix.osFingerPrint",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.osName": {
+            "path_match": "ipfix.osName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.osVersion": {
+            "path_match": "ipfix.osVersion",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "ipfix.p2pTechnology": {
             "path_match": "ipfix.p2pTechnology",
             "mapping": {
@@ -3202,6 +3770,14 @@
         {
           "ipfix.packetTotalCount": {
             "path_match": "ipfix.packetTotalCount",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.payloadEntropy": {
+            "path_match": "ipfix.payloadEntropy",
             "mapping": {
               "type": "integer"
             }
@@ -3616,6 +4192,14 @@
           }
         },
         {
+          "ipfix.reverseAverageInterarrivalTime": {
+            "path_match": "ipfix.reverseAverageInterarrivalTime",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "ipfix.reverseBgpDestinationAsNumber": {
             "path_match": "ipfix.reverseBgpDestinationAsNumber",
             "mapping": {
@@ -3732,6 +4316,14 @@
             "path_match": "ipfix.reverseConnectionTransactionId",
             "mapping": {
               "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.reverseDataByteCount": {
+            "path_match": "ipfix.reverseDataByteCount",
+            "mapping": {
+              "type": "long"
             }
           }
         },
@@ -4176,6 +4768,22 @@
           }
         },
         {
+          "ipfix.reverseFirstNonEmptyPacketSize": {
+            "path_match": "ipfix.reverseFirstNonEmptyPacketSize",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.reverseFirstPacketBanner": {
+            "path_match": "ipfix.reverseFirstPacketBanner",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "ipfix.reverseFlagsAndSamplerId": {
             "path_match": "ipfix.reverseFlagsAndSamplerId",
             "mapping": {
@@ -4188,6 +4796,22 @@
             "path_match": "ipfix.reverseFlowActiveTimeout",
             "mapping": {
               "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.reverseFlowAttributes": {
+            "path_match": "ipfix.reverseFlowAttributes",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.reverseFlowDeltaMilliseconds": {
+            "path_match": "ipfix.reverseFlowDeltaMilliseconds",
+            "mapping": {
+              "type": "long"
             }
           }
         },
@@ -4704,6 +5328,14 @@
           }
         },
         {
+          "ipfix.reverseInitialTCPFlags": {
+            "path_match": "ipfix.reverseInitialTCPFlags",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "ipfix.reverseInitiatorOctets": {
             "path_match": "ipfix.reverseInitiatorOctets",
             "mapping": {
@@ -4888,6 +5520,14 @@
           }
         },
         {
+          "ipfix.reverseLargePacketCount": {
+            "path_match": "ipfix.reverseLargePacketCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "ipfix.reverseLayer2FrameDeltaCount": {
             "path_match": "ipfix.reverseLayer2FrameDeltaCount",
             "mapping": {
@@ -5042,6 +5682,14 @@
         {
           "ipfix.reverseMaximumTTL": {
             "path_match": "ipfix.reverseMaximumTTL",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.reverseMaxPacketSize": {
+            "path_match": "ipfix.reverseMaxPacketSize",
             "mapping": {
               "type": "integer"
             }
@@ -5408,6 +6056,14 @@
           }
         },
         {
+          "ipfix.reverseNonEmptyPacketCount": {
+            "path_match": "ipfix.reverseNonEmptyPacketCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "ipfix.reverseNotSentLayer2OctetTotalCount": {
             "path_match": "ipfix.reverseNotSentLayer2OctetTotalCount",
             "mapping": {
@@ -5560,6 +6216,30 @@
           }
         },
         {
+          "ipfix.reverseOsFingerPrint": {
+            "path_match": "ipfix.reverseOsFingerPrint",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.reverseOsName": {
+            "path_match": "ipfix.reverseOsName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.reverseOsVersion": {
+            "path_match": "ipfix.reverseOsVersion",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "ipfix.reverseP2pTechnology": {
             "path_match": "ipfix.reverseP2pTechnology",
             "mapping": {
@@ -5578,6 +6258,14 @@
         {
           "ipfix.reversePacketTotalCount": {
             "path_match": "ipfix.reversePacketTotalCount",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.reversePayloadEntropy": {
+            "path_match": "ipfix.reversePayloadEntropy",
             "mapping": {
               "type": "integer"
             }
@@ -5944,6 +6632,14 @@
           }
         },
         {
+          "ipfix.reverseRtpPayloadType": {
+            "path_match": "ipfix.reverseRtpPayloadType",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "ipfix.reverseRtpSequenceNumber": {
             "path_match": "ipfix.reverseRtpSequenceNumber",
             "mapping": {
@@ -6072,6 +6768,14 @@
           }
         },
         {
+          "ipfix.reverseSecondPacketBanner": {
+            "path_match": "ipfix.reverseSecondPacketBanner",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "ipfix.reverseSectionExportedOctets": {
             "path_match": "ipfix.reverseSectionExportedOctets",
             "mapping": {
@@ -6160,6 +6864,14 @@
           }
         },
         {
+          "ipfix.reverseSmallPacketCount": {
+            "path_match": "ipfix.reverseSmallPacketCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "ipfix.reverseSourceIPv4Address": {
             "path_match": "ipfix.reverseSourceIPv4Address",
             "mapping": {
@@ -6244,6 +6956,22 @@
             "path_match": "ipfix.reverseStaMacAddress",
             "mapping": {
               "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.reverseStandardDeviationInterarrivalTime": {
+            "path_match": "ipfix.reverseStandardDeviationInterarrivalTime",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "ipfix.reverseStandardDeviationPayloadLength": {
+            "path_match": "ipfix.reverseStandardDeviationPayloadLength",
+            "mapping": {
+              "type": "integer"
             }
           }
         },
@@ -6440,6 +7168,14 @@
           }
         },
         {
+          "ipfix.reverseUnionTCPFlags": {
+            "path_match": "ipfix.reverseUnionTCPFlags",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "ipfix.reverseUpperCILimit": {
             "path_match": "ipfix.reverseUpperCILimit",
             "mapping": {
@@ -6554,6 +7290,14 @@
         {
           "ipfix.rfc3550JitterNanoseconds": {
             "path_match": "ipfix.rfc3550JitterNanoseconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.rtpPayloadType": {
+            "path_match": "ipfix.rtpPayloadType",
             "mapping": {
               "type": "integer"
             }
@@ -6688,6 +7432,14 @@
           }
         },
         {
+          "ipfix.secondPacketBanner": {
+            "path_match": "ipfix.secondPacketBanner",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "ipfix.sectionExportedOctets": {
             "path_match": "ipfix.sectionExportedOctets",
             "mapping": {
@@ -6776,6 +7528,22 @@
           }
         },
         {
+          "ipfix.silkAppLabel": {
+            "path_match": "ipfix.silkAppLabel",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.smallPacketCount": {
+            "path_match": "ipfix.smallPacketCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "ipfix.sourceIPv4Address": {
             "path_match": "ipfix.sourceIPv4Address",
             "mapping": {
@@ -6848,6 +7616,126 @@
           }
         },
         {
+          "ipfix.sslCertificateHash": {
+            "path_match": "ipfix.sslCertificateHash",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.sslCertSerialNumber": {
+            "path_match": "ipfix.sslCertSerialNumber",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.sslCertSignature": {
+            "path_match": "ipfix.sslCertSignature",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.sslCertValidityNotAfter": {
+            "path_match": "ipfix.sslCertValidityNotAfter",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.sslCertValidityNotBefore": {
+            "path_match": "ipfix.sslCertValidityNotBefore",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.sslCertVersion": {
+            "path_match": "ipfix.sslCertVersion",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.sslCipher": {
+            "path_match": "ipfix.sslCipher",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.sslClientVersion": {
+            "path_match": "ipfix.sslClientVersion",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.sslCompressionMethod": {
+            "path_match": "ipfix.sslCompressionMethod",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.sslObjectType": {
+            "path_match": "ipfix.sslObjectType",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.sslObjectValue": {
+            "path_match": "ipfix.sslObjectValue",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.sslPublicKeyAlgorithm": {
+            "path_match": "ipfix.sslPublicKeyAlgorithm",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.sslPublicKeyLength": {
+            "path_match": "ipfix.sslPublicKeyLength",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.sslServerCipher": {
+            "path_match": "ipfix.sslServerCipher",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.sslServerName": {
+            "path_match": "ipfix.sslServerName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "ipfix.staIPv4Address": {
             "path_match": "ipfix.staIPv4Address",
             "mapping": {
@@ -6860,6 +7748,22 @@
             "path_match": "ipfix.staMacAddress",
             "mapping": {
               "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.standardDeviationInterarrivalTime": {
+            "path_match": "ipfix.standardDeviationInterarrivalTime",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "ipfix.standardDeviationPayloadLength": {
+            "path_match": "ipfix.standardDeviationPayloadLength",
+            "mapping": {
+              "type": "integer"
             }
           }
         },
@@ -7008,6 +7912,22 @@
           }
         },
         {
+          "ipfix.tftpFilename": {
+            "path_match": "ipfix.tftpFilename",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "ipfix.tftpMode": {
+            "path_match": "ipfix.tftpMode",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "ipfix.totalLengthIPv4": {
             "path_match": "ipfix.totalLengthIPv4",
             "mapping": {
@@ -7064,6 +7984,14 @@
           }
         },
         {
+          "ipfix.unionTCPFlags": {
+            "path_match": "ipfix.unionTCPFlags",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "ipfix.upperCILimit": {
             "path_match": "ipfix.upperCILimit",
             "mapping": {
@@ -7084,6 +8012,14 @@
             "path_match": "ipfix.valueDistributionMethod",
             "mapping": {
               "type": "integer"
+            }
+          }
+        },
+        {
+          "ipfix.viptelaVPNId": {
+            "path_match": "ipfix.viptelaVPNId",
+            "mapping": {
+              "type": "long"
             }
           }
         },
@@ -7162,8 +8098,80 @@
 
 
         {
+          "netflow.absoluteError": {
+            "path_match": "netflow.absoluteError",
+            "mapping": {
+              "type": "double"
+            }
+          }
+        },
+        {
+          "netflow.anonymizationFlags": {
+            "path_match": "netflow.anonymizationFlags",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.anonymizationTechnique": {
+            "path_match": "netflow.anonymizationTechnique",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.app_id": {
+            "path_match": "netflow.app_id",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.application_description": {
+            "path_match": "netflow.application_description",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "netflow.application_id": {
             "path_match": "netflow.application_id",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.application_name": {
+            "path_match": "netflow.application_name",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.applicationCategoryName": {
+            "path_match": "netflow.applicationCategoryName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.applicationGroupName": {
+            "path_match": "netflow.applicationGroupName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.applicationSubCategoryName": {
+            "path_match": "netflow.applicationSubCategoryName",
             "mapping": {
               "type": "keyword"
             }
@@ -7186,8 +8194,160 @@
           }
         },
         {
+          "netflow.bgpNextAdjacentAsNumber": {
+            "path_match": "netflow.bgpNextAdjacentAsNumber",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.bgpPrevAdjacentAsNumber": {
+            "path_match": "netflow.bgpPrevAdjacentAsNumber",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.bgpValidityState": {
+            "path_match": "netflow.bgpValidityState",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.biflowDirection": {
+            "path_match": "netflow.biflowDirection",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.collectorCertificate": {
+            "path_match": "netflow.collectorCertificate",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.collectorIPv4Address": {
+            "path_match": "netflow.collectorIPv4Address",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.collectorIPv6Address": {
+            "path_match": "netflow.collectorIPv6Address",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.collectionTimeMilliseconds": {
+            "path_match": "netflow.collectionTimeMilliseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.collectorTransportPort": {
+            "path_match": "netflow.collectorTransportPort",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.commonPropertiesId": {
+            "path_match": "netflow.commonPropertiesId",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.confidenceLevel": {
+            "path_match": "netflow.confidenceLevel",
+            "mapping": {
+              "type": "double"
+            }
+          }
+        },
+        {
           "netflow.conn_id": {
             "path_match": "netflow.conn_id",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.connectionSumDurationSeconds": {
+            "path_match": "netflow.connectionSumDurationSeconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.connectionTransactionId": {
+            "path_match": "netflow.connectionTransactionId",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.dataLinkFrameSection": {
+            "path_match": "netflow.dataLinkFrameSection",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.dataLinkFrameSize": {
+            "path_match": "netflow.dataLinkFrameSize",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.dataLinkFrameType": {
+            "path_match": "netflow.dataLinkFrameType",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.dataRecordsReliability": {
+            "path_match": "netflow.dataRecordsReliability",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.destinationIPv6Prefix": {
+            "path_match": "netflow.destinationIPv6Prefix",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.digestHashValue": {
+            "path_match": "netflow.digestHashValue",
             "mapping": {
               "type": "long"
             }
@@ -7198,6 +8358,190 @@
             "path_match": "netflow.direction",
             "mapping": {
               "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.distinctCountOfDestinationIPAddress": {
+            "path_match": "netflow.distinctCountOfDestinationIPAddress",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.distinctCountOfDestinationIPv4Address": {
+            "path_match": "netflow.distinctCountOfDestinationIPv4Address",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.distinctCountOfDestinationIPv6Address": {
+            "path_match": "netflow.distinctCountOfDestinationIPv6Address",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.distinctCountOfSourceIPAddress": {
+            "path_match": "netflow.distinctCountOfSourceIPAddress",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.distinctCountOfSourceIPv4Address": {
+            "path_match": "netflow.distinctCountOfSourceIPv4Address",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.distinctCountOfSourceIPv6Address": {
+            "path_match": "netflow.distinctCountOfSourceIPv6Address",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.dot1qCustomerDEI": {
+            "path_match": "netflow.dot1qCustomerDEI",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.dot1qCustomerDestinationMacAddress": {
+            "path_match": "netflow.dot1qCustomerDestinationMacAddress",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.dot1qCustomerPriority": {
+            "path_match": "netflow.dot1qCustomerPriority",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.dot1qCustomerSourceMacAddress": {
+            "path_match": "netflow.dot1qCustomerSourceMacAddress",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.dot1qCustomerVlanId": {
+            "path_match": "netflow.dot1qCustomerVlanId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.dot1qDEI": {
+            "path_match": "netflow.dot1qDEI",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.dot1qPriority": {
+            "path_match": "netflow.dot1qPriority",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.dot1qServiceInstanceId": {
+            "path_match": "netflow.dot1qServiceInstanceId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.dot1qServiceInstancePriority": {
+            "path_match": "netflow.dot1qServiceInstancePriority",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.dot1qServiceInstanceTag": {
+            "path_match": "netflow.dot1qServiceInstanceTag",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.dot1qVlanId": {
+            "path_match": "netflow.dot1qVlanId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.droppedLayer2OctetDeltaCount": {
+            "path_match": "netflow.droppedLayer2OctetDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.droppedLayer2OctetTotalCount": {
+            "path_match": "netflow.droppedLayer2OctetTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.droppedOctetDeltaCount": {
+            "path_match": "netflow.droppedOctetDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.droppedOctetTotalCount": {
+            "path_match": "netflow.droppedOctetTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.droppedPacketDeltaCount": {
+            "path_match": "netflow.droppedPacketDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.droppedPacketTotalCount": {
+            "path_match": "netflow.droppedPacketTotalCount",
+            "mapping": {
+              "type": "long"
             }
           }
         },
@@ -7234,6 +8578,54 @@
           }
         },
         {
+          "netflow.egressBroadcastPacketTotalCount": {
+            "path_match": "netflow.egressBroadcastPacketTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.egressInterfaceType": {
+            "path_match": "netflow.egressInterfaceType",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.egressPhysicalInterface": {
+            "path_match": "netflow.egressPhysicalInterface",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.egressUnicastPacketTotalCount": {
+            "path_match": "netflow.egressUnicastPacketTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.egressVRFID": {
+            "path_match": "netflow.egressVRFID",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.encryptedTechnology": {
+            "path_match": "netflow.encryptedTechnology",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "netflow.engine_id": {
             "path_match": "netflow.engine_id",
             "mapping": {
@@ -7250,10 +8642,50 @@
           }
         },
         {
+          "netflow.ethernetHeaderLength": {
+            "path_match": "netflow.ethernetHeaderLength",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.ethernetPayloadLength": {
+            "path_match": "netflow.ethernetPayloadLength",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.ethernetTotalLength": {
+            "path_match": "netflow.ethernetTotalLength",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.ethernetType": {
+            "path_match": "netflow.ethernetType",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "netflow.event_time_msec": {
             "path_match": "netflow.event_time_msec",
             "mapping": {
               "type": "date"
+            }
+          }
+        },
+        {
+          "netflow.exporterCertificate": {
+            "path_match": "netflow.exporterCertificate",
+            "mapping": {
+              "type": "keyword"
             }
           }
         },
@@ -7274,6 +8706,54 @@
           }
         },
         {
+          "netflow.exporterTransportPort": {
+            "path_match": "netflow.exporterTransportPort",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.exportingProcessId": {
+            "path_match": "netflow.exportingProcessId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.exportInterface": {
+            "path_match": "netflow.exportInterface",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.exportProtocolVersion": {
+            "path_match": "netflow.exportProtocolVersion",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.exportSctpStreamId": {
+            "path_match": "netflow.exportSctpStreamId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.exportTransportProtocol": {
+            "path_match": "netflow.exportTransportProtocol",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "netflow.first_switched": {
             "path_match": "netflow.first_switched",
             "mapping": {
@@ -7286,6 +8766,14 @@
             "path_match": "netflow.flow_active_timeout",
             "mapping": {
               "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.flow_end_msec": {
+            "path_match": "netflow.flow_end_msec",
+            "mapping": {
+              "type": "long"
             }
           }
         },
@@ -7349,7 +8837,63 @@
           "netflow.flow_start_msec": {
             "path_match": "netflow.flow_start_msec",
             "mapping": {
-              "type": "date"
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.flowDurationMicroseconds": {
+            "path_match": "netflow.flowDurationMicroseconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.flowDurationMilliseconds": {
+            "path_match": "netflow.flowDurationMilliseconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.flowEndDeltaMicroseconds": {
+            "path_match": "netflow.flowEndDeltaMicroseconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.flowEndMicroseconds": {
+            "path_match": "netflow.flowEndMicroseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.flowEndNanoseconds": {
+            "path_match": "netflow.flowEndNanoseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.flowEndSeconds": {
+            "path_match": "netflow.flowEndSeconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.flowKeyIndicator": {
+            "path_match": "netflow.flowKeyIndicator",
+            "mapping": {
+              "type": "long"
             }
           }
         },
@@ -7362,8 +8906,112 @@
           }
         },
         {
+          "netflow.flowSamplingTimeInterval": {
+            "path_match": "netflow.flowSamplingTimeInterval",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.flowSamplingTimeSpacing": {
+            "path_match": "netflow.flowSamplingTimeSpacing",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.flowSelectedFlowDeltaCount": {
+            "path_match": "netflow.flowSelectedFlowDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.flowSelectedOctetDeltaCount": {
+            "path_match": "netflow.flowSelectedOctetDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.flowSelectedPacketDeltaCount": {
+            "path_match": "netflow.flowSelectedPacketDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.flowSelectorAlgorithm": {
+            "path_match": "netflow.flowSelectorAlgorithm",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "netflow.flowset_id": {
             "path_match": "netflow.flowset_id",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.flowStartDeltaMicroseconds": {
+            "path_match": "netflow.flowStartDeltaMicroseconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.flowStartMicroseconds": {
+            "path_match": "netflow.flowStartMicroseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.flowStartNanoseconds": {
+            "path_match": "netflow.flowStartNanoseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.flowStartSeconds": {
+            "path_match": "netflow.flowStartSeconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.forwarding_status.reason": {
+            "path_match": "netflow.forwarding_status.reason",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.forwarding_status.status": {
+            "path_match": "netflow.forwarding_status.status",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.fragmentFlags": {
+            "path_match": "netflow.fragmentFlags",
             "mapping": {
               "type": "integer"
             }
@@ -7388,6 +9036,86 @@
         {
           "netflow.fwd_flow_delta_bytes": {
             "path_match": "netflow.fwd_flow_delta_bytes",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.greKey": {
+            "path_match": "netflow.greKey",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.hashDigestOutput": {
+            "path_match": "netflow.hashDigestOutput",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.hashFlowDomain": {
+            "path_match": "netflow.hashFlowDomain",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.hashInitialiserValue": {
+            "path_match": "netflow.hashInitialiserValue",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.hashIPPayloadOffset": {
+            "path_match": "netflow.hashIPPayloadOffset",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.hashIPPayloadSize": {
+            "path_match": "netflow.hashIPPayloadSize",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.hashOutputRangeMax": {
+            "path_match": "netflow.hashOutputRangeMax",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.hashOutputRangeMin": {
+            "path_match": "netflow.hashOutputRangeMin",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.hashSelectedRangeMax": {
+            "path_match": "netflow.hashSelectedRangeMax",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.hashSelectedRangeMin": {
+            "path_match": "netflow.hashSelectedRangeMin",
             "mapping": {
               "type": "long"
             }
@@ -7426,6 +9154,14 @@
           }
         },
         {
+          "netflow.icmpTypeCodeIPv6": {
+            "path_match": "netflow.icmpTypeCodeIPv6",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "netflow.if_desc": {
             "path_match": "netflow.if_desc",
             "mapping": {
@@ -7438,6 +9174,46 @@
             "path_match": "netflow.if_name",
             "mapping": {
               "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.ignoredDataRecordTotalCount": {
+            "path_match": "netflow.ignoredDataRecordTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.ignoredLayer2FrameTotalCount": {
+            "path_match": "netflow.ignoredLayer2FrameTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.ignoredLayer2OctetTotalCount": {
+            "path_match": "netflow.ignoredLayer2OctetTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.ignoredOctetTotalCount": {
+            "path_match": "netflow.ignoredOctetTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.ignoredPacketTotalCount": {
+            "path_match": "netflow.ignoredPacketTotalCount",
+            "mapping": {
+              "type": "long"
             }
           }
         },
@@ -7490,6 +9266,134 @@
           }
         },
         {
+          "netflow.informationElementDataType": {
+            "path_match": "netflow.informationElementDataType",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.informationElementDescription": {
+            "path_match": "netflow.informationElementDescription",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.informationElementId": {
+            "path_match": "netflow.informationElementId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.informationElementIndex": {
+            "path_match": "netflow.informationElementIndex",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.informationElementName": {
+            "path_match": "netflow.informationElementName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.informationElementRangeBegin": {
+            "path_match": "netflow.informationElementRangeBegin",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.informationElementRangeEnd": {
+            "path_match": "netflow.informationElementRangeEnd",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.informationElementSemantics": {
+            "path_match": "netflow.informationElementSemantics",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.informationElementUnits": {
+            "path_match": "netflow.informationElementUnits",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.ingressBroadcastPacketTotalCount": {
+            "path_match": "netflow.ingressBroadcastPacketTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.ingressInterfaceType": {
+            "path_match": "netflow.ingressInterfaceType",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.ingressMulticastPacketTotalCount": {
+            "path_match": "netflow.ingressMulticastPacketTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.ingressPhysicalInterface": {
+            "path_match": "netflow.ingressPhysicalInterface",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.ingressUnicastPacketTotalCount": {
+            "path_match": "netflow.ingressUnicastPacketTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.ingressVRFID": {
+            "path_match": "netflow.ingressVRFID",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.initiatorPackets": {
+            "path_match": "netflow.initiatorPackets",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "netflow.input_snmp": {
             "path_match": "netflow.input_snmp",
             "mapping": {
@@ -7498,8 +9402,96 @@
           }
         },
         {
+          "netflow.intermediateProcessId": {
+            "path_match": "netflow.intermediateProcessId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.ip_dscp": {
+            "path_match": "netflow.ip_dscp",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "netflow.ip_protocol_version": {
             "path_match": "netflow.ip_protocol_version",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.ip_tos": {
+            "path_match": "netflow.ip_tos",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.ipHeaderLength": {
+            "path_match": "netflow.ipHeaderLength",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.ipHeaderPacketSection": {
+            "path_match": "netflow.ipHeaderPacketSection",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.ipPayloadLength": {
+            "path_match": "netflow.ipPayloadLength",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.ipPayloadPacketSection": {
+            "path_match": "netflow.ipPayloadPacketSection",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.ipPrecedence": {
+            "path_match": "netflow.ipPrecedence",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.IPSecSPI": {
+            "path_match": "netflow.IPSecSPI",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.ipTotalLength": {
+            "path_match": "netflow.ipTotalLength",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.ipTTL": {
+            "path_match": "netflow.ipTTL",
             "mapping": {
               "type": "integer"
             }
@@ -7550,6 +9542,22 @@
             "path_match": "netflow.ipv4_src_prefix",
             "mapping": {
               "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.ipv4IHL": {
+            "path_match": "netflow.ipv4IHL",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.ipv4Options": {
+            "path_match": "netflow.ipv4Options",
+            "mapping": {
+              "type": "integer"
             }
           }
         },
@@ -7610,6 +9618,14 @@
           }
         },
         {
+          "netflow.isMulticast": {
+            "path_match": "netflow.isMulticast",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "netflow.l4_dst_port": {
             "path_match": "netflow.l4_dst_port",
             "mapping": {
@@ -7634,6 +9650,78 @@
           }
         },
         {
+          "netflow.layer2FrameDeltaCount": {
+            "path_match": "netflow.layer2FrameDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.layer2FrameTotalCount": {
+            "path_match": "netflow.layer2FrameTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.layer2OctetDeltaCount": {
+            "path_match": "netflow.layer2OctetDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.layer2OctetDeltaSumOfSquares": {
+            "path_match": "netflow.layer2OctetDeltaSumOfSquares",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.layer2OctetTotalCount": {
+            "path_match": "netflow.layer2OctetTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.layer2OctetTotalSumOfSquares": {
+            "path_match": "netflow.layer2OctetTotalSumOfSquares",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.layer2SegmentId": {
+            "path_match": "netflow.layer2SegmentId",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.lineCardId": {
+            "path_match": "netflow.lineCardId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.lowerCILimit": {
+            "path_match": "netflow.lowerCILimit",
+            "mapping": {
+              "type": "double"
+            }
+          }
+        },
+        {
           "netflow.max_pkt_length": {
             "path_match": "netflow.max_pkt_length",
             "mapping": {
@@ -7644,6 +9732,94 @@
         {
           "netflow.max_ttl": {
             "path_match": "netflow.max_ttl",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.maxExportSeconds": {
+            "path_match": "netflow.maxExportSeconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.maxFlowEndMicroseconds": {
+            "path_match": "netflow.maxFlowEndMicroseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.maxFlowEndMilliseconds": {
+            "path_match": "netflow.maxFlowEndMilliseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.maxFlowEndNanoseconds": {
+            "path_match": "netflow.maxFlowEndNanoseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.maxFlowEndSeconds": {
+            "path_match": "netflow.maxFlowEndSeconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.maximumLayer2TotalLength": {
+            "path_match": "netflow.maximumLayer2TotalLength",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.messageMD5Checksum": {
+            "path_match": "netflow.messageMD5Checksum",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.messageScope": {
+            "path_match": "netflow.messageScope",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.meteringProcessId": {
+            "path_match": "netflow.meteringProcessId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.metroEvcId": {
+            "path_match": "netflow.metroEvcId",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.metroEvcType": {
+            "path_match": "netflow.metroEvcType",
             "mapping": {
               "type": "integer"
             }
@@ -7662,6 +9838,70 @@
             "path_match": "netflow.min_ttl",
             "mapping": {
               "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.minExportSeconds": {
+            "path_match": "netflow.minExportSeconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.minFlowStartMicroseconds": {
+            "path_match": "netflow.minFlowStartMicroseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.minFlowStartMilliseconds": {
+            "path_match": "netflow.minFlowStartMilliseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.minFlowStartNanoseconds": {
+            "path_match": "netflow.minFlowStartNanoseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.minFlowStartSeconds": {
+            "path_match": "netflow.minFlowStartSeconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.minimumLayer2TotalLength": {
+            "path_match": "netflow.minimumLayer2TotalLength",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.monitoringIntervalEndMilliSeconds": {
+            "path_match": "netflow.monitoringIntervalEndMilliSeconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.monitoringIntervalStartMilliSeconds": {
+            "path_match": "netflow.monitoringIntervalStartMilliSeconds",
+            "mapping": {
+              "type": "long"
             }
           }
         },
@@ -7714,6 +9954,54 @@
           }
         },
         {
+          "netflow.mplsLabelStackDepth": {
+            "path_match": "netflow.mplsLabelStackDepth",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.mplsLabelStackSection": {
+            "path_match": "netflow.mplsLabelStackSection",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.mplsPayloadPacketSection": {
+            "path_match": "netflow.mplsPayloadPacketSection",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.mplsTopLabelExp": {
+            "path_match": "netflow.mplsTopLabelExp",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.mplsTopLabelIPv6Address": {
+            "path_match": "netflow.mplsTopLabelIPv6Address",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.mplsTopLabelTTL": {
+            "path_match": "netflow.mplsTopLabelTTL",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "netflow.mul_dst_bytes": {
             "path_match": "netflow.mul_dst_bytes",
             "mapping": {
@@ -7738,10 +10026,250 @@
           }
         },
         {
+          "netflow.natEvent": {
+            "path_match": "netflow.natEvent",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.natOriginatingAddressRealm": {
+            "path_match": "netflow.natOriginatingAddressRealm",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.natPoolId": {
+            "path_match": "netflow.natPoolId",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.natPoolName": {
+            "path_match": "netflow.natPoolName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.natType": {
+            "path_match": "netflow.natType",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.newConnectionDeltaCount": {
+            "path_match": "netflow.newConnectionDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.nextHeaderIPv6": {
+            "path_match": "netflow.nextHeaderIPv6",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.notSentFlowTotalCount": {
+            "path_match": "netflow.notSentFlowTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.notSentLayer2OctetTotalCount": {
+            "path_match": "netflow.notSentLayer2OctetTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.notSentOctetTotalCount": {
+            "path_match": "netflow.notSentOctetTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.notSentPacketTotalCount": {
+            "path_match": "netflow.notSentPacketTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "netflow.out_bytes": {
             "path_match": "netflow.out_bytes",
             "mapping": {
               "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.nprobe_proto": {
+            "path_match": "netflow.nprobe_proto",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.nprobe_proto_name": {
+            "path_match": "netflow.nprobe_proto_name",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.observationDomainId": {
+            "path_match": "netflow.observationDomainId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.observationDomainName": {
+            "path_match": "netflow.observationDomainName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.observationPointId": {
+            "path_match": "netflow.observationPointId",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.observationPointType": {
+            "path_match": "netflow.observationPointType",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.observationTimeMicroseconds": {
+            "path_match": "netflow.observationTimeMicroseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.observationTimeNanoseconds": {
+            "path_match": "netflow.observationTimeNanoseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.observationTimeSeconds": {
+            "path_match": "netflow.observationTimeSeconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.observedFlowTotalCount": {
+            "path_match": "netflow.observedFlowTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.octetDeltaSumOfSquares": {
+            "path_match": "netflow.octetDeltaSumOfSquares",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.octetTotalSumOfSquares": {
+            "path_match": "netflow.octetTotalSumOfSquares",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.opaqueOctets": {
+            "path_match": "netflow.opaqueOctets",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.originalExporterIPv4Address": {
+            "path_match": "netflow.originalExporterIPv4Address",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.originalExporterIPv6Address": {
+            "path_match": "netflow.originalExporterIPv6Address",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.originalFlowsCompleted": {
+            "path_match": "netflow.originalFlowsCompleted",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.originalFlowsInitiated": {
+            "path_match": "netflow.originalFlowsInitiated",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.originalFlowsPresent": {
+            "path_match": "netflow.originalFlowsPresent",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.originalObservationDomainId": {
+            "path_match": "netflow.originalObservationDomainId",
+            "mapping": {
+              "type": "integer"
             }
           }
         },
@@ -7778,6 +10306,174 @@
           }
         },
         {
+          "netflow.p2pTechnology": {
+            "path_match": "netflow.p2pTechnology",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.payloadLengthIPv6": {
+            "path_match": "netflow.payloadLengthIPv6",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.portId": {
+            "path_match": "netflow.portId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.portRangeNumPorts": {
+            "path_match": "netflow.portRangeNumPorts",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.portRangeStepSize": {
+            "path_match": "netflow.portRangeStepSize",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.postDot1qCustomerVlanId": {
+            "path_match": "netflow.postDot1qCustomerVlanId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.postDot1qVlanId": {
+            "path_match": "netflow.postDot1qVlanId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.postIpDiffServCodePoint": {
+            "path_match": "netflow.postIpDiffServCodePoint",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.postIpPrecedence": {
+            "path_match": "netflow.postIpPrecedence",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.postLayer2OctetDeltaCount": {
+            "path_match": "netflow.postLayer2OctetDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.postLayer2OctetTotalCount": {
+            "path_match": "netflow.postLayer2OctetTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.postMCastLayer2OctetDeltaCount": {
+            "path_match": "netflow.postMCastLayer2OctetDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.postMCastLayer2OctetTotalCount": {
+            "path_match": "netflow.postMCastLayer2OctetTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.postMCastPacketTotalCount": {
+            "path_match": "netflow.postMCastPacketTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.postMCastOctetTotalCount": {
+            "path_match": "netflow.postMCastOctetTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.postMplsTopLabelExp": {
+            "path_match": "netflow.postMplsTopLabelExp",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.postNATPortBlockEnd": {
+            "path_match": "netflow.postNATPortBlockEnd",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.postNATPortBlockStart": {
+            "path_match": "netflow.postNATPortBlockStart",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.postOctetTotalCount": {
+            "path_match": "netflow.postOctetTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.postPacketTotalCount": {
+            "path_match": "netflow.postPacketTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.privateEnterpriseNumber": {
+            "path_match": "netflow.privateEnterpriseNumber",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
           "netflow.protocol": {
             "path_match": "netflow.protocol",
             "mapping": {
@@ -7786,10 +10482,90 @@
           }
         },
         {
+          "netflow.pseudoWireControlWord": {
+            "path_match": "netflow.pseudoWireControlWord",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.pseudoWireDestinationIPv4Address": {
+            "path_match": "netflow.pseudoWireDestinationIPv4Address",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.pseudoWireId": {
+            "path_match": "netflow.pseudoWireId",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.pseudoWireType": {
+            "path_match": "netflow.pseudoWireType",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.relativeError": {
+            "path_match": "netflow.relativeError",
+            "mapping": {
+              "type": "double"
+            }
+          }
+        },
+        {
+          "netflow.responderPackets": {
+            "path_match": "netflow.responderPackets",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "netflow.rev_flow_delta_bytes": {
             "path_match": "netflow.rev_flow_delta_bytes",
             "mapping": {
               "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.rfc3550JitterMicroseconds": {
+            "path_match": "netflow.rfc3550JitterMicroseconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.rfc3550JitterMilliseconds": {
+            "path_match": "netflow.rfc3550JitterMilliseconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.rfc3550JitterNanoseconds": {
+            "path_match": "netflow.rfc3550JitterNanoseconds",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.rtpSequenceNumber": {
+            "path_match": "netflow.rtpSequenceNumber",
+            "mapping": {
+              "type": "integer"
             }
           }
         },
@@ -7814,6 +10590,182 @@
             "path_match": "netflow.sampling_interval",
             "mapping": {
               "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.samplingFlowInterval": {
+            "path_match": "netflow.samplingFlowInterval",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.samplingFlowSpacing": {
+            "path_match": "netflow.samplingFlowSpacing",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.samplingPacketInterval": {
+            "path_match": "netflow.samplingPacketInterval",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.samplingPacketSpace": {
+            "path_match": "netflow.samplingPacketSpace",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.samplingPopulation": {
+            "path_match": "netflow.samplingPopulation",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.samplingProbability": {
+            "path_match": "netflow.samplingProbability",
+            "mapping": {
+              "type": "double"
+            }
+          }
+        },
+        {
+          "netflow.samplingSize": {
+            "path_match": "netflow.samplingSize",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.samplingTimeInterval": {
+            "path_match": "netflow.samplingTimeInterval",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.samplingTimeSpace": {
+            "path_match": "netflow.samplingTimeSpace",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.scope_system": {
+            "path_match": "netflow.scope_system",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.sectionExportedOctets": {
+            "path_match": "netflow.sectionExportedOctets",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.sectionOffset": {
+            "path_match": "netflow.sectionOffset",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.selectionSequenceId": {
+            "path_match": "netflow.selectionSequenceId",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.selectorAlgorithm": {
+            "path_match": "netflow.selectorAlgorithm",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.selectorId": {
+            "path_match": "netflow.selectorId",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.selectorIDTotalFlowsObserved": {
+            "path_match": "netflow.selectorIDTotalFlowsObserved",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.selectorIDTotalFlowsSelected": {
+            "path_match": "netflow.selectorIDTotalFlowsSelected",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.selectorIdTotalPktsObserved": {
+            "path_match": "netflow.selectorIdTotalPktsObserved",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.selectorIdTotalPktsSelected": {
+            "path_match": "netflow.selectorIdTotalPktsSelected",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.selectorName": {
+            "path_match": "netflow.selectorName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.sessionScope": {
+            "path_match": "netflow.sessionScope",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.sourceIPv6Prefix": {
+            "path_match": "netflow.sourceIPv6Prefix",
+            "mapping": {
+              "type": "ip"
             }
           }
         },
@@ -7850,6 +10802,254 @@
           }
         },
         {
+          "netflow.staIPv4Address": {
+            "path_match": "netflow.staIPv4Address",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.staMacAddress": {
+            "path_match": "netflow.staMacAddress",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_wan_rtt": {
+            "path_match": "netflow.streamcore_wan_rtt",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_net_app_resp_time": {
+            "path_match": "netflow.streamcore_net_app_resp_time",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_total_app_resp_time": {
+            "path_match": "netflow.streamcore_total_app_resp_time",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_tcp_retrans_rate": {
+            "path_match": "netflow.streamcore_tcp_retrans_rate",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_call_direction": {
+            "path_match": "netflow.streamcore_call_direction",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_hostname": {
+            "path_match": "netflow.streamcore_hostname",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_url": {
+            "path_match": "netflow.streamcore_url",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_ssl_cn": {
+            "path_match": "netflow.streamcore_ssl_cn",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_ssl_org": {
+            "path_match": "netflow.streamcore_ssl_org",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_mos_lq": {
+            "path_match": "netflow.streamcore_mos_lq",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_net_delay": {
+            "path_match": "netflow.streamcore_net_delay",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_net_loss": {
+            "path_match": "netflow.streamcore_net_loss",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_net_jitter": {
+            "path_match": "netflow.streamcore_net_jitter",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_net_discard": {
+            "path_match": "netflow.streamcore_net_discard",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_rtp_clockrate_in": {
+            "path_match": "netflow.streamcore_rtp_clockrate_in",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_rtp_clockrate_out": {
+            "path_match": "netflow.streamcore_rtp_clockrate_out",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_codec_in": {
+            "path_match": "netflow.streamcore_codec_in",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_codec_out": {
+            "path_match": "netflow.streamcore_codec_out",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_id_rule_1": {
+            "path_match": "netflow.streamcore_id_rule_1",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_id_rule_2": {
+            "path_match": "netflow.streamcore_id_rule_2",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_id_rule_3": {
+            "path_match": "netflow.streamcore_id_rule_3",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_id_rule_4": {
+            "path_match": "netflow.streamcore_id_rule_4",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_id_rule_5": {
+            "path_match": "netflow.streamcore_id_rule_5",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_id_rule_6": {
+            "path_match": "netflow.streamcore_id_rule_6",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_id_rule_7": {
+            "path_match": "netflow.streamcore_id_rule_7",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_id_rule_8": {
+            "path_match": "netflow.streamcore_id_rule_8",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_id_rule_9": {
+            "path_match": "netflow.streamcore_id_rule_9",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.streamcore_id_rule_10": {
+            "path_match": "netflow.streamcore_id_rule_10",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.systemInitTimeMilliseconds": {
+            "path_match": "netflow.systemInitTimeMilliseconds",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "netflow.tcp_dst_port": {
             "path_match": "netflow.tcp_dst_port",
             "mapping": {
@@ -7868,6 +11068,126 @@
         {
           "netflow.tcp_src_port": {
             "path_match": "netflow.tcp_src_port",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.tcpAcknowledgementNumber": {
+            "path_match": "netflow.tcpAcknowledgementNumber",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.tcpAckTotalCount": {
+            "path_match": "netflow.tcpAckTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.tcpDestinationPort": {
+            "path_match": "netflow.tcpDestinationPort",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.tcpFinTotalCount": {
+            "path_match": "netflow.tcpFinTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.tcpHeaderLength": {
+            "path_match": "netflow.tcpHeaderLength",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.tcpOptions": {
+            "path_match": "netflow.tcpOptions",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.tcpPshTotalCount": {
+            "path_match": "netflow.tcpPshTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.tcpRstTotalCount": {
+            "path_match": "netflow.tcpRstTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.tcpSequenceNumber": {
+            "path_match": "netflow.tcpSequenceNumber",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.tcpSynTotalCount": {
+            "path_match": "netflow.tcpSynTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.tcpUrgentPointer": {
+            "path_match": "netflow.tcpUrgentPointer",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.tcpUrgTotalCount": {
+            "path_match": "netflow.tcpUrgTotalCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.tcpWindowScale": {
+            "path_match": "netflow.tcpWindowScale",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.tcpWindowSize": {
+            "path_match": "netflow.tcpWindowSize",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.templateId": {
+            "path_match": "netflow.templateId",
             "mapping": {
               "type": "integer"
             }
@@ -7898,6 +11218,38 @@
           }
         },
         {
+          "netflow.totalLengthIPv4": {
+            "path_match": "netflow.totalLengthIPv4",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.transportOctetDeltaCount": {
+            "path_match": "netflow.transportOctetDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.transportPacketDeltaCount": {
+            "path_match": "netflow.transportPacketDeltaCount",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.tunnelTechnology": {
+            "path_match": "netflow.tunnelTechnology",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "netflow.udp_dst_port": {
             "path_match": "netflow.udp_dst_port",
             "mapping": {
@@ -7914,8 +11266,120 @@
           }
         },
         {
+          "netflow.udpMessageLength": {
+            "path_match": "netflow.udpMessageLength",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.upperCILimit": {
+            "path_match": "netflow.upperCILimit",
+            "mapping": {
+              "type": "double"
+            }
+          }
+        },
+        {
+          "netflow.user_id": {
+            "path_match": "netflow.user_id",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "netflow.username": {
             "path_match": "netflow.username",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.userName": {
+            "path_match": "netflow.userName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.valueDistributionMethod": {
+            "path_match": "netflow.valueDistributionMethod",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.virtualStationInterfaceId": {
+            "path_match": "netflow.virtualStationInterfaceId",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.virtualStationInterfaceName": {
+            "path_match": "netflow.virtualStationInterfaceName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.virtualStationName": {
+            "path_match": "netflow.virtualStationName",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.virtualStationUUID": {
+            "path_match": "netflow.virtualStationUUID",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.VRFname": {
+            "path_match": "netflow.VRFname",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.wlan_id": {
+            "path_match": "netflow.wlan_id",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.wlanChannelId": {
+            "path_match": "netflow.wlanChannelId",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "netflow.wlanSSID": {
+            "path_match": "netflow.wlanSSID",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.wtpMacAddress": {
+            "path_match": "netflow.wtpMacAddress",
             "mapping": {
               "type": "keyword"
             }
@@ -8598,6 +12062,12 @@
           "dynamic": true,
           "type": "object",
           "properties": {
+            "bgp_next_hop": {
+              "type": "ip"
+            },
+            "bgp_valid_state": {
+              "type": "integer"
+            },
             "bytes": {
               "type": "long"
             },
