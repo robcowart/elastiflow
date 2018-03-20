@@ -1211,7 +1211,7 @@
           "ipfix.flowEndMicroseconds": {
             "path_match": "ipfix.flowEndMicroseconds",
             "mapping": {
-              "type": "long"
+              "type": "date"
             }
           }
         },
@@ -1219,7 +1219,7 @@
           "ipfix.flowEndMilliseconds": {
             "path_match": "ipfix.flowEndMilliseconds",
             "mapping": {
-              "type": "long"
+              "type": "date"
             }
           }
         },
@@ -1227,7 +1227,7 @@
           "ipfix.flowEndNanoseconds": {
             "path_match": "ipfix.flowEndNanoseconds",
             "mapping": {
-              "type": "long"
+              "type": "date"
             }
           }
         },
@@ -1243,7 +1243,7 @@
           "ipfix.flowEndSeconds": {
             "path_match": "ipfix.flowEndSeconds",
             "mapping": {
-              "type": "long"
+              "type": "date"
             }
           }
         },
@@ -1347,7 +1347,7 @@
           "ipfix.flowStartMicroseconds": {
             "path_match": "ipfix.flowStartMicroseconds",
             "mapping": {
-              "type": "long"
+              "type": "date"
             }
           }
         },
@@ -1355,7 +1355,7 @@
           "ipfix.flowStartMilliseconds": {
             "path_match": "ipfix.flowStartMilliseconds",
             "mapping": {
-              "type": "long"
+              "type": "date"
             }
           }
         },
@@ -1363,7 +1363,7 @@
           "ipfix.flowStartNanoseconds": {
             "path_match": "ipfix.flowStartNanoseconds",
             "mapping": {
-              "type": "long"
+              "type": "date"
             }
           }
         },
@@ -1371,7 +1371,7 @@
           "ipfix.flowStartSeconds": {
             "path_match": "ipfix.flowStartSeconds",
             "mapping": {
-              "type": "long"
+              "type": "date"
             }
           }
         },
@@ -8869,7 +8869,7 @@
           "netflow.flowEndMicroseconds": {
             "path_match": "netflow.flowEndMicroseconds",
             "mapping": {
-              "type": "long"
+              "type": "date"
             }
           }
         },
@@ -8877,7 +8877,7 @@
           "netflow.flowEndNanoseconds": {
             "path_match": "netflow.flowEndNanoseconds",
             "mapping": {
-              "type": "long"
+              "type": "date"
             }
           }
         },
@@ -8885,7 +8885,7 @@
           "netflow.flowEndSeconds": {
             "path_match": "netflow.flowEndSeconds",
             "mapping": {
-              "type": "integer"
+              "type": "date"
             }
           }
         },
@@ -8973,7 +8973,7 @@
           "netflow.flowStartMicroseconds": {
             "path_match": "netflow.flowStartMicroseconds",
             "mapping": {
-              "type": "long"
+              "type": "date"
             }
           }
         },
@@ -8981,7 +8981,7 @@
           "netflow.flowStartNanoseconds": {
             "path_match": "netflow.flowStartNanoseconds",
             "mapping": {
-              "type": "long"
+              "type": "date"
             }
           }
         },
@@ -8989,7 +8989,7 @@
           "netflow.flowStartSeconds": {
             "path_match": "netflow.flowStartSeconds",
             "mapping": {
-              "type": "integer"
+              "type": "date"
             }
           }
         },
