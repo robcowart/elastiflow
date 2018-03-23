@@ -1,6 +1,6 @@
 {
   "order": 0,
-  "version": 18020301,
+  "version": 18032301,
   "index_patterns": "elastiflow-*",
   "template": "elastiflow-*",
   "settings": {
@@ -123,7 +123,7 @@
           "ipfix.bgpDestinationAsNumber": {
             "path_match": "ipfix.bgpDestinationAsNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -131,7 +131,7 @@
           "ipfix.bgpNextAdjacentAsNumber": {
             "path_match": "ipfix.bgpNextAdjacentAsNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -155,7 +155,7 @@
           "ipfix.bgpPrevAdjacentAsNumber": {
             "path_match": "ipfix.bgpPrevAdjacentAsNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -163,7 +163,7 @@
           "ipfix.bgpSourceAsNumber": {
             "path_match": "ipfix.bgpSourceAsNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4203,7 +4203,7 @@
           "ipfix.reverseBgpDestinationAsNumber": {
             "path_match": "ipfix.reverseBgpDestinationAsNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4211,7 +4211,7 @@
           "ipfix.reverseBgpNextAdjacentAsNumber": {
             "path_match": "ipfix.reverseBgpNextAdjacentAsNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4235,7 +4235,7 @@
           "ipfix.reverseBgpPrevAdjacentAsNumber": {
             "path_match": "ipfix.reverseBgpPrevAdjacentAsNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4243,7 +4243,7 @@
           "ipfix.reverseBgpSourceAsNumber": {
             "path_match": "ipfix.reverseBgpSourceAsNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8197,7 +8197,7 @@
           "netflow.bgpNextAdjacentAsNumber": {
             "path_match": "netflow.bgpNextAdjacentAsNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8205,7 +8205,7 @@
           "netflow.bgpPrevAdjacentAsNumber": {
             "path_match": "netflow.bgpPrevAdjacentAsNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
