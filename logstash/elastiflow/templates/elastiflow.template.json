@@ -6987,7 +6987,7 @@
           "ipfix.reverseTcpAcknowledgementNumber": {
             "path_match": "ipfix.reverseTcpAcknowledgementNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7059,7 +7059,7 @@
           "ipfix.reverseTcpSequenceNumber": {
             "path_match": "ipfix.reverseTcpSequenceNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7779,7 +7779,7 @@
           "ipfix.tcpAcknowledgementNumber": {
             "path_match": "ipfix.tcpAcknowledgementNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7851,7 +7851,7 @@
           "ipfix.tcpSequenceNumber": {
             "path_match": "ipfix.tcpSequenceNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11077,7 +11077,7 @@
           "netflow.tcpAcknowledgementNumber": {
             "path_match": "netflow.tcpAcknowledgementNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11141,7 +11141,7 @@
           "netflow.tcpSequenceNumber": {
             "path_match": "netflow.tcpSequenceNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
