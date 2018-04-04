@@ -1,6 +1,8 @@
 # ElastiFlow&trade;
 ElastiFlow&trade; provides network flow data collection and visualization using the Elastic Stack. As of version 2.0.0 it supports Netflow v5/v9, sFlow and IPFIX flow types (1.x versions support only Netflow v5/v9).
 
+> **NOTICE!** Please use a bundled [RELEASE](https://github.com/robcowart/elastiflow/releases). While I strive to commit only working code to `master`, it may sometimes not be complete from an overall solution perspective. For example, new fields may have been added to the data, but the dashboards might not yet use them. As this project has gained in popularity, I realize that I have to get more disciplined in the manner in which I commit code. In particular I need to keep my 'works-in-progress' within DEV branches. Following the next release this is what I will do. However until then... please use a [RELEASE](https://github.com/robcowart/elastiflow/releases).
+
 ![Overview](https://user-images.githubusercontent.com/10326954/35780814-c015a1cc-09e1-11e8-8e7c-770ef279e9d0.png)
 
 I was inspired to create ElastiFlow&trade; following the overwhelmingly positive feedback received to an article I posted on Linkedin... [WTFlow?! Are you really still paying for commercial solutions to collect and analyze network flow data?](https://www.linkedin.com/pulse/wtflow-you-really-still-paying-commercial-solutions-collect-cowart)
@@ -51,12 +53,14 @@ Rather than directly editing the pipeline configuration files for your environme
 
 Environment Variable | Description | Default Value
 --- | --- | ---
-ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/geoipdbs
 ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/dictionaries
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/templates
+ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/geoipdbs
+ELASTIFLOW_GEOIP_LOOKUP | Enable/Disable GeoIP lookups | true
+ELASTIFLOW_ASN_LOOKUP | Enable/Disable ASN lookups | true
+ELASTIFLOW_KEEP_ORIG_DATA | If set to `false` the original `netflow`, `ipfix` and `sflow` objects will be deleted prior to indexing. This can save disk space without affecting the provided dashboards. However the original flow fields will no longer be available if they are desired for additional analytics. | true
 ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests | false
 ELASTIFLOW_NAMESERVER | The DNS server to which the dns filter should send requests | 127.0.0.1
-ELASTIFLOW_KEEP_ORIG_DATA | If set to `false` the original `netflow`, `ipfix` and `sflow` objects will be deleted prior to indexing. This can save disk space without affecting the provided dashboards. However the original flow fields will no longer be available if they are desired for additional analytics. | true
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme

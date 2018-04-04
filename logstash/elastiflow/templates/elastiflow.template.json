@@ -443,7 +443,7 @@
           "ipfix.deltaFlowCount": {
             "path_match": "ipfix.deltaFlowCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -523,7 +523,7 @@
           "ipfix.distinctCountOfDestinationIPAddress": {
             "path_match": "ipfix.distinctCountOfDestinationIPAddress",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -531,7 +531,7 @@
           "ipfix.distinctCountOfDestinationIPv4Address": {
             "path_match": "ipfix.distinctCountOfDestinationIPv4Address",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -539,7 +539,7 @@
           "ipfix.distinctCountOfDestinationIPv6Address": {
             "path_match": "ipfix.distinctCountOfDestinationIPv6Address",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -547,7 +547,7 @@
           "ipfix.distinctCountOfSourceIPAddress": {
             "path_match": "ipfix.distinctCountOfSourceIPAddress",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -555,7 +555,7 @@
           "ipfix.distinctCountOfSourceIPv4Address": {
             "path_match": "ipfix.distinctCountOfSourceIPv4Address",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -563,7 +563,7 @@
           "ipfix.distinctCountOfSourceIPv6Address": {
             "path_match": "ipfix.distinctCountOfSourceIPv6Address",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -859,7 +859,7 @@
           "ipfix.droppedLayer2OctetDeltaCount": {
             "path_match": "ipfix.droppedLayer2OctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -867,7 +867,7 @@
           "ipfix.droppedLayer2OctetTotalCount": {
             "path_match": "ipfix.droppedLayer2OctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -875,7 +875,7 @@
           "ipfix.droppedOctetDeltaCount": {
             "path_match": "ipfix.droppedOctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -883,7 +883,7 @@
           "ipfix.droppedOctetTotalCount": {
             "path_match": "ipfix.droppedOctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -891,7 +891,7 @@
           "ipfix.droppedPacketDeltaCount": {
             "path_match": "ipfix.droppedPacketDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -899,7 +899,7 @@
           "ipfix.droppedPacketTotalCount": {
             "path_match": "ipfix.droppedPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -915,7 +915,7 @@
           "ipfix.egressBroadcastPacketTotalCount": {
             "path_match": "ipfix.egressBroadcastPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -947,7 +947,7 @@
           "ipfix.egressUnicastPacketTotalCount": {
             "path_match": "ipfix.egressUnicastPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1027,7 +1027,7 @@
           "ipfix.exportedFlowRecordTotalCount": {
             "path_match": "ipfix.exportedFlowRecordTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1035,7 +1035,7 @@
           "ipfix.exportedMessageTotalCount": {
             "path_match": "ipfix.exportedMessageTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1043,7 +1043,7 @@
           "ipfix.exportedOctetTotalCount": {
             "path_match": "ipfix.exportedOctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1571,7 +1571,7 @@
           "ipfix.ignoredDataRecordTotalCount": {
             "path_match": "ipfix.ignoredDataRecordTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1579,7 +1579,7 @@
           "ipfix.ignoredLayer2FrameTotalCount": {
             "path_match": "ipfix.ignoredLayer2FrameTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1587,7 +1587,7 @@
           "ipfix.ignoredLayer2OctetTotalCount": {
             "path_match": "ipfix.ignoredLayer2OctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1595,7 +1595,7 @@
           "ipfix.ignoredOctetTotalCount": {
             "path_match": "ipfix.ignoredOctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1603,7 +1603,7 @@
           "ipfix.ignoredPacketTotalCount": {
             "path_match": "ipfix.ignoredPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1683,7 +1683,7 @@
           "ipfix.ingressBroadcastPacketTotalCount": {
             "path_match": "ipfix.ingressBroadcastPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1707,7 +1707,7 @@
           "ipfix.ingressMulticastPacketTotalCount": {
             "path_match": "ipfix.ingressMulticastPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1723,7 +1723,7 @@
           "ipfix.ingressUnicastPacketTotalCount": {
             "path_match": "ipfix.ingressUnicastPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1939,7 +1939,7 @@
           "ipfix.layer2FrameDeltaCount": {
             "path_match": "ipfix.layer2FrameDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1947,7 +1947,7 @@
           "ipfix.layer2FrameTotalCount": {
             "path_match": "ipfix.layer2FrameTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1955,7 +1955,7 @@
           "ipfix.layer2OctetDeltaCount": {
             "path_match": "ipfix.layer2OctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1963,7 +1963,7 @@
           "ipfix.layer2OctetDeltaSumOfSquares": {
             "path_match": "ipfix.layer2OctetDeltaSumOfSquares",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1971,7 +1971,7 @@
           "ipfix.layer2OctetTotalCount": {
             "path_match": "ipfix.layer2OctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1979,7 +1979,7 @@
           "ipfix.layer2OctetTotalSumOfSquares": {
             "path_match": "ipfix.layer2OctetTotalSumOfSquares",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3635,7 +3635,7 @@
           "ipfix.observedFlowTotalCount": {
             "path_match": "ipfix.observedFlowTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3643,7 +3643,7 @@
           "ipfix.octetDeltaCount": {
             "path_match": "ipfix.octetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3651,7 +3651,7 @@
           "ipfix.octetDeltaSumOfSquares": {
             "path_match": "ipfix.octetDeltaSumOfSquares",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3659,7 +3659,7 @@
           "ipfix.octetTotalCount": {
             "path_match": "ipfix.octetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3763,7 +3763,7 @@
           "ipfix.packetDeltaCount": {
             "path_match": "ipfix.packetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3771,7 +3771,7 @@
           "ipfix.packetTotalCount": {
             "path_match": "ipfix.packetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3883,7 +3883,7 @@
           "ipfix.postLayer2OctetDeltaCount": {
             "path_match": "ipfix.postLayer2OctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3891,7 +3891,7 @@
           "ipfix.postLayer2OctetTotalCount": {
             "path_match": "ipfix.postLayer2OctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3899,7 +3899,7 @@
           "ipfix.postMCastLayer2OctetDeltaCount": {
             "path_match": "ipfix.postMCastLayer2OctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3907,7 +3907,7 @@
           "ipfix.postMCastLayer2OctetTotalCount": {
             "path_match": "ipfix.postMCastLayer2OctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3915,7 +3915,7 @@
           "ipfix.postMCastOctetDeltaCount": {
             "path_match": "ipfix.postMCastOctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3923,7 +3923,7 @@
           "ipfix.postMCastOctetTotalCount": {
             "path_match": "ipfix.postMCastOctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3931,7 +3931,7 @@
           "ipfix.postMCastPacketDeltaCount": {
             "path_match": "ipfix.postMCastPacketDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3939,7 +3939,7 @@
           "ipfix.postMCastPacketTotalCount": {
             "path_match": "ipfix.postMCastPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4003,7 +4003,7 @@
           "ipfix.postOctetDeltaCount": {
             "path_match": "ipfix.postOctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4011,7 +4011,7 @@
           "ipfix.postOctetTotalCount": {
             "path_match": "ipfix.postOctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4019,7 +4019,7 @@
           "ipfix.postPacketDeltaCount": {
             "path_match": "ipfix.postPacketDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4027,7 +4027,7 @@
           "ipfix.postPacketTotalCount": {
             "path_match": "ipfix.postPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4363,7 +4363,7 @@
           "ipfix.reverseDeltaFlowCount": {
             "path_match": "ipfix.reverseDeltaFlowCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4443,7 +4443,7 @@
           "ipfix.reverseDistinctCountOfDestinationIPAddress": {
             "path_match": "ipfix.reverseDistinctCountOfDestinationIPAddress",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4451,7 +4451,7 @@
           "ipfix.reverseDistinctCountOfDestinationIPv4Address": {
             "path_match": "ipfix.reverseDistinctCountOfDestinationIPv4Address",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4459,7 +4459,7 @@
           "ipfix.reverseDistinctCountOfDestinationIPv6Address": {
             "path_match": "ipfix.reverseDistinctCountOfDestinationIPv6Address",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4467,7 +4467,7 @@
           "ipfix.reverseDistinctCountOfSourceIPAddress": {
             "path_match": "ipfix.reverseDistinctCountOfSourceIPAddress",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4475,7 +4475,7 @@
           "ipfix.reverseDistinctCountOfSourceIPv4Address": {
             "path_match": "ipfix.reverseDistinctCountOfSourceIPv4Address",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4483,7 +4483,7 @@
           "ipfix.reverseDistinctCountOfSourceIPv6Address": {
             "path_match": "ipfix.reverseDistinctCountOfSourceIPv6Address",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4579,7 +4579,7 @@
           "ipfix.reverseDroppedLayer2OctetDeltaCount": {
             "path_match": "ipfix.reverseDroppedLayer2OctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4587,7 +4587,7 @@
           "ipfix.reverseDroppedLayer2OctetTotalCount": {
             "path_match": "ipfix.reverseDroppedLayer2OctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4595,7 +4595,7 @@
           "ipfix.reverseDroppedOctetDeltaCount": {
             "path_match": "ipfix.reverseDroppedOctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4603,7 +4603,7 @@
           "ipfix.reverseDroppedOctetTotalCount": {
             "path_match": "ipfix.reverseDroppedOctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4611,7 +4611,7 @@
           "ipfix.reverseDroppedPacketDeltaCount": {
             "path_match": "ipfix.reverseDroppedPacketDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4619,7 +4619,7 @@
           "ipfix.reverseDroppedPacketTotalCount": {
             "path_match": "ipfix.reverseDroppedPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4635,7 +4635,7 @@
           "ipfix.reverseEgressBroadcastPacketTotalCount": {
             "path_match": "ipfix.reverseEgressBroadcastPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4667,7 +4667,7 @@
           "ipfix.reverseEgressUnicastPacketTotalCount": {
             "path_match": "ipfix.reverseEgressUnicastPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4931,7 +4931,7 @@
           "ipfix.reverseFlowSelectedFlowDeltaCount": {
             "path_match": "ipfix.reverseFlowSelectedFlowDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4939,7 +4939,7 @@
           "ipfix.reverseFlowSelectedOctetDeltaCount": {
             "path_match": "ipfix.reverseFlowSelectedOctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4947,7 +4947,7 @@
           "ipfix.reverseFlowSelectedPacketDeltaCount": {
             "path_match": "ipfix.reverseFlowSelectedPacketDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5179,7 +5179,7 @@
           "ipfix.reverseIgnoredDataRecordTotalCount": {
             "path_match": "ipfix.reverseIgnoredDataRecordTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5187,7 +5187,7 @@
           "ipfix.reverseIgnoredLayer2FrameTotalCount": {
             "path_match": "ipfix.reverseIgnoredLayer2FrameTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5195,7 +5195,7 @@
           "ipfix.reverseIgnoredLayer2OctetTotalCount": {
             "path_match": "ipfix.reverseIgnoredLayer2OctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5275,7 +5275,7 @@
           "ipfix.reverseIngressBroadcastPacketTotalCount": {
             "path_match": "ipfix.reverseIngressBroadcastPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5299,7 +5299,7 @@
           "ipfix.reverseIngressMulticastPacketTotalCount": {
             "path_match": "ipfix.reverseIngressMulticastPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5315,7 +5315,7 @@
           "ipfix.reverseIngressUnicastPacketTotalCount": {
             "path_match": "ipfix.reverseIngressUnicastPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5531,7 +5531,7 @@
           "ipfix.reverseLayer2FrameDeltaCount": {
             "path_match": "ipfix.reverseLayer2FrameDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5539,7 +5539,7 @@
           "ipfix.reverseLayer2FrameTotalCount": {
             "path_match": "ipfix.reverseLayer2FrameTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5547,7 +5547,7 @@
           "ipfix.reverseLayer2OctetDeltaCount": {
             "path_match": "ipfix.reverseLayer2OctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5555,7 +5555,7 @@
           "ipfix.reverseLayer2OctetDeltaSumOfSquares": {
             "path_match": "ipfix.reverseLayer2OctetDeltaSumOfSquares",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5563,7 +5563,7 @@
           "ipfix.reverseLayer2OctetTotalCount": {
             "path_match": "ipfix.reverseLayer2OctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5571,7 +5571,7 @@
           "ipfix.reverseLayer2OctetTotalSumOfSquares": {
             "path_match": "ipfix.reverseLayer2OctetTotalSumOfSquares",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6043,7 +6043,7 @@
           "ipfix.reverseNewConnectionDeltaCount": {
             "path_match": "ipfix.reverseNewConnectionDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6251,7 +6251,7 @@
           "ipfix.reversePacketDeltaCount": {
             "path_match": "ipfix.reversePacketDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6259,7 +6259,7 @@
           "ipfix.reversePacketTotalCount": {
             "path_match": "ipfix.reversePacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6371,7 +6371,7 @@
           "ipfix.reversePostLayer2OctetDeltaCount": {
             "path_match": "ipfix.reversePostLayer2OctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6379,7 +6379,7 @@
           "ipfix.reversePostLayer2OctetTotalCount": {
             "path_match": "ipfix.reversePostLayer2OctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6387,7 +6387,7 @@
           "ipfix.reversePostMCastLayer2OctetDeltaCount": {
             "path_match": "ipfix.reversePostMCastLayer2OctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6395,7 +6395,7 @@
           "ipfix.reversePostMCastLayer2OctetTotalCount": {
             "path_match": "ipfix.reversePostMCastLayer2OctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6403,7 +6403,7 @@
           "ipfix.reversePostMCastOctetDeltaCount": {
             "path_match": "ipfix.reversePostMCastOctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6411,7 +6411,7 @@
           "ipfix.reversePostMCastOctetTotalCount": {
             "path_match": "ipfix.reversePostMCastOctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6419,7 +6419,7 @@
           "ipfix.reversePostMCastPacketDeltaCount": {
             "path_match": "ipfix.reversePostMCastPacketDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6427,7 +6427,7 @@
           "ipfix.reversePostMCastPacketTotalCount": {
             "path_match": "ipfix.reversePostMCastPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6491,7 +6491,7 @@
           "ipfix.reversePostOctetDeltaCount": {
             "path_match": "ipfix.reversePostOctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6499,7 +6499,7 @@
           "ipfix.reversePostOctetTotalCount": {
             "path_match": "ipfix.reversePostOctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6507,7 +6507,7 @@
           "ipfix.reversePostPacketDeltaCount": {
             "path_match": "ipfix.reversePostPacketDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6515,7 +6515,7 @@
           "ipfix.reversePostPacketTotalCount": {
             "path_match": "ipfix.reversePostPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6987,7 +6987,7 @@
           "ipfix.reverseTcpAcknowledgementNumber": {
             "path_match": "ipfix.reverseTcpAcknowledgementNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6995,7 +6995,7 @@
           "ipfix.reverseTcpAckTotalCount": {
             "path_match": "ipfix.reverseTcpAckTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7019,7 +7019,7 @@
           "ipfix.reverseTcpFinTotalCount": {
             "path_match": "ipfix.reverseTcpFinTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7043,7 +7043,7 @@
           "ipfix.reverseTcpPshTotalCount": {
             "path_match": "ipfix.reverseTcpPshTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7051,7 +7051,7 @@
           "ipfix.reverseTcpRstTotalCount": {
             "path_match": "ipfix.reverseTcpRstTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7059,7 +7059,7 @@
           "ipfix.reverseTcpSequenceNumber": {
             "path_match": "ipfix.reverseTcpSequenceNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7075,7 +7075,7 @@
           "ipfix.reverseTcpSynTotalCount": {
             "path_match": "ipfix.reverseTcpSynTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7091,7 +7091,7 @@
           "ipfix.reverseTcpUrgTotalCount": {
             "path_match": "ipfix.reverseTcpUrgTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7123,7 +7123,7 @@
           "ipfix.reverseTransportOctetDeltaCount": {
             "path_match": "ipfix.reverseTransportOctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7131,7 +7131,7 @@
           "ipfix.reverseTransportPacketDeltaCount": {
             "path_match": "ipfix.reverseTransportPacketDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7779,7 +7779,7 @@
           "ipfix.tcpAcknowledgementNumber": {
             "path_match": "ipfix.tcpAcknowledgementNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7787,7 +7787,7 @@
           "ipfix.tcpAckTotalCount": {
             "path_match": "ipfix.tcpAckTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7811,7 +7811,7 @@
           "ipfix.tcpFinTotalCount": {
             "path_match": "ipfix.tcpFinTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7835,7 +7835,7 @@
           "ipfix.tcpPshTotalCount": {
             "path_match": "ipfix.tcpPshTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7843,7 +7843,7 @@
           "ipfix.tcpRstTotalCount": {
             "path_match": "ipfix.tcpRstTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7851,7 +7851,7 @@
           "ipfix.tcpSequenceNumber": {
             "path_match": "ipfix.tcpSequenceNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7867,7 +7867,7 @@
           "ipfix.tcpSynTotalCount": {
             "path_match": "ipfix.tcpSynTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7883,7 +7883,7 @@
           "ipfix.tcpUrgTotalCount": {
             "path_match": "ipfix.tcpUrgTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7939,7 +7939,7 @@
           "ipfix.transportOctetDeltaCount": {
             "path_match": "ipfix.transportOctetDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7947,7 +7947,7 @@
           "ipfix.transportPacketDeltaCount": {
             "path_match": "ipfix.transportPacketDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11077,7 +11077,7 @@
           "netflow.tcpAcknowledgementNumber": {
             "path_match": "netflow.tcpAcknowledgementNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11141,7 +11141,7 @@
           "netflow.tcpSequenceNumber": {
             "path_match": "netflow.tcpSequenceNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11751,7 +11751,7 @@
           "sflow.protocol": {
             "path_match": "sflow.protocol",
             "mapping": {
-              "type": "integer"
+              "type": "keyword"
             }
           }
         },
@@ -11830,14 +11830,6 @@
         {
           "sflow.source_id_type": {
             "path_match": "sflow.source_id_type",
-            "mapping": {
-              "type": "integer"
-            }
-          }
-        },
-        {
-          "sflow.source_id_type_name": {
-            "path_match": "sflow.source_id_type_name",
             "mapping": {
               "type": "keyword"
             }
@@ -12040,9 +12032,6 @@
         }
       ],
       "properties": {
-        "@version": {
-          "type": "keyword"
-        },
         "@timestamp": {
           "type": "date"
         },
@@ -12062,6 +12051,9 @@
           "dynamic": true,
           "type": "object",
           "properties": {
+            "autonomous_system": {
+              "type": "keyword"
+            },
             "bgp_next_hop": {
               "type": "ip"
             },
@@ -12071,13 +12063,31 @@
             "bytes": {
               "type": "long"
             },
+            "city": {
+              "type": "keyword"
+            },
             "client_addr": {
               "type": "ip"
+            },
+            "client_asn": {
+              "type": "long"
+            },
+            "client_autonomous_system": {
+              "type": "keyword"
+            },
+            "client_city": {
+              "type": "keyword"
+            },
+            "client_country": {
+              "type": "keyword"
+            },
+            "client_geo_location": {
+              "type": "geo_point"
             },
             "client_hostname": {
               "type": "keyword"
             },
-            "client_locality": {
+            "country": {
               "type": "keyword"
             },
             "direction": {
@@ -12086,10 +12096,25 @@
             "dst_addr": {
               "type": "ip"
             },
-            "dst_hostname": {
+            "dst_addr_trans": {
+              "type": "ip"
+            },
+            "dst_asn": {
+              "type": "long"
+            },
+            "dst_autonomous_system": {
               "type": "keyword"
             },
-            "dst_locality": {
+            "dst_city": {
+              "type": "keyword"
+            },
+            "dst_country": {
+              "type": "keyword"
+            },
+            "dst_geo_location": {
+              "type": "geo_point"
+            },
+            "dst_hostname": {
               "type": "keyword"
             },
             "dst_mac": {
@@ -12101,131 +12126,16 @@
             "dst_port": {
               "type": "integer"
             },
+            "dst_port_trans": {
+              "type": "integer"
+            },
             "dst_port_name": {
               "type": "keyword"
-            },
-            "geoip": {
-              "dynamic": true,
-              "properties": {
-                "autonomous_system": {
-                  "type": "keyword"
-                },
-                "city_name": {
-                  "type": "keyword"
-                },
-                "country_code2": {
-                  "type": "keyword"
-                },
-                "country_name": {
-                  "type": "keyword"
-                },
-                "location": {
-                  "type": "geo_point"
-                },
-                "organization": {
-                  "type": "keyword"
-                }
-              }
-            },
-            "geoip_client": {
-              "dynamic": true,
-              "properties": {
-                "autonomous_system": {
-                  "type": "keyword"
-                },
-                "city_name": {
-                  "type": "keyword"
-                },
-                "country_name": {
-                  "type": "keyword"
-                },
-                "country_code2": {
-                  "type": "keyword"
-                },
-                "location": {
-                  "type": "geo_point"
-                },
-                "organization": {
-                  "type": "keyword"
-                }
-              }
-            },
-            "geoip_dst": {
-              "dynamic": true,
-              "properties": {
-                "autonomous_system": {
-                  "type": "keyword"
-                },
-                "city_name": {
-                  "type": "keyword"
-                },
-                "country_code2": {
-                  "type": "keyword"
-                },
-                "country_name": {
-                  "type": "keyword"
-                },
-                "location": {
-                  "type": "geo_point"
-                },
-                "organization": {
-                  "type": "keyword"
-                }
-              }
-            },
-            "geoip_server": {
-              "dynamic": true,
-              "properties": {
-                "autonomous_system": {
-                  "type": "keyword"
-                },
-                "city_name": {
-                  "type": "keyword"
-                },
-                "country_code2": {
-                  "type": "keyword"
-                },
-                "country_name": {
-                  "type": "keyword"
-                },
-                "location": {
-                  "type": "geo_point"
-                },
-                "organization": {
-                  "type": "keyword"
-                }
-              }
-            },
-            "geoip_src": {
-              "dynamic": true,
-              "properties": {
-                "autonomous_system": {
-                  "type": "keyword"
-                },
-                "city_name": {
-                  "type": "keyword"
-                },
-                "country_code2": {
-                  "type": "keyword"
-                },
-                "country_name": {
-                  "type": "keyword"
-                },
-                "location": {
-                  "type": "geo_point"
-                },
-                "organization": {
-                  "type": "keyword"
-                }
-              }
             },
             "input_snmp": {
               "type": "keyword"
             },
             "ip_protocol": {
-              "type": "integer"
-            },
-            "ip_protocol_name": {
               "type": "keyword"
             },
             "ip_version": {
@@ -12246,13 +12156,22 @@
             "server_addr": {
               "type": "ip"
             },
+            "server_asn": {
+              "type": "long"
+            },
+            "server_autonomous_system": {
+              "type": "keyword"
+            },
+            "server_city": {
+              "type": "keyword"
+            },
+            "server_country": {
+              "type": "keyword"
+            },
+            "server_geo_location": {
+              "type": "geo_point"
+            },
             "server_hostname": {
-              "type": "keyword"
-            },
-            "server_locality": {
-              "type": "keyword"
-            },
-            "service_locality": {
               "type": "keyword"
             },
             "service_name": {
@@ -12264,10 +12183,25 @@
             "src_addr": {
               "type": "ip"
             },
-            "src_hostname": {
+            "src_addr_trans": {
+              "type": "ip"
+            },
+            "src_asn": {
+              "type": "long"
+            },
+            "src_autonomous_system": {
               "type": "keyword"
             },
-            "src_locality": {
+            "src_city": {
+              "type": "keyword"
+            },
+            "src_country": {
+              "type": "keyword"
+            },
+            "src_geo_location": {
+              "type": "geo_point"
+            },
+            "src_hostname": {
               "type": "keyword"
             },
             "src_mac": {
@@ -12279,17 +12213,17 @@
             "src_port": {
               "type": "integer"
             },
+            "src_port_trans": {
+              "type": "integer"
+            },
             "src_port_name": {
               "type": "keyword"
             },
             "tcp_flags": {
-              "type": "integer"
-            },
-            "tcp_flags_label": {
               "type": "keyword"
             },
             "tos": {
-              "type": "keyword"
+              "type": "long"
             },
             "traffic_direction": {
               "type": "keyword"
@@ -12298,7 +12232,7 @@
               "type": "keyword"
             },
             "vlan": {
-              "type": "keyword"
+              "type": "long"
             }
           }
         },
