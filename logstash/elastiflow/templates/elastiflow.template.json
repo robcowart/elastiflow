@@ -1283,7 +1283,7 @@
           "ipfix.flowLabelIPv6": {
             "path_match": "ipfix.flowLabelIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4907,7 +4907,7 @@
           "ipfix.reverseFlowLabelIPv6": {
             "path_match": "ipfix.reverseFlowLabelIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9581,7 +9581,7 @@
           "netflow.ipv6_flow_label": {
             "path_match": "netflow.ipv6_flow_label",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
