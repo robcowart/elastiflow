@@ -49,7 +49,7 @@ Copy the `elastiflow` directory to the location of your Logstash configuration f
 
 Rather than directly editing the pipeline configuration files for your environment, environment variables can be used. The supported environment variables are:
 
-Environment Variable | Description | Default Value(s)
+Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/geoipdbs
 ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/dictionaries
