@@ -64,15 +64,15 @@ ELASTIFLOW_NAMESERVER | The DNS server to which the dns filter should send reque
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
-ELASTIFLOW_NETFLOW_HOST | The IP address from which to listen for Netflow messages | 0.0.0.0
+ELASTIFLOW_NETFLOW_HOST[6] | The IPv4/6 address from which to listen for Netflow messages | 0.0.0.0/::1
 ELASTIFLOW_NETFLOW_PORT | The UDP port on which to listen for Netflow messages | 2055
 ELASTIFLOW_NETFLOW_LASTSW_TIMESTAMP | Enable/Disable setting `@timestamp` with the value of netflow.last_switched | false
 ELASTIFLOW_NETFLOW_TZ | The timezone of netflow.last_switched | UTC
-ELASTIFLOW_SFLOW_HOST | The IP address from which to listen for sFlow messages | 0.0.0.0
+ELASTIFLOW_SFLOW_HOST[6] | The IPv4/6 address from which to listen for sFlow messages | 0.0.0.0/::1
 ELASTIFLOW_SFLOW_PORT | The UDP port on which to listen for sFlow messages | 6343
-ELASTIFLOW_IPFIX_TCP_HOST | The IP address from which to listen for IPFIX messages via TCP | 0.0.0.0
+ELASTIFLOW_IPFIX_TCP_HOST[6] | The IPv4/6 address from which to listen for IPFIX messages via TCP | 0.0.0.0/::1
 ELASTIFLOW_IPFIX_TCP_PORT | The port on which to listen for IPFIX messages via TCP | 4739
-ELASTIFLOW_IPFIX_UDP_HOST | The IP address from which to listen for IPFIX messages via UDP | 0.0.0.0
+ELASTIFLOW_IPFIX_UDP_HOST[6] | The IPv4/6 address from which to listen for IPFIX messages via UDP | 0.0.0.0/::1
 ELASTIFLOW_IPFIX_UDP_PORT | The port on which to listen for IPFIX messages via UDP | 4739
 
 The files `profile.d/elastiflow.sh` and `logstash.service.d/elastiflow.conf` are provided to help you setup the environment variables. For example, if you will be running Logstash using `systemd`, simply complete following steps...
