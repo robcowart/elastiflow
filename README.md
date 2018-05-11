@@ -21,11 +21,12 @@ Elastic Stack | ElastiFlow&trade; 1.x | ElastiFlow&trade; 2.x
 
 > NOTE: The instructions that follow are for ElastiFlow&trade; 2.x.
 
-### Setting up Elasticsearch
+### 
+Elasticsearch
 Currently there is no specific configuration required for Elasticsearch. As long as Kibana and Logstash can talk to your Elasticsearch cluster you should be ready to go. At high ingest rates (>10K flows/s), or for data redundancy and high availability, a multi-node cluster is recommended.
 
 ### Setting up Logstash
-To use ElastiFlow&trade; you will need to install the community supported sFlow codec for Logtsash. It is also recommended that you always use the latest version of [Netflow](https://www.elastic.co/guide/en/logstash/current/plugins-codecs-netflow.html) codec. This can achieved by running the following commands:
+To use ElastiFlow&trade; you will need to install the community supported sFlow codec for Logstash. It is also recommended that you always use the latest version of [Netflow](https://www.elastic.co/guide/en/logstash/current/plugins-codecs-netflow.html) codec. This can achieved by running the following commands:
 
 ```
 $ LS_HOME/bin/logstash-plugin install logstash-codec-sflow
