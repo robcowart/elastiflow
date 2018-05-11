@@ -1,7 +1,6 @@
 # ElastiFlow&trade;
-ElastiFlow&trade; provides network flow data collection and visualization using the Elastic Stack. As of version 2.0.0 it supports Netflow v5/v9, sFlow and IPFIX flow types (1.x versions support only Netflow v5/v9).
-
-> **NOTICE!** Please use a bundled [RELEASE](https://github.com/robcowart/elastiflow/releases). While I strive to commit only working code to `master`, it may sometimes not be complete from an overall solution perspective. For example, new fields may have been added to the data, but the dashboards might not yet use them. As this project has gained in popularity, I realize that I have to get more disciplined in the manner in which I commit code. In particular I need to keep my 'works-in-progress' within DEV branches. Following the next release this is what I will do. However until then... please use a [RELEASE](https://github.com/robcowart/elastiflow/releases).
+ElastiFlow&trade; provides network flow data collection and visualization using the Elastic Stack. It supports Netflow v5/v9, sFlow and IPFIX flow types (1.x versions support only Netflow v5/v9).
+> Release 3.x is designed for use with the Elastic Stack 6.2 and higher. If you are using an older version of the Elastic Stack, please use version 2.1 or 1.2.
 
 ![Overview](https://user-images.githubusercontent.com/10326954/35780814-c015a1cc-09e1-11e8-8e7c-770ef279e9d0.png)
 
@@ -10,31 +9,28 @@ I was inspired to create ElastiFlow&trade; following the overwhelmingly positive
 ## Getting Started
 ElastiFlow&trade; is built using the Elastic Stack, including Elasticsearch, Logstash and Kibana. Refer to the following compatibility chart to choose a release of ElastiFlow&trade; that is compatible with the version of the Elastic Stack you are using.
 
-Elastic Stack | ElastiFlow&trade; 1.x | ElastiFlow&trade; 2.x
-:---:|:---:|:---:
-6.2 | &#10003; | &#10003;
-6.1 | &#10003; | &#10003;
-6.0 | &#10003; | &#10003;
-5.6 | &#10003; | &#10003;
-5.5 | &#10003; | 
-5.4 | &#10003; | 
+Elastic Stack | ElastiFlow&trade; 1.x | ElastiFlow&trade; 2.x | ElastiFlow&trade; 3.x
+:---:|:---:|:---:|:---:
+6.2 | &#10003; | &#10003; | &#10003;
+6.1 | &#10003; | &#10003; |
+6.0 | &#10003; | &#10003; |
+5.6 | &#10003; | &#10003; |
+5.5 | &#10003; |  |
+5.4 | &#10003; |  |
 
-> NOTE: The instructions that follow are for ElastiFlow&trade; 2.x.
+> NOTE: The instructions that follow are for ElastiFlow&trade; 3.x.
 
 ### Setting up Elasticsearch
 Currently there is no specific configuration required for Elasticsearch. As long as Kibana and Logstash can talk to your Elasticsearch cluster you should be ready to go. At high ingest rates (>10K flows/s), or for data redundancy and high availability, a multi-node cluster is recommended.
 
 ### Setting up Logstash
-To use ElastiFlow&trade; you will need to install the community supported sFlow codec for Logtsash. It is also recommended that you always use the latest version of [Netflow](https://www.elastic.co/guide/en/logstash/current/plugins-codecs-netflow.html) codec. This can achieved by running the following commands:
+To use ElastiFlow&trade; you will need to install the community supported sFlow codec for Logstash. It is also recommended that you always use the latest version of [Netflow](https://www.elastic.co/guide/en/logstash/current/plugins-codecs-netflow.html) codec, the [UDP](https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html) input, and the [DNS](https://www.elastic.co/guide/en/logstash/current/plugins-filters-dns.html) filter. This can achieved by running the following commands:
 
 ```
 $ LS_HOME/bin/logstash-plugin install logstash-codec-sflow
-Validating logstash-codec-sflow
-Installing logstash-codec-sflow
-
 $ LS_HOME/bin/logstash-plugin update logstash-codec-netflow
-Updating logstash-codec-netflow
-Updated logstash-codec-netflow 3.10.0 to 3.11.2
+$ LS_HOME/bin/logstash-plugin update logstash-input-udp
+$ LS_HOME/bin/logstash-plugin update logstash-filter-dns
 ```
 
 There are four sets of configuration files provided within the `logstash/elastiflow` folder:
@@ -56,55 +52,75 @@ Environment Variable | Description | Default Value
 ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/dictionaries
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/templates
 ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/geoipdbs
+ELASTIFLOW_GEOIP_CACHE_SIZE | The size of the GeoIP query cache | 8192
 ELASTIFLOW_GEOIP_LOOKUP | Enable/Disable GeoIP lookups | true
 ELASTIFLOW_ASN_LOOKUP | Enable/Disable ASN lookups | true
 ELASTIFLOW_KEEP_ORIG_DATA | If set to `false` the original `netflow`, `ipfix` and `sflow` objects will be deleted prior to indexing. This can save disk space without affecting the provided dashboards. However the original flow fields will no longer be available if they are desired for additional analytics. | true
 ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests | false
 ELASTIFLOW_NAMESERVER | The DNS server to which the dns filter should send requests | 127.0.0.1
+ELASTIFLOW_DNS_HIT_CACHE_SIZE | The cache size for successful DNS queries | 25000
+ELASTIFLOW_DNS_HIT_CACHE_TTL | The time in seconds successful DNS queries are cached | 900
+ELASTIFLOW_DNS_FAILED_CACHE_SIZE | The cache size for failed DNS queries | 75000
+ELASTIFLOW_DNS_FAILED_CACHE_TTL | The time in seconds failed DNS queries are cached | 3600
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
-ELASTIFLOW_NETFLOW_HOST | The IP address from which to listen for Netflow messages | 0.0.0.0
-ELASTIFLOW_NETFLOW_PORT | The UDP port on which to listen for Netflow messages | 2055
+ELASTIFLOW_NETFLOW_IPV4_HOST | The IP address from which to listen for Netflow messages | 0.0.0.0
+ELASTIFLOW_NETFLOW_IPV4_PORT | The UDP port on which to listen for Netflow messages | 2055
+ELASTIFLOW_NETFLOW_IPV6_HOST | The IP address from which to listen for Netflow messages | [::]
+ELASTIFLOW_NETFLOW_IPV6_PORT | The UDP port on which to listen for Netflow messages | 52055
+ELASTIFLOW_NETFLOW_UDP_WORKERS | The number of Netflow input threads | 4
+ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE | The number of unprocessed Netflow UDP packets the input can buffer | 4096
 ELASTIFLOW_NETFLOW_LASTSW_TIMESTAMP | Enable/Disable setting `@timestamp` with the value of netflow.last_switched | false
 ELASTIFLOW_NETFLOW_TZ | The timezone of netflow.last_switched | UTC
-ELASTIFLOW_SFLOW_HOST | The IP address from which to listen for sFlow messages | 0.0.0.0
-ELASTIFLOW_SFLOW_PORT | The UDP port on which to listen for sFlow messages | 6343
-ELASTIFLOW_IPFIX_TCP_HOST | The IP address from which to listen for IPFIX messages via TCP | 0.0.0.0
-ELASTIFLOW_IPFIX_TCP_PORT | The port on which to listen for IPFIX messages via TCP | 4739
-ELASTIFLOW_IPFIX_UDP_HOST | The IP address from which to listen for IPFIX messages via UDP | 0.0.0.0
-ELASTIFLOW_IPFIX_UDP_PORT | The port on which to listen for IPFIX messages via UDP | 4739
+ELASTIFLOW_SFLOW_IPV4_HOST | The IP address from which to listen for sFlow messages | 0.0.0.0
+ELASTIFLOW_SFLOW_IPV4_PORT | The UDP port on which to listen for sFlow messages | 6343
+ELASTIFLOW_SFLOW_IPV6_HOST | The IP address from which to listen for sFlow messages | [::]
+ELASTIFLOW_SFLOW_IPV6_PORT | The UDP port on which to listen for sFlow messages | 56343
+ELASTIFLOW_SFLOW_UDP_WORKERS | The number of sFlow input threads | 4
+ELASTIFLOW_SFLOW_UDP_QUEUE_SIZE | The number of unprocessed sFlow UDP packets the input can buffer | 4096
+ELASTIFLOW_IPFIX_TCP_IPV4_HOST | The IP address from which to listen for IPFIX messages via TCP | 0.0.0.0
+ELASTIFLOW_IPFIX_TCP_IPV4_PORT | The port on which to listen for IPFIX messages via TCP | 4739
+ELASTIFLOW_IPFIX_UDP_IPV4_HOST | The IP address from which to listen for IPFIX messages via UDP | 0.0.0.0
+ELASTIFLOW_IPFIX_UDP_IPV4_PORT | The port on which to listen for IPFIX messages via UDP | 4739
+ELASTIFLOW_IPFIX_TCP_IPV6_HOST | The IP address from which to listen for IPFIX messages via TCP | [::]
+ELASTIFLOW_IPFIX_TCP_IPV6_PORT | The port on which to listen for IPFIX messages via TCP | 54739
+ELASTIFLOW_IPFIX_UDP_IPV6_HOST | The IP address from which to listen for IPFIX messages via UDP | [::]
+ELASTIFLOW_IPFIX_UDP_IPV6_PORT | The port on which to listen for IPFIX messages via UDP | 54739
+ELASTIFLOW_IPFIX_UDP_WORKERS | The number of IPFIX input threads | 4
+ELASTIFLOW_IPFIX_UDP_QUEUE_SIZE | The number of unprocessed IPFIX UDP packets the input can buffer | 4096
 
 The files `profile.d/elastiflow.sh` and `logstash.service.d/elastiflow.conf` are provided to help you setup the environment variables. For example, if you will be running Logstash using `systemd`, simply complete following steps...
 1. Edit the provided `logstash.service.d/elastiflow.conf` for your environment and needs.
 2. Copy the file to `/etc/systemd/system/logstash.service.d/elastiflow.conf`
 3. Run `systemctl daemon-reload` to pickup the new systemd configuration files
-4. Start Logstash by running `systemctl start logstash`
 
 > WARNING: DNS resolution of IP addresses to hostnames is controlled by the `ELASTIFLOW_RESOLVE_IP2HOST` environment variable. Within the pipeline caching is disabled for the `dns` filter as this causes performance issues due to the blocking nature of the cache lookups. For the best DNS performance it is recommended to use a local `dnsmasq` process to handle caching and to forward any unresolved lookups to upstream DNS servers. This is the reason that `ELASTIFLOW_NAMESERVER` defaults to `127.0.0.1`. When receiving very high rates of flow records, leaving DNS resolution disabled will ensure the best performance.
 
 Logstash can be configured to load the ElastiFlow&trade; pipeline using one of the following methods:
 * From the command line using the path.config option.
 ```
-$ LS_HOME/bin/logstash --path.config=/etc/logstash/elastiflow/conf.d
+$ LS_HOME/bin/logstash --path.config=/etc/logstash/elastiflow/conf.d/*.conf
 ```
 * By setting path.config in `logstash.yml`
 ```
-path.config: /etc/logstash/elastiflow/conf.d
+path.config: /etc/logstash/elastiflow/conf.d/*.conf
 ```
 * If using Logstash 6.0 or above, ElastiFlow&trade; can also be started ba adding it to `pipelines.yml`
 ```
 - pipeline.id: elastiflow
-  path.config: "/etc/logstash/elastiflow/conf.d"
+  path.config: "/etc/logstash/elastiflow/conf.d/*.conf"
 ```
 
+Finally, start Logstash as a daemon by running `systemctl start logstash`.
+
 ### Setting up Kibana
-As of Kibana 5.6 an API (yet undocumented) is available to import and export Index Patterns. The JSON file which contains the Index Pattern configuration is `kibana/elastiflow.index_pattern-json`. To setup the `elastiflow-*` Index Pattern run the following command:
+An API (yet undocumented) is available to import and export Index Patterns. The JSON file which contains the Index Pattern configuration is `kibana/elastiflow.index_pattern-json`. To setup the `elastiflow-*` Index Pattern run the following command:
 ```
 curl -X POST -u USERNAME:PASSWORD http://KIBANASERVER:5601/api/saved_objects/index-pattern/elastiflow-* -H "Content-Type: application/json" -H "kbn-xsrf: true" -d @/PATH/TO/elastiflow.index_pattern.json
 ```
 
-Finally the vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.dachboards.json` file from within Kibana. This is done from the Management - > Saved Objects page.
+Finally the vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.dashboards.json` file from within Kibana. This is done from the Management - > Saved Objects page.
 
 ## Dashboards
 The following dashboards are provided.

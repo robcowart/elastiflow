@@ -15,14 +15,11 @@
 # Robert Cowart are Copyright (C)2018 Robert Cowart. All Rights Reserved.
 #------------------------------------------------------------------------------
 
-output {
-  elasticsearch {
-    hosts => [ "${ELASTIFLOW_ES_HOST:127.0.0.1:9200}" ]
-    user => "${ELASTIFLOW_ES_USER:elastic}"
-    password => "${ELASTIFLOW_ES_PASSWD:changeme}"
-    index => "elastiflow-3.0.0-%{+YYYY.MM.dd}"
-    template => "${ELASTIFLOW_TEMPLATE_PATH:/etc/logstash/templates}/elastiflow.template.json"
-    template_name => "elastiflow-3.0.0"
-    template_overwrite => "true"
-  }
-}
+# You must specify the application_id source type for your devices below. This
+# value is used by the pipeline to specify which dictionary to use for
+# translating the application_id to a user-friendly description.
+
+# These first two entries are examples. But they also ensure the pipeline loads without errors when no other devices are specified.
+# DO NOT DELETE these two entries unless you have added your own entries.
+"192.0.2.1": "cisco_nbar2"
+"192.0.2.2": "fortinet"

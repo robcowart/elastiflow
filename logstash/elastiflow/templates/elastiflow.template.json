@@ -1,13 +1,12 @@
 {
   "order": 0,
-  "version": 18032301,
-  "index_patterns": "elastiflow-*",
-  "template": "elastiflow-*",
+  "version": 30000,
+  "index_patterns": "elastiflow-3.0.0-*",
   "settings": {
     "index": {
-      "number_of_shards": 2,
+      "number_of_shards": 3,
       "number_of_replicas": 1,
-      "refresh_interval": "5s",
+      "refresh_interval": "10s",
       "codec": "best_compression"
     }
   },
@@ -12051,6 +12050,9 @@
           "dynamic": true,
           "type": "object",
           "properties": {
+            "application": {
+              "type": "keyword"
+            },
             "autonomous_system": {
               "type": "keyword"
             },
