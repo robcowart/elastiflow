@@ -26,7 +26,7 @@
           "ipfix.afcProtocol": {
             "path_match": "ipfix.afcProtocol",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -42,7 +42,7 @@
           "ipfix.anonymizationFlags": {
             "path_match": "ipfix.anonymizationFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -50,7 +50,7 @@
           "ipfix.anonymizationTechnique": {
             "path_match": "ipfix.anonymizationTechnique",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -170,7 +170,7 @@
           "ipfix.bgpValidityState": {
             "path_match": "ipfix.bgpValidityState",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -178,7 +178,7 @@
           "ipfix.biflowDirection": {
             "path_match": "ipfix.biflowDirection",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -234,7 +234,7 @@
           "ipfix.ciscoClientL4Port": {
             "path_match": "ipfix.ciscoClientL4Port",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -266,7 +266,7 @@
           "ipfix.ciscoServerL4Port": {
             "path_match": "ipfix.ciscoServerL4Port",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -274,7 +274,7 @@
           "ipfix.ciscoServicesWaasPassthroughReason": {
             "path_match": "ipfix.ciscoServicesWaasPassthroughReason",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -282,7 +282,7 @@
           "ipfix.ciscoServicesWaasSegment": {
             "path_match": "ipfix.ciscoServicesWaasSegment",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -298,7 +298,7 @@
           "ipfix.classId": {
             "path_match": "ipfix.classId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -306,7 +306,7 @@
           "ipfix.classificationEngineId": {
             "path_match": "ipfix.classificationEngineId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -354,7 +354,7 @@
           "ipfix.collectorTransportPort": {
             "path_match": "ipfix.collectorTransportPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -362,7 +362,7 @@
           "ipfix.commonPropertiesId": {
             "path_match": "ipfix.commonPropertiesId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -378,7 +378,7 @@
           "ipfix.connectionSumDurationSeconds": {
             "path_match": "ipfix.connectionSumDurationSeconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -386,7 +386,7 @@
           "ipfix.connectionTransactionId": {
             "path_match": "ipfix.connectionTransactionId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -418,7 +418,7 @@
           "ipfix.dataLinkFrameSize": {
             "path_match": "ipfix.dataLinkFrameSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -426,7 +426,7 @@
           "ipfix.dataLinkFrameType": {
             "path_match": "ipfix.dataLinkFrameType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -434,7 +434,7 @@
           "ipfix.dataRecordsReliability": {
             "path_match": "ipfix.dataRecordsReliability",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -466,7 +466,7 @@
           "ipfix.destinationIPv4PrefixLength": {
             "path_match": "ipfix.destinationIPv4PrefixLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -490,7 +490,7 @@
           "ipfix.destinationIPv6PrefixLength": {
             "path_match": "ipfix.destinationIPv6PrefixLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -506,7 +506,7 @@
           "ipfix.destinationTransportPort": {
             "path_match": "ipfix.destinationTransportPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -514,7 +514,7 @@
           "ipfix.digestHashValue": {
             "path_match": "ipfix.digestHashValue",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -570,7 +570,7 @@
           "ipfix.dnsAuthoritative": {
             "path_match": "ipfix.dnsAuthoritative",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -586,7 +586,7 @@
           "ipfix.dnsID": {
             "path_match": "ipfix.dnsID",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -602,7 +602,7 @@
           "ipfix.dnsMXPreference": {
             "path_match": "ipfix.dnsMXPreference",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -618,7 +618,7 @@
           "ipfix.dnsNXDomain": {
             "path_match": "ipfix.dnsNXDomain",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -642,7 +642,7 @@
           "ipfix.dnsQRType": {
             "path_match": "ipfix.dnsQRType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -650,7 +650,7 @@
           "ipfix.dnsQueryResponse": {
             "path_match": "ipfix.dnsQueryResponse",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -658,7 +658,7 @@
           "ipfix.dnsRRSection": {
             "path_match": "ipfix.dnsRRSection",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -666,7 +666,7 @@
           "ipfix.dnsSOAExpire": {
             "path_match": "ipfix.dnsSOAExpire",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -674,7 +674,7 @@
           "ipfix.dnsSOAMinimum": {
             "path_match": "ipfix.dnsSOAMinimum",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -690,7 +690,7 @@
           "ipfix.dnsSOARefresh": {
             "path_match": "ipfix.dnsSOARefresh",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -698,7 +698,7 @@
           "ipfix.dnsSOARetry": {
             "path_match": "ipfix.dnsSOARetry",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -714,7 +714,7 @@
           "ipfix.dnsSOASerial": {
             "path_match": "ipfix.dnsSOASerial",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -722,7 +722,7 @@
           "ipfix.dnsSRVPort": {
             "path_match": "ipfix.dnsSRVPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -730,7 +730,7 @@
           "ipfix.dnsSRVPriority": {
             "path_match": "ipfix.dnsSRVPriority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -738,7 +738,7 @@
           "ipfix.dnsSRVTarget": {
             "path_match": "ipfix.dnsSRVTarget",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -746,7 +746,7 @@
           "ipfix.dnsSRVWeight": {
             "path_match": "ipfix.dnsSRVWeight",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -754,7 +754,7 @@
           "ipfix.dnsTTL": {
             "path_match": "ipfix.dnsTTL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -770,7 +770,7 @@
           "ipfix.dot1qCustomerDEI": {
             "path_match": "ipfix.dot1qCustomerDEI",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -786,7 +786,7 @@
           "ipfix.dot1qCustomerPriority": {
             "path_match": "ipfix.dot1qCustomerPriority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -802,7 +802,7 @@
           "ipfix.dot1qCustomerVlanId": {
             "path_match": "ipfix.dot1qCustomerVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -810,7 +810,7 @@
           "ipfix.dot1qDEI": {
             "path_match": "ipfix.dot1qDEI",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -818,7 +818,7 @@
           "ipfix.dot1qPriority": {
             "path_match": "ipfix.dot1qPriority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -826,7 +826,7 @@
           "ipfix.dot1qServiceInstanceId": {
             "path_match": "ipfix.dot1qServiceInstanceId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -834,7 +834,7 @@
           "ipfix.dot1qServiceInstancePriority": {
             "path_match": "ipfix.dot1qServiceInstancePriority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -850,7 +850,7 @@
           "ipfix.dot1qVlanId": {
             "path_match": "ipfix.dot1qVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -906,7 +906,7 @@
           "ipfix.dstTrafficIndex": {
             "path_match": "ipfix.dstTrafficIndex",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -922,7 +922,7 @@
           "ipfix.egressInterface": {
             "path_match": "ipfix.egressInterface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -930,7 +930,7 @@
           "ipfix.egressInterfaceType": {
             "path_match": "ipfix.egressInterfaceType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -938,7 +938,7 @@
           "ipfix.egressPhysicalInterface": {
             "path_match": "ipfix.egressPhysicalInterface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -954,7 +954,7 @@
           "ipfix.egressVRFID": {
             "path_match": "ipfix.egressVRFID",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -970,7 +970,7 @@
           "ipfix.engineId": {
             "path_match": "ipfix.engineId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -978,7 +978,7 @@
           "ipfix.engineType": {
             "path_match": "ipfix.engineType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -986,7 +986,7 @@
           "ipfix.ethernetHeaderLength": {
             "path_match": "ipfix.ethernetHeaderLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -994,7 +994,7 @@
           "ipfix.ethernetPayloadLength": {
             "path_match": "ipfix.ethernetPayloadLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1002,7 +1002,7 @@
           "ipfix.ethernetTotalLength": {
             "path_match": "ipfix.ethernetTotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1010,7 +1010,7 @@
           "ipfix.ethernetType": {
             "path_match": "ipfix.ethernetType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1074,7 +1074,7 @@
           "ipfix.exporterTransportPort": {
             "path_match": "ipfix.exporterTransportPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1082,7 +1082,7 @@
           "ipfix.exportingProcessId": {
             "path_match": "ipfix.exportingProcessId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1090,7 +1090,7 @@
           "ipfix.exportInterface": {
             "path_match": "ipfix.exportInterface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1098,7 +1098,7 @@
           "ipfix.exportProtocolVersion": {
             "path_match": "ipfix.exportProtocolVersion",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1106,7 +1106,7 @@
           "ipfix.exportSctpStreamId": {
             "path_match": "ipfix.exportSctpStreamId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1114,7 +1114,7 @@
           "ipfix.exportTransportProtocol": {
             "path_match": "ipfix.exportTransportProtocol",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1122,7 +1122,7 @@
           "ipfix.firewallEvent": {
             "path_match": "ipfix.firewallEvent",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1130,7 +1130,7 @@
           "ipfix.firstEightNonEmptyPacketDirections": {
             "path_match": "ipfix.firstEightNonEmptyPacketDirections",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1138,7 +1138,7 @@
           "ipfix.firstNonEmptyPacketSize": {
             "path_match": "ipfix.firstNonEmptyPacketSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1154,7 +1154,7 @@
           "ipfix.flagsAndSamplerId": {
             "path_match": "ipfix.flagsAndSamplerId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1162,7 +1162,7 @@
           "ipfix.flowActiveTimeout": {
             "path_match": "ipfix.flowActiveTimeout",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1170,7 +1170,7 @@
           "ipfix.flowAttributes": {
             "path_match": "ipfix.flowAttributes",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1178,7 +1178,7 @@
           "ipfix.flowDirection": {
             "path_match": "ipfix.flowDirection",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1234,7 +1234,7 @@
           "ipfix.flowEndReason": {
             "path_match": "ipfix.flowEndReason",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1258,7 +1258,7 @@
           "ipfix.flowId": {
             "path_match": "ipfix.flowId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1266,7 +1266,7 @@
           "ipfix.flowIdleTimeout": {
             "path_match": "ipfix.flowIdleTimeout",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1274,7 +1274,7 @@
           "ipfix.flowKeyIndicator": {
             "path_match": "ipfix.flowKeyIndicator",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1290,7 +1290,7 @@
           "ipfix.flowSamplingTimeInterval": {
             "path_match": "ipfix.flowSamplingTimeInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1298,7 +1298,7 @@
           "ipfix.flowSamplingTimeSpacing": {
             "path_match": "ipfix.flowSamplingTimeSpacing",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1330,7 +1330,7 @@
           "ipfix.flowSelectorAlgorithm": {
             "path_match": "ipfix.flowSelectorAlgorithm",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1402,7 +1402,7 @@
           "ipfix.forwardingStatus": {
             "path_match": "ipfix.forwardingStatus",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1410,7 +1410,7 @@
           "ipfix.fragmentFlags": {
             "path_match": "ipfix.fragmentFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1418,7 +1418,7 @@
           "ipfix.fragmentIdentification": {
             "path_match": "ipfix.fragmentIdentification",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1426,7 +1426,7 @@
           "ipfix.fragmentOffset": {
             "path_match": "ipfix.fragmentOffset",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1434,7 +1434,7 @@
           "ipfix.greKey": {
             "path_match": "ipfix.greKey",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1442,7 +1442,7 @@
           "ipfix.hashDigestOutput": {
             "path_match": "ipfix.hashDigestOutput",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1450,7 +1450,7 @@
           "ipfix.hashFlowDomain": {
             "path_match": "ipfix.hashFlowDomain",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1458,7 +1458,7 @@
           "ipfix.hashInitialiserValue": {
             "path_match": "ipfix.hashInitialiserValue",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1466,7 +1466,7 @@
           "ipfix.hashIPPayloadOffset": {
             "path_match": "ipfix.hashIPPayloadOffset",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1474,7 +1474,7 @@
           "ipfix.hashIPPayloadSize": {
             "path_match": "ipfix.hashIPPayloadSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1482,7 +1482,7 @@
           "ipfix.hashOutputRangeMax": {
             "path_match": "ipfix.hashOutputRangeMax",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1490,7 +1490,7 @@
           "ipfix.hashOutputRangeMin": {
             "path_match": "ipfix.hashOutputRangeMin",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1498,7 +1498,7 @@
           "ipfix.hashSelectedRangeMax": {
             "path_match": "ipfix.hashSelectedRangeMax",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1506,7 +1506,7 @@
           "ipfix.hashSelectedRangeMin": {
             "path_match": "ipfix.hashSelectedRangeMin",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1514,7 +1514,7 @@
           "ipfix.icmpCodeIPv4": {
             "path_match": "ipfix.icmpCodeIPv4",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1522,7 +1522,7 @@
           "ipfix.icmpCodeIPv6": {
             "path_match": "ipfix.icmpCodeIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1530,7 +1530,7 @@
           "ipfix.icmpTypeCodeIPv4": {
             "path_match": "ipfix.icmpTypeCodeIPv4",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1538,7 +1538,7 @@
           "ipfix.icmpTypeCodeIPv6": {
             "path_match": "ipfix.icmpTypeCodeIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1546,7 +1546,7 @@
           "ipfix.icmpTypeIPv4": {
             "path_match": "ipfix.icmpTypeIPv4",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1554,7 +1554,7 @@
           "ipfix.icmpTypeIPv6": {
             "path_match": "ipfix.icmpTypeIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1562,7 +1562,7 @@
           "ipfix.igmpType": {
             "path_match": "ipfix.igmpType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1610,7 +1610,7 @@
           "ipfix.informationElementDataType": {
             "path_match": "ipfix.informationElementDataType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1626,7 +1626,7 @@
           "ipfix.informationElementId": {
             "path_match": "ipfix.informationElementId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1634,7 +1634,7 @@
           "ipfix.informationElementIndex": {
             "path_match": "ipfix.informationElementIndex",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1650,7 +1650,7 @@
           "ipfix.informationElementRangeBegin": {
             "path_match": "ipfix.informationElementRangeBegin",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1658,7 +1658,7 @@
           "ipfix.informationElementRangeEnd": {
             "path_match": "ipfix.informationElementRangeEnd",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1666,7 +1666,7 @@
           "ipfix.informationElementSemantics": {
             "path_match": "ipfix.informationElementSemantics",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1674,7 +1674,7 @@
           "ipfix.informationElementUnits": {
             "path_match": "ipfix.informationElementUnits",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1690,7 +1690,7 @@
           "ipfix.ingressInterface": {
             "path_match": "ipfix.ingressInterface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1698,7 +1698,7 @@
           "ipfix.ingressInterfaceType": {
             "path_match": "ipfix.ingressInterfaceType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1714,7 +1714,7 @@
           "ipfix.ingressPhysicalInterface": {
             "path_match": "ipfix.ingressPhysicalInterface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1730,7 +1730,7 @@
           "ipfix.ingressVRFID": {
             "path_match": "ipfix.ingressVRFID",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1738,7 +1738,7 @@
           "ipfix.initialTCPFlags": {
             "path_match": "ipfix.initialTCPFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1778,7 +1778,7 @@
           "ipfix.intermediateProcessId": {
             "path_match": "ipfix.intermediateProcessId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1786,7 +1786,7 @@
           "ipfix.ipClassOfService": {
             "path_match": "ipfix.ipClassOfService",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1794,7 +1794,7 @@
           "ipfix.ipDiffServCodePoint": {
             "path_match": "ipfix.ipDiffServCodePoint",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1802,7 +1802,7 @@
           "ipfix.ipHeaderLength": {
             "path_match": "ipfix.ipHeaderLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1834,7 +1834,7 @@
           "ipfix.ipPayloadLength": {
             "path_match": "ipfix.ipPayloadLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1850,7 +1850,7 @@
           "ipfix.ipPrecedence": {
             "path_match": "ipfix.ipPrecedence",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1858,7 +1858,7 @@
           "ipfix.IPSecSPI": {
             "path_match": "ipfix.IPSecSPI",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1866,7 +1866,7 @@
           "ipfix.ipTotalLength": {
             "path_match": "ipfix.ipTotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1874,7 +1874,7 @@
           "ipfix.ipTTL": {
             "path_match": "ipfix.ipTTL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1882,7 +1882,7 @@
           "ipfix.ipv4IHL": {
             "path_match": "ipfix.ipv4IHL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1890,7 +1890,7 @@
           "ipfix.ipv4Options": {
             "path_match": "ipfix.ipv4Options",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1906,7 +1906,7 @@
           "ipfix.ipv6ExtensionHeaders": {
             "path_match": "ipfix.ipv6ExtensionHeaders",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1914,7 +1914,7 @@
           "ipfix.ipVersion": {
             "path_match": "ipfix.ipVersion",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1922,7 +1922,7 @@
           "ipfix.isMulticast": {
             "path_match": "ipfix.isMulticast",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -1994,7 +1994,7 @@
           "ipfix.layer2packetSectionOffset": {
             "path_match": "ipfix.layer2packetSectionOffset",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2002,7 +2002,7 @@
           "ipfix.layer2packetSectionSize": {
             "path_match": "ipfix.layer2packetSectionSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2010,7 +2010,7 @@
           "ipfix.layer2SegmentId": {
             "path_match": "ipfix.layer2SegmentId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2018,7 +2018,7 @@
           "ipfix.lineCardId": {
             "path_match": "ipfix.lineCardId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2082,7 +2082,7 @@
           "ipfix.maximumIpTotalLength": {
             "path_match": "ipfix.maximumIpTotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2090,7 +2090,7 @@
           "ipfix.maximumLayer2TotalLength": {
             "path_match": "ipfix.maximumLayer2TotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2098,7 +2098,7 @@
           "ipfix.maximumTTL": {
             "path_match": "ipfix.maximumTTL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2106,7 +2106,7 @@
           "ipfix.maxPacketSize": {
             "path_match": "ipfix.maxPacketSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2114,7 +2114,7 @@
           "ipfix.meanFlowRate": {
             "path_match": "ipfix.meanFlowRate",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2122,7 +2122,7 @@
           "ipfix.meanPacketRate": {
             "path_match": "ipfix.meanPacketRate",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2138,7 +2138,7 @@
           "ipfix.messageScope": {
             "path_match": "ipfix.messageScope",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2146,7 +2146,7 @@
           "ipfix.meteringProcessId": {
             "path_match": "ipfix.meteringProcessId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2162,7 +2162,7 @@
           "ipfix.metroEvcType": {
             "path_match": "ipfix.metroEvcType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2170,7 +2170,7 @@
           "ipfix.minExportSeconds": {
             "path_match": "ipfix.minExportSeconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2210,7 +2210,7 @@
           "ipfix.minimumIpTotalLength": {
             "path_match": "ipfix.minimumIpTotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2218,7 +2218,7 @@
           "ipfix.minimumLayer2TotalLength": {
             "path_match": "ipfix.minimumLayer2TotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2226,7 +2226,7 @@
           "ipfix.minimumTTL": {
             "path_match": "ipfix.minimumTTL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2250,7 +2250,7 @@
           "ipfix.mplsLabelStackDepth": {
             "path_match": "ipfix.mplsLabelStackDepth",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2258,7 +2258,7 @@
           "ipfix.mplsLabelStackLength": {
             "path_match": "ipfix.mplsLabelStackLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2346,7 +2346,7 @@
           "ipfix.mplsPayloadLength": {
             "path_match": "ipfix.mplsPayloadLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2362,7 +2362,7 @@
           "ipfix.mplsTopLabelExp": {
             "path_match": "ipfix.mplsTopLabelExp",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2386,7 +2386,7 @@
           "ipfix.mplsTopLabelPrefixLength": {
             "path_match": "ipfix.mplsTopLabelPrefixLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2402,7 +2402,7 @@
           "ipfix.mplsTopLabelTTL": {
             "path_match": "ipfix.mplsTopLabelTTL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2410,7 +2410,7 @@
           "ipfix.mplsTopLabelType": {
             "path_match": "ipfix.mplsTopLabelType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2426,7 +2426,7 @@
           "ipfix.mptcpAddressID": {
             "path_match": "ipfix.mptcpAddressID",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2434,7 +2434,7 @@
           "ipfix.mptcpFlags": {
             "path_match": "ipfix.mptcpFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2450,7 +2450,7 @@
           "ipfix.mptcpMaximumSegmentSize": {
             "path_match": "ipfix.mptcpMaximumSegmentSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2458,7 +2458,7 @@
           "ipfix.mptcpReceiverToken": {
             "path_match": "ipfix.mptcpReceiverToken",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2466,7 +2466,7 @@
           "ipfix.multicastReplicationFactor": {
             "path_match": "ipfix.multicastReplicationFactor",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2474,7 +2474,7 @@
           "ipfix.natEvent": {
             "path_match": "ipfix.natEvent",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2482,7 +2482,7 @@
           "ipfix.natInsideSvcid": {
             "path_match": "ipfix.natInsideSvcid",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2490,7 +2490,7 @@
           "ipfix.natOriginatingAddressRealm": {
             "path_match": "ipfix.natOriginatingAddressRealm",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2498,7 +2498,7 @@
           "ipfix.natOutsideSvcid": {
             "path_match": "ipfix.natOutsideSvcid",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2506,7 +2506,7 @@
           "ipfix.natPoolId": {
             "path_match": "ipfix.natPoolId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2530,7 +2530,7 @@
           "ipfix.natType": {
             "path_match": "ipfix.natType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2562,7 +2562,7 @@
           "ipfix.netscalerApplicationStartupDuration": {
             "path_match": "ipfix.netscalerApplicationStartupDuration",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2586,7 +2586,7 @@
           "ipfix.netscalerAppNameAppId": {
             "path_match": "ipfix.netscalerAppNameAppId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2594,7 +2594,7 @@
           "ipfix.netscalerAppNameIncarnationNumber": {
             "path_match": "ipfix.netscalerAppNameIncarnationNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2610,7 +2610,7 @@
           "ipfix.netscalerAppUnitNameAppId": {
             "path_match": "ipfix.netscalerAppUnitNameAppId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2618,7 +2618,7 @@
           "ipfix.netscalerCacheRedirClientConnectionCoreID": {
             "path_match": "ipfix.netscalerCacheRedirClientConnectionCoreID",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2626,7 +2626,7 @@
           "ipfix.netscalerCacheRedirClientConnectionTransactionID": {
             "path_match": "ipfix.netscalerCacheRedirClientConnectionTransactionID",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2634,7 +2634,7 @@
           "ipfix.netscalerClientRTT": {
             "path_match": "ipfix.netscalerClientRTT",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2642,7 +2642,7 @@
           "ipfix.netscalerConnectionChainHopCount": {
             "path_match": "ipfix.netscalerConnectionChainHopCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2658,7 +2658,7 @@
           "ipfix.netscalerConnectionId": {
             "path_match": "ipfix.netscalerConnectionId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2666,7 +2666,7 @@
           "ipfix.netscalerCurrentLicenseConsumed": {
             "path_match": "ipfix.netscalerCurrentLicenseConsumed",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2690,7 +2690,7 @@
           "ipfix.netscalerDbLoginFlags": {
             "path_match": "ipfix.netscalerDbLoginFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2714,7 +2714,7 @@
           "ipfix.netscalerDbReqType": {
             "path_match": "ipfix.netscalerDbReqType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2722,7 +2722,7 @@
           "ipfix.netscalerDbRespLength": {
             "path_match": "ipfix.netscalerDbRespLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2730,7 +2730,7 @@
           "ipfix.netscalerDbRespStatus": {
             "path_match": "ipfix.netscalerDbRespStatus",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2754,7 +2754,7 @@
           "ipfix.netscalerFlowFlags": {
             "path_match": "ipfix.netscalerFlowFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2826,7 +2826,7 @@
           "ipfix.netscalerHttpReqForwFB": {
             "path_match": "ipfix.netscalerHttpReqForwFB",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2834,7 +2834,7 @@
           "ipfix.netscalerHttpReqForwLB": {
             "path_match": "ipfix.netscalerHttpReqForwLB",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2858,7 +2858,7 @@
           "ipfix.netscalerHttpReqRcvFB": {
             "path_match": "ipfix.netscalerHttpReqRcvFB",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2866,7 +2866,7 @@
           "ipfix.netscalerHttpReqRcvLB": {
             "path_match": "ipfix.netscalerHttpReqRcvLB",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2914,7 +2914,7 @@
           "ipfix.netscalerHttpResForwFB": {
             "path_match": "ipfix.netscalerHttpResForwFB",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2922,7 +2922,7 @@
           "ipfix.netscalerHttpResForwLB": {
             "path_match": "ipfix.netscalerHttpResForwLB",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2938,7 +2938,7 @@
           "ipfix.netscalerHttpResRcvFB": {
             "path_match": "ipfix.netscalerHttpResRcvFB",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2946,7 +2946,7 @@
           "ipfix.netscalerHttpResRcvLB": {
             "path_match": "ipfix.netscalerHttpResRcvLB",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2970,7 +2970,7 @@
           "ipfix.netscalerHttpRspLen": {
             "path_match": "ipfix.netscalerHttpRspLen",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2978,7 +2978,7 @@
           "ipfix.netscalerHttpRspStatus": {
             "path_match": "ipfix.netscalerHttpRspStatus",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -2994,7 +2994,7 @@
           "ipfix.netscalerIcaApplicationTerminationTime": {
             "path_match": "ipfix.netscalerIcaApplicationTerminationTime",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3002,7 +3002,7 @@
           "ipfix.netscalerIcaApplicationTerminationType": {
             "path_match": "ipfix.netscalerIcaApplicationTerminationType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3018,7 +3018,7 @@
           "ipfix.netscalerIcaAppProcessID": {
             "path_match": "ipfix.netscalerIcaAppProcessID",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3026,7 +3026,7 @@
           "ipfix.netscalerIcaChannelId1": {
             "path_match": "ipfix.netscalerIcaChannelId1",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3042,7 +3042,7 @@
           "ipfix.netscalerIcaChannelId2": {
             "path_match": "ipfix.netscalerIcaChannelId2",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3058,7 +3058,7 @@
           "ipfix.netscalerIcaChannelId3": {
             "path_match": "ipfix.netscalerIcaChannelId3",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3074,7 +3074,7 @@
           "ipfix.netscalerIcaChannelId4": {
             "path_match": "ipfix.netscalerIcaChannelId4",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3090,7 +3090,7 @@
           "ipfix.netscalerIcaChannelId5": {
             "path_match": "ipfix.netscalerIcaChannelId5",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3122,7 +3122,7 @@
           "ipfix.netscalerIcaClientLauncher": {
             "path_match": "ipfix.netscalerIcaClientLauncher",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3130,7 +3130,7 @@
           "ipfix.netscalerIcaClientsideDelay": {
             "path_match": "ipfix.netscalerIcaClientsideDelay",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3138,7 +3138,7 @@
           "ipfix.netscalerIcaClientsideJitter": {
             "path_match": "ipfix.netscalerIcaClientsideJitter",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3146,7 +3146,7 @@
           "ipfix.netscalerIcaClientsidePacketsRetransmit": {
             "path_match": "ipfix.netscalerIcaClientsidePacketsRetransmit",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3154,7 +3154,7 @@
           "ipfix.netscalerIcaClientSideRTOCount": {
             "path_match": "ipfix.netscalerIcaClientSideRTOCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3162,7 +3162,7 @@
           "ipfix.netscalerIcaClientsideRTT": {
             "path_match": "ipfix.netscalerIcaClientsideRTT",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3178,7 +3178,7 @@
           "ipfix.netscalerIcaClientsideSRTT": {
             "path_match": "ipfix.netscalerIcaClientsideSRTT",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3194,7 +3194,7 @@
           "ipfix.netscalerIcaClientSideWindowSize": {
             "path_match": "ipfix.netscalerIcaClientSideWindowSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3202,7 +3202,7 @@
           "ipfix.netscalerIcaClientType": {
             "path_match": "ipfix.netscalerIcaClientType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3210,7 +3210,7 @@
           "ipfix.netscalerIcaConnectionPriority": {
             "path_match": "ipfix.netscalerIcaConnectionPriority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3218,7 +3218,7 @@
           "ipfix.netscalerIcaDeviceSerialNo": {
             "path_match": "ipfix.netscalerIcaDeviceSerialNo",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3234,7 +3234,7 @@
           "ipfix.netscalerIcaFlags": {
             "path_match": "ipfix.netscalerIcaFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3242,7 +3242,7 @@
           "ipfix.netscalerIcaHostDelay": {
             "path_match": "ipfix.netscalerIcaHostDelay",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3250,7 +3250,7 @@
           "ipfix.netscalerIcaL7ClientLatency": {
             "path_match": "ipfix.netscalerIcaL7ClientLatency",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3258,7 +3258,7 @@
           "ipfix.netscalerIcaL7ServerLatency": {
             "path_match": "ipfix.netscalerIcaL7ServerLatency",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3266,7 +3266,7 @@
           "ipfix.netscalerIcaLaunchMechanism": {
             "path_match": "ipfix.netscalerIcaLaunchMechanism",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3274,7 +3274,7 @@
           "ipfix.netscalerIcaNetworkUpdateEndTime": {
             "path_match": "ipfix.netscalerIcaNetworkUpdateEndTime",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3282,7 +3282,7 @@
           "ipfix.netscalerIcaNetworkUpdateStartTime": {
             "path_match": "ipfix.netscalerIcaNetworkUpdateStartTime",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3290,7 +3290,7 @@
           "ipfix.netscalerIcaRTT": {
             "path_match": "ipfix.netscalerIcaRTT",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3306,7 +3306,7 @@
           "ipfix.netscalerIcaServersideDelay": {
             "path_match": "ipfix.netscalerIcaServersideDelay",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3314,7 +3314,7 @@
           "ipfix.netscalerIcaServersideJitter": {
             "path_match": "ipfix.netscalerIcaServersideJitter",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3322,7 +3322,7 @@
           "ipfix.netscalerIcaServersidePacketsRetransmit": {
             "path_match": "ipfix.netscalerIcaServersidePacketsRetransmit",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3330,7 +3330,7 @@
           "ipfix.netscalerIcaServerSideRTOCount": {
             "path_match": "ipfix.netscalerIcaServerSideRTOCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3338,7 +3338,7 @@
           "ipfix.netscalerIcaServersideRTT": {
             "path_match": "ipfix.netscalerIcaServersideRTT",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3346,7 +3346,7 @@
           "ipfix.netscalerIcaServersideSRTT": {
             "path_match": "ipfix.netscalerIcaServersideSRTT",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3354,7 +3354,7 @@
           "ipfix.netscalerIcaServerSideWindowSize": {
             "path_match": "ipfix.netscalerIcaServerSideWindowSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3362,7 +3362,7 @@
           "ipfix.netscalerIcaSessionEndTime": {
             "path_match": "ipfix.netscalerIcaSessionEndTime",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3378,7 +3378,7 @@
           "ipfix.netscalerIcaSessionReconnects": {
             "path_match": "ipfix.netscalerIcaSessionReconnects",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3394,7 +3394,7 @@
           "ipfix.netscalerIcaSessionUpdateBeginSec": {
             "path_match": "ipfix.netscalerIcaSessionUpdateBeginSec",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3402,7 +3402,7 @@
           "ipfix.netscalerIcaSessionUpdateEndSec": {
             "path_match": "ipfix.netscalerIcaSessionUpdateEndSec",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3418,7 +3418,7 @@
           "ipfix.netscalerLicenseType": {
             "path_match": "ipfix.netscalerLicenseType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3426,7 +3426,7 @@
           "ipfix.netscalerMainPageCoreId": {
             "path_match": "ipfix.netscalerMainPageCoreId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3434,7 +3434,7 @@
           "ipfix.netscalerMainPageId": {
             "path_match": "ipfix.netscalerMainPageId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3442,7 +3442,7 @@
           "ipfix.netscalerMaxLicenseCount": {
             "path_match": "ipfix.netscalerMaxLicenseCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3458,7 +3458,7 @@
           "ipfix.netscalerRoundTripTime": {
             "path_match": "ipfix.netscalerRoundTripTime",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3466,7 +3466,7 @@
           "ipfix.netscalerServerTTFB": {
             "path_match": "ipfix.netscalerServerTTFB",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3474,7 +3474,7 @@
           "ipfix.netscalerServerTTLB": {
             "path_match": "ipfix.netscalerServerTTLB",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3490,7 +3490,7 @@
           "ipfix.netscalerSyslogPriority": {
             "path_match": "ipfix.netscalerSyslogPriority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3498,7 +3498,7 @@
           "ipfix.netscalerSyslogTimestamp": {
             "path_match": "ipfix.netscalerSyslogTimestamp",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3506,7 +3506,7 @@
           "ipfix.netscalerTransactionId": {
             "path_match": "ipfix.netscalerTransactionId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3514,7 +3514,7 @@
           "ipfix.newConnectionDeltaCount": {
             "path_match": "ipfix.newConnectionDeltaCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3522,7 +3522,7 @@
           "ipfix.nextHeaderIPv6": {
             "path_match": "ipfix.nextHeaderIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3538,7 +3538,7 @@
           "ipfix.notSentFlowTotalCount": {
             "path_match": "ipfix.notSentFlowTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3546,7 +3546,7 @@
           "ipfix.notSentLayer2OctetTotalCount": {
             "path_match": "ipfix.notSentLayer2OctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3554,7 +3554,7 @@
           "ipfix.notSentOctetTotalCount": {
             "path_match": "ipfix.notSentOctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3562,7 +3562,7 @@
           "ipfix.notSentPacketTotalCount": {
             "path_match": "ipfix.notSentPacketTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3570,7 +3570,7 @@
           "ipfix.observationDomainId": {
             "path_match": "ipfix.observationDomainId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3586,7 +3586,7 @@
           "ipfix.observationPointId": {
             "path_match": "ipfix.observationPointId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3594,7 +3594,7 @@
           "ipfix.observationPointType": {
             "path_match": "ipfix.observationPointType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3666,7 +3666,7 @@
           "ipfix.octetTotalSumOfSquares": {
             "path_match": "ipfix.octetTotalSumOfSquares",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3698,7 +3698,7 @@
           "ipfix.originalFlowsCompleted": {
             "path_match": "ipfix.originalFlowsCompleted",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3706,7 +3706,7 @@
           "ipfix.originalFlowsInitiated": {
             "path_match": "ipfix.originalFlowsInitiated",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3714,7 +3714,7 @@
           "ipfix.originalFlowsPresent": {
             "path_match": "ipfix.originalFlowsPresent",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3722,7 +3722,7 @@
           "ipfix.originalObservationDomainId": {
             "path_match": "ipfix.originalObservationDomainId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3778,7 +3778,7 @@
           "ipfix.payloadEntropy": {
             "path_match": "ipfix.payloadEntropy",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3786,7 +3786,7 @@
           "ipfix.payloadLengthIPv6": {
             "path_match": "ipfix.payloadLengthIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3794,7 +3794,7 @@
           "ipfix.portId": {
             "path_match": "ipfix.portId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3802,7 +3802,7 @@
           "ipfix.portRangeEnd": {
             "path_match": "ipfix.portRangeEnd",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3810,7 +3810,7 @@
           "ipfix.portRangeNumPorts": {
             "path_match": "ipfix.portRangeNumPorts",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3818,7 +3818,7 @@
           "ipfix.portRangeStart": {
             "path_match": "ipfix.portRangeStart",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3826,7 +3826,7 @@
           "ipfix.portRangeStepSize": {
             "path_match": "ipfix.portRangeStepSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3842,7 +3842,7 @@
           "ipfix.postDot1qCustomerVlanId": {
             "path_match": "ipfix.postDot1qCustomerVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3850,7 +3850,7 @@
           "ipfix.postDot1qVlanId": {
             "path_match": "ipfix.postDot1qVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3858,7 +3858,7 @@
           "ipfix.postIpClassOfService": {
             "path_match": "ipfix.postIpClassOfService",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3866,7 +3866,7 @@
           "ipfix.postIpDiffServCodePoint": {
             "path_match": "ipfix.postIpDiffServCodePoint",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3874,7 +3874,7 @@
           "ipfix.postIpPrecedence": {
             "path_match": "ipfix.postIpPrecedence",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3946,7 +3946,7 @@
           "ipfix.postMplsTopLabelExp": {
             "path_match": "ipfix.postMplsTopLabelExp",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3954,7 +3954,7 @@
           "ipfix.postNAPTDestinationTransportPort": {
             "path_match": "ipfix.postNAPTDestinationTransportPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -3962,7 +3962,7 @@
           "ipfix.postNAPTSourceTransportPort": {
             "path_match": "ipfix.postNAPTSourceTransportPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4042,7 +4042,7 @@
           "ipfix.postVlanId": {
             "path_match": "ipfix.postVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4050,7 +4050,7 @@
           "ipfix.privateEnterpriseNumber": {
             "path_match": "ipfix.privateEnterpriseNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4058,7 +4058,7 @@
           "ipfix.protocolIdentifier": {
             "path_match": "ipfix.protocolIdentifier",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4066,7 +4066,7 @@
           "ipfix.pseudoWireControlWord": {
             "path_match": "ipfix.pseudoWireControlWord",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4082,7 +4082,7 @@
           "ipfix.pseudoWireId": {
             "path_match": "ipfix.pseudoWireId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4090,7 +4090,7 @@
           "ipfix.pseudoWireType": {
             "path_match": "ipfix.pseudoWireType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4130,7 +4130,7 @@
           "ipfix.reverseAnonymizationFlags": {
             "path_match": "ipfix.reverseAnonymizationFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4138,7 +4138,7 @@
           "ipfix.reverseAnonymizationTechnique": {
             "path_match": "ipfix.reverseAnonymizationTechnique",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4250,7 +4250,7 @@
           "ipfix.reverseBgpValidityState": {
             "path_match": "ipfix.reverseBgpValidityState",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4258,7 +4258,7 @@
           "ipfix.reverseClassId": {
             "path_match": "ipfix.reverseClassId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4266,7 +4266,7 @@
           "ipfix.reverseClassificationEngineId": {
             "path_match": "ipfix.reverseClassificationEngineId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4314,7 +4314,7 @@
           "ipfix.reverseConnectionTransactionId": {
             "path_match": "ipfix.reverseConnectionTransactionId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4338,7 +4338,7 @@
           "ipfix.reverseDataLinkFrameSize": {
             "path_match": "ipfix.reverseDataLinkFrameSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4346,7 +4346,7 @@
           "ipfix.reverseDataLinkFrameType": {
             "path_match": "ipfix.reverseDataLinkFrameType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4354,7 +4354,7 @@
           "ipfix.reverseDataRecordsReliability": {
             "path_match": "ipfix.reverseDataRecordsReliability",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4386,7 +4386,7 @@
           "ipfix.reverseDestinationIPv4PrefixLength": {
             "path_match": "ipfix.reverseDestinationIPv4PrefixLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4410,7 +4410,7 @@
           "ipfix.reverseDestinationIPv6PrefixLength": {
             "path_match": "ipfix.reverseDestinationIPv6PrefixLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4426,7 +4426,7 @@
           "ipfix.reverseDestinationTransportPort": {
             "path_match": "ipfix.reverseDestinationTransportPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4434,7 +4434,7 @@
           "ipfix.reverseDigestHashValue": {
             "path_match": "ipfix.reverseDigestHashValue",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4490,7 +4490,7 @@
           "ipfix.reverseDot1qCustomerDEI": {
             "path_match": "ipfix.reverseDot1qCustomerDEI",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4506,7 +4506,7 @@
           "ipfix.reverseDot1qCustomerPriority": {
             "path_match": "ipfix.reverseDot1qCustomerPriority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4522,7 +4522,7 @@
           "ipfix.reverseDot1qCustomerVlanId": {
             "path_match": "ipfix.reverseDot1qCustomerVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4530,7 +4530,7 @@
           "ipfix.reverseDot1qDEI": {
             "path_match": "ipfix.reverseDot1qDEI",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4538,7 +4538,7 @@
           "ipfix.reverseDot1qPriority": {
             "path_match": "ipfix.reverseDot1qPriority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4546,7 +4546,7 @@
           "ipfix.reverseDot1qServiceInstanceId": {
             "path_match": "ipfix.reverseDot1qServiceInstanceId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4554,7 +4554,7 @@
           "ipfix.reverseDot1qServiceInstancePriority": {
             "path_match": "ipfix.reverseDot1qServiceInstancePriority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4570,7 +4570,7 @@
           "ipfix.reverseDot1qVlanId": {
             "path_match": "ipfix.reverseDot1qVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4626,7 +4626,7 @@
           "ipfix.reverseDstTrafficIndex": {
             "path_match": "ipfix.reverseDstTrafficIndex",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4642,7 +4642,7 @@
           "ipfix.reverseEgressInterface": {
             "path_match": "ipfix.reverseEgressInterface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4650,7 +4650,7 @@
           "ipfix.reverseEgressInterfaceType": {
             "path_match": "ipfix.reverseEgressInterfaceType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4658,7 +4658,7 @@
           "ipfix.reverseEgressPhysicalInterface": {
             "path_match": "ipfix.reverseEgressPhysicalInterface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4674,7 +4674,7 @@
           "ipfix.reverseEgressVRFID": {
             "path_match": "ipfix.reverseEgressVRFID",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4690,7 +4690,7 @@
           "ipfix.reverseEngineId": {
             "path_match": "ipfix.reverseEngineId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4698,7 +4698,7 @@
           "ipfix.reverseEngineType": {
             "path_match": "ipfix.reverseEngineType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4706,7 +4706,7 @@
           "ipfix.reverseEthernetHeaderLength": {
             "path_match": "ipfix.reverseEthernetHeaderLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4714,7 +4714,7 @@
           "ipfix.reverseEthernetPayloadLength": {
             "path_match": "ipfix.reverseEthernetPayloadLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4722,7 +4722,7 @@
           "ipfix.reverseEthernetTotalLength": {
             "path_match": "ipfix.reverseEthernetTotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4730,7 +4730,7 @@
           "ipfix.reverseEthernetType": {
             "path_match": "ipfix.reverseEthernetType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4746,7 +4746,7 @@
           "ipfix.reverseExportingProcessId": {
             "path_match": "ipfix.reverseExportingProcessId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4754,7 +4754,7 @@
           "ipfix.reverseExportSctpStreamId": {
             "path_match": "ipfix.reverseExportSctpStreamId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4762,7 +4762,7 @@
           "ipfix.reverseFirewallEvent": {
             "path_match": "ipfix.reverseFirewallEvent",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4770,7 +4770,7 @@
           "ipfix.reverseFirstNonEmptyPacketSize": {
             "path_match": "ipfix.reverseFirstNonEmptyPacketSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4786,7 +4786,7 @@
           "ipfix.reverseFlagsAndSamplerId": {
             "path_match": "ipfix.reverseFlagsAndSamplerId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4794,7 +4794,7 @@
           "ipfix.reverseFlowActiveTimeout": {
             "path_match": "ipfix.reverseFlowActiveTimeout",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4802,7 +4802,7 @@
           "ipfix.reverseFlowAttributes": {
             "path_match": "ipfix.reverseFlowAttributes",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4818,7 +4818,7 @@
           "ipfix.reverseFlowDirection": {
             "path_match": "ipfix.reverseFlowDirection",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4874,7 +4874,7 @@
           "ipfix.reverseFlowEndReason": {
             "path_match": "ipfix.reverseFlowEndReason",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4898,7 +4898,7 @@
           "ipfix.reverseFlowIdleTimeout": {
             "path_match": "ipfix.reverseFlowIdleTimeout",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4914,7 +4914,7 @@
           "ipfix.reverseFlowSamplingTimeInterval": {
             "path_match": "ipfix.reverseFlowSamplingTimeInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4922,7 +4922,7 @@
           "ipfix.reverseFlowSamplingTimeSpacing": {
             "path_match": "ipfix.reverseFlowSamplingTimeSpacing",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -4954,7 +4954,7 @@
           "ipfix.reverseFlowSelectorAlgorithm": {
             "path_match": "ipfix.reverseFlowSelectorAlgorithm",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5010,7 +5010,7 @@
           "ipfix.reverseForwardingStatus": {
             "path_match": "ipfix.reverseForwardingStatus",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5018,7 +5018,7 @@
           "ipfix.reverseFragmentFlags": {
             "path_match": "ipfix.reverseFragmentFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5026,7 +5026,7 @@
           "ipfix.reverseFragmentIdentification": {
             "path_match": "ipfix.reverseFragmentIdentification",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5034,7 +5034,7 @@
           "ipfix.reverseFragmentOffset": {
             "path_match": "ipfix.reverseFragmentOffset",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5042,7 +5042,7 @@
           "ipfix.reverseGreKey": {
             "path_match": "ipfix.reverseGreKey",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5050,7 +5050,7 @@
           "ipfix.reverseHashDigestOutput": {
             "path_match": "ipfix.reverseHashDigestOutput",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5058,7 +5058,7 @@
           "ipfix.reverseHashFlowDomain": {
             "path_match": "ipfix.reverseHashFlowDomain",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5066,7 +5066,7 @@
           "ipfix.reverseHashInitialiserValue": {
             "path_match": "ipfix.reverseHashInitialiserValue",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5074,7 +5074,7 @@
           "ipfix.reverseHashIPPayloadOffset": {
             "path_match": "ipfix.reverseHashIPPayloadOffset",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5082,7 +5082,7 @@
           "ipfix.reverseHashIPPayloadSize": {
             "path_match": "ipfix.reverseHashIPPayloadSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5090,7 +5090,7 @@
           "ipfix.reverseHashOutputRangeMax": {
             "path_match": "ipfix.reverseHashOutputRangeMax",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5098,7 +5098,7 @@
           "ipfix.reverseHashOutputRangeMin": {
             "path_match": "ipfix.reverseHashOutputRangeMin",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5106,7 +5106,7 @@
           "ipfix.reverseHashSelectedRangeMax": {
             "path_match": "ipfix.reverseHashSelectedRangeMax",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5114,7 +5114,7 @@
           "ipfix.reverseHashSelectedRangeMin": {
             "path_match": "ipfix.reverseHashSelectedRangeMin",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5122,7 +5122,7 @@
           "ipfix.reverseIcmpCodeIPv4": {
             "path_match": "ipfix.reverseIcmpCodeIPv4",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5130,7 +5130,7 @@
           "ipfix.reverseIcmpCodeIPv6": {
             "path_match": "ipfix.reverseIcmpCodeIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5138,7 +5138,7 @@
           "ipfix.reverseIcmpTypeCodeIPv4": {
             "path_match": "ipfix.reverseIcmpTypeCodeIPv4",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5146,7 +5146,7 @@
           "ipfix.reverseIcmpTypeCodeIPv6": {
             "path_match": "ipfix.reverseIcmpTypeCodeIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5154,7 +5154,7 @@
           "ipfix.reverseIcmpTypeIPv4": {
             "path_match": "ipfix.reverseIcmpTypeIPv4",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5162,7 +5162,7 @@
           "ipfix.reverseIcmpTypeIPv6": {
             "path_match": "ipfix.reverseIcmpTypeIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5170,7 +5170,7 @@
           "ipfix.reverseIgmpType": {
             "path_match": "ipfix.reverseIgmpType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5202,7 +5202,7 @@
           "ipfix.reverseInformationElementDataType": {
             "path_match": "ipfix.reverseInformationElementDataType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5218,7 +5218,7 @@
           "ipfix.reverseInformationElementId": {
             "path_match": "ipfix.reverseInformationElementId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5226,7 +5226,7 @@
           "ipfix.reverseInformationElementIndex": {
             "path_match": "ipfix.reverseInformationElementIndex",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5242,7 +5242,7 @@
           "ipfix.reverseInformationElementRangeBegin": {
             "path_match": "ipfix.reverseInformationElementRangeBegin",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5250,7 +5250,7 @@
           "ipfix.reverseInformationElementRangeEnd": {
             "path_match": "ipfix.reverseInformationElementRangeEnd",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5258,7 +5258,7 @@
           "ipfix.reverseInformationElementSemantics": {
             "path_match": "ipfix.reverseInformationElementSemantics",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5266,7 +5266,7 @@
           "ipfix.reverseInformationElementUnits": {
             "path_match": "ipfix.reverseInformationElementUnits",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5282,7 +5282,7 @@
           "ipfix.reverseIngressInterface": {
             "path_match": "ipfix.reverseIngressInterface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5290,7 +5290,7 @@
           "ipfix.reverseIngressInterfaceType": {
             "path_match": "ipfix.reverseIngressInterfaceType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5306,7 +5306,7 @@
           "ipfix.reverseIngressPhysicalInterface": {
             "path_match": "ipfix.reverseIngressPhysicalInterface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5322,7 +5322,7 @@
           "ipfix.reverseIngressVRFID": {
             "path_match": "ipfix.reverseIngressVRFID",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5330,7 +5330,7 @@
           "ipfix.reverseInitialTCPFlags": {
             "path_match": "ipfix.reverseInitialTCPFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5370,7 +5370,7 @@
           "ipfix.reverseIntermediateProcessId": {
             "path_match": "ipfix.reverseIntermediateProcessId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5378,7 +5378,7 @@
           "ipfix.reverseIpClassOfService": {
             "path_match": "ipfix.reverseIpClassOfService",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5386,7 +5386,7 @@
           "ipfix.reverseIpDiffServCodePoint": {
             "path_match": "ipfix.reverseIpDiffServCodePoint",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5394,7 +5394,7 @@
           "ipfix.reverseIpHeaderLength": {
             "path_match": "ipfix.reverseIpHeaderLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5426,7 +5426,7 @@
           "ipfix.reverseIpPayloadLength": {
             "path_match": "ipfix.reverseIpPayloadLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5442,7 +5442,7 @@
           "ipfix.reverseIpPrecedence": {
             "path_match": "ipfix.reverseIpPrecedence",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5450,7 +5450,7 @@
           "ipfix.reverseIPSecSPI": {
             "path_match": "ipfix.reverseIPSecSPI",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5458,7 +5458,7 @@
           "ipfix.reverseIpTotalLength": {
             "path_match": "ipfix.reverseIpTotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5466,7 +5466,7 @@
           "ipfix.reverseIpTTL": {
             "path_match": "ipfix.reverseIpTTL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5474,7 +5474,7 @@
           "ipfix.reverseIpv4IHL": {
             "path_match": "ipfix.reverseIpv4IHL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5482,7 +5482,7 @@
           "ipfix.reverseIpv4Options": {
             "path_match": "ipfix.reverseIpv4Options",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5498,7 +5498,7 @@
           "ipfix.reverseIpv6ExtensionHeaders": {
             "path_match": "ipfix.reverseIpv6ExtensionHeaders",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5506,7 +5506,7 @@
           "ipfix.reverseIpVersion": {
             "path_match": "ipfix.reverseIpVersion",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5514,7 +5514,7 @@
           "ipfix.reverseIsMulticast": {
             "path_match": "ipfix.reverseIsMulticast",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5586,7 +5586,7 @@
           "ipfix.reverseLayer2packetSectionOffset": {
             "path_match": "ipfix.reverseLayer2packetSectionOffset",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5594,7 +5594,7 @@
           "ipfix.reverseLayer2packetSectionSize": {
             "path_match": "ipfix.reverseLayer2packetSectionSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5602,7 +5602,7 @@
           "ipfix.reverseLayer2SegmentId": {
             "path_match": "ipfix.reverseLayer2SegmentId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5610,7 +5610,7 @@
           "ipfix.reverseLineCardId": {
             "path_match": "ipfix.reverseLineCardId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5666,7 +5666,7 @@
           "ipfix.reverseMaximumIpTotalLength": {
             "path_match": "ipfix.reverseMaximumIpTotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5674,7 +5674,7 @@
           "ipfix.reverseMaximumLayer2TotalLength": {
             "path_match": "ipfix.reverseMaximumLayer2TotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5682,7 +5682,7 @@
           "ipfix.reverseMaximumTTL": {
             "path_match": "ipfix.reverseMaximumTTL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5690,7 +5690,7 @@
           "ipfix.reverseMaxPacketSize": {
             "path_match": "ipfix.reverseMaxPacketSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5706,7 +5706,7 @@
           "ipfix.reverseMessageScope": {
             "path_match": "ipfix.reverseMessageScope",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5714,7 +5714,7 @@
           "ipfix.reverseMeteringProcessId": {
             "path_match": "ipfix.reverseMeteringProcessId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5730,7 +5730,7 @@
           "ipfix.reverseMetroEvcType": {
             "path_match": "ipfix.reverseMetroEvcType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5778,7 +5778,7 @@
           "ipfix.reverseMinimumIpTotalLength": {
             "path_match": "ipfix.reverseMinimumIpTotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5786,7 +5786,7 @@
           "ipfix.reverseMinimumLayer2TotalLength": {
             "path_match": "ipfix.reverseMinimumLayer2TotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5794,7 +5794,7 @@
           "ipfix.reverseMinimumTTL": {
             "path_match": "ipfix.reverseMinimumTTL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5818,7 +5818,7 @@
           "ipfix.reverseMplsLabelStackDepth": {
             "path_match": "ipfix.reverseMplsLabelStackDepth",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5826,7 +5826,7 @@
           "ipfix.reverseMplsLabelStackLength": {
             "path_match": "ipfix.reverseMplsLabelStackLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5914,7 +5914,7 @@
           "ipfix.reverseMplsPayloadLength": {
             "path_match": "ipfix.reverseMplsPayloadLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5930,7 +5930,7 @@
           "ipfix.reverseMplsTopLabelExp": {
             "path_match": "ipfix.reverseMplsTopLabelExp",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5954,7 +5954,7 @@
           "ipfix.reverseMplsTopLabelPrefixLength": {
             "path_match": "ipfix.reverseMplsTopLabelPrefixLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5970,7 +5970,7 @@
           "ipfix.reverseMplsTopLabelTTL": {
             "path_match": "ipfix.reverseMplsTopLabelTTL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5978,7 +5978,7 @@
           "ipfix.reverseMplsTopLabelType": {
             "path_match": "ipfix.reverseMplsTopLabelType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -5994,7 +5994,7 @@
           "ipfix.reverseMulticastReplicationFactor": {
             "path_match": "ipfix.reverseMulticastReplicationFactor",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6002,7 +6002,7 @@
           "ipfix.reverseNatEvent": {
             "path_match": "ipfix.reverseNatEvent",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6010,7 +6010,7 @@
           "ipfix.reverseNatOriginatingAddressRealm": {
             "path_match": "ipfix.reverseNatOriginatingAddressRealm",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6018,7 +6018,7 @@
           "ipfix.reverseNatPoolId": {
             "path_match": "ipfix.reverseNatPoolId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6034,7 +6034,7 @@
           "ipfix.reverseNatType": {
             "path_match": "ipfix.reverseNatType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6050,7 +6050,7 @@
           "ipfix.reverseNextHeaderIPv6": {
             "path_match": "ipfix.reverseNextHeaderIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6066,7 +6066,7 @@
           "ipfix.reverseNotSentLayer2OctetTotalCount": {
             "path_match": "ipfix.reverseNotSentLayer2OctetTotalCount",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6082,7 +6082,7 @@
           "ipfix.reverseObservationPointId": {
             "path_match": "ipfix.reverseObservationPointId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6090,7 +6090,7 @@
           "ipfix.reverseObservationPointType": {
             "path_match": "ipfix.reverseObservationPointType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6186,7 +6186,7 @@
           "ipfix.reverseOriginalFlowsCompleted": {
             "path_match": "ipfix.reverseOriginalFlowsCompleted",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6194,7 +6194,7 @@
           "ipfix.reverseOriginalFlowsInitiated": {
             "path_match": "ipfix.reverseOriginalFlowsInitiated",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6202,7 +6202,7 @@
           "ipfix.reverseOriginalFlowsPresent": {
             "path_match": "ipfix.reverseOriginalFlowsPresent",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6210,7 +6210,7 @@
           "ipfix.reverseOriginalObservationDomainId": {
             "path_match": "ipfix.reverseOriginalObservationDomainId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6266,7 +6266,7 @@
           "ipfix.reversePayloadEntropy": {
             "path_match": "ipfix.reversePayloadEntropy",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6274,7 +6274,7 @@
           "ipfix.reversePayloadLengthIPv6": {
             "path_match": "ipfix.reversePayloadLengthIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6282,7 +6282,7 @@
           "ipfix.reversePortId": {
             "path_match": "ipfix.reversePortId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6290,7 +6290,7 @@
           "ipfix.reversePortRangeEnd": {
             "path_match": "ipfix.reversePortRangeEnd",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6298,7 +6298,7 @@
           "ipfix.reversePortRangeNumPorts": {
             "path_match": "ipfix.reversePortRangeNumPorts",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6306,7 +6306,7 @@
           "ipfix.reversePortRangeStart": {
             "path_match": "ipfix.reversePortRangeStart",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6314,7 +6314,7 @@
           "ipfix.reversePortRangeStepSize": {
             "path_match": "ipfix.reversePortRangeStepSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6330,7 +6330,7 @@
           "ipfix.reversePostDot1qCustomerVlanId": {
             "path_match": "ipfix.reversePostDot1qCustomerVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6338,7 +6338,7 @@
           "ipfix.reversePostDot1qVlanId": {
             "path_match": "ipfix.reversePostDot1qVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6346,7 +6346,7 @@
           "ipfix.reversePostIpClassOfService": {
             "path_match": "ipfix.reversePostIpClassOfService",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6354,7 +6354,7 @@
           "ipfix.reversePostIpDiffServCodePoint": {
             "path_match": "ipfix.reversePostIpDiffServCodePoint",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6362,7 +6362,7 @@
           "ipfix.reversePostIpPrecedence": {
             "path_match": "ipfix.reversePostIpPrecedence",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6434,7 +6434,7 @@
           "ipfix.reversePostMplsTopLabelExp": {
             "path_match": "ipfix.reversePostMplsTopLabelExp",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6442,7 +6442,7 @@
           "ipfix.reversePostNAPTDestinationTransportPort": {
             "path_match": "ipfix.reversePostNAPTDestinationTransportPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6450,7 +6450,7 @@
           "ipfix.reversePostNAPTSourceTransportPort": {
             "path_match": "ipfix.reversePostNAPTSourceTransportPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6530,7 +6530,7 @@
           "ipfix.reversePostVlanId": {
             "path_match": "ipfix.reversePostVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6538,7 +6538,7 @@
           "ipfix.reversePrivateEnterpriseNumber": {
             "path_match": "ipfix.reversePrivateEnterpriseNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6546,7 +6546,7 @@
           "ipfix.reverseProtocolIdentifier": {
             "path_match": "ipfix.reverseProtocolIdentifier",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6554,7 +6554,7 @@
           "ipfix.reversePseudoWireControlWord": {
             "path_match": "ipfix.reversePseudoWireControlWord",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6570,7 +6570,7 @@
           "ipfix.reversePseudoWireId": {
             "path_match": "ipfix.reversePseudoWireId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6578,7 +6578,7 @@
           "ipfix.reversePseudoWireType": {
             "path_match": "ipfix.reversePseudoWireType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6610,7 +6610,7 @@
           "ipfix.reverseRfc3550JitterMicroseconds": {
             "path_match": "ipfix.reverseRfc3550JitterMicroseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6618,7 +6618,7 @@
           "ipfix.reverseRfc3550JitterMilliseconds": {
             "path_match": "ipfix.reverseRfc3550JitterMilliseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6626,7 +6626,7 @@
           "ipfix.reverseRfc3550JitterNanoseconds": {
             "path_match": "ipfix.reverseRfc3550JitterNanoseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6634,7 +6634,7 @@
           "ipfix.reverseRtpPayloadType": {
             "path_match": "ipfix.reverseRtpPayloadType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6642,7 +6642,7 @@
           "ipfix.reverseRtpSequenceNumber": {
             "path_match": "ipfix.reverseRtpSequenceNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6650,7 +6650,7 @@
           "ipfix.reverseSamplerId": {
             "path_match": "ipfix.reverseSamplerId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6658,7 +6658,7 @@
           "ipfix.reverseSamplerMode": {
             "path_match": "ipfix.reverseSamplerMode",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6674,7 +6674,7 @@
           "ipfix.reverseSamplerRandomInterval": {
             "path_match": "ipfix.reverseSamplerRandomInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6682,7 +6682,7 @@
           "ipfix.reverseSamplingAlgorithm": {
             "path_match": "ipfix.reverseSamplingAlgorithm",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6690,7 +6690,7 @@
           "ipfix.reverseSamplingFlowInterval": {
             "path_match": "ipfix.reverseSamplingFlowInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6698,7 +6698,7 @@
           "ipfix.reverseSamplingFlowSpacing": {
             "path_match": "ipfix.reverseSamplingFlowSpacing",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6706,7 +6706,7 @@
           "ipfix.reverseSamplingInterval": {
             "path_match": "ipfix.reverseSamplingInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6714,7 +6714,7 @@
           "ipfix.reverseSamplingPacketInterval": {
             "path_match": "ipfix.reverseSamplingPacketInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6722,7 +6722,7 @@
           "ipfix.reverseSamplingPacketSpace": {
             "path_match": "ipfix.reverseSamplingPacketSpace",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6730,7 +6730,7 @@
           "ipfix.reverseSamplingPopulation": {
             "path_match": "ipfix.reverseSamplingPopulation",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6738,7 +6738,7 @@
           "ipfix.reverseSamplingProbability": {
             "path_match": "ipfix.reverseSamplingProbability",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6746,7 +6746,7 @@
           "ipfix.reverseSamplingSize": {
             "path_match": "ipfix.reverseSamplingSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6754,7 +6754,7 @@
           "ipfix.reverseSamplingTimeInterval": {
             "path_match": "ipfix.reverseSamplingTimeInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6762,7 +6762,7 @@
           "ipfix.reverseSamplingTimeSpace": {
             "path_match": "ipfix.reverseSamplingTimeSpace",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6786,7 +6786,7 @@
           "ipfix.reverseSectionOffset": {
             "path_match": "ipfix.reverseSectionOffset",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6794,7 +6794,7 @@
           "ipfix.reverseSelectionSequenceId": {
             "path_match": "ipfix.reverseSelectionSequenceId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6802,7 +6802,7 @@
           "ipfix.reverseSelectorAlgorithm": {
             "path_match": "ipfix.reverseSelectorAlgorithm",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6810,7 +6810,7 @@
           "ipfix.reverseSelectorId": {
             "path_match": "ipfix.reverseSelectorId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6818,7 +6818,7 @@
           "ipfix.reverseSelectorIDTotalFlowsObserved": {
             "path_match": "ipfix.reverseSelectorIDTotalFlowsObserved",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6826,7 +6826,7 @@
           "ipfix.reverseSelectorIDTotalFlowsSelected": {
             "path_match": "ipfix.reverseSelectorIDTotalFlowsSelected",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6858,7 +6858,7 @@
           "ipfix.reverseSessionScope": {
             "path_match": "ipfix.reverseSessionScope",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6890,7 +6890,7 @@
           "ipfix.reverseSourceIPv4PrefixLength": {
             "path_match": "ipfix.reverseSourceIPv4PrefixLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6914,7 +6914,7 @@
           "ipfix.reverseSourceIPv6PrefixLength": {
             "path_match": "ipfix.reverseSourceIPv6PrefixLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6930,7 +6930,7 @@
           "ipfix.reverseSourceTransportPort": {
             "path_match": "ipfix.reverseSourceTransportPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6938,7 +6938,7 @@
           "ipfix.reverseSrcTrafficIndex": {
             "path_match": "ipfix.reverseSrcTrafficIndex",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -6970,7 +6970,7 @@
           "ipfix.reverseStandardDeviationPayloadLength": {
             "path_match": "ipfix.reverseStandardDeviationPayloadLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7002,7 +7002,7 @@
           "ipfix.reverseTcpControlBits": {
             "path_match": "ipfix.reverseTcpControlBits",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7010,7 +7010,7 @@
           "ipfix.reverseTcpDestinationPort": {
             "path_match": "ipfix.reverseTcpDestinationPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7026,7 +7026,7 @@
           "ipfix.reverseTcpHeaderLength": {
             "path_match": "ipfix.reverseTcpHeaderLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7034,7 +7034,7 @@
           "ipfix.reverseTcpOptions": {
             "path_match": "ipfix.reverseTcpOptions",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7066,7 +7066,7 @@
           "ipfix.reverseTcpSourcePort": {
             "path_match": "ipfix.reverseTcpSourcePort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7082,7 +7082,7 @@
           "ipfix.reverseTcpUrgentPointer": {
             "path_match": "ipfix.reverseTcpUrgentPointer",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7098,7 +7098,7 @@
           "ipfix.reverseTcpWindowScale": {
             "path_match": "ipfix.reverseTcpWindowScale",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7106,7 +7106,7 @@
           "ipfix.reverseTcpWindowSize": {
             "path_match": "ipfix.reverseTcpWindowSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7114,7 +7114,7 @@
           "ipfix.reverseTotalLengthIPv4": {
             "path_match": "ipfix.reverseTotalLengthIPv4",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7146,7 +7146,7 @@
           "ipfix.reverseUdpDestinationPort": {
             "path_match": "ipfix.reverseUdpDestinationPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7154,7 +7154,7 @@
           "ipfix.reverseUdpMessageLength": {
             "path_match": "ipfix.reverseUdpMessageLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7162,7 +7162,7 @@
           "ipfix.reverseUdpSourcePort": {
             "path_match": "ipfix.reverseUdpSourcePort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7170,7 +7170,7 @@
           "ipfix.reverseUnionTCPFlags": {
             "path_match": "ipfix.reverseUnionTCPFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7194,7 +7194,7 @@
           "ipfix.reverseValueDistributionMethod": {
             "path_match": "ipfix.reverseValueDistributionMethod",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7202,7 +7202,7 @@
           "ipfix.reverseVirtualStationInterfaceId": {
             "path_match": "ipfix.reverseVirtualStationInterfaceId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7234,7 +7234,7 @@
           "ipfix.reverseVlanId": {
             "path_match": "ipfix.reverseVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7250,7 +7250,7 @@
           "ipfix.reverseWlanChannelId": {
             "path_match": "ipfix.reverseWlanChannelId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7274,7 +7274,7 @@
           "ipfix.rfc3550JitterMicroseconds": {
             "path_match": "ipfix.rfc3550JitterMicroseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7282,7 +7282,7 @@
           "ipfix.rfc3550JitterMilliseconds": {
             "path_match": "ipfix.rfc3550JitterMilliseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7290,7 +7290,7 @@
           "ipfix.rfc3550JitterNanoseconds": {
             "path_match": "ipfix.rfc3550JitterNanoseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7298,7 +7298,7 @@
           "ipfix.rtpPayloadType": {
             "path_match": "ipfix.rtpPayloadType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7306,7 +7306,7 @@
           "ipfix.rtpSequenceNumber": {
             "path_match": "ipfix.rtpSequenceNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7314,7 +7314,7 @@
           "ipfix.samplerId": {
             "path_match": "ipfix.samplerId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7322,7 +7322,7 @@
           "ipfix.samplerMode": {
             "path_match": "ipfix.samplerMode",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7338,7 +7338,7 @@
           "ipfix.samplerRandomInterval": {
             "path_match": "ipfix.samplerRandomInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7346,7 +7346,7 @@
           "ipfix.samplingAlgorithm": {
             "path_match": "ipfix.samplingAlgorithm",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7354,7 +7354,7 @@
           "ipfix.samplingFlowInterval": {
             "path_match": "ipfix.samplingFlowInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7362,7 +7362,7 @@
           "ipfix.samplingFlowSpacing": {
             "path_match": "ipfix.samplingFlowSpacing",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7370,7 +7370,7 @@
           "ipfix.samplingInterval": {
             "path_match": "ipfix.samplingInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7378,7 +7378,7 @@
           "ipfix.samplingPacketInterval": {
             "path_match": "ipfix.samplingPacketInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7386,7 +7386,7 @@
           "ipfix.samplingPacketSpace": {
             "path_match": "ipfix.samplingPacketSpace",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7394,7 +7394,7 @@
           "ipfix.samplingPopulation": {
             "path_match": "ipfix.samplingPopulation",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7410,7 +7410,7 @@
           "ipfix.samplingSize": {
             "path_match": "ipfix.samplingSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7418,7 +7418,7 @@
           "ipfix.samplingTimeInterval": {
             "path_match": "ipfix.samplingTimeInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7426,7 +7426,7 @@
           "ipfix.samplingTimeSpace": {
             "path_match": "ipfix.samplingTimeSpace",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7450,7 +7450,7 @@
           "ipfix.sectionOffset": {
             "path_match": "ipfix.sectionOffset",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7458,7 +7458,7 @@
           "ipfix.selectionSequenceId": {
             "path_match": "ipfix.selectionSequenceId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7466,7 +7466,7 @@
           "ipfix.selectorAlgorithm": {
             "path_match": "ipfix.selectorAlgorithm",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7474,7 +7474,7 @@
           "ipfix.selectorId": {
             "path_match": "ipfix.selectorId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7482,7 +7482,7 @@
           "ipfix.selectorIDTotalFlowsObserved": {
             "path_match": "ipfix.selectorIDTotalFlowsObserved",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7490,7 +7490,7 @@
           "ipfix.selectorIDTotalFlowsSelected": {
             "path_match": "ipfix.selectorIDTotalFlowsSelected",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7522,7 +7522,7 @@
           "ipfix.sessionScope": {
             "path_match": "ipfix.sessionScope",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7530,7 +7530,7 @@
           "ipfix.silkAppLabel": {
             "path_match": "ipfix.silkAppLabel",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7562,7 +7562,7 @@
           "ipfix.sourceIPv4PrefixLength": {
             "path_match": "ipfix.sourceIPv4PrefixLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7586,7 +7586,7 @@
           "ipfix.sourceIPv6PrefixLength": {
             "path_match": "ipfix.sourceIPv6PrefixLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7602,7 +7602,7 @@
           "ipfix.sourceTransportPort": {
             "path_match": "ipfix.sourceTransportPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7610,7 +7610,7 @@
           "ipfix.srcTrafficIndex": {
             "path_match": "ipfix.srcTrafficIndex",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7658,7 +7658,7 @@
           "ipfix.sslCertVersion": {
             "path_match": "ipfix.sslCertVersion",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7674,7 +7674,7 @@
           "ipfix.sslClientVersion": {
             "path_match": "ipfix.sslClientVersion",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7682,7 +7682,7 @@
           "ipfix.sslCompressionMethod": {
             "path_match": "ipfix.sslCompressionMethod",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7722,7 +7722,7 @@
           "ipfix.sslServerCipher": {
             "path_match": "ipfix.sslServerCipher",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7762,7 +7762,7 @@
           "ipfix.standardDeviationPayloadLength": {
             "path_match": "ipfix.standardDeviationPayloadLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7794,7 +7794,7 @@
           "ipfix.tcpControlBits": {
             "path_match": "ipfix.tcpControlBits",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7802,7 +7802,7 @@
           "ipfix.tcpDestinationPort": {
             "path_match": "ipfix.tcpDestinationPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7818,7 +7818,7 @@
           "ipfix.tcpHeaderLength": {
             "path_match": "ipfix.tcpHeaderLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7826,7 +7826,7 @@
           "ipfix.tcpOptions": {
             "path_match": "ipfix.tcpOptions",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7858,7 +7858,7 @@
           "ipfix.tcpSourcePort": {
             "path_match": "ipfix.tcpSourcePort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7874,7 +7874,7 @@
           "ipfix.tcpUrgentPointer": {
             "path_match": "ipfix.tcpUrgentPointer",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7890,7 +7890,7 @@
           "ipfix.tcpWindowScale": {
             "path_match": "ipfix.tcpWindowScale",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7898,7 +7898,7 @@
           "ipfix.tcpWindowSize": {
             "path_match": "ipfix.tcpWindowSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7906,7 +7906,7 @@
           "ipfix.templateId": {
             "path_match": "ipfix.templateId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7930,7 +7930,7 @@
           "ipfix.totalLengthIPv4": {
             "path_match": "ipfix.totalLengthIPv4",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7962,7 +7962,7 @@
           "ipfix.udpDestinationPort": {
             "path_match": "ipfix.udpDestinationPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7970,7 +7970,7 @@
           "ipfix.udpMessageLength": {
             "path_match": "ipfix.udpMessageLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7978,7 +7978,7 @@
           "ipfix.udpSourcePort": {
             "path_match": "ipfix.udpSourcePort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -7986,7 +7986,7 @@
           "ipfix.unionTCPFlags": {
             "path_match": "ipfix.unionTCPFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8010,7 +8010,7 @@
           "ipfix.valueDistributionMethod": {
             "path_match": "ipfix.valueDistributionMethod",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8058,7 +8058,7 @@
           "ipfix.vlanId": {
             "path_match": "ipfix.vlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8074,7 +8074,7 @@
           "ipfix.wlanChannelId": {
             "path_match": "ipfix.wlanChannelId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8108,7 +8108,7 @@
           "netflow.anonymizationFlags": {
             "path_match": "netflow.anonymizationFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8116,7 +8116,7 @@
           "netflow.anonymizationTechnique": {
             "path_match": "netflow.anonymizationTechnique",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8212,7 +8212,7 @@
           "netflow.bgpValidityState": {
             "path_match": "netflow.bgpValidityState",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8220,7 +8220,7 @@
           "netflow.biflowDirection": {
             "path_match": "netflow.biflowDirection",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8260,7 +8260,7 @@
           "netflow.collectorTransportPort": {
             "path_match": "netflow.collectorTransportPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8316,7 +8316,7 @@
           "netflow.dataLinkFrameSize": {
             "path_match": "netflow.dataLinkFrameSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8324,7 +8324,7 @@
           "netflow.dataLinkFrameType": {
             "path_match": "netflow.dataLinkFrameType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8332,7 +8332,7 @@
           "netflow.dataRecordsReliability": {
             "path_match": "netflow.dataRecordsReliability",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8356,7 +8356,7 @@
           "netflow.direction": {
             "path_match": "netflow.direction",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8412,7 +8412,7 @@
           "netflow.dot1qCustomerDEI": {
             "path_match": "netflow.dot1qCustomerDEI",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8428,7 +8428,7 @@
           "netflow.dot1qCustomerPriority": {
             "path_match": "netflow.dot1qCustomerPriority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8444,7 +8444,7 @@
           "netflow.dot1qCustomerVlanId": {
             "path_match": "netflow.dot1qCustomerVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8452,7 +8452,7 @@
           "netflow.dot1qDEI": {
             "path_match": "netflow.dot1qDEI",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8460,7 +8460,7 @@
           "netflow.dot1qPriority": {
             "path_match": "netflow.dot1qPriority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8468,7 +8468,7 @@
           "netflow.dot1qServiceInstanceId": {
             "path_match": "netflow.dot1qServiceInstanceId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8476,7 +8476,7 @@
           "netflow.dot1qServiceInstancePriority": {
             "path_match": "netflow.dot1qServiceInstancePriority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8492,7 +8492,7 @@
           "netflow.dot1qVlanId": {
             "path_match": "netflow.dot1qVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8548,7 +8548,7 @@
           "netflow.dst_as": {
             "path_match": "netflow.dst_as",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8556,7 +8556,7 @@
           "netflow.dst_mask": {
             "path_match": "netflow.dst_mask",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8564,7 +8564,7 @@
           "netflow.dst_tos": {
             "path_match": "netflow.dst_tos",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8572,7 +8572,7 @@
           "netflow.dst_vlan": {
             "path_match": "netflow.dst_vlan",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8588,7 +8588,7 @@
           "netflow.egressInterfaceType": {
             "path_match": "netflow.egressInterfaceType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8596,7 +8596,7 @@
           "netflow.egressPhysicalInterface": {
             "path_match": "netflow.egressPhysicalInterface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8628,7 +8628,7 @@
           "netflow.engine_id": {
             "path_match": "netflow.engine_id",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8636,7 +8636,7 @@
           "netflow.engine_type": {
             "path_match": "netflow.engine_type",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8644,7 +8644,7 @@
           "netflow.ethernetHeaderLength": {
             "path_match": "netflow.ethernetHeaderLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8652,7 +8652,7 @@
           "netflow.ethernetPayloadLength": {
             "path_match": "netflow.ethernetPayloadLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8660,7 +8660,7 @@
           "netflow.ethernetTotalLength": {
             "path_match": "netflow.ethernetTotalLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8668,7 +8668,7 @@
           "netflow.ethernetType": {
             "path_match": "netflow.ethernetType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8708,7 +8708,7 @@
           "netflow.exporterTransportPort": {
             "path_match": "netflow.exporterTransportPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8716,7 +8716,7 @@
           "netflow.exportingProcessId": {
             "path_match": "netflow.exportingProcessId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8724,7 +8724,7 @@
           "netflow.exportInterface": {
             "path_match": "netflow.exportInterface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8732,7 +8732,7 @@
           "netflow.exportProtocolVersion": {
             "path_match": "netflow.exportProtocolVersion",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8740,7 +8740,7 @@
           "netflow.exportSctpStreamId": {
             "path_match": "netflow.exportSctpStreamId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8748,7 +8748,7 @@
           "netflow.exportTransportProtocol": {
             "path_match": "netflow.exportTransportProtocol",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8764,7 +8764,7 @@
           "netflow.flow_active_timeout": {
             "path_match": "netflow.flow_active_timeout",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8780,7 +8780,7 @@
           "netflow.flow_end_reason": {
             "path_match": "netflow.flow_end_reason",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8788,7 +8788,7 @@
           "netflow.flow_inactive_timeout": {
             "path_match": "netflow.flow_inactive_timeout",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8796,7 +8796,7 @@
           "netflow.flow_records": {
             "path_match": "netflow.flow_records",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8804,7 +8804,7 @@
           "netflow.flow_sampler_id": {
             "path_match": "netflow.flow_sampler_id",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8812,7 +8812,7 @@
           "netflow.flow_sampler_mode": {
             "path_match": "netflow.flow_sampler_mode",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8820,7 +8820,7 @@
           "netflow.flow_sampler_random_interval": {
             "path_match": "netflow.flow_sampler_random_interval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8844,7 +8844,7 @@
           "netflow.flowDurationMicroseconds": {
             "path_match": "netflow.flowDurationMicroseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8852,7 +8852,7 @@
           "netflow.flowDurationMilliseconds": {
             "path_match": "netflow.flowDurationMilliseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8860,7 +8860,7 @@
           "netflow.flowEndDeltaMicroseconds": {
             "path_match": "netflow.flowEndDeltaMicroseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8900,7 +8900,7 @@
           "netflow.flows": {
             "path_match": "netflow.flows",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8948,7 +8948,7 @@
           "netflow.flowSelectorAlgorithm": {
             "path_match": "netflow.flowSelectorAlgorithm",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8956,7 +8956,7 @@
           "netflow.flowset_id": {
             "path_match": "netflow.flowset_id",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8964,7 +8964,7 @@
           "netflow.flowStartDeltaMicroseconds": {
             "path_match": "netflow.flowStartDeltaMicroseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -8996,7 +8996,7 @@
           "netflow.forwarding_status.reason": {
             "path_match": "netflow.forwarding_status.reason",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9004,7 +9004,7 @@
           "netflow.forwarding_status.status": {
             "path_match": "netflow.forwarding_status.status",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9012,7 +9012,7 @@
           "netflow.fragmentFlags": {
             "path_match": "netflow.fragmentFlags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9020,7 +9020,7 @@
           "netflow.fw_event": {
             "path_match": "netflow.fw_event",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9028,7 +9028,7 @@
           "netflow.fw_ext_event": {
             "path_match": "netflow.fw_ext_event",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9052,7 +9052,7 @@
           "netflow.hashDigestOutput": {
             "path_match": "netflow.hashDigestOutput",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9060,7 +9060,7 @@
           "netflow.hashFlowDomain": {
             "path_match": "netflow.hashFlowDomain",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9124,7 +9124,7 @@
           "netflow.icmp_code": {
             "path_match": "netflow.icmp_code",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9132,7 +9132,7 @@
           "netflow.icmp_code_ipv6": {
             "path_match": "netflow.icmp_code_ipv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9140,7 +9140,7 @@
           "netflow.icmp_type": {
             "path_match": "netflow.icmp_type",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9148,7 +9148,7 @@
           "netflow.icmp_type_ipv6": {
             "path_match": "netflow.icmp_type_ipv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9156,7 +9156,7 @@
           "netflow.icmpTypeCodeIPv6": {
             "path_match": "netflow.icmpTypeCodeIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9268,7 +9268,7 @@
           "netflow.informationElementDataType": {
             "path_match": "netflow.informationElementDataType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9284,7 +9284,7 @@
           "netflow.informationElementId": {
             "path_match": "netflow.informationElementId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9292,7 +9292,7 @@
           "netflow.informationElementIndex": {
             "path_match": "netflow.informationElementIndex",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9324,7 +9324,7 @@
           "netflow.informationElementSemantics": {
             "path_match": "netflow.informationElementSemantics",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9332,7 +9332,7 @@
           "netflow.informationElementUnits": {
             "path_match": "netflow.informationElementUnits",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9348,7 +9348,7 @@
           "netflow.ingressInterfaceType": {
             "path_match": "netflow.ingressInterfaceType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9364,7 +9364,7 @@
           "netflow.ingressPhysicalInterface": {
             "path_match": "netflow.ingressPhysicalInterface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9396,7 +9396,7 @@
           "netflow.input_snmp": {
             "path_match": "netflow.input_snmp",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9404,7 +9404,7 @@
           "netflow.intermediateProcessId": {
             "path_match": "netflow.intermediateProcessId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9412,7 +9412,7 @@
           "netflow.ip_dscp": {
             "path_match": "netflow.ip_dscp",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9420,7 +9420,7 @@
           "netflow.ip_protocol_version": {
             "path_match": "netflow.ip_protocol_version",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9428,7 +9428,7 @@
           "netflow.ip_tos": {
             "path_match": "netflow.ip_tos",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9436,7 +9436,7 @@
           "netflow.ipHeaderLength": {
             "path_match": "netflow.ipHeaderLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9452,7 +9452,7 @@
           "netflow.ipPayloadLength": {
             "path_match": "netflow.ipPayloadLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9468,7 +9468,7 @@
           "netflow.ipPrecedence": {
             "path_match": "netflow.ipPrecedence",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9492,7 +9492,7 @@
           "netflow.ipTTL": {
             "path_match": "netflow.ipTTL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9516,7 +9516,7 @@
           "netflow.ipv4_ident": {
             "path_match": "netflow.ipv4_ident",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9548,7 +9548,7 @@
           "netflow.ipv4IHL": {
             "path_match": "netflow.ipv4IHL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9556,7 +9556,7 @@
           "netflow.ipv4Options": {
             "path_match": "netflow.ipv4Options",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9572,7 +9572,7 @@
           "netflow.ipv6_dst_mask": {
             "path_match": "netflow.ipv6_dst_mask",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9596,7 +9596,7 @@
           "netflow.ipv6_option_headers": {
             "path_match": "netflow.ipv6_option_headers",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9612,7 +9612,7 @@
           "netflow.ipv6_src_mask": {
             "path_match": "netflow.ipv6_src_mask",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9620,7 +9620,7 @@
           "netflow.isMulticast": {
             "path_match": "netflow.isMulticast",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9628,7 +9628,7 @@
           "netflow.l4_dst_port": {
             "path_match": "netflow.l4_dst_port",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9636,7 +9636,7 @@
           "netflow.l4_src_port": {
             "path_match": "netflow.l4_src_port",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9708,7 +9708,7 @@
           "netflow.lineCardId": {
             "path_match": "netflow.lineCardId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9724,7 +9724,7 @@
           "netflow.max_pkt_length": {
             "path_match": "netflow.max_pkt_length",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9732,7 +9732,7 @@
           "netflow.max_ttl": {
             "path_match": "netflow.max_ttl",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9796,7 +9796,7 @@
           "netflow.messageScope": {
             "path_match": "netflow.messageScope",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9804,7 +9804,7 @@
           "netflow.meteringProcessId": {
             "path_match": "netflow.meteringProcessId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9820,7 +9820,7 @@
           "netflow.metroEvcType": {
             "path_match": "netflow.metroEvcType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9828,7 +9828,7 @@
           "netflow.min_pkt_length": {
             "path_match": "netflow.min_pkt_length",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9836,7 +9836,7 @@
           "netflow.min_ttl": {
             "path_match": "netflow.min_ttl",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9844,7 +9844,7 @@
           "netflow.minExportSeconds": {
             "path_match": "netflow.minExportSeconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9876,7 +9876,7 @@
           "netflow.minFlowStartSeconds": {
             "path_match": "netflow.minFlowStartSeconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9908,7 +9908,7 @@
           "netflow.mpls_label_stack_octets.bottom_of_stack": {
             "path_match": "netflow.mpls_label_stack_octets.bottom_of_stack",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9916,7 +9916,7 @@
           "netflow.mpls_label_stack_octets.experimental": {
             "path_match": "netflow.mpls_label_stack_octets.experimental",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9924,7 +9924,7 @@
           "netflow.mpls_label_stack_octets.label": {
             "path_match": "netflow.mpls_label_stack_octets.label",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9932,7 +9932,7 @@
           "netflow.mpls_label_stack_octets.ttl": {
             "path_match": "netflow.mpls_label_stack_octets.ttl",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9948,7 +9948,7 @@
           "netflow.mpls_top_label_type": {
             "path_match": "netflow.mpls_top_label_type",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9956,7 +9956,7 @@
           "netflow.mplsLabelStackDepth": {
             "path_match": "netflow.mplsLabelStackDepth",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9980,7 +9980,7 @@
           "netflow.mplsTopLabelExp": {
             "path_match": "netflow.mplsTopLabelExp",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -9996,7 +9996,7 @@
           "netflow.mplsTopLabelTTL": {
             "path_match": "netflow.mplsTopLabelTTL",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10020,7 +10020,7 @@
           "netflow.mul_igmp_type": {
             "path_match": "netflow.mul_igmp_type",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10028,7 +10028,7 @@
           "netflow.natEvent": {
             "path_match": "netflow.natEvent",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10036,7 +10036,7 @@
           "netflow.natOriginatingAddressRealm": {
             "path_match": "netflow.natOriginatingAddressRealm",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10060,7 +10060,7 @@
           "netflow.natType": {
             "path_match": "netflow.natType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10076,7 +10076,7 @@
           "netflow.nextHeaderIPv6": {
             "path_match": "netflow.nextHeaderIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10124,7 +10124,7 @@
           "netflow.nprobe_proto": {
             "path_match": "netflow.nprobe_proto",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10140,7 +10140,7 @@
           "netflow.observationDomainId": {
             "path_match": "netflow.observationDomainId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10164,7 +10164,7 @@
           "netflow.observationPointType": {
             "path_match": "netflow.observationPointType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10188,7 +10188,7 @@
           "netflow.observationTimeSeconds": {
             "path_match": "netflow.observationTimeSeconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10268,7 +10268,7 @@
           "netflow.originalObservationDomainId": {
             "path_match": "netflow.originalObservationDomainId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10300,7 +10300,7 @@
           "netflow.output_snmp": {
             "path_match": "netflow.output_snmp",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10316,7 +10316,7 @@
           "netflow.payloadLengthIPv6": {
             "path_match": "netflow.payloadLengthIPv6",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10324,7 +10324,7 @@
           "netflow.portId": {
             "path_match": "netflow.portId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10332,7 +10332,7 @@
           "netflow.portRangeNumPorts": {
             "path_match": "netflow.portRangeNumPorts",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10340,7 +10340,7 @@
           "netflow.portRangeStepSize": {
             "path_match": "netflow.portRangeStepSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10348,7 +10348,7 @@
           "netflow.postDot1qCustomerVlanId": {
             "path_match": "netflow.postDot1qCustomerVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10356,7 +10356,7 @@
           "netflow.postDot1qVlanId": {
             "path_match": "netflow.postDot1qVlanId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10364,7 +10364,7 @@
           "netflow.postIpDiffServCodePoint": {
             "path_match": "netflow.postIpDiffServCodePoint",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10372,7 +10372,7 @@
           "netflow.postIpPrecedence": {
             "path_match": "netflow.postIpPrecedence",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10428,7 +10428,7 @@
           "netflow.postMplsTopLabelExp": {
             "path_match": "netflow.postMplsTopLabelExp",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10436,7 +10436,7 @@
           "netflow.postNATPortBlockEnd": {
             "path_match": "netflow.postNATPortBlockEnd",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10444,7 +10444,7 @@
           "netflow.postNATPortBlockStart": {
             "path_match": "netflow.postNATPortBlockStart",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10468,7 +10468,7 @@
           "netflow.privateEnterpriseNumber": {
             "path_match": "netflow.privateEnterpriseNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10476,7 +10476,7 @@
           "netflow.protocol": {
             "path_match": "netflow.protocol",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10508,7 +10508,7 @@
           "netflow.pseudoWireType": {
             "path_match": "netflow.pseudoWireType",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10540,7 +10540,7 @@
           "netflow.rfc3550JitterMicroseconds": {
             "path_match": "netflow.rfc3550JitterMicroseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10548,7 +10548,7 @@
           "netflow.rfc3550JitterMilliseconds": {
             "path_match": "netflow.rfc3550JitterMilliseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10556,7 +10556,7 @@
           "netflow.rfc3550JitterNanoseconds": {
             "path_match": "netflow.rfc3550JitterNanoseconds",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10564,7 +10564,7 @@
           "netflow.rtpSequenceNumber": {
             "path_match": "netflow.rtpSequenceNumber",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10580,7 +10580,7 @@
           "netflow.sampling_algorithm": {
             "path_match": "netflow.sampling_algorithm",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10588,7 +10588,7 @@
           "netflow.sampling_interval": {
             "path_match": "netflow.sampling_interval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10612,7 +10612,7 @@
           "netflow.samplingPacketInterval": {
             "path_match": "netflow.samplingPacketInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10620,7 +10620,7 @@
           "netflow.samplingPacketSpace": {
             "path_match": "netflow.samplingPacketSpace",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10628,7 +10628,7 @@
           "netflow.samplingPopulation": {
             "path_match": "netflow.samplingPopulation",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10644,7 +10644,7 @@
           "netflow.samplingSize": {
             "path_match": "netflow.samplingSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10652,7 +10652,7 @@
           "netflow.samplingTimeInterval": {
             "path_match": "netflow.samplingTimeInterval",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10660,7 +10660,7 @@
           "netflow.samplingTimeSpace": {
             "path_match": "netflow.samplingTimeSpace",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10668,7 +10668,7 @@
           "netflow.scope_system": {
             "path_match": "netflow.scope_system",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10676,7 +10676,7 @@
           "netflow.sectionExportedOctets": {
             "path_match": "netflow.sectionExportedOctets",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10684,7 +10684,7 @@
           "netflow.sectionOffset": {
             "path_match": "netflow.sectionOffset",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10700,7 +10700,7 @@
           "netflow.selectorAlgorithm": {
             "path_match": "netflow.selectorAlgorithm",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10756,7 +10756,7 @@
           "netflow.sessionScope": {
             "path_match": "netflow.sessionScope",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10772,7 +10772,7 @@
           "netflow.src_as": {
             "path_match": "netflow.src_as",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10780,7 +10780,7 @@
           "netflow.src_mask": {
             "path_match": "netflow.src_mask",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10788,7 +10788,7 @@
           "netflow.src_tos": {
             "path_match": "netflow.src_tos",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10796,7 +10796,7 @@
           "netflow.src_vlan": {
             "path_match": "netflow.src_vlan",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10844,7 +10844,7 @@
           "netflow.streamcore_tcp_retrans_rate": {
             "path_match": "netflow.streamcore_tcp_retrans_rate",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10852,7 +10852,7 @@
           "netflow.streamcore_call_direction": {
             "path_match": "netflow.streamcore_call_direction",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10892,7 +10892,7 @@
           "netflow.streamcore_mos_lq": {
             "path_match": "netflow.streamcore_mos_lq",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10900,7 +10900,7 @@
           "netflow.streamcore_net_delay": {
             "path_match": "netflow.streamcore_net_delay",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10908,7 +10908,7 @@
           "netflow.streamcore_net_loss": {
             "path_match": "netflow.streamcore_net_loss",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10916,7 +10916,7 @@
           "netflow.streamcore_net_jitter": {
             "path_match": "netflow.streamcore_net_jitter",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10924,7 +10924,7 @@
           "netflow.streamcore_net_discard": {
             "path_match": "netflow.streamcore_net_discard",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10932,7 +10932,7 @@
           "netflow.streamcore_rtp_clockrate_in": {
             "path_match": "netflow.streamcore_rtp_clockrate_in",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10940,7 +10940,7 @@
           "netflow.streamcore_rtp_clockrate_out": {
             "path_match": "netflow.streamcore_rtp_clockrate_out",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10948,7 +10948,7 @@
           "netflow.streamcore_codec_in": {
             "path_match": "netflow.streamcore_codec_in",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -10956,7 +10956,7 @@
           "netflow.streamcore_codec_out": {
             "path_match": "netflow.streamcore_codec_out",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11052,7 +11052,7 @@
           "netflow.tcp_dst_port": {
             "path_match": "netflow.tcp_dst_port",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11060,7 +11060,7 @@
           "netflow.tcp_flags": {
             "path_match": "netflow.tcp_flags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11068,7 +11068,7 @@
           "netflow.tcp_src_port": {
             "path_match": "netflow.tcp_src_port",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11092,7 +11092,7 @@
           "netflow.tcpDestinationPort": {
             "path_match": "netflow.tcpDestinationPort",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11108,7 +11108,7 @@
           "netflow.tcpHeaderLength": {
             "path_match": "netflow.tcpHeaderLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11156,7 +11156,7 @@
           "netflow.tcpUrgentPointer": {
             "path_match": "netflow.tcpUrgentPointer",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11172,7 +11172,7 @@
           "netflow.tcpWindowScale": {
             "path_match": "netflow.tcpWindowScale",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11180,7 +11180,7 @@
           "netflow.tcpWindowSize": {
             "path_match": "netflow.tcpWindowSize",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11188,7 +11188,7 @@
           "netflow.templateId": {
             "path_match": "netflow.templateId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11220,7 +11220,7 @@
           "netflow.totalLengthIPv4": {
             "path_match": "netflow.totalLengthIPv4",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11252,7 +11252,7 @@
           "netflow.udp_dst_port": {
             "path_match": "netflow.udp_dst_port",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11260,7 +11260,7 @@
           "netflow.udp_src_port": {
             "path_match": "netflow.udp_src_port",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11268,7 +11268,7 @@
           "netflow.udpMessageLength": {
             "path_match": "netflow.udpMessageLength",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11308,7 +11308,7 @@
           "netflow.valueDistributionMethod": {
             "path_match": "netflow.valueDistributionMethod",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11356,7 +11356,7 @@
           "netflow.wlan_id": {
             "path_match": "netflow.wlan_id",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11364,7 +11364,7 @@
           "netflow.wlanChannelId": {
             "path_match": "netflow.wlanChannelId",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11404,7 +11404,7 @@
           "netflow.xlate_dst_port": {
             "path_match": "netflow.xlate_dst_port",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11428,7 +11428,7 @@
           "netflow.xlate_src_port": {
             "path_match": "netflow.xlate_src_port",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11470,7 +11470,7 @@
           "sflow.dst_mask_len": {
             "path_match": "sflow.dst_mask_len",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11478,7 +11478,7 @@
           "sflow.dst_port": {
             "path_match": "sflow.dst_port",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11486,7 +11486,7 @@
           "sflow.dst_priority": {
             "path_match": "sflow.dst_priority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11494,7 +11494,7 @@
           "sflow.dst_vlan": {
             "path_match": "sflow.dst_vlan",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11518,7 +11518,7 @@
           "sflow.eth_type": {
             "path_match": "sflow.eth_type",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11534,7 +11534,7 @@
           "sflow.frame_length": {
             "path_match": "sflow.frame_length",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11550,7 +11550,7 @@
           "sflow.header_size": {
             "path_match": "sflow.header_size",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11558,7 +11558,7 @@
           "sflow.input_interface": {
             "path_match": "sflow.input_interface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11566,7 +11566,7 @@
           "sflow.input_interface_format": {
             "path_match": "sflow.input_interface_format",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11574,7 +11574,7 @@
           "sflow.input_interface_value": {
             "path_match": "sflow.input_interface_value",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11598,7 +11598,7 @@
           "sflow.ip_dscp": {
             "path_match": "sflow.ip_dscp",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11606,7 +11606,7 @@
           "sflow.ip_ecn": {
             "path_match": "sflow.ip_ecn",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11614,7 +11614,7 @@
           "sflow.ip_flags": {
             "path_match": "sflow.ip_flags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11622,7 +11622,7 @@
           "sflow.ip_fragment_offset": {
             "path_match": "sflow.ip_fragment_offset",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11630,7 +11630,7 @@
           "sflow.ip_header_length": {
             "path_match": "sflow.ip_header_length",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11646,7 +11646,7 @@
           "sflow.ip_next_header": {
             "path_match": "sflow.ip_next_header",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11654,7 +11654,7 @@
           "sflow.ip_packet_length": {
             "path_match": "sflow.ip_packet_length",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11662,7 +11662,7 @@
           "sflow.ip_priority": {
             "path_match": "sflow.ip_priority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11670,7 +11670,7 @@
           "sflow.ip_protocol": {
             "path_match": "sflow.ip_protocol",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11678,7 +11678,7 @@
           "sflow.ip_total_length": {
             "path_match": "sflow.ip_total_length",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11686,7 +11686,7 @@
           "sflow.ip_ttl": {
             "path_match": "sflow.ip_ttl",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11694,7 +11694,7 @@
           "sflow.ip_type": {
             "path_match": "sflow.ip_type",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11702,7 +11702,7 @@
           "sflow.ip_version": {
             "path_match": "sflow.ip_version",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11710,7 +11710,7 @@
           "sflow.output_interface": {
             "path_match": "sflow.output_interface",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11718,7 +11718,7 @@
           "sflow.output_interface_format": {
             "path_match": "sflow.output_interface_format",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11726,7 +11726,7 @@
           "sflow.output_interface_value": {
             "path_match": "sflow.output_interface_value",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11734,7 +11734,7 @@
           "sflow.packet_length": {
             "path_match": "sflow.packet_length",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11742,7 +11742,7 @@
           "sflow.padded": {
             "path_match": "sflow.padded",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11758,7 +11758,7 @@
           "sflow.sample_length": {
             "path_match": "sflow.sample_length",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11782,7 +11782,7 @@
           "sflow.sampling_rate": {
             "path_match": "sflow.sampling_rate",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11798,7 +11798,7 @@
           "sflow.sflow_version": {
             "path_match": "sflow.sflow_version",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11806,7 +11806,7 @@
           "sflow.size_header": {
             "path_match": "sflow.size_header",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11814,7 +11814,7 @@
           "sflow.source_id_index": {
             "path_match": "sflow.source_id_index",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11854,7 +11854,7 @@
           "sflow.src_mask_len": {
             "path_match": "sflow.src_mask_len",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11862,7 +11862,7 @@
           "sflow.src_port": {
             "path_match": "sflow.src_port",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11870,7 +11870,7 @@
           "sflow.src_priority": {
             "path_match": "sflow.src_priority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11878,7 +11878,7 @@
           "sflow.src_vlan": {
             "path_match": "sflow.src_vlan",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11886,7 +11886,7 @@
           "sflow.stripped": {
             "path_match": "sflow.stripped",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11894,7 +11894,7 @@
           "sflow.sub_agent_id": {
             "path_match": "sflow.sub_agent_id",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11902,7 +11902,7 @@
           "sflow.tcp_ack_number": {
             "path_match": "sflow.tcp_ack_number",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11910,7 +11910,7 @@
           "sflow.tcp_checksum": {
             "path_match": "sflow.tcp_checksum",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11918,7 +11918,7 @@
           "sflow.tcp_flags": {
             "path_match": "sflow.tcp_flags",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11926,7 +11926,7 @@
           "sflow.tcp_header_length": {
             "path_match": "sflow.tcp_header_length",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11934,7 +11934,7 @@
           "sflow.tcp_reserved": {
             "path_match": "sflow.tcp_reserved",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11942,7 +11942,7 @@
           "sflow.tcp_seq_number": {
             "path_match": "sflow.tcp_seq_number",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11950,7 +11950,7 @@
           "sflow.tcp_urgent_pointer": {
             "path_match": "sflow.tcp_urgent_pointer",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11958,7 +11958,7 @@
           "sflow.tcp_window_size": {
             "path_match": "sflow.tcp_window_size",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11966,7 +11966,7 @@
           "sflow.udp_checksum": {
             "path_match": "sflow.udp_checksum",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11974,7 +11974,7 @@
           "sflow.udp_length": {
             "path_match": "sflow.udp_length",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11990,7 +11990,7 @@
           "sflow.vlan_cfi": {
             "path_match": "sflow.vlan_cfi",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -11998,7 +11998,7 @@
           "sflow.vlan_id": {
             "path_match": "sflow.vlan_id",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -12006,7 +12006,7 @@
           "sflow.vlan_priority": {
             "path_match": "sflow.vlan_priority",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -12014,7 +12014,7 @@
           "sflow.vlan_type": {
             "path_match": "sflow.vlan_type",
             "mapping": {
-              "type": "integer"
+              "type": "long"
             }
           }
         },
@@ -12060,7 +12060,7 @@
               "type": "ip"
             },
             "bgp_valid_state": {
-              "type": "integer"
+              "type": "long"
             },
             "bytes": {
               "type": "long"
@@ -12123,15 +12123,18 @@
               "type": "keyword"
             },
             "dst_mask_len": {
-              "type": "integer"
+              "type": "long"
             },
             "dst_port": {
-              "type": "integer"
+              "type": "long"
             },
             "dst_port_trans": {
-              "type": "integer"
+              "type": "long"
             },
             "dst_port_name": {
+              "type": "keyword"
+            },
+            "dst_rep_tags": {
               "type": "keyword"
             },
             "input_snmp": {
@@ -12152,8 +12155,11 @@
             "packets": {
               "type": "long"
             },
+            "rep_tags": {
+              "type": "keyword"
+            },
             "sampling_interval": {
-              "type": "integer"
+              "type": "long"
             },
             "server_addr": {
               "type": "ip"
@@ -12180,7 +12186,7 @@
               "type": "keyword"
             },
             "service_port": {
-              "type": "integer"
+              "type": "long"
             },
             "src_addr": {
               "type": "ip"
@@ -12210,15 +12216,18 @@
               "type": "keyword"
             },
             "src_mask_len": {
-              "type": "integer"
+              "type": "long"
             },
             "src_port": {
-              "type": "integer"
+              "type": "long"
             },
             "src_port_trans": {
-              "type": "integer"
+              "type": "long"
             },
             "src_port_name": {
+              "type": "keyword"
+            },
+            "src_rep_tags": {
               "type": "keyword"
             },
             "tcp_flags": {
