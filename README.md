@@ -1,4 +1,4 @@
-> NOTE: PLEASE USE RELEASE 2.1.0 IF YOU MUST INSTALL IMMEDIATELY. If you can wait, 3.0.0 will be released in a couple of days.
+> NOTE: `master` now contains what will become release 3.0.0. Testing has been successful, but there is always the chance that last second issues will be found. This README requires additional updates to explain how to configure and use some of the new enhancements. Otherwise everythiing else is complete.
 
 # ElastiFlow&trade;
 ElastiFlow&trade; provides network flow data collection and visualization using the Elastic Stack. It supports Netflow v5/v9, sFlow and IPFIX flow types (1.x versions support only Netflow v5/v9).
