@@ -33,6 +33,8 @@ Currently there is no specific configuration required for Elasticsearch. As long
 At high ingest rates (>10K flows/s), or for data redundancy and high availability, a multi-node cluster is recommended.
 
 ## Setting up Logstash
+> **IMPORTANT!!! If you are upgrading from version 2.x of ElastiFlow&trade; you MUST delete the old** `elastiflow` **index template from Elastisearch PRIOR to starting Logstash with the v3.0.0 pipeline. This can be done by executing** `DELETE _template/elastiflow` **from Dev Tools --> Console in Kibana. Use** `GET _template` **to confirm that it was deleted.**
+
 The ElastiFlow&trade; Logstash pipeline is the heart of the solution. It is here that the raw flow data is collected, decoded, parsed, formatted and enriched. It is this processing that makes possible the analytics options provided by the Kibana [dashboards](#dashboards).
 
 Follow these steps to ensure that Logstash and ElastiFlow&trade; are optimally configured to meet your needs. 
