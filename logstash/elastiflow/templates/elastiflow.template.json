@@ -1,7 +1,7 @@
 {
   "order": 0,
-  "version": 30000,
-  "index_patterns": "elastiflow-3.0.0-*",
+  "version": 30001,
+  "index_patterns": "elastiflow-3.0.1-*",
   "settings": {
     "index": {
       "number_of_shards": 3,
