@@ -33,7 +33,7 @@ Currently there is no specific configuration required for Elasticsearch. As long
 At high ingest rates (>10K flows/s), or for data redundancy and high availability, a multi-node cluster is recommended.
 
 ## Setting up Logstash
-> **IMPORTANT!!! If you are upgrading from version 2.x of ElastiFlow&trade; you MUST delete the old** `elastiflow` **index template from Elastisearch PRIOR to starting Logstash with the v3.0.0 pipeline. This can be done by executing** `DELETE _template/elastiflow` **from Dev Tools --> Console in Kibana. Use** `GET _template` **to confirm that it was deleted.**
+> **IMPORTANT!!! If you are upgrading from version 2.x of ElastiFlow&trade; you MUST delete the old** `elastiflow` **index template from Elasticsearch PRIOR to starting Logstash with the v3.0.0 pipeline. This can be done by executing** `DELETE _template/elastiflow` **from Dev Tools --> Console in Kibana. Use** `GET _template` **to confirm that it was deleted.**
 
 The ElastiFlow&trade; Logstash pipeline is the heart of the solution. It is here that the raw flow data is collected, decoded, parsed, formatted and enriched. It is this processing that makes possible the analytics options provided by the Kibana [dashboards](#dashboards).
 
@@ -71,9 +71,9 @@ Copy the `elastiflow` directory to the location of your Logstash configuration f
 
 Environment Variable | Description | Default Value
 --- | --- | ---
-ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/dictionaries
-ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/templates
-ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/geoipdbs
+ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/elastiflow/dictionaries
+ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/elastiflow/templates
+ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
 
 ### 4. Setup environment variable helper files
 Rather than directly editing the pipeline configuration files for your environment, environment variables are used to provide a single location for most configuration options. These environment variables will be referred to in the remaining instructions. A [reference](#environment-variable-reference) of all environment variables can be found [here](#environment-variable-reference).
@@ -201,6 +201,16 @@ curl -X POST -u USERNAME:PASSWORD http://KIBANASERVER:5601/api/saved_objects/ind
 
 Finally the vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.dashboards.json` file from within the Kibana UI. This is done from the Management - > Saved Objects page.
 
+### Recommended Kibana Advanced Settings
+You may find that modifying a few of the Kibana advanced settings will produce a more user-friendly experience while using ElastiFlow&trade;. These settings are made in Kibana, under `Management -> Advanced Settings`.
+
+Advanced Setting | Value | Why make the change?
+--- | --- | ---
+doc_table:highlight | false | There is a pretty big query performance penalty that comes with using the highlighting feature. As it isn't very useful for this use-case, it is better to just trun it off.
+filters:pinnedByDefault | true | Pinning a filter will it allow it to persist when you are changing dashbaords. This is very useful when drill-down into something of interest and you want to change dashboards for a different perspective of the same data. This is the first setting I change whenever I am working with Kibana.
+state:storeInSessionStorage | true | Kibana URLs can get pretty large. Especially when working with Vega visualizations. This will likely result in error messages for users of Internet Explorer. Using in-session storage will fix this issue for these users.
+timepicker:quickRanges | [see below](#recommended-setting-for-timepicker:quickRanges) | The default options in the Time Picker are less than optimal, for most logging and monitoring use-cases. Fortunately Kibana no allows you to customize the time picker. Our recommended settings can be found [see below](#recommended-setting-for-timepicker:quickRanges).
+
 ## Dashboards
 The following dashboards are provided.
 
@@ -235,14 +245,14 @@ Provides a view of traffic to and from Autonomous Systems (public IP ranges)
 ### Flow Records
 ![Flow Records](https://user-images.githubusercontent.com/10326954/39966504-fafe1446-56ac-11e8-96f3-0f01a01811ca.png)
 
-## Environment Variable Reference
+# Environment Variable Reference
 The supported environment variables are:
 
 Environment Variable | Description | Default Value
 --- | --- | ---
-ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/dictionaries
-ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/templates
-ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/geoipdbs
+ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/elastiflow/dictionaries
+ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/elastiflow/templates
+ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
 ELASTIFLOW_GEOIP_CACHE_SIZE | The size of the GeoIP query cache | 8192
 ELASTIFLOW_GEOIP_LOOKUP | Enable/Disable GeoIP lookups | true
 ELASTIFLOW_ASN_LOOKUP | Enable/Disable ASN lookups | true
@@ -256,30 +266,148 @@ ELASTIFLOW_DNS_FAILED_CACHE_TTL | The time in seconds failed DNS queries are cac
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
-ELASTIFLOW_NETFLOW_IPV4_HOST | The IP address from which to listen for Netflow messages | 0.0.0.0
+ELASTIFLOW_NETFLOW_IPV4_HOST | The IP address on which to listen for Netflow messages | 0.0.0.0
 ELASTIFLOW_NETFLOW_IPV4_PORT | The UDP port on which to listen for Netflow messages | 2055
-ELASTIFLOW_NETFLOW_IPV6_HOST | The IP address from which to listen for Netflow messages | [::]
+ELASTIFLOW_NETFLOW_IPV6_HOST | The IP address on which to listen for Netflow messages | [::]
 ELASTIFLOW_NETFLOW_IPV6_PORT | The UDP port on which to listen for Netflow messages | 52055
 ELASTIFLOW_NETFLOW_UDP_WORKERS | The number of Netflow input threads | 4
 ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE | The number of unprocessed Netflow UDP packets the input can buffer | 4096
 ELASTIFLOW_NETFLOW_LASTSW_TIMESTAMP | Enable/Disable setting `@timestamp` with the value of netflow.last_switched | false
 ELASTIFLOW_NETFLOW_TZ | The timezone of netflow.last_switched | UTC
-ELASTIFLOW_SFLOW_IPV4_HOST | The IP address from which to listen for sFlow messages | 0.0.0.0
+ELASTIFLOW_SFLOW_IPV4_HOST | The IP address on which to listen for sFlow messages | 0.0.0.0
 ELASTIFLOW_SFLOW_IPV4_PORT | The UDP port on which to listen for sFlow messages | 6343
-ELASTIFLOW_SFLOW_IPV6_HOST | The IP address from which to listen for sFlow messages | [::]
+ELASTIFLOW_SFLOW_IPV6_HOST | The IP address on which to listen for sFlow messages | [::]
 ELASTIFLOW_SFLOW_IPV6_PORT | The UDP port on which to listen for sFlow messages | 56343
 ELASTIFLOW_SFLOW_UDP_WORKERS | The number of sFlow input threads | 4
 ELASTIFLOW_SFLOW_UDP_QUEUE_SIZE | The number of unprocessed sFlow UDP packets the input can buffer | 4096
-ELASTIFLOW_IPFIX_TCP_IPV4_HOST | The IP address from which to listen for IPFIX messages via TCP | 0.0.0.0
+ELASTIFLOW_IPFIX_TCP_IPV4_HOST | The IP address on which to listen for IPFIX messages via TCP | 0.0.0.0
 ELASTIFLOW_IPFIX_TCP_IPV4_PORT | The port on which to listen for IPFIX messages via TCP | 4739
-ELASTIFLOW_IPFIX_UDP_IPV4_HOST | The IP address from which to listen for IPFIX messages via UDP | 0.0.0.0
+ELASTIFLOW_IPFIX_UDP_IPV4_HOST | The IP address on which to listen for IPFIX messages via UDP | 0.0.0.0
 ELASTIFLOW_IPFIX_UDP_IPV4_PORT | The port on which to listen for IPFIX messages via UDP | 4739
-ELASTIFLOW_IPFIX_TCP_IPV6_HOST | The IP address from which to listen for IPFIX messages via TCP | [::]
+ELASTIFLOW_IPFIX_TCP_IPV6_HOST | The IP address on which to listen for IPFIX messages via TCP | [::]
 ELASTIFLOW_IPFIX_TCP_IPV6_PORT | The port on which to listen for IPFIX messages via TCP | 54739
-ELASTIFLOW_IPFIX_UDP_IPV6_HOST | The IP address from which to listen for IPFIX messages via UDP | [::]
+ELASTIFLOW_IPFIX_UDP_IPV6_HOST | The IP address on which to listen for IPFIX messages via UDP | [::]
 ELASTIFLOW_IPFIX_UDP_IPV6_PORT | The port on which to listen for IPFIX messages via UDP | 54739
 ELASTIFLOW_IPFIX_UDP_WORKERS | The number of IPFIX input threads | 4
 ELASTIFLOW_IPFIX_UDP_QUEUE_SIZE | The number of unprocessed IPFIX UDP packets the input can buffer | 4096
+
+# Recommended Setting for timepicker:quickRanges
+I recommend configuring `timepicker:quickRanges` for the setting below. The result will look like this:
+
+![screen shot 2018-05-17 at 19 57 03](https://user-images.githubusercontent.com/10326954/40195016-8d33cac4-5a0c-11e8-976f-cc6559e4439a.png)
+
+```
+[
+  {
+    "from": "now/d",
+    "to": "now/d",
+    "display": "Today",
+    "section": 0
+  },
+  {
+    "from": "now/w",
+    "to": "now/w",
+    "display": "This week",
+    "section": 0
+  },
+  {
+    "from": "now/M",
+    "to": "now/M",
+    "display": "This month",
+    "section": 0
+  },
+  {
+    "from": "now/d",
+    "to": "now",
+    "display": "Today so far",
+    "section": 0
+  },
+  {
+    "from": "now/w",
+    "to": "now",
+    "display": "Week to date",
+    "section": 0
+  },
+  {
+    "from": "now/M",
+    "to": "now",
+    "display": "Month to date",
+    "section": 0
+  },
+  {
+    "from": "now-15m",
+    "to": "now",
+    "display": "Last 15 minutes",
+    "section": 1
+  },
+  {
+    "from": "now-30m",
+    "to": "now",
+    "display": "Last 30 minutes",
+    "section": 1
+  },
+  {
+    "from": "now-1h",
+    "to": "now",
+    "display": "Last 1 hour",
+    "section": 1
+  },
+  {
+    "from": "now-2h",
+    "to": "now",
+    "display": "Last 2 hours",
+    "section": 1
+  },
+  {
+    "from": "now-4h",
+    "to": "now",
+    "display": "Last 4 hours",
+    "section": 2
+  },
+  {
+    "from": "now-12h",
+    "to": "now",
+    "display": "Last 12 hours",
+    "section": 2
+  },
+  {
+    "from": "now-24h",
+    "to": "now",
+    "display": "Last 24 hours",
+    "section": 2
+  },
+  {
+    "from": "now-48h",
+    "to": "now",
+    "display": "Last 48 hours",
+    "section": 2
+  },
+  {
+    "from": "now-7d",
+    "to": "now",
+    "display": "Last 7 days",
+    "section": 3
+  },
+  {
+    "from": "now-30d",
+    "to": "now",
+    "display": "Last 30 days",
+    "section": 3
+  },
+  {
+    "from": "now-60d",
+    "to": "now",
+    "display": "Last 60 days",
+    "section": 3
+  },
+  {
+    "from": "now-90d",
+    "to": "now",
+    "display": "Last 90 days",
+    "section": 3
+  }
+]
+```
 
 # Attribution
 This product includes GeoLite2 data created by MaxMind, available from (http://www.maxmind.com)
