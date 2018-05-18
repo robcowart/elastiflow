@@ -97,25 +97,6 @@
     }
   },
   {
-    "_id": "d7e31d40-6589-11e7-bfc3-d74b7bb89482",
-    "_type": "dashboard",
-    "_source": {
-      "title": "ElastiFlow: AS Traffic",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"panelIndex\":\"21\",\"gridData\":{\"x\":10,\"y\":0,\"w\":2,\"h\":1,\"i\":\"21\"},\"id\":\"AWFhGnANugC1WJLdzaom\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"33\",\"gridData\":{\"x\":0,\"y\":0,\"w\":10,\"h\":1,\"i\":\"33\"},\"id\":\"AWFhSAAsugC1WJLdzqUH\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"34\",\"gridData\":{\"x\":6,\"y\":2,\"w\":6,\"h\":3,\"i\":\"34\"},\"title\":\"Destination Autonomous Systems (bits/s)\",\"id\":\"9271c180-55cf-11e8-a695-171fb712da36\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"title\":\"Destination Autonomous Systems (packets)\",\"panelIndex\":\"35\",\"gridData\":{\"x\":6,\"y\":5,\"w\":6,\"h\":3,\"i\":\"35\"},\"id\":\"a9d0ba20-55cf-11e8-a695-171fb712da36\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"36\",\"gridData\":{\"x\":0,\"y\":2,\"w\":6,\"h\":3,\"i\":\"36\"},\"title\":\"Source Autonomous Systems (bits/s)\",\"id\":\"290d5be0-55d0-11e8-a695-171fb712da36\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"37\",\"gridData\":{\"x\":0,\"y\":5,\"w\":6,\"h\":3,\"i\":\"37\"},\"title\":\"Source Autonomous Systems (packets)\",\"id\":\"39c991b0-55d0-11e8-a695-171fb712da36\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"38\",\"gridData\":{\"x\":10,\"y\":1,\"w\":2,\"h\":1,\"i\":\"38\"},\"id\":\"8fee97e0-55b5-11e8-a1f3-452446793d46\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"39\",\"gridData\":{\"x\":0,\"y\":1,\"w\":10,\"h\":1,\"i\":\"39\"},\"id\":\"e3c2e2c0-5607-11e8-b711-83a5f93b17f3\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.4\"}]",
-      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
-      "version": 1,
-      "timeRestore": false,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "64c19720-5619-11e8-b711-83a5f93b17f3",
     "_type": "dashboard",
     "_source": {
@@ -287,25 +268,6 @@
     }
   },
   {
-    "_id": "AWFgw02HugC1WJLdzCFZ",
-    "_type": "dashboard",
-    "_source": {
-      "title": "ElastiFlow: Top Conversations",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"panelIndex\":\"16\",\"gridData\":{\"x\":0,\"y\":4,\"w\":12,\"h\":6,\"i\":\"16\"},\"title\":\"Top Conversations\",\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"}}}},\"id\":\"6d0c50a0-801d-11e7-bcae-4bd056c878e8\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"19\",\"gridData\":{\"x\":0,\"y\":0,\"w\":7,\"h\":1,\"i\":\"19\"},\"id\":\"AWFhRsIDugC1WJLdzp9S\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"20\",\"gridData\":{\"x\":7,\"y\":0,\"w\":3,\"h\":1,\"i\":\"20\"},\"id\":\"AWFhTJ5xugC1WJLdzrlm\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"21\",\"gridData\":{\"x\":10,\"y\":0,\"w\":2,\"h\":1,\"i\":\"21\"},\"title\":\"\",\"id\":\"AWFhGnANugC1WJLdzaom\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"22\",\"gridData\":{\"x\":3,\"y\":1,\"w\":9,\"h\":3,\"i\":\"22\"},\"title\":\"Services (bits/s)\",\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"b22f5660-55d2-11e8-a695-171fb712da36\"},{\"panelIndex\":\"23\",\"gridData\":{\"x\":0,\"y\":1,\"w\":2,\"h\":3,\"i\":\"23\"},\"title\":\"\",\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"7546a110-55fd-11e8-b711-83a5f93b17f3\"}]",
-      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
-      "version": 1,
-      "timeRestore": false,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "44d6d8c0-560b-11e8-b711-83a5f93b17f3",
     "_type": "dashboard",
     "_source": {
@@ -318,6 +280,44 @@
       "timeRestore": false,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"exists\":{\"field\":\"flow.application\"},\"meta\":{\"alias\":\"Application\",\"disabled\":false,\"index\":\"elastiflow-*\",\"key\":\"flow.application\",\"negate\":false,\"type\":\"exists\",\"value\":\"exists\"}}],\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "58858cb0-55e1-11e8-b711-83a5f93b17f3",
+    "_type": "dashboard",
+    "_source": {
+      "title": "ElastiFlow: Flow Records (src/dst)",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":3,\"w\":12,\"h\":6,\"i\":\"5\"},\"columns\":[\"node.hostname\",\"flow.src_hostname\",\"flow.src_port_name\",\"flow.dst_hostname\",\"flow.dst_port_name\",\"flow.bytes\",\"flow.packets\"],\"id\":\"0d0216f0-2fe0-11e7-9d02-3f49bde5c1d5\",\"sort\":[\"@timestamp\",\"desc\"],\"title\":\"\",\"type\":\"search\",\"version\":\"6.2.1\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":10,\"y\":0,\"w\":2,\"h\":1,\"i\":\"6\"},\"id\":\"AWFhGnANugC1WJLdzaom\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":0,\"y\":0,\"w\":7,\"h\":1,\"i\":\"7\"},\"id\":\"AWFhSZLAugC1WJLdzqua\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":5,\"y\":1,\"w\":7,\"h\":2,\"i\":\"8\"},\"id\":\"644c9760-55db-11e8-a695-171fb712da36\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":3,\"y\":1,\"w\":2,\"h\":2,\"i\":\"9\"},\"id\":\"1d773d80-55dc-11e8-a695-171fb712da36\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":0,\"y\":1,\"w\":2,\"h\":2,\"i\":\"10\"},\"id\":\"53f4a4d0-55df-11e8-b711-83a5f93b17f3\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":7,\"y\":0,\"w\":3,\"h\":1,\"i\":\"11\"},\"title\":\"\",\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"9e04a560-55e0-11e8-b711-83a5f93b17f3\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWFgw02HugC1WJLdzCFZ",
+    "_type": "dashboard",
+    "_source": {
+      "title": "ElastiFlow: Top Conversations",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"16\",\"gridData\":{\"x\":0,\"y\":4,\"w\":12,\"h\":6,\"i\":\"16\"},\"title\":\"Top Conversations\",\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"}}}},\"id\":\"6d0c50a0-801d-11e7-bcae-4bd056c878e8\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"19\",\"gridData\":{\"x\":0,\"y\":0,\"w\":7,\"h\":1,\"i\":\"19\"},\"id\":\"AWFhRsIDugC1WJLdzp9S\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"20\",\"gridData\":{\"x\":7,\"y\":0,\"w\":3,\"h\":1,\"i\":\"20\"},\"id\":\"AWFhTJ5xugC1WJLdzrlm\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"21\",\"gridData\":{\"x\":10,\"y\":0,\"w\":2,\"h\":1,\"i\":\"21\"},\"title\":\"\",\"id\":\"AWFhGnANugC1WJLdzaom\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"22\",\"gridData\":{\"x\":3,\"y\":1,\"w\":9,\"h\":3,\"i\":\"22\"},\"title\":\"Services (bits/s)\",\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"b22f5660-55d2-11e8-a695-171fb712da36\"},{\"panelIndex\":\"23\",\"gridData\":{\"x\":0,\"y\":1,\"w\":2,\"h\":3,\"i\":\"23\"},\"title\":\"\",\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"7546a110-55fd-11e8-b711-83a5f93b17f3\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}}}"
       }
     },
     "_meta": {
@@ -344,13 +344,13 @@
     }
   },
   {
-    "_id": "58858cb0-55e1-11e8-b711-83a5f93b17f3",
+    "_id": "d7e31d40-6589-11e7-bfc3-d74b7bb89482",
     "_type": "dashboard",
     "_source": {
-      "title": "ElastiFlow: Flow Records (src/dst)",
+      "title": "ElastiFlow: AS Traffic",
       "hits": 0,
       "description": "",
-      "panelsJSON": "[{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":3,\"w\":12,\"h\":6,\"i\":\"5\"},\"columns\":[\"node.hostname\",\"flow.src_hostname\",\"flow.src_port_name\",\"flow.dst_hostname\",\"flow.dst_port_name\",\"flow.bytes\",\"flow.packets\"],\"id\":\"0d0216f0-2fe0-11e7-9d02-3f49bde5c1d5\",\"sort\":[\"@timestamp\",\"desc\"],\"title\":\"\",\"type\":\"search\",\"version\":\"6.2.1\"},{\"panelIndex\":\"6\",\"gridData\":{\"x\":10,\"y\":0,\"w\":2,\"h\":1,\"i\":\"6\"},\"id\":\"AWFhGnANugC1WJLdzaom\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"7\",\"gridData\":{\"x\":0,\"y\":0,\"w\":7,\"h\":1,\"i\":\"7\"},\"id\":\"AWFhSZLAugC1WJLdzqua\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"panelIndex\":\"8\",\"gridData\":{\"x\":5,\"y\":1,\"w\":7,\"h\":2,\"i\":\"8\"},\"id\":\"644c9760-55db-11e8-a695-171fb712da36\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"9\",\"gridData\":{\"x\":3,\"y\":1,\"w\":2,\"h\":2,\"i\":\"9\"},\"id\":\"1d773d80-55dc-11e8-a695-171fb712da36\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"10\",\"gridData\":{\"x\":0,\"y\":1,\"w\":2,\"h\":2,\"i\":\"10\"},\"id\":\"53f4a4d0-55df-11e8-b711-83a5f93b17f3\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"panelIndex\":\"11\",\"gridData\":{\"x\":7,\"y\":0,\"w\":3,\"h\":1,\"i\":\"11\"},\"title\":\"\",\"version\":\"6.2.4\",\"type\":\"visualization\",\"id\":\"9e04a560-55e0-11e8-b711-83a5f93b17f3\"}]",
+      "panelsJSON": "[{\"gridData\":{\"h\":1,\"i\":\"21\",\"w\":2,\"x\":10,\"y\":0},\"id\":\"AWFhGnANugC1WJLdzaom\",\"panelIndex\":\"21\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"gridData\":{\"h\":1,\"i\":\"33\",\"w\":10,\"x\":0,\"y\":0},\"id\":\"AWFhSAAsugC1WJLdzqUH\",\"panelIndex\":\"33\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.1\"},{\"gridData\":{\"h\":3,\"i\":\"34\",\"w\":6,\"x\":6,\"y\":2},\"id\":\"9271c180-55cf-11e8-a695-171fb712da36\",\"panelIndex\":\"34\",\"title\":\"Destination Autonomous Systems (bits/s)\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"36\",\"w\":6,\"x\":0,\"y\":2},\"id\":\"290d5be0-55d0-11e8-a695-171fb712da36\",\"panelIndex\":\"36\",\"title\":\"Source Autonomous Systems (bits/s)\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":1,\"i\":\"38\",\"w\":2,\"x\":10,\"y\":1},\"id\":\"8fee97e0-55b5-11e8-a1f3-452446793d46\",\"panelIndex\":\"38\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":1,\"i\":\"39\",\"w\":10,\"x\":0,\"y\":1},\"id\":\"e3c2e2c0-5607-11e8-b711-83a5f93b17f3\",\"panelIndex\":\"39\",\"title\":\"\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"40\",\"w\":6,\"x\":6,\"y\":5},\"id\":\"d45c0d50-5613-11e8-b711-83a5f93b17f3\",\"panelIndex\":\"40\",\"title\":\"Destination Autonomous Systems (pkts/s)\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"41\",\"w\":6,\"x\":0,\"y\":5},\"id\":\"854eee30-5613-11e8-b711-83a5f93b17f3\",\"panelIndex\":\"41\",\"title\":\"Source Autonomous Systems (pkts/s)\",\"type\":\"visualization\",\"version\":\"6.2.4\"}]",
       "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
       "version": 1,
       "timeRestore": false,
@@ -464,23 +464,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"elastiflow-*\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "8fee97e0-55b5-11e8-a1f3-452446793d46",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Blank",
-      "visState": "{\"title\":\"ElastiFlow: Blank\",\"type\":\"markdown\",\"params\":{\"fontSize\":8,\"markdown\":\"[](http://www.koiossian.com/public/elastiflow.gif)\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
       }
     },
     "_meta": {
@@ -3327,91 +3310,6 @@
     }
   },
   {
-    "_id": "17c29c50-55bd-11e8-a1f3-452446793d46",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Src/Dst - input list",
-      "visState": "{\"title\":\"ElastiFlow: Src/Dst - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.src_hostname\",\"label\":\"Source\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1526108883717\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.dst_hostname\",\"label\":\"Destnation\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1526108909005\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.dst_port_name\",\"label\":\"Destination Port\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":false},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "95799400-55b3-11e8-a1f3-452446793d46",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Client/Server - input list",
-      "visState": "{\"title\":\"ElastiFlow: Client/Server - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.client_hostname\",\"label\":\"Client\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1526108883717\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.server_hostname\",\"label\":\"Server\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1526108909005\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.service_name\",\"label\":\"Service\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":1000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":false},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "53f4a4d0-55df-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Flow Types & Exporters - input list",
-      "visState": "{\"title\":\"ElastiFlow: Flow Types & Exporters - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"event.type\",\"label\":\"Flow Type\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":20,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":500,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "88dadc40-55e0-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Flow Records (client/server)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Flow Records (client/server)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[**Client/Server**](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5) | [Src/Dst](#/dashboard/58858cb0-55e1-11e8-b711-83a5f93b17f3)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "9e04a560-55e0-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Flow Records (src/dst)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Flow Records (src/dst)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Client/Server](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5) | [**Src/Dst**](#/dashboard/58858cb0-55e1-11e8-b711-83a5f93b17f3)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "c0997620-55e3-11e8-b711-83a5f93b17f3",
     "_type": "visualization",
     "_source": {
@@ -3524,23 +3422,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"elastiflow-*\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "7546a110-55fd-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Flow Types, Exporters & Services - input list",
-      "visState": "{\"title\":\"ElastiFlow: Flow Types, Exporters & Services - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"event.type\",\"label\":\"Flow Type\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":20,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1526140705539\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.service_name\",\"label\":\"Service\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":500,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":false},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
       }
     },
     "_meta": {
@@ -3871,96 +3752,11 @@
     }
   },
   {
-    "_id": "e3c2e2c0-5607-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Src/Dst Autonomous Systems - input list",
-      "visState": "{\"title\":\"ElastiFlow: Src/Dst Autonomous Systems - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.src_autonomous_system\",\"label\":\"Source AS\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1526108883717\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.dst_autonomous_system\",\"label\":\"Destnation AS\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1526108909005\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.service_name\",\"label\":\"Service\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":false},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "a65eb880-5609-11e8-b711-83a5f93b17f3",
     "_type": "visualization",
     "_source": {
       "title": "ElastiFlow: Ingress/Egress Interfaces - input list",
       "visState": "{\"title\":\"ElastiFlow: Ingress/Egress Interfaces - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"event.type\",\"label\":\"Flow Type\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":10,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1526108883717\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.input_snmp\",\"label\":\"Ingress Interface\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":1000,\"order\":\"desc\"}},{\"id\":\"1526108909005\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.output_snmp\",\"label\":\"Egress Interface\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":1000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "c982ed70-560b-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Top-N (apps)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Top-N (apps)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Talkers](#/dashboard/AWFgr4DaugC1WJLdy9iE) |  [Services](#/dashboard/0809c1f0-6719-11e7-b5b8-29fbded8e37c)\\n | [Conversations](#/dashboard/AWFgw02HugC1WJLdzCFZ) | [**Apps**](#/dashboard/44d6d8c0-560b-11e8-b711-83a5f93b17f3)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "AWFhTJ5xugC1WJLdzrlm",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Top-N (conversations)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Top-N (conversations)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Talkers](#/dashboard/AWFgr4DaugC1WJLdy9iE) |  [Services](#/dashboard/0809c1f0-6719-11e7-b5b8-29fbded8e37c)\\n | [**Conversations**](#/dashboard/AWFgw02HugC1WJLdzCFZ) | [Apps](#/dashboard/44d6d8c0-560b-11e8-b711-83a5f93b17f3)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "AWFhTELFugC1WJLdzrdg",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Top-N (services)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Top-N (services)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Talkers](#/dashboard/AWFgr4DaugC1WJLdy9iE) |  [**Services**](#/dashboard/0809c1f0-6719-11e7-b5b8-29fbded8e37c)\\n | [Conversations](#/dashboard/AWFgw02HugC1WJLdzCFZ) | [Apps](#/dashboard/44d6d8c0-560b-11e8-b711-83a5f93b17f3)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "72ac9770-560c-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Flow Types, Exporters & Apps - input list",
-      "visState": "{\"title\":\"ElastiFlow: Flow Types, Exporters & Apps - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"event.type\",\"label\":\"Flow Type\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":20,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1526140705539\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.application\",\"label\":\"Application\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":500,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":false},\"aggs\":[]}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,
@@ -3983,23 +3779,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"elastiflow-*\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "AWFgx_zkugC1WJLdzDLD",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Top-N (talkers)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Top-N (talkers)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[**Talkers**](#/dashboard/AWFgr4DaugC1WJLdy9iE) |  [Services](#/dashboard/0809c1f0-6719-11e7-b5b8-29fbded8e37c)\\n | [Conversations](#/dashboard/AWFgw02HugC1WJLdzCFZ) | [Apps](#/dashboard/44d6d8c0-560b-11e8-b711-83a5f93b17f3)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -4364,108 +4143,6 @@
     }
   },
   {
-    "_id": "65162e80-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Traffic Locality (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Traffic Locality (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"2fbfdab0-5613-11e8-9246-a5562341aeaa\",\"type\":\"calculation\",\"variables\":[{\"id\":\"31d17ca0-5613-11e8-9246-a5562341aeaa\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.traffic_locality\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "604bae20-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Types of Service (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Types of Service (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"3a636540-5613-11e8-bbfc-bb680694cbb3\",\"type\":\"calculation\",\"variables\":[{\"id\":\"3e0a2620-5613-11e8-bbfc-bb680694cbb3\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.tos\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "7a609f00-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Source Ports (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Source Ports (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"f82d7990-5612-11e8-aa3f-47704e17ccf8\",\"type\":\"calculation\",\"variables\":[{\"id\":\"fc0f6eb0-5612-11e8-aa3f-47704e17ccf8\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.src_port_name\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "6a815bb0-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: TCP Flags (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: TCP Flags (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"21a94970-5613-11e8-932f-d5f0b2e476ba\",\"type\":\"calculation\",\"variables\":[{\"id\":\"23e04db0-5613-11e8-932f-d5f0b2e476ba\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.tcp_flags\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "70ad67e0-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Sources (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Sources (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"05cb3150-5613-11e8-95ce-e7b2166211be\",\"type\":\"calculation\",\"variables\":[{\"id\":\"0f6b0780-5613-11e8-95ce-e7b2166211be\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.src_hostname\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "5af01150-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: VLANs (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: VLANs (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"4a7ea020-5613-11e8-9991-679c12b3fef7\",\"type\":\"calculation\",\"variables\":[{\"id\":\"4d43b390-5613-11e8-9991-679c12b3fef7\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.vlan\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "4023c4b0-55ce-11e8-a695-171fb712da36",
     "_type": "visualization",
     "_source": {
@@ -4510,397 +4187,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "854eee30-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Source Autonomous Systems (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Source Autonomous Systems (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"eb6ed730-5612-11e8-88fd-2774a33bc32f\",\"type\":\"calculation\",\"variables\":[{\"id\":\"f0d103b0-5612-11e8-88fd-2774a33bc32f\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.src_autonomous_system\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"NOT flow.src_autonomous_system: private\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "a8323470-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Server Autonomous Systems (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Server Autonomous Systems (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"c89ecad0-5612-11e8-b8f4-81e5f5de0f37\",\"type\":\"calculation\",\"variables\":[{\"id\":\"cb30e760-5612-11e8-b8f4-81e5f5de0f37\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.server_autonomous_system\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"NOT flow.server_autonomous_system: private\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "c481fa20-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Egress Interfaces (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Egress Interfaces (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"83a0e580-5612-11e8-9770-ed998bc0982c\",\"type\":\"calculation\",\"variables\":[{\"id\":\"88cdd130-5612-11e8-9770-ed998bc0982c\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.output_snmp\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "b79dce60-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Ingress Interfaces (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Ingress Interfaces (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"a00fcbf0-5612-11e8-833a-d52124abe7ce\",\"type\":\"calculation\",\"variables\":[{\"id\":\"a25ec500-5612-11e8-833a-d52124abe7ce\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.input_snmp\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "bf600af0-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Flow Exporters (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Flow Exporters (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"95108cd0-5612-11e8-8cf4-f1fcac410c6e\",\"type\":\"calculation\",\"variables\":[{\"id\":\"97231920-5612-11e8-8cf4-f1fcac410c6e\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"node.hostname\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "b3007880-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: IP Protocols (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: IP Protocols (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"ac032f10-5612-11e8-987a-399b859ae9e0\",\"type\":\"calculation\",\"variables\":[{\"id\":\"aefebbd0-5612-11e8-987a-399b859ae9e0\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.ip_protocol\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "ae9de1b0-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: IP Version (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: IP Version (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"bc2c73b0-5612-11e8-a8ff-859eba5de32f\",\"type\":\"calculation\",\"variables\":[{\"id\":\"bf205f50-5612-11e8-a8ff-859eba5de32f\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.ip_version\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "98d03770-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Servers (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Servers (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"d5c99c80-5612-11e8-a6a3-f9047d0437a6\",\"type\":\"calculation\",\"variables\":[{\"id\":\"d7fecc00-5612-11e8-a6a3-f9047d0437a6\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.server_hostname\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "8b7247d0-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Services (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Services (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"dfd5f020-5612-11e8-8874-4b2cb46d3ac9\",\"type\":\"calculation\",\"variables\":[{\"id\":\"e35ca5e0-5612-11e8-8874-4b2cb46d3ac9\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.service_name\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "d45c0d50-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Destination Autonomous Systems (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Destination Autonomous Systems (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"5b93e7e0-5612-11e8-b71a-cfa3c16427ce\",\"type\":\"calculation\",\"variables\":[{\"id\":\"5f2c77f0-5612-11e8-b71a-cfa3c16427ce\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.dst_autonomous_system\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"NOT flow.dst_autonomous_system: private\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "e71599c0-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Client Autonomous Systems (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Client Autonomous Systems (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"0c862c80-5612-11e8-9c03-ebe615bd9c32\",\"type\":\"calculation\",\"variables\":[{\"id\":\"142047a0-5612-11e8-9c03-ebe615bd9c32\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.client_autonomous_system\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"NOT flow.client_autonomous_system: private\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "ce449a90-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Destination Ports (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Destination Ports (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"670b6440-5612-11e8-b312-79bc7794402d\",\"type\":\"calculation\",\"variables\":[{\"id\":\"6ac62250-5612-11e8-b312-79bc7794402d\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.dst_port_name\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "f2b5acc0-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Autonomous Systems (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Autonomous Systems (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"e64ae1a0-5611-11e8-ace5-73cdd5366849\",\"type\":\"calculation\",\"variables\":[{\"id\":\"e9f01be0-5611-11e8-ace5-73cdd5366849\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.autonomous_system\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "c8e924d0-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Destinations (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Destinations (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"73319730-5612-11e8-aef2-8d6be7224727\",\"type\":\"calculation\",\"variables\":[{\"id\":\"76164090-5612-11e8-aef2-8d6be7224727\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.dst_hostname\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "de476b70-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Clients (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Clients (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"35bed8e0-5612-11e8-9abc-51bfe6c5250a\",\"type\":\"calculation\",\"variables\":[{\"id\":\"38885920-5612-11e8-9abc-51bfe6c5250a\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.client_hostname\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "d8e1bc80-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Countries (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Countries (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"47b1b9f0-5612-11e8-8f25-dd843d63ccd9\",\"type\":\"calculation\",\"variables\":[{\"id\":\"4ba84880-5612-11e8-8f25-dd843d63ccd9\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.country\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "fa458eb0-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Applications (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Applications (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"b907a980-5611-11e8-9d88-a7d70f388fc4\",\"type\":\"calculation\",\"variables\":[{\"id\":\"bbfd42d0-5611-11e8-9d88-a7d70f388fc4\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.application\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "ebd23770-5613-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Cities (pkts/s) - TSVB (stacked area)",
-      "visState": "{\"title\":\"ElastiFlow: Cities (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"f5d79820-5611-11e8-937b-f9dd7f7e8b36\",\"type\":\"calculation\",\"variables\":[{\"id\":\"f9111840-5611-11e8-937b-f9dd7f7e8b36\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.city\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}} pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "b577fca0-561d-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Traffic Types - input list",
-      "visState": "{\"title\":\"ElastiFlow: Traffic Types - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.client_hostname\",\"label\":\"Client\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":2500,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.server_hostname\",\"label\":\"Server\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":2500,\"order\":\"desc\"}},{\"id\":\"1526153132040\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.service_name\",\"label\":\"Service\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":1000,\"order\":\"desc\"}},{\"id\":\"1526153149794\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.application\",\"label\":\"Application\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":2000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":false},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "c0ca16b0-561d-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Traffic Locality - input list",
-      "visState": "{\"title\":\"ElastiFlow: Traffic Locality - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.traffic_locality\",\"label\":\"Traffic Locality\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":10,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.autonomous_system\",\"label\":\"Autonomous System\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":2500,\"order\":\"desc\"}},{\"id\":\"1526153132040\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.country\",\"label\":\"Country\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":1000,\"order\":\"desc\"}},{\"id\":\"1526153149794\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.city\",\"label\":\"City\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":2500,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":false},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "b72505d0-561c-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Traffic Details (attributes)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Traffic Details (attributes)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Types](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22)\\n | [**Attributes**](#/dashboard/64c19720-5619-11e8-b711-83a5f93b17f3) | [Locality](#/dashboard/95ccacb0-5619-11e8-b711-83a5f93b17f3)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "94d32a20-561c-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Traffic Details (locality)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Traffic Details (locality)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Types](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22)\\n | [Attributes](#/dashboard/64c19720-5619-11e8-b711-83a5f93b17f3) | [**Locality**](#/dashboard/95ccacb0-5619-11e8-b711-83a5f93b17f3)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "dbcd7bb0-561c-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Traffic Details (types)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Traffic Details (types)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[**Types**](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22)\\n | [Attributes](#/dashboard/64c19720-5619-11e8-b711-83a5f93b17f3) | [Locality](#/dashboard/95ccacb0-5619-11e8-b711-83a5f93b17f3)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -4986,23 +4272,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"elastiflow-*\",\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true,\"default_field\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "61ed9a20-561a-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: Traffic Attributes - input list",
-      "visState": "{\"title\":\"ElastiFlow: Traffic Attributes - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.ip_protocol\",\"label\":\"IP Protocol\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":50,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.vlan\",\"label\":\"VLAN\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":1000,\"order\":\"desc\"}},{\"id\":\"1526153132040\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.tos\",\"label\":\"Type of Service\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":1000,\"order\":\"desc\"}},{\"id\":\"1526153149794\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.tcp_flags\",\"label\":\"TCP Flag\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":10,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":false},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
       }
     },
     "_meta": {
@@ -5197,176 +4466,6 @@
     }
   },
   {
-    "_id": "AWFhSAAsugC1WJLdzqUH",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Autonomous Systems",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Autonomous Systems\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [**AS Traffic**](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "26e166f0-2fe2-11e7-9d02-3f49bde5c1d5",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Overview",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Overview\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[**Overview**](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "AWFhR2VvugC1WJLdzqI3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Geo IP",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Geo IP\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [**Geo IP**](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "AWFhSJtiugC1WJLdzqel",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Exporters",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Exporters\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [**Exporters**](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "e294aae0-5626-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Sankey",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Sankey\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [**Sankey**](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "AWFhSZLAugC1WJLdzqua",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Flow Records",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Flow Records\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [**Flow Records**](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "AWFhSSBGugC1WJLdzqmm",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Traffic Details",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Traffic Details\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [**Traffic Details**](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "AWFhRsIDugC1WJLdzp9S",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Top-N",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Top-N\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [**Top-N**](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "AWFhF0AlugC1WJLdzZyF",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Geo IP (client/server)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Geo IP (client/server)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[**Client/Server**](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [Src/Dst](#/dashboard/AWFhE8NZugC1WJLdzYri)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "AWFhS2TMugC1WJLdzrNc",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Geo IP (src/dst)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Geo IP (src/dst)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Client/Server](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [**Src/Dst**](#/dashboard/AWFhE8NZugC1WJLdzYri)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
     "_id": "c824e870-5629-11e8-b711-83a5f93b17f3",
     "_type": "visualization",
     "_source": {
@@ -5377,57 +4476,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "2fbcb650-5627-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Sankey (client/server)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Sankey (client/server)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[**Client/Server**](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Src/Dst](#/dashboard/4b86b4c0-5628-11e8-b711-83a5f93b17f3) | [AS](#/dashboard/757d59f0-5628-11e8-b711-83a5f93b17f3)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "9d8962a0-5627-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Sankey (src/dst)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Sankey (src/dst)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Client/Server](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [**Src/Dst**](#/dashboard/4b86b4c0-5628-11e8-b711-83a5f93b17f3) | [AS](#/dashboard/757d59f0-5628-11e8-b711-83a5f93b17f3)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    },
-    "_meta": {
-      "savedObjectVersion": 2
-    }
-  },
-  {
-    "_id": "af2a2c10-5627-11e8-b711-83a5f93b17f3",
-    "_type": "visualization",
-    "_source": {
-      "title": "ElastiFlow: NAV: Sankey (AS)",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Sankey (AS)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Client/Server](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Src/Dst](#/dashboard/4b86b4c0-5628-11e8-b711-83a5f93b17f3) | [**AS**](#/dashboard/757d59f0-5628-11e8-b711-83a5f93b17f3)\\n[](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
       }
     },
     "_meta": {
@@ -5474,6 +4522,958 @@
     "_source": {
       "title": "ElastiFlow: Vega Warning",
       "visState": "{\"title\":\"ElastiFlow: Vega Warning\",\"type\":\"markdown\",\"params\":{\"fontSize\":10,\"markdown\":\"NOTICE! Vega visualizations are **experimental**. You may experience minor issues with Kibana 6.2.4.\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWFhSAAsugC1WJLdzqUH",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Autonomous Systems",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Autonomous Systems\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [**AS Traffic**](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "26e166f0-2fe2-11e7-9d02-3f49bde5c1d5",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Overview",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Overview\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[**Overview**](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWFhSJtiugC1WJLdzqel",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Exporters",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Exporters\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [**Exporters**](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "8fee97e0-55b5-11e8-a1f3-452446793d46",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Blank",
+      "visState": "{\"title\":\"ElastiFlow: Blank\",\"type\":\"markdown\",\"params\":{\"fontSize\":8,\"markdown\":\"![](http://www.koiossian.com/public/elastiflow.gif)\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e294aae0-5626-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Sankey",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Sankey\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [**Sankey**](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWFhSZLAugC1WJLdzqua",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Flow Records",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Flow Records\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [**Flow Records**](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWFhR2VvugC1WJLdzqI3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Geo IP",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Geo IP\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [**Geo IP**](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "88dadc40-55e0-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Flow Records (client/server)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Flow Records (client/server)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[**Client/Server**](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5) | [Src/Dst](#/dashboard/58858cb0-55e1-11e8-b711-83a5f93b17f3)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9e04a560-55e0-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Flow Records (src/dst)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Flow Records (src/dst)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Client/Server](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5) | [**Src/Dst**](#/dashboard/58858cb0-55e1-11e8-b711-83a5f93b17f3)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "2fbcb650-5627-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Sankey (client/server)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Sankey (client/server)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[**Client/Server**](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Src/Dst](#/dashboard/4b86b4c0-5628-11e8-b711-83a5f93b17f3) | [AS](#/dashboard/757d59f0-5628-11e8-b711-83a5f93b17f3)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "af2a2c10-5627-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Sankey (AS)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Sankey (AS)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Client/Server](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Src/Dst](#/dashboard/4b86b4c0-5628-11e8-b711-83a5f93b17f3) | [**AS**](#/dashboard/757d59f0-5628-11e8-b711-83a5f93b17f3)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWFhF0AlugC1WJLdzZyF",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Geo IP (client/server)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Geo IP (client/server)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[**Client/Server**](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [Src/Dst](#/dashboard/AWFhE8NZugC1WJLdzYri)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWFhS2TMugC1WJLdzrNc",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Geo IP (src/dst)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Geo IP (src/dst)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Client/Server](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [**Src/Dst**](#/dashboard/AWFhE8NZugC1WJLdzYri)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWFhSSBGugC1WJLdzqmm",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Traffic Details",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Traffic Details\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [**Traffic Details**](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWFhRsIDugC1WJLdzp9S",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Top-N",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Top-N\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [**Top-N**](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [Flow](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c982ed70-560b-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Top-N (apps)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Top-N (apps)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Talkers](#/dashboard/AWFgr4DaugC1WJLdy9iE) |  [Services](#/dashboard/0809c1f0-6719-11e7-b5b8-29fbded8e37c)\\n | [Conversations](#/dashboard/AWFgw02HugC1WJLdzCFZ) | [**Apps**](#/dashboard/44d6d8c0-560b-11e8-b711-83a5f93b17f3)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWFhTJ5xugC1WJLdzrlm",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Top-N (conversations)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Top-N (conversations)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Talkers](#/dashboard/AWFgr4DaugC1WJLdy9iE) |  [Services](#/dashboard/0809c1f0-6719-11e7-b5b8-29fbded8e37c)\\n | [**Conversations**](#/dashboard/AWFgw02HugC1WJLdzCFZ) | [Apps](#/dashboard/44d6d8c0-560b-11e8-b711-83a5f93b17f3)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b72505d0-561c-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Traffic Details (attributes)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Traffic Details (attributes)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Types](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22)\\n | [**Attributes**](#/dashboard/64c19720-5619-11e8-b711-83a5f93b17f3) | [Locality](#/dashboard/95ccacb0-5619-11e8-b711-83a5f93b17f3)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWFgx_zkugC1WJLdzDLD",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Top-N (talkers)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Top-N (talkers)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[**Talkers**](#/dashboard/AWFgr4DaugC1WJLdy9iE) |  [Services](#/dashboard/0809c1f0-6719-11e7-b5b8-29fbded8e37c)\\n | [Conversations](#/dashboard/AWFgw02HugC1WJLdzCFZ) | [Apps](#/dashboard/44d6d8c0-560b-11e8-b711-83a5f93b17f3)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "94d32a20-561c-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Traffic Details (locality)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Traffic Details (locality)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Types](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22)\\n | [Attributes](#/dashboard/64c19720-5619-11e8-b711-83a5f93b17f3) | [**Locality**](#/dashboard/95ccacb0-5619-11e8-b711-83a5f93b17f3)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "AWFhTELFugC1WJLdzrdg",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Top-N (services)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Top-N (services)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Talkers](#/dashboard/AWFgr4DaugC1WJLdy9iE) |  [**Services**](#/dashboard/0809c1f0-6719-11e7-b5b8-29fbded8e37c)\\n | [Conversations](#/dashboard/AWFgw02HugC1WJLdzCFZ) | [Apps](#/dashboard/44d6d8c0-560b-11e8-b711-83a5f93b17f3)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9d8962a0-5627-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Sankey (src/dst)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Sankey (src/dst)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Client/Server](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [**Src/Dst**](#/dashboard/4b86b4c0-5628-11e8-b711-83a5f93b17f3) | [AS](#/dashboard/757d59f0-5628-11e8-b711-83a5f93b17f3)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d45c0d50-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Destination Autonomous Systems (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Destination Autonomous Systems (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"5b93e7e0-5612-11e8-b71a-cfa3c16427ce\",\"type\":\"calculation\",\"variables\":[{\"id\":\"5f2c77f0-5612-11e8-b71a-cfa3c16427ce\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.dst_autonomous_system\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"NOT flow.dst_autonomous_system: private\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "854eee30-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Source Autonomous Systems (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Source Autonomous Systems (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"eb6ed730-5612-11e8-88fd-2774a33bc32f\",\"type\":\"calculation\",\"variables\":[{\"id\":\"f0d103b0-5612-11e8-88fd-2774a33bc32f\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.src_autonomous_system\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"NOT flow.src_autonomous_system: private\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "f2b5acc0-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Autonomous Systems (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Autonomous Systems (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"e64ae1a0-5611-11e8-ace5-73cdd5366849\",\"type\":\"calculation\",\"variables\":[{\"id\":\"e9f01be0-5611-11e8-ace5-73cdd5366849\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.autonomous_system\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "fa458eb0-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Applications (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Applications (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"b907a980-5611-11e8-9d88-a7d70f388fc4\",\"type\":\"calculation\",\"variables\":[{\"id\":\"bbfd42d0-5611-11e8-9d88-a7d70f388fc4\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.application\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "dbcd7bb0-561c-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: NAV: Traffic Details (types)",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Traffic Details (types)\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[**Types**](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22)\\n | [Attributes](#/dashboard/64c19720-5619-11e8-b711-83a5f93b17f3) | [Locality](#/dashboard/95ccacb0-5619-11e8-b711-83a5f93b17f3)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e71599c0-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Client Autonomous Systems (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Client Autonomous Systems (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"0c862c80-5612-11e8-9c03-ebe615bd9c32\",\"type\":\"calculation\",\"variables\":[{\"id\":\"142047a0-5612-11e8-9c03-ebe615bd9c32\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.client_autonomous_system\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"NOT flow.client_autonomous_system: private\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ce449a90-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Destination Ports (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Destination Ports (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"670b6440-5612-11e8-b312-79bc7794402d\",\"type\":\"calculation\",\"variables\":[{\"id\":\"6ac62250-5612-11e8-b312-79bc7794402d\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.dst_port_name\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c481fa20-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Egress Interfaces (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Egress Interfaces (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"83a0e580-5612-11e8-9770-ed998bc0982c\",\"type\":\"calculation\",\"variables\":[{\"id\":\"88cdd130-5612-11e8-9770-ed998bc0982c\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.output_snmp\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b79dce60-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Ingress Interfaces (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Ingress Interfaces (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"a00fcbf0-5612-11e8-833a-d52124abe7ce\",\"type\":\"calculation\",\"variables\":[{\"id\":\"a25ec500-5612-11e8-833a-d52124abe7ce\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.input_snmp\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "bf600af0-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Flow Exporters (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Flow Exporters (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"95108cd0-5612-11e8-8cf4-f1fcac410c6e\",\"type\":\"calculation\",\"variables\":[{\"id\":\"97231920-5612-11e8-8cf4-f1fcac410c6e\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"node.hostname\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c8e924d0-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Destinations (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Destinations (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"73319730-5612-11e8-aef2-8d6be7224727\",\"type\":\"calculation\",\"variables\":[{\"id\":\"76164090-5612-11e8-aef2-8d6be7224727\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.dst_hostname\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "de476b70-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Clients (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Clients (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"35bed8e0-5612-11e8-9abc-51bfe6c5250a\",\"type\":\"calculation\",\"variables\":[{\"id\":\"38885920-5612-11e8-9abc-51bfe6c5250a\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.client_hostname\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d8e1bc80-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Countries (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Countries (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"47b1b9f0-5612-11e8-8f25-dd843d63ccd9\",\"type\":\"calculation\",\"variables\":[{\"id\":\"4ba84880-5612-11e8-8f25-dd843d63ccd9\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.country\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ebd23770-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Cities (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Cities (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"f5d79820-5611-11e8-937b-f9dd7f7e8b36\",\"type\":\"calculation\",\"variables\":[{\"id\":\"f9111840-5611-11e8-937b-f9dd7f7e8b36\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.city\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "a8323470-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Server Autonomous Systems (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Server Autonomous Systems (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"c89ecad0-5612-11e8-b8f4-81e5f5de0f37\",\"type\":\"calculation\",\"variables\":[{\"id\":\"cb30e760-5612-11e8-b8f4-81e5f5de0f37\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.server_autonomous_system\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"NOT flow.server_autonomous_system: private\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "65162e80-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Traffic Locality (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Traffic Locality (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"2fbfdab0-5613-11e8-9246-a5562341aeaa\",\"type\":\"calculation\",\"variables\":[{\"id\":\"31d17ca0-5613-11e8-9246-a5562341aeaa\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.traffic_locality\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "7a609f00-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Source Ports (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Source Ports (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"f82d7990-5612-11e8-aa3f-47704e17ccf8\",\"type\":\"calculation\",\"variables\":[{\"id\":\"fc0f6eb0-5612-11e8-aa3f-47704e17ccf8\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.src_port_name\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b3007880-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: IP Protocols (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: IP Protocols (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"ac032f10-5612-11e8-987a-399b859ae9e0\",\"type\":\"calculation\",\"variables\":[{\"id\":\"aefebbd0-5612-11e8-987a-399b859ae9e0\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.ip_protocol\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ae9de1b0-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: IP Version (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: IP Version (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"bc2c73b0-5612-11e8-a8ff-859eba5de32f\",\"type\":\"calculation\",\"variables\":[{\"id\":\"bf205f50-5612-11e8-a8ff-859eba5de32f\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.ip_version\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "6a815bb0-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: TCP Flags (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: TCP Flags (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"21a94970-5613-11e8-932f-d5f0b2e476ba\",\"type\":\"calculation\",\"variables\":[{\"id\":\"23e04db0-5613-11e8-932f-d5f0b2e476ba\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.tcp_flags\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "98d03770-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Servers (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Servers (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"d5c99c80-5612-11e8-a6a3-f9047d0437a6\",\"type\":\"calculation\",\"variables\":[{\"id\":\"d7fecc00-5612-11e8-a6a3-f9047d0437a6\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.server_hostname\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "8b7247d0-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Services (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Services (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"dfd5f020-5612-11e8-8874-4b2cb46d3ac9\",\"type\":\"calculation\",\"variables\":[{\"id\":\"e35ca5e0-5612-11e8-8874-4b2cb46d3ac9\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.service_name\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "70ad67e0-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Sources (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Sources (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"05cb3150-5613-11e8-95ce-e7b2166211be\",\"type\":\"calculation\",\"variables\":[{\"id\":\"0f6b0780-5613-11e8-95ce-e7b2166211be\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.src_hostname\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "604bae20-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Types of Service (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: Types of Service (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"3a636540-5613-11e8-bbfc-bb680694cbb3\",\"type\":\"calculation\",\"variables\":[{\"id\":\"3e0a2620-5613-11e8-bbfc-bb680694cbb3\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.tos\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "5af01150-5613-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: VLANs (pkts/s) - TSVB (stacked area)",
+      "visState": "{\"title\":\"ElastiFlow: VLANs (pkts/s) - TSVB (stacked area)\",\"type\":\"metrics\",\"params\":{\"id\":\"61ca57f0-469d-11e7-af02-69e470af7417\",\"type\":\"timeseries\",\"series\":[{\"id\":\"61ca57f1-469d-11e7-af02-69e470af7417\",\"color\":\"rgba(144,201,227,1)\",\"split_mode\":\"terms\",\"metrics\":[{\"id\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"type\":\"sum\",\"field\":\"flow.packets\"},{\"script\":\"params.packets / (params._interval / 1000)\",\"id\":\"4a7ea020-5613-11e8-9991-679c12b3fef7\",\"type\":\"calculation\",\"variables\":[{\"id\":\"4d43b390-5613-11e8-9991-679c12b3fef7\",\"field\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"name\":\"packets\"}]}],\"seperate_axis\":0,\"axis_position\":\"right\",\"formatter\":\"number\",\"chart_type\":\"line\",\"line_width\":1,\"point_size\":\"0\",\"fill\":\"0.6\",\"stacked\":\"stacked\",\"split_color_mode\":\"rainbow\",\"label\":\"Packets\",\"terms_field\":\"flow.vlan\",\"terms_size\":\"100\",\"terms_order_by\":\"61ca57f2-469d-11e7-af02-69e470af7417\",\"value_template\":\"{{value}}pkts/s\"}],\"time_field\":\"@timestamp\",\"index_pattern\":\"elastiflow-*\",\"interval\":\">=1m\",\"axis_position\":\"left\",\"axis_formatter\":\"number\",\"show_legend\":1,\"show_grid\":1,\"axis_min\":\"0\",\"filter\":\"\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "e3c2e2c0-5607-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Src/Dst Autonomous Systems - input list",
+      "visState": "{\"title\":\"ElastiFlow: Src/Dst Autonomous Systems - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.src_autonomous_system\",\"label\":\"Source AS\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1526108883717\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.dst_autonomous_system\",\"label\":\"Destnation AS\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1526108909005\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.service_name\",\"label\":\"Service\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":5000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "61ed9a20-561a-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Traffic Attributes - input list",
+      "visState": "{\"title\":\"ElastiFlow: Traffic Attributes - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.ip_protocol\",\"label\":\"IP Protocol\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":50,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.vlan\",\"label\":\"VLAN\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":1000,\"order\":\"desc\"}},{\"id\":\"1526153132040\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.tos\",\"label\":\"Type of Service\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":1000,\"order\":\"desc\"}},{\"id\":\"1526153149794\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.tcp_flags\",\"label\":\"TCP Flag\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":10,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "17c29c50-55bd-11e8-a1f3-452446793d46",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Src/Dst - input list",
+      "visState": "{\"title\":\"ElastiFlow: Src/Dst - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.src_hostname\",\"label\":\"Source\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1526108883717\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.dst_hostname\",\"label\":\"Destnation\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1526108909005\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.dst_port_name\",\"label\":\"Destination Port\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":5000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "95799400-55b3-11e8-a1f3-452446793d46",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Client/Server - input list",
+      "visState": "{\"title\":\"ElastiFlow: Client/Server - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.client_hostname\",\"label\":\"Client\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1526108883717\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.server_hostname\",\"label\":\"Server\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":5000,\"order\":\"desc\"}},{\"id\":\"1526108909005\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.service_name\",\"label\":\"Service\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":1000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "7546a110-55fd-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Flow Types, Exporters & Services - input list",
+      "visState": "{\"title\":\"ElastiFlow: Flow Types, Exporters & Services - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"event.type\",\"label\":\"Flow Type\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":20,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1526140705539\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.service_name\",\"label\":\"Service\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":500,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "72ac9770-560c-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Flow Types, Exporters & Apps - input list",
+      "visState": "{\"title\":\"ElastiFlow: Flow Types, Exporters & Apps - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"event.type\",\"label\":\"Flow Type\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":20,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":500,\"order\":\"desc\"}},{\"id\":\"1526140705539\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.application\",\"label\":\"Application\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":500,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "53f4a4d0-55df-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Flow Types & Exporters - input list",
+      "visState": "{\"title\":\"ElastiFlow: Flow Types & Exporters - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"event.type\",\"label\":\"Flow Type\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":20,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"node.hostname\",\"label\":\"Flow Exporter\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":500,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "b577fca0-561d-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Traffic Types - input list",
+      "visState": "{\"title\":\"ElastiFlow: Traffic Types - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.client_hostname\",\"label\":\"Client\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":2500,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.server_hostname\",\"label\":\"Server\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":2500,\"order\":\"desc\"}},{\"id\":\"1526153132040\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.service_name\",\"label\":\"Service\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":1000,\"order\":\"desc\"}},{\"id\":\"1526153149794\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.application\",\"label\":\"Application\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":2000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c0ca16b0-561d-11e8-b711-83a5f93b17f3",
+    "_type": "visualization",
+    "_source": {
+      "title": "ElastiFlow: Traffic Locality - input list",
+      "visState": "{\"title\":\"ElastiFlow: Traffic Locality - input list\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1526107640219\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.traffic_locality\",\"label\":\"Traffic Locality\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":10,\"order\":\"desc\"}},{\"id\":\"1526107541713\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.autonomous_system\",\"label\":\"Autonomous System\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":2500,\"order\":\"desc\"}},{\"id\":\"1526153132040\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.country\",\"label\":\"Country\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":1000,\"order\":\"desc\"}},{\"id\":\"1526153149794\",\"indexPattern\":\"elastiflow-*\",\"fieldName\":\"flow.city\",\"label\":\"City\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":false,\"size\":2500,\"order\":\"desc\"}}],\"updateFiltersOnChange\":true,\"useTimeFilter\":true},\"aggs\":[]}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,
