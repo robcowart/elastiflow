@@ -189,6 +189,8 @@ The application names which correspond to values of these IDs is vendor-specific
 ```
 > Currently supported is Cisco's NBAR2 and Fortinet's FortiOS. If you have a device that you would like added, I will need a mapping of Application IDs to names. This can often be extracted from the device's configuration. I would love to be able to build up a large knowledge base of such mappings.
 
+> The nDPI detected application name produced by nProbe is also supported as of ElastiFlow&trade; v3.0.3. No specific configuration of ElastiFlow&trade; is necessary. However, nProbe must be configured with a template that sends this data. An nProbe configuration file that works well with ElastiFlow&trade; is available [HERE](https://gist.github.com/robcowart/afd538026db29ee96dd9c495efb52ea6).
+
 Once configured ElastiFlow&trade; will resolve the ID to an application name, which will be available in the dashboards.
 <img width="902" alt="screen shot 2018-05-13 at 12 40 04" src="https://user-images.githubusercontent.com/10326954/39966360-d8e6e420-56aa-11e8-8514-9a9839ca5fb1.png"> 
 

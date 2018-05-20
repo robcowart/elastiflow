@@ -1,7 +1,7 @@
 {
   "order": 0,
-  "version": 30001,
-  "index_patterns": "elastiflow-3.0.1-*",
+  "version": 30003,
+  "index_patterns": "elastiflow-3.0.3-*",
   "settings": {
     "index": {
       "number_of_shards": 3,
@@ -10113,14 +10113,6 @@
           }
         },
         {
-          "netflow.out_bytes": {
-            "path_match": "netflow.out_bytes",
-            "mapping": {
-              "type": "long"
-            }
-          }
-        },
-        {
           "netflow.nprobe_proto": {
             "path_match": "netflow.nprobe_proto",
             "mapping": {
@@ -10267,6 +10259,14 @@
         {
           "netflow.originalObservationDomainId": {
             "path_match": "netflow.originalObservationDomainId",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.out_bytes": {
+            "path_match": "netflow.out_bytes",
             "mapping": {
               "type": "long"
             }
