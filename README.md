@@ -225,7 +225,7 @@ Advanced Setting | Value | Why make the change?
 doc_table:highlight | false | There is a pretty big query performance penalty that comes with using the highlighting feature. As it isn't very useful for this use-case, it is better to just trun it off.
 filters:pinnedByDefault | true | Pinning a filter will it allow it to persist when you are changing dashbaords. This is very useful when drill-down into something of interest and you want to change dashboards for a different perspective of the same data. This is the first setting I change whenever I am working with Kibana.
 state:storeInSessionStorage | true | Kibana URLs can get pretty large. Especially when working with Vega visualizations. This will likely result in error messages for users of Internet Explorer. Using in-session storage will fix this issue for these users.
-timepicker:quickRanges | [see below](#recommended-setting-for-timepicker:quickRanges) | The default options in the Time Picker are less than optimal, for most logging and monitoring use-cases. Fortunately Kibana no allows you to customize the time picker. Our recommended settings can be found [see below](#recommended-setting-for-timepicker:quickRanges).
+timepicker:quickRanges | [see below](#recommended-setting-for-timepicker:quickRanges) | The default options in the Time Picker are less than optimal, for most logging and monitoring use-cases. Fortunately Kibana now allows you to customize the time picker. Our recommended settings can be found [see below](#recommended-setting-for-timepicker:quickRanges).
 
 ## Dashboards
 The following dashboards are provided.
