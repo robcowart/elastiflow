@@ -41,7 +41,7 @@ The above recommendations are a starting point. Once you are up and running you 
 
 > I plan to do some additional benchmarking soon, and will update the above table based on those results.
 
-## Setting-up-Elasticsearch
+## Setting up Elasticsearch
 Currently there is no specific configuration required for Elasticsearch. As long as Kibana and Logstash can talk to your Elasticsearch cluster you should be ready to go. The index template required by Elasticsearch will be uploaded by Logstash.
 
 At high ingest rates (>10K flows/s), or for data redundancy and high availability, a multi-node cluster is recommended.
@@ -207,10 +207,10 @@ Logstash takes a little time to start... BE PATIENT!
 
 If using Netflow v9 or IPFIX you will likely see warning messages related to the flow templates not yet being received. They will disappear after templates are received from the network devices, which should happen every few minutes. Some devices can take a bit longer to send templates. Fortinet in particular send templates rather infrequently.
 
-Logstash is setup is now complete. If you are receiving flow data, you should have an `elastiflow-` daily index in Elasticsearch.
+Logstash setup is now complete. If you are receiving flow data, you should have an `elastiflow-` daily index in Elasticsearch.
 
 ## Setting up Kibana
-An API (yet undocumented) is available to import and export Index Patterns. The JSON file which contains the Index Pattern configuration is `kibana/elastiflow.index_pattern-json`. To setup the `elastiflow-*` Index Pattern run the following command:
+An API (yet undocumented) is available to import and export Index Patterns. The JSON file which contains the Index Pattern configuration is `kibana/elastiflow.index_pattern.json`. To setup the `elastiflow-*` Index Pattern run the following command:
 ```
 curl -X POST -u USERNAME:PASSWORD http://KIBANASERVER:5601/api/saved_objects/index-pattern/elastiflow-* -H "Content-Type: application/json" -H "kbn-xsrf: true" -d @/PATH/TO/elastiflow.index_pattern.json
 ```

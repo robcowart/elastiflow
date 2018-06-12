@@ -12034,6 +12034,9 @@
         "@timestamp": {
           "type": "date"
         },
+        "@version": {
+          "type": "keyword"
+        },
         "event": {
           "dynamic": true,
           "type": "object",
@@ -12264,6 +12267,5 @@
         }
       }
     }
-  },
-  "aliases": {}
+  }
 }
