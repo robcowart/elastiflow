@@ -224,7 +224,7 @@ An API (yet undocumented) is available to import and export Index Patterns. The 
 curl -X POST -u USERNAME:PASSWORD http://KIBANASERVER:5601/api/saved_objects/index-pattern/elastiflow-* -H "Content-Type: application/json" -H "kbn-xsrf: true" -d @/PATH/TO/elastiflow.index_pattern.json
 ```
 
-Finally the vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.dashboards.json` file from within the Kibana UI. This is done from the Management - > Saved Objects page.
+Finally the vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.dashboards.<VER>.json` file from within the Kibana UI. This is done from the Management - > Saved Objects page. There are separate dashboard import files for version 6.2.x and 6.3.x of Kibana. Select the file that corresponds to your version of Kibana.
 
 ### Recommended Kibana Advanced Settings
 You may find that modifying a few of the Kibana advanced settings will produce a more user-friendly experience while using ElastiFlow&trade;. These settings are made in Kibana, under `Management -> Advanced Settings`.
