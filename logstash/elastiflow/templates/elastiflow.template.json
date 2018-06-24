@@ -12086,6 +12086,9 @@
             "client_country": {
               "type": "keyword"
             },
+            "client_country_code": {
+              "type": "keyword"
+            },
             "client_geo_location": {
               "type": "geo_point"
             },
@@ -12093,6 +12096,9 @@
               "type": "keyword"
             },
             "country": {
+              "type": "keyword"
+            },
+            "country_code": {
               "type": "keyword"
             },
             "direction": {
@@ -12114,6 +12120,9 @@
               "type": "keyword"
             },
             "dst_country": {
+              "type": "keyword"
+            },
+            "dst_country_code": {
               "type": "keyword"
             },
             "dst_geo_location": {
@@ -12179,6 +12188,9 @@
             "server_country": {
               "type": "keyword"
             },
+            "server_country_code": {
+              "type": "keyword"
+            },
             "server_geo_location": {
               "type": "geo_point"
             },
@@ -12207,6 +12219,9 @@
               "type": "keyword"
             },
             "src_country": {
+              "type": "keyword"
+            },
+            "src_country_code": {
               "type": "keyword"
             },
             "src_geo_location": {

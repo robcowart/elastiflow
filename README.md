@@ -190,6 +190,7 @@ The application names which correspond to values of these IDs is vendor-specific
 > Currently supported is Cisco's NBAR2 and Fortinet's FortiOS. If you have a device that you would like added, I will need a mapping of Application IDs to names. This can often be extracted from the device's configuration. I would love to be able to build up a large knowledge base of such mappings.
 
 You can also define a default source type value by setting the following environment variable:
+
 Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_DEFAULT_APPID_SRCTYPE | Sets the default source type for translating the App IDs to names. Valid values are `cisco_nbar2` and `fortinet` | __UNKNOWN
