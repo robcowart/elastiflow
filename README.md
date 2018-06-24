@@ -13,6 +13,7 @@ Refer to the following compatibility chart to choose a release of ElastiFlow&tra
 
 Elastic Stack | ElastiFlow&trade; 1.x | ElastiFlow&trade; 2.x | ElastiFlow&trade; 3.x
 :---:|:---:|:---:|:---:
+6.3 |  |  | &#10003;
 6.2 | &#10003; | &#10003; | &#10003;
 6.1 | &#10003; | &#10003; |
 6.0 | &#10003; | &#10003; |
@@ -41,7 +42,7 @@ The above recommendations are a starting point. Once you are up and running you 
 
 > I plan to do some additional benchmarking soon, and will update the above table based on those results.
 
-## Setting-up-Elasticsearch
+## Setting up Elasticsearch
 Currently there is no specific configuration required for Elasticsearch. As long as Kibana and Logstash can talk to your Elasticsearch cluster you should be ready to go. The index template required by Elasticsearch will be uploaded by Logstash.
 
 At high ingest rates (>10K flows/s), or for data redundancy and high availability, a multi-node cluster is recommended.
@@ -154,6 +155,8 @@ Obviously the data needs to land in Elasticsearch, so you need to tell Logstash 
 Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
+ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
+ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
 
@@ -189,6 +192,12 @@ The application names which correspond to values of these IDs is vendor-specific
 ```
 > Currently supported is Cisco's NBAR2 and Fortinet's FortiOS. If you have a device that you would like added, I will need a mapping of Application IDs to names. This can often be extracted from the device's configuration. I would love to be able to build up a large knowledge base of such mappings.
 
+You can also define a default source type value by setting the following environment variable:
+
+Environment Variable | Description | Default Value
+--- | --- | ---
+ELASTIFLOW_DEFAULT_APPID_SRCTYPE | Sets the default source type for translating the App IDs to names. Valid values are `cisco_nbar2` and `fortinet` | __UNKNOWN
+
 > The nDPI detected application name produced by nProbe is also supported as of ElastiFlow&trade; v3.0.3. No specific configuration of ElastiFlow&trade; is necessary. However, nProbe must be configured with a template that sends this data. An nProbe configuration file that works well with ElastiFlow&trade; is available [HERE](https://gist.github.com/robcowart/afd538026db29ee96dd9c495efb52ea6).
 
 Once configured ElastiFlow&trade; will resolve the ID to an application name, which will be available in the dashboards.
@@ -207,15 +216,15 @@ Logstash takes a little time to start... BE PATIENT!
 
 If using Netflow v9 or IPFIX you will likely see warning messages related to the flow templates not yet being received. They will disappear after templates are received from the network devices, which should happen every few minutes. Some devices can take a bit longer to send templates. Fortinet in particular send templates rather infrequently.
 
-Logstash is setup is now complete. If you are receiving flow data, you should have an `elastiflow-` daily index in Elasticsearch.
+Logstash setup is now complete. If you are receiving flow data, you should have an `elastiflow-` daily index in Elasticsearch.
 
 ## Setting up Kibana
-An API (yet undocumented) is available to import and export Index Patterns. The JSON file which contains the Index Pattern configuration is `kibana/elastiflow.index_pattern-json`. To setup the `elastiflow-*` Index Pattern run the following command:
+An API (yet undocumented) is available to import and export Index Patterns. The JSON file which contains the Index Pattern configuration is `kibana/elastiflow.index_pattern.json`. To setup the `elastiflow-*` Index Pattern run the following command:
 ```
 curl -X POST -u USERNAME:PASSWORD http://KIBANASERVER:5601/api/saved_objects/index-pattern/elastiflow-* -H "Content-Type: application/json" -H "kbn-xsrf: true" -d @/PATH/TO/elastiflow.index_pattern.json
 ```
 
-Finally the vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.dashboards.json` file from within the Kibana UI. This is done from the Management - > Saved Objects page.
+Finally the vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.dashboards.<VER>.json` file from within the Kibana UI. This is done from the Management - > Saved Objects page. There are separate dashboard import files for version 6.2.x and 6.3.x of Kibana. Select the file that corresponds to your version of Kibana.
 
 ### Recommended Kibana Advanced Settings
 You may find that modifying a few of the Kibana advanced settings will produce a more user-friendly experience while using ElastiFlow&trade;. These settings are made in Kibana, under `Management -> Advanced Settings`.
@@ -273,6 +282,7 @@ ELASTIFLOW_GEOIP_CACHE_SIZE | The size of the GeoIP query cache | 8192
 ELASTIFLOW_GEOIP_LOOKUP | Enable/Disable GeoIP lookups | true
 ELASTIFLOW_ASN_LOOKUP | Enable/Disable ASN lookups | true
 ELASTIFLOW_KEEP_ORIG_DATA | If set to `false` the original `netflow`, `ipfix` and `sflow` objects will be deleted prior to indexing. This can save disk space without affecting the provided dashboards. However the original flow fields will no longer be available if they are desired for additional analytics. | true
+ELASTIFLOW_DEFAULT_APPID_SRCTYPE | Sets the default source type for translating the App IDs to names. Valid values are `cisco_nbar2` and `fortinet` | __UNKNOWN
 ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests | false
 ELASTIFLOW_NAMESERVER | The DNS server to which the dns filter should send requests | 127.0.0.1
 ELASTIFLOW_DNS_HIT_CACHE_SIZE | The cache size for successful DNS queries | 25000
@@ -280,6 +290,8 @@ ELASTIFLOW_DNS_HIT_CACHE_TTL | The time in seconds successful DNS queries are ca
 ELASTIFLOW_DNS_FAILED_CACHE_SIZE | The cache size for failed DNS queries | 75000
 ELASTIFLOW_DNS_FAILED_CACHE_TTL | The time in seconds failed DNS queries are cached | 3600
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
+ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
+ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
 ELASTIFLOW_NETFLOW_IPV4_HOST | The IP address on which to listen for Netflow messages | 0.0.0.0

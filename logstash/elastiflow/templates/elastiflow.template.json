@@ -1,7 +1,7 @@
 {
   "order": 0,
-  "version": 30003,
-  "index_patterns": "elastiflow-3.0.3-*",
+  "version": 30100,
+  "index_patterns": "elastiflow-3.1.0-*",
   "settings": {
     "index": {
       "number_of_shards": 3,
@@ -12034,6 +12034,9 @@
         "@timestamp": {
           "type": "date"
         },
+        "@version": {
+          "type": "keyword"
+        },
         "event": {
           "dynamic": true,
           "type": "object",
@@ -12083,6 +12086,9 @@
             "client_country": {
               "type": "keyword"
             },
+            "client_country_code": {
+              "type": "keyword"
+            },
             "client_geo_location": {
               "type": "geo_point"
             },
@@ -12090,6 +12096,9 @@
               "type": "keyword"
             },
             "country": {
+              "type": "keyword"
+            },
+            "country_code": {
               "type": "keyword"
             },
             "direction": {
@@ -12111,6 +12120,9 @@
               "type": "keyword"
             },
             "dst_country": {
+              "type": "keyword"
+            },
+            "dst_country_code": {
               "type": "keyword"
             },
             "dst_geo_location": {
@@ -12176,6 +12188,9 @@
             "server_country": {
               "type": "keyword"
             },
+            "server_country_code": {
+              "type": "keyword"
+            },
             "server_geo_location": {
               "type": "geo_point"
             },
@@ -12204,6 +12219,9 @@
               "type": "keyword"
             },
             "src_country": {
+              "type": "keyword"
+            },
+            "src_country_code": {
               "type": "keyword"
             },
             "src_geo_location": {
@@ -12264,6 +12282,5 @@
         }
       }
     }
-  },
-  "aliases": {}
+  }
 }

@@ -3,7 +3,7 @@
 ## ElastiFlow&trade;
 ### Copyright &copy; 2018 Robert Cowart
 
-The contents of this file and/or repository are subject to the Koiossian Public License (the "License") and may not be used or distributed except in compliance with the License. You may obtain a copy of the License at:
+The contents of this file and/or repository are subject to the Robert Cowart Public License (the "License") and may not be used or distributed except in compliance with the License. You may obtain a copy of the License at:
 
 http://www.koiossian.com/public/robert_cowart_public_license.txt
 

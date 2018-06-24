@@ -23,6 +23,7 @@ export ELASTIFLOW_GEOIP_CACHE_SIZE=8192
 export ELASTIFLOW_GEOIP_LOOKUP=true
 export ELASTIFLOW_ASN_LOOKUP=true
 export ELASTIFLOW_KEEP_ORIG_DATA=true
+export ELASTIFLOW_DEFAULT_APPID_SRCTYPE=__UNKNOWN
 
 # Name resolution option
 export ELASTIFLOW_RESOLVE_IP2HOST=false
@@ -33,7 +34,11 @@ export ELASTIFLOW_DNS_FAILED_CACHE_SIZE=75000
 export ELASTIFLOW_DNS_FAILED_CACHE_TTL=3600
 
 # Elasticsearch connection settings
-export ELASTIFLOW_ES_HOST=127.0.0.1
+#   - If you need Logstash to connect to one of an array of servers, you must edit the output directly.
+#   - If ELASTIFLOW_ES_SSL_VERIFY is true then you must edit the output and set the path where the cacert can be found.
+export ELASTIFLOW_ES_HOST=127.0.0.1:9200
+export ELASTIFLOW_ES_SSL_ENABLE=false
+export ELASTIFLOW_ES_SSL_VERIFY=false
 export ELASTIFLOW_ES_USER=elastic
 export ELASTIFLOW_ES_PASSWD=changeme
 
