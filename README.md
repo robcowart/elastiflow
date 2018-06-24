@@ -189,6 +189,11 @@ The application names which correspond to values of these IDs is vendor-specific
 ```
 > Currently supported is Cisco's NBAR2 and Fortinet's FortiOS. If you have a device that you would like added, I will need a mapping of Application IDs to names. This can often be extracted from the device's configuration. I would love to be able to build up a large knowledge base of such mappings.
 
+You can also define a default source type value by setting the following environment variable:
+Environment Variable | Description | Default Value
+--- | --- | ---
+ELASTIFLOW_DEFAULT_APPID_SRCTYPE | Sets the default source type for translating the App IDs to names. Valid values are `cisco_nbar2` and `fortinet` | __UNKNOWN
+
 > The nDPI detected application name produced by nProbe is also supported as of ElastiFlow&trade; v3.0.3. No specific configuration of ElastiFlow&trade; is necessary. However, nProbe must be configured with a template that sends this data. An nProbe configuration file that works well with ElastiFlow&trade; is available [HERE](https://gist.github.com/robcowart/afd538026db29ee96dd9c495efb52ea6).
 
 Once configured ElastiFlow&trade; will resolve the ID to an application name, which will be available in the dashboards.
@@ -273,6 +278,7 @@ ELASTIFLOW_GEOIP_CACHE_SIZE | The size of the GeoIP query cache | 8192
 ELASTIFLOW_GEOIP_LOOKUP | Enable/Disable GeoIP lookups | true
 ELASTIFLOW_ASN_LOOKUP | Enable/Disable ASN lookups | true
 ELASTIFLOW_KEEP_ORIG_DATA | If set to `false` the original `netflow`, `ipfix` and `sflow` objects will be deleted prior to indexing. This can save disk space without affecting the provided dashboards. However the original flow fields will no longer be available if they are desired for additional analytics. | true
+ELASTIFLOW_DEFAULT_APPID_SRCTYPE | Sets the default source type for translating the App IDs to names. Valid values are `cisco_nbar2` and `fortinet` | __UNKNOWN
 ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests | false
 ELASTIFLOW_NAMESERVER | The DNS server to which the dns filter should send requests | 127.0.0.1
 ELASTIFLOW_DNS_HIT_CACHE_SIZE | The cache size for successful DNS queries | 25000
