@@ -13,6 +13,7 @@ Refer to the following compatibility chart to choose a release of ElastiFlow&tra
 
 Elastic Stack | ElastiFlow&trade; 1.x | ElastiFlow&trade; 2.x | ElastiFlow&trade; 3.x
 :---:|:---:|:---:|:---:
+6.3 |  |  | &#10003;
 6.2 | &#10003; | &#10003; | &#10003;
 6.1 | &#10003; | &#10003; |
 6.0 | &#10003; | &#10003; |
@@ -154,6 +155,8 @@ Obviously the data needs to land in Elasticsearch, so you need to tell Logstash 
 Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
+ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
+ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
 
@@ -287,6 +290,8 @@ ELASTIFLOW_DNS_HIT_CACHE_TTL | The time in seconds successful DNS queries are ca
 ELASTIFLOW_DNS_FAILED_CACHE_SIZE | The cache size for failed DNS queries | 75000
 ELASTIFLOW_DNS_FAILED_CACHE_TTL | The time in seconds failed DNS queries are cached | 3600
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
+ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
+ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
 ELASTIFLOW_NETFLOW_IPV4_HOST | The IP address on which to listen for Netflow messages | 0.0.0.0
