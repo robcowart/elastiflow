@@ -1,0 +1,139 @@
+---
+version: '3'
+services:
+  # The environment variable "TAG" is used throughout this file to
+  # specify the version of the images to run. The default is set in the
+  # '.env' file in this folder. It can be overridden with any normal
+  # technique for setting environment variables, for example:
+  #
+  #   TAG=6.0.0-beta1 docker-compose up
+  #
+  # REF: https://docs.docker.com/compose/compose-file/#variable-substitution
+  #
+  # Also be sure to set the ELASTIC_VERSION variable. For released versions,
+  # ${TAG} and ${ELASTIC_VERSION} will be identical, but for pre-release
+  # versions, ${TAG} might contain an extra build identifier, like
+  # "6.0.0-beta1-3eab5b40", so a full invocation might look like:
+  #
+  #   ELASTIC_VERSION=6.0.0-beta1 TAG=6.0.0-beta1-3eab5b40 docker-compose up
+  #
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:${TAG}
+    container_name: elasticsearch
+    environment: ['http.host=0.0.0.0', 'transport.host=127.0.0.1']
+    ports: ['127.0.0.1:9200:9200']
+    networks: ['stack']
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:${TAG}
+    container_name: kibana
+    ports: ['127.0.0.1:5601:5601']
+    networks: ['stack']
+    depends_on: ['elasticsearch']
+    
+  logstash:
+    build: 
+      context: $PWD/docker-logstash-elastiflow/
+      dockerfile: $PWD/docker-logstash-elastiflow/Dockerfile
+      args:
+        VERSION: ${TAG}
+    image: elastiflow/logstash-elastiflow:${TAG}
+    container_name: logstash
+    environment:
+      LS_JAVA_OPTS: "-Xms4g -Xmx4g"
+      # Pipeline files
+      ELASTIFLOW_DICT_PATH: "/usr/share/logstash/elastiflow/dictionaries"
+      ELASTIFLOW_TEMPLATE_PATH: "/usr/share/logstash/elastiflow/templates"
+      ELASTIFLOW_GEOIP_DB_PATH: "/usr/share/logstash/elastiflow/geoipdbs"
+      # Variables
+      ELASTIFLOW_GEOIP_CACHE_SIZE: "8192"
+      ELASTIFLOW_GEOIP_LOOKUP: "true"
+      ELASTIFLOW_ASN_LOOKUP: "true"
+      ELASTIFLOW_KEEP_ORIG_DATA: "true"
+      # IPv4 inputs
+      ## Netflow - IPv4
+      ELASTIFLOW_NETFLOW_IPV4_HOST: "0.0.0.0"
+      ELASTIFLOW_NETFLOW_IPV4_PORT: "2055"
+      ## sFlow - IPv4
+      ELASTIFLOW_SFLOW_IPV4_HOST: "0.0.0.0"
+      ELASTIFLOW_SFLOW_IPV4_PORT: "6343"
+      ## IPFIX - IPv4
+      ELASTIFLOW_IPFIX_TCP_IPV4_HOST: "0.0.0.0"
+      ELASTIFLOW_IPFIX_TCP_IPV4_PORT: "4739"
+      ELASTIFLOW_IPFIX_UDP_IPV4_HOST: "0.0.0.0"
+      ELASTIFLOW_IPFIX_UDP_IPV4_PORT: "4739"
+      # # IPv6 inputs
+      # ## Netflow - IPv6
+      # ELASTIFLOW_NETFLOW_IPV6_HOST: "[::]"
+      # ELASTIFLOW_NETFLOW_IPV6_PORT: "52055"
+      # # # sFlow - IPv6
+      # ELASTIFLOW_SFLOW_IPV6_HOST: "[::]"
+      # ELASTIFLOW_SFLOW_IPV6_PORT: "56343"
+      # ## IPFIX - IPv6
+      # ELASTIFLOW_IPFIX_TCP_IPV6_HOST: "[::]"
+      # ELASTIFLOW_IPFIX_TCP_IPV6_PORT: "54739"
+      # ELASTIFLOW_IPFIX_UDP_IPV6_HOST: "[::]"
+      # ELASTIFLOW_IPFIX_UDP_IPV6_PORT: "54739"
+      # UDP performance tuning
+      ## Netflow - UDP input options
+      ELASTIFLOW_NETFLOW_UDP_WORKERS: "4"
+      ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE: "4096"
+      ## sFlow - UDP input options
+      ELASTIFLOW_SFLOW_UDP_WORKERS: "4"
+      ELASTIFLOW_SFLOW_UDP_QUEUE_SIZE: "4096"
+      ## IPFIX - UDP input options
+      ELASTIFLOW_IPFIX_UDP_WORKERS: "4"
+      ELASTIFLOW_IPFIX_UDP_QUEUE_SIZE: "4096"
+      # Netflow timestamp options
+      ELASTIFLOW_NETFLOW_LASTSW_TIMESTAMP: "false"
+      ELASTIFLOW_NETFLOW_TZ: "UTC"
+      # Elasticsearch connection settings
+      ELASTIFLOW_ES_HOST: "elasticsearch"
+      ELASTIFLOW_ES_USER: "elastic"
+      ELASTIFLOW_ES_PASSWD: "changeme"
+      # # Name resolution option (optional)
+      # ELASTIFLOW_RESOLVE_IP2HOST: "false"
+      # ELASTIFLOW_NAMESERVER: "127.0.0.1"
+      # ELASTIFLOW_DNS_HIT_CACHE_SIZE: "25000"
+      # ELASTIFLOW_DNS_HIT_CACHE_TTL: "900"
+      # ELASTIFLOW_DNS_FAILED_CACHE_SIZE: "75000"
+      # ELASTIFLOW_DNS_FAILED_CACHE_TTL: "3600"
+    # Provide a simple pipeline configuration for Logstash with a bind-mounted file.
+    volumes:
+      - ../logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml
+      - ../logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
+      - ../logstash/elastiflow/conf.d:/usr/share/logstash/elastiflow/conf.d
+      - ../logstash/elastiflow/dictionaries:/usr/share/logstash/elastiflow/dictionaries
+      - ../logstash/elastiflow/geoipdbs:/usr/share/logstash/elastiflow/geoipdbs
+      - ../logstash/elastiflow/templates:/usr/share/logstash/elastiflow/templates
+    networks: ['stack']
+    depends_on: ['elasticsearch']
+
+  setup-kibana:
+    build: 
+      context: $PWD/docker-curl/
+      dockerfile: $PWD/docker-curl/Dockerfile
+    image: elastiflow/logstash-curl:latest
+    container_name: setup-kibana
+    volumes:
+      - ./docker-curl/push-templates.sh:/usr/local/bin/push-templates.sh
+      - ../kibana/elastiflow.index_pattern.json:/data/elastiflow.index_pattern.json
+      - ../kibana/elastiflow.dashboards.curl.json:/data/elastiflow.dashboards.curl.json
+    command: ['/bin/bash', '-c', 'cat /usr/local/bin/push-templates.sh | tr -d "\r" | bash -s setup-kibana']
+    networks: ['stack']
+    depends_on: ['kibana']
+    tty: true
+
+  nfdump:
+    build: 
+      context: $PWD/docker-nfdump/
+      dockerfile: $PWD/docker-nfdump/Dockerfile
+    image: elastiflow/logstash-nfdump:latest
+    container_name: nfdump
+    # Provide a simple pipeline configuration for Logstash with a bind-mounted file.
+    volumes:
+      - ../../Data/netflow:/data/netflow
+    networks: ['stack']
+    tty: true
+
+networks: {stack: {}}
