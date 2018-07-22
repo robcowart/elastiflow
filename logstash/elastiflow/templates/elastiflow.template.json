@@ -12277,6 +12277,9 @@
             "dst_rep_tags": {
               "type": "keyword"
             },
+            "input_ifname": {
+              "type": "keyword"
+            },
             "input_snmp": {
               "type": "keyword"
             },
@@ -12288,6 +12291,9 @@
             },
             "next_hop": {
               "type": "ip"
+            },
+            "output_ifname": {
+              "type": "keyword"
             },
             "output_snmp": {
               "type": "keyword"
