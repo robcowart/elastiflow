@@ -24,6 +24,8 @@ input {
     codec => netflow {
       versions => [10]
       target => "ipfix"
+      #netflow_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/netflow.yml"
+      #ipfix_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/ipfix.yml"
     }
     type => "ipfix"
   }
@@ -36,6 +38,8 @@ input {
     codec => netflow {
       versions => [5,9,10]
       target => "ipfix"
+      #netflow_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/netflow.yml"
+      #ipfix_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/ipfix.yml"
     }
     type => "ipfix"
   }

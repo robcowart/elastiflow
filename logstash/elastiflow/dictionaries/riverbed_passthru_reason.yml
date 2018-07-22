@@ -1,0 +1,72 @@
+#------------------------------------------------------------------------------
+# Copyright (C)2018 Robert Cowart
+# 
+# The contents of this file and/or repository are subject to the Robert Cowart
+# Public License (the "License") and may Not be used or distributed except in
+# compliance with the License. You may obtain a copy of the License at:
+# 
+# http://www.koiossian.com/public/robert_cowart_public_license.txt
+# 
+# Software distributed under the License is distributed on an "AS IS" basis,
+# WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+# the specific language governing rights and limitations under the License.
+# 
+# The Original Source Code was developed by Robert Cowart. Portions created by
+# Robert Cowart are Copyright (C)2018 Robert Cowart. All Rights Reserved.
+#------------------------------------------------------------------------------
+
+"0": "None"
+"1": "Preexisting Connection"
+"2": "Connection Paused"
+"3": "SYN on WAN Side"
+"4": "In-Path Rule"
+"5": "Peering Rule"
+"6": "Inner Failed to Establish"
+"7": "Peer in Fixed-Target Rule Down"
+"8": "No SteelHead on Path to Server"
+"9": "No Route for Probe Response"
+"10": "Out of Memory"
+"11": "No Room for more TCP Options"
+"12": "No Proxy Port for Probe Response"
+"13": "RX Probe from Failover Buddy"
+"14": "Asymmetric Routing"
+"15": "Middle SteelHead"
+"16": "Error Connecting to Server"
+"17": "Half Open Connections Above Limit"
+"18": "Connection Count Above QoS Limit"
+"19": "Reached Maximum TTL"
+"20": "Incompatible Probe Version"
+"21": "Too Many Retransmitted SYNs"
+"22": "Connection Initiated by Neighbor"
+"23": "Connection for Local Host"
+"24": "Unknown Reason"
+"25": "Connection from Proxy Target"
+"26": "SYN before SFE Outer Completes"
+"27": "Transparent Inner on Wrong VLAN"
+"28": "Transparent Inner Not for this Host"
+"29": "Error on Neighbor Side"
+"30": "SYN/ACK, but No SYN"
+"31": "Transparency Packet from Self"
+"32": "System Heavily Loaded"
+"33": "SYN/ACK at MFE Not SFE"
+"34": "Windows Branch Mode Detected"
+"35": "Transparent RST to Reset Firewall State"
+"36": "Error on SSL Inner Channel"
+"37": "Ricochet Packet of Optimized Connection"
+"38": "MAPI Admission Control"
+"39": "SYN or RST Packet Contains Data"
+"40": "Failed to Discover SCPS Device"
+"41": "No Matching Client/Server IPv6 Scope"
+"42": "Failed to Create SPort Outer Channel"
+"43": "Flows Not Matching In-Path Rule"
+"44": "Packet Mode Channel Setup Pending"
+"45": "Peer Does Not Support Packet-Mode Optimization"
+"46": "Generic Flow Error"
+"47": "Failed to Cache Sock Pointer"
+"48": "Packet Mode Optimization Disabled"
+"49": "Optimizing Local Connections Only"
+"50": "Probe Packet of Optimized Connection"
+"51": "IPv6 Connection Forwarding Requires Multi-Interface Support"
+"52": "Neighbor Does Not Support IPv6"
+"53": "Reached the Hard Limit for Number of Entries"
+"54": "Connection or Flow from GRE IPv4 Tunnel"

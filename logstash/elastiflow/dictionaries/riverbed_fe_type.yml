@@ -15,19 +15,9 @@
 # Robert Cowart are Copyright (C)2018 Robert Cowart. All Rights Reserved.
 #------------------------------------------------------------------------------
 
-input {
-  # Netflow
-  udp {
-    id => "input_udp_netflow_ipv4"
-    host => "${ELASTIFLOW_NETFLOW_IPV4_HOST:0.0.0.0}"
-    port => "${ELASTIFLOW_NETFLOW_IPV4_PORT:2055}"
-    workers => "${ELASTIFLOW_NETFLOW_UDP_WORKERS:4}"
-    queue_size => "${ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE:2048}"
-    codec => netflow {
-      versions => [5,9,10]
-      #netflow_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/netflow.yml"
-      #ipfix_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/ipfix.yml"
-    }
-    type => "netflow"
-  }
-}
+# client-side SteelHead
+"1": "CFE"
+# mid SteelHead
+"2": "MFE"
+# server-side SteelHead
+"3": "SFE"

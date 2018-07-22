@@ -25,6 +25,8 @@ input {
     queue_size => "${ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE:2048}"
     codec => netflow {
       versions => [5,9,10]
+      #netflow_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/netflow.yml"
+      #ipfix_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/ipfix.yml"
     }
     type => "netflow"
   }

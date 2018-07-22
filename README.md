@@ -77,6 +77,7 @@ There are four sets of configuration files provided within the `logstash/elastif
 logstash
   `- elastiflow
        |- conf.d  (contains the logstash pipeline)
+       |- definitions  (custom Netflow and IPFIX field definitions)
        |- dictionaries (yaml files used to enrich raw flow data)
        |- geoipdbs  (contains GeoIP databases)
        `- templates  (contains index templates)
@@ -86,9 +87,9 @@ Copy the `elastiflow` directory to the location of your Logstash configuration f
 
 Environment Variable | Description | Default Value
 --- | --- | ---
-ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/elastiflow/dictionaries
+ELASTIFLOW_DICT_PATH | The path where dictionary files are located | /etc/logstash/elastiflow/dictionaries
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/elastiflow/templates
-ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
+ELASTIFLOW_GEOIP_DB_PATH | The path where GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
 
 ### 4. Setup environment variable helper files
 Rather than directly editing the pipeline configuration files for your environment, environment variables are used to provide a single location for most configuration options. These environment variables will be referred to in the remaining instructions. A [reference](#environment-variable-reference) of all environment variables can be found [here](#environment-variable-reference).
@@ -148,6 +149,23 @@ ELASTIFLOW_IPFIX_UDP_WORKERS | The number of IPFIX input threads | 4
 ELASTIFLOW_IPFIX_UDP_QUEUE_SIZE | The number of unprocessed IPFIX UDP packets the input can buffer | 4096
 
 > WARNING! Increasing `queue_size` will increase heap_usage. Make sure have configured JVM heap appropriately as specified in the [Requirements](#requirements)
+
+#### 6.a. Using Custom Netflow and IPFIX Field Definitions
+To properly decode flows from some devices it may be necessary to use customized field definitions. This is achieved by uncommenting one or both of the following lines in the pipeline's input.
+
+```
+#netflow_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/netflow.yml"
+#ipfix_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/ipfix.yml"
+```
+
+The path to the custom field definitions is configured by setting the following environment variable:
+
+Environment Variable | Description | Default Value
+--- | --- | ---
+ELASTIFLOW_DEFINITION_PATH | The path where custom field definitions are located | /etc/logstash/elastiflow/definitions
+
+The included custom field definitions add support for the following devices:
+* Riverbed WAN Optimizers
 
 ### 7. Configure Elasticsearch output
 Obviously the data needs to land in Elasticsearch, so you need to tell Logstash where to send it.
@@ -296,9 +314,10 @@ The supported environment variables are:
 
 Environment Variable | Description | Default Value
 --- | --- | ---
-ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/elastiflow/dictionaries
+ELASTIFLOW_DICT_PATH | The path where dictionary files are located | /etc/logstash/elastiflow/dictionaries
+ELASTIFLOW_DEFINITION_PATH | The path where custom field definitions are located | /etc/logstash/elastiflow/definitions
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/elastiflow/templates
-ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
+ELASTIFLOW_GEOIP_DB_PATH | The path where GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
 ELASTIFLOW_GEOIP_CACHE_SIZE | The size of the GeoIP query cache | 8192
 ELASTIFLOW_GEOIP_LOOKUP | Enable/Disable GeoIP lookups | true
 ELASTIFLOW_ASN_LOOKUP | Enable/Disable ASN lookups | true

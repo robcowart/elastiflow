@@ -10513,6 +10513,134 @@
           }
         },
         {
+          "netflow.rb_cfe_inpath_addr": {
+            "path_match": "netflow.rb_cfe_inpath_addr",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.rb_cfe_tcp_port": {
+            "path_match": "netflow.rb_cfe_tcp_port",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.rb_cfe_tcp_port_name": {
+            "path_match": "netflow.rb_cfe_tcp_port_name",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.rb_fe_type": {
+            "path_match": "netflow.rb_fe_type",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.rb_outer_inpath_addr": {
+            "path_match": "netflow.rb_outer_inpath_addr",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.rb_outer_tcp_port": {
+            "path_match": "netflow.rb_outer_tcp_port",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.rb_outer_tcp_port_name": {
+            "path_match": "netflow.rb_outer_tcp_port_name",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.rb_passthru_reason": {
+            "path_match": "netflow.rb_passthru_reason",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.rb_retrans_bytes": {
+            "path_match": "netflow.rb_retrans_bytes",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.rb_retrans_pkts": {
+            "path_match": "netflow.rb_retrans_pkts",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.rb_sfe_inpath_addr": {
+            "path_match": "netflow.rb_sfe_inpath_addr",
+            "mapping": {
+              "type": "ip"
+            }
+          }
+        },
+        {
+          "netflow.rb_sfe_tcp_port": {
+            "path_match": "netflow.rb_sfe_tcp_port",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.rb_sfe_tcp_port_name": {
+            "path_match": "netflow.rb_sfe_tcp_port_name",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
+          "netflow.rb_tcp_conn_rtt": {
+            "path_match": "netflow.rb_tcp_conn_rtt",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.rb_unk_51130": {
+            "path_match": "netflow.rb_unk_51130",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.rb_wan_visibility": {
+            "path_match": "netflow.rb_wan_visibility",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "netflow.relativeError": {
             "path_match": "netflow.relativeError",
             "mapping": {
