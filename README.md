@@ -150,17 +150,38 @@ ELASTIFLOW_IPFIX_UDP_QUEUE_SIZE | The number of unprocessed IPFIX UDP packets th
 > WARNING! Increasing `queue_size` will increase heap_usage. Make sure have configured JVM heap appropriately as specified in the [Requirements](#requirements)
 
 ### 7. Configure Elasticsearch output
-Obviously the data needs to land in Elasticsearch, so you need to tell Logstash where to send it. This is done by setting these environment variables:
+Obviously the data needs to land in Elasticsearch, so you need to tell Logstash where to send it.
+
+The default is to send data to only a single Elasticsearch node. This node is specified using the following environment variable:
 
 Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
-ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
-ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
+
+Optionally Logstash can be configured to use an array of three Elasticsearch nodes. This is done by completing the following steps:
+
+1. Rename `30_output_10_single.logstash.conf` to `30_output_10_single.logstash.conf.disabled`
+2. Rename `30_output_20_multi.logstash.conf.disabled` to `30_output_20_multi.logstash.conf`
+3. Set the following environment variables:
+
+Environment Variable | Description | Default Value
+--- | --- | ---
+ELASTIFLOW_ES_HOST_1 | The first Elasticsearch host to which the output will send data | 127.0.0.1:9200
+ELASTIFLOW_ES_HOST_2 | The second Elasticsearch host to which the output will send data | 127.0.0.2:9200
+ELASTIFLOW_ES_HOST_3 | The third Elasticsearch host to which the output will send data | 127.0.0.3:9200
+
+To complete the setup of the Elasticsearch output, configure the following environment variables as required for your environment:
+
+Environment Variable | Description | Default Value
+--- | --- | ---
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
+ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
+ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
 
 > If you are only using the open-source version of Elasticsearch, it will ignore the username and password. In that case just leave the defaults.
+
+> If ELASTIFLOW_ES_SSL_ENABLE and ELASTIFLOW_ES_SSL_VERIFY are both `true`, you must uncomment the `cacert` option in the Elasticsearch output and set the path to the certificate.
 
 ### 8. Enable DNS name resolution (optional)
 In the past it was recommended to avoid DNS queries as the latency costs of such lookups had a devastating effect on throughput. While the Logstash DNS filter provides a caching mechanism, its use was not recommended. When the cache was enabled all lookups were performed synchronously. If a name server failed to respond, all other queries were stuck waiting until the query timed out. The end result was even worse performance.
@@ -290,6 +311,9 @@ ELASTIFLOW_DNS_HIT_CACHE_TTL | The time in seconds successful DNS queries are ca
 ELASTIFLOW_DNS_FAILED_CACHE_SIZE | The cache size for failed DNS queries | 75000
 ELASTIFLOW_DNS_FAILED_CACHE_TTL | The time in seconds failed DNS queries are cached | 3600
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
+ELASTIFLOW_ES_HOST_1 | The first Elasticsearch host to which the output will send data | 127.0.0.1:9200
+ELASTIFLOW_ES_HOST_2 | The second Elasticsearch host to which the output will send data | 127.0.0.2:9200
+ELASTIFLOW_ES_HOST_3 | The third Elasticsearch host to which the output will send data | 127.0.0.3:9200
 ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
 ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
