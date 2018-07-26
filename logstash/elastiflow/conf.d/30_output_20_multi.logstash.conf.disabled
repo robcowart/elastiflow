@@ -1,0 +1,33 @@
+#------------------------------------------------------------------------------
+# Copyright (C)2018 Robert Cowart
+# 
+# The contents of this file and/or repository are subject to the Robert Cowart
+# Public License (the "License") and may not be used or distributed except in
+# compliance with the License. You may obtain a copy of the License at:
+# 
+# http://www.koiossian.com/public/robert_cowart_public_license.txt
+# 
+# Software distributed under the License is distributed on an "AS IS" basis,
+# WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+# the specific language governing rights and limitations under the License.
+# 
+# The Original Source Code was developed by Robert Cowart. Portions created by
+# Robert Cowart are Copyright (C)2018 Robert Cowart. All Rights Reserved.
+#------------------------------------------------------------------------------
+
+output {
+  elasticsearch {
+    id => "output_elasticsearch_multi"
+    hosts => [ "${ELASTIFLOW_ES_HOST_1:127.0.0.1:9200}", "${ELASTIFLOW_ES_HOST_2:127.0.0.2:9200}", "${ELASTIFLOW_ES_HOST_3:127.0.0.3:9200}" ]
+    ssl => "${ELASTIFLOW_ES_SSL_ENABLE:false}"
+    ssl_certificate_verification => "${ELASTIFLOW_ES_SSL_VERIFY:false}"
+    # If ssl_certificate_verification is true, uncomment cacert and set the path to the certificate.
+    #cacert => "/PATH/TO/CERT"
+    user => "${ELASTIFLOW_ES_USER:elastic}"
+    password => "${ELASTIFLOW_ES_PASSWD:changeme}"
+    index => "elastiflow-3.2.0-%{+YYYY.MM.dd}"
+    template => "${ELASTIFLOW_TEMPLATE_PATH:/etc/logstash/templates}/elastiflow.template.json"
+    template_name => "elastiflow-3.2.0"
+    template_overwrite => "true"
+  }
+}

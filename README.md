@@ -77,6 +77,7 @@ There are four sets of configuration files provided within the `logstash/elastif
 logstash
   `- elastiflow
        |- conf.d  (contains the logstash pipeline)
+       |- definitions  (custom Netflow and IPFIX field definitions)
        |- dictionaries (yaml files used to enrich raw flow data)
        |- geoipdbs  (contains GeoIP databases)
        `- templates  (contains index templates)
@@ -86,9 +87,9 @@ Copy the `elastiflow` directory to the location of your Logstash configuration f
 
 Environment Variable | Description | Default Value
 --- | --- | ---
-ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/elastiflow/dictionaries
+ELASTIFLOW_DICT_PATH | The path where dictionary files are located | /etc/logstash/elastiflow/dictionaries
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/elastiflow/templates
-ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
+ELASTIFLOW_GEOIP_DB_PATH | The path where GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
 
 ### 4. Setup environment variable helper files
 Rather than directly editing the pipeline configuration files for your environment, environment variables are used to provide a single location for most configuration options. These environment variables will be referred to in the remaining instructions. A [reference](#environment-variable-reference) of all environment variables can be found [here](#environment-variable-reference).
@@ -142,25 +143,66 @@ Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_NETFLOW_UDP_WORKERS | The number of Netflow input threads | 4
 ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE | The number of unprocessed Netflow UDP packets the input can buffer | 4096
+ELASTIFLOW_NETFLOW_UDP_RCV_BUFF | The socket receive buffer size (bytes) for Netflow | 33554432
 ELASTIFLOW_SFLOW_UDP_WORKERS | The number of sFlow input threads | 4
 ELASTIFLOW_SFLOW_UDP_QUEUE_SIZE | The number of unprocessed sFlow UDP packets the input can buffer | 4096
+ELASTIFLOW_SFLOW_UDP_RCV_BUFF | The socket receive buffer size (bytes) for sFlow | 33554432
 ELASTIFLOW_IPFIX_UDP_WORKERS | The number of IPFIX input threads | 4
 ELASTIFLOW_IPFIX_UDP_QUEUE_SIZE | The number of unprocessed IPFIX UDP packets the input can buffer | 4096
+ELASTIFLOW_IPFIX_UDP_RCV_BUFF | The socket receive buffer size (bytes) for IPFIX | 33554432
 
 > WARNING! Increasing `queue_size` will increase heap_usage. Make sure have configured JVM heap appropriately as specified in the [Requirements](#requirements)
 
+#### 6.a. Using Custom Netflow and IPFIX Field Definitions
+To properly decode flows from some devices it may be necessary to use customized field definitions. This is achieved by uncommenting one or both of the following lines in the pipeline's input.
+
+```
+#netflow_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/netflow.yml"
+#ipfix_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/ipfix.yml"
+```
+
+The path to the custom field definitions is configured by setting the following environment variable:
+
+Environment Variable | Description | Default Value
+--- | --- | ---
+ELASTIFLOW_DEFINITION_PATH | The path where custom field definitions are located | /etc/logstash/elastiflow/definitions
+
+The included custom field definitions add support for the following devices:
+* Riverbed WAN Optimizers
+
 ### 7. Configure Elasticsearch output
-Obviously the data needs to land in Elasticsearch, so you need to tell Logstash where to send it. This is done by setting these environment variables:
+Obviously the data needs to land in Elasticsearch, so you need to tell Logstash where to send it.
+
+The default is to send data to only a single Elasticsearch node. This node is specified using the following environment variable:
 
 Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
-ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
-ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
+
+Optionally Logstash can be configured to use an array of three Elasticsearch nodes. This is done by completing the following steps:
+
+1. Rename `30_output_10_single.logstash.conf` to `30_output_10_single.logstash.conf.disabled`
+2. Rename `30_output_20_multi.logstash.conf.disabled` to `30_output_20_multi.logstash.conf`
+3. Set the following environment variables:
+
+Environment Variable | Description | Default Value
+--- | --- | ---
+ELASTIFLOW_ES_HOST_1 | The first Elasticsearch host to which the output will send data | 127.0.0.1:9200
+ELASTIFLOW_ES_HOST_2 | The second Elasticsearch host to which the output will send data | 127.0.0.2:9200
+ELASTIFLOW_ES_HOST_3 | The third Elasticsearch host to which the output will send data | 127.0.0.3:9200
+
+To complete the setup of the Elasticsearch output, configure the following environment variables as required for your environment:
+
+Environment Variable | Description | Default Value
+--- | --- | ---
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
+ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
+ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
 
 > If you are only using the open-source version of Elasticsearch, it will ignore the username and password. In that case just leave the defaults.
+
+> If ELASTIFLOW_ES_SSL_ENABLE and ELASTIFLOW_ES_SSL_VERIFY are both `true`, you must uncomment the `cacert` option in the Elasticsearch output and set the path to the certificate.
 
 ### 8. Enable DNS name resolution (optional)
 In the past it was recommended to avoid DNS queries as the latency costs of such lookups had a devastating effect on throughput. While the Logstash DNS filter provides a caching mechanism, its use was not recommended. When the cache was enabled all lookups were performed synchronously. If a name server failed to respond, all other queries were stuck waiting until the query timed out. The end result was even worse performance.
@@ -275,9 +317,10 @@ The supported environment variables are:
 
 Environment Variable | Description | Default Value
 --- | --- | ---
-ELASTIFLOW_DICT_PATH | The path where the dictionary files are located | /etc/logstash/elastiflow/dictionaries
+ELASTIFLOW_DICT_PATH | The path where dictionary files are located | /etc/logstash/elastiflow/dictionaries
+ELASTIFLOW_DEFINITION_PATH | The path where custom field definitions are located | /etc/logstash/elastiflow/definitions
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/elastiflow/templates
-ELASTIFLOW_GEOIP_DB_PATH | The path where the GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
+ELASTIFLOW_GEOIP_DB_PATH | The path where GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
 ELASTIFLOW_GEOIP_CACHE_SIZE | The size of the GeoIP query cache | 8192
 ELASTIFLOW_GEOIP_LOOKUP | Enable/Disable GeoIP lookups | true
 ELASTIFLOW_ASN_LOOKUP | Enable/Disable ASN lookups | true
@@ -290,6 +333,9 @@ ELASTIFLOW_DNS_HIT_CACHE_TTL | The time in seconds successful DNS queries are ca
 ELASTIFLOW_DNS_FAILED_CACHE_SIZE | The cache size for failed DNS queries | 75000
 ELASTIFLOW_DNS_FAILED_CACHE_TTL | The time in seconds failed DNS queries are cached | 3600
 ELASTIFLOW_ES_HOST | The Elasticsearch host to which the output will send data | 127.0.0.1:9200
+ELASTIFLOW_ES_HOST_1 | The first Elasticsearch host to which the output will send data | 127.0.0.1:9200
+ELASTIFLOW_ES_HOST_2 | The second Elasticsearch host to which the output will send data | 127.0.0.2:9200
+ELASTIFLOW_ES_HOST_3 | The third Elasticsearch host to which the output will send data | 127.0.0.3:9200
 ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
 ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
 ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
@@ -300,6 +346,7 @@ ELASTIFLOW_NETFLOW_IPV6_HOST | The IP address on which to listen for Netflow mes
 ELASTIFLOW_NETFLOW_IPV6_PORT | The UDP port on which to listen for Netflow messages | 52055
 ELASTIFLOW_NETFLOW_UDP_WORKERS | The number of Netflow input threads | 4
 ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE | The number of unprocessed Netflow UDP packets the input can buffer | 4096
+ELASTIFLOW_NETFLOW_UDP_RCV_BUFF | The socket receive buffer size (bytes) for Netflow | 33554432
 ELASTIFLOW_NETFLOW_LASTSW_TIMESTAMP | Enable/Disable setting `@timestamp` with the value of netflow.last_switched | false
 ELASTIFLOW_NETFLOW_TZ | The timezone of netflow.last_switched | UTC
 ELASTIFLOW_SFLOW_IPV4_HOST | The IP address on which to listen for sFlow messages | 0.0.0.0
@@ -308,6 +355,7 @@ ELASTIFLOW_SFLOW_IPV6_HOST | The IP address on which to listen for sFlow message
 ELASTIFLOW_SFLOW_IPV6_PORT | The UDP port on which to listen for sFlow messages | 56343
 ELASTIFLOW_SFLOW_UDP_WORKERS | The number of sFlow input threads | 4
 ELASTIFLOW_SFLOW_UDP_QUEUE_SIZE | The number of unprocessed sFlow UDP packets the input can buffer | 4096
+ELASTIFLOW_SFLOW_UDP_RCV_BUFF | The socket receive buffer size (bytes) for sFlow | 33554432
 ELASTIFLOW_IPFIX_TCP_IPV4_HOST | The IP address on which to listen for IPFIX messages via TCP | 0.0.0.0
 ELASTIFLOW_IPFIX_TCP_IPV4_PORT | The port on which to listen for IPFIX messages via TCP | 4739
 ELASTIFLOW_IPFIX_UDP_IPV4_HOST | The IP address on which to listen for IPFIX messages via UDP | 0.0.0.0
@@ -318,6 +366,7 @@ ELASTIFLOW_IPFIX_UDP_IPV6_HOST | The IP address on which to listen for IPFIX mes
 ELASTIFLOW_IPFIX_UDP_IPV6_PORT | The port on which to listen for IPFIX messages via UDP | 54739
 ELASTIFLOW_IPFIX_UDP_WORKERS | The number of IPFIX input threads | 4
 ELASTIFLOW_IPFIX_UDP_QUEUE_SIZE | The number of unprocessed IPFIX UDP packets the input can buffer | 4096
+ELASTIFLOW_IPFIX_UDP_RCV_BUFF | The socket receive buffer size (bytes) for IPFIX | 33554432
 
 # Recommended Setting for timepicker:quickRanges
 I recommend configuring `timepicker:quickRanges` for the setting below. The result will look like this:
