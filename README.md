@@ -143,10 +143,13 @@ Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_NETFLOW_UDP_WORKERS | The number of Netflow input threads | 4
 ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE | The number of unprocessed Netflow UDP packets the input can buffer | 4096
+ELASTIFLOW_NETFLOW_UDP_RCV_BUFF | The socket receive buffer size (bytes) for Netflow | 33554432
 ELASTIFLOW_SFLOW_UDP_WORKERS | The number of sFlow input threads | 4
 ELASTIFLOW_SFLOW_UDP_QUEUE_SIZE | The number of unprocessed sFlow UDP packets the input can buffer | 4096
+ELASTIFLOW_SFLOW_UDP_RCV_BUFF | The socket receive buffer size (bytes) for sFlow | 33554432
 ELASTIFLOW_IPFIX_UDP_WORKERS | The number of IPFIX input threads | 4
 ELASTIFLOW_IPFIX_UDP_QUEUE_SIZE | The number of unprocessed IPFIX UDP packets the input can buffer | 4096
+ELASTIFLOW_IPFIX_UDP_RCV_BUFF | The socket receive buffer size (bytes) for IPFIX | 33554432
 
 > WARNING! Increasing `queue_size` will increase heap_usage. Make sure have configured JVM heap appropriately as specified in the [Requirements](#requirements)
 
@@ -343,6 +346,7 @@ ELASTIFLOW_NETFLOW_IPV6_HOST | The IP address on which to listen for Netflow mes
 ELASTIFLOW_NETFLOW_IPV6_PORT | The UDP port on which to listen for Netflow messages | 52055
 ELASTIFLOW_NETFLOW_UDP_WORKERS | The number of Netflow input threads | 4
 ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE | The number of unprocessed Netflow UDP packets the input can buffer | 4096
+ELASTIFLOW_NETFLOW_UDP_RCV_BUFF | The socket receive buffer size (bytes) for Netflow | 33554432
 ELASTIFLOW_NETFLOW_LASTSW_TIMESTAMP | Enable/Disable setting `@timestamp` with the value of netflow.last_switched | false
 ELASTIFLOW_NETFLOW_TZ | The timezone of netflow.last_switched | UTC
 ELASTIFLOW_SFLOW_IPV4_HOST | The IP address on which to listen for sFlow messages | 0.0.0.0
@@ -351,6 +355,7 @@ ELASTIFLOW_SFLOW_IPV6_HOST | The IP address on which to listen for sFlow message
 ELASTIFLOW_SFLOW_IPV6_PORT | The UDP port on which to listen for sFlow messages | 56343
 ELASTIFLOW_SFLOW_UDP_WORKERS | The number of sFlow input threads | 4
 ELASTIFLOW_SFLOW_UDP_QUEUE_SIZE | The number of unprocessed sFlow UDP packets the input can buffer | 4096
+ELASTIFLOW_SFLOW_UDP_RCV_BUFF | The socket receive buffer size (bytes) for sFlow | 33554432
 ELASTIFLOW_IPFIX_TCP_IPV4_HOST | The IP address on which to listen for IPFIX messages via TCP | 0.0.0.0
 ELASTIFLOW_IPFIX_TCP_IPV4_PORT | The port on which to listen for IPFIX messages via TCP | 4739
 ELASTIFLOW_IPFIX_UDP_IPV4_HOST | The IP address on which to listen for IPFIX messages via UDP | 0.0.0.0
@@ -361,6 +366,7 @@ ELASTIFLOW_IPFIX_UDP_IPV6_HOST | The IP address on which to listen for IPFIX mes
 ELASTIFLOW_IPFIX_UDP_IPV6_PORT | The port on which to listen for IPFIX messages via UDP | 54739
 ELASTIFLOW_IPFIX_UDP_WORKERS | The number of IPFIX input threads | 4
 ELASTIFLOW_IPFIX_UDP_QUEUE_SIZE | The number of unprocessed IPFIX UDP packets the input can buffer | 4096
+ELASTIFLOW_IPFIX_UDP_RCV_BUFF | The socket receive buffer size (bytes) for IPFIX | 33554432
 
 # Recommended Setting for timepicker:quickRanges
 I recommend configuring `timepicker:quickRanges` for the setting below. The result will look like this:

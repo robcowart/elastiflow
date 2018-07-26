@@ -23,6 +23,7 @@ input {
     port => "${ELASTIFLOW_NETFLOW_IPV6_PORT:52055}"
     workers => "${ELASTIFLOW_NETFLOW_UDP_WORKERS:4}"
     queue_size => "${ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE:2048}"
+    receive_buffer_bytes => "${ELASTIFLOW_NETFLOW_UDP_RCV_BUFF:33554432}"
     codec => netflow {
       versions => [5,9,10]
       #netflow_definitions => "${ELASTIFLOW_DEFINITION_PATH:/etc/logstash/elastiflow/definitions}/netflow.yml"
