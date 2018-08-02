@@ -72,7 +72,7 @@ LS_HOME/bin/logstash-plugin update logstash-filter-dns
 ```
 
 ### 3. Copy the pipeline files to the Logstash configuration path.
-There are four sets of configuration files provided within the `logstash/elastiflow` folder:
+There are five sets of configuration files provided within the `logstash/elastiflow` folder:
 ```
 logstash
   `- elastiflow
