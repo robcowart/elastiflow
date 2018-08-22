@@ -1304,6 +1304,42 @@
 40005:
 - :uint8
 - :fw_event
+51100:
+- :uint8
+- :rb_passthru_reason
+51101:
+- :uint8
+- :rb_wan_visibility
+51102:
+- :ip4_addr
+- :rb_cfe_inpath_addr
+51103:
+- :ip4_addr
+- :rb_sfe_inpath_addr
+51104:
+- :uint16
+- :rb_cfe_tcp_port
+51105:
+- :uint16
+- :rb_sfe_tcp_port
+51106:
+- :ip4_addr
+- :rb_outer_inpath_addr
+51107:
+- :uint16
+- :rb_outer_tcp_port
+51108:
+- :uint32
+- :rb_retrans_pkts
+51109:
+- :uint32
+- :rb_retrans_bytes
+51110:
+- :uint32
+- :rb_tcp_conn_rtt
+51111:
+- :uint8
+- :rb_fe_type
 51130:
 - :uint8
 - :rb_unk_51130
