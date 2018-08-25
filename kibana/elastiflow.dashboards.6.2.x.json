@@ -4606,7 +4606,7 @@
     "_type": "visualization",
     "_source": {
       "title": "ElastiFlow: NAV: Sankey",
-      "visState": "{\"title\":\"ElastiFlow: NAV: Sankey\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [**Sankey**](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
+      "visState": "{\"title\":\"ElastiFlow: NAV: Sankey\",\"type\":\"markdown\",\"params\":{\"markdown\":\"[Overview](#/dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5) | [Top-N](#/dashboard/AWFgr4DaugC1WJLdy9iE) | [**Flow**](#/dashboard/d7124e80-5625-11e8-b711-83a5f93b17f3) | [Geo IP](#/dashboard/a932b600-2fd2-11e7-99ed-49759aed30f5) | [AS Traffic](#/dashboard/d7e31d40-6589-11e7-bfc3-d74b7bb89482) | [Exporters](#/dashboard/04157d70-6591-11e7-bfc3-d74b7bb89482) | [Traffic Details](#/dashboard/10584050-6234-11e7-8236-19b4b4941e22) | [Flow Records](#/dashboard/ca480720-2fdf-11e7-9d02-3f49bde5c1d5)\\n![](http://www.koiossian.com/public/elastiflow.gif)\\n***\",\"type\":\"markdown\",\"fontSize\":11},\"aggs\":[]}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,
