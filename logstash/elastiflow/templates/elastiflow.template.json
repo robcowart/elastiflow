@@ -11779,6 +11779,14 @@
           }
         },
         {
+          "sflow.ip_options": {
+            "path_match": "sflow.ip_options",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
           "sflow.ip_packet_length": {
             "path_match": "sflow.ip_packet_length",
             "mapping": {
@@ -11883,6 +11891,14 @@
           }
         },
         {
+          "sflow.protocol_name": {
+            "path_match": "sflow.protocol_name",
+            "mapping": {
+              "type": "keyword"
+            }
+          }
+        },
+        {
           "sflow.sample_length": {
             "path_match": "sflow.sample_length",
             "mapping": {
@@ -11909,6 +11925,14 @@
         {
           "sflow.sampling_rate": {
             "path_match": "sflow.sampling_rate",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "sflow.sequence_number": {
+            "path_match": "sflow.sequence_number",
             "mapping": {
               "type": "long"
             }
@@ -12053,6 +12077,86 @@
         {
           "sflow.tcp_header_length": {
             "path_match": "sflow.tcp_header_length",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "sflow.tcp_is_ack": {
+            "path_match": "sflow.tcp_is_ack",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "sflow.tcp_is_cwr": {
+            "path_match": "sflow.tcp_is_cwr",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "sflow.tcp_is_ecn_echo": {
+            "path_match": "sflow.tcp_is_ecn_echo",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "sflow.tcp_is_fin": {
+            "path_match": "sflow.tcp_is_fin",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "sflow.tcp_is_nonce": {
+            "path_match": "sflow.tcp_is_nonce",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "sflow.tcp_is_push": {
+            "path_match": "sflow.tcp_is_push",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "sflow.tcp_is_reset": {
+            "path_match": "sflow.tcp_is_reset",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "sflow.tcp_is_syn": {
+            "path_match": "sflow.tcp_is_syn",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "sflow.tcp_is_urgent": {
+            "path_match": "sflow.tcp_is_urgent",
+            "mapping": {
+              "type": "integer"
+            }
+          }
+        },        
+        {
+          "sflow.tcp_options": {
+            "path_match": "sflow.tcp_options",
             "mapping": {
               "type": "long"
             }
