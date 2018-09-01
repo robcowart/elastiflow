@@ -1,3 +1,22 @@
+## v3.2.3
+v3.2.3 is a maintenance release. No migration of data from v3.0.x or later to v3.2.3 is required.
+
+### New Features
+- Support for Kibana 6.4.
+- Support for additional sFlow fields, including TCP Flags.
+- Added an IP reputation whitelist dictiinary.
+- Added a CHANGELOG.md which documents all changes since v1.0.0.
+
+### Fixes
+- Minor dashboard tweaks.
+- Fixed document/index name version inconsistency.
+
+### Updates
+- Updated GeoLite2-ASN DB
+- Updated service name dictionary.
+- Updated IP Reputation dictionary.
+
+---
 ## v3.2.2
 v3.2.2 is a maintenance release. No migration of data from v3.0.x or later to v3.2.2 is required.
 
