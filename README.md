@@ -1,4 +1,4 @@
-# ElastiFlow&trade;
+# ElastiFlow&trade; [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/robcowart)
 ElastiFlow&trade; provides network flow data collection and visualization using the Elastic Stack. It supports Netflow v5/v9, sFlow and IPFIX flow types (1.x versions support only Netflow v5/v9).
 > Release 3.x is designed for use with the Elastic Stack 6.2 and higher. If you are using an older version of the Elastic Stack, please use version 2.1 or 1.2.
 
@@ -21,6 +21,7 @@ Refer to the following compatibility chart to choose a release of ElastiFlow&tra
 
 Elastic Stack | ElastiFlow&trade; 1.x | ElastiFlow&trade; 2.x | ElastiFlow&trade; 3.x
 :---:|:---:|:---:|:---:
+6.4 |  |  | &#10003;
 6.3 |  |  | &#10003;
 6.2 | &#10003; | &#10003; | &#10003;
 6.1 | &#10003; | &#10003; |
@@ -274,7 +275,7 @@ An API (yet undocumented) is available to import and export Index Patterns. The 
 curl -X POST -u USERNAME:PASSWORD http://KIBANASERVER:5601/api/saved_objects/index-pattern/elastiflow-* -H "Content-Type: application/json" -H "kbn-xsrf: true" -d @/PATH/TO/elastiflow.index_pattern.json
 ```
 
-Finally the vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.dashboards.<VER>.json` file from within the Kibana UI. This is done from the Management - > Saved Objects page. There are separate dashboard import files for version 6.2.x and 6.3.x of Kibana. Select the file that corresponds to your version of Kibana.
+Finally the vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.dashboards.<VER>.json` file from within the Kibana UI. This is done from the Management - > Saved Objects page. There are separate dashboard import files for version 6.2.x, 6.3.x and 6.4.x of Kibana. Select the file that corresponds to your version of Kibana.
 
 ### Recommended Kibana Advanced Settings
 You may find that modifying a few of the Kibana advanced settings will produce a more user-friendly experience while using ElastiFlow&trade;. These settings are made in Kibana, under `Management -> Advanced Settings`.
