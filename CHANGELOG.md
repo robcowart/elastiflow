@@ -1,10 +1,25 @@
+## v3.3.0
+v3.3.0 is a minor release. No migration of data from v3.0.x or later to v3.3.0 is required.
+
+### New Features
+- Sample interval can be manually set if not sent by the device.
+- DNS resolution of IP addresses can be enabled for only exporters, endpoints or both.
+- Split docs into `README.md` and `INSTALL.md`.
+- Removed `sflow.size_header`.
+
+### Updates
+- Updated GeoLite2-City and GeoLite2-ASN DBs
+- Updated IP Reputation dictionary
+- Added field 99 to `netflow.yml` definitions
+
+---
 ## v3.2.3
 v3.2.3 is a maintenance release. No migration of data from v3.0.x or later to v3.2.3 is required.
 
 ### New Features
 - Support for Kibana 6.4.
 - Support for additional sFlow fields, including TCP Flags.
-- Added an IP reputation whitelist dictiinary.
+- Added an IP reputation whitelist dictionary.
 - Added a CHANGELOG.md which documents all changes since v1.0.0.
 
 ### Fixes

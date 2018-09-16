@@ -25,7 +25,7 @@ input {
     queue_size => "${ELASTIFLOW_SFLOW_UDP_QUEUE_SIZE:2048}"
     receive_buffer_bytes => "${ELASTIFLOW_SFLOW_UDP_RCV_BUFF:33554432}"
     codec => sflow {
-      optional_removed_field => [ "flow_sequence_number", "header_size", "ip_checksum", "ip_fragment_offset", "ip_header_length", "ip_identification", "ip_total_length", "padded", "sample_pool", "sample_seq_number", "sequence_number", "sflow_version", "stripped", "tcp_ack_number", "tcp_checksum", "tcp_header_length", "tcp_reserved", "tcp_seq_number", "udp_checksum", "udp_length", "uptime_in_ms" ]
+      optional_removed_field => [ "flow_sequence_number", "header_size", "ip_checksum", "ip_fragment_offset", "ip_header_length", "ip_identification", "ip_total_length", "padded", "sample_pool", "sample_seq_number", "sequence_number", "sflow_version", "size_header", "stripped", "tcp_ack_number", "tcp_checksum", "tcp_header_length", "tcp_reserved", "tcp_seq_number", "udp_checksum", "udp_length", "uptime_in_ms" ]
     }
     type => "sflow"
   }
