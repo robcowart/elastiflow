@@ -214,7 +214,7 @@ The DNS lookup features of ElastiFlow&trade; can be configured using the followi
 
 Environment Variable | Description | Default Value
 --- | --- | ---
-ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests | false
+ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests. Possible values are `exporters` (only flow exporter IPs are resolved), `endpoints` (only endpoint IPs, src/dst, are resolved), `true` (both are resolved) or `false` | false
 ELASTIFLOW_NAMESERVER | The DNS server to which the dns filter should send requests | 127.0.0.1
 ELASTIFLOW_DNS_HIT_CACHE_SIZE | The cache size for successful DNS queries | 25000
 ELASTIFLOW_DNS_HIT_CACHE_TTL | The time in seconds successful DNS queries are cached | 900
@@ -224,7 +224,7 @@ ELASTIFLOW_DNS_FAILED_CACHE_TTL | The time in seconds failed DNS queries are cac
 ### 9. Configure Application ID enrichment (optional)
 Both Netflow and IPFIX allow devices with application identification features to specify the application associated with the traffic in the flow. For Netflow this is the `application_id` field. The IPFIX field is `applicationId`.
 
-The application names which correspond to values of these IDs is vendor-specific. In order for ElastiFlow&trade; to accurately translate the ID values, it must be told the type of device that is exporting the flows. To do so you must edit `elastiflow/dictionaries/app_id_srctype` and specify the source type of your supported device. For example...
+The application names which correspond to values of these IDs is vendor-specific. In order for ElastiFlow&trade; to accurately translate the ID values, it must be told the type of device that is exporting the flows. To do so you must edit `elastiflow/dictionaries/app_id_srctype.yml` and specify the source type of your supported device. For example...
 ```
 "192.0.2.1": "cisco_nbar2"
 "192.0.2.2": "fortinet"
@@ -242,7 +242,10 @@ ELASTIFLOW_DEFAULT_APPID_SRCTYPE | Sets the default source type for translating 
 Once configured ElastiFlow&trade; will resolve the ID to an application name, which will be available in the dashboards.
 <img width="902" alt="screen shot 2018-05-13 at 12 40 04" src="https://user-images.githubusercontent.com/10326954/39966360-d8e6e420-56aa-11e8-8514-9a9839ca5fb1.png"> 
 
-### 10. Start Logstash
+### 10. Manually set the sampling interval for devices that don't send it. (optional)
+Some devices which collect sampled flows do not include the sampling interval in the flow records that they send (e.g. some Cisco IOS XR and Huawei devices). In such situations the sampling interval can be set manually by adding the IP address and sampling rate for the device in `elastiflow/dictionaries/sampling_interval.yml`.
+
+### 11. Start Logstash
 You should now be able to start Logstash and begin collecting network flow data. Assuming you are running a recent version of RedHat/CentOS or Ubuntu, and using systemd, complete these steps:
 1. Run `systemctl daemon-reload` to ensure any changes to the environment variables are recognized.
 2. Run `systemctl start logstash`
@@ -289,7 +292,7 @@ ELASTIFLOW_GEOIP_LOOKUP | Enable/Disable GeoIP lookups | true
 ELASTIFLOW_ASN_LOOKUP | Enable/Disable ASN lookups | true
 ELASTIFLOW_KEEP_ORIG_DATA | If set to `false` the original `netflow`, `ipfix` and `sflow` objects will be deleted prior to indexing. This can save disk space without affecting the provided dashboards. However the original flow fields will no longer be available if they are desired for additional analytics. | true
 ELASTIFLOW_DEFAULT_APPID_SRCTYPE | Sets the default source type for translating the App IDs to names. Valid values are `cisco_nbar2` and `fortinet` | __UNKNOWN
-ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests | false
+ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests. Possible values are `exporters` (only flow exporter IPs are resolved), `endpoints` (only endpoint IPs, src/dst, are resolved), `true` (both are resolved) or `false`  | false
 ELASTIFLOW_NAMESERVER | The DNS server to which the dns filter should send requests | 127.0.0.1
 ELASTIFLOW_DNS_HIT_CACHE_SIZE | The cache size for successful DNS queries | 25000
 ELASTIFLOW_DNS_HIT_CACHE_TTL | The time in seconds successful DNS queries are cached | 900
