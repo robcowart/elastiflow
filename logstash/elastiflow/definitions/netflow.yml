@@ -260,9 +260,15 @@
 98:
 - :uint8
 - :postIpDiffServCodePoint
+99:
+- :uint32
+- :multicastReplicationFactor
 100:
 - :uint8
 - :rb_passthru_reason
+#101:
+#- :uint8
+#- :classificationEngineId
 101:
 - :uint8
 - :rb_wan_visibility
