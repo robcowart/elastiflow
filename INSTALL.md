@@ -237,7 +237,13 @@ Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_DEFAULT_APPID_SRCTYPE | Sets the default source type for translating the App IDs to names. Valid values are `cisco_nbar2` and `fortinet` | __UNKNOWN
 
-> The nDPI detected application name produced by nProbe is also supported as of ElastiFlow&trade; v3.0.3. No specific configuration of ElastiFlow&trade; is necessary. However, nProbe must be configured with a template that sends this data. An nProbe configuration file that works well with ElastiFlow&trade; is available [HERE](https://gist.github.com/robcowart/afd538026db29ee96dd9c495efb52ea6).
+Application identity is also supported from the following sources, and requires no additional configuration:
+- Citrix Netscaler
+- IXIA IxFlow
+- ntop nProbe (An nProbe configuration file that works well with ElastiFlow&trade; is available [HERE](https://gist.github.com/robcowart/afd538026db29ee96dd9c495efb52ea6))
+- Palo Alto
+- SonicWall
+- Sophos
 
 Once configured ElastiFlow&trade; will resolve the ID to an application name, which will be available in the dashboards.
 <img width="902" alt="screen shot 2018-05-13 at 12 40 04" src="https://user-images.githubusercontent.com/10326954/39966360-d8e6e420-56aa-11e8-8514-9a9839ca5fb1.png"> 
