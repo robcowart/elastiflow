@@ -19,13 +19,13 @@
 0:
 - :skip
 1:
-- 4
+- :uint32
 - :in_bytes
 2:
-- 4
+- :uint32
 - :in_pkts
 3:
-- 4
+- :uint32
 - :flows
 4:
 - :uint8
@@ -46,7 +46,7 @@
 - :uint8
 - :src_mask
 10:
-- 2
+- :uint16
 - :input_snmp
 11:
 - :uint16
@@ -58,25 +58,25 @@
 - :uint8
 - :dst_mask
 14:
-- 2
+- :uint16
 - :output_snmp
 15:
 - :ip4_addr
 - :ipv4_next_hop
 16:
-- 2
+- :uint16
 - :src_as
 17:
-- 2
+- :uint16
 - :dst_as
 18:
 - :ip4_addr
 - :bgp_ipv4_next_hop
 19:
-- 4
+- :uint32
 - :mul_dst_pkts
 20:
-- 4
+- :uint32
 - :mul_dst_bytes
 21:
 - :uint32
@@ -85,10 +85,10 @@
 - :uint32
 - :first_switched
 23:
-- 4
+- :uint32
 - :out_bytes
 24:
-- 4
+- :uint32
 - :out_pkts
 25:
 - :uint16
@@ -136,13 +136,13 @@
 - :uint8
 - :engine_id
 40:
-- 4
+- :uint32
 - :total_bytes_exp
 41:
-- 4
+- :uint32
 - :total_pkts_exp
 42:
-- 4
+- :uint32
 - :total_flows_exp
 43:
 - :skip
@@ -159,7 +159,7 @@
 - :uint32
 - :mpls_top_label_ip_addr
 48:
-- 4
+- :uint32
 - :flow_sampler_id
 49:
 - :uint8
@@ -211,7 +211,8 @@
 65:
 - :skip
 66:
-- :skip
+- :uint32
+- :transport_unreachability
 67:
 - :skip
 68:
@@ -263,9 +264,6 @@
 99:
 - :uint32
 - :multicastReplicationFactor
-100:
-- :uint8
-- :rb_passthru_reason
 #101:
 #- :uint8
 #- :classificationEngineId
@@ -292,7 +290,7 @@
 - :rb_outer_tcp_port
 108:
 - :uint32
-- :rb_retrans_pkts
+- :rb_retrans_packets
 109:
 - :uint32
 - :rb_retrans_bytes
@@ -375,10 +373,10 @@
 - :uint32
 - :flowEndSeconds
 152:
-- 8
+- :uint64
 - :flow_start_msec
 153:
-- 8
+- :uint64
 - :flow_end_msec
 154:
 - :uint64
@@ -552,7 +550,8 @@
 - :uint64
 - :tcpOptions
 210:
-- :skip
+- :uint24
+- :paddingOctets
 211:
 - :ip4_addr
 - :collectorIPv4Address
@@ -887,7 +886,7 @@
 - :uint32
 - :observationTimeSeconds
 323:
-- 8
+- :uint64
 - :event_time_msec
 324:
 - :uint64
@@ -1213,6 +1212,50 @@
 433:
 - :uint64
 - :ignoredLayer2FrameTotalCount
+
+1064:
+- :string
+- :cisco_avc_app_ver
+1098:
+- :string
+- :cisco_avc_app_sub_app
+1108:
+- :string
+- :cisco_avc_app_sub_app_desc
+#1232:
+#- :
+#- :ciscoTrustSecSourceIdentifier
+#1233:
+#- :
+#- :ciscoTrustSecDestinationIdentifier
+2881:
+- :string
+- :cisco_avc_p2p_tech
+2891:
+- :string
+- :cisco_avc_tunnel_tech
+2901:
+- :string
+- :cisco_avc_encrypt_tech
+4238:
+- :uint32
+- :cisco_med_app_media_bytes_rate
+4241:
+- :uint32
+- :cisco_med_app_media_packets_rate
+4251:
+- :uint32
+- :cisco_med_transp_packets_lost
+4255:
+- :uint32
+- :cisco_med_transp_rtp_jitter_mean
+4256:
+- :uint32
+- :cisco_med_transp_rtp_jitter_min
+4257:
+- :uint32
+- :cisco_med_transp_rtp_jitter_max
+
 8192:
 - :uint32
 - :streamcore_wan_rtt
@@ -1228,6 +1271,11 @@
 8196:
 - :uint8
 - :streamcore_call_direction
+
+8232:
+- :string
+- :cisco_policy_qos_class_hierarchy
+
 8256:
 - :string
 - :streamcore_hostname
@@ -1267,6 +1315,11 @@
 8328:
 - :uint8
 - :streamcore_codec_out
+
+8338:
+- :uint64
+- :cisco_avc_client_bytes_net
+
 8384:
 - :uint32
 - :streamcore_id_rule_1
@@ -1297,36 +1350,484 @@
 8393:
 - :uint32
 - :streamcore_id_rule_10
+
+9252:
+- :uint8
+- :cisco_services_waas_segment
+9253:
+- :uint8
+- :cisco_services_waas_passthru_reason
+9265:
+- :uint64
+- :cisco_art_client_packets
+9266:
+- :uint64
+- :cisco_art_server_packets
+#9268:
+#- :uint32
+#- :cisco_art_retrans
+9268:
+- :uint32
+- :cisco_avc_client_packets
+9272:
+- :uint32
+- :cisco_avc_transact_duration_ct
+9273:
+- :uint32
+- :cisco_avc_transact_duration_sum
+9274:
+- :uint32
+- :cisco_avc_transact_duration_max
+9275:
+- :uint32
+- :cisco_avc_transact_duration_min
+9292:
+- :uint32
+- :cisco_avc_server_counter_resp
+9293:
+- :uint32
+- :cisco_art_resp_histogram_bucket1
+9294:
+- :uint32
+- :cisco_art_resp_histogram_bucket2
+9295:
+- :uint32
+- :cisco_art_resp_histogram_bucket3
+9296:
+- :uint32
+- :cisco_art_resp_histogram_bucket4
+9297:
+- :uint32
+- :cisco_art_resp_histogram_bucket5
+9298:
+- :uint32
+- :cisco_art_resp_histogram_bucket6
+9299:
+- :uint32
+- :cisco_art_resp_histogram_bucket7
+#9300:
+#- :uint32
+#- :cisco_art_late_responses
+9300:
+- :uint32
+- :cisco_avc_delay_resp_to_server
+9303:
+- :uint32
+- :cisco_avc_delay_resp_to_server_sum
+9304:
+- :uint32
+- :cisco_art_delay_resp_to_server_max
+9305:
+- :uint32
+- :cisco_art_delay_resp_to_server_min
+9306:
+- :uint32
+- :cisco_avc_delay_application_sum
+9307:
+- :uint32
+- :cisco_avc_delay_application_max
+9308:
+- :uint32
+- :cisco_avc_delay_application_min
+9309:
+- :uint32
+- :cisco_avc_delay_resp_client_to_server
+9310:
+- :uint32
+- :cisco_avc_total_resp_time_max
+9311:
+- :uint32
+- :cisco_avc_total_resp_time_min
+9313:
+- :uint32
+- :cisco_avc_delay_network_client_to_server_sum
+9314:
+- :uint32
+- :cisco_avc_delay_network_client_to_server_max
+9315:
+- :uint32
+- :cisco_avc_delay_network_client_to_server_min
+9316:
+- :uint32
+- :cisco_avc_delay_network_to_client_sum
+9317:
+- :uint32
+- :cisco_avc_client_network_time_max
+9318:
+- :uint32
+- :cisco_avc_client_network_time_min
+9319:
+- :uint32
+- :cisco_avc_delay_network_to_server_sum
+9320:
+- :uint32
+- :cisco_avc_server_network_time_max
+9321:
+- :uint32
+- :cisco_avc_server_network_time_min
+9357:
+- :string
+- :cisco_app_http_uri_stats
+9360:
+- :uint32
+- :cisco_policy_qos_queue_index
+9361:
+- :uint64
+- :cisco_policy_qos_queue_drops
+12172:
+- :string
+- :cisco_collect_idp
+12232:
+- :string
+- :cisco_avc_app_category
+12233:
+- :string
+- :cisco_avc_app_sub_category
+12234:
+- :string
+- :cisco_avc_app_group
+12235:
+- :string
+- :cisco_app_http_host
+12236:
+- :ip4_addr
+- :cisco_client_ipv4_addr
+12237:
+- :ip4_addr
+- :cisco_server_ipv4_addr
+12240:
+- :uint16
+- :cisco_client_l4_port
+12241:
+- :uint16
+- :cisco_server_l4_port
+12242:
+- :uint32
+- :cisco_conn_id
+12243:
+- :string
+- :cisco_avc_app_traffic_class
+12244:
+- :string
+- :cisco_avc_app_business_relevance
+#16386:
+#- :
+#- :ciscoETAInitialDataPacketOld
+#16387:
+#- :
+#- :ciscoETASequenceofPktLengthsandTimesOld
+
 20000:
 - :uint16
 - :wlan_id
+
+32733:
+- :uint64
+- :cisco_timestamp_abs_monitor_interval
 33000:
 - :acl_id_asa
-- :ingress_acl_id
+- :cisco_asa_ingress_acl_id
 33001:
 - :acl_id_asa
-- egress_acl_id
+- :cisco_asa_egress_acl_id
 33002:
 - :uint16
-- :fw_ext_event
+- :cisco_asa_fw_ext_event
+#34000:
+#- :
+#- :ciscoTrustSecSourceIdentifier
+#34001:
+#- :
+#- :ciscoTrustSecDestinationIdentifier
+#34002:
+#- :
+#- :ciscoTrustSecSourceName
+#34003:
+#- :
+#- :ciscoTrustSecDestinationName
+#37016:
+#- :
+#- :medianet_transport_round_trip_time
+#37019:
+#- :
+#- :medianet_transport_packets_lost
+37021:
+- :uint32
+- :cisco_trns_packets_lost_rate
+#37023:
+#- :
+#- :medianet_transport_rtp_jitter_mean
+37063:
+- :uint32
+- :cisco_network_delay_avg
+37081:
+- :uint32
+- :cisco_one_way_delay
+37083:
+- :uint32
+- :cisco_tcp_window_size_min
+37084:
+- :uint32
+- :cisco_tcp_window_size_max
+37086:
+- :uint16
+- :cisco_tcp_max_segment_size
+37092:
+- :uint64
+- :cisco_tcp_window_size_sum
+37098:
+- :uint32
+- :cisco_rtp_jitter_inter_arrival_mean
+37099:
+- :ip4_addr
+- :cisco_src_site
+37100:
+- :ip4_addr
+- :cisco_dst_site
+37103:
+- :uint32
+- :cisco_trns_bytes_lost_rate
+37106:
+- :uint32
+- :cisco_pfr_event_tc_nomitigation_errors_bw
+37108:
+- :uint32
+- :cisco_pfr_event_tc_nomitigation_errors_perf
+37110:
+- :ip4_addr
+- :cisco_dst_site_prefix
+37114:
+- :uint8
+- :cisco_dst_site_prefix_mask
+37118:
+- :uint32
+- :cisco_pfr_label
+39000:
+- :ip4_addr
+- :cisco_ipv4_pfr_br_addr
+39017:
+- :uint64
+- :cisco_ingress_bw_long
+39018:
+- :uint64
+- :cisco_max_ingress_bw
+39019:
+- :uint64
+- :cisco_egress_bw_long
+39020:
+- :uint64
+- :cisco_max_egress_bw
 40000:
 - :string
-- :username
+- :cisco_asa_user
 40001:
 - :ip4_addr
-- :xlate_src_addr_ipv4
+- :cisco_asa_xlate_src_addr_ipv4
 40002:
 - :ip4_addr
-- :xlate_dst_addr_ipv4
+- :cisco_asa_xlate_dst_addr_ipv4
 40003:
 - :uint16
-- :xlate_src_port
+- :cisco_asa_xlate_src_port
 40004:
 - :uint16
-- :xlate_dst_port
+- :cisco_asa_xlate_dst_port
 40005:
 - :uint8
-- :fw_event
+- :cisco_asa_fw_event
+41000:
+- :string
+- :cisco_policy_class_hierarchy
+#41105:
+#- :
+#- :ciscoARTServerBytes
+#41106:
+#- :
+#- :ciscoARTClientBytes
+42020:
+- :uint8
+- :cisco_waas_segment
+42021:
+- :uint8
+- :cisco_waas_passthru_reason
+42036:
+- :uint32
+- :cisco_retrans_packets
+42040:
+- :uint32
+- :cisco_transacts_delta
+42041:
+- :uint32
+- :cisco_sum_transact_time
+42042:
+- :uint32
+- :cisco_max_transact_time
+42043:
+- :uint32
+- :cisco_min_transact_time
+42060:
+- :uint32
+- :cisco_resps_delta
+42061:
+- :uint32
+- :cisco_resps1_delta
+42062:
+- :uint32
+- :cisco_resps2_delta
+42063:
+- :uint32
+- :cisco_resps3_delta
+42064:
+- :uint32
+- :cisco_esps4_delta
+42065:
+- :uint32
+- :cisco_resps5_delta
+42066:
+- :uint32
+- :cisco_resps6_delta
+42067:
+- :uint32
+- :cisco_resps7_delta
+42068:
+- :uint32
+- :cisco_late_resps_delta
+42071:
+- :uint32
+- :cisco_sum_resp_time
+42072:
+- :uint32
+- :cisco_max_resp_time
+42073:
+- :uint32
+- :cisco_min_resp_time
+42074:
+- :uint32
+- :cisco_sum_server_resp_time
+42075:
+- :uint32
+- :cisco_max_server_resp_time
+42076:
+- :uint32
+- :cisco_min_server_resp_time
+42077:
+- :uint32
+- :cisco_sum_total_resp_time
+42078:
+- :uint32
+- :cisco_max_total_resp_time
+42079:
+- :uint32
+- :cisco_min_total_resp_time
+42081:
+- :uint32
+- :cisco_sum_network_time
+42082:
+- :uint32
+- :cisco_max_network_time
+42083:
+- :uint32
+- :cisco_min_network_time
+42084:
+- :uint32
+- :cisco_sum_client_network_time
+42085:
+- :uint32
+- :cisco_max_client_network_time
+42086:
+- :uint32
+- :cisco_min_client_network_time
+42087:
+- :uint32
+- :cisco_sum_server_network_time
+42088:
+- :uint32
+- :cisco_max_server_network_time
+42089:
+- :uint32
+- :cisco_min_server_network_time
+42128:
+- :uint32
+- :cisco_policy_qos_queue_id
+42129:
+- :uint64
+- :cisco_policy_qos_queue_drop
+#44940:
+#- :
+#- :ciscoETAInitialDataPacketOld
+#44941:
+#- :
+#- :ciscoETASequenceofPktLengthsandTimes
+#44943:
+#- :
+#- :cisco_byte_distribution_format
+44944:
+- :uint16
+- :cisco_byte_distribution
+#44946:
+#- :uint16
+#- :cisco_tls_cipher_suites
+44948:
+- :uint8
+- :cisco_tls_version
+44949:
+- :uint16
+- :cisco_tls_key_length
+44950:
+- :string
+- :cisco_tls_sess_id
+44951:
+- :string
+- :cisco_tls_random
+#44952:
+#- :uint16
+#- :cisco_sequence_packet_lengths
+#44953:
+#- :uint16
+#- :cisco_sequence_packet_times
+#44956:
+#- :uint16
+#- :cisco_tls_record_lengths
+#44957:
+#- :uint16
+#- :cisco_tls_record_times
+#44958:
+#- :uint8
+#- :cisco_tls_content_types
+#44959:
+#- :uint8
+#- :cisco_tls_handshake_types
+#44960:
+#- :uint16
+#- :cisco_tls_extension_lengths
+#44961:
+#- :uint16
+#- :cisco_tls_extension_types
+#45003:
+#- :
+#- :ciscoAVCSubApplicationValue
+45004:
+- :ip4_addr
+- :cisco_client_ipv4_addr
+45005:
+- :ip4_addr
+- :cisco_server_ipv4_addr
+45006:
+- :ip6_addr
+- :cisco_client_ipv6_addr
+45007:
+- :ip6_addr
+- :cisco_server_ipv6_addr
+45008:
+- :uint16
+- :cisco_client_transport_port
+45009:
+- :uint16
+- :cisco_server_transport_port
+45010:
+- :uint32
+- :cisco_conn_id
+
 51100:
 - :uint8
 - :rb_passthru_reason
@@ -1353,7 +1854,7 @@
 - :rb_outer_tcp_port
 51108:
 - :uint32
-- :rb_retrans_pkts
+- :rb_retrans_packets
 51109:
 - :uint32
 - :rb_retrans_bytes
@@ -1366,15 +1867,965 @@
 51130:
 - :uint8
 - :rb_unk_51130
+
 56701:
 - :string
-- :app_id
+- :pan_app
 56702:
 - :string
-- :user_id
+- :pan_user
+
+57552:
+- :uint16
+- :ntop_src_frags
+57553:
+- :uint16
+- :ntop_dst_frags
+57554:
+- :uint32
+- :ntop_src_to_dst_max_throughput
+57555:
+- :uint32
+- :ntop_src_to_dst_min_throughput
+57556:
+- :uint32
+- :ntop_src_to_dst_avg_throughput
+57557:
+- :uint32
+- :ntop_dst_to_src_max_throughput
+57558:
+- :uint32
+- :ntop_dst_to_src_min_throughput
+57559:
+- :uint32
+- :ntop_dst_to_src_avg_throughput
+57560:
+- :uint32
+- :ntop_packets_upto_128_bytes
+57561:
+- :uint32
+- :ntop_packets_128_to_256_bytes
+57562:
+- :uint32
+- :ntop_packets_256_to_512_bytes
+57563:
+- :uint32
+- :ntop_packets_512_to_1024_bytes
+57564:
+- :uint32
+- :ntop_packets_1024_to_1514_bytes
+57565:
+- :uint32
+- :ntop_packets_over_1514_bytes
+57570:
+- :uint16
+- :ntop_cumulative_icmp_type
+57573:
+- :string
+- :ntop_src_country
+57574:
+- :string
+- :ntop_src_city
+57575:
+- :string
+- :ntop_dst_country
+57576:
+- :string
+- :ntop_dst_city
+57577:
+- :uint16
+- :ntop_flow_proto_port
+57578:
+- :uint32
+- :ntop_tunnel_id
+57579:
+- :uint16
+- :ntop_longest_flow_packet
+57580:
+- :uint16
+- :ntop_shortest_flow_packet
+57581:
+- :uint32
+- :ntop_retrans_in_packets
+57582:
+- :uint32
+- :ntop_retrans_out_packets
+57583:
+- :uint32
+- :ntop_ooorder_in_packets
+57584:
+- :uint32
+- :ntop_ooorder_out_packets
+57585:
+- :uint8
+- :ntop_untunneled_protocol
+57586:
+- :ip4_addr
+- :ntop_untunneled_ipv4_src_addr
+57587:
+- :uint16
+- :ntop_untunneled_l4_src_port
+57588:
+- :ip4_addr
+- :ntop_untunneled_ipv4_dst_addr
+57589:
+- :uint16
+- :ntop_untunneled_l4_dst_port
 57590:
 - :uint16
-- :nprobe_proto
+- :ntop_l7_proto
 57591:
 - :string
-- :nprobe_proto_name
+- :ntop_l7_proto_name
+57592:
+- :uint32
+- :ntop_downstram_tunnel_id
+57593:
+- :string
+- :ntop_flow_user
+57594:
+- :string
+- :ntop_flow_server
+57595:
+- :uint32
+- :ntop_client_nw_latency_ms
+57596:
+- :uint32
+- :ntop_server_nw_latency_ms
+57597:
+- :uint32
+- :ntop_appl_latency_ms
+57598:
+- :string
+- :ntop_plugin
+57599:
+- :uint32
+- :ntop_retrans_in_bytes
+57600:
+- :uint32
+- :ntop_retrans_out_bytes
+57602:
+- :string
+- :ntop_sip_call_id
+57603:
+- :string
+- :ntop_sip_calling_party
+57604:
+- :string
+- :ntop_sip_called_party
+57605:
+- :string
+- :ntop_sip_rtp_codecs
+57606:
+- :uint32
+- :ntop_sip_invite_time
+57607:
+- :uint32
+- :ntop_sip_trying_time
+57608:
+- :uint32
+- :ntop_sip_ringing_time
+57609:
+- :uint32
+- :ntop_sip_ok_time
+57610:
+- :uint32
+- :ntop_sip_invite_failure_time
+57611:
+- :uint32
+- :ntop_sip_bye_time
+57612:
+- :uint32
+- :ntop_sip_bye_ok_time
+57613:
+- :uint32
+- :ntop_sip_cancel_time
+57614:
+- :uint32
+- :ntop_sip_cancel_ok_time
+57615:
+- :ip4_addr
+- :ntop_sip_rtp_ipv4_src_addr
+57616:
+- :uint16
+- :ntop_sip_rtp_l4_src_port
+57617:
+- :ip4_addr
+- :ntop_sip_rtp_ipv4_dst_addr
+57618:
+- :uint16
+- :ntop_sip_rtp_l4_dst_port
+57619:
+- :uint32
+- :ntop_sip_response_code
+57620:
+- :uint32
+- :ntop_sip_reason_cause
+57622:
+- :uint32
+- :ntop_rtp_first_seq
+57623:
+- :uint32
+- :ntop_rtp_first_ts
+57624:
+- :uint32
+- :ntop_rtp_last_seq
+57625:
+- :uint32
+- :ntop_rtp_last_ts
+57626:
+- :uint32
+- :ntop_rtp_in_jitter
+57627:
+- :uint32
+- :ntop_rtp_out_jitter
+57628:
+- :uint32
+- :ntop_rtp_in_packets_lost
+57629:
+- :uint32
+- :ntop_rtp_out_packets_lost
+57630:
+- :uint8
+- :ntop_rtp_out_payload_type
+57631:
+- :uint32
+- :ntop_rtp_in_max_delta
+57632:
+- :uint32
+- :ntop_rtp_out_max_delta
+57633:
+- :uint8
+- :ntop_rtp_in_payload_type
+57640:
+- :uint32
+- :ntop_src_proc_id
+57641:
+- :string
+- :ntop_src_proc
+57652:
+- :string
+- :ntop_http_url
+57653:
+- :uint16
+- :ntop_http_ret_code
+57654:
+- :string
+- :ntop_http_referer
+57655:
+- :string
+- :ntop_http_ua
+57656:
+- :string
+- :ntop_http_mime
+57657:
+- :string
+- :ntop_smtp_mail_from
+57658:
+- :string
+- :ntop_smtp_rcpt_to
+57659:
+- :string
+- :ntop_http_host
+57660:
+- :string
+- :ntop_ssl_server
+57661:
+- :string
+- :ntop_bittorrent_hash
+57667:
+- :string
+- :ntop_mysql_server_version
+57668:
+- :string
+- :ntop_mysql_user
+57669:
+- :string
+- :ntop_mysql_db
+57670:
+- :string
+- :ntop_mysql_query
+57671:
+- :uint16
+- :ntop_mysql_response
+57672:
+- :string
+- :ntop_oracle_user
+57673:
+- :string
+- :ntop_oracle_query
+57674:
+- :uint16
+- :ntop_oracle_resp_code
+57675:
+- :string
+- :ntop_oracle_resp_string
+57676:
+- :uint32
+- :ntop_oracle_query_duration
+57677:
+- :string
+- :ntop_dns_query
+57678:
+- :uint16
+- :ntop_dns_query_id
+57679:
+- :uint8
+- :ntop_dns_query_type
+57680:
+- :uint8
+- :ntop_dns_ret_code
+57681:
+- :uint8
+- :ntop_dns_answers
+57682:
+- :string
+- :ntop_pop_user
+57692:
+- :uint8
+- :ntop_gtpv1_req_msg_typ
+57693:
+- :uint8
+- :ntop_gtpv1_rsp_msg_type
+57694:
+- :uint32
+- :ntop_gtpv1_c2s_teid_data
+57695:
+- :uint32
+- :ntop_gtpv1_c2s_teid_ctrl
+57696:
+- :uint32
+- :ntop_gtpv1_s2c_teid_data
+57697:
+- :uint32
+- :ntop_gtpv1_s2c_teid_ctrl
+57698:
+- :ip4_addr
+- :ntop_gtpv1_end_user_ip
+57699:
+- :string
+- :ntop_gtpv1_end_user_imsi
+57700:
+- :string
+- :ntop_gtpv1_end_user_msisdn
+57701:
+- :string
+- :ntop_gtpv1_end_user_imei
+57702:
+- :string
+- :ntop_gtpv1_apn
+57703:
+- :uint16
+- :ntop_gtpv1_rai_mcc
+57704:
+- :uint16
+- :ntop_gtpv1_rai_mnc
+57705:
+- :uint16
+- :ntop_gtpv1_uli_cell_lac
+57706:
+- :uint16
+- :ntop_gtpv1_uli_cell_ci
+57707:
+- :uint16
+- :ntop_gtpv1_uli_sac
+57708:
+- :uint8
+- :ntop_gtpv1_rai_type
+57712:
+- :uint8
+- :ntop_radius_req_msg_type
+57713:
+- :uint8
+- :ntop_radius_rsp_msg_type
+57714:
+- :string
+- :ntop_radius_user
+57715:
+- :string
+- :ntop_radius_calling_station_id
+57716:
+- :string
+- :ntop_radius_called_station_id
+57717:
+- :ip4_addr
+- :ntop_radius_nas_ip_addr
+57718:
+- :string
+- :ntop_radius_nas_identifier
+57719:
+- :string
+- :ntop_radius_user_imsi
+57720:
+- :string
+- :ntop_radius_user_imei
+57721:
+- :ip4_addr
+- :ntop_radius_framed_ip_addr
+57722:
+- :string
+- :ntop_radius_acct_sess_id
+57723:
+- :string
+- :ntop_radius_acct_status_type
+57724:
+- :uint32
+- :ntop_radius_acct_in_octects
+57725:
+- :uint32
+- :ntop_radius_acct_out_octects
+57726:
+- :uint32
+- :ntop_radius_acct_in_packets
+57727:
+- :uint32
+- :ntop_radius_acct_out_packets
+57732:
+- :string
+- :ntop_imap_login
+57742:
+- :uint8
+- :ntop_gtpv2_req_msg_type
+57743:
+- :uint8
+- :ntop_gtpv2_rsp_msg_type
+57744:
+- :uint32
+- :ntop_gtpv2_c2s_s1u_gtpu_teid
+57745:
+- :ip4_addr
+- :ntop_gtpv2_c2s_s1u_gtpu_ip
+57746:
+- :string
+- :ntop_gtpv2_s2c_s1u_gtpu_teid
+57747:
+- :ip4_addr
+- :ntop_gtpv2_s2c_s1u_gtpu_ip
+57748:
+- :string
+- :ntop_gtpv2_end_user_imsi
+57749:
+- :string
+- :ntop_gtpv2_and_user_msisdn
+57750:
+- :string
+- :ntop_gtpv2_apn
+57751:
+- :uint16
+- :ntop_gtpv2_uli_mcc
+57752:
+- :uint16
+- :ntop_gtpv2_uli_mnc
+57753:
+- :uint16
+- :ntop_gtpv2_uli_cell_tac
+57754:
+- :uint32
+- :ntop_gtpv2_uli_cell_id
+57755:
+- :uint8
+- :ntop_gtpv2_rat_type
+57756:
+- :ip4_addr
+- :ntop_gtpv2_pdn_ip
+57757:
+- :string
+- :ntop_gtpv2_end_user_imei
+57762:
+- :uint32
+- :ntop_src_as_path_1
+57763:
+- :uint32
+- :ntop_src_as_path_2
+57764:
+- :uint32
+- :ntop_src_as_path_3
+57765:
+- :uint32
+- :ntop_src_as_path_4
+57766:
+- :uint32
+- :ntop_src_as_path_5
+57767:
+- :uint32
+- :ntop_src_as_path_6
+57768:
+- :uint32
+- :ntop_src_as_path_7
+57769:
+- :uint32
+- :ntop_src_as_path_8
+57770:
+- :uint32
+- :ntop_src_as_path_9
+57771:
+- :uint32
+- :ntop_src_as_path_10
+57772:
+- :uint32
+- :ntop_dst_as_path_1
+57773:
+- :uint32
+- :ntop_dst_as_path_2
+57774:
+- :uint32
+- :ntop_dst_as_path_3
+57775:
+- :uint32
+- :ntop_dst_as_path_4
+57776:
+- :uint32
+- :ntop_dst_as_path_5
+57777:
+- :uint32
+- :ntop_dst_as_path_6
+57778:
+- :uint32
+- :ntop_dst_as_path_7
+57779:
+- :uint32
+- :ntop_dst_as_path_8
+57780:
+- :uint32
+- :ntop_dst_as_path_9
+57781:
+- :uint32
+- :ntop_dst_as_path_10
+57792:
+- :uint32
+- :ntop_mysql_appl_latency_usec
+57793:
+- :uint8
+- :ntop_gtpv0_req_msg_type
+57794:
+- :uint8
+- :ntop_gtpv0_rsp_msg_type
+57795:
+- :uint64
+- :ntop_gtpv0_tid
+57796:
+- :ip4_addr
+- :ntop_gtpv0_end_user_ip
+57797:
+- :string
+- :ntop_gtpv0_end_user_msisdn
+57798:
+- :string
+- :ntop_gtpv0_apn
+57799:
+- :uint16
+- :ntop_gtpv0_rai_mcc
+57800:
+- :uint16
+- :ntop_gtpv0_rai_mnc
+57801:
+- :uint16
+- :ntop_gtpv0_rai_cell_lac
+57802:
+- :uint16
+- :ntop_gtpv0_rai_cell_rac
+57803:
+- :uint8
+- :ntop_gtpv0_resp_cause
+57804:
+- :uint8
+- :ntop_gtpv1_resp_cause
+57805:
+- :uint8
+- :ntop_gtpv2_resp_cause
+57806:
+- :uint32
+- :ntop_packets_ttl_5_32
+57807:
+- :uint32
+- :ntop_packets_ttl_32_64
+57808:
+- :uint32
+- :ntop_packets_ttl_64_96
+57809:
+- :uint32
+- :ntop_packets_ttl_96_128
+57810:
+- :uint32
+- :ntop_packets_ttl_128_160
+57811:
+- :uint32
+- :ntop_packets_ttl_160_192
+57812:
+- :uint32
+- :ntop_packets_ttl_192_224
+57813:
+- :uint32
+- :ntop_packets_ttl_224_225
+57814:
+- :uint16
+- :ntop_gtpv1_rai_lac
+57815:
+- :uint8
+- :ntop_gtpv1_rai_rac
+57816:
+- :uint16
+- :ntop_gtpv1_uli_mcc
+57817:
+- :uint32
+- :ntop_gtpv1_uli_mnc
+57818:
+- :uint32
+- :ntop_packets_ttl_2_5
+57819:
+- :uint32
+- :ntop_packets_ttl_eq_1
+57820:
+- :string
+- :ntop_rtp_sip_call_id
+57821:
+- :string
+- :ntop_in_src_osi_sap
+57822:
+- :string
+- :ntop_out_dst_osi_sap
+57823:
+- :string
+- :ntop_whois_das_domain
+57824:
+- :uint32
+- :ntop_dns_ttl_answer
+57825:
+- :mac_addr
+- :ntop_dhcp_client_mac
+57826:
+- :ip4_addr
+- :ntop_dhcp_client_ip
+57827:
+- :string
+- :ntop_dhcp_client
+57828:
+- :string
+- :ntop_ftp_login
+57829:
+- :string
+- :ntop_ftp_password
+57830:
+- :string
+- :ntop_ftp_command
+57831:
+- :uint16
+- :ntop_ftp_command_ret_code
+57832:
+- :string
+- :ntop_http_method
+57833:
+- :string
+- :ntop_http_site
+57834:
+- :string
+- :ntop_sip_c_ip
+57835:
+- :string
+- :ntop_sip_call_state
+57842:
+- :uint32
+- :ntop_rtp_in_mos
+57843:
+- :uint32
+- :ntop_rtp_in_r_factor
+57844:
+- :string
+- :ntop_src_proc_user
+57845:
+- :uint32
+- :ntop_src_father_proc_pid
+57846:
+- :string
+- :ntop_src_father_proc
+57847:
+- :uint32
+- :ntop_dst_proc_pid
+57848:
+- :string
+- :ntop_dst_proc
+57849:
+- :string
+- :ntop_dst_proc_user
+57850:
+- :uint32
+- :ntop_dst_father_proc_pid
+57851:
+- :string
+- :ntop_dst_father_proc
+57852:
+- :uint32
+- :ntop_rtp_rtt
+57853:
+- :uint32
+- :ntop_rtp_in_transit
+57854:
+- :uint32
+- :ntop_rtp_out_transit
+57855:
+- :uint32
+- :ntop_src_proc_actual_memory
+57856:
+- :uint32
+- :ntop_src_proc_peak_memory
+57857:
+- :uint32
+- :ntop_src_proc_avg_cpu_load
+57858:
+- :uint32
+- :ntop_src_proc_page_faults
+57859:
+- :uint32
+- :ntop_dst_proc_actual_memory
+57860:
+- :uint32
+- :ntop_dst_proc_peak_memory
+57861:
+- :uint32
+- :ntop_dst_proc_avg_cpu_load
+57862:
+- :uint32
+- :ntop_dst_proc_page_faults
+57863:
+- :uint32
+- :ntop_duration_in
+57864:
+- :uint32
+- :ntop_duration_out
+57865:
+- :uint32
+- :ntop_src_proc_pctg_iowait
+57866:
+- :uint32
+- :ntop_dst_proc_pctg_iowait
+57867:
+- :string
+- :ntop_rtp_dtmf_tones
+57868:
+- :ip6_addr
+- :ntop_untunneled_ipv6_src_addr
+57869:
+- :ip6_addr
+- :ntop_untunneled_ipv6_dst_addr
+57870:
+- :string
+- :ntop_dns_response
+57871:
+- :uint32
+- :ntop_diameter_req_msg_type
+57872:
+- :uint32
+- :ntop_diameter_rsp_msg_type
+57873:
+- :string
+- :ntop_diameter_req_origin_host
+57874:
+- :string
+- :ntop_diameter_rsp_origin_host
+57875:
+- :string
+- :ntop_diameter_req_user
+57876:
+- :uint32
+- :ntop_diameter_rsp_result_code
+57877:
+- :uint32
+- :ntop_diameter_exp_res_vendor_id
+57878:
+- :uint32
+- :ntop_diameter_exp_res_result_code
+57879:
+- :uint32
+- :ntop_s1ap_enb_ue_s1ap_id
+57880:
+- :uint32
+- :ntop_s1ap_mme_ue_s1ap_id
+57881:
+- :uint8
+- :ntop_s1ap_msg_emm_type_mme_to_enb
+57882:
+- :uint8
+- :ntop_s1ap_msg_esm_type_mme_to_enb
+57883:
+- :uint8
+- :ntop_s1ap_msg_emm_type_enb_to_mme
+57884:
+- :uint8
+- :ntop_s1ap_msg_esm_type_enb_to_mme
+57885:
+- :uint8
+- :ntop_s1ap_cause_enb_to_mme
+57886:
+- :uint8
+- :ntop_s1ap_detailed_cause_enb_to_mme
+57887:
+- :uint16
+- :ntop_tcp_win_min_in
+57888:
+- :uint16
+- :ntop_tcp_win_max_in
+57889:
+- :uint16
+- :ntop_tcp_win_mss_in
+57890:
+- :uint8
+- :ntop_tcp_win_scale_in
+57891:
+- :uint16
+- :ntop_tcp_win_min_out
+57892:
+- :uint16
+- :ntop_tcp_win_max_out
+57893:
+- :uint16
+- :ntop_tcp_win_mss_out
+57894:
+- :uint8
+- :ntop_tcp_win_scale_out
+57895:
+- :string
+- :ntop_dhcp_remote_id
+57896:
+- :string
+- :ntop_dhcp_subscriber_id
+57897:
+- :uint32
+- :ntop_src_proc_uid
+57898:
+- :uint32
+- :ntop_dst_proc_uid
+57899:
+- :string
+- :ntop_application
+57900:
+- :string
+- :ntop_user
+57901:
+- :string
+- :ntop_dhcp_message_type
+57902:
+- :uint32
+- :ntop_rtp_in_packets_drop
+57903:
+- :uint32
+- :ntop_rtp_out_packets_drop
+57904:
+- :uint32
+- :ntop_rtp_out_mos
+57905:
+- :uint32
+- :ntop_rtp_out_r_factor
+57906:
+- :uint32
+- :ntop_rtp_mos
+57907:
+- :string
+- :ntop_gptv2_s5_s8_gtpc_teid
+57908:
+- :uint32
+- :ntop_rtp_r_factor
+57909:
+- :uint32
+- :ntop_rtp_ssrc
+57910:
+- :uint32
+- :ntop_payload_hash
+57911:
+- :uint32
+- :ntop_gtpv2_c2s_s5_s8_gtpu_teid
+57912:
+- :uint32
+- :ntop_gtpv2_s2c_s5_s8_gtpu_teid
+57913:
+- :ip4_addr
+- :ntop_gtpv2_c2s_s5_s8_gtpu_ip
+57914:
+- :ip4_addr
+- :ntop_gtpv2_s2c_s5_s8_gtpu_ip
+57915:
+- :string
+- :ntop_src_as_map
+57916:
+- :string
+- :ntop_dst_as_map
+57917:
+- :uint32
+- :ntop_diameter_hop_by_hop_id
+57918:
+- :uint16
+- :ntop_upstream_sess_id
+57919:
+- :uint32
+- :ntop_downstream_sess_id
+57920:
+- :float
+- :ntop_src_long
+57921:
+- :float
+- :ntop_src_lat
+57922:
+- :float
+- :ntop_dst_long
+57923:
+- :float
+- :ntop_dst_lat
+57924:
+- :uint32
+- :ntop_diameter_clr_cancel_type
+57925:
+- :uint32
+- :ntop_diameter_clr_flags
+57926:
+- :ip4_addr
+- :ntop_gtpv2_c2s_s5_s8_gtpc_ip
+57927:
+- :ip4_addr
+- :ntop_gtpv2_s2c_s5_s8_gtpc_ip
+57928:
+- :uint32
+- :ntop_gtpv2_c2s_s5_s8_sgw_gtpu_teid
+57929:
+- :uint32
+- :ntop_gtpv2_s2c_s5_s8_sgw_gtpu_teid
+57930:
+- :ip4_addr
+- :ntop_gtpv2_c2s_s5_s8_sgw_gtpu_ip
+57931:
+- :ip4_addr
+- :ntop_gtpv2_s2c_s5_s8_sgw_gtpu_ip
+57932:
+- :string
+- :ntop_http_x_forwarded_for
+57933:
+- :string
+- :ntop_http_via
+57934:
+- :string
+- :ntop_ssdp_host
+57935:
+- :string
+- :ntop_ssdp_usn
+57936:
+- :string
+- :ntop_netbios_query_name
+57937:
+- :string
+- :ntop_netbios_query_type
+57938:
+- :string
+- :ntop_netbios_response
+57939:
+- :string
+- :ntop_netbios_query_os
+57940:
+- :string
+- :ntop_ssdp_server
+57941:
+- :string
+- :ntop_ssdp_type
+57942:
+- :string
+- :ntop_ssdp_method
+57943:
+- :ip4_addr
+- :ntop_nprobe_ipv4_addr
