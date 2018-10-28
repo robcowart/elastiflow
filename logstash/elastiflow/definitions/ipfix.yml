@@ -7130,54 +7130,58 @@
 
 # Ziften Technologies
 44619:
-  299:
-  - :uint32
-  - :zflow_account_id
-  266:
-  - :string
-  - :zflow_agent_guid
-  263:
-  - :string
-  - :zflow_filename
-  301:
-  - :string
-  - :zflow_command
-  280:
-  - :string
-  - :zflow_file_sig_algo
-  283:
-  - :string
-  - :zflow_file_sig_algo_char
-  279:
-  - :string
-  - :zflow_file_sig
-  267:
-  - :string
-  - :zflow_hostname
-  261:
-  - :string
-  - :zflow_image_path
   257:
   - :uint8
-  - :zflow_inbound
-  300:
-  - :uint32
-  - :zflow_mod_time_secs
-  298:
-  - :string
-  - :zflow_parent_file_sig
-  297:
-  - :string
-  - :zflow_parent_image_path
-  259:
-  - :uint32
-  - :zflow_parent_pid
+  - :ziften_inbound
   258:
   - :uint32
-  - :zflow_pid
+  - :ziften_pid
+  259:
+  - :uint32
+  - :ziften_parent_pid
+  261:
+  - :string
+  - :ziften_image_path
+  263:
+  - :string
+  - :ziften_filename
   264:
   - :string
-  - :zflow_platform
+  - :ziften_platform
+  266:
+  - :string
+  - :ziften_agent_guid
+  267:
+  - :string
+  - :ziften_hostname
+  269:
+  - :string
+  - :ziften_269
+  279:
+  - :string
+  - :ziften_file_sig
+  280:
+  - :string
+  - :ziften_file_sig_algo
+  283:
+  - :string
+  - :ziften_file_sig_algo_char
   296:
   - :string
-  - :zflow_user_sid
+  - :ziften_user_sid
+  297:
+  - :string
+  - :ziften_parent_image_path
+  298:
+  - :string
+  - :ziften_parent_file_sig
+  299:
+  - :uint32
+  - :ziften_account_id
+  300:
+  - :uint32
+  - :ziften_mod_time_secs
+  301:
+  - :string
+  - :ziften_command
+  
