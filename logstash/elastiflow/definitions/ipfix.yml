@@ -16,6 +16,7 @@
 #------------------------------------------------------------------------------
 
 ---
+# IPFIX
 0:
   0:
   - :skip
@@ -211,38 +212,50 @@
   64:
   - :uint32
   - :ipv6ExtensionHeaders
+  65:
+  - :uint32
+  - :transportPacketLoss
   66:
   - :uint32
   - :transportUnreachability
+  67:
+  - :uint32
+  - :transportLatency
+  #68:
+  #- :
+  #- :dataPoints
+  #69:
+  #- :
+  #- :variance
   70:
-  - :string
+  - :octetarray
   - :mplsTopLabelStackSection
   71:
-  - :string
+  - :octetarray
   - :mplsLabelStackSection2
   72:
-  - :string
+  - :octetarray
   - :mplsLabelStackSection3
   73:
-  - :string
+  - :octetarray
   - :mplsLabelStackSection4
   74:
-  - :string
+  - :octetarray
   - :mplsLabelStackSection5
   75:
-  - :string
+  - :octetarray
   - :mplsLabelStackSection6
   76:
-  - :string
+  - :octetarray
   - :mplsLabelStackSection7
   77:
-  - :string
+  - :octetarray
   - :mplsLabelStackSection8
   78:
-  - :string
+  - :octetarray
   - :mplsLabelStackSection9
   79:
-  - :string
+  - :octetarray
   - :mplsLabelStackSection10
   80:
   - :mac_addr
@@ -295,6 +308,9 @@
   96:
   - :string
   - :applicationName
+  97:
+  - :string
+  - :subApplicationTag
   98:
   - :uint8
   - :postIpDiffServCodePoint
@@ -316,6 +332,24 @@
   104:
   - :string
   - :layer2packetSectionData
+  105:
+  - :uint8
+  - :applicationVersion
+  106:
+  - :string
+  - :applicationVersionName
+  107:
+  - :string
+  - :applicationVendor
+  109:
+  - :string
+  - :subApplicationName
+  110:
+  - :string
+  - :subApplicationDescription
+  111:
+  - :uint32
+  - :templateParameterRangeEnd
   128:
   - :uint32
   - :bgpNextAdjacentAsNumber
@@ -1224,6 +1258,153 @@
   433:
   - :uint64
   - :ignoredLayer2FrameTotalCount
+  434:
+  - :uint32
+  - :mibObjectValueInteger
+  435:
+  - :octetarray
+  - :mibObjectValueOctetString
+  436:
+  - :octetarray
+  - :mibObjectValueOID
+  437:
+  - :octetarray
+  - :mibObjectValueBits
+  438:
+  - :ip4_addr
+  - :mibObjectValueIPAddress
+  439:
+  - :uint64
+  - :mibObjectValueCounter
+  440:
+  - :uint32
+  - :mibObjectValueGauge
+  441:
+  - :uint32
+  - :mibObjectValueTimeTicks
+  442:
+  - :uint32
+  - :mibObjectValueUnsigned
+  443:
+  - :octetarray
+  - :mibObjectValueTable
+  444:
+  - :octetarray
+  - :mibObjectValueRow
+  445:
+  - :octetarray
+  - :mibObjectIdentifier
+  446:
+  - :uint32
+  - :mibSubIdentifier
+  447:
+  - :uint64
+  - :mibIndexIndicator
+  448:
+  - :uint8
+  - :mibCaptureTimeSemantics
+  449:
+  - :octetarray
+  - :mibContextEngineID
+  450:
+  - :string
+  - :mibContextName
+  451:
+  - :string
+  - :mibObjectName
+  452:
+  - :string
+  - :mibObjectDescription
+  453:
+  - :string
+  - :mibObjectSyntax
+  454:
+  - :string
+  - :mibModuleName
+  455:
+  - :string
+  - :mobileIMSI
+  456:
+  - :string
+  - :mobileMSISDN
+  457:
+  - :uint16
+  - :httpStatusCode
+  458:
+  - :uint16
+  - :sourceTransportPortsLimit
+  459:
+  - :string
+  - :httpRequestMethod
+  460:
+  - :string
+  - :httpRequestHost
+  461:
+  - :string
+  - :httpRequestTarget
+  462:
+  - :string
+  - :httpMessageVersion
+  463:
+  - :uint32
+  - :natInstanceID
+  464:
+  - :octetarray
+  - :internalAddressRealm
+  465:
+  - :octetarray
+  - :externalAddressRealm
+  466:
+  - :uint32
+  - :natQuotaExceededEvent
+  467:
+  - :uint32
+  - :natThresholdEvent
+  468:
+  - :string
+  - :httpUserAgent
+  469:
+  - :string
+  - :httpContentType
+  470:
+  - :string
+  - :httpReasonPhrase
+  471:
+  - :uint32
+  - :maxSessionEntries
+  472:
+  - :uint32
+  - :maxBIBEntries
+  473:
+  - :uint32
+  - :maxEntriesPerUser
+  474:
+  - :uint32
+  - :maxSubscribers
+  475:
+  - :uint32
+  - :maxFragmentsPendingReassembly
+  476:
+  - :uint32
+  - :addressPoolHighThreshold
+  477:
+  - :uint32
+  - :addressPoolLowThreshold
+  478:
+  - :uint32
+  - :addressPortMappingHighThreshold
+  479:
+  - :uint32
+  - :addressPortMappingLowThreshold
+  480:
+  - :uint32
+  - :addressPortMappingPerUserHighThreshold
+  481:
+  - :uint32
+  - :globalAddressMappingHighThreshold
+  482:
+  - :octetarray
+  - :vpnIdentifier  
   42128:
   - :uint32
   - :policyQosQueueID
@@ -1244,12 +1425,12 @@
   1108:
   - :string
   - :cisco_avc_app_sub_app_desc
-  #1232:
-  #- :
-  #- :ciscoTrustSecSourceIdentifier
-  #1233:
-  #- :
-  #- :ciscoTrustSecDestinationIdentifier
+  1232:
+  - :string
+  - :cisco_trustsec_src_id
+  1233:
+  - :string
+  - :cisco_trustsec_dst_id
   2881:
   - :string
   - :cisco_avc_p2p_tech
@@ -1261,22 +1442,22 @@
   - :cisco_avc_encrypt_tech
   4238:
   - :uint32
-  - :cisco_med_app_media_bytes_rate
+  - :cisco_medianet_app_media_bytes_rate
   4241:
   - :uint32
-  - :cisco_med_app_media_packets_rate
+  - :cisco_medianet_app_media_packets_rate
   4251:
   - :uint32
-  - :cisco_med_transp_packets_lost
+  - :cisco_medianet_transport_packets_lost
   4255:
   - :uint32
-  - :cisco_med_transp_rtp_jitter_mean
+  - :cisco_medianet_transport_rtp_jitter_mean
   4256:
   - :uint32
-  - :cisco_med_transp_rtp_jitter_min
+  - :cisco_medianet_transport_rtp_jitter_min
   4257:
   - :uint32
-  - :cisco_med_transp_rtp_jitter_max
+  - :cisco_medianet_transport_rtp_jitter_max
   8232:
   - :string
   - :cisco_policy_qos_class_hierarchy
@@ -1442,12 +1623,15 @@
   12244:
   - :string
   - :cisco_avc_app_business_relevance
-  #16386:
+  #16386:ciscoETAInitialDataPacketOld
   #- :
-  #- :ciscoETAInitialDataPacketOld
-  #16387:
+  #- :cisco_eta_init_data_pkt_old
+  #16387:ciscoETASequenceofPktLengthsandTimesOld
   #- :
-  #- :ciscoETASequenceofPktLengthsandTimesOld
+  #- :cisco_eta_seq_pkt_len_times_old
+  20000:
+  - :uint16
+  - :cisco_wlan_id
   32733:
   - :uint64
   - :cisco_timestamp_abs_monitor_interval
@@ -1460,30 +1644,30 @@
   33002:
   - :uint16
   - :cisco_asa_fw_ext_event
-  #34000:
-  #- :
-  #- :ciscoTrustSecSourceIdentifier
-  #34001:
-  #- :
-  #- :ciscoTrustSecDestinationIdentifier
-  #34002:
-  #- :
-  #- :ciscoTrustSecSourceName
-  #34003:
-  #- :
-  #- :ciscoTrustSecDestinationName
-  #37016:
-  #- :
-  #- :medianet_transport_round_trip_time
-  #37019:
-  #- :
-  #- :medianet_transport_packets_lost
+  34000:
+  - :string
+  - :cisco_trustsec_src_id
+  34001:
+  - :string
+  - :cisco_trustsec_dst_id
+  34002:
+  - :string
+  - :cisco_trustsec_src_name
+  34003:
+  - :string
+  - :cisco_trustsec_dst_name
+  37016:
+  - :uint32
+  - :cisco_medianet_transport_round_trip_time
+  37019:
+  - :uint32
+  - :cisco_medianet_transport_packets_lost
   37021:
   - :uint32
-  - :cisco_trns_packets_lost_rate
-  #37023:
-  #- :
-  #- :medianet_transport_rtp_jitter_mean
+  - :cisco_medianet_transport_packets_lost_rate
+  37023:
+  - :uint32
+  - :cisco_medianet_transport_rtp_jitter_mean
   37063:
   - :uint32
   - :cisco_network_delay_avg
@@ -1565,12 +1749,12 @@
   41000:
   - :string
   - :cisco_policy_class_hierarchy
-  #41105:
-  #- :
-  #- :ciscoARTServerBytes
-  #41106:
-  #- :
-  #- :ciscoARTClientBytes
+  41105:
+  - :uint32
+  - :cisco_art_server_bytes
+  41106:
+  - :uint32
+  - :cisco_art_client_bytes
   42020:
   - :uint8
   - :cisco_waas_segment
@@ -1691,12 +1875,12 @@
   44944:
   - :uint16
   - :cisco_byte_distribution
-  #44946:
-  #- :uint16
-  #- :cisco_tls_cipher_suites
+  44946:
+  - :uint16
+  - :cisco_tls_cipher_suites
   44948:
   - :uint8
-  - :cisco_tls_version
+  - :cisco_tls_ver
   44949:
   - :uint16
   - :cisco_tls_key_length
@@ -1732,7 +1916,7 @@
   #- :cisco_tls_extension_types
   #45003:
   #- :
-  #- :ciscoAVCSubApplicationValue
+  #- :cisco_avc_sub_app
   45004:
   - :ip4_addr
   - :cisco_client_ipv4_addr
@@ -1747,13 +1931,88 @@
   - :cisco_server_ipv6_addr
   45008:
   - :uint16
-  - :cisco_client_transport_port
+  - :cisco_client_l4_port
   45009:
   - :uint16
-  - :cisco_server_transport_port
+  - :cisco_server_l4_port
   45010:
   - :uint32
   - :cisco_conn_id
+  45100:
+  - :octetarray
+  - :cisco_nvzflow_udid
+  45101:
+  - :string
+  - :cisco_nvzflow_user
+  45102:
+  - :string
+  - :cisco_nvzflow_os_name
+  45103:
+  - :string
+  - :cisco_nvzflow_os_ver
+  45104:
+  - :string
+  - :cisco_nvzflow_sys_vendor
+  45105:
+  - :string
+  - :cisco_nvzflow_sys_type
+  45106:
+  - :string
+  - :cisco_nvzflow_proc_acct
+  45107:
+  - :string
+  - :cisco_nvzflow_parent_proc_acct
+  45108:
+  - :string
+  - :cisco_nvzflow_proc
+  45109:
+  - :octetarray
+  - :cisco_nvzflow_proc_hash
+  45110:
+  - :string
+  - :cisco_nvzflow_parent_proc
+  45111:
+  - :octetarray
+  - :cisco_nvzflow_parent_proc_hash
+  45112:
+  - :string
+  - :cisco_nvzflow_dns_suffix
+  45113:
+  - :string
+  - :cisco_nvzflow_dst_hostname
+  45114:
+  - :uint64
+  - :cisco_nvzflow_l4_bytes_in
+  45115:
+  - :uint64
+  - :cisco_nvzflow_l4_bytes_out
+  45119:
+  - :string
+  - :cisco_nvzflow_os_edition
+  45120:
+  - :string
+  - :cisco_nvzflow_module_list
+  45121:
+  - :octetarray
+  - :cisco_nvzflow_hash_list
+  45122:
+  - :octetarray
+  - :cisco_nvzflow_coord_list
+  45123:
+  - :uint32
+  - :cisco_nvzflow_iface_info_uid
+  45124:
+  - :uint32
+  - :cisco_nvzflow_iface_index
+  45125:
+  - :uint8
+  - :cisco_nvzflow_iface_type
+  45126:
+  - :string
+  - :cisco_nvzflow_iface_name
+  45127:
+  - :string
+  - :cisco_nvzflow_iface_details_list
 
 # Alcatel-Lucent (formerly 'Alcatel Data Network')
 637:
@@ -1769,7 +2028,7 @@
   - :string
   - :alu_nat_sub_string
 
-# Ixia Communications (3054)
+# Ixia Communications
 3054:
   0:
   - :skip
@@ -1811,7 +2070,7 @@
   - :ixia_dst_region_code
   143:
   - :string
-  - :ixia_dst_region_node
+  - :ixia_dst_region
   145:
   - :string
   - :ixia_dst_city
@@ -1924,7 +2183,7 @@
   - :netscaler_syslog_timestamp
   140:
   - :string
-  - :netscaler_http_req_referer
+  - :netscaler_http_req_referrer
   141:
   - :string
   - :netscaler_http_req_method
@@ -1936,10 +2195,10 @@
   - :netscaler_http_req_user_agent
   144:
   - :uint16
-  - :netscaler_http_rsp_status
+  - :netscaler_http_resp_status
   145:
   - :uint64
-  - :netscaler_http_rsp_len
+  - :netscaler_http_resp_len
   146:
   - :uint64
   - :netscaler_server_ttfb
@@ -2056,7 +2315,7 @@
   - :netscaler_http_res_set_cookie2
   190:
   - :string
-  - :netscaler_http_req_x_forward_for
+  - :netscaler_http_req_x_forwarded_for
   192:
   - :octetarray
   - :netscaler_conn_chain_id
@@ -2068,7 +2327,7 @@
   - :netscaler_ica_sess_guid
   201:
   - :string
-  - :netscaleica_client_ver
+  - :netscaler_ica_client_ver
   202:
   - :uint16
   - :netscaler_ica_client_type
@@ -2185,7 +2444,7 @@
   - :netscaler_ica_serverside_jitter
   245:
   - :uint32
-  - :netscaler_ica_app_process_id
+  - :netscaler_ica_app_pid
   246:
   - :string
   - :netscaler_ica_app_module_path
@@ -2728,70 +2987,70 @@
   - :netscaler_unk_494
   507:
   - :uint32
-  - :netscaler_unknown507
+  - :netscaler_unk_507
   508:
   - :uint32
-  - :netscaler_unknown508
+  - :netscaler_unk_508
   509:
   - :uint32
-  - :netscaler_unknown509
+  - :netscaler_unk_509
   510:
   - :uint32
-  - :netscaler_unknown510
+  - :netscaler_unk_510
   511:
   - :uint32
-  - :netscaler_unknown511
+  - :netscaler_unk_511
   512:
   - :uint8
-  - :netscaler_unknown512
+  - :netscaler_unk_512
   513:
   - :uint16
-  - :netscaler_unknown513
+  - :netscaler_unk_513
   514:
   - :uint16
-  - :netscaler_unknown514
+  - :netscaler_unk_514
   518:
   - :uint64
-  - :netscaler_unknown518
+  - :netscaler_unk_518
   519:
   - :uint64
-  - :netscaler_unknown519
+  - :netscaler_unk_519
   520:
   - :uint64
-  - :netscaler_unknown520
+  - :netscaler_unk_520
   521:
   - :uint16
-  - :netscaler_unknown521
+  - :netscaler_unk_521
   522:
   - :uint32
-  - :netscaler_unknown522
+  - :netscaler_unk_522
   523:
   - :uint32
-  - :netscaler_unknown523
+  - :netscaler_unk_523
   532:
   - :uint64
-  - :netscaler_unknown532
+  - :netscaler_unk_532
   533:
   - :uint64
-  - :netscaler_unknown533
+  - :netscaler_unk_533
   534:
   - :uint64
-  - :netscaler_unknown534
+  - :netscaler_unk_534
   535:
   - :uint64
-  - :netscaler_unknown535
+  - :netscaler_unk_535
   536:
   - :uint32
-  - :netscaler_unknown536
+  - :netscaler_unk_536
   537:
   - :uint16
-  - :netscaler_unknown537
+  - :netscaler_unk_537
   538:
   - :uint15
-  - :netscaler_unknown538
+  - :netscaler_unk_538
   541:
   - :uint32
-  - :netscaler_unknown541
+  - :netscaler_unk_541
 
 # CERT Coordination Center
 6871:
@@ -2829,7 +3088,7 @@
   - :cert_rev_flow_delta_millis
   29:
   - :uint16
-  - :certvobsolete_rev_vlan_id
+  - :cert_obsolete_rev_vlan_id
   30:
   - :uint8
   - :cert_silk_flow_type
@@ -2856,7 +3115,7 @@
   - :cert_first_packet_banner
   39:
   - :octetarray
-  - :certvsecondvpacket_banner
+  - :cert_second_packet_banner
   40:
   - :uint16
   - :cert_flow_attr
@@ -2901,7 +3160,7 @@
   - :cert_http_ver
   115:
   - :string
-  - :cert_http_referer
+  - :cert_http_referrer
   116:
   - :string
   - :cert_http_location
@@ -3318,7 +3577,7 @@
   - :cert_http_via
   254:
   - :string
-  - :cert_http_x_forward_for
+  - :cert_http_x_forwarded_for
   255:
   - :string
   - :cert_http_expires
@@ -3420,7 +3679,7 @@
   - :cert_rtp_payload_type
   288:
   - :uint16
-  - :cert_sslvrecord_ver
+  - :cert_ssl_record_ver
   289:
   - :uint64
   - :cert_mptcp_init_data_seq_num
@@ -3447,7 +3706,7 @@
   - :cert_ssl_cert
   297:
   - :uint8
-  - :cert_dhcpvoption
+  - :cert_dhcp_option
   298:
   - :octetarray
   - :cert_ssl_cert_sha1
@@ -3614,37 +3873,58 @@
   - :skip
   880:
   - :uint8
-  - :vmware_unk_880
+  - :vmware_tenant_proto
   881:
-  - :uint32
-  - :vmware_unk_881
+  - :ip4_addr
+  - :vmware_tenant_src_ipv4
   882:
-  - :uint32
-  - :vmware_unk_882
+  - :ip4_addr
+  - :vmware_tenant_dst_ipv4
   883:
-  - :string
-  - :vmware_unk_883
+  - :ip6_addr
+  - :vmware_tenant_src_ipv6
   884:
-  - :string
-  - :vmware_unk_884
+  - :ip6_addr
+  - :vmware_tenant_dst_ipv6
   886:
   - :uint16
-  - :vmware_unk_886
+  - :vmware_tenant_src_port
   887:
   - :uint16
-  - :vmware_unk_887
+  - :vmware_tenant_dst_port
   888:
   - :uint16
-  # source: https://github.com/logstash-plugins/logstash-codec-netflow/issues/28#issuecomment-371811848
-  - :vmware_egress_interface_type
+  - :vmware_egress_iface_attr
   889:
   - :uint8
-  # source: https://github.com/logstash-plugins/logstash-codec-netflow/issues/28#issuecomment-371811848
-  - :vmware_observation_domain
+  - :vmware_vxlan_export_role
   890:
   - :uint16
-  # source: https://github.com/logstash-plugins/logstash-codec-netflow/issues/28#issuecomment-371811848
-  - :vmware_ingress_interface_type
+  - :vmware_ingress_iface_attr
+  891:
+  - :uint8
+  - :vmware_tunnel_type
+  892:
+  - :octetarray
+  - :vmware_tunnel_key
+  893:
+  - :ip4_addr
+  - :vmware_tunnel_src_ipv4_addr
+  894:
+  - :ip4_addr
+  - :vmware_tunnel_dst_ipv4_addr
+  895:
+  - :uint8
+  - :vmware_tunnel_protocol_id
+  896:
+  - :uint16
+  - :vmware_tunnel_src_transport_port
+  897:
+  - :uint16
+  - :vmware_tunnel_dst_transport_port
+  898:
+  - :string
+  - :vmware_virt_observation_id
 
 # LANcope
 #8712:
@@ -3761,22 +4041,22 @@
   #- :lancope_trustsec_src_id
   #29844:
   #- :
-  #- :lancope_endpoint_flow_process_user
+  #- :lancope_endpoint_flow_proc_user
   #29845:
   #- :
-  #- :lancope_endpoint_flow_process
+  #- :lancope_endpoint_flow_proc
   #29846:
   #- :
-  #- :lancope_endpoint_flow_process_hash
+  #- :lancope_endpoint_flow_proc_hash
   #29847:
   #- :
-  #- :lancope_endpoint_flow_parent_process_user
+  #- :lancope_endpoint_flow_parent_proc_user
   #29848:
   #- :
-  #- :lancope_endpoint_flow_parent_process
+  #- :lancope_endpoint_flow_parent_proc
   #29849:
   #- :
-  #- :lancope_endpoint_flow_parent_process_hash
+  #- :lancope_endpoint_flow_parent_proc_hash
 
 # SonicWALL, Inc.
 8741:
@@ -4143,10 +4423,10 @@
   - :string
   - :sonic_vpn_tunnel
   158:
-  - :uint32
+  - :ip4_addr
   - :sonic_vpn_local_gw
   159:
-  - :uint32
+  - :ip4_addr
   - :sonic_vpn_remote_gw
   160:
   - :uint32
@@ -4263,7 +4543,7 @@
   - :uint32
   - :sonic_top_apps_rate
 
-# Sophos (foremerly 'Astaro AG')
+# Sophos (formerly 'Astaro AG')
 9789:
   0:
   - :skip
@@ -4400,10 +4680,10 @@
   - :f5_ip_intel_threat_name
   43:
   - :string
-  - :f5_destinationgeo
+  - :f5_destination_geo
   44:
   - :string
-  - :f5_sourcegeo
+  - :f5_source_geo
   45:
   - :string
   - :f5_ip_intel_policy_name
@@ -4511,7 +4791,7 @@
   - :f5_transact_stop_secs
   87:
   - :uint16
-  - :f5_url_category_id
+  - :f5_url_category
   88:
   - :uint64
   - :f5_downlink_volume
@@ -4550,85 +4830,85 @@
 10704:
   1:
   - :uint32
-  - :bcuda_timestamp
+  - :barracuda_timestamp
   2:
   - :uint8
-  - :bcuda_log_op
+  - :barracuda_log_op
   3:
   - :uint8
-  - :bcuda_traffic_type
+  - :barracuda_traffic_type
   4:
   - :string
-  - :bcuda_fw_rule
+  - :barracuda_fw_rule
   5:
   - :string
-  - :bcuda_service_name
+  - :barracuda_service
   6:
   - :uint32
-  - :bcuda_reason
+  - :barracuda_reason
   7:
   - :string
-  - :bcuda_reason_text
+  - :barracuda_reason_text
   8:
   - :ip4_addr
-  - :bcuda_bind_ipv4_addr
+  - :barracuda_bind_ipv4_addr
   9:
   - :uint16
-  - :bcuda_bind_transport_port
+  - :barracuda_bind_l4_port
   10:
   - :ip4_addr
-  - :bcuda_conn_ipv4_addr
+  - :barracuda_conn_ipv4_addr
   11:
   - :uint16
-  - :bcuda_conn_transport_port
+  - :barracuda_conn_l4_port
   12:
   - :uint32
-  - :bcuda_audit_counter
+  - :barracuda_audit_counter
 
 # Hermes Precisa Australia (this PEN is often sent in error from Barracuda devices)
 12326:
   1:
   - :uint32
-  - :bcuda_timestamp
+  - :barracuda_timestamp
   2:
   - :uint8
-  - :bcuda_logop
+  - :barracuda_logop
   3:
   - :uint8
-  - :bcuda_traffic_type
+  - :barracuda_traffic_type
   4:
   - :string
-  - :bcuda_fw_rule
+  - :barracuda_fw_rule
   5:
   - :string
-  - :bcuda_service_name
+  - :barracuda_service
   6:
   - :uint32
-  - :bcuda_reason
+  - :barracuda_reason
   7:
   - :string
-  - :bcuda_reason_text
+  - :barracuda_reason_text
   8:
   - :ip4_addr
-  - :bcuda_bind_ipv4_addr
+  - :barracuda_bind_ipv4_addr
   9:
   - :uint16
-  - :bcuda_bind_transport_port
+  - :barracuda_bind_l4_port
   10:
   - :ip4_addr
-  - :bcuda_conn_ipv4_addr
+  - :barracuda_conn_ipv4_addr
   11:
   - :uint16
-  - :bcuda_conn_transport_port
+  - :barracuda_conn_l4_port
   12:
   - :uint32
-  - :bcuda_audit_counter
+  - :barracuda_audit_counter
 
 # Plixer International
 13745:
   100:
   - :ip4_addr
-  - :plixer_client_ip_v4
+  - :plixer_client_ipv4_addr
   101:
   - :string
   - :plixer_client_hostname
@@ -4640,7 +4920,7 @@
   - :plixer_server_hostname
   104:
   - :ip4_addr
-  - :plixer_server_ip_v4
+  - :plixer_server_ipv4_addr
   105:
   - :string
   - :plixer_recipient_addr
@@ -4688,7 +4968,7 @@
   - :procera_service
   2:
   - :string
-  - :procera_baseservice
+  - :procera_base_service
   3:
   - :uint64
   - :procera_in_bytes
@@ -4714,10 +4994,10 @@
   - :uint32
   - :procera_out_shaping_drops
   11:
-  - :int32
+  - :uint32
   - :procera_int_rtt
   12:
-  - :int32
+  - :uint32
   - :procera_ext_rtt
   15:
   - :string
@@ -4745,7 +5025,7 @@
   - :procera_http_url
   23:
   - :string
-  - :procera_http_referer
+  - :procera_http_referrer
   24:
   - :uint16
   - :procera_http_resp_status
@@ -4843,151 +5123,151 @@
 26866:
   1:
   - :string
-  - :gmon_http_req_url
+  - :gigamon_http_req_url
   2:
   - :uint16
-  - :gmon_http_rsp_status
+  - :gigamon_http_resp_status
   101:
   - :string
-  - :gmon_ssl_cert_issuer_common
+  - :gigamon_ssl_cert_issuer_common
   102:
   - :string
-  - :gmon_ssl_cert_subj_common
+  - :gigamon_ssl_cert_subj_common
   103:
   - :string
-  - :gmon_ssl_cert_issuer
+  - :gigamon_ssl_cert_issuer
   104:
   - :string
-  - :gmon_ssl_cert_subj
+  - :gigamon_ssl_cert_subj
   105:
   - :string
-  - :gmon_ssl_cert_valid_not_before
+  - :gigamon_ssl_cert_valid_not_before
   106:
   - :string
-  - :gmon_ssl_cert_valid_not_after
+  - :gigamon_ssl_cert_valid_not_after
   107:
   - :octetarray
-  - :gmon_ssl_cert_serial_num
+  - :gigamon_ssl_cert_serial_num
   108:
   - :octetarray
-  - :gmon_ssl_cert_sig_algo
+  - :gigamon_ssl_cert_sig_algo
   109:
   - :octetarray
-  - :gmon_ssl_cert_subj_pub_algo
+  - :gigamon_ssl_cert_subj_pub_algo
   110:
   - :uint16
-  - :gmon_ssl_cert_subj_pubkey_size
+  - :gigamon_ssl_cert_subj_pubkey_size
   111:
   - :string
-  - :gmon_ssl_cert_subj_alt_name
+  - :gigamon_ssl_cert_subj_alt_name
   112:
   - :string
-  - :gmon_ssl_server_name_ind
+  - :gigamon_ssl_server_name_ind
   113:
   - :uint16
-  - :gmon_ssl_server_ver
+  - :gigamon_ssl_server_ver
   114:
   - :uint16
-  - :gmon_ssl_server_cipher
+  - :gigamon_ssl_server_cipher
   115:
   - :uint8
-  - :gmon_ssl_server_compress_method
+  - :gigamon_ssl_server_compress_method
   116:
   - :octetarray
-  - :gmon_ssl_server_sess_id
+  - :gigamon_ssl_server_sess_id
   201:
   - :uint16
-  - :gmon_dns_id
+  - :gigamon_dns_id
   202:
   - :uint8
-  - :gmon_dns_op_code
+  - :gigamon_dns_op_code
   203:
   - :uint8
-  - :gmon_dns_resp_code
+  - :gigamon_dns_resp_code
   204:
   - :string
-  - :gmon_dns_query
+  - :gigamon_dns_query
   205:
   - :string
-  - :gmon_dns_resp
+  - :gigamon_dns_resp
   206:
   - :uint32
-  - :gmon_dns_resp_ttl
+  - :gigamon_dns_resp_ttl
   207:
   - :ip4_addr
-  - :gmon_dns_resp_ipv4_addr
+  - :gigamon_dns_resp_ipv4_addr
   208:
   - :ip6_addr
-  - :gmon_dns_resp_ipv6_addr
+  - :gigamon_dns_resp_ipv6_addr
   209:
   - :string
-  - :gmon_dns_bits
+  - :gigamon_dns_bits
   210:
   - :uint16
-  - :gmon_dns_qd_count
+  - :gigamon_dns_qd_count
   211:
   - :uint16
-  - :gmon_dns_an_count
+  - :gigamon_dns_an_count
   212:
   - :uint16
-  - :gmon_dns_ns_count
+  - :gigamon_dns_ns_count
   213:
   - :uint16
-  - :gmon_dns_ar_count
+  - :gigamon_dns_ar_count
   214:
   - :uint16
-  - :gmon_dns_query_type
+  - :gigamon_dns_query_type
   215:
   - :uint16
-  - :gmon_dns_query_class
+  - :gigamon_dns_query_class
   216:
   - :uint16
-  - :gmon_dns_resp_type
+  - :gigamon_dns_resp_type
   217:
   - :uint16
-  - :gmon_dns_resp_class
+  - :gigamon_dns_resp_class
   218:
   - :uint16
-  - :gmon_dns_resp_rd_len
+  - :gigamon_dns_resp_rd_len
   219:
   - :string
-  - :gmon_dns_resp_rdata
+  - :gigamon_dns_resp_rdata
   220:
   - :string
-  - :gmon_dns_auth_name
+  - :gigamon_dns_auth_name
   221:
   - :uint16
-  - :gmon_dns_auth_type
+  - :gigamon_dns_auth_type
   222:
   - :uint16
-  - :gmon_dns_auth_class
+  - :gigamon_dns_auth_class
   223:
   - :uint32
-  - :gmon_dns_auth_ttl
+  - :gigamon_dns_auth_ttl
   224:
   - :uint16
-  - :gmon_dns_auth_rd_len
+  - :gigamon_dns_auth_rd_len
   225:
   - :string
-  - :gmon_dns_authority_rdata
+  - :gigamon_dns_authority_rdata
   226:
   - :string
-  - :gmon_dns_addl_name
+  - :gigamon_dns_addl_name
   227:
   - :uint16
-  - :gmon_dns_addl_type
+  - :gigamon_dns_addl_type
   228:
   - :uint16
-  - :gmon_dns_addl_class
+  - :gigamon_dns_addl_class
   229:
   - :uint32
-  - :gmon_dns_addl_ttl
+  - :gigamon_dns_addl_ttl
   230:
   - :uint16
-  - :gmon_dns_addl_rd_len
+  - :gigamon_dns_addl_rd_len
   231:
   - :string
-  - :gmon_dns_addl_rdata
+  - :gigamon_dns_addl_rdata
 
 # IPFIX Reverse Information Element Private Enterprise
 29305:
@@ -6138,10 +6418,10 @@
   - :cace_remote_ipv6_addr
   4:
   - :uint16
-  - :cace_local_transport_port
+  - :cace_local_l4_port
   5:
   - :uint16
-  - :cace_remote_transport_port
+  - :cace_remote_l4_port
   6:
   - :uint16
   - :cace_local_ipv4_id
@@ -6154,11 +6434,9 @@
   9:
   - :uint32
   - :cace_local_proc_id
-  # Need to be broken out into caceLocalProcessUserNameLen and caceLocalProcessUserName
   10:
   - :string
   - :cace_local_proc_user
-  # Need to be broken out into caceLocalProcessCommandLen and caceLocalProcessCommand
   11:
   - :string
   - :cace_local_proc_command
@@ -6347,7 +6625,7 @@
   - :ntop_sip_rtp_l4_dst_port
   147:
   - :uint32
-  - :ntop_sip_response_code
+  - :ntop_sip_resp_code
   148:
   - :uint32
   - :ntop_sip_reason_cause
@@ -6401,10 +6679,10 @@
   - :ntop_http_ret_code
   182:
   - :string
-  - :ntop_http_referer
+  - :ntop_http_referrer
   183:
   - :string
-  - :ntop_http_ua
+  - :ntop_http_user_agent
   184:
   - :string
   - :ntop_http_mime
@@ -6425,7 +6703,7 @@
   - :ntop_bittorrent_hash
   195:
   - :string
-  - :ntop_mysql_server_version
+  - :ntop_mysql_server_ver
   196:
   - :string
   - :ntop_mysql_user
@@ -6437,7 +6715,7 @@
   - :ntop_mysql_query
   199:
   - :uint16
-  - :ntop_mysql_response
+  - :ntop_mysql_resp
   200:
   - :string
   - :ntop_oracle_user
@@ -6476,7 +6754,7 @@
   - :ntop_gtpv1_req_msg_typ
   221:
   - :uint8
-  - :ntop_gtpv1_rsp_msg_type
+  - :ntop_gtpv1_resp_msg_type
   222:
   - :uint32
   - :ntop_gtpv1_c2s_teid_data
@@ -6527,7 +6805,7 @@
   - :ntop_radius_req_msg_type
   241:
   - :uint8
-  - :ntop_radius_rsp_msg_type
+  - :ntop_radius_resp_msg_type
   242:
   - :string
   - :ntop_radius_user
@@ -6578,7 +6856,7 @@
   - :ntop_gtpv2_req_msg_type
   271:
   - :uint8
-  - :ntop_gtpv2_rsp_msg_type
+  - :ntop_gtpv2_resp_msg_type
   272:
   - :uint32
   - :ntop_gtpv2_c2s_s1u_gtpu_teid
@@ -6689,7 +6967,7 @@
   - :ntop_gtpv0_req_msg_type
   322:
   - :uint8
-  - :ntop_gtpv0_rsp_msg_type
+  - :ntop_gtpv0_resp_msg_type
   323:
   - :uint64
   - :ntop_gtpv0_tid
@@ -6899,25 +7177,25 @@
   - :ntop_untunneled_ipv6_dst_addr
   398:
   - :string
-  - :ntop_dns_response
+  - :ntop_dns_resp
   399:
   - :uint32
   - :ntop_diameter_req_msg_type
   400:
   - :uint32
-  - :ntop_diameter_rsp_msg_type
+  - :ntop_diameter_resp_msg_type
   401:
   - :string
   - :ntop_diameter_req_origin_host
   402:
   - :string
-  - :ntop_diameter_rsp_origin_host
+  - :ntop_diameter_resp_origin_host
   403:
   - :string
   - :ntop_diameter_req_user
   404:
   - :uint32
-  - :ntop_diameter_rsp_result_code
+  - :ntop_diameter_resp_result_code
   405:
   - :uint32
   - :ntop_diameter_exp_res_vendor_id
@@ -7103,7 +7381,7 @@
   - :ntop_netbios_query_type
   466:
   - :string
-  - :ntop_netbios_response
+  - :ntop_netbios_resp
   467:
   - :string
   - :ntop_netbios_query_os
@@ -7156,7 +7434,7 @@
   - :ziften_hostname
   269:
   - :string
-  - :ziften_269
+  - :ziften_unk_269
   279:
   - :string
   - :ziften_file_sig
@@ -7177,11 +7455,16 @@
   - :ziften_parent_file_sig
   299:
   - :uint32
-  - :ziften_account_id
+  - :ziften_acct_id
   300:
   - :uint32
   - :ziften_mod_time_secs
   301:
   - :string
   - :ziften_command
-  
+
+# Pluribus Networks
+47269:
+  1:
+  - :uint64
+  - :pluribus_latency_micros

@@ -304,69 +304,69 @@
 100:
 - :string
 - :className
-101:
-- :uint8
-- :classificationEngineId
 #101:
 #- :uint8
-#- :riverbed_wan_visibility
-102:
-- :uint16
-- :layer2packetSectionOffset
-#102:
-#- :ip4_addr
-#- :riverbed_cfe_inpath_addr
-103:
-- :uint16
-- :layer2packetSectionSize
-#103:
-#- :ip4_addr
-#- :riverbed_sfe_inpath_addr
-104:
-- :string
-- :layer2packetSectionData
-#104:
-#- :uint16
-#- :riverbed_cfe_tcp_port
-105:
+#- :classificationEngineId
+101:
 - :uint8
-- :application_version
+- :riverbed_wan_visibility
+#102:
+#- :uint16
+#- :layer2packetSectionOffset
+102:
+- :ip4_addr
+- :riverbed_cfe_inpath_addr
+#103:
+#- :uint16
+#- :layer2packetSectionSize
+103:
+- :ip4_addr
+- :riverbed_sfe_inpath_addr
+#104:
+#- :string
+#- :layer2packetSectionData
+104:
+- :uint16
+- :riverbed_cfe_tcp_port
 #105:
-#- :uint16
-#- :riverbed_sfe_tcp_port
-106:
-- :string
-- :application_version_name
-#106:
-#- :ip4_addr
-#- :riverbed_outer_inpath_addr
-107:
-- :string
-- :application_vendor
-#107:
-#- :uint16
-#- :riverbed_outer_tcp_port
-#108:
-#- :uint32
-#- :riverbed_retrans_packets
-109:
-- :string
-- :sub_application_name
-#109:
-#- :uint32
-#- :riverbed_retrans_bytes
-110:
-- :string
-- :sub_application_description
-#110:
-#- :uint32
-#- :riverbed_tcp_conn_rtt
-111:
-- :uint32
-- :template_parameter_range_end
-#111:
 #- :uint8
-#- :riverbed_fe_type
+#- :application_version
+105:
+- :uint16
+- :riverbed_sfe_tcp_port
+#106:
+#- :string
+#- :application_version_name
+106:
+- :ip4_addr
+- :riverbed_outer_inpath_addr
+#107:
+#- :string
+#- :application_vendor
+107:
+- :uint16
+- :riverbed_outer_tcp_port
+108:
+- :uint32
+- :riverbed_retrans_packets
+#109:
+#- :string
+#- :sub_application_name
+109:
+- :uint32
+- :riverbed_retrans_bytes
+#110:
+#- :string
+#- :sub_application_description
+110:
+- :uint32
+- :riverbed_tcp_conn_rtt
+#111:
+#- :uint32
+#- :template_parameter_range_end
+111:
+- :uint8
+- :riverbed_fe_type
 128:
 - :uint32
 - :bgpNextAdjacentAsNumber
