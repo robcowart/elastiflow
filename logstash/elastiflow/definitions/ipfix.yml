@@ -1458,6 +1458,33 @@
   4257:
   - :uint32
   - :cisco_medianet_transport_rtp_jitter_max
+  6901:
+  - :ipv4
+  - :cisco_ipt_dialing_phone
+  6902:
+  - :string
+  - :cisco_ipt_dialing_user
+  6903:
+  - :ipv4
+  - :cisco_ipt_dialed_phone
+  6904:
+  - :string
+  - :cisco_ipt_dialed_user
+  6905:
+  - :uint32
+  - :cisco_ipt_call_duration
+  6906:
+  - :uint32
+  - :cisco_ipt_call_end_reason
+  6911:
+  - :uint32
+  - :cisco_ipt_calls_dialed
+  6912:
+  - :uint32
+  - :cisco_ipt_calls_connected
+  6913:
+  - :uint32
+  - :cisco_ipt_calls_failedd
   8232:
   - :string
   - :cisco_policy_qos_class_hierarchy
@@ -1656,6 +1683,9 @@
   34003:
   - :string
   - :cisco_trustsec_dst_name
+  34004:
+  - :string
+  - :cisco_trustsec_switch_derived_sgt
   37016:
   - :uint32
   - :cisco_medianet_transport_round_trip_time

@@ -1326,6 +1326,36 @@
 
 
 
+6901:
+- :ipv4
+- :cisco_ipt_dialing_phone
+6902:
+- :string
+- :cisco_ipt_dialing_user
+6903:
+- :ipv4
+- :cisco_ipt_dialed_phone
+6904:
+- :string
+- :cisco_ipt_dialed_user
+6905:
+- :uint32
+- :cisco_ipt_call_duration
+6906:
+- :uint32
+- :cisco_ipt_call_end_reason
+6911:
+- :uint32
+- :cisco_ipt_calls_dialed
+6912:
+- :uint32
+- :cisco_ipt_calls_connected
+6913:
+- :uint32
+- :cisco_ipt_calls_failedd
+
+
+
 8192:
 - :uint32
 - :streamcore_wan_rtt
