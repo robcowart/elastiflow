@@ -21,6 +21,7 @@ input {
     id => "input_tcp_ipfix_ipv6"
     host => "${ELASTIFLOW_IPFIX_TCP_IPV6_HOST:[::]}"
     port => "${ELASTIFLOW_IPFIX_TCP_IPV6_PORT:4739}"
+    dns_reverse_lookup_enabled => "false"
     codec => netflow {
       versions => [10]
       target => "ipfix"
