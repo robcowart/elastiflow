@@ -1650,6 +1650,18 @@
   12244:
   - :string
   - :cisco_avc_app_business_relevance
+  15901:
+  - :ip4_addr
+  - :cisco_nexus_fastpath_src_addr
+  15902:
+  - :ip4_addr
+  - :cisco_nexus_fastpath_src_port
+  15903:
+  - :ip4_addr
+  - :cisco_nexus_fastpath_dst_addr
+  15904:
+  - :ip4_addr
+  - :cisco_nexus_fastpath_dst_port
   #16386:ciscoETAInitialDataPacketOld
   #- :
   #- :cisco_eta_init_data_pkt_old
@@ -5128,6 +5140,69 @@
   47:
   - :string
   - :procera_template
+  49:
+  - :uint8
+  - :procera_in_dscp
+  50:
+  - :uint8
+  - :procera_out_dscp
+  51:
+  - :uint16
+  - :procera_in_dot1q_vlanid_level_1
+  52:
+  - :uint16
+  - :procera_in_dot1q_vlanid_level_2
+  53:
+  - :uint16
+  - :procera_in_dot1q_vlanid_level_3
+  54:
+  - :uint16
+  - :procera_in_dot1q_vlanid_level_4
+  55:
+  - :uint16
+  - :procera_out_dot1q_vlanid_level_1
+  56:
+  - :uint16
+  - :procera_out_dot1q_vlanid_level_2
+  57:
+  - :uint16
+  - :procera_out_dot1q_vlanid_level_3
+  58:
+  - :uint16
+  - :procera_out_dot1q_vlanid_level_4
+  59:
+  - :int8
+  - :procera_in_dot1q_priority_level_1
+  60:
+  - :int8
+  - :procera_in_dot1q_priority_level_2
+  61:
+  - :int8
+  - :procera_in_dot1q_priority_level_3
+  62:
+  - :int8
+  - :procera_in_dot1q_priority_level_4
+  63:
+  - :int8
+  - :procera_out_dot1q_priority_level_1
+  64:
+  - :int8
+  - :procera_out_dot1q_priority_level_2
+  65:
+  - :int8
+  - :procera_out_dot1q_priority_level_3
+  66:
+  - :int8
+  - :procera_out_dot1q_priority_level_4
+  67:
+  - :int32
+  - :procera_internal_jitter
+  69:
+  - :string
+  - :procera_service_object
+  70:
+  - :string
+  - :procera_remote_geoip
 
 # netfilter/iptables project
 21373:
