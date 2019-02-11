@@ -431,10 +431,10 @@
 - :postMCastOctetTotalCount
 176:
 - :uint8
-- :icmp_type
+- :icmp_type_ipv4
 177:
 - :uint8
-- :icmp_code
+- :icmp_code_ipv4
 178:
 - :uint8
 - :icmp_type_ipv6

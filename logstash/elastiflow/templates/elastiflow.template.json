@@ -9121,7 +9121,7 @@
           }
         },
         {
-          "netflow.icmp_code": {
+          "netflow.icmp_code_ipv4": {
             "path_match": "netflow.icmp_code",
             "mapping": {
               "type": "long"
@@ -9139,6 +9139,14 @@
         {
           "netflow.icmp_type": {
             "path_match": "netflow.icmp_type",
+            "mapping": {
+              "type": "long"
+            }
+          }
+        },
+        {
+          "netflow.icmp_type_ipv4": {
+            "path_match": "netflow.icmp_type_ipv6",
             "mapping": {
               "type": "long"
             }
