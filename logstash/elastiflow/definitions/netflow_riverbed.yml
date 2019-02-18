@@ -1,0 +1,3568 @@
+#------------------------------------------------------------------------------
+# Portions of this file are Copyright (C)2019 Robert Cowart
+# 
+# Portions of this file are subject to the Robert Cowart Public License (the
+# "License") and may not be used or distributed except in compliance with the
+# License. You may obtain a copy of the License at:
+# 
+# http://www.koiossian.com/public/robert_cowart_public_license.txt
+# 
+# Software distributed under the License is distributed on an "AS IS" basis,
+# WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+# the specific language governing rights and limitations under the License.
+# 
+# The Original Source Code was developed by Robert Cowart. Portions created by
+# Robert Cowart are Copyright (C)2018 Robert Cowart. All Rights Reserved.
+#------------------------------------------------------------------------------
+
+---
+# Netflow
+
+0:
+- :skip
+1:
+- 4
+- :in_bytes
+2:
+- 4
+- :in_pkts
+3:
+- 4
+- :flows
+4:
+- 1
+- :protocol
+5:
+- 1
+- :src_tos
+6:
+- 1
+- :tcp_flags
+7:
+- 2
+- :l4_src_port
+8:
+- :ip4_addr
+- :ipv4_src_addr
+9:
+- 1
+- :src_mask
+10:
+- 2
+- :input_snmp
+11:
+- 2
+- :l4_dst_port
+12:
+- :ip4_addr
+- :ipv4_dst_addr
+13:
+- 1
+- :dst_mask
+14:
+- 2
+- :output_snmp
+15:
+- :ip4_addr
+- :ipv4_next_hop
+16:
+- 2
+- :src_as
+17:
+- 2
+- :dst_as
+18:
+- :ip4_addr
+- :bgp_ipv4_next_hop
+19:
+- 4
+- :mul_dst_pkts
+20:
+- 4
+- :mul_dst_bytes
+21:
+- 4
+- :last_switched
+22:
+- 4
+- :first_switched
+23:
+- 4
+- :out_bytes
+24:
+- 4
+- :out_pkts
+25:
+- 2
+- :min_pkt_length
+26:
+- 2
+- :max_pkt_length
+27:
+- :ip6_addr
+- :ipv6_src_addr
+28:
+- :ip6_addr
+- :ipv6_dst_addr
+29:
+- 1
+- :ipv6_src_mask
+30:
+- 1
+- :ipv6_dst_mask
+31:
+- 3
+- :ipv6_flow_label
+32:
+- 2
+- :icmp_type
+33:
+- 1
+- :mul_igmp_type
+34:
+- 4
+- :sampling_interval
+35:
+- 1
+- :sampling_algorithm
+36:
+- 2
+- :flow_active_timeout
+37:
+- 2
+- :flow_inactive_timeout
+38:
+- 1
+- :engine_type
+39:
+- 1
+- :engine_id
+40:
+- 4
+- :total_bytes_exp
+41:
+- 4
+- :total_pkts_exp
+42:
+- 4
+- :total_flows_exp
+43:
+- :skip
+44:
+- :ip4_addr
+- :ipv4_src_prefix
+45:
+- :ip4_addr
+- :ipv4_dst_prefix
+46:
+- 1
+- :mpls_top_label_type
+47:
+- :ip4_addr
+- :mpls_top_label_ip
+48:
+- 4
+- :flow_sampler_id
+49:
+- 1
+- :flow_sampler_mode
+50:
+- 4
+- :flow_sampler_random_interval
+51:
+- :skip
+52:
+- 1
+- :min_ttl
+53:
+- 1
+- :max_ttl
+54:
+- 2
+- :ipv4_ident
+55:
+- 1
+- :dst_tos
+56:
+- :mac_addr
+- :in_src_mac
+57:
+- :mac_addr
+- :out_dst_mac
+58:
+- 2
+- :src_vlan
+59:
+- 2
+- :dst_vlan
+60:
+- 1
+- :ip_protocol_version
+61:
+- 1
+- :direction
+62:
+- :ip6_addr
+- :ipv6_next_hop
+63:
+- :ip6_addr
+- :bgp_ipv6_next_hop
+64:
+- 4
+- :ipv6_option_headers
+65:
+- 4
+- :transport_pkt_loss
+66:
+- 4
+- :transport_unreachability
+67:
+- 4
+- :transport_latency
+#68:
+#- :
+#- :data_points
+#69:
+#- :
+#- :variance
+70:
+- :string
+- :mpls_label_1
+71:
+- :string
+- :mpls_label_2
+72:
+- :string
+- :mpls_label_3
+73:
+- :string
+- :mpls_label_4
+74:
+- :string
+- :mpls_label_5
+75:
+- :string
+- :mpls_label_6
+76:
+- :string
+- :mpls_label_7
+77:
+- :string
+- :mpls_label_8
+78:
+- :string
+- :mpls_label_9
+79:
+- :string
+- :mpls_label_10
+80:
+- :mac_addr
+- :in_dst_mac
+81:
+- :mac_addr
+- :out_src_mac
+82:
+- :string
+- :if_name
+83:
+- :string
+- :if_desc
+84:
+- :string
+- :sampler_name
+85:
+- 4
+- :in_permanent_bytes
+86:
+- 4
+- :in_permanent_pkts
+89:
+- :forwarding_status
+- :forwarding_status
+92:
+- 4
+- :src_traffic_index
+93:
+- 4
+- :dst_traffic_index
+94:
+- :string
+- :app_descr
+95:
+- :application_id
+- :app_id
+96:
+- :string
+- :app_name
+97:
+- :string
+- :sub_app_tag
+98:
+- 1
+- :postIpDiffServCodePoint
+99:
+- 4
+- :multicastReplicationFactor
+#100:
+#- :string
+#- :className
+100:
+- :string
+- :riverbed_passthru_reason
+#101:
+#- 1
+#- :classificationEngineId
+101:
+- 1
+- :riverbed_wan_visibility
+#102:
+#- 2
+#- :layer2packetSectionOffset
+102:
+- :ip4_addr
+- :riverbed_cfe_inpath_addr
+#103:
+#- 2
+#- :layer2packetSectionSize
+103:
+- :ip4_addr
+- :riverbed_sfe_inpath_addr
+#104:
+#- :string
+#- :layer2packetSectionData
+104:
+- 2
+- :riverbed_cfe_tcp_port
+#105:
+#- 1
+#- :app_version
+105:
+- 2
+- :riverbed_sfe_tcp_port
+#106:
+#- :string
+#- :app_version_name
+106:
+- :ip4_addr
+- :riverbed_outer_inpath_addr
+#107:
+#- :string
+#- :app_vendor
+107:
+- 2
+- :riverbed_outer_tcp_port
+108:
+- 4
+- :riverbed_retrans_packets
+#109:
+#- :string
+#- :sub_app_name
+109:
+- 4
+- :riverbed_retrans_bytes
+#110:
+#- :string
+#- :sub_app_description
+110:
+- 4
+- :riverbed_tcp_conn_rtt
+#111:
+#- 4
+#- :template_parameter_range_end
+111:
+- 1
+- :riverbed_fe_type
+128:
+- 4
+- :bgpNextAdjacentAsNumber
+129:
+- 4
+- :bgpPrevAdjacentAsNumber
+130:
+- :ip4_addr
+- :exporterIPv4Address
+131:
+- :ip6_addr
+- :exporterIPv6Address
+132:
+- 8
+- :droppedOctetDeltaCount
+133:
+- 8
+- :droppedPacketDeltaCount
+134:
+- 8
+- :droppedOctetTotalCount
+135:
+- 8
+- :droppedPacketTotalCount
+136:
+- 1
+- :flow_end_reason
+137:
+- 8
+- :commonPropertiesId
+138:
+- 8
+- :observationPointId
+139:
+- 2
+- :icmpTypeCodeIPv6
+140:
+- :ip6_addr
+- :mplsTopLabelIPv6Address
+141:
+- 4
+- :lineCardId
+142:
+- 4
+- :portId
+143:
+- 4
+- :meteringProcessId
+144:
+- 4
+- :exportingProcessId
+145:
+- 2
+- :templateId
+146:
+- 1
+- :wlanChannelId
+147:
+- :string
+- :wlanSSID
+148:
+- 4
+- :conn_id
+149:
+- 4
+- :observationDomainId
+150:
+- 4
+- :flowStartSeconds
+151:
+- 4
+- :flowEndSeconds
+152:
+- 8
+- :flow_start_msec
+153:
+- 8
+- :flow_end_msec
+154:
+- 8
+- :flowStartMicroseconds
+155:
+- 8
+- :flowEndMicroseconds
+156:
+- 8
+- :flowStartNanoseconds
+157:
+- 8
+- :flowEndNanoseconds
+158:
+- 4
+- :flowStartDeltaMicroseconds
+159:
+- 4
+- :flowEndDeltaMicroseconds
+160:
+- 8
+- :systemInitTimeMilliseconds
+161:
+- 4
+- :flowDurationMilliseconds
+162:
+- 4
+- :flowDurationMicroseconds
+163:
+- 8
+- :observedFlowTotalCount
+164:
+- 8
+- :ignoredPacketTotalCount
+165:
+- 8
+- :ignoredOctetTotalCount
+166:
+- 8
+- :notSentFlowTotalCount
+167:
+- 8
+- :notSentPacketTotalCount
+168:
+- 8
+- :notSentOctetTotalCount
+169:
+- :ip6_addr
+- :destinationIPv6Prefix
+170:
+- :ip6_addr
+- :sourceIPv6Prefix
+171:
+- 8
+- :postOctetTotalCount
+172:
+- 8
+- :postPacketTotalCount
+173:
+- 8
+- :flowKeyIndicator
+174:
+- 8
+- :postMCastPacketTotalCount
+175:
+- 8
+- :postMCastOctetTotalCount
+176:
+- 1
+- :icmp_type_ipv4
+177:
+- 1
+- :icmp_code_ipv4
+178:
+- 1
+- :icmp_type_ipv6
+179:
+- 1
+- :icmp_code_ipv6
+180:
+- 2
+- :udp_src_port
+181:
+- 2
+- :udp_dst_port
+182:
+- 2
+- :tcp_src_port
+183:
+- 2
+- :tcp_dst_port
+184:
+- 4
+- :tcpSequenceNumber
+185:
+- 4
+- :tcpAcknowledgementNumber
+186:
+- 2
+- :tcpWindowSize
+187:
+- 2
+- :tcpUrgentPointer
+188:
+- 1
+- :tcpHeaderLength
+189:
+- 1
+- :ipHeaderLength
+190:
+- 2
+- :totalLengthIPv4
+191:
+- 2
+- :payloadLengthIPv6
+192:
+- 1
+- :ipTTL
+193:
+- 1
+- :nextHeaderIPv6
+194:
+- 1
+- :ip_tos
+195:
+- 1
+- :ip_dscp
+196:
+- 1
+- :ipPrecedence
+197:
+- 1
+- :fragmentFlags
+198:
+- 8
+- :octetDeltaSumOfSquares
+199:
+- 8
+- :octetTotalSumOfSquares
+200:
+- 1
+- :mplsTopLabelTTL
+201:
+- mpls_label_stack_octets
+- mpls_label_stack_octets
+202:
+- 4
+- :mplsLabelStackDepth
+203:
+- 1
+- :mplsTopLabelExp
+204:
+- 4
+- :ipPayloadLength
+205:
+- 2
+- :udpMessageLength
+206:
+- 1
+- :isMulticast
+207:
+- 1
+- :ipv4IHL
+208:
+- 4
+- :ipv4Options
+209:
+- 8
+- :tcpOptions
+#210:
+#- 3
+#- :paddingOctets
+210:
+- :skip
+211:
+- :ip4_addr
+- :collectorIPv4Address
+212:
+- :ip6_addr
+- :collectorIPv6Address
+213:
+- 4
+- :exportInterface
+214:
+- 1
+- :exportProtocolVersion
+215:
+- 1
+- :exportTransportProtocol
+216:
+- 2
+- :collectorTransportPort
+217:
+- 2
+- :exporterTransportPort
+218:
+- 8
+- :tcpSynTotalCount
+219:
+- 8
+- :tcpFinTotalCount
+220:
+- 8
+- :tcpRstTotalCount
+221:
+- 8
+- :tcpPshTotalCount
+222:
+- 8
+- :tcpAckTotalCount
+223:
+- 8
+- :tcpUrgTotalCount
+224:
+- 8
+- :ipTotalLength
+225:
+- :ip4_addr
+- :xlate_src_addr_ipv4
+226:
+- :ip4_addr
+- :xlate_dst_addr_ipv4
+227:
+- 2
+- :xlate_src_port
+228:
+- 2
+- :xlate_dst_port
+229:
+- 1
+- :natOriginatingAddressRealm
+230:
+- 1
+- :natEvent
+231:
+- 8
+- :fwd_flow_delta_bytes
+232:
+- 8
+- :rev_flow_delta_bytes
+233:
+- 1
+- :fw_event
+234:
+- 4
+- :ingressVRFID
+235:
+- 4
+- :egressVRFID
+236:
+- :string
+- :VRFname
+237:
+- 1
+- :postMplsTopLabelExp
+238:
+- 2
+- :tcpWindowScale
+239:
+- 1
+- :biflowDirection
+240:
+- 1
+- :ethernetHeaderLength
+241:
+- 2
+- :ethernetPayloadLength
+242:
+- 2
+- :ethernetTotalLength
+243:
+- 2
+- :dot1qVlanId
+244:
+- 1
+- :dot1qPriority
+245:
+- 2
+- :dot1qCustomerVlanId
+246:
+- 1
+- :dot1qCustomerPriority
+247:
+- :string
+- :metroEvcId
+248:
+- 1
+- :metroEvcType
+249:
+- 4
+- :pseudoWireId
+250:
+- 2
+- :pseudoWireType
+251:
+- 4
+- :pseudoWireControlWord
+252:
+- 4
+- :ingressPhysicalInterface
+253:
+- 4
+- :egressPhysicalInterface
+254:
+- 2
+- :postDot1qVlanId
+255:
+- 2
+- :postDot1qCustomerVlanId
+256:
+- 2
+- :ethernetType
+257:
+- 1
+- :postIpPrecedence
+258:
+- 8
+- :collectionTimeMilliseconds
+259:
+- 2
+- :exportSctpStreamId
+260:
+- 4
+- :maxExportSeconds
+261:
+- 4
+- :maxFlowEndSeconds
+262:
+- :string
+- :messageMD5Checksum
+263:
+- 1
+- :messageScope
+264:
+- 4
+- :minExportSeconds
+265:
+- 4
+- :minFlowStartSeconds
+266:
+- :string
+- :opaqueOctets
+267:
+- 1
+- :sessionScope
+268:
+- 8
+- :maxFlowEndMicroseconds
+269:
+- 8
+- :maxFlowEndMilliseconds
+270:
+- 8
+- :maxFlowEndNanoseconds
+271:
+- 8
+- :minFlowStartMicroseconds
+272:
+- 8
+- :minFlowStartMilliseconds
+273:
+- 8
+- :minFlowStartNanoseconds
+274:
+- :string
+- :collectorCertificate
+275:
+- :string
+- :exporterCertificate
+276:
+- 1
+- :dataRecordsReliability
+277:
+- 1
+- :observationPointType
+278:
+- 4
+- :newConnectionDeltaCount
+279:
+- 8
+- :connectionSumDurationSeconds
+280:
+- 8
+- :connectionTransactionId
+281:
+- :ip6_addr
+- :xlate_src_addr_ipv6
+282:
+- :ip6_addr
+- :xlate_dst_addr_ipv6
+283:
+- 4
+- :natPoolId
+284:
+- :string
+- :natPoolName
+285:
+- 2
+- :anonymizationFlags
+286:
+- 2
+- :anonymizationTechnique
+287:
+- 2
+- :informationElementIndex
+288:
+- :string
+- :p2pTechnology
+289:
+- :string
+- :tunnelTechnology
+290:
+- :string
+- :encryptedTechnology
+291:
+- :skip
+292:
+- :skip
+293:
+- :skip
+294:
+- 1
+- :bgpValidityState
+295:
+- 4
+- :IPSecSPI
+296:
+- 4
+- :greKey
+297:
+- 1
+- :natType
+298:
+- 8
+- :initiatorPackets
+299:
+- 8
+- :responderPackets
+300:
+- :string
+- :observationDomainName
+301:
+- 8
+- :selectionSequenceId
+302:
+- 8
+- :selectorId
+303:
+- 2
+- :informationElementId
+304:
+- 2
+- :selectorAlgorithm
+305:
+- 4
+- :samplingPacketInterval
+306:
+- 4
+- :samplingPacketSpace
+307:
+- 4
+- :samplingTimeInterval
+308:
+- 4
+- :samplingTimeSpace
+309:
+- 4
+- :samplingSize
+310:
+- 4
+- :samplingPopulation
+311:
+- :double
+- :samplingProbability
+312:
+- 2
+- :dataLinkFrameSize
+313:
+- :string
+- :ipHeaderPacketSection
+314:
+- :string
+- :ipPayloadPacketSection
+315:
+- :string
+- :dataLinkFrameSection
+316:
+- :string
+- :mplsLabelStackSection
+317:
+- :string
+- :mplsPayloadPacketSection
+318:
+- 8
+- :selectorIdTotalPktsObserved
+319:
+- 8
+- :selectorIdTotalPktsSelected
+320:
+- :double
+- :absoluteError
+321:
+- :double
+- :relativeError
+322:
+- 4
+- :observationTimeSeconds
+323:
+- 8
+- :event_time_msec
+324:
+- 8
+- :observationTimeMicroseconds
+325:
+- 8
+- :observationTimeNanoseconds
+326:
+- 8
+- :digestHashValue
+327:
+- 8
+- :hashIPPayloadOffset
+328:
+- 8
+- :hashIPPayloadSize
+329:
+- 8
+- :hashOutputRangeMin
+330:
+- 8
+- :hashOutputRangeMax
+331:
+- 8
+- :hashSelectedRangeMin
+332:
+- 8
+- :hashSelectedRangeMax
+333:
+- 1
+- :hashDigestOutput
+334:
+- 8
+- :hashInitialiserValue
+335:
+- :string
+- :selectorName
+336:
+- :double
+- :upperCILimit
+337:
+- :double
+- :lowerCILimit
+338:
+- :double
+- :confidenceLevel
+339:
+- 1
+- :informationElementDataType
+340:
+- :string
+- :informationElementDescription
+341:
+- :string
+- :informationElementName
+342:
+- 8
+- :informationElementRangeBegin
+343:
+- 8
+- :informationElementRangeEnd
+344:
+- 1
+- :informationElementSemantics
+345:
+- 2
+- :informationElementUnits
+346:
+- 4
+- :privateEnterpriseNumber
+347:
+- :string
+- :virtualStationInterfaceId
+348:
+- :string
+- :virtualStationInterfaceName
+349:
+- :string
+- :virtualStationUUID
+350:
+- :string
+- :virtualStationName
+351:
+- 8
+- :layer2SegmentId
+352:
+- 8
+- :layer2OctetDeltaCount
+353:
+- 8
+- :layer2OctetTotalCount
+354:
+- 8
+- :ingressUnicastPacketTotalCount
+355:
+- 8
+- :ingressMulticastPacketTotalCount
+356:
+- 8
+- :ingressBroadcastPacketTotalCount
+357:
+- 8
+- :egressUnicastPacketTotalCount
+358:
+- 8
+- :egressBroadcastPacketTotalCount
+359:
+- 8
+- :monitoringIntervalStartMilliSeconds
+360:
+- 8
+- :monitoringIntervalEndMilliSeconds
+361:
+- 2
+- :postNATPortBlockStart
+362:
+- 2
+- :postNATPortBlockEnd
+363:
+- 2
+- :portRangeStepSize
+364:
+- 2
+- :portRangeNumPorts
+365:
+- :mac_addr
+- :staMacAddress
+366:
+- :ip4_addr
+- :staIPv4Address
+367:
+- :mac_addr
+- :wtpMacAddress
+368:
+- 4
+- :ingressInterfaceType
+369:
+- 4
+- :egressInterfaceType
+370:
+- 2
+- :rtpSequenceNumber
+371:
+- :string
+- :userName
+372:
+- :string
+- :applicationCategoryName
+373:
+- :string
+- :applicationSubCategoryName
+374:
+- :string
+- :applicationGroupName
+375:
+- 8
+- :originalFlowsPresent
+376:
+- 8
+- :originalFlowsInitiated
+377:
+- 8
+- :originalFlowsCompleted
+378:
+- 8
+- :distinctCountOfSourceIPAddress
+379:
+- 8
+- :distinctCountOfDestinationIPAddress
+380:
+- 4
+- :distinctCountOfSourceIPv4Address
+381:
+- 4
+- :distinctCountOfDestinationIPv4Address
+382:
+- 8
+- :distinctCountOfSourceIPv6Address
+383:
+- 8
+- :distinctCountOfDestinationIPv6Address
+384:
+- 1
+- :valueDistributionMethod
+385:
+- 4
+- :rfc3550JitterMilliseconds
+386:
+- 4
+- :rfc3550JitterMicroseconds
+387:
+- 4
+- :rfc3550JitterNanoseconds
+388:
+- 1
+- :dot1qDEI
+389:
+- 1
+- :dot1qCustomerDEI
+390:
+- 2
+- :flowSelectorAlgorithm
+391:
+- 8
+- :flowSelectedOctetDeltaCount
+392:
+- 8
+- :flowSelectedPacketDeltaCount
+393:
+- 8
+- :flowSelectedFlowDeltaCount
+394:
+- 8
+- :selectorIDTotalFlowsObserved
+395:
+- 8
+- :selectorIDTotalFlowsSelected
+396:
+- 8
+- :samplingFlowInterval
+397:
+- 8
+- :samplingFlowSpacing
+398:
+- 8
+- :flowSamplingTimeInterval
+399:
+- 8
+- :flowSamplingTimeSpacing
+400:
+- 2
+- :hashFlowDomain
+401:
+- 8
+- :transportOctetDeltaCount
+402:
+- 8
+- :transportPacketDeltaCount
+403:
+- :ip4_addr
+- :originalExporterIPv4Address
+404:
+- :ip6_addr
+- :originalExporterIPv6Address
+405:
+- 4
+- :originalObservationDomainId
+406:
+- 4
+- :intermediateProcessId
+407:
+- 8
+- :ignoredDataRecordTotalCount
+408:
+- 2
+- :dataLinkFrameType
+409:
+- 2
+- :sectionOffset
+410:
+- 2
+- :sectionExportedOctets
+411:
+- :string
+- :dot1qServiceInstanceTag
+412:
+- 4
+- :dot1qServiceInstanceId
+413:
+- 1
+- :dot1qServiceInstancePriority
+414:
+- :mac_addr
+- :dot1qCustomerSourceMacAddress
+415:
+- :mac_addr
+- :dot1qCustomerDestinationMacAddress
+417:
+- 8
+- :postLayer2OctetDeltaCount
+418:
+- 8
+- :postMCastLayer2OctetDeltaCount
+420:
+- 8
+- :postLayer2OctetTotalCount
+421:
+- 8
+- :postMCastLayer2OctetTotalCount
+422:
+- 8
+- :minimumLayer2TotalLength
+423:
+- 8
+- :maximumLayer2TotalLength
+424:
+- 8
+- :droppedLayer2OctetDeltaCount
+425:
+- 8
+- :droppedLayer2OctetTotalCount
+426:
+- 8
+- :ignoredLayer2OctetTotalCount
+427:
+- 8
+- :notSentLayer2OctetTotalCount
+428:
+- 8
+- :layer2OctetDeltaSumOfSquares
+429:
+- 8
+- :layer2OctetTotalSumOfSquares
+430:
+- 8
+- :layer2FrameDeltaCount
+431:
+- 8
+- :layer2FrameTotalCount
+432:
+- :ip4_addr
+- :pseudoWireDestinationIPv4Address
+433:
+- 8
+- :ignoredLayer2FrameTotalCount
+
+
+
+1232:
+- :string
+- :cisco_trustsec_src_id
+1233:
+- :string
+- :cisco_trustsec_dst_id
+1234:
+- :string
+- :cisco_trustsec_src_name
+1235:
+- :string
+- :cisco_trustsec_dst_name
+1236:
+- :string
+- :cisco_trustsec_switch_derived_sgt
+2881:
+- :string
+- :cisco_avc_p2p_tech
+2891:
+- :string
+- :cisco_avc_tunnel_tech
+2901:
+- :string
+- :cisco_avc_encrypt_tech
+4232:
+- 4
+- :cisco_avc_transport_short_term_packets_drop
+4233:
+- 4
+- :cisco_avc_transport_long_term_packets_drop
+4236:
+- 4
+- :cisco_avc_app_media_bytes
+4238:
+- 4
+- :cisco_avc_app_media_byte_rate
+4239:
+- 4
+- :cisco_avc_app_media_packets
+4241:
+- 4
+- :cisco_avc_app_media_packet_rate
+4242:
+- 4
+- :cisco_avc_app_media_packet_rate_variation
+4243:
+- 4
+- :cisco_avc_app_media_event
+4244:
+- 4
+- :cisco_avc_app_monitor_event
+4246:
+- 4
+- :cisco_avc_transport_packets_expected
+4248:
+- 4
+- :cisco_avc_transport_rtt
+4249:
+- 4
+- :cisco_avc_transport_packet_sets_lost
+4251:
+- 4
+- :cisco_avc_transport_short_term_packets_lost
+4252:
+- 4
+- :cisco_avc_transport_long_term_packets_lost
+4253:
+- 4
+- :cisco_avc_transport_packet_loss_rate
+4254:
+- 4
+- :cisco_avc_transport_rtp_ssrc
+4255:
+- 4
+- :cisco_avc_transport_rtp_jitter_mean
+4256:
+- 4
+- :cisco_avc_transport_rtp_jitter_min
+4257:
+- 4
+- :cisco_avc_transport_rtp_jitter_max
+4260:
+- 4
+- :cisco_avc_controlled_tc
+4261:
+- 4
+- :cisco_avc_in_policy_tc
+4270:
+- 4
+- :cisco_avc_app_media_packet_rate_variation_min
+4271:
+- 4
+- :cisco_avc_app_media_packet_rate_variation_max
+4272:
+- 4
+- :cisco_avc_transport_rtp_flows
+4273:
+- 4
+- :cisco_avc_transport_rtp_payload_type
+4279:
+- 4
+- :cisco_avc_transport_packet_loss_rate_min
+4280:
+- 4
+- :cisco_avc_transport_packet_loss_rate_max
+4282:
+- 4
+- :cisco_avc_transport_rtt_sum
+4284:
+- 4
+- :cisco_avc_transport_rtt_min
+4285:
+- 4
+- :cisco_avc_transport_rtt_max
+4286:
+- 4
+- :cisco_avc_metadata_global_session_id
+4287:
+- 4
+- :cisco_avc_metadata_multi_party_session_id
+4288:
+- 4
+- :cisco_avc_metadata_clock_rate
+4295:
+- 4
+- :cisco_avc_network_delay_avg
+4313:
+- 4
+- :cisco_avc_one_way_delay
+4315:
+- 4
+- :cisco_avc_tcp_window_size_min
+4316:
+- 4
+- :cisco_avc_tcp_window_size_max
+4318:
+- 2
+- :cisco_avc_tcp_max_segment_size
+4324:
+- 8
+- :cisco_avc_tcp_window_size_sum
+4330:
+- 4
+- :cisco_avc_rtp_jitter_interarrival_avg
+4331:
+- :ip4_addr
+- :cisco_pfr_src_site_id
+4332:
+- :ip4_addr
+- :cisco_pfr_dst_site_id
+4335:
+- 4
+- :cisco_avc_transport_byte_loss_rate
+4338:
+- 4
+- :cisco_pfr_event_tc_nomitigation_err_bw_count
+4340:
+- 4
+- :cisco_pfr_event_tc_nomitigation_err_perf_count
+4342:
+- :ip4_addr
+- :cisco_pfr_dst_site_prefix
+4346:
+- 1
+- :cisco_pfr_dst_site_prefix_mask
+4350:
+- 4
+- :cisco_pfr_label_id
+6901:
+- :ip4_addr
+- :cisco_ipt_dialing_phone
+6902:
+- :string
+- :cisco_ipt_dialing_user
+6903:
+- :ip4_addr
+- :cisco_ipt_dialed_phone
+6904:
+- :string
+- :cisco_ipt_dialed_user
+6905:
+- 4
+- :cisco_ipt_call_duration
+6906:
+- 4
+- :cisco_ipt_call_end_reason
+6911:
+- 4
+- :cisco_ipt_calls_dialed
+6912:
+- 4
+- :cisco_ipt_calls_connected
+6913:
+- 4
+- :cisco_ipt_calls_failed
+
+
+
+8192:
+- 4
+- :streamcore_wan_rtt
+8193:
+- 4
+- :streamcore_net_app_resp_time
+8194:
+- 4
+- :streamcore_total_app_resp_time
+8195:
+- 2
+- :streamcore_tcp_retrans_rate
+8196:
+- 1
+- :streamcore_call_direction
+
+
+
+8232:
+- :string
+- :cisco_policy_qos_class_hierarchy
+
+
+
+8256:
+- :string
+- :streamcore_hostname
+8257:
+- :string
+- :streamcore_url
+8258:
+- :string
+- :streamcore_ssl_cn
+8259:
+- :string
+- :streamcore_ssl_org
+8320:
+- 2
+- :streamcore_mos_lq
+8321:
+- 2
+- :streamcore_net_delay
+8322:
+- 2
+- :streamcore_net_loss
+8323:
+- 2
+- :streamcore_net_jitter
+8324:
+- 2
+- :streamcore_net_discard
+8325:
+- 1
+- :streamcore_rtp_clockrate_in
+8326:
+- 1
+- :streamcore_rtp_clockrate_out
+8327:
+- 1
+- :streamcore_codec_in
+8328:
+- 1
+- :streamcore_codec_out
+
+
+
+8337:
+- 8
+- :cisco_avc_server_bytes
+8338:
+- 8
+- :cisco_avc_client_bytes
+
+
+
+8384:
+- 4
+- :streamcore_id_rule_1
+8385:
+- 4
+- :streamcore_id_rule_2
+8386:
+- 4
+- :streamcore_id_rule_3
+8387:
+- 4
+- :streamcore_id_rule_4
+8388:
+- 4
+- :streamcore_id_rule_5
+8389:
+- 4
+- :streamcore_id_rule_6
+8390:
+- 4
+- :streamcore_id_rule_7
+8391:
+- 4
+- :streamcore_id_rule_8
+8392:
+- 4
+- :streamcore_id_rule_9
+8393:
+- 4
+- :streamcore_id_rule_10
+
+
+
+9252:
+- 1
+- :cisco_waas_segment
+9253:
+- 1
+- :cisco_waas_passthru_reason
+9265:
+- 8
+- :cisco_avc_client_packets
+9266:
+- 8
+- :cisco_avc_server_packets
+9267:
+- 4
+- :cisco_avc_client_retrans_bytes
+9268:
+- 4
+- :cisco_avc_client_retrans_packets
+9269:
+- 4
+- :cisco_avc_server_retrans_bytes
+9270:
+- 4
+- :cisco_avc_server_retrans_packets
+9272:
+- 4
+- :cisco_avc_transact_time_delta
+9273:
+- 4
+- :cisco_avc_transact_time_total
+9274:
+- 4
+- :cisco_avc_transact_time_max
+9275:
+- 4
+- :cisco_avc_transact_time_min
+9292:
+- 4
+- :cisco_avc_server_resps
+9293:
+- 4
+- :cisco_avc_resp_histogram1
+9294:
+- 4
+- :cisco_avc_resp_histogram2
+9295:
+- 4
+- :cisco_avc_resp_histogram3
+9296:
+- 4
+- :cisco_avc_resp_histogram4
+9297:
+- 4
+- :cisco_avc_resp_histogram5
+9298:
+- 4
+- :cisco_avc_resp_histogram6
+9299:
+- 4
+- :cisco_avc_resp_histogram7
+9300:
+- 4
+- :cisco_avc_server_late_resps
+9303:
+- 4
+- :cisco_avc_server_resp_time_sum
+9304:
+- 4
+- :cisco_avc_server_resp_time_max
+9305:
+- 4
+- :cisco_avc_server_resp_time_min
+9306:
+- 4
+- :cisco_avc_app_delay_sum
+9307:
+- 4
+- :cisco_avc_app_delay_max
+9308:
+- 4
+- :cisco_avc_app_delay_min
+9309:
+- 4
+- :cisco_avc_total_delay_sum
+9310:
+- 4
+- :cisco_avc_total_delay_max
+9311:
+- 4
+- :cisco_avc_total_delay_min
+9313:
+- 4
+- :cisco_avc_total_network_delay_sum
+9314:
+- 4
+- :cisco_avc_total_network_delay_max
+9315:
+- 4
+- :cisco_avc_total_network_delay_min
+9316:
+- 4
+- :cisco_avc_client_network_delay_sum
+9317:
+- 4
+- :cisco_avc_client_network_delay_max
+9318:
+- 4
+- :cisco_avc_client_network_delay_min
+9319:
+- 4
+- :cisco_avc_server_network_delay_sum
+9320:
+- 4
+- :cisco_avc_server_network_delay_max
+9321:
+- 4
+- :cisco_avc_server_network_delay_min
+9347:
+- 4
+- :cisco_avc_rtp_short_term_mos
+9355:
+- 4
+- :cisco_avc_rtp_mos
+9356:
+- 4
+- :cisco_avc_rtp_mos_total
+9357:
+- :string
+- :cisco_avc_app_http_uri_stats
+9360:
+- 4
+- :cisco_avc_policy_qos_queue_id
+9361:
+- 8
+- :cisco_avc_policy_qos_queue_drops
+12232:
+- :string
+- :cisco_avc_app_category
+12233:
+- :string
+- :cisco_avc_app_sub_category
+12234:
+- :string
+- :cisco_avc_app_group
+12235:
+- :string
+- :cisco_avc_app_http_host
+12236:
+- :ip4_addr
+- :cisco_avc_client_ipv4_addr
+12237:
+- :ip4_addr
+- :cisco_avc_server_ipv4_addr
+12238:
+- :ip6_addr
+- :cisco_avc_client_ipv6_addr
+12239:
+- :ip6_addr
+- :cisco_avc_server_ipv6_addr
+12240:
+- 2
+- :cisco_avc_client_l4_port
+12241:
+- 2
+- :cisco_avc_server_l4_port
+12242:
+- 4
+- :cisco_avc_conn_id
+12243:
+- :string
+- :cisco_avc_app_traffic_class
+12244:
+- :string
+- :cisco_avc_app_business_relevance
+12332:
+- :string
+- :cisco_nvzflow_udid
+12333:
+- :string
+- :cisco_nvzflow_user
+12334:
+- :string
+- :cisco_nvzflow_os_name
+12335:
+- :string
+- :cisco_nvzflow_os_ver
+12336:
+- :string
+- :cisco_nvzflow_sys_vendor
+12337:
+- :string
+- :cisco_nvzflow_sys_type
+12338:
+- :string
+- :cisco_nvzflow_proc_acct
+12339:
+- :string
+- :cisco_nvzflow_parent_proc_acct
+12340:
+- :string
+- :cisco_nvzflow_proc
+12341:
+- :string
+- :cisco_nvzflow_proc_hash
+12342:
+- :string
+- :cisco_nvzflow_parent_proc
+12343:
+- :string
+- :cisco_nvzflow_parent_proc_hash
+12344:
+- :string
+- :cisco_nvzflow_dns_suffix
+12345:
+- :string
+- :cisco_nvzflow_dst_hostname
+12346:
+- 8
+- :cisco_nvzflow_l4_bytes_in
+12347:
+- 8
+- :cisco_nvzflow_l4_bytes_out
+12351:
+- :string
+- :cisco_nvzflow_os_edition
+12352:
+- :string
+- :cisco_nvzflow_module_list
+12353:
+- :string
+- :cisco_nvzflow_hash_list
+12354:
+- :string
+- :cisco_nvzflow_coord_list
+12355:
+- 4
+- :cisco_nvzflow_iface_info_uid
+12356:
+- 4
+- :cisco_nvzflow_iface_index
+12357:
+- 1
+- :cisco_nvzflow_iface_type
+12358:
+- :string
+- :cisco_nvzflow_iface_name
+12359:
+- :string
+- :cisco_nvzflow_iface_details_list
+15901:
+- :ip4_addr
+- :cisco_nexus_fastpath_src_addr
+15902:
+- 2
+- :cisco_nexus_fastpath_src_port
+15903:
+- :ip4_addr
+- :cisco_nexus_fastpath_dst_addr
+15904:
+- 2
+- :cisco_nexus_fastpath_dst_port
+16386:
+- :string
+- :cisco_eta_idp_old
+16387:
+- :string
+- :cisco_eta_slpt_old
+20000:
+- 2
+- :cisco_wlan_id
+
+
+
+24628:
+- 4
+- :ericsson_nat_context_id
+24629:
+- :string
+- :ericsson_nat_context_name
+24630:
+- :long
+- :ericsson_nat_assign_ts_secs
+24631:
+- :long
+- :ericsson_nat_unassign_ts_secs
+24632:
+- :ip4_addr
+- :ericsson_nat_int_ipv4
+24633:
+- :ip4_addr
+- :ericsson_nat_ext_ipv4
+24634:
+- 2
+- :ericsson_nat_ext_port_start
+24635:
+- 2
+- :ericsson_nat_ext_port_end
+
+
+
+29844:
+- :string
+- :cisco_endpoint_process_user
+29845:
+- :string
+- :cisco_endpoint_process_name
+29846:
+- :string
+- :cisco_endpoint_process_hash
+29847:
+- :string
+- :cisco_endpoint_process_parent_user
+29848:
+- :string
+- :cisco_endpoint_process_parent_name
+29849:
+- :string
+- :cisco_endpoint_process_parent_hash
+32775:
+- 2
+- :cisco_pfr_policy_id
+32789:
+- :string
+- :cisco_pfr_map_name
+32790:
+- :string
+- :cisco_pfr_reason
+33000:
+- :acl_id_asa
+- :cisco_fw_ingress_acl_id
+33001:
+- :acl_id_asa
+- :cisco_fw_egress_acl_id
+33002:
+- 2
+- :cisco_fw_ext_event
+33003:
+- 4
+- :cisco_fw_event_level
+33004:
+- 4
+- :cisco_fw_event_level_id
+33005:
+- 4
+- :cisco_fw_config_value
+33006:
+- 2
+- :cisco_fw_erm_code
+33007:
+- :string
+- :cisco_fw_erm_descr
+34000:
+- :string
+- :cisco_trustsec_src_id
+34001:
+- :string
+- :cisco_trustsec_dst_id
+34002:
+- :string
+- :cisco_trustsec_src_name
+34003:
+- :string
+- :cisco_trustsec_dst_name
+34004:
+- :string
+- :cisco_trustsec_switch_derived_sgt
+35001:
+- 2
+- :cisco_fw_ext_event
+35004:
+- 4
+- :cisco_fw_blackout_secs
+35005:
+- 4
+- :cisco_fw_half_open_sessions_rate_1min_max
+35006:
+- 4
+- :cisco_fw_half_open_sessions_rate_1min
+35007:
+- 4
+- :cisco_fw_zonepair_id
+35008:
+- 4
+- :cisco_fw_sessions_max
+35009:
+- :string
+- :cisco_fw_zonepair
+35010:
+- :string
+- :cisco_fw_ext_event_descr
+35011:
+- 4
+- :cisco_fw_drop_pass_summary_packets
+35012:
+- 4
+- :cisco_fw_half_open_sessions
+36000:
+- 4
+- :cisco_waas_dre_input
+36001:
+- 4
+- :cisco_waas_dre_output
+36002:
+- 4
+- :cisco_waas_lz_input
+36003:
+- 4
+- :cisco_waas_lz_output
+36008:
+- 4
+- :cisco_waas_conn_mode
+36009:
+- 4
+- :cisco_waas_input_bytes
+36010:
+- 4
+- :cisco_waas_output_bytes
+37000:
+- 4
+- :cisco_avc_transport_short_term_packets_drop
+37001:
+- 4
+- :cisco_avc_transport_long_term_packets_drop
+37004:
+- 4
+- :cisco_avc_app_media_bytes
+37006:
+- 4
+- :cisco_avc_app_media_byte_rate
+37007:
+- 4
+- :cisco_avc_app_media_packets
+37009:
+- 4
+- :cisco_avc_app_media_packet_rate
+37010:
+- 4
+- :cisco_avc_app_media_packet_rate_variation
+37011:
+- 4
+- :cisco_avc_app_media_event
+37012:
+- 4
+- :cisco_avc_app_monitor_event
+37014:
+- 4
+- :cisco_avc_transport_packets_expected
+37016:
+- 4
+- :cisco_avc_transport_rtt
+37017:
+- 4
+- :cisco_avc_transport_packet_sets_lost
+37019:
+- 4
+- :cisco_avc_transport_short_term_packets_lost
+37020:
+- 4
+- :cisco_avc_transport_long_term_packets_lost
+37021:
+- 4
+- :cisco_avc_transport_packet_loss_rate
+37022:
+- 4
+- :cisco_avc_transport_rtp_ssrc
+37023:
+- 4
+- :cisco_avc_transport_rtp_jitter_mean
+37024:
+- 4
+- :cisco_avc_transport_rtp_jitter_min
+37025:
+- 4
+- :cisco_avc_transport_rtp_jitter_max
+37028:
+- 4
+- :cisco_avc_controlled_tc
+37029:
+- 4
+- :cisco_avc_in_policy_tc
+37038:
+- 4
+- :cisco_avc_app_media_packet_rate_variation_min
+37039:
+- 4
+- :cisco_avc_app_media_packet_rate_variation_max
+37040:
+- 4
+- :cisco_avc_transport_rtp_flows
+37041:
+- 4
+- :cisco_avc_transport_rtp_payload_type
+37047:
+- 4
+- :cisco_avc_transport_packet_loss_rate_min
+37048:
+- 4
+- :cisco_avc_transport_packet_loss_rate_max
+37050:
+- 4
+- :cisco_avc_transport_rtt_sum
+37052:
+- 4
+- :cisco_avc_transport_rtt_min
+37053:
+- 4
+- :cisco_avc_transport_rtt_max
+37054:
+- 4
+- :cisco_avc_metadata_global_session_id
+37055:
+- 4
+- :cisco_avc_metadata_multi_party_session_id
+37056:
+- 4
+- :cisco_avc_metadata_clock_rate
+37063:
+- 4
+- :cisco_avc_network_delay_avg
+37081:
+- 4
+- :cisco_avc_one_way_delay
+37083:
+- 4
+- :cisco_avc_tcp_window_size_min
+37084:
+- 4
+- :cisco_avc_tcp_window_size_max
+37086:
+- 2
+- :cisco_avc_tcp_max_segment_size
+37092:
+- 8
+- :cisco_avc_tcp_window_size_sum
+37098:
+- 4
+- :cisco_avc_rtp_jitter_interarrival_avg
+37099:
+- :ip4_addr
+- :cisco_pfr_src_site_id
+37100:
+- :ip4_addr
+- :cisco_pfr_dst_site_id
+37103:
+- 4
+- :cisco_avc_transport_byte_loss_rate
+37106:
+- 4
+- :cisco_pfr_event_tc_nomitigation_err_bw_count
+37108:
+- 4
+- :cisco_pfr_event_tc_nomitigation_err_perf_count
+37110:
+- :ip4_addr
+- :cisco_pfr_dst_site_prefix
+37114:
+- 1
+- :cisco_pfr_dst_site_prefix_mask
+37118:
+- 4
+- :cisco_pfr_label_id
+39000:
+- :ip4_addr
+- :cisco_pfr_br_addr
+# 39001 requires additional decoding - http://docwiki.cisco.com/wiki/NetFlow:PfR#State_Encoding
+39001:
+- 2
+- :cisco_pfr_state
+# 39002 requires additional decoding - http://docwiki.cisco.com/wiki/NetFlow:PfR#Reason_Id_Encoding
+39002:
+- 4
+- :cisco_pfr_reason_id
+39003:
+- 4
+- :cisco_pfr_threshold
+39004:
+- 2
+- :cisco_pfr_priority
+39006:
+- 4
+- :cisco_avc_long_term_rtt
+39007:
+- 4
+- :cisco_avc_mos_below_counts
+39008:
+- 8
+- :cisco_avc_rsvp_bandwidth_pool
+39009:
+- 2
+- :cisco_avc_rollup_counter
+39010:
+- 2
+- :cisco_avc_kth_tier_percent
+39011:
+- 4
+- :cisco_avc_kth_bw_fee
+39012:
+- 2
+- :cisco_avc_src_port_min
+39013:
+- 2
+- :cisco_avc_src_port_max
+39014:
+- 2
+- :cisco_avc_dst_port_min
+39015:
+- 2
+- :cisco_avc_dst_port_max
+39016:
+- 8
+- :cisco_avc_link_capacity
+39017:
+- 8
+- :cisco_avc_ingress_bw
+39018:
+- 8
+- :cisco_avc_ingress_bw_max
+39019:
+- 8
+- :cisco_avc_egress_bw
+39020:
+- 8
+- :cisco_avc_egress_bw_max
+39021:
+- 8
+- :cisco_avc_ingress_rollup_bw
+39022:
+- 8
+- :cisco_avc_egress_rollup_bw
+39023:
+- 8
+- :cisco_avc_kth_rollup_bw
+39024:
+- :string
+- :cisco_avc_link_group_name
+39025:
+- 4
+- :cisco_avc_bgp_community
+39026:
+- 1
+- :cisco_avc_bgp_prepend
+39028:
+- 2
+- :cisco_avc_cost_discard_rollup_count
+40000:
+- :string
+- :cisco_fw_user
+40001:
+- :ip4_addr
+- :cisco_fw_xlate_src_addr_ipv4
+40002:
+- :ip4_addr
+- :cisco_fw_xlate_dst_addr_ipv4
+40003:
+- 2
+- :cisco_fw_xlate_src_port
+40004:
+- 2
+- :cisco_fw_xlate_dst_port
+40005:
+- 1
+- :cisco_fw_event
+40285:
+- 4
+- :cisco_avc_client_long_lived_network_delay_max
+40286:
+- 4
+- :cisco_avc_client_long_lived_network_delay_min
+40288:
+- 4
+- :cisco_avc_server_long_lived_network_delay_max
+40289:
+- 4
+- :cisco_avc_server_long_lived_network_delay_min
+41000:
+- :string
+- :cisco_policy_qos_class_hierarchy
+41105:
+- 8
+- :cisco_avc_server_bytes
+41106:
+- 8
+- :cisco_avc_client_bytes
+42018:
+- 4
+- :cisco_avc_concurrent_sessions
+42020:
+- 1
+- :cisco_waas_segment
+42021:
+- 1
+- :cisco_waas_passthru_reason
+42022:
+- 4
+- :cisco_avc_server_long_lived_network_delay_sum
+42023:
+- 4
+- :cisco_avc_client_long_lived_network_delay_sum
+42024:
+- 4
+- :cisco_avc_total_long_lived_network_delay_sum
+42025:
+- 4
+- :cisco_avc_total_long_lived_network_delay_samples
+42026:
+- 4
+- :cisco_avc_server_long_lived_network_delay_samples
+42027:
+- 4
+- :cisco_avc_client_long_lived_network_delay_samples
+42033:
+- 8
+- :cisco_avc_client_packets
+42034:
+- 8
+- :cisco_avc_server_packets
+42035:
+- 4
+- :cisco_avc_client_retrans_bytes
+42036:
+- 4
+- :cisco_avc_client_retrans_packets
+42037:
+- 4
+- :cisco_avc_server_retrans_bytes
+42038:
+- 4
+- :cisco_avc_server_retrans_packets
+42040:
+- 4
+- :cisco_avc_transact_time_delta
+42041:
+- 4
+- :cisco_avc_transact_time_total
+42042:
+- 4
+- :cisco_avc_transact_time_max
+42043:
+- 4
+- :cisco_avc_transact_time_min
+42060:
+- 4
+- :cisco_avc_server_resps
+42061:
+- 4
+- :cisco_avc_resp_histogram1
+42062:
+- 4
+- :cisco_avc_resp_histogram2
+42063:
+- 4
+- :cisco_avc_resp_histogram3
+42064:
+- 4
+- :cisco_avc_resp_histogram4
+42065:
+- 4
+- :cisco_avc_resp_histogram5
+42066:
+- 4
+- :cisco_avc_resp_histogram6
+42067:
+- 4
+- :cisco_avc_resp_histogram7
+42068:
+- 4
+- :cisco_avc_server_late_resps
+42071:
+- 4
+- :cisco_avc_server_resp_time_sum
+42072:
+- 4
+- :cisco_avc_server_resp_time_max
+42073:
+- 4
+- :cisco_avc_server_resp_time_min
+42074:
+- 4
+- :cisco_avc_app_delay_sum
+42075:
+- 4
+- :cisco_avc_app_delay_max
+42076:
+- 4
+- :cisco_avc_app_delay_min
+42077:
+- 4
+- :cisco_avc_total_delay_sum
+42078:
+- 4
+- :cisco_avc_total_delay_max
+42079:
+- 4
+- :cisco_avc_total_delay_min
+42081:
+- 4
+- :cisco_avc_total_network_delay_sum
+42082:
+- 4
+- :cisco_avc_total_network_delay_max
+42083:
+- 4
+- :cisco_avc_total_network_delay_min
+42084:
+- 4
+- :cisco_avc_client_network_delay_sum
+42085:
+- 4
+- :cisco_avc_client_network_delay_max
+42086:
+- 4
+- :cisco_avc_client_network_delay_min
+42087:
+- 4
+- :cisco_avc_server_network_delay_sum
+42088:
+- 4
+- :cisco_avc_server_network_delay_max
+42089:
+- 4
+- :cisco_avc_server_network_delay_min
+42115:
+- 4
+- :cisco_avc_rtp_short_term_mos
+42123:
+- 4
+- :cisco_avc_rtp_mos
+42124:
+- 4
+- :cisco_avc_rtp_mos_total
+42125:
+- :string
+- :cisco_avc_app_http_uri_stats
+42128:
+- 4
+- :cisco_avc_policy_qos_queue_id
+42129:
+- 8
+- :cisco_avc_policy_qos_queue_drops
+44940:
+- :string
+- :cisco_eta_idp_old
+44941:
+- :string
+- :cisco_eta_slpt_old
+45000:
+- :string
+- :cisco_avc_app_category
+45001:
+- :string
+- :cisco_avc_app_sub_category
+45002:
+- :string
+- :cisco_avc_app_group
+45003:
+- :string
+- :cisco_avc_app_http_host
+45004:
+- :ip4_addr
+- :cisco_avc_client_ipv4_addr
+45005:
+- :ip4_addr
+- :cisco_avc_server_ipv4_addr
+45006:
+- :ip6_addr
+- :cisco_avc_client_ipv6_addr
+45007:
+- :ip6_addr
+- :cisco_avc_server_ipv6_addr
+45008:
+- 2
+- :cisco_avc_client_l4_port
+45009:
+- 2
+- :cisco_avc_server_l4_port
+45010:
+- 4
+- :cisco_avc_conn_id
+45011:
+- :string
+- :cisco_avc_app_traffic_class
+45012:
+- :string
+- :cisco_avc_app_business_relevance
+45100:
+- :string
+- :cisco_nvzflow_udid
+45101:
+- :string
+- :cisco_nvzflow_user
+45102:
+- :string
+- :cisco_nvzflow_os_name
+45103:
+- :string
+- :cisco_nvzflow_os_ver
+45104:
+- :string
+- :cisco_nvzflow_sys_vendor
+45105:
+- :string
+- :cisco_nvzflow_sys_type
+45106:
+- :string
+- :cisco_nvzflow_proc_acct
+45107:
+- :string
+- :cisco_nvzflow_parent_proc_acct
+45108:
+- :string
+- :cisco_nvzflow_proc
+45109:
+- :string
+- :cisco_nvzflow_proc_hash
+45110:
+- :string
+- :cisco_nvzflow_parent_proc
+45111:
+- :string
+- :cisco_nvzflow_parent_proc_hash
+45112:
+- :string
+- :cisco_nvzflow_dns_suffix
+45113:
+- :string
+- :cisco_nvzflow_dst_hostname
+45114:
+- 8
+- :cisco_nvzflow_l4_bytes_in
+45115:
+- 8
+- :cisco_nvzflow_l4_bytes_out
+45119:
+- :string
+- :cisco_nvzflow_os_edition
+45120:
+- :string
+- :cisco_nvzflow_module_list
+45121:
+- :string
+- :cisco_nvzflow_hash_list
+45122:
+- :string
+- :cisco_nvzflow_coord_list
+45123:
+- 4
+- :cisco_nvzflow_iface_info_uid
+45124:
+- 4
+- :cisco_nvzflow_iface_index
+45125:
+- 1
+- :cisco_nvzflow_iface_type
+45126:
+- :string
+- :cisco_nvzflow_iface_name
+45127:
+- :string
+- :cisco_nvzflow_iface_details_list
+
+
+
+51100:
+- 1
+- :riverbed_passthru_reason
+51101:
+- 1
+- :riverbed_wan_visibility
+51102:
+- :ip4_addr
+- :riverbed_cfe_inpath_addr
+51103:
+- :ip4_addr
+- :riverbed_sfe_inpath_addr
+51104:
+- 2
+- :riverbed_cfe_tcp_port
+51105:
+- 2
+- :riverbed_sfe_tcp_port
+51106:
+- :ip4_addr
+- :riverbed_outer_inpath_addr
+51107:
+- 2
+- :riverbed_outer_tcp_port
+51108:
+- 4
+- :riverbed_retrans_packets
+51109:
+- 4
+- :riverbed_retrans_bytes
+51110:
+- 4
+- :riverbed_tcp_conn_rtt
+51111:
+- 1
+- :riverbed_fe_type
+51130:
+- 1
+- :riverbed_unk_51130
+
+
+
+56701:
+- :string
+- :pan_app
+56702:
+- :string
+- :pan_user
+
+
+
+57552:
+- 2
+- :ntop_src_frags
+57553:
+- 2
+- :ntop_dst_frags
+57554:
+- 4
+- :ntop_src_to_dst_max_throughput
+57555:
+- 4
+- :ntop_src_to_dst_min_throughput
+57556:
+- 4
+- :ntop_src_to_dst_avg_throughput
+57557:
+- 4
+- :ntop_dst_to_src_max_throughput
+57558:
+- 4
+- :ntop_dst_to_src_min_throughput
+57559:
+- 4
+- :ntop_dst_to_src_avg_throughput
+57560:
+- 4
+- :ntop_packets_upto_128_bytes
+57561:
+- 4
+- :ntop_packets_128_to_256_bytes
+57562:
+- 4
+- :ntop_packets_256_to_512_bytes
+57563:
+- 4
+- :ntop_packets_512_to_1024_bytes
+57564:
+- 4
+- :ntop_packets_1024_to_1514_bytes
+57565:
+- 4
+- :ntop_packets_over_1514_bytes
+57570:
+- 2
+- :ntop_cumulative_icmp_type
+57573:
+- :string
+- :ntop_src_country
+57574:
+- :string
+- :ntop_src_city
+57575:
+- :string
+- :ntop_dst_country
+57576:
+- :string
+- :ntop_dst_city
+57577:
+- 2
+- :ntop_flow_proto_port
+57578:
+- 4
+- :ntop_tunnel_id
+57579:
+- 2
+- :ntop_longest_flow_packet
+57580:
+- 2
+- :ntop_shortest_flow_packet
+57581:
+- 4
+- :ntop_retrans_in_packets
+57582:
+- 4
+- :ntop_retrans_out_packets
+57583:
+- 4
+- :ntop_ooorder_in_packets
+57584:
+- 4
+- :ntop_ooorder_out_packets
+57585:
+- 1
+- :ntop_untunneled_protocol
+57586:
+- :ip4_addr
+- :ntop_untunneled_ipv4_src_addr
+57587:
+- 2
+- :ntop_untunneled_l4_src_port
+57588:
+- :ip4_addr
+- :ntop_untunneled_ipv4_dst_addr
+57589:
+- 2
+- :ntop_untunneled_l4_dst_port
+57590:
+- 2
+- :ntop_l7_proto
+57591:
+- :string
+- :ntop_l7_proto_name
+57592:
+- 4
+- :ntop_downstram_tunnel_id
+57593:
+- :string
+- :ntop_flow_user
+57594:
+- :string
+- :ntop_flow_server
+57595:
+- 4
+- :ntop_client_nw_latency_ms
+57596:
+- 4
+- :ntop_server_nw_latency_ms
+57597:
+- 4
+- :ntop_appl_latency_ms
+57598:
+- :string
+- :ntop_plugin
+57599:
+- 4
+- :ntop_retrans_in_bytes
+57600:
+- 4
+- :ntop_retrans_out_bytes
+57602:
+- :string
+- :ntop_sip_call_id
+57603:
+- :string
+- :ntop_sip_calling_party
+57604:
+- :string
+- :ntop_sip_called_party
+57605:
+- :string
+- :ntop_sip_rtp_codecs
+57606:
+- 4
+- :ntop_sip_invite_time
+57607:
+- 4
+- :ntop_sip_trying_time
+57608:
+- 4
+- :ntop_sip_ringing_time
+57609:
+- 4
+- :ntop_sip_ok_time
+57610:
+- 4
+- :ntop_sip_invite_failure_time
+57611:
+- 4
+- :ntop_sip_bye_time
+57612:
+- 4
+- :ntop_sip_bye_ok_time
+57613:
+- 4
+- :ntop_sip_cancel_time
+57614:
+- 4
+- :ntop_sip_cancel_ok_time
+57615:
+- :ip4_addr
+- :ntop_sip_rtp_ipv4_src_addr
+57616:
+- 2
+- :ntop_sip_rtp_l4_src_port
+57617:
+- :ip4_addr
+- :ntop_sip_rtp_ipv4_dst_addr
+57618:
+- 2
+- :ntop_sip_rtp_l4_dst_port
+57619:
+- 4
+- :ntop_sip_response_code
+57620:
+- 4
+- :ntop_sip_reason_cause
+57622:
+- 4
+- :ntop_rtp_first_seq
+57623:
+- 4
+- :ntop_rtp_first_ts
+57624:
+- 4
+- :ntop_rtp_last_seq
+57625:
+- 4
+- :ntop_rtp_last_ts
+57626:
+- 4
+- :ntop_rtp_in_jitter
+57627:
+- 4
+- :ntop_rtp_out_jitter
+57628:
+- 4
+- :ntop_rtp_in_packets_lost
+57629:
+- 4
+- :ntop_rtp_out_packets_lost
+57630:
+- 1
+- :ntop_rtp_out_payload_type
+57631:
+- 4
+- :ntop_rtp_in_max_delta
+57632:
+- 4
+- :ntop_rtp_out_max_delta
+57633:
+- 1
+- :ntop_rtp_in_payload_type
+57640:
+- 4
+- :ntop_src_proc_id
+57641:
+- :string
+- :ntop_src_proc
+57652:
+- :string
+- :ntop_http_url
+57653:
+- 2
+- :ntop_http_ret_code
+57654:
+- :string
+- :ntop_http_referer
+57655:
+- :string
+- :ntop_http_ua
+57656:
+- :string
+- :ntop_http_mime
+57657:
+- :string
+- :ntop_smtp_mail_from
+57658:
+- :string
+- :ntop_smtp_rcpt_to
+57659:
+- :string
+- :ntop_http_host
+57660:
+- :string
+- :ntop_ssl_server
+57661:
+- :string
+- :ntop_bittorrent_hash
+57667:
+- :string
+- :ntop_mysql_server_version
+57668:
+- :string
+- :ntop_mysql_user
+57669:
+- :string
+- :ntop_mysql_db
+57670:
+- :string
+- :ntop_mysql_query
+57671:
+- 2
+- :ntop_mysql_response
+57672:
+- :string
+- :ntop_oracle_user
+57673:
+- :string
+- :ntop_oracle_query
+57674:
+- 2
+- :ntop_oracle_resp_code
+57675:
+- :string
+- :ntop_oracle_resp_string
+57676:
+- 4
+- :ntop_oracle_query_duration
+57677:
+- :string
+- :ntop_dns_query
+57678:
+- 2
+- :ntop_dns_query_id
+57679:
+- 1
+- :ntop_dns_query_type
+57680:
+- 1
+- :ntop_dns_ret_code
+57681:
+- 1
+- :ntop_dns_answers
+57682:
+- :string
+- :ntop_pop_user
+57692:
+- 1
+- :ntop_gtpv1_req_msg_typ
+57693:
+- 1
+- :ntop_gtpv1_rsp_msg_type
+57694:
+- 4
+- :ntop_gtpv1_c2s_teid_data
+57695:
+- 4
+- :ntop_gtpv1_c2s_teid_ctrl
+57696:
+- 4
+- :ntop_gtpv1_s2c_teid_data
+57697:
+- 4
+- :ntop_gtpv1_s2c_teid_ctrl
+57698:
+- :ip4_addr
+- :ntop_gtpv1_end_user_ip
+57699:
+- :string
+- :ntop_gtpv1_end_user_imsi
+57700:
+- :string
+- :ntop_gtpv1_end_user_msisdn
+57701:
+- :string
+- :ntop_gtpv1_end_user_imei
+57702:
+- :string
+- :ntop_gtpv1_apn
+57703:
+- 2
+- :ntop_gtpv1_rai_mcc
+57704:
+- 2
+- :ntop_gtpv1_rai_mnc
+57705:
+- 2
+- :ntop_gtpv1_uli_cell_lac
+57706:
+- 2
+- :ntop_gtpv1_uli_cell_ci
+57707:
+- 2
+- :ntop_gtpv1_uli_sac
+57708:
+- 1
+- :ntop_gtpv1_rai_type
+57712:
+- 1
+- :ntop_radius_req_msg_type
+57713:
+- 1
+- :ntop_radius_rsp_msg_type
+57714:
+- :string
+- :ntop_radius_user
+57715:
+- :string
+- :ntop_radius_calling_station_id
+57716:
+- :string
+- :ntop_radius_called_station_id
+57717:
+- :ip4_addr
+- :ntop_radius_nas_ip
+57718:
+- :string
+- :ntop_radius_nas_identifier
+57719:
+- :string
+- :ntop_radius_user_imsi
+57720:
+- :string
+- :ntop_radius_user_imei
+57721:
+- :ip4_addr
+- :ntop_radius_framed_ip
+57722:
+- :string
+- :ntop_radius_acct_sess_id
+57723:
+- :string
+- :ntop_radius_acct_status_type
+57724:
+- 4
+- :ntop_radius_acct_in_octects
+57725:
+- 4
+- :ntop_radius_acct_out_octects
+57726:
+- 4
+- :ntop_radius_acct_in_packets
+57727:
+- 4
+- :ntop_radius_acct_out_packets
+57732:
+- :string
+- :ntop_imap_login
+57742:
+- 1
+- :ntop_gtpv2_req_msg_type
+57743:
+- 1
+- :ntop_gtpv2_rsp_msg_type
+57744:
+- 4
+- :ntop_gtpv2_c2s_s1u_gtpu_teid
+57745:
+- :ip4_addr
+- :ntop_gtpv2_c2s_s1u_gtpu_ip
+57746:
+- :string
+- :ntop_gtpv2_s2c_s1u_gtpu_teid
+57747:
+- :ip4_addr
+- :ntop_gtpv2_s2c_s1u_gtpu_ip
+57748:
+- :string
+- :ntop_gtpv2_end_user_imsi
+57749:
+- :string
+- :ntop_gtpv2_and_user_msisdn
+57750:
+- :string
+- :ntop_gtpv2_apn
+57751:
+- 2
+- :ntop_gtpv2_uli_mcc
+57752:
+- 2
+- :ntop_gtpv2_uli_mnc
+57753:
+- 2
+- :ntop_gtpv2_uli_cell_tac
+57754:
+- 4
+- :ntop_gtpv2_uli_cell_id
+57755:
+- 1
+- :ntop_gtpv2_rat_type
+57756:
+- :ip4_addr
+- :ntop_gtpv2_pdn_ip
+57757:
+- :string
+- :ntop_gtpv2_end_user_imei
+57762:
+- 4
+- :ntop_src_as_path_1
+57763:
+- 4
+- :ntop_src_as_path_2
+57764:
+- 4
+- :ntop_src_as_path_3
+57765:
+- 4
+- :ntop_src_as_path_4
+57766:
+- 4
+- :ntop_src_as_path_5
+57767:
+- 4
+- :ntop_src_as_path_6
+57768:
+- 4
+- :ntop_src_as_path_7
+57769:
+- 4
+- :ntop_src_as_path_8
+57770:
+- 4
+- :ntop_src_as_path_9
+57771:
+- 4
+- :ntop_src_as_path_10
+57772:
+- 4
+- :ntop_dst_as_path_1
+57773:
+- 4
+- :ntop_dst_as_path_2
+57774:
+- 4
+- :ntop_dst_as_path_3
+57775:
+- 4
+- :ntop_dst_as_path_4
+57776:
+- 4
+- :ntop_dst_as_path_5
+57777:
+- 4
+- :ntop_dst_as_path_6
+57778:
+- 4
+- :ntop_dst_as_path_7
+57779:
+- 4
+- :ntop_dst_as_path_8
+57780:
+- 4
+- :ntop_dst_as_path_9
+57781:
+- 4
+- :ntop_dst_as_path_10
+57792:
+- 4
+- :ntop_mysql_appl_latency_usec
+57793:
+- 1
+- :ntop_gtpv0_req_msg_type
+57794:
+- 1
+- :ntop_gtpv0_rsp_msg_type
+57795:
+- 8
+- :ntop_gtpv0_tid
+57796:
+- :ip4_addr
+- :ntop_gtpv0_end_user_ip
+57797:
+- :string
+- :ntop_gtpv0_end_user_msisdn
+57798:
+- :string
+- :ntop_gtpv0_apn
+57799:
+- 2
+- :ntop_gtpv0_rai_mcc
+57800:
+- 2
+- :ntop_gtpv0_rai_mnc
+57801:
+- 2
+- :ntop_gtpv0_rai_cell_lac
+57802:
+- 2
+- :ntop_gtpv0_rai_cell_rac
+57803:
+- 1
+- :ntop_gtpv0_resp_cause
+57804:
+- 1
+- :ntop_gtpv1_resp_cause
+57805:
+- 1
+- :ntop_gtpv2_resp_cause
+57806:
+- 4
+- :ntop_packets_ttl_5_32
+57807:
+- 4
+- :ntop_packets_ttl_32_64
+57808:
+- 4
+- :ntop_packets_ttl_64_96
+57809:
+- 4
+- :ntop_packets_ttl_96_128
+57810:
+- 4
+- :ntop_packets_ttl_128_160
+57811:
+- 4
+- :ntop_packets_ttl_160_192
+57812:
+- 4
+- :ntop_packets_ttl_192_224
+57813:
+- 4
+- :ntop_packets_ttl_224_225
+57814:
+- 2
+- :ntop_gtpv1_rai_lac
+57815:
+- 1
+- :ntop_gtpv1_rai_rac
+57816:
+- 2
+- :ntop_gtpv1_uli_mcc
+57817:
+- 4
+- :ntop_gtpv1_uli_mnc
+57818:
+- 4
+- :ntop_packets_ttl_2_5
+57819:
+- 4
+- :ntop_packets_ttl_eq_1
+57820:
+- :string
+- :ntop_rtp_sip_call_id
+57821:
+- :string
+- :ntop_in_src_osi_sap
+57822:
+- :string
+- :ntop_out_dst_osi_sap
+57823:
+- :string
+- :ntop_whois_das_domain
+57824:
+- 4
+- :ntop_dns_ttl_answer
+57825:
+- :mac_addr
+- :ntop_dhcp_client_mac
+57826:
+- :ip4_addr
+- :ntop_dhcp_client_ip
+57827:
+- :string
+- :ntop_dhcp_client
+57828:
+- :string
+- :ntop_ftp_login
+57829:
+- :string
+- :ntop_ftp_password
+57830:
+- :string
+- :ntop_ftp_command
+57831:
+- 2
+- :ntop_ftp_command_ret_code
+57832:
+- :string
+- :ntop_http_method
+57833:
+- :string
+- :ntop_http_site
+57834:
+- :string
+- :ntop_sip_c_ip
+57835:
+- :string
+- :ntop_sip_call_state
+57842:
+- 4
+- :ntop_rtp_in_mos
+57843:
+- 4
+- :ntop_rtp_in_r_factor
+57844:
+- :string
+- :ntop_src_proc_user
+57845:
+- 4
+- :ntop_src_father_proc_pid
+57846:
+- :string
+- :ntop_src_father_proc
+57847:
+- 4
+- :ntop_dst_proc_pid
+57848:
+- :string
+- :ntop_dst_proc
+57849:
+- :string
+- :ntop_dst_proc_user
+57850:
+- 4
+- :ntop_dst_father_proc_pid
+57851:
+- :string
+- :ntop_dst_father_proc
+57852:
+- 4
+- :ntop_rtp_rtt
+57853:
+- 4
+- :ntop_rtp_in_transit
+57854:
+- 4
+- :ntop_rtp_out_transit
+57855:
+- 4
+- :ntop_src_proc_actual_memory
+57856:
+- 4
+- :ntop_src_proc_peak_memory
+57857:
+- 4
+- :ntop_src_proc_avg_cpu_load
+57858:
+- 4
+- :ntop_src_proc_page_faults
+57859:
+- 4
+- :ntop_dst_proc_actual_memory
+57860:
+- 4
+- :ntop_dst_proc_peak_memory
+57861:
+- 4
+- :ntop_dst_proc_avg_cpu_load
+57862:
+- 4
+- :ntop_dst_proc_page_faults
+57863:
+- 4
+- :ntop_duration_in
+57864:
+- 4
+- :ntop_duration_out
+57865:
+- 4
+- :ntop_src_proc_pctg_iowait
+57866:
+- 4
+- :ntop_dst_proc_pctg_iowait
+57867:
+- :string
+- :ntop_rtp_dtmf_tones
+57868:
+- :ip6_addr
+- :ntop_untunneled_ipv6_src_addr
+57869:
+- :ip6_addr
+- :ntop_untunneled_ipv6_dst_addr
+57870:
+- :string
+- :ntop_dns_response
+57871:
+- 4
+- :ntop_diameter_req_msg_type
+57872:
+- 4
+- :ntop_diameter_rsp_msg_type
+57873:
+- :string
+- :ntop_diameter_req_origin_host
+57874:
+- :string
+- :ntop_diameter_rsp_origin_host
+57875:
+- :string
+- :ntop_diameter_req_user
+57876:
+- 4
+- :ntop_diameter_rsp_result_code
+57877:
+- 4
+- :ntop_diameter_exp_res_vendor_id
+57878:
+- 4
+- :ntop_diameter_exp_res_result_code
+57879:
+- 4
+- :ntop_s1ap_enb_ue_s1ap_id
+57880:
+- 4
+- :ntop_s1ap_mme_ue_s1ap_id
+57881:
+- 1
+- :ntop_s1ap_msg_emm_type_mme_to_enb
+57882:
+- 1
+- :ntop_s1ap_msg_esm_type_mme_to_enb
+57883:
+- 1
+- :ntop_s1ap_msg_emm_type_enb_to_mme
+57884:
+- 1
+- :ntop_s1ap_msg_esm_type_enb_to_mme
+57885:
+- 1
+- :ntop_s1ap_cause_enb_to_mme
+57886:
+- 1
+- :ntop_s1ap_detailed_cause_enb_to_mme
+57887:
+- 2
+- :ntop_tcp_win_min_in
+57888:
+- 2
+- :ntop_tcp_win_max_in
+57889:
+- 2
+- :ntop_tcp_win_mss_in
+57890:
+- 1
+- :ntop_tcp_win_scale_in
+57891:
+- 2
+- :ntop_tcp_win_min_out
+57892:
+- 2
+- :ntop_tcp_win_max_out
+57893:
+- 2
+- :ntop_tcp_win_mss_out
+57894:
+- 1
+- :ntop_tcp_win_scale_out
+57895:
+- :string
+- :ntop_dhcp_remote_id
+57896:
+- :string
+- :ntop_dhcp_subscriber_id
+57897:
+- 4
+- :ntop_src_proc_uid
+57898:
+- 4
+- :ntop_dst_proc_uid
+57899:
+- :string
+- :ntop_app
+57900:
+- :string
+- :ntop_user
+57901:
+- :string
+- :ntop_dhcp_message_type
+57902:
+- 4
+- :ntop_rtp_in_packets_drop
+57903:
+- 4
+- :ntop_rtp_out_packets_drop
+57904:
+- 4
+- :ntop_rtp_out_mos
+57905:
+- 4
+- :ntop_rtp_out_r_factor
+57906:
+- 4
+- :ntop_rtp_mos
+57907:
+- :string
+- :ntop_gptv2_s5_s8_gtpc_teid
+57908:
+- 4
+- :ntop_rtp_r_factor
+57909:
+- 4
+- :ntop_rtp_ssrc
+57910:
+- 4
+- :ntop_payload_hash
+57911:
+- 4
+- :ntop_gtpv2_c2s_s5_s8_gtpu_teid
+57912:
+- 4
+- :ntop_gtpv2_s2c_s5_s8_gtpu_teid
+57913:
+- :ip4_addr
+- :ntop_gtpv2_c2s_s5_s8_gtpu_ip
+57914:
+- :ip4_addr
+- :ntop_gtpv2_s2c_s5_s8_gtpu_ip
+57915:
+- :string
+- :ntop_src_as_map
+57916:
+- :string
+- :ntop_dst_as_map
+57917:
+- 4
+- :ntop_diameter_hop_by_hop_id
+57918:
+- 2
+- :ntop_upstream_sess_id
+57919:
+- 4
+- :ntop_downstream_sess_id
+57920:
+- :float
+- :ntop_src_long
+57921:
+- :float
+- :ntop_src_lat
+57922:
+- :float
+- :ntop_dst_long
+57923:
+- :float
+- :ntop_dst_lat
+57924:
+- 4
+- :ntop_diameter_clr_cancel_type
+57925:
+- 4
+- :ntop_diameter_clr_flags
+57926:
+- :ip4_addr
+- :ntop_gtpv2_c2s_s5_s8_gtpc_ip
+57927:
+- :ip4_addr
+- :ntop_gtpv2_s2c_s5_s8_gtpc_ip
+57928:
+- 4
+- :ntop_gtpv2_c2s_s5_s8_sgw_gtpu_teid
+57929:
+- 4
+- :ntop_gtpv2_s2c_s5_s8_sgw_gtpu_teid
+57930:
+- :ip4_addr
+- :ntop_gtpv2_c2s_s5_s8_sgw_gtpu_ip
+57931:
+- :ip4_addr
+- :ntop_gtpv2_s2c_s5_s8_sgw_gtpu_ip
+57932:
+- :string
+- :ntop_http_x_forwarded_for
+57933:
+- :string
+- :ntop_http_via
+57934:
+- :string
+- :ntop_ssdp_host
+57935:
+- :string
+- :ntop_ssdp_usn
+57936:
+- :string
+- :ntop_netbios_query_name
+57937:
+- :string
+- :ntop_netbios_query_type
+57938:
+- :string
+- :ntop_netbios_response
+57939:
+- :string
+- :ntop_netbios_query_os
+57940:
+- :string
+- :ntop_ssdp_server
+57941:
+- :string
+- :ntop_ssdp_type
+57942:
+- :string
+- :ntop_ssdp_method
+57943:
+- :ip4_addr
+- :ntop_nprobe_ipv4_addr
+
+65500:
+- 9
+- :cisco_timestamp_abs_monitor_interval_start
+65501:
+- 9
+- :cisco_timestamp_abs_monitor_interval_end

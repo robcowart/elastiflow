@@ -1,3 +1,24 @@
+## v3.4.0
+### Breaking Changes
+v3.4.0 adds custom field definitions for the Netflow codec. While greatly expanding the number of supported vendor-specific fields, many existing vendor-specific fields have been renamed. The ElastiFlow dashboards in previous releases were based on its normalized `flow` schema, or other standard Netflow and IPFIX fields, all of which are unchanged. However it may be necessary to update any Dashboards you created for the old vendor-specific field names to use the new names.
+
+### New Features
+- Add a new Threats dashboard, based on IP reputation tags
+- Netflow and IPFIX now default to included field definitions
+- Provide a `sysctl.d` file to set `net.core.rmem_max`
+- Added application ID support for Sophos, Sonicwall, Citrix Netscaler, IXIA IxFlow and Palo Alto
+- Added support for Ziften ZFlow IPFIX host agents
+- Added enrichment of enumerated values for many vendor-specific fields.
+
+### Updates
+- Updated GeoLite2-City and GeoLite2-ASN DBs
+- Updated IP Reputation dictionary
+- Set all `translate` filters to use the new option `refresh_behaviour`, setting it to `replace`
+- Updated FortiOS 5.6 Application IDs
+- Disabled name lookups for connections to the `tcp` input
+- Kibana index pattern now contains many new vendor-specific fields
+
+---
 ## v3.3.0
 v3.3.0 is a minor release. No migration of data from v3.0.x or later to v3.3.0 is required.
 

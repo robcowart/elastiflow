@@ -1,0 +1,46 @@
+#------------------------------------------------------------------------------
+# Copyright (C)2019 Robert Cowart
+# 
+# The contents of this file and/or repository are subject to the Robert Cowart
+# Public License (the "License") and may not be used or distributed except in
+# compliance with the License. You may obtain a copy of the License at:
+# 
+# http://www.koiossian.com/public/robert_cowart_public_license.txt
+# 
+# Software distributed under the License is distributed on an "AS IS" basis,
+# WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+# the specific language governing rights and limitations under the License.
+# 
+# The Original Source Code was developed by Robert Cowart. Portions created by
+# Robert Cowart are Copyright (C)2019 Robert Cowart. All Rights Reserved.
+#------------------------------------------------------------------------------
+
+"0": "Unknown"
+"1": "Allow"
+"2": "Local Allow"
+"3": "Block"
+"4": "Local Block"
+"5": "Remove"
+"6": "Local Remove"
+"7": "Drop"
+"8": "Terminate"
+"9": "Local Terminate"
+"10": "Change"
+"11": "Operation"
+"12": "Startup"
+"13": "Configuration"
+"14": "Rule"
+"15": "State"
+"16": "Local State"
+"17": "Process"
+"18": "Admin Action"
+"19": "Deny"
+"20": "Local Deny"
+"21": "Security Event"
+"22": "Sync"
+"23": "Fail"
+"24": "Local Fail"
+"25": "ARP"
+"26": "Detect"
+"27": "Local Detect"
+"28": "Intermediate Report"

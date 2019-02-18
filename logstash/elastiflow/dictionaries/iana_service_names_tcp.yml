@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------
-# Copyright (C)2018 Robert Cowart
+# Copyright (C)2019 Robert Cowart
 # 
 # The contents of this file and/or repository are subject to the Robert Cowart
 # Public License (the "License") and may not be used or distributed except in
@@ -12,7 +12,7 @@
 # the specific language governing rights and limitations under the License.
 # 
 # The Original Source Code was developed by Robert Cowart. Portions created by
-# Robert Cowart are Copyright (C)2018 Robert Cowart. All Rights Reserved.
+# Robert Cowart are Copyright (C)2019 Robert Cowart. All Rights Reserved.
 #------------------------------------------------------------------------------
 
 "1": tcpmux
@@ -95,7 +95,7 @@
 "103": gppitnp
 "104": acr-nema
 "105": csnet-ns
-"105": cso
+#"105": cso
 "106": 3com-tsmux
 "107": rtelnet
 "108": snagas
@@ -1664,7 +1664,7 @@
 "1990": stun-p1
 "1991": stun-p2
 "1992": ipsendmsg
-"1992": stun-p3
+#"1992": stun-p3
 "1993": snmp-tcp-port
 "1994": stun-port
 "1995": perf-port

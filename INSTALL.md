@@ -1,5 +1,5 @@
 # ElastiFlow&trade; Installation
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/robcowart) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=ElastiFlow%E2%84%A2%20provides%20Netflow%20v5%2Fv9%2C%20sFlow%20and%20IPFIX%20data%20collection%20and%20visualization%20using%20the%20Elastic%20Stack.&url=https://github.com/robcowart/elastiflow&hashtags=elastiflow,netflow,sflow,ipfix)
+[![patreon](https://user-images.githubusercontent.com/10326954/52966127-c9847680-33a6-11e9-8640-10dd7abc3af0.png)](https://www.patreon.com/elastiflow) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/robcowart) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=ElastiFlow%E2%84%A2%20provides%20Netflow%20v5%2Fv9%2C%20sFlow%20and%20IPFIX%20data%20collection%20and%20visualization%20using%20the%20Elastic%20Stack.&url=https://github.com/robcowart/elastiflow&hashtags=elastiflow,netflow,sflow,ipfix)
 
 ElastiFlow&trade; is built using the Elastic Stack, including Elasticsearch, Logstash and Kibana. To install and configure ElastiFlow&trade;, you must first have a working Elastic Stack environment.
 
@@ -9,6 +9,8 @@ Refer to the following compatibility chart to choose a release of ElastiFlow&tra
 
 Elastic Stack | ElastiFlow&trade; 1.x | ElastiFlow&trade; 2.x | ElastiFlow&trade; 3.x
 :---:|:---:|:---:|:---:
+6.6 |  |  | &#10003;
+6.5 |  |  | &#10003;
 6.4 |  |  | &#10003;
 6.3 |  |  | &#10003;
 6.2 | &#10003; | &#10003; | &#10003;
@@ -237,7 +239,13 @@ Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_DEFAULT_APPID_SRCTYPE | Sets the default source type for translating the App IDs to names. Valid values are `cisco_nbar2` and `fortinet` | __UNKNOWN
 
-> The nDPI detected application name produced by nProbe is also supported as of ElastiFlow&trade; v3.0.3. No specific configuration of ElastiFlow&trade; is necessary. However, nProbe must be configured with a template that sends this data. An nProbe configuration file that works well with ElastiFlow&trade; is available [HERE](https://gist.github.com/robcowart/afd538026db29ee96dd9c495efb52ea6).
+Application identity is also supported from the following sources, and requires no additional configuration:
+- Citrix Netscaler
+- IXIA IxFlow
+- ntop nProbe (An nProbe configuration file that works well with ElastiFlow&trade; is available [HERE](https://gist.github.com/robcowart/afd538026db29ee96dd9c495efb52ea6))
+- Palo Alto
+- SonicWall
+- Sophos
 
 Once configured ElastiFlow&trade; will resolve the ID to an application name, which will be available in the dashboards.
 <img width="902" alt="screen shot 2018-05-13 at 12 40 04" src="https://user-images.githubusercontent.com/10326954/39966360-d8e6e420-56aa-11e8-8514-9a9839ca5fb1.png"> 
@@ -261,12 +269,18 @@ If using Netflow v9 or IPFIX you will likely see warning messages related to the
 Logstash setup is now complete. If you are receiving flow data, you should have an `elastiflow-` daily index in Elasticsearch.
 
 ## Setting up Kibana
+Kibana 6.5 introduced the ability to export and import Index Patterns through the UI. This greatly simplifies the setup of Kibana.
+
+### Kibana 6.5.x and Later
+The Index Patterns, vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.kibana.<VER>.json` file from within the Kibana UI. This is done from the `Management -> Saved Objects` page.
+
+### Kibana 6.4.x and Earlier
 An API (yet undocumented) is available to import and export Index Patterns. The JSON file which contains the Index Pattern configuration is `kibana/elastiflow.index_pattern.json`. To setup the `elastiflow-*` Index Pattern run the following command:
 ```
 curl -X POST -u USERNAME:PASSWORD http://KIBANASERVER:5601/api/saved_objects/index-pattern/elastiflow-* -H "Content-Type: application/json" -H "kbn-xsrf: true" -d @/PATH/TO/elastiflow.index_pattern.json
 ```
 
-Finally the vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.dashboards.<VER>.json` file from within the Kibana UI. This is done from the Management - > Saved Objects page. There are separate dashboard import files for version 6.2.x, 6.3.x and 6.4.x of Kibana. Select the file that corresponds to your version of Kibana.
+Finally the vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.dashboards.<VER>.json` file from within the Kibana UI. This is done from the `Management -> Saved Objects` page. There are separate dashboard import files for version 6.2.x, 6.3.x and 6.4.x of Kibana. Select the file that corresponds to your version of Kibana.
 
 ### Recommended Kibana Advanced Settings
 You may find that modifying a few of the Kibana advanced settings will produce a more user-friendly experience while using ElastiFlow&trade;. These settings are made in Kibana, under `Management -> Advanced Settings`.
