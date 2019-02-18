@@ -28481,6 +28481,9 @@
             "client_hostname": {
               "type": "keyword"
             },
+            "client_rep_tags": {
+              "type": "keyword"
+            },
             "country": {
               "type": "keyword"
             },
@@ -28587,6 +28590,9 @@
               "type": "geo_point"
             },
             "server_hostname": {
+              "type": "keyword"
+            },
+            "server_rep_tags": {
               "type": "keyword"
             },
             "service_name": {
