@@ -15,7 +15,7 @@
 # Robert Cowart are Copyright (C)2019 Robert Cowart. All Rights Reserved.
 #------------------------------------------------------------------------------
 
-FROM docker.elastic.co/logstash/logstash-oss:6.6.0
+FROM docker.elastic.co/logstash/logstash-oss:6.1.3
 
 ARG BUILD_DATE
 
@@ -24,20 +24,26 @@ LABEL org.opencontainers.image.created="$BUILD_DATE" \
       org.opencontainers.image.url="https://github.com/robcowart/elastiflow-docker/elastiflow-logstash" \
       org.opencontainers.image.documentation="https://github.com/robcowart/elastiflow-docker/elastiflow-logstash/README.md" \
       org.opencontainers.image.source="https://github.com/robcowart/elastiflow" \
-      org.opencontainers.image.version="v3.4.0_6.6.0" \
-      org.opencontainers.image.revision="https://github.com/robcowart/elastiflow-docker/tree/v3.4.0_6.6.0" \
+      org.opencontainers.image.version="v3.4.0_6.1.3" \
       org.opencontainers.image.vendor="Robert Cowart" \
       org.opencontainers.image.title="ElastiFlow™ - Logstash" \
       org.opencontainers.image.description=""
 
 ENV ELASTIFLOW_ES_HOST="http://127.0.0.1:9200"
 
-RUN $HOME/bin/logstash-plugin install logstash-codec-sflow
-
-WORKDIR /etc/logstash
-COPY --chown=logstash:root ./logstash/elastiflow ./
+RUN $HOME/bin/logstash-plugin install logstash-codec-sflow \
+    && $HOME/bin/logstash-plugin update logstash-codec-netflow \
+    && $HOME/bin/logstash-plugin update logstash-input-udp \
+    && $HOME/bin/logstash-plugin update logstash-input-tcp \
+    && $HOME/bin/logstash-plugin update logstash-filter-dns \
+    && $HOME/bin/logstash-plugin update logstash-filter-geoip \
+    && $HOME/bin/logstash-plugin update logstash-filter-translate
 
 WORKDIR /usr/share/logstash/config
-COPY --chown=logstash:root ./docker_assets/pipelines.yml ./
+COPY --chown=logstash:logstash ./docker_assets/logstash.yml ./
+COPY --chown=logstash:logstash ./docker_assets/pipelines.yml ./
+
+WORKDIR /etc/logstash/elastiflow
+COPY --chown=logstash:root ./logstash/elastiflow/ ./
 
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]

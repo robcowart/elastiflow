@@ -15,4 +15,4 @@
 # Robert Cowart are Copyright (C)2019 Robert Cowart. All Rights Reserved.
 #------------------------------------------------------------------------------
 
-docker build --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t robcowart/elastiflow-logstash-oss:3.4.0_6.6.0 .
+docker build --build-arg BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') -t robcowart/elastiflow-logstash-oss:3.4.0_6.1.3 .
