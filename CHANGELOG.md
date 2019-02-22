@@ -1,3 +1,20 @@
+## v3.4.1
+v3.4.1 is a minor release. No migration of data from v3.4.0 to v3.4.1 is required.
+
+### Breaking Changes
+If you are upgrading from a release prior to 3.4.0, see the Breaking Changes notice for v3.4.0 below.
+
+### New Features
+- Added Docker support
+
+### Updates
+- Updated GeoLite2-City and GeoLite2-ASN DBs
+- Updated IP Reputation dictionary
+
+### Fixes
+- Netflow application id regression. Now uses field `netflow.app_id`.
+
+---
 ## v3.4.0
 ### Breaking Changes
 v3.4.0 adds custom field definitions for the Netflow codec. While greatly expanding the number of supported vendor-specific fields, many existing vendor-specific fields have been renamed. The ElastiFlow dashboards in previous releases were based on its normalized `flow` schema, or other standard Netflow and IPFIX fields, all of which are unchanged. However it may be necessary to update any Dashboards you created for the old vendor-specific field names to use the new names.
