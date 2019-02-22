@@ -19,7 +19,7 @@ version: '3'
 
 services:
   elastiflow-elasticsearch-oss:
-    image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.6.0
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.6.1
     container_name: elastiflow-elasticsearch-oss
     restart: 'no'
     ulimits:
@@ -45,7 +45,7 @@ services:
       action.destructive_requires_name: 'true'
 
   elastiflow-kibana-oss:
-    image: docker.elastic.co/kibana/kibana-oss:6.6.0
+    image: docker.elastic.co/kibana/kibana-oss:6.6.1
     container_name: elastiflow-kibana-oss
     restart: 'no'
     depends_on:
