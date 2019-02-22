@@ -33,7 +33,11 @@ There are separate Top-N dashboards for Top Talkers, Services, Conversations and
 ![Top-N](https://user-images.githubusercontent.com/10326954/52973927-19bc0280-33c0-11e9-9352-76c483738c24.png)
 
 ### Threats
-The Threats dashboard uses IP Reputation tags to help you identify possible threats and risky traffic.
+ElastiFlow&trade; includes a dictionary of public IP addresses that are known to have a poor reputation. This dictionary is built from many OSINT data sources, normalized to a common taxonomy. The Threats dashboard uses this IP reputation information to highlight three threat/risk types.
+
+1. Public Threats - Public clients with a poor IP reputation that are reaching private addresses.
+2. At-Risk Servers - Private Servers that are being reached by clients with a poor IP reputation.
+3. High-Risk Clients - Private clients that are accessing public servers which have a poor reputation.
 ![Threats](https://user-images.githubusercontent.com/10326954/52973930-1c1e5c80-33c0-11e9-8aa8-87252461336c.png)
 
 ### Flows
