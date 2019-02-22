@@ -7,6 +7,10 @@ If you are upgrading from a release prior to 3.4.0, see the Breaking Changes not
 ### New Features
 - Added Docker support
 
+### Updates
+- Updated GeoLite2-City and GeoLite2-ASN DBs
+- Updated IP Reputation dictionary
+
 ### Fixes
 - Netflow application id regression. Now uses field `netflow.app_id`.
 
