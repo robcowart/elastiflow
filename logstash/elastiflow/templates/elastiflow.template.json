@@ -1583,14 +1583,6 @@
           }
         },
         {
-          "netflow.collectorTransportPort": {
-            "path_match": "netflow.collectorTransportPort",
-            "mapping": {
-              "type": "long"
-            }
-          }
-        },
-        {
           "ipfix.exporterTransportPort": {
             "path_match": "ipfix.exporterTransportPort",
             "mapping": {
