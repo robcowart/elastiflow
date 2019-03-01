@@ -29,7 +29,7 @@ The following dashboards are provided.
 ![Overview](https://user-images.githubusercontent.com/10326954/52973920-158fe500-33c0-11e9-96ed-606c01aca7c8.png)
 
 ### Top-N
-There are separate Top-N dashboards for Top Talkers, Services, Conversations and Applciations.
+There are separate Top-N dashboards for Top Talkers, Services, Conversations and Applications.
 ![Top-N](https://user-images.githubusercontent.com/10326954/52973927-19bc0280-33c0-11e9-9352-76c483738c24.png)
 
 ### Threats
