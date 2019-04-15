@@ -11,7 +11,7 @@
     }
   },
   "mappings": {
-    "_default_": {
+    "doc": {
       "numeric_detection": true,
       "dynamic_templates": [
         {
