@@ -1,7 +1,7 @@
 {
   "order": 0,
-  "version": 30401,
-  "index_patterns": "elastiflow-3.4.1-*",
+  "version": 30402,
+  "index_patterns": "elastiflow-3.4.2-*",
   "settings": {
     "index": {
       "number_of_shards": 3,
@@ -11,7 +11,7 @@
     }
   },
   "mappings": {
-    "_default_": {
+    "doc": {
       "numeric_detection": true,
       "dynamic_templates": [
         {
