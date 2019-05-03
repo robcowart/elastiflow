@@ -9,7 +9,8 @@ Refer to the following compatibility chart to choose a release of ElastiFlow&tra
 
 Elastic Stack | ElastiFlow&trade; 1.x | ElastiFlow&trade; 2.x | ElastiFlow&trade; 3.x
 :---:|:---:|:---:|:---:
-6.6 |  |  | &#10003;
+6.7 |  |  | &#10003; v3.4.2
+6.6 |  |  | &#10003; v3.4.1
 6.5 |  |  | &#10003;
 6.4 |  |  | &#10003;
 6.3 |  |  | &#10003;

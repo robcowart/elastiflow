@@ -1,17 +1,22 @@
 {
   "order": 0,
-  "version": 30401,
-  "index_patterns": "elastiflow-3.4.1-*",
+  "version": 30402,
+  "index_patterns": "elastiflow-3.4.2-*",
   "settings": {
     "index": {
       "number_of_shards": 3,
       "number_of_replicas": 1,
       "refresh_interval": "10s",
-      "codec": "best_compression"
+      "codec": "best_compression",
+      "mapping": {
+        "total_fields" : {
+          "limit": 5000
+        }
+      }
     }
   },
   "mappings": {
-    "_default_": {
+    "doc": {
       "numeric_detection": true,
       "dynamic_templates": [
         {
@@ -1583,14 +1588,6 @@
           }
         },
         {
-          "netflow.collectorTransportPort": {
-            "path_match": "netflow.collectorTransportPort",
-            "mapping": {
-              "type": "long"
-            }
-          }
-        },
-        {
           "ipfix.exporterTransportPort": {
             "path_match": "ipfix.exporterTransportPort",
             "mapping": {
@@ -1986,7 +1983,7 @@
           "ipfix.opaqueOctets": {
             "path_match": "ipfix.opaqueOctets",
             "mapping": {
-              "type": "long"
+              "type": "keyword"
             }
           }
         },
@@ -5373,7 +5370,7 @@
           "ipfix.reverseOpaqueOctets": {
             "path_match": "ipfix.reverseOpaqueOctets",
             "mapping": {
-              "type": "long"
+              "type": "keyword"
             }
           }
         },
@@ -14165,7 +14162,7 @@
         },
         {
           "ipfix.netscaler_unk_377": {
-            "path_match": "ipfix.",
+            "path_match": "ipfix.netscaler_unk_377",
             "mapping": {
               "type": "long"
             }
@@ -16160,7 +16157,7 @@
         },
         {
           "ipfix.ntop_dst_as_path_8": {
-            "path_match": "ipfix.ntop_dst_as_path_",
+            "path_match": "ipfix.ntop_dst_as_path_8",
             "mapping": {
               "type": "long"
             }
@@ -17208,7 +17205,7 @@
         },
         {
           "ipfix.ntop_gtpv2_c2s_s5_s8_gtpc_ip": {
-            "path_match": "ipfix.",
+            "path_match": "ipfix.ntop_gtpv2_c2s_s5_s8_gtpc_ip",
             "mapping": {
               "type": "ip"
             }
@@ -17240,7 +17237,7 @@
         },
         {
           "ipfix.ntop_gtpv2_c2s_s5_s8_sgw_gtpu_ip": {
-            "path_match": "ipfix.",
+            "path_match": "ipfix.ntop_gtpv2_c2s_s5_s8_sgw_gtpu_ip",
             "mapping": {
               "type": "ip"
             }
@@ -17248,7 +17245,7 @@
         },
         {
           "ipfix.ntop_gtpv2_s2c_s5_s8_sgw_gtpu_ip": {
-            "path_match": "ipfix.",
+            "path_match": "ipfix.ntop_gtpv2_s2c_s5_s8_sgw_gtpu_ip",
             "mapping": {
               "type": "ip"
             }
@@ -18241,14 +18238,6 @@
           }
         },
         {
-          "ipfix.sonic_user_id": {
-            "path_match": "ipfix.sonic_user_id",
-            "mapping": {
-              "type": "long"
-            }
-          }
-        },
-        {
           "ipfix.sonic_ips_id": {
             "path_match": "ipfix.sonic_ips_id",
             "mapping": {
@@ -19188,7 +19177,7 @@
           "ipfix.sonic_if_stat_zone": {
             "path_match": "ipfix.sonic_if_stat_zone",
             "mapping": {
-              "type": "string"
+              "type": "keyword"
             }
           }
         },
@@ -20737,7 +20726,7 @@
         },
         {
           "netflow.icmp_type_ipv4": {
-            "path_match": "netflow.icmp_type_ipv6",
+            "path_match": "netflow.icmp_type_ipv4",
             "mapping": {
               "type": "long"
             }
@@ -23109,14 +23098,6 @@
         {
           "netflow.cisco_trustsec_switch_derived_sgt": {
             "path_match": "netflow.cisco_trustsec_switch_derived_sgt",
-            "mapping": {
-              "type": "keyword"
-            }
-          }
-        },
-        {
-          "netflow.cisco_fw_ext_event": {
-            "path_match": "netflow.cisco_fw_ext_event",
             "mapping": {
               "type": "keyword"
             }
@@ -26146,7 +26127,7 @@
         },
         {
           "netflow.ntop_dst_as_path_8": {
-            "path_match": "netflow.ntop_dst_as_path_",
+            "path_match": "netflow.ntop_dst_as_path_8",
             "mapping": {
               "type": "long"
             }
@@ -27194,7 +27175,7 @@
         },
         {
           "netflow.ntop_gtpv2_c2s_s5_s8_gtpc_ip": {
-            "path_match": "netflow.",
+            "path_match": "netflow.ntop_gtpv2_c2s_s5_s8_gtpc_ip",
             "mapping": {
               "type": "ip"
             }
@@ -27226,7 +27207,7 @@
         },
         {
           "netflow.ntop_gtpv2_c2s_s5_s8_sgw_gtpu_ip": {
-            "path_match": "netflow.",
+            "path_match": "netflow.ntop_gtpv2_c2s_s5_s8_sgw_gtpu_ip",
             "mapping": {
               "type": "ip"
             }
@@ -27234,7 +27215,7 @@
         },
         {
           "netflow.ntop_gtpv2_s2c_s5_s8_sgw_gtpu_ip": {
-            "path_match": "netflow.",
+            "path_match": "netflow.ntop_gtpv2_s2c_s5_s8_sgw_gtpu_ip",
             "mapping": {
               "type": "ip"
             }
