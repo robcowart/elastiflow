@@ -19,7 +19,7 @@ version: '3'
 
 services:
   elastiflow-elasticsearch-oss:
-    image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.6.1
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.7.1
     container_name: elastiflow-elasticsearch-oss
     restart: 'no'
     ulimits:
@@ -45,7 +45,7 @@ services:
       action.destructive_requires_name: 'true'
 
   elastiflow-kibana-oss:
-    image: docker.elastic.co/kibana/kibana-oss:6.6.1
+    image: docker.elastic.co/kibana/kibana-oss:6.7.1
     container_name: elastiflow-kibana-oss
     restart: 'no'
     depends_on:
@@ -70,7 +70,7 @@ services:
     network_mode: host
     environment:
       # JVM Heap size - this MUST be at least 3GB (4GB preferred)
-      LS_JAVA_OPTS: '-Xms3g -Xmx3g'
+      LS_JAVA_OPTS: '-Xms4g -Xmx4g'
 
       # ElastiFlow global configuration
       ELASTIFLOW_DEFAULT_APPID_SRCTYPE: "__UNKNOWN"
