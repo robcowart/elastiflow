@@ -4,7 +4,7 @@ v3.5.0 is a minor release. No migration of data from v3.4.x to v3.5.0 is require
 
 ### Breaking Changes
 
-ElasiFlow v3.5.0 provides support Elastic Stack 7.0.0. The support for document tyes has been completely removed in Elasticsearch 7.0.0. This has required changes to the index templates provided with ElastiFlow. You _MUST_ first successfully upgrade to Elastic Stack 7.0.x _PRIOR_ to using ElastiFlow v3.5.0.
+ElastiFlow v3.5.0 provides support Elastic Stack 7.0.0. The support for document types has been completely removed in Elasticsearch 7.0.0. This has required changes to the index templates provided with ElastiFlow. You _MUST_ first successfully upgrade to Elastic Stack 7.0.x _PRIOR_ to using ElastiFlow v3.5.0.
 
 ### New Features
 
