@@ -2663,7 +2663,8 @@
 "2997": rebol
 "2998": realsecure
 "2999": remoteware-un
-"3000": hbci
+#"3000": hbci
+"3000": grafana
 "3001": origo-native
 "3002": exlm-agent
 "3003": cgms
@@ -4700,7 +4701,8 @@
 "6421": nim-wan
 "6432": pgbouncer
 "6442": tarp
-"6443": sun-sr-https
+#"6443": sun-sr-https
+"6443": kubernetes-api
 "6444": sge-qmaster
 "6445": sge-execd
 "6446": mysql-proxy
@@ -5065,9 +5067,11 @@
 "8082": us-cli
 "8083": us-srv
 "8085": hbase-rest-info
-"8086": d-s-n
+#"8086": d-s-n
+"8086": influxdb-http
 "8087": simplifymedia
-"8088": radan-http
+#"8088": radan-http
+"8088": influxdb-rpc
 #"8091": jamlink
 "8091": couchbase-admin
 "8092": couchbase-api
@@ -5189,7 +5193,8 @@
 "8880": cddbp-alt
 "8881": galaxy4d
 "8883": secure-mqtt
-"8888": ddi-tcp-1
+#"8888": ddi-tcp-1
+"8888": chronograf
 "8889": ddi-tcp-2
 "8890": ddi-tcp-3
 "8891": ddi-tcp-4
@@ -5213,7 +5218,8 @@
 "8997": oracle-ms-ens
 "8998": canto-roboflow
 "8999": bctp
-"9000": cslistener
+#"9000": cslistener
+"9000": kafka-manager
 "9001": etlservicemgr
 "9002": dynamid
 "9005": golem

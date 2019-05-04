@@ -13,3 +13,4 @@ I have received many notes of thanks for the ElastiFlow&trade; project. However 
 * Radek Černík
 * Ian Graham
 * CSIRT Gadgets, LLC
+* Dmitriy Vasilets

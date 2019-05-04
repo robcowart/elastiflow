@@ -15,6 +15,14 @@ VyoPath, Inc.
 9689 Avalon Drive
 Frisco, Texas 75035
 
-Phone: 469.850.2419
+Phone: +1 469 850 2419
 Email: info@vyopath.com
 ````
+
+# ElastiFlow&trade; Services Consultants
+
+Independent ElastiFlow&trade; Services Consultants provide commercial deployment services and support for ElastiFlow.
+
+Consultant | Location | Email
+--- | --- | ---
+Dmitry Vasilets | Berlin, Germany | pronix.service@gmail.com
