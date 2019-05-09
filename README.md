@@ -21,6 +21,8 @@ Organization | Feedback
 
 ## Getting Started
 
+> NOTE: Elastic Stack 7.x _*requires*_ ElastiFlow&trade; 3.5.x. To deploy on Elastic Stack 6.x you _*must*_ use ElastiFlow&trade; 3.4.2 or earlier. The 3.4 branch will be maintained independently of the master branch for a while, as most users are still using a pre-7 release of the Elastic Stack.
+
 ElastiFlow&trade; is built using the Elastic Stack, including Elasticsearch, Logstash and Kibana. Please refer to [INSTALL.md](https://github.com/robcowart/elastiflow/blob/master/INSTALL.md) for instructions on how to install and configure ElastiFlow&trade;
 
 ## Provided Dashboards

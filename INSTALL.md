@@ -4,7 +4,7 @@
 
 ElastiFlow&trade; is built using the Elastic Stack, including Elasticsearch, Logstash and Kibana. To install and configure ElastiFlow&trade;, you must first have a working Elastic Stack environment.
 
-The latest release of ElastiFlow&trade; requires version 6.2 or later. If you are using an older version of the Elastic Stack, please use version 2.1 or 1.2.
+Elastic Stack 7.x _*requires*_ ElastiFlow&trade; 3.5.x. To deploy on Elastic Stack 6.x you _*must*_ use ElastiFlow&trade; 3.4.2 or earlier. The 3.4 branch will be maintained independently of the master branch for a while, as most users are still using a pre-7 release of the Elastic Stack.
 
 Refer to the following compatibility chart to choose a release of ElastiFlow&trade; that is compatible with the version of the Elastic Stack you are using.
 
