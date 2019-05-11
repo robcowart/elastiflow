@@ -123,7 +123,7 @@ Recent versions of both RedHat/CentOS and Ubuntu use systemd to start background
 
 Logstash 6.0 introduced the ability to run multiple pipelines from a single Logstash instance. The `pipelines.yml` file is where these pipelines are configured. While a single pipeline can be specified directly in `logstash.yml`, it is a good practice to use `pipelines.yml` for consistency across environments.
 
-Edit `pipelines.yml` (usually located at `/etc/logstash/pipelines.yml`) and add the ElasiFlow&trade; pipeline (adjust the path as necessary).
+Edit `pipelines.yml` (usually located at `/etc/logstash/pipelines.yml`) and add the ElastiFlow&trade; pipeline (adjust the path as necessary).
 
 ```
 - pipeline.id: elastiflow
@@ -145,7 +145,7 @@ ELASTIFLOW_IPFIX_TCP_IPV4_PORT | The port on which to listen for IPFIX messages 
 ELASTIFLOW_IPFIX_UDP_IPV4_HOST | The IP address from which to listen for IPFIX messages via UDP | 0.0.0.0
 ELASTIFLOW_IPFIX_UDP_IPV4_PORT | The port on which to listen for IPFIX messages via UDP | 4739
 
-Collection of flows over IPv6 is disabled by default to avoid issues on systems without IPv6 enabled. To enable IPv6 rename the following files in the `elastiflow/conf.d` directory, removing `.disabled` from the end of the name: `10_input_ipfix_ipv6.logstash.conf.disabled`, `10_input_netflow_ipv6.logstash.conf.disabled`, `10_input_sflow_ipv6.logstash.conf.disabled`. Similiar to IPv4, IPv6 input can be configured using environment variables:
+Collection of flows over IPv6 is disabled by default to avoid issues on systems without IPv6 enabled. To enable IPv6 rename the following files in the `elastiflow/conf.d` directory, removing `.disabled` from the end of the name: `10_input_ipfix_ipv6.logstash.conf.disabled`, `10_input_netflow_ipv6.logstash.conf.disabled`, `10_input_sflow_ipv6.logstash.conf.disabled`. Similiar to IPv4, the IPv6 input can be configured using environment variables:
 
 Environment Variable | Description | Default Value
 --- | --- | ---
@@ -158,7 +158,7 @@ ELASTIFLOW_IPFIX_TCP_IPV6_PORT | The port on which to listen for IPFIX messages 
 ELASTIFLOW_IPFIX_UDP_IPV6_HOST | The IP address from which to listen for IPFIX messages via UDP | [::]
 ELASTIFLOW_IPFIX_UDP_IPV6_PORT | The port on which to listen for IPFIX messages via UDP | 54739
 
-To improve UDP input performance for the typically high volume of flow collection, the default values for UDP input `workers` and `queue_size` is increased. The default values are `2` and `2000` respecitvely. ElastiFlow&trade; increases these to `4` and `4096`. Further tuning is possible using the following environment variables.
+To improve UDP input performance for high volume flow collection, the default values for UDP input `workers` and `queue_size` are increased. The default values are `2` and `2000` respecitvely. ElastiFlow&trade; increases these to `4` and `4096`. Further tuning is possible using the following environment variables.
 
 Environment Variable | Description | Default Value
 --- | --- | ---
@@ -174,7 +174,7 @@ ELASTIFLOW_IPFIX_UDP_RCV_BUFF | The socket receive buffer size (bytes) for IPFIX
 
 > WARNING! Increasing `queue_size` will increase heap_usage. Make sure have configured JVM heap appropriately as specified in the [Requirements](#requirements)
 
-### 7. Configure Elasticsearch output
+### 7. Configure the Elasticsearch output
 
 Obviously the data needs to land in Elasticsearch, so you need to tell Logstash where to send it.
 
@@ -200,14 +200,14 @@ To complete the setup of the Elasticsearch output, configure the following envir
 
 Environment Variable | Description | Default Value
 --- | --- | ---
-ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
-ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
+ELASTIFLOW_ES_USER | The username for the connection to Elasticsearch | elastic
+ELASTIFLOW_ES_PASSWD | The password for the connection to Elasticsearch | changeme
 ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
 ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
 
 > If you are only using the open-source version of Elasticsearch, it will ignore the username and password. In that case just leave the defaults.
 
-> If ELASTIFLOW_ES_SSL_ENABLE and ELASTIFLOW_ES_SSL_VERIFY are both `true`, you must uncomment the `cacert` option in the Elasticsearch output and set the path to the certificate.
+> If `ELASTIFLOW_ES_SSL_ENABLE` and `ELASTIFLOW_ES_SSL_VERIFY` are both `true`, you must uncomment the `cacert` option in the Elasticsearch output and set the path to the certificate.
 
 ### 8. Enable DNS name resolution (optional)
 
@@ -273,13 +273,14 @@ You should now be able to start Logstash and begin collecting network flow data.
 2. Run `systemctl start logstash`
 
 > NOTICE! Make sure that you have already setup the Logstash init files by running `LS_HOME/bin/system-install`. If the init files have not been setup you will receive an error.
+
 To follow along as Logstash starts you can tail its log by running:
 
 ```
 tail -f /var/log/logstash/logstash-plain.log
 ```
 
-Logstash takes a little time to start... BE PATIENT!
+**Logstash takes a little time to start... BE PATIENT!**
 
 If using Netflow v9 or IPFIX you will likely see warning messages related to the flow templates not yet being received. They will disappear after templates are received from the network devices, which should happen every few minutes. Some devices can take a bit longer to send templates. Fortinet in particular send templates rather infrequently.
 
