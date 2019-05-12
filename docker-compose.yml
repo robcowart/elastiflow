@@ -59,7 +59,7 @@ services:
       SERVER_HOST: 0.0.0.0
       SERVER_PORT: 5601
 
-      ELASTICSEARCH_URL: "http://127.0.0.1:9200"
+      ELASTICSEARCH_HOSTS: "http://127.0.0.1:9200"
 
       KIBANA_DEFAULTAPPID: "dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5"
 
