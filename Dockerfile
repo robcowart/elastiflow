@@ -15,16 +15,16 @@
 # Robert Cowart are Copyright (C)2019 Robert Cowart. All Rights Reserved.
 #------------------------------------------------------------------------------
 
-FROM docker.elastic.co/logstash/logstash-oss:6.1.3
+FROM docker.elastic.co/logstash/logstash-oss:7.0.1
 
 ARG BUILD_DATE
 
 LABEL org.opencontainers.image.created="$BUILD_DATE" \
       org.opencontainers.image.authors="rob@koiossian.com" \
-      org.opencontainers.image.url="https://github.com/robcowart/elastiflow-docker/elastiflow-logstash" \
-      org.opencontainers.image.documentation="https://github.com/robcowart/elastiflow-docker/elastiflow-logstash/README.md" \
+      org.opencontainers.image.url="https://github.com/robcowart/elastiflow/README.md" \
+      org.opencontainers.image.documentation="https://github.com/robcowart/elastiflow/DOCKER.md" \
       org.opencontainers.image.source="https://github.com/robcowart/elastiflow" \
-      org.opencontainers.image.version="v3.5.0_6.1.3" \
+      org.opencontainers.image.version="v3.5.0_7.0.1" \
       org.opencontainers.image.vendor="Robert Cowart" \
       org.opencontainers.image.title="ElastiFlow™ - Logstash" \
       org.opencontainers.image.description=""
