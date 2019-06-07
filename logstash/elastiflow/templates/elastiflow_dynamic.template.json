@@ -8,6 +8,9 @@
       "number_of_replicas": 1,
       "refresh_interval": "10s",
       "codec": "best_compression",
+      "lifecycle": {
+        "name": "elastiflow"
+      },
       "mapping": {
         "total_fields" : {
           "limit": 5000
@@ -10998,6 +11001,30 @@
           "path_match": "ipfix.cisco_nvzflow_iface_details_list",
           "mapping": {
             "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_nvzflow_user_acct_type": {
+          "path_match": "ipfix.cisco_nvzflow_user_acct_type",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_nvzflow_proc_user_acct_type": {
+          "path_match": "ipfix.cisco_nvzflow_proc_user_acct_type",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_nvzflow_parent_proc_user_acct_type": {
+          "path_match": "ipfix.cisco_nvzflow_parent_proc_user_acct_type",
+          "mapping": {
+            "type": "long"
           }
         }
       },
@@ -24735,6 +24762,30 @@
           "path_match": "netflow.cisco_nvzflow_iface_details_list",
           "mapping": {
             "type": "keyword"
+          }
+        }
+      },
+      {
+        "netflow.cisco_nvzflow_user_acct_type": {
+          "path_match": "netflow.cisco_nvzflow_user_acct_type",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_nvzflow_proc_user_acct_type": {
+          "path_match": "netflow.cisco_nvzflow_proc_user_acct_type",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_nvzflow_parent_proc_user_acct_type": {
+          "path_match": "netflow.cisco_nvzflow_parent_proc_user_acct_type",
+          "mapping": {
+            "type": "long"
           }
         }
       },

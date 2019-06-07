@@ -8,6 +8,9 @@
       "number_of_replicas": 1,
       "refresh_interval": "10s",
       "codec": "best_compression",
+      "lifecycle": {
+        "name": "elastiflow"
+      },
       "mapping": {
         "total_fields" : {
           "limit": 5000
@@ -4453,6 +4456,15 @@
           },
           "cisco_nvzflow_iface_details_list": {
             "type": "keyword"
+          },
+          "cisco_nvzflow_user_acct_type": {
+            "type": "long"
+          },
+          "cisco_nvzflow_proc_user_acct_type": {
+            "type": "long"
+          },
+          "cisco_nvzflow_parent_proc_user_acct_type": {
+            "type": "long"
           },
           "cisco_timestamp_abs_monitor_interval_start": {
             "type": "long"
@@ -9626,6 +9638,15 @@
           },
           "cisco_nvzflow_iface_details_list": {
             "type": "keyword"
+          },
+          "cisco_nvzflow_user_acct_type": {
+            "type": "long"
+          },
+          "cisco_nvzflow_proc_user_acct_type": {
+            "type": "long"
+          },
+          "cisco_nvzflow_parent_proc_user_acct_type": {
+            "type": "long"
           },
           "cisco_timestamp_abs_monitor_interval_start": {
             "type": "long"

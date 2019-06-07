@@ -1862,6 +1862,17 @@
   12359:
   - :string
   - :cisco_nvzflow_iface_details_list
+  12360:
+  - :skip
+  12361:
+  - :uint16
+  - :cisco_nvzflow_user_acct_type
+  12362:
+  - :uint16
+  - :cisco_nvzflow_proc_user_acct_type
+  12363:
+  - :uint16
+  - :cisco_nvzflow_parent_proc_user_acct_type
   15901:
   - :ip4_addr
   - :cisco_nexus_fastpath_src_addr
