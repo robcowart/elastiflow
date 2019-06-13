@@ -57,7 +57,7 @@ There are separate Sankey dashboards for Client/Server, Source/Destination and A
 
 ### Geo IP
 
-There are separate Geo Loacation dashboards for Client/Server and Source/Destination perspectives.
+There are separate Geo Location dashboards for Client/Server and Source/Destination perspectives.
 ![Geo IP](https://user-images.githubusercontent.com/10326954/57180209-cf0e3a80-6e86-11e9-8b7b-acd3a82181af.png)
 
 ### AS Traffic
