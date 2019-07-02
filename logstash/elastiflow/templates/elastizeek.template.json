@@ -1,0 +1,219 @@
+{
+  "order": 0,
+  "version": 30500,
+  "index_patterns": "elastiflow-3.5.0-*",
+  "mappings": {
+    "dynamic_templates": [
+      {
+        "zeek.ts": {
+          "path_match": "zeek.ts",
+          "mapping": {
+            "type": "text"
+          }
+        }
+      },{
+        "zeek.uid": {
+          "path_match": "zeek.uid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },{
+        "zeek.id.orig_h": {
+          "path_match": "zeek.id.orig_h",
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      },
+      {
+        "zeek.id.orig_p": {
+          "path_match": "zeek.id.orig_p",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "zeek.id.resp_h": {
+          "path_match": "zeek.id.resp_h",
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      },
+      {
+        "zeek.id.resp_p": {
+          "path_match": "zeek.id.resp_p",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "zeek.proto": {
+          "path_match": "zeek.proto",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.service": {
+          "path_match": "zeek.service",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.duration": {
+          "path_match": "zeek.duration",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "zeek.orig_bytes": {
+          "path_match": "zeek.orig_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "zeek.resp_bytes": {
+          "path_match": "zeek.resp_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "zeek.conn_state": {
+          "path_match": "zeek.conn_state",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.local_orig": {
+          "path_match": "zeek.local_orig",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.local_resp": {
+          "path_match": "zeek.local_resp",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.missed_bytes": {
+          "path_match": "zeek.missed_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "zeek.history": {
+          "path_match": "zeek.history",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.orig_pkts": {
+          "path_match": "zeek.orig_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "zeek.orig_ip_bytes": {
+          "path_match": "zeek.orig_ip_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "zeek.resp_pkts": {
+          "path_match": "zeek.resp_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "zeek.resp_ip_bytes": {
+          "path_match": "zeek.resp_ip_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "zeek.tunnel_parents": {
+          "path_match": "zeek.tunnel_parents",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },{
+        "zeek.orig_l2_addr": {
+          "path_match": "zeek.orig_l2_addr",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },{
+        "zeek.resp_l2_addr": {
+          "path_match": "zeek.resp_l2_addr",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },{
+        "zeek.vlan": {
+          "path_match": "zeek.vlan",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },{
+        "zeek.inner_vlan": {
+          "path_match": "zeek.inner_vlan",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "zeek.event_type": {
+          "path_match": "zeek.event_type",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.event_source": {
+          "path_match": "zeek.event_source",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }
+    ]
+  }
+}
