@@ -1,0 +1,127 @@
+{
+  "order": 0, 
+  "index-patterns": "ssh-events-*", 
+  "mappings": {
+    "dynamic_templates": [
+      {
+        "zeek.cipher_alg": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }, 
+      {
+        "zeek.direction": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }, 
+      {
+        "zeek.uid": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }, 
+      {
+        "zeek.ts": {
+          "mapping": {
+            "type": "date"
+          }
+        }
+      }, 
+      {
+        "zeek.id.orig_p": {
+          "mapping": {
+            "type": "float"
+          }
+        }
+      }, 
+      {
+        "zeek.id.resp_h": {
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      }, 
+      {
+        "zeek.compression_alg": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }, 
+      {
+        "zeek.host_key": {
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      }, 
+      {
+        "zeek.server": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }, 
+      {
+        "zeek.id.orig_h": {
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      }, 
+      {
+        "zeek.id.resp_p": {
+          "mapping": {
+            "type": "float"
+          }
+        }
+      }, 
+      {
+        "zeek.client": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }, 
+      {
+        "zeek.host_key_alg": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }, 
+      {
+        "zeek.version": {
+          "mapping": {
+            "type": "float"
+          }
+        }
+      }, 
+      {
+        "zeek.mac_alg": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }, 
+      {
+        "zeek.kex_alg": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }, 
+      {
+        "zeek.auth_attempts": {
+          "mapping": {
+            "type": "float"
+          }
+        }
+      }
+    ]
+  }
+}

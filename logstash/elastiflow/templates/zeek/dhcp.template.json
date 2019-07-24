@@ -1,0 +1,92 @@
+{
+  "order": 0,
+  "index-patterns": "dhcp-events-*",
+  "mappings": {
+    "dynamic_templates": [
+      {
+        "zeek.domain": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.lease_time": {
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "zeek.uids": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.client_addr": {
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      },
+      {
+        "zeek.assigned_addr": {
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      },
+      {
+        "zeek.ts": {
+          "mapping": {
+            "type": "date"
+          }
+        }
+      },
+      {
+        "zeek.msg_types": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.mac": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.host_name": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.duration": {
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "zeek.server_addr": {
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      },
+      {
+        "zeek.msg_orig": {
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }
+    ]
+  }
+}
