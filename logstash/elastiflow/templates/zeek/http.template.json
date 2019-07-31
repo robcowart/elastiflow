@@ -1,0 +1,209 @@
+{
+  "index_patterns": "http-events-*",
+  "mappings": {
+    "dynamic_templates": [
+      {
+        "zeek.trans_depth": {
+          "path_match": "zeek.trans_depth",
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "zeek.uid": {
+          "path_match": "zeek.uid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.request_body_len": {
+          "path_match": "zeek.request_body_len",
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "zeek.response_body_len": {
+          "path_match": "zeek.response_body_len",
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "zeek.id.orig_p": {
+          "path_match": "zeek.id.orig_p",
+          "mapping": {
+            "type": "date"
+          }
+        }
+      },
+      {
+        "zeek.id.resp_h": {
+          "path_match": "zeek.id.resp_h",
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      },
+      {
+        "zeek.status_msg": {
+          "path_match": "zeek.status_msg",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.tags": {
+          "path_match": "zeek.tags",
+          "mapping": {
+            "type": "nested"
+          }
+        }
+      },
+      {
+        "zeek.client_header_names": {
+          "path_match": "zeek.client_header_names",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.resp_fuids": {
+          "path_match": "zeek.resp_fuids",
+          "mapping": {
+            "type": "text"
+          }
+        }
+      },
+      {
+        "zeek.ts": {
+          "path_match": "zeek.ts",
+          "mapping": {
+            "type": "date"
+          }
+        }
+      },
+      {
+        "zeek.id.orig_h": {
+          "path_match": "zeek.id.orig_h",
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      },
+      {
+        "zeek.id.resp_p": {
+          "path_match": "zeek.id.resp_p",
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "zeek.host": {
+          "path_match": "zeek.host",
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      },
+      {
+        "zeek.uri_vars": {
+          "path_match": "zeek.uri_vars",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.resp_mime_types": {
+          "path_match": "zeek.resp_mime_types",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.user_agent": {
+          "path_match": "zeek.user_agent",
+          "mapping": {
+            "type": "text"
+          }
+        }
+      },
+      {
+        "zeek.version": {
+          "path_match": "zeek.version",
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "zeek.status_code": {
+          "path_match": "zeek.status_code",
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "zeek.uri": {
+          "path_match": "zeek.uri",
+          "mapping": {
+            "type": "text"
+          }
+        }
+      },
+      {
+        "zeek.method": {
+          "path_match": "zeek.method",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }
+    ]
+  },
+  "order": 0,
+  "settings": {
+    "index": {
+      "number_of_replicas": 1,
+      "refresh_interval": "10s",
+      "codec": "best_compression",
+      "number_of_shards": 3
+    },
+    "query": {
+      "default_field": [
+        "zeek.trans_depth",
+        "zeek.uid",
+        "zeek.request_body_len",
+        "zeek.response_body_len",
+        "zeek.id.orig_p",
+        "zeek.id.resp_h",
+        "zeek.status_msg",
+        "zeek.tags",
+        "zeek.client_header_names",
+        "zeek.resp_fuids",
+        "zeek.ts",
+        "zeek.id.orig_h",
+        "zeek.id.resp_p",
+        "zeek.host",
+        "zeek.uri_vars",
+        "zeek.resp_mime_types",
+        "zeek.user_agent",
+        "zeek.version",
+        "zeek.status_code",
+        "zeek.uri",
+        "zeek.method"
+      ]
+    }
+  }
+}
