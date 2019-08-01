@@ -1,0 +1,128 @@
+{
+  "index_patterns": "dhcp-events-*",
+  "mappings": {
+    "dynamic_templates": [
+      {
+        "zeek.domain": {
+          "path_match": "zeek.domain",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.lease_time": {
+          "path_match": "zeek.lease_time",
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "zeek.uids": {
+          "path_match": "zeek.uids",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.client_addr": {
+          "path_match": "zeek.client_addr",
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      },
+      {
+        "zeek.assigned_addr": {
+          "path_match": "zeek.assigned_addr",
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      },
+      {
+        "zeek.ts": {
+          "path_match": "zeek.ts",
+          "mapping": {
+            "type": "date"
+          }
+        }
+      },
+      {
+        "zeek.msg_types": {
+          "path_match": "zeek.msg_types",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.mac": {
+          "path_match": "zeek.mac",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.host_name": {
+          "path_match": "zeek.host_name",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "zeek.duration": {
+          "path_match": "zeek.duration",
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "zeek.server_addr": {
+          "path_match": "zeek.server_addr",
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      },
+      {
+        "zeek.msg_orig": {
+          "path_match": "zeek.msg_orig",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }
+    ]
+  },
+  "order": 0,
+  "settings": {
+    "index": {
+      "number_of_replicas": 1,
+      "refresh_interval": "10s",
+      "codec": "best_compression",
+      "number_of_shards": 3
+    },
+    "query": {
+      "default_field": [
+        "zeek.domain",
+        "zeek.lease_time",
+        "zeek.uids",
+        "zeek.client_addr",
+        "zeek.assigned_addr",
+        "zeek.ts",
+        "zeek.msg_types",
+        "zeek.mac",
+        "zeek.host_name",
+        "zeek.duration",
+        "zeek.server_addr",
+        "zeek.msg_orig"
+      ]
+    }
+  }
+}
