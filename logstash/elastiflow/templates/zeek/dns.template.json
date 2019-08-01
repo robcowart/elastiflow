@@ -163,14 +163,6 @@
         }
       },
       {
-        "zeek.TTLs": {
-          "path_match": "zeek.TTLs",
-          "mapping": {
-            "type": "nested"
-          }
-        }
-      },
-      {
         "zeek.id.orig_h": {
           "path_match": "zeek.id.orig_h",
           "mapping": {
