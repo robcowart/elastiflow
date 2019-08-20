@@ -10,7 +10,7 @@ Refer to the following compatibility chart to choose a release of ElastiFlow&tra
 
 Elastic Stack | ElastiFlow&trade; 1.x | ElastiFlow&trade; 2.x | ElastiFlow&trade; 3.x
 :---:|:---:|:---:|:---:
-7.0 |  |  | &#10003; v3.5.0
+7.x |  |  | &#10003; v3.5.x
 6.7 |  |  | &#10003; v3.4.2
 6.6 |  |  | &#10003; v3.4.1
 6.5 |  |  | &#10003;
@@ -49,7 +49,7 @@ The above recommendations are a starting point. Once you are up and running you 
 
 Previous versions of ElastiFlow&trade; required no special configuration for Elasticsearch. However changes made to Elasticsearch 7.x, require that the following settings be made in `elasticsearch.yml`:
 
-```
+```text
 indices.query.bool.max_clause_count: 8192
 search.max_buckets: 100000
 ```
@@ -68,7 +68,7 @@ Follow these steps to ensure that Logstash and ElastiFlow&trade; are optimally c
 
 To increase performance, ElastiFlow&trade; takes advantage of the caching and queueing features available in many of the Logstash plugins. These features increase the consumption of the JVM heap. The JVM heap space used by Logstash is configured in `jvm.options`. It is recommended that Logstash be given at least 2GB of JVM heap. If all options, incl. DNS lookups (requires version 3.0.10 or later of the DNS filter), are enabled increase this to 4GB. This is configured in `jvm.options` as follows:
 
-```
+```text
 -Xms4g
 -Xmx4g
 ```
@@ -91,7 +91,7 @@ LS_HOME/bin/logstash-plugin update logstash-filter-translate
 
 There are five sets of configuration files provided within the `logstash/elastiflow` folder:
 
-```
+```text
 logstash
   `- elastiflow
        |- conf.d  (contains the logstash pipeline)
@@ -125,7 +125,7 @@ Logstash 6.0 introduced the ability to run multiple pipelines from a single Logs
 
 Edit `pipelines.yml` (usually located at `/etc/logstash/pipelines.yml`) and add the ElastiFlow&trade; pipeline (adjust the path as necessary).
 
-```
+```text
 - pipeline.id: elastiflow
   path.config: "/etc/logstash/elastiflow/conf.d/*.conf"
 ```
@@ -236,7 +236,7 @@ Both Netflow and IPFIX allow devices with application identification features to
 
 The application names which correspond to values of these IDs is vendor-specific. In order for ElastiFlow&trade; to accurately translate the ID values, it must be told the type of device that is exporting the flows. To do so you must edit `elastiflow/dictionaries/app_id_srctype.yml` and specify the source type of your supported device. For example...
 
-```
+```text
 "192.0.2.1": "cisco_nbar2"
 "192.0.2.2": "fortinet"
 ```
@@ -276,7 +276,7 @@ You should now be able to start Logstash and begin collecting network flow data.
 
 To follow along as Logstash starts you can tail its log by running:
 
-```
+```text
 tail -f /var/log/logstash/logstash-plain.log
 ```
 
@@ -298,7 +298,7 @@ The Index Patterns, vizualizations and dashboards can be loaded into Kibana by i
 
 An API (yet undocumented) is available to import and export Index Patterns. The JSON file which contains the Index Pattern configuration is `kibana/elastiflow.index_pattern.json`. To setup the `elastiflow-*` Index Pattern run the following command:
 
-```
+```text
 curl -X POST -u USERNAME:PASSWORD http://KIBANASERVER:5601/api/saved_objects/index-pattern/elastiflow-* -H "Content-Type: application/json" -H "kbn-xsrf: true" -d @/PATH/TO/elastiflow.index_pattern.json
 ```
 
@@ -378,7 +378,7 @@ I recommend configuring `timepicker:quickRanges` for the setting below. The resu
 
 ![timepicker:quickRanges](https://user-images.githubusercontent.com/10326954/57178139-9a8d8500-6e6c-11e9-8539-db61a81b321b.png)
 
-```
+```text
 [
   {
     "from": "now-15m",

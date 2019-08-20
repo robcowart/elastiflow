@@ -1,3 +1,26 @@
+# ElastiFlow&trade; Change Log
+
+---
+
+## v3.5.1
+
+v3.5.1 is a minor release. No migration of data from v3.5.0 to v3.5.1 is required.
+
+### Breaking Changes
+
+ElastiFlow v3.5.x provides support Elastic Stack 7.x. The support for document types has been completely removed in Elasticsearch 7.0.0. This has required changes to the index templates provided with ElastiFlow. You _MUST_ first successfully upgrade to Elastic Stack 7.x _PRIOR_ to using ElastiFlow v3.5.1.
+
+### Fixes
+
+* Updated environment variables in `docker-compose.yml`, which prevented the Kibana container from connecting to Elasticsearch.
+
+### Updates
+
+* Update IP reputation dictionary and GeoIP DBs
+* Minor updates to README.md, CHANGELOG.md and DOCKER.md
+
+---
+
 ## v3.5.0
 
 v3.5.0 is a minor release. No migration of data from v3.4.x to v3.5.0 is required.

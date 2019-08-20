@@ -14,7 +14,7 @@ The easiest way to get ElastiFlow&trade; up and running quickly is to use Docker
 
 Data written within a container's file system is ephemeral. It will be lost when the container is removed. For the data to persist it is necessary to write the data to local host's file system using a _bind mount_. You must create a path on the local host, and set the necessary permissions for the processes within the container to write to it.
 
-```
+```text
 sudo mkdir /var/lib/elastiflow_es
 sudo chown -R 1000:1000 /var/lib/elastiflow_es
 ```
@@ -31,7 +31,7 @@ Start the Elastic Stack (incl. Logstash with the ElastiFlow pipeline) using `doc
 
 From the path where you placed the `docker-compose.yml` file run:
 
-```
+```text
 sudo docker-compose up -d
 ```
 

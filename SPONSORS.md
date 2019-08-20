@@ -2,10 +2,6 @@
 
 I have received many notes of thanks for the ElastiFlow&trade; project. However it is the generosity of sponsors and donors, that provide me the freedom to dedicate time to maintaining and further developing the solution. They also deserve not only my thanks, but also the gratitude of all ElastiFlow&trade; users.
 
-## Enthusiastic Users
-
-* Robert Acquah - City of Boston
-
 ## Donors
 
 * TDF Cloud Services Pty Limited
@@ -14,3 +10,5 @@ I have received many notes of thanks for the ElastiFlow&trade; project. However 
 * Ian Graham
 * CSIRT Gadgets, LLC
 * Dmitriy Vasilets
+* Robert Acquah
+* Franklin Shearer
