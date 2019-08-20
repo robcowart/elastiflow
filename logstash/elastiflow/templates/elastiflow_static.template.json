@@ -1,16 +1,13 @@
 {
   "order": 0,
-  "version": 30500,
-  "index_patterns": "elastiflow-3.5.0-*",
+  "version": 30501,
+  "index_patterns": "elastiflow-3.5.1-*",
   "settings": {
     "index": {
       "number_of_shards": 3,
       "number_of_replicas": 1,
       "refresh_interval": "10s",
       "codec": "best_compression",
-      "lifecycle": {
-        "name": "elastiflow"
-      },
       "mapping": {
         "total_fields" : {
           "limit": 5000
