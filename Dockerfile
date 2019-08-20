@@ -15,7 +15,7 @@
 # Robert Cowart are Copyright (C)2019 Robert Cowart. All Rights Reserved.
 #------------------------------------------------------------------------------
 
-FROM docker.elastic.co/logstash/logstash-oss:7.0.1
+FROM docker.elastic.co/logstash/logstash-oss:6.1.4
 
 ARG BUILD_DATE
 
@@ -24,10 +24,10 @@ LABEL org.opencontainers.image.created="$BUILD_DATE" \
       org.opencontainers.image.url="https://github.com/robcowart/elastiflow/README.md" \
       org.opencontainers.image.documentation="https://github.com/robcowart/elastiflow/DOCKER.md" \
       org.opencontainers.image.source="https://github.com/robcowart/elastiflow" \
-      org.opencontainers.image.version="v3.5.0_7.0.1" \
+      org.opencontainers.image.version="3.5.1" \
       org.opencontainers.image.vendor="Robert Cowart" \
       org.opencontainers.image.title="ElastiFlow™ - Logstash" \
-      org.opencontainers.image.description=""
+      org.opencontainers.image.description="Logstash with ElastiFlow™ pipeline."
 
 ENV ELASTIFLOW_ES_HOST="http://127.0.0.1:9200"
 
@@ -37,6 +37,7 @@ RUN $HOME/bin/logstash-plugin install logstash-codec-sflow \
     && $HOME/bin/logstash-plugin update logstash-input-tcp \
     && $HOME/bin/logstash-plugin update logstash-filter-dns \
     && $HOME/bin/logstash-plugin update logstash-filter-geoip \
+    && $HOME/bin/logstash-plugin update logstash-filter-mutate \
     && $HOME/bin/logstash-plugin update logstash-filter-translate
 
 WORKDIR /usr/share/logstash/config
