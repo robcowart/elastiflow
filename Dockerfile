@@ -35,10 +35,14 @@ RUN $HOME/bin/logstash-plugin install logstash-codec-sflow \
     && $HOME/bin/logstash-plugin update logstash-codec-netflow \
     && $HOME/bin/logstash-plugin update logstash-input-udp \
     && $HOME/bin/logstash-plugin update logstash-input-tcp \
+    && $HOME/bin/logstash-plugin update logstash-filter-cidr \
+    && $HOME/bin/logstash-plugin update logstash-filter-date \
     && $HOME/bin/logstash-plugin update logstash-filter-dns \
     && $HOME/bin/logstash-plugin update logstash-filter-geoip \
     && $HOME/bin/logstash-plugin update logstash-filter-mutate \
-    && $HOME/bin/logstash-plugin update logstash-filter-translate
+    && $HOME/bin/logstash-plugin update logstash-filter-ruby \
+    && $HOME/bin/logstash-plugin update logstash-filter-translate \
+    && $HOME/bin/logstash-plugin update logstash-output-elasticsearch
 
 WORKDIR /usr/share/logstash/config
 COPY --chown=logstash:logstash ./docker_assets/logstash.yml ./
