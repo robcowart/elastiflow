@@ -58,12 +58,14 @@ services:
     environment:
       SERVER_HOST: 0.0.0.0
       SERVER_PORT: 5601
+      SERVER_MAXPAYLOADBYTES: 4194304
 
       ELASTICSEARCH_HOSTS: "http://127.0.0.1:9200"
 
       KIBANA_DEFAULTAPPID: "dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5"
 
-      LOGGING_QUIET: 'true'
+      LOGGING_DEST: stdout
+      LOGGING_QUIET: 'false'
 
   elastiflow-logstash-oss:
     image: robcowart/elastiflow-logstash-oss:3.5.1
