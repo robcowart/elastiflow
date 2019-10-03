@@ -1,0 +1,205 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: elasticsearch
+  labels:
+    type: database
+    app: elasticsearch
+spec:
+  selector:
+    type: database
+    app: elasticsearch
+  ports:
+    - port: 9200
+      targetPort: 9200
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: elasticsearch
+  labels:
+    type: database
+    app: elasticsearch
+spec:
+  selector:
+    matchLabels:
+      type: database
+      app: elasticsearch
+  serviceName: elasticsearch
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        type: database
+        app: elasticsearch
+    spec:
+      initContainers:
+        - name: init-sysctl
+          image: busybox:1.27.2
+          command:
+            - sysctl
+            - -w
+            - vm.max_map_count=262144
+          securityContext:
+            privileged: true
+      containers:
+        - name: es-data
+          image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.0.1
+          env:
+            - name: ES_JAVA_OPTS
+              value: "-Xms256m -Xmx2g"
+            - name: cluster.name
+              value: "elastiflow"
+            - name: bootstrap.memory_lock
+              value: "false"
+            - name: network.host
+              value: "0.0.0.0"
+            - name: http.port
+              value: "9200"
+            - name: discovery.type
+              value: "single-node"
+            - name: indices.query.bool.max_clause_count
+              value: "8192"
+            - name: search.max_buckets
+              value: "100000"
+            - name: action.destructive_requires_name
+              value: "true"
+          ports:
+            - containerPort: 9200
+              name: http
+            - containerPort: 9300
+              name: transport
+          livenessProbe:
+            tcpSocket:
+              port: transport
+            initialDelaySeconds: 20
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /_cluster/health
+              port: http
+            initialDelaySeconds: 20
+            timeoutSeconds: 5
+          volumeMounts:
+            - name: es-data
+              mountPath: /data
+  volumeClaimTemplates:
+    - metadata:
+        name: es-data
+        labels:
+          app: elasticsearch
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 2Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kibana
+  labels:
+    type: kibana
+    app: elasticsearch
+spec:
+  selector:
+    type: kibana
+    app: elasticsearch
+  ports:
+    - port: 5601
+      targetPort: 5601
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kibana
+  labels:
+    app: elasticsearch
+    type: kibana
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elasticsearch
+      type: kibana
+  template:
+    metadata:
+      labels:
+        app: elasticsearch
+        type: kibana
+    spec:
+      containers:
+        - name: kibana
+          image: docker.elastic.co/kibana/kibana-oss:7.0.1
+          env:
+            - name: action.destructive_requires_name
+              value: "true"
+            - name: SERVER_HOST
+              value: "0.0.0.0"
+            - name: SERVER_PORT
+              value: "5601"
+            - name: ELASTICSEARCH_URL
+              value: "http://elasticsearch:9200"
+            - name: KIBANA_DEFAULTAPPID
+              value: "dashboard/653cf1e0-2fd2-11e7-99ed-49759aed30f5"
+            - name: LOGGING_QUIET
+              value: "true"
+          ports:
+            - containerPort: 5601
+              name: http
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: logstash
+  labels:
+    app: elastiflow
+spec:
+  selector:
+    app: elastiflow
+  ports:
+    - port: 6343
+      targetPort: 6343
+      protocol: UDP
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elastiflow
+  labels:
+    app: elastiflow
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elastiflow
+  template:
+    metadata:
+      labels:
+        app: elastiflow
+    spec:
+      containers:
+        - name: logstash
+          image: robcowart/elastiflow-logstash-oss:3.5.0_7.0.1
+          env:
+            - name: ELASTIFLOW_DEFAULT_APPID_SRCTYPE
+              value: "__UNKNOWN"
+            - name: ELASTIFLOW_RESOLVE_IP2HOST
+              value: "false"
+            - name: ELASTIFLOW_NAMESERVER
+              value: "9.9.9.9"
+            - name: ELASTIFLOW_NETFLOW_IPV4_PORT
+              value: "2055"
+            - name: ELASTIFLOW_SFLOW_IPV4_PORT
+              value: "6343"
+            - name: ELASTIFLOW_IPFIX_TCP_IPV4_PORT
+              value: "4739"
+            - name: ELASTIFLOW_ES_HOST
+              value: "http://elasticsearch:9200"
+            - name: LS_JAVA_OPTS
+              value: "-Xms256g -Xmx1g"
+          ports:
+            - containerPort: 6343
+              protocol: UDP
