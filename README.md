@@ -25,6 +25,9 @@ Organization | Feedback
 
 ElastiFlow&trade; is built using the Elastic Stack, including Elasticsearch, Logstash and Kibana. Please refer to [INSTALL.md](https://github.com/robcowart/elastiflow/blob/master/INSTALL.md) for instructions on how to install and configure ElastiFlow&trade;
 
+
+> WARNING! Please make sure that have reviewed [KNOWN_ISSUES.md](https://github.com/robcowart/elastiflow/blob/master/KNOWN_ISSUES.md) prior to getting started.
+
 ## Provided Dashboards
 
 The following dashboards are provided.
