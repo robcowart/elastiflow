@@ -56,6 +56,12 @@ You will likely see log messagey similar to the following, for a few minutes aft
 [2019-01-16T09:57:38,409][WARN ][logstash.codecs.netflow ] Can't (yet) decode flowset id 256 from source id 0, because no template to decode it with has been received. This message will usually go away after 1 minute.
 ```
 
+You may also see a message similar to the following:
+
+```
+[2019-08-22T12:11:31,804][WARN ][logstash.codecs.netflow ] Unsupported field in template 258 {:type=>44999, :length=>32}
+```
+
 If these messages persist for more than 30 minutes (see note below to understand why you should wait this long), you may be experiencing this issue.
 
 > NOTE: While this message says `will usually go away after 1 minute`, some flow exporters send templates very infrequently. Fortinet devices come particularly to mind, sometimes taking 15 minutes or more to send a template.
