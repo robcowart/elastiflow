@@ -6957,7 +6957,13 @@
 
 # ntop
 35632:
-  80:
+  78:
+  - :uint8
+  - :ntop_client_tcp_flags
+	79:
+  - :uint8
+  - :ntop_server_tcp_flags
+	80:
   - :uint16
   - :ntop_src_frags
   81:
@@ -7473,6 +7479,12 @@
   309:
   - :uint32
   - :ntop_dst_as_path_10
+  316:
+  - :string
+  - :ntop_sip_uac
+  317:
+  - :string
+  - :ntop_sip_uas
   320:
   - :uint32
   - :ntop_mysql_appl_latency_usec
@@ -7911,6 +7923,75 @@
   471:
   - :ip4_addr
   - :ntop_nprobe_ipv4_addr
+  472:
+  - :uint64
+  - :ntop_src_to_dst_second_bytes
+  473:
+  - :uint64
+  - :ntop_dst_to_src_second_bytes
+  480:
+  - :string
+  - :ntop_dicom_impl_uid
+  481:
+  - :string
+  - :ntop_dicom_impl_version
+  482:
+  - :string
+  - :ntop_dicom_modality
+  483:
+  - :string
+  - :ntop_dicom_manufacturer
+  484:
+  - :string
+  - :ntop_dicom_institution_name
+  485:
+  - :string
+  - :ntop_dicom_institution_address
+  486:
+  - :string
+  - :ntop_dicom_station_name
+  487:
+  - :string
+  - :ntop_dicom_device_serial
+  488:
+  - :string
+  - :ntop_dicom_sw_version
+  489:
+  - :string
+  - :ntop_dicom_ja3c_hash
+  490:
+  - :string
+  - :ntop_dicom_ja3s_hash
+  491:
+  - :string
+  - :ntop_dicom_src_host_name
+  492:
+  - :string
+  - :ntop_dicom_dst_host_name
+  493:
+  - :uint16
+  - :ntop_ssl_cipher
+  494:
+  - :uint8
+  - :ntop_ssl_unsafe_cipher
+  495:
+  - :uint16
+  - :ntop_ssl_version
+  1028:
+  - :string
+  - :ntop_protocol_map
+  1031:
+  - :string
+  - :ntop_l4_src_port_map
+  1035:
+  - :string
+  - :ntop_l4_dst_port_map
+  1036:
+  - :string
+  - :ntop_l4_server_port
+  1037:
+  - :string
+  - :ntop_l4_server_port_map
 
 # INVEA-TECH/FlowMon Networks
 39499:

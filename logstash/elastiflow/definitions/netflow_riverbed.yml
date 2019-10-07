@@ -2626,6 +2626,12 @@
 
 
 
+57550:
+- 1
+- :ntop_client_tcp_flags
+57551:
+- 1
+- :ntop_server_tcp_flags
 57552:
 - 2
 - :ntop_src_frags
@@ -3580,6 +3586,77 @@
 57943:
 - :ip4_addr
 - :ntop_nprobe_ipv4_addr
+57944:
+- :uint64
+- :ntop_src_to_dst_second_bytes
+57945:
+- :uint64
+- :ntop_dst_to_src_second_bytes
+57952:
+- :string
+- :ntop_dicom_impl_uid
+57953:
+- :string
+- :ntop_dicom_impl_version
+57954:
+- :string
+- :ntop_dicom_modality
+57955:
+- :string
+- :ntop_dicom_manufacturer
+57956:
+- :string
+- :ntop_dicom_institution_name
+57957:
+- :string
+- :ntop_dicom_institution_address
+57958:
+- :string
+- :ntop_dicom_station_name
+57959:
+- :string
+- :ntop_dicom_device_serial
+57960:
+- :string
+- :ntop_dicom_sw_version
+57961:
+- :string
+- :ntop_dicom_ja3c_hash
+57962:
+- :string
+- :ntop_dicom_ja3s_hash
+57963:
+- :string
+- :ntop_dicom_src_host_name
+57964:
+- :string
+- :ntop_dicom_dst_host_name
+57965:
+- :uint16
+- :ntop_ssl_cipher
+57966:
+- :uint8
+- :ntop_ssl_unsafe_cipher
+57967:
+- :uint16
+- :ntop_ssl_version
+58500:
+- :string
+- :ntop_protocol_map
+58503:
+- :string
+- :ntop_l4_src_port_map
+58507:
+- :string
+- :ntop_l4_dst_port_map
+58508:
+- :string
+- :ntop_l4_server_port
+58509:
+- :string
+- :ntop_l4_server_port_map
+
+
 
 65500:
 - 9
