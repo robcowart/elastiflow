@@ -86,3 +86,24 @@ Unfortunately there is no workaround for this issue. However, adding support for
 * Any documentation (usually from the vendor) which describes the IEs
 
 If you can provide this information, I will do my best to turnaround a patch release, or sned you the fix directly.
+
+### 3. Reverse proxy can prevent Kibana dashboard import
+
+### SYMPTOM
+
+The Kibana Saved Objects (dashboards and configuration) import fails.
+
+### DESCRIPTION
+
+The Kibana Saved Objects file is relatively large. Additionally the original JSON import method was slow. Both of these characteristics can cause problems if a Kibana is behind a reverse proxy.
+
+Many reverse proxies have relatively low values for the session timeout and maximum body size. For example NGiNX defaults for these values are 60 seconds and 1MB, respectively.
+
+### SOLUTION
+
+Using NGiNX as an example. The following parameters should be modified:
+
+* `proxy_read_timeout` should be set to `180s`, or even `300s`
+* `client_max_body_size` should be set to `8388608`
+
+Additionally in Kibana, `server.maxPayloadBytes` (or `SERVER_MAXPAYLOADBYTES` if using Docker) should also be set to `8388608`.
