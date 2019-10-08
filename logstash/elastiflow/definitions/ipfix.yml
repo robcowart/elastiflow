@@ -6960,10 +6960,10 @@
   78:
   - :uint8
   - :ntop_client_tcp_flags
-	79:
+  79:
   - :uint8
   - :ntop_server_tcp_flags
-	80:
+  80:
   - :uint16
   - :ntop_src_frags
   81:
