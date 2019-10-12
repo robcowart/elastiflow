@@ -322,7 +322,7 @@ The supported environment variables are:
 Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_DICT_PATH | The path where dictionary files are located | /etc/logstash/elastiflow/dictionaries
-ELASTIFLOW_DEFINITION_PATH | The path where custom field definitions are located | /etc/logstash/elastiflow/definitions
+ELASTIFLOW_DEFINITION_PATH | The path where Netflow and IPFIX field definitions are located | /etc/logstash/elastiflow/definitions
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/elastiflow/templates
 ELASTIFLOW_GEOIP_DB_PATH | The path where GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
 ELASTIFLOW_GEOIP_CACHE_SIZE | The size of the GeoIP query cache | 8192
@@ -330,7 +330,7 @@ ELASTIFLOW_GEOIP_LOOKUP | Enable/Disable GeoIP lookups | true
 ELASTIFLOW_ASN_LOOKUP | Enable/Disable ASN lookups | true
 ELASTIFLOW_KEEP_ORIG_DATA | If set to `false` the original `netflow`, `ipfix` and `sflow` objects will be deleted prior to indexing. This can save disk space without affecting the provided dashboards. However the original flow fields will no longer be available if they are desired for additional analytics. | true
 ELASTIFLOW_DEFAULT_APPID_SRCTYPE | Sets the default source type for translating the App IDs to names. Valid values are `cisco_nbar2` and `fortinet` | __UNKNOWN
-ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests. Possible values are `exporters` (only flow exporter IPs are resolved), `endpoints` (only endpoint IPs, src/dst, are resolved), `true` (both are resolved) or `false`  | false
+ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests. Possible values are `exporters` (only flow exporter IPs are resolved), `endpoints` (only endpoint IPs, src/dst, are resolved), `true` (both are resolved) or `false` | false
 ELASTIFLOW_NAMESERVER | The DNS server to which the dns filter should send requests | 127.0.0.1
 ELASTIFLOW_DNS_HIT_CACHE_SIZE | The cache size for successful DNS queries | 25000
 ELASTIFLOW_DNS_HIT_CACHE_TTL | The time in seconds successful DNS queries are cached | 900
@@ -342,31 +342,31 @@ ELASTIFLOW_ES_HOST_2 | The second Elasticsearch host to which the output will se
 ELASTIFLOW_ES_HOST_3 | The third Elasticsearch host to which the output will send data | 127.0.0.3:9200
 ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
 ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
-ELASTIFLOW_ES_USER | The password for the connection to Elasticsearch | elastic
-ELASTIFLOW_ES_PASSWD | The username for the connection to Elasticsearch | changeme
-ELASTIFLOW_NETFLOW_IPV4_HOST | The IP address on which to listen for Netflow messages | 0.0.0.0
+ELASTIFLOW_ES_USER | The username for the connection to Elasticsearch | elastic
+ELASTIFLOW_ES_PASSWD | The password for the connection to Elasticsearch | changeme
+ELASTIFLOW_NETFLOW_IPV4_HOST | The IPv4 address on which to listen for Netflow messages | 0.0.0.0
 ELASTIFLOW_NETFLOW_IPV4_PORT | The UDP port on which to listen for Netflow messages | 2055
-ELASTIFLOW_NETFLOW_IPV6_HOST | The IP address on which to listen for Netflow messages | [::]
+ELASTIFLOW_NETFLOW_IPV6_HOST | The IPv6 address on which to listen for Netflow messages | [::]
 ELASTIFLOW_NETFLOW_IPV6_PORT | The UDP port on which to listen for Netflow messages | 52055
 ELASTIFLOW_NETFLOW_UDP_WORKERS | The number of Netflow input threads | 4
 ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE | The number of unprocessed Netflow UDP packets the input can buffer | 4096
 ELASTIFLOW_NETFLOW_UDP_RCV_BUFF | The socket receive buffer size (bytes) for Netflow | 33554432
 ELASTIFLOW_NETFLOW_LASTSW_TIMESTAMP | Enable/Disable setting `@timestamp` with the value of netflow.last_switched | false
 ELASTIFLOW_NETFLOW_TZ | The timezone of netflow.last_switched | UTC
-ELASTIFLOW_SFLOW_IPV4_HOST | The IP address on which to listen for sFlow messages | 0.0.0.0
+ELASTIFLOW_SFLOW_IPV4_HOST | The IPv4 address on which to listen for sFlow messages | 0.0.0.0
 ELASTIFLOW_SFLOW_IPV4_PORT | The UDP port on which to listen for sFlow messages | 6343
-ELASTIFLOW_SFLOW_IPV6_HOST | The IP address on which to listen for sFlow messages | [::]
+ELASTIFLOW_SFLOW_IPV6_HOST | The IPv6 address on which to listen for sFlow messages | [::]
 ELASTIFLOW_SFLOW_IPV6_PORT | The UDP port on which to listen for sFlow messages | 56343
 ELASTIFLOW_SFLOW_UDP_WORKERS | The number of sFlow input threads | 4
 ELASTIFLOW_SFLOW_UDP_QUEUE_SIZE | The number of unprocessed sFlow UDP packets the input can buffer | 4096
 ELASTIFLOW_SFLOW_UDP_RCV_BUFF | The socket receive buffer size (bytes) for sFlow | 33554432
-ELASTIFLOW_IPFIX_TCP_IPV4_HOST | The IP address on which to listen for IPFIX messages via TCP | 0.0.0.0
+ELASTIFLOW_IPFIX_TCP_IPV4_HOST | The IPv4 address on which to listen for IPFIX messages via TCP | 0.0.0.0
 ELASTIFLOW_IPFIX_TCP_IPV4_PORT | The port on which to listen for IPFIX messages via TCP | 4739
-ELASTIFLOW_IPFIX_UDP_IPV4_HOST | The IP address on which to listen for IPFIX messages via UDP | 0.0.0.0
+ELASTIFLOW_IPFIX_UDP_IPV4_HOST | The IPv4 address on which to listen for IPFIX messages via UDP | 0.0.0.0
 ELASTIFLOW_IPFIX_UDP_IPV4_PORT | The port on which to listen for IPFIX messages via UDP | 4739
-ELASTIFLOW_IPFIX_TCP_IPV6_HOST | The IP address on which to listen for IPFIX messages via TCP | [::]
+ELASTIFLOW_IPFIX_TCP_IPV6_HOST | The IPv6 address on which to listen for IPFIX messages via TCP | [::]
 ELASTIFLOW_IPFIX_TCP_IPV6_PORT | The port on which to listen for IPFIX messages via TCP | 54739
-ELASTIFLOW_IPFIX_UDP_IPV6_HOST | The IP address on which to listen for IPFIX messages via UDP | [::]
+ELASTIFLOW_IPFIX_UDP_IPV6_HOST | The IPv6 address on which to listen for IPFIX messages via UDP | [::]
 ELASTIFLOW_IPFIX_UDP_IPV6_PORT | The port on which to listen for IPFIX messages via UDP | 54739
 ELASTIFLOW_IPFIX_UDP_WORKERS | The number of IPFIX input threads | 4
 ELASTIFLOW_IPFIX_UDP_QUEUE_SIZE | The number of unprocessed IPFIX UDP packets the input can buffer | 4096
