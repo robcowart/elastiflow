@@ -26,3 +26,4 @@ Independent ElastiFlow&trade; Services Consultants provide commercial deployment
 Consultant | Location | Email
 --- | --- | ---
 Dmitry Vasilets | Berlin, Germany | pronix.service@gmail.com
+Vasily Shapochka | Sydney, Australia | vasily@astronode.io
