@@ -18,7 +18,7 @@ $ kubectl apply --namespace=elastiflow -f k8s.yaml
 
 The kibana dashboard does not have an ingress in this configuration. To setup port forwarding, run:
 ```
-kubectl port-forward $(kubectl get pod -l app=elasticsearch -l type=kibana -o jsonpath="{.items[0].metadata.name}") 5601`
+kubectl -n elastiflow port-forward $(kubectl -n elastiflow get pod -l app=elasticsearch -l type=kibana -o jsonpath="{.items[0].metadata.name}") 5601`
 ```
 While this command is running, you can access the Kibana dashboard via <http://localhost:5601>
 

@@ -199,7 +199,7 @@ spec:
             - name: ELASTIFLOW_ES_HOST
               value: "http://elasticsearch:9200"
             - name: LS_JAVA_OPTS
-              value: "-Xms256g -Xmx1g"
+              value: "-Xms256m -Xmx1g"
           ports:
             - containerPort: 6343
               protocol: UDP
