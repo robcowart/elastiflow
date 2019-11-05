@@ -2448,6 +2448,18 @@
 44941:
 - :string
 - :cisco_eta_slpt_old
+44996:
+- :string
+- :cisco_avc_app_version
+44997:
+- :string
+- :cisco_avc_app_proto
+44998:
+- :string
+- :cisco_avc_app_family
+44999:
+- :string
+- :cisco_avc_app_set
 45000:
 - :string
 - :cisco_avc_app_category
