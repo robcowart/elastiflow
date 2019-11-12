@@ -3160,6 +3160,12 @@
 57781:
 - 4
 - :ntop_dst_as_path_10
+57788:
+- :string
+- :ntop_sip_uac
+57789:
+- :string
+- :ntop_sip_uas
 57792:
 - 4
 - :ntop_mysql_appl_latency_usec
