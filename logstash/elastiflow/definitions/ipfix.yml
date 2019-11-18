@@ -1842,10 +1842,10 @@
   - :string
   - :cisco_nvzflow_module_list
   12353:
-  - :octetarray
+  - :string
   - :cisco_nvzflow_hash_list
   12354:
-  - :octetarray
+  - :string
   - :cisco_nvzflow_coord_list
   12355:
   - :uint32
@@ -1863,7 +1863,8 @@
   - :string
   - :cisco_nvzflow_iface_details_list
   12360:
-  - :skip
+  - :string
+  - :cisco_nvzflow_iface_mac
   12361:
   - :uint16
   - :cisco_nvzflow_user_acct_type
@@ -2543,10 +2544,10 @@
   - :string
   - :cisco_nvzflow_module_list
   45121:
-  - :octetarray
+  - :string
   - :cisco_nvzflow_hash_list
   45122:
-  - :octetarray
+  - :string
   - :cisco_nvzflow_coord_list
   45123:
   - :uint32
@@ -2563,6 +2564,18 @@
   45127:
   - :string
   - :cisco_nvzflow_iface_details_list
+  45128:
+  - :string
+  - :cisco_nvzflow_iface_mac
+  45129:
+  - :uint16
+  - :cisco_nvzflow_user_acct_type
+  45130:
+  - :uint16
+  - :cisco_nvzflow_proc_user_acct_type
+  45131:
+  - :uint16
+  - :cisco_nvzflow_parent_proc_user_acct_type
 
 # Alcatel-Lucent (formerly 'Alcatel Data Network')
 637:

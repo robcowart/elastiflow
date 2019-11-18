@@ -1842,7 +1842,8 @@
 - :string
 - :cisco_nvzflow_iface_details_list
 12360:
-- :skip
+- :string
+- :cisco_nvzflow_iface_mac
 12361:
 - :uint16
 - :cisco_nvzflow_user_acct_type
@@ -2575,7 +2576,8 @@
 - :string
 - :cisco_nvzflow_iface_details_list
 45128:
-- :skip
+- :string
+- :cisco_nvzflow_iface_mac
 45129:
 - 2
 - :cisco_nvzflow_user_acct_type
