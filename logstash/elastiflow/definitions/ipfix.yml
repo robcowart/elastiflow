@@ -8022,7 +8022,334 @@
 39499:
   1:
   - :string
-  - :flowmon_http_hostname
+  - :flowmon_http_req_host
+  2:
+  - :string
+  - :flowmon_http_req_url
+  3:
+  - :string
+  - :flowmon_http_req_referrer
+  4:
+  - :uint16
+  - :flowmon_http_req_type
+  10:
+  - :string
+  - :flowmon_http_resp_type
+  12:
+  - :uint16
+  - :flowmon_http_resp_code
+  20:
+  - :string
+  - :flowmon_http_req_agent
+  21:
+  - :uint32
+  - :flowmon_http_req_agent_id
+  22:
+  - :uint16
+  - :flowmon_http_req_agent_os
+  23:
+  - :uint16
+  - :flowmon_http_req_agent_os_major
+  24:
+  - :uint16
+  - :flowmon_http_req_agent_os_minor
+  25:
+  - :uint16
+  - :flowmon_http_req_agent_os_build
+  26:
+  - :uint16
+  - :flowmon_http_req_agent_app
+  27:
+  - :uint16
+  - :flowmon_http_req_agent_app_major
+  28:
+  - :uint16
+  - :flowmon_http_req_agent_app_minor
+  29:
+  - :uint16
+  - :flowmon_http_req_agent_app_build
+  32:
+  - :uint8
+  - :flowmon_voip_packet_type
+  33:
+  - :string
+  - :flowmon_sip_call_id
+  34:
+  - :string
+  - :flowmon_sip_calling_party
+  35:
+  - :string
+  - :flowmon_sip_called_party
+  36:
+  - :string
+  - :flowmon_sip_via
+  37:
+  - :uint64
+  - :flowmon_sip_invite_ringing_time
+  38:
+  - :uint64
+  - :flowmon_sip_ok_time
+  39:
+  - :uint64
+  - :flowmon_sip_bye_time
+  40:
+  - :ip4_addr
+  - :flowmon_sip_rtp_ip4
+  41:
+  - :ip6_addr
+  - :flowmon_sip_rtp_ip6
+  42:
+  - :uint16
+  - :flowmon_sip_rtp_audio
+  43:
+  - :uint16
+  - :flowmon_sip_rtp_video
+  44:
+  - :uint64
+  - :flowmon_sip_stats
+  45:
+  - :uint8
+  - :flowmon_rtp_codec
+  46:
+  - :uint32
+  - :flowmon_rtp_jitter
+  47:
+  - :uint32
+  - :flowmon_rtcp_lost
+  48:
+  - :uint64
+  - :flowmon_rtcp_packets
+  49:
+  - :uint64
+  - :flowmon_rtcp_octets
+  50:
+  - :uint8
+  - :flowmon_rtcp_src_count
+  51:
+  - :string
+  - :flowmon_sip_user_agent
+  52:
+  - :string
+  - :flowmon_sip_req_uri
+  53:
+  - :string
+  - :flowmon_sip_cseq
+  61:
+  - :uint32
+  - :flowmon_npm_jitter_dev
+  62:
+  - :uint32
+  - :flowmon_npm_jitter_avg
+  63:
+  - :uint32
+  - :flowmon_npm_jitter_min
+  64:
+  - :uint32
+  - :flowmon_npm_jitter_max
+  65:
+  - :uint32
+  - :flowmon_npm_delay_dev
+  66:
+  - :uint32
+  - :flowmon_npm_delay_avg
+  67:
+  - :uint32
+  - :flowmon_npm_delay_min
+  68:
+  - :uint32
+  - :flowmon_npm_delay_max
+  69:
+  - :uint32
+  - :flowmon_npm_rtt
+  70:
+  - :uint32
+  - :flowmon_npm_server_resp_time
+  71:
+  - :uint32
+  - :flowmon_npm_tcp_retrans
+  72:
+  - :uint32
+  - :flowmon_npm_tcp_out_of_order
+  80:
+  #- :1
+  - :skip
+  81:
+  #- :1
+  - :skip
+  110:
+  - :uint16
+  - :flowmon_dns_id
+  111:
+  - :uint16
+  - :flowmon_dns_flags_codes
+  112:
+  - :uint16
+  - :flowmon_dns_question_count
+  113:
+  - :uint16
+  - :flowmon_dns_answ_rcv_count
+  114:
+  - :uint16
+  - :flowmon_dns_auth_rcv_count
+  115:
+  - :uint16
+  - :flowmon_dns_addt_rcv_count
+  116:
+  - :string
+  - :flowmon_dns_crr_name
+  117:
+  - :uint16
+  - :flowmon_dns_crr_type
+  118:
+  - :uint16
+  - :flowmon_dns_crr_class
+  119:
+  - :uint32
+  - :flowmon_dns_crr_ttl
+  120:
+  - :string
+  - :flowmon_dns_crr_rdata
+  121:
+  - :string
+  - :flowmon_dns_qname
+  122:
+  - :uint16
+  - :flowmon_dns_qtype
+  123:
+  - :uint16
+  - :flowmon_dns_qclass
+  124:
+  - :uint16
+  - :flowmon_dns_crr_rdata_length
+  190:
+  #- :2
+  - :skip
+  191:
+  #- :2
+  - :skip
+  250:
+  #- :64
+  - :skip
+  251:
+  #- :64
+  - :skip
+  254:
+  #- :1
+  - :skip
+  310:
+  #- :4
+  - :skip
+  311:
+  #- :4
+  - :skip
+  312:
+  #- :1
+  - :skip
+  313:
+  #- :64
+  - :skip
+  314:
+  #- :64
+  - :skip
+  315:
+  #- :5
+  - :skip
+  316:
+  #- :1
+  - :skip
+  317:
+  #- :64
+  - :skip
+  318:
+  #- :4
+  - :skip
+  319:
+  #- :4
+  - :skip
+  330:
+  #- :1
+  - :skip
+  331:
+  #- :4
+  - :skip
+  332:
+  #- :8
+  - :skip
+  333:
+  #- :2
+  - :skip
+  334:
+  #- :32
+  - :skip
+  335:
+  #- :32
+  - :skip
+  336:
+  #- :2
+  - :skip
+  337:
+  #- :19
+  - :skip
+  338:
+  #- :64
+  - :skip
+  339:
+  #- :2
+  - :skip
+  340:
+  #- :2
+  - :skip
+  341:
+  #- :16
+  - :skip
+  342:
+  #- :32
+  - :skip
+  343:
+  #- :32
+  - :skip
+  344:
+  #- :56
+  - :skip
+  345:
+  #- :56
+  - :skip
+  346:
+  #- :16
+  - :skip
+  347:
+  #- :4
+  - :skip
+  348:
+  #- :4
+  - :skip
+  349:
+  #- :64
+  - :skip
+  350:
+  #- :64
+  - :skip
+  351:
+  #- :64
+  - :skip
+  352:
+  #- :8
+  - :skip
+  353:
+  #- :8
+  - :skip
+  354:
+  #- :2
+  - :skip
+  355:
+  #- :2
+  - :skip
+  356:
+  #- :4
+  - :skip
+  357:
+  #- :16
+  - :skip
 
 # vIPtela Inc.
 41916:
@@ -8031,6 +8358,10 @@
   4321:
   - :uint64
   - :viptela_vpn_id
+  4322:
+  - :skip
+  #- :uint32
+  #- :viptela_unk_4322
 
 # Ziften Technologies
 44619:
