@@ -28,6 +28,9 @@ services:
         hard: -1
     network_mode: host
     volumes:
+      # You will need to create the path and permissions on the local file system where Elasticsearch will store data.
+      # For example...
+      #   mkdir /var/lib/elasticsearch && chown -R 1000:1000 /var/lib/elasticsearch
       - /var/lib/elastiflow_es:/usr/share/elasticsearch/data
     environment:
       # JVM Heap size
