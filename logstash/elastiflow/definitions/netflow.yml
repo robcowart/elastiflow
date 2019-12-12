@@ -592,8 +592,8 @@
 - 1
 - :mplsTopLabelTTL
 201:
-- mpls_label_stack_octets
-- mpls_label_stack_octets
+- :mpls_label_stack_octets
+- :mpls_label_stack_octets
 202:
 - 4
 - :mplsLabelStackDepth
@@ -1884,10 +1884,10 @@
 - :string
 - :ericsson_nat_context_name
 24630:
-- :long
+- 8
 - :ericsson_nat_assign_ts_secs
 24631:
-- :long
+- 8
 - :ericsson_nat_unassign_ts_secs
 24632:
 - :ip4_addr

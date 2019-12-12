@@ -5605,31 +5605,31 @@
   - :uint16
   - :procera_out_dot1q_vlanid_level_4
   59:
-  - :int8
+  - :uint8
   - :procera_in_dot1q_priority_level_1
   60:
-  - :int8
+  - :uint8
   - :procera_in_dot1q_priority_level_2
   61:
-  - :int8
+  - :uint8
   - :procera_in_dot1q_priority_level_3
   62:
-  - :int8
+  - :uint8
   - :procera_in_dot1q_priority_level_4
   63:
-  - :int8
+  - :uint8
   - :procera_out_dot1q_priority_level_1
   64:
-  - :int8
+  - :uint8
   - :procera_out_dot1q_priority_level_2
   65:
-  - :int8
+  - :uint8
   - :procera_out_dot1q_priority_level_3
   66:
-  - :int8
+  - :uint8
   - :procera_out_dot1q_priority_level_4
   67:
-  - :int32
+  - :uint32
   - :procera_internal_jitter
   69:
   - :string
@@ -8359,9 +8359,8 @@
   - :uint64
   - :viptela_vpn_id
   4322:
-  - :skip
-  #- :uint32
-  #- :viptela_unk_4322
+  - :uint32
+  - :viptela_unk_4322
 
 # Ziften Technologies
 44619:

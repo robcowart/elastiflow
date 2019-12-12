@@ -19670,6 +19670,14 @@
           }
         }
       },
+      {
+        "ipfix.viptela_unk_4322": {
+          "path_match": "ipfix.viptela_unk_4322",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
       
       
       
