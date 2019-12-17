@@ -15,34 +15,34 @@
 # Robert Cowart are Copyright (C)2019 Robert Cowart. All Rights Reserved.
 #------------------------------------------------------------------------------
 
-FROM docker.elastic.co/logstash/logstash-oss:6.1.4
+FROM docker.elastic.co/logstash/logstash-oss:7.3.2
 
 ARG BUILD_DATE
 
 LABEL org.opencontainers.image.created="$BUILD_DATE" \
-      org.opencontainers.image.authors="rob@koiossian.com" \
+      org.opencontainers.image.authors="elastiflow@gmail.com" \
       org.opencontainers.image.url="https://github.com/robcowart/elastiflow/README.md" \
       org.opencontainers.image.documentation="https://github.com/robcowart/elastiflow/DOCKER.md" \
       org.opencontainers.image.source="https://github.com/robcowart/elastiflow" \
       org.opencontainers.image.version="3.5.2" \
       org.opencontainers.image.vendor="Robert Cowart" \
       org.opencontainers.image.title="ElastiFlow™ - Logstash" \
-      org.opencontainers.image.description="Logstash with ElastiFlow™ pipeline."
+      org.opencontainers.image.description="Logstash with the ElastiFlow™ pipeline."
 
 ENV ELASTIFLOW_ES_HOST="http://127.0.0.1:9200"
 
 RUN $HOME/bin/logstash-plugin install logstash-codec-sflow \
+    && $HOME/bin/logstash-plugin install --version 10.1.0 logstash-output-elasticsearch \
     && $HOME/bin/logstash-plugin update logstash-codec-netflow \
-    && $HOME/bin/logstash-plugin update logstash-input-udp \
-    && $HOME/bin/logstash-plugin update logstash-input-tcp \
-    && $HOME/bin/logstash-plugin update logstash-filter-cidr \
-    && $HOME/bin/logstash-plugin update logstash-filter-date \
-    && $HOME/bin/logstash-plugin update logstash-filter-dns \
-    && $HOME/bin/logstash-plugin update logstash-filter-geoip \
-    && $HOME/bin/logstash-plugin update logstash-filter-mutate \
-    && $HOME/bin/logstash-plugin update logstash-filter-ruby \
-    && $HOME/bin/logstash-plugin update logstash-filter-translate \
-    && $HOME/bin/logstash-plugin update logstash-output-elasticsearch
+                                        logstash-input-udp \
+                                        logstash-input-tcp \
+                                        logstash-filter-cidr \
+                                        logstash-filter-date \
+                                        logstash-filter-dns \
+                                        logstash-filter-geoip \
+                                        logstash-filter-mutate \
+                                        logstash-filter-ruby \
+                                        logstash-filter-translate
 
 WORKDIR /usr/share/logstash/config
 COPY --chown=logstash:logstash ./docker_assets/logstash.yml ./
