@@ -2,6 +2,34 @@
 
 ---
 
+## v3.5.2
+
+v3.5.2 is a minor release. No migration of data from v3.5.1 to v3.5.2 is required.
+
+### Breaking Changes
+
+ElastiFlow v3.5.x provides support Elastic Stack 7.x. The support for document types has been completely removed in Elasticsearch 7.0.0. This has required changes to the index templates provided with ElastiFlow. You _MUST_ first successfully upgrade to Elastic Stack 7.x _PRIOR_ to using ElastiFlow v3.5.2.
+
+### New Features
+
+* Added normalization of WiFi-related Netflow v9 and IPFIX fields.
+* The hostname where Logstash is running is provided in the field `logstash_host`.
+* Added the ability to manually set flow sampling values for IPFIX.
+
+### Fixes
+
+* Fix Cisco vzFlow type for list fields.
+* Fix Procera IEs incorrectly defined as `int`.
+
+### Updates
+
+* Improved display of values for sankey diagram tooltips and y-axis.
+* Added a lot of new Fortinet application IDs.
+* Update IP reputation dictionary and GeoIP DBs.
+* Update display of rate values in Vega visualizations.
+
+------
+
 ## v3.5.1
 
 v3.5.1 is a minor release. No migration of data from v3.5.0 to v3.5.1 is required.
