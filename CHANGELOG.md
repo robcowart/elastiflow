@@ -23,10 +23,9 @@ ElastiFlow v3.5.x provides support Elastic Stack 7.x. The support for document t
 
 ### Updates
 
-* Improved display of values for sankey diagram tooltips and y-axis.
+* Improved the display of rate values in Vega visualizations.
 * Added a lot of new Fortinet application IDs.
 * Update IP reputation dictionary and GeoIP DBs.
-* Update display of rate values in Vega visualizations.
 
 ------
 
