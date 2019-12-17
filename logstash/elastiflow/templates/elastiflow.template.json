@@ -29183,6 +29183,15 @@
           },
           "vlan": {
             "type": "long"
+          },
+          "wifi_sta_mac": {
+            "type": "keyword"
+          },
+          "wifi_ssid": {
+            "type": "keyword"
+          },
+          "wifi_wtp_mac": {
+            "type": "keyword"
           }
         }
       },
