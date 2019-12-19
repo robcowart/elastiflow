@@ -71,7 +71,7 @@ services:
       LOGGING_QUIET: 'false'
 
   elastiflow-logstash-oss:
-    image: robcowart/elastiflow-logstash-oss:3.5.2
+    image: robcowart/elastiflow-logstash-oss:3.5.3
     container_name: elastiflow-logstash-oss
     restart: 'no'
     depends_on:

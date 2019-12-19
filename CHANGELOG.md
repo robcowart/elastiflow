@@ -2,6 +2,20 @@
 
 ---
 
+## v3.5.3
+
+v3.5.3 is a minor release. No migration of data from v3.5.x to v3.5.3 is required.
+
+### Breaking Changes
+
+ElastiFlow v3.5.x provides support Elastic Stack 7.x. The support for document types has been completely removed in Elasticsearch 7.0.0. This has required changes to the index templates provided with ElastiFlow. You _MUST_ first successfully upgrade to Elastic Stack 7.x _PRIOR_ to using ElastiFlow v3.5.3.
+
+### New Features
+
+* Added support for pmacct IEs (needed for VyOS 1.2.x).
+
+------
+
 ## v3.5.2
 
 v3.5.2 is a minor release. No migration of data from v3.5.1 to v3.5.2 is required.
