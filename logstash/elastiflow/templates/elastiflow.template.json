@@ -19829,6 +19829,41 @@
 
 
       {
+        "ipfix.pmacct_tag1": {
+          "path_match": "ipfix.pmacct_tag1",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.pmacct_tag2": {
+          "path_match": "ipfix.pmacct_tag2",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.pmacct_tag3": {
+          "path_match": "ipfix.pmacct_tag3",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.pmacct_tag4": {
+          "path_match": "ipfix.pmacct_tag4",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+
+
+
+      {
         "ipfix.ziften_inbound": {
           "path_match": "ipfix.ziften_inbound",
           "mapping": {

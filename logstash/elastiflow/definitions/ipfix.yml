@@ -8362,6 +8362,23 @@
   - :uint32
   - :viptela_unk_4322
 
+# pmacct
+43874:
+  0:
+  - :skip
+  1:
+  - :uint64
+  - :pmacct_tag1
+  2:
+  - :uint64
+  - :pmacct_tag2
+  3:
+  - :uint64
+  - :pmacct_tag3
+  4:
+  - :uint64
+  - :pmacct_tag4
+
 # Ziften Technologies
 44619:
   257:
