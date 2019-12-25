@@ -1,7 +1,7 @@
 {
   "order": 0,
   "version": 30502,
-  "index_patterns": "elastiflow-3.5.2-*",
+  "index_patterns": "elastiflow-3.5.3-*",
   "settings": {
     "index": {
       "number_of_shards": 3,
@@ -19822,6 +19822,41 @@
           "path_match": "ipfix.vmware_virt_observation_id",
           "mapping": {
             "type": "keyword"
+          }
+        }
+      },
+
+
+
+      {
+        "ipfix.pmacct_tag1": {
+          "path_match": "ipfix.pmacct_tag1",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.pmacct_tag2": {
+          "path_match": "ipfix.pmacct_tag2",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.pmacct_tag3": {
+          "path_match": "ipfix.pmacct_tag3",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.pmacct_tag4": {
+          "path_match": "ipfix.pmacct_tag4",
+          "mapping": {
+            "type": "long"
           }
         }
       },
