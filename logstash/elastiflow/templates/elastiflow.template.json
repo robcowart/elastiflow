@@ -1,7 +1,7 @@
 {
   "order": 0,
-  "version": 30502,
-  "index_patterns": "elastiflow-3.5.3-*",
+  "version": 40000,
+  "index_patterns": "elastiflow-4.0.0-*",
   "settings": {
     "index": {
       "number_of_shards": 3,
@@ -15,53 +15,87 @@
       },
       "query": {
         "default_field": [
-          "@timestamp",
-          "@version",
-          "event.host",
-          "event.type",
-          "flow.application",
-          "flow.autonomous_system",
+          "agent.type",
+          "as.organization.name",
+          "client.as.number",
+          "client.as.organization.name",
+          "client.domain",
+          "client.geo.city_name",
+          "client.geo.country_iso_code",
+          "client.geo.country_name",
+          "client.geo.location",
+          "client.ip",
+          "destination.as.number",
+          "destination.as.organization.name",
+          "destination.domain",
+          "destination.geo.city_name",
+          "destination.geo.country_iso_code",
+          "destination.geo.country_name",
+          "destination.geo.location",
+          "destination.ip",
+          "destination.mac",
+          "destination.nat.ip",
+          "destination.nat.port",
+          "destination.port",
           "flow.bgp_next_hop",
           "flow.bgp_valid_state",
-          "flow.city",
-          "flow.country",
-          "flow.country_code",
+          "flow.client_rep_tags",
           "flow.direction",
-          "flow.dst_addr",
-          "flow.dst_addr_trans",
-          "flow.dst_asn",
-          "flow.dst_hostname",
-          "flow.dst_mac",
           "flow.dst_mask_len",
-          "flow.dst_port",
-          "flow.dst_port_trans",
           "flow.dst_port_name",
+          "flow.dst_rep_tags",
           "flow.input_ifname",
           "flow.input_snmp",
-          "flow.ip_protocol",
-          "flow.ip_version",
           "flow.next_hop",
           "flow.output_ifname",
           "flow.output_snmp",
           "flow.rep_tags",
-          "flow.sampling_interval",
+          "flow.server_rep_tags",
           "flow.service_name",
-          "flow.src_addr",
-          "flow.src_addr_trans",
-          "flow.src_asn",
-          "flow.src_hostname",
-          "flow.src_mac",
+          "flow.service_port",
           "flow.src_mask_len",
-          "flow.src_port",
-          "flow.src_port_trans",
           "flow.src_port_name",
+          "flow.src_rep_tags",
           "flow.tcp_flags",
           "flow.tos",
           "flow.traffic_direction",
           "flow.traffic_locality",
+          "flow.type",
           "flow.vlan",
-          "node.ipaddr",
-          "node.hostname",
+          "flow.wifi_ssid",
+          "flow.wifi_sta_mac",
+          "flow.wifi_wtp_mac",
+          "geo.city_name",
+          "geo.country_iso_code",
+          "geo.country_name",
+          "host.hostname",
+          "host.ip",
+          "logstash.host",
+          "message",
+          "network.application",
+          "network.iana_number",
+          "network.transport",
+          "network.type",
+          "server.as.number",
+          "server.as.organization.name",
+          "server.domain",
+          "server.geo.city_name",
+          "server.geo.country_iso_code",
+          "server.geo.country_name",
+          "server.geo.location",
+          "server.ip",
+          "source.as.number",
+          "source.as.organization.name",
+          "source.domain",
+          "source.geo.city_name",
+          "source.geo.country_iso_code",
+          "source.geo.country_name",
+          "source.geo.location",
+          "source.ip",
+          "source.mac",
+          "source.nat.ip",
+          "source.nat.port",
+          "source.port",
           "tags"
         ]
       }
@@ -28978,17 +29012,149 @@
       "@version": {
         "type": "keyword"
       },
-      "event": {
+      "agent": {
         "dynamic": true,
         "type": "object",
         "properties": {
-          "host": {
-            "type": "keyword"
-          },
-          "logstash_host": {
-            "type": "keyword"
-          },
           "type": {
+            "type": "keyword"
+          }
+        }
+      },
+      "as": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "organization": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "keyword"
+              }
+            }
+          }
+        }
+      },
+      "client": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "as": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "keyword"
+              },
+              "organization": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          },
+          "domain": {
+            "type": "keyword"
+          },
+          "geo": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "city_name": {
+                "type": "keyword"
+              },
+              "country_name": {
+                "type": "keyword"
+              },
+              "country_iso_code": {
+                "type": "keyword"
+              },
+              "location": {
+                "type": "geo_point"
+              }
+            }
+          },
+          "ip": {
+            "type": "ip"
+          }
+        }
+      },
+      "destination": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "as": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "keyword"
+              },
+              "organization": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          },
+          "domain": {
+            "type": "keyword"
+          },
+          "geo": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "city_name": {
+                "type": "keyword"
+              },
+              "country_name": {
+                "type": "keyword"
+              },
+              "country_iso_code": {
+                "type": "keyword"
+              },
+              "location": {
+                "type": "geo_point"
+              }
+            }
+          },
+          "ip": {
+            "type": "ip"
+          },
+          "mac": {
+            "type": "keyword"
+          },
+          "nat": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "ip": {
+                "type": "ip"
+              },
+              "port": {
+                "type": "long"
+              }
+            }
+          },
+          "port": {
+            "type": "long"
+          }
+        }
+      },
+      "ecs": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "version": {
             "type": "keyword"
           }
         }
@@ -28997,97 +29163,19 @@
         "dynamic": true,
         "type": "object",
         "properties": {
-          "application": {
-            "type": "keyword"
-          },
-          "autonomous_system": {
-            "type": "keyword"
-          },
           "bgp_next_hop": {
             "type": "ip"
           },
           "bgp_valid_state": {
             "type": "long"
           },
-          "bytes": {
-            "type": "long"
-          },
-          "city": {
-            "type": "keyword"
-          },
-          "client_addr": {
-            "type": "ip"
-          },
-          "client_asn": {
-            "type": "long"
-          },
-          "client_autonomous_system": {
-            "type": "keyword"
-          },
-          "client_city": {
-            "type": "keyword"
-          },
-          "client_country": {
-            "type": "keyword"
-          },
-          "client_country_code": {
-            "type": "keyword"
-          },
-          "client_geo_location": {
-            "type": "geo_point"
-          },
-          "client_hostname": {
-            "type": "keyword"
-          },
           "client_rep_tags": {
-            "type": "keyword"
-          },
-          "country": {
-            "type": "keyword"
-          },
-          "country_code": {
             "type": "keyword"
           },
           "direction": {
             "type": "keyword"
           },
-          "dst_addr": {
-            "type": "ip"
-          },
-          "dst_addr_trans": {
-            "type": "ip"
-          },
-          "dst_asn": {
-            "type": "long"
-          },
-          "dst_autonomous_system": {
-            "type": "keyword"
-          },
-          "dst_city": {
-            "type": "keyword"
-          },
-          "dst_country": {
-            "type": "keyword"
-          },
-          "dst_country_code": {
-            "type": "keyword"
-          },
-          "dst_geo_location": {
-            "type": "geo_point"
-          },
-          "dst_hostname": {
-            "type": "keyword"
-          },
-          "dst_mac": {
-            "type": "keyword"
-          },
           "dst_mask_len": {
-            "type": "long"
-          },
-          "dst_port": {
-            "type": "long"
-          },
-          "dst_port_trans": {
             "type": "long"
           },
           "dst_port_name": {
@@ -29102,12 +29190,6 @@
           "input_snmp": {
             "type": "keyword"
           },
-          "ip_protocol": {
-            "type": "keyword"
-          },
-          "ip_version": {
-            "type": "keyword"
-          },
           "next_hop": {
             "type": "ip"
           },
@@ -29117,38 +29199,11 @@
           "output_snmp": {
             "type": "keyword"
           },
-          "packets": {
-            "type": "long"
-          },
           "rep_tags": {
             "type": "keyword"
           },
           "sampling_interval": {
             "type": "long"
-          },
-          "server_addr": {
-            "type": "ip"
-          },
-          "server_asn": {
-            "type": "long"
-          },
-          "server_autonomous_system": {
-            "type": "keyword"
-          },
-          "server_city": {
-            "type": "keyword"
-          },
-          "server_country": {
-            "type": "keyword"
-          },
-          "server_country_code": {
-            "type": "keyword"
-          },
-          "server_geo_location": {
-            "type": "geo_point"
-          },
-          "server_hostname": {
-            "type": "keyword"
           },
           "server_rep_tags": {
             "type": "keyword"
@@ -29159,43 +29214,7 @@
           "service_port": {
             "type": "long"
           },
-          "src_addr": {
-            "type": "ip"
-          },
-          "src_addr_trans": {
-            "type": "ip"
-          },
-          "src_asn": {
-            "type": "long"
-          },
-          "src_autonomous_system": {
-            "type": "keyword"
-          },
-          "src_city": {
-            "type": "keyword"
-          },
-          "src_country": {
-            "type": "keyword"
-          },
-          "src_country_code": {
-            "type": "keyword"
-          },
-          "src_geo_location": {
-            "type": "geo_point"
-          },
-          "src_hostname": {
-            "type": "keyword"
-          },
-          "src_mac": {
-            "type": "keyword"
-          },
           "src_mask_len": {
-            "type": "long"
-          },
-          "src_port": {
-            "type": "long"
-          },
-          "src_port_trans": {
             "type": "long"
           },
           "src_port_name": {
@@ -29216,6 +29235,9 @@
           "traffic_locality": {
             "type": "keyword"
           },
+          "type": {
+            "type": "keyword"
+          },
           "vlan": {
             "type": "long"
           },
@@ -29230,18 +29252,180 @@
           }
         }
       },
-      "message": {
-        "type": "keyword"
-      },
-      "node": {
+      "geo": {
         "dynamic": true,
         "type": "object",
         "properties": {
-          "ipaddr": {
+          "city_name": {
+            "type": "keyword"
+          },
+          "country_name": {
+            "type": "keyword"
+          },
+          "country_iso_code": {
+            "type": "keyword"
+          }
+        }
+      },
+      "host": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "keyword"
+          },
+          "ip": {
+            "type": "ip"
+          }
+        }
+      },
+      "logstash": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "host": {
+            "type": "keyword"
+          }
+        }
+      },
+      "message": {
+        "type": "keyword"
+      },
+      "network": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "application": {
+            "type": "keyword"
+          },
+          "bytes": {
+            "type": "long"
+          },
+          "iana_number": {
+            "type": "long"
+          },
+          "packets": {
+            "type": "long"
+          },
+          "transport": {
+            "type": "keyword"
+          },
+          "type": {
+            "type": "keyword"
+          }
+        }
+      },
+      "server": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "as": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "keyword"
+              },
+              "organization": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          },
+          "domain": {
+            "type": "keyword"
+          },
+          "geo": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "city_name": {
+                "type": "keyword"
+              },
+              "country_name": {
+                "type": "keyword"
+              },
+              "country_iso_code": {
+                "type": "keyword"
+              },
+              "location": {
+                "type": "geo_point"
+              }
+            }
+          },
+          "ip": {
+            "type": "ip"
+          }
+        }
+      },
+      "source": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "as": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "keyword"
+              },
+              "organization": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          },
+          "domain": {
+            "type": "keyword"
+          },
+          "geo": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "city_name": {
+                "type": "keyword"
+              },
+              "country_name": {
+                "type": "keyword"
+              },
+              "country_iso_code": {
+                "type": "keyword"
+              },
+              "location": {
+                "type": "geo_point"
+              }
+            }
+          },
+          "ip": {
             "type": "ip"
           },
-          "hostname": {
+          "mac": {
             "type": "keyword"
+          },
+          "nat": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "ip": {
+                "type": "ip"
+              },
+              "port": {
+                "type": "long"
+              }
+            }
+          },
+          "port": {
+            "type": "long"
           }
         }
       },
