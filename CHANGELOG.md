@@ -2,6 +2,32 @@
 
 ---
 
+## v4.0.0-beta1
+
+v4.0.0 is a major release. A data migration will be required if you want to have your older data available in 4.0.0. This `BETA` release does not yet include a migration method and is intended for testing with new flow data only.
+
+### Breaking Changes
+
+ElastiFlow v4.0.0 is built for Elasticsearch and Kibana 7.5.0 and later. No earlier versions will be supported. Please use a prior ElastiFlow release if you cannot yet upgrade to Elastic Stack 7.5.x.
+
+ElasiFlow v4.0.0 takes advantage of X-Pack Basic features, such as the Maps, SIEM and Logs apps, as well as Index Lifecycle Management (ILM). This means that you must use at least the X-Pack Basic licensed release of the Elastic Stack. The pure Apache 2.0 licensed release of the Elastic Stack will not work without disabling many features.
+
+### New Features
+
+* Data model has changed to leverage ECS 1.4.
+* Flow data can now be analyzed using the Kibana SIEM and Log apps.
+* Optional resolution of MAC OUIs to vendor names (disabled by default).
+* Kibana dark theme is now supported.
+* Geo IP dashboards now leveage the new Kibana Maps app.
+* Applications can now be defined manually by IP address and port number.
+
+### Updates
+
+* Pipeline refactored to simplify various logic, which might improve performance and throughput for some users.
+* YAML dictionaries intended for customization by users have been moved to the `logstash/elastiflow/user_settings` path.
+
+---
+
 ## v3.5.3
 
 v3.5.3 is a minor release. No migration of data from v3.5.x to v3.5.3 is required.

@@ -98,6 +98,9 @@
           "source.port",
           "tags"
         ]
+      },
+      "lifecycle": {
+        "name": "elastiflow"
       }
     }
   },
@@ -29016,6 +29019,9 @@
         "dynamic": true,
         "type": "object",
         "properties": {
+          "name": {
+            "type": "keyword"
+          },
           "type": {
             "type": "keyword"
           }
@@ -29159,6 +29165,21 @@
           }
         }
       },
+      "event": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "dataset": {
+            "type": "keyword"
+          },
+          "kind": {
+            "type": "keyword"
+          },
+          "severity": {
+            "type": "long"
+          }
+        }
+      },
       "flow": {
         "dynamic": true,
         "type": "object",
@@ -29173,6 +29194,9 @@
             "type": "keyword"
           },
           "direction": {
+            "type": "keyword"
+          },
+          "dst_mac_oui": {
             "type": "keyword"
           },
           "dst_mask_len": {
@@ -29213,6 +29237,9 @@
           },
           "service_port": {
             "type": "long"
+          },
+          "src_mac_oui": {
+            "type": "keyword"
           },
           "src_mask_len": {
             "type": "long"
@@ -29276,6 +29303,15 @@
           },
           "ip": {
             "type": "ip"
+          }
+        }
+      },
+      "log": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "level": {
+            "type": "keyword"
           }
         }
       },

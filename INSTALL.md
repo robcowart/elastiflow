@@ -4,26 +4,36 @@
 
 ElastiFlow&trade; is built using the Elastic Stack, including Elasticsearch, Logstash and Kibana. To install and configure ElastiFlow&trade;, you must first have a working Elastic Stack environment.
 
-Elastic Stack 7.x _*requires*_ ElastiFlow&trade; 3.5.x. To deploy on Elastic Stack 6.x you _*must*_ use ElastiFlow&trade; 3.4.2 or earlier. The 3.4 branch will be maintained independently of the master branch for a while, as most users are still using a pre-7 release of the Elastic Stack.
+## Elastic Stack Compatibility
+
+Elastic Stack 7.0-7.4 _*requires*_ ElastiFlow&trade; 3.5.x. To deploy on Elastic Stack 6.x you _*must*_ use ElastiFlow&trade; 3.4.2 or earlier.
 
 Refer to the following compatibility chart to choose a release of ElastiFlow&trade; that is compatible with the version of the Elastic Stack you are using.
 
+Elastic Stack | ElastiFlow&trade; 3.x | ElastiFlow&trade; 4.x
+:---:|:---:|:---:
+7.5+ |  | &#10003;
+7.0-7.4 | &#10003; v3.5.x |
+6.7 | &#10003; v3.4.2 |
+6.6 | &#10003; v3.4.1 |
+6.5 | &#10003; |
+6.4 | &#10003; |
+6.3 | &#10003; |
+
+## End-of-Life Versions
+
+The following versions of ElastiFlow are no longer actively supported. You will need to use Elastic Stack 6.3 or higher.
+
 Elastic Stack | ElastiFlow&trade; 1.x | ElastiFlow&trade; 2.x | ElastiFlow&trade; 3.x
 :---:|:---:|:---:|:---:
-7.x |  |  | &#10003; v3.5.x
-6.7 |  |  | &#10003; v3.4.2
-6.6 |  |  | &#10003; v3.4.1
-6.5 |  |  | &#10003;
-6.4 |  |  | &#10003;
-6.3 |  |  | &#10003;
-6.2 | &#10003; | &#10003; | &#10003;
-6.1 | &#10003; | &#10003; |
-6.0 | &#10003; | &#10003; |
-5.6 | &#10003; | &#10003; |
-5.5 | &#10003; |  |
-5.4 | &#10003; |  |
+6.2 | &#10003; | &#10003; | &#10003; |
+6.1 | &#10003; | &#10003; |  |
+6.0 | &#10003; | &#10003; |  |
+5.6 | &#10003; | &#10003; |  |
+5.5 | &#10003; |  |  |
+5.4 | &#10003; |  |  |
 
-> NOTE: The instructions that follow are for ElastiFlow&trade; 3.5.0 and above on Elastic Stack 7.x.
+> NOTE: The instructions that follow are for ElastiFlow&trade; 4.0.0 and above on Elastic Stack 7.5.x and higher.
 
 ## Requirements
 
@@ -98,7 +108,8 @@ logstash
        |- definitions  (custom Netflow and IPFIX field definitions)
        |- dictionaries (yaml files used to enrich raw flow data)
        |- geoipdbs  (contains GeoIP databases)
-       `- templates  (contains index templates)
+       |- templates  (contains index templates)
+       `- user_settings (yaml files intended for user customization)
 ```
 
 Copy the `elastiflow` directory to the location of your Logstash configuration files (e.g. on RedHat/CentOS or Ubuntu this would be `/etc/logstash/elastiflow` ). If you place the ElastiFlow&trade; pipeline within a different path, you will need to modify the following environment variables to specify the correct location:
@@ -106,6 +117,7 @@ Copy the `elastiflow` directory to the location of your Logstash configuration f
 Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_DICT_PATH | The path where dictionary files are located | /etc/logstash/elastiflow/dictionaries
+ELASTIFLOW_USER_SETTINGS_PATH | The path where user-customizable dictionary files are located | /etc/logstash/elastiflow/user_settings
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/elastiflow/templates
 ELASTIFLOW_GEOIP_DB_PATH | The path where GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
 
@@ -263,7 +275,7 @@ Once configured ElastiFlow&trade; will resolve the ID to an application name, wh
 
 ### 10. Manually set the sampling interval for devices that don't send it. (optional)
 
-Some devices which collect sampled flows do not include the sampling interval in the flow records that they send (e.g. some Cisco IOS XR and Huawei devices). In such situations the sampling interval can be set manually by adding the IP address and sampling rate for the device in `elastiflow/dictionaries/sampling_interval.yml`.
+Some devices which collect sampled flows do not include the sampling interval in the flow records that they send (e.g. some Cisco IOS XR and Huawei devices). In such situations the sampling interval can be set manually by adding the IP address and sampling rate for the device in `elastiflow/user_settings/sampling_interval.yml`.
 
 ### 11. Start Logstash
 
@@ -322,12 +334,15 @@ The supported environment variables are:
 Environment Variable | Description | Default Value
 --- | --- | ---
 ELASTIFLOW_DICT_PATH | The path where dictionary files are located | /etc/logstash/elastiflow/dictionaries
+ELASTIFLOW_USER_SETTINGS_PATH | The path where user-customizable dictionary files are located | /etc/logstash/elastiflow/user_settings
 ELASTIFLOW_DEFINITION_PATH | The path where Netflow and IPFIX field definitions are located | /etc/logstash/elastiflow/definitions
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/elastiflow/templates
 ELASTIFLOW_GEOIP_DB_PATH | The path where GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
 ELASTIFLOW_GEOIP_CACHE_SIZE | The size of the GeoIP query cache | 8192
 ELASTIFLOW_GEOIP_LOOKUP | Enable/Disable GeoIP lookups | true
 ELASTIFLOW_ASN_LOOKUP | Enable/Disable ASN lookups | true
+ELASTIFLOW_OUI_LOOKUP | Enable/Disable MAC address OUI lookups| false
+ELASTIFLOW_POPULATE_LOGS | Enable/Disable the population of log-related fields | true
 ELASTIFLOW_KEEP_ORIG_DATA | If set to `false` the original `netflow`, `ipfix` and `sflow` objects will be deleted prior to indexing. This can save disk space without affecting the provided dashboards. However the original flow fields will no longer be available if they are desired for additional analytics. | true
 ELASTIFLOW_DEFAULT_APPID_SRCTYPE | Sets the default source type for translating the App IDs to names. Valid values are `cisco_nbar2` and `fortinet` | __UNKNOWN
 ELASTIFLOW_RESOLVE_IP2HOST | Enable/Disable DNS requests. Possible values are `exporters` (only flow exporter IPs are resolved), `endpoints` (only endpoint IPs, src/dst, are resolved), `true` (both are resolved) or `false` | false

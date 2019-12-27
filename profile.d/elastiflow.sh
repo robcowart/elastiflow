@@ -17,12 +17,15 @@
 
 # ElastiFlow global configuration
 export ELASTIFLOW_DICT_PATH=/etc/logstash/elastiflow/dictionaries
+export ELASTIFLOW_USER_SETTINGS_PATH=/etc/logstash/elastiflow/user_settings
 export ELASTIFLOW_DEFINITION_PATH=/etc/logstash/elastiflow/definitions
 export ELASTIFLOW_TEMPLATE_PATH=/etc/logstash/elastiflow/templates
 export ELASTIFLOW_GEOIP_DB_PATH=/etc/logstash/elastiflow/geoipdbs
 export ELASTIFLOW_GEOIP_CACHE_SIZE=8192
 export ELASTIFLOW_GEOIP_LOOKUP=true
 export ELASTIFLOW_ASN_LOOKUP=true
+export ELASTIFLOW_OUI_LOOKUP=false
+export ELASTIFLOW_POPULATE_LOGS=true
 export ELASTIFLOW_KEEP_ORIG_DATA=true
 export ELASTIFLOW_DEFAULT_APPID_SRCTYPE=__UNKNOWN
 
