@@ -20,6 +20,7 @@ ElasiFlow v4.0.0 takes advantage of X-Pack Basic features, such as the Maps, SIE
 * Kibana dark theme is now supported.
 * Geo IP dashboards now leveage the new Kibana Maps app.
 * Applications can now be defined manually by IP address and port number.
+* Palo Alto virtual interface indexes are translated to interfaces names.
 
 ### Updates
 
