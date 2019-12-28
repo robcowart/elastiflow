@@ -6,7 +6,7 @@
 
 ElastiFlow&trade; provides network flow data collection and visualization using the Elastic Stack (Elasticsearch, Logstash and Kibana). It supports Netflow v5/v9, sFlow and IPFIX flow types (1.x versions support only Netflow v5/v9).
 
-![ElastiFlow&trade;](https://user-images.githubusercontent.com/10326954/57181284-fc141a80-6e91-11e9-9ec5-d0864c25a088.png)
+![ElastiFlow&trade;](https://user-images.githubusercontent.com/10326954/71544999-24eba180-2986-11ea-8c9f-14e901def62c.png)
 
 I was inspired to create ElastiFlow&trade; following the overwhelmingly positive feedback received to an article I posted on Linkedin... [WTFlow?! Are you really still paying for commercial solutions to collect and analyze network flow data?](https://www.linkedin.com/pulse/wtflow-you-really-still-paying-commercial-solutions-collect-cowart)
 
@@ -28,6 +28,16 @@ ElastiFlow&trade; is built using the Elastic Stack, including Elasticsearch, Log
 
 > NOTE: Please make sure that have reviewed [KNOWN_ISSUES.md](https://github.com/robcowart/elastiflow/blob/master/KNOWN_ISSUES.md) prior to getting started.
 
+## Kibana App Compatibility
+
+### SIEM
+
+![SIEM](https://user-images.githubusercontent.com/10326954/71544668-c83ab780-2982-11ea-90c5-6d9a72d968d8.png)
+
+### Logs
+
+![Logs](https://user-images.githubusercontent.com/10326954/71544653-a8a38f00-2982-11ea-801e-0d6f6f3b94e4.png)
+
 ## Provided Dashboards
 
 The following dashboards are provided.
@@ -36,12 +46,27 @@ The following dashboards are provided.
 
 ### Overview
 
-![Overview](https://user-images.githubusercontent.com/10326954/57179336-290a0280-6e7d-11e9-8e34-f4d3f04567f7.png)
+![Overview](https://user-images.githubusercontent.com/10326954/71544369-f0c0b280-297e-11ea-9564-8f43834b2920.png)
 
 ### Top-N
 
 There are separate Top-N dashboards for Top Talkers, Services, Conversations and Applications.
-![Top-N](https://user-images.githubusercontent.com/10326954/57181182-c02c8580-6e90-11e9-8cc6-b32424566dea.png)
+
+#### Top Talkers
+
+![Top Talkers](https://user-images.githubusercontent.com/10326954/71544386-25346e80-297f-11ea-8df2-27da8b848259.png)
+
+#### Top Services
+
+![Top Services](https://user-images.githubusercontent.com/10326954/71544397-4c8b3b80-297f-11ea-9e1b-4f41494bb9c6.png)
+
+#### Top Conversations
+
+![Top Conversations](https://user-images.githubusercontent.com/10326954/71544439-b1469600-297f-11ea-88b3-ba801c8b4bc4.png)
+
+#### Top Applications
+
+![Top Applications](https://user-images.githubusercontent.com/10326954/71544446-d0ddbe80-297f-11ea-8da4-3fbca3814bae.png)
 
 ### Threats
 
@@ -51,39 +76,76 @@ ElastiFlow&trade; includes a dictionary of public IP addresses that are known to
 2. At-Risk Servers - Private Servers that are being reached by clients with a poor IP reputation.
 3. High-Risk Clients - Private clients that are accessing public servers which have a poor reputation.
 
-![Threats](https://user-images.githubusercontent.com/10326954/57181155-865b7f00-6e90-11e9-82f8-bb8e7b2df083.png)
+![Threats](https://user-images.githubusercontent.com/10326954/71544459-efdc5080-297f-11ea-8752-0689cbab6ff8.png)
 
 ### Flows
 
 There are separate Sankey dashboards for Client/Server, Source/Destination and Autonomous System perspectives. The sankey visualizations are built using the new Vega visualization plugin.
-![Flows](https://user-images.githubusercontent.com/10326954/57180877-65455f00-6e8d-11e9-9411-ca2b952748e7.png)
+
+#### Client/Server Flows
+
+![Client/Server Flows](https://user-images.githubusercontent.com/10326954/71544475-097d9800-2980-11ea-9d57-5ce9a7ab997b.png)
+
+#### Source/Destination Flows
+
+![Source/Destination Flows](https://user-images.githubusercontent.com/10326954/71544488-3df15400-2980-11ea-8f08-939cc224442b.png)
+
+#### Autonomous System Flows
+
+![Autonomous System Flows](https://user-images.githubusercontent.com/10326954/71544492-6711e480-2980-11ea-8590-ee4631c4c153.png)
 
 ### Geo IP
 
 There are separate Geo Location dashboards for Client/Server and Source/Destination perspectives.
-![Geo IP](https://user-images.githubusercontent.com/10326954/57180209-cf0e3a80-6e86-11e9-8b7b-acd3a82181af.png)
+
+#### Client/Server Geo IP
+
+![Client/Server Geo IP](https://user-images.githubusercontent.com/10326954/71544498-81e45900-2980-11ea-8117-b1aa761f95df.png)
+
+#### Source/Destination Geo IP
+
+![Source/Destination Geo IP](https://user-images.githubusercontent.com/10326954/71544508-adffda00-2980-11ea-957e-79fef27be063.png)
 
 ### AS Traffic
 
 Provides a view of traffic to and from Autonomous Systems (public IP ranges)
-![AS Traffic](https://user-images.githubusercontent.com/10326954/57180844-17305b80-6e8d-11e9-875e-a715d0c66a25.png)
+
+![AS Traffic](https://user-images.githubusercontent.com/10326954/71544520-dbe51e80-2980-11ea-9a96-907f737ca211.png)
 
 ### Flow Exporters
 
-![Flow Exporters](https://user-images.githubusercontent.com/10326954/57180767-51e5c400-6e8c-11e9-9c06-6c34ec6ea922.png)
+![Flow Exporters](https://user-images.githubusercontent.com/10326954/71544529-fcad7400-2980-11ea-879d-f83412dd3238.png)
 
 ### Traffic Details
 
-![Traffic Details](https://user-images.githubusercontent.com/10326954/57180793-86598000-6e8c-11e9-9dc1-341abafbd20e.png)
+Provides more detailed breakdown of various network traffic characteristics.
+
+#### Traffic Types
+
+![Traffic Types](https://user-images.githubusercontent.com/10326954/71544538-1fd82380-2981-11ea-9a1b-aa320a16d384.png)
+
+#### Traffic Attributes
+
+![Traffic Attributes](https://user-images.githubusercontent.com/10326954/71544554-531ab280-2981-11ea-99e3-7d1156c5e84d.png)
+
+#### Traffic Locality
+
+![Traffic Locality](https://user-images.githubusercontent.com/10326954/71544574-8bba8c00-2981-11ea-9d0b-0ef955fd17fa.png)
 
 ### Flow Records
 
-![Flow Records](https://user-images.githubusercontent.com/10326954/57180815-bf91f000-6e8c-11e9-823d-6fb10d5a9d16.png)
+#### Client/Server
+
+![Client/Server](https://user-images.githubusercontent.com/10326954/71544583-a3921000-2981-11ea-8e3b-fbb837eeb6c6.png)
+
+#### Source/Destination
+
+![Source/Destination](https://user-images.githubusercontent.com/10326954/71544605-f10e7d00-2981-11ea-82bf-1ade34350b0d.png)
 
 ### Ziften ZFlow
 
 ElastiFlow&trade; v3.4.0 added support for IPFIX records from Ziften's ZFlow agent. In addition to being fully integrated with the standard dashboards, a stand-alone ZFlow dashboards displays network traffic based on user and command data provided by ZFlow.
-![Ziften ZFlow](https://user-images.githubusercontent.com/10326954/57181212-0da8f280-6e91-11e9-8725-4e06b22fc64b.png)
+![Ziften ZFlow](https://user-images.githubusercontent.com/10326954/71544619-1e5b2b00-2982-11ea-9c6b-14f3863e55b4.png)
 
 ## Attribution
 
