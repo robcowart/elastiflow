@@ -45,6 +45,9 @@ The above recommendations are a starting point. Once you are up and running you 
 
 > I plan to do some additional benchmarking soon, and will update the above table based on those results.
 
+New to Elasticsearch? To to reduce the headache in setting up a ELK stack it is recommended to read this: https://www.elastic.co/guide/en/elasticsearch/guide/current/hardware.html https://www.elastic.co/guide/en/elasticsearch/guide/current/heap-sizing.html
+
+
 ## Setting up Elasticsearch
 
 Previous versions of ElastiFlow&trade; required no special configuration for Elasticsearch. However changes made to Elasticsearch 7.x, require that the following settings be made in `elasticsearch.yml`:
