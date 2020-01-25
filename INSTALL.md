@@ -51,6 +51,8 @@ flows/sec | (v)CPUs | Memory | Disk (30-days) | ES JVM Heap | LS JVM Heap
 
 For anything beyond 2500 flows/sec a multi-node cluster should be considered, and that Logstash be run on its own instance/server.
 
+Additionally local SSD storage should be considered as _*mandatory*_! For an in-depth look at how different storage options compare, and in particular how bad HDD-based storage is for Elasticsearch (even in multi-drive RAID0 configurations) you should watch this video... https://youtu.be/nKUpfJCBiS4
+
 The above recommendations are a starting point. Once you are up and running you can make adjustments based on the actual load of your environment.
 
 > I plan to do some additional benchmarking soon, and will update the above table based on those results.

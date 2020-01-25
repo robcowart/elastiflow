@@ -19,7 +19,7 @@ version: '3'
 
 services:
   elastiflow-elasticsearch-oss:
-    image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.5.1
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.5.2
     container_name: elastiflow-elasticsearch-oss
     restart: 'no'
     ulimits:
@@ -52,7 +52,7 @@ services:
       action.destructive_requires_name: 'true'
 
   elastiflow-kibana-oss:
-    image: docker.elastic.co/kibana/kibana-oss:7.5.1
+    image: docker.elastic.co/kibana/kibana-oss:7.5.2
     container_name: elastiflow-kibana-oss
     restart: 'no'
     depends_on:
@@ -71,7 +71,7 @@ services:
       LOGGING_QUIET: 'false'
 
   elastiflow-logstash-oss:
-    image: robcowart/elastiflow-logstash-oss:4.0.0
+    image: robcowart/elastiflow-logstash-oss:4.0.0-beta
     container_name: elastiflow-logstash-oss
     restart: 'no'
     depends_on:
