@@ -15,5 +15,9 @@
 # Robert Cowart are Copyright (C)2020 Robert Cowart. All Rights Reserved.
 #------------------------------------------------------------------------------
 
+# To setup this file, perform an SNMP walk of the device from which flows are received, for all instances of ifName.
+# Each entry in this file will then be:
+#   "<sender_ipaddr>::ifName.<ifIndex>": "<ifName>"`
+
 # Example
 "192.0.2.11::ifName.2": "eth0"
