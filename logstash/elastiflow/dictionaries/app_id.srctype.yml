@@ -23,3 +23,4 @@
 # DO NOT DELETE these two entries unless you have added your own entries.
 "192.0.2.1": "cisco_nbar2"
 "192.0.2.2": "fortinet"
+"192.0.2.3": "velocloud"

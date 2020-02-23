@@ -8442,6 +8442,57 @@
   - :string
   - :redsocks_http_hostname
 
+# Velocloud Networks
+45346:
+  12232:
+  - :uint8
+  - :velocloud_12232
+  12233:
+  - :octetarray
+  - :velocloud_12233
+  12234:
+  - :uint8
+  - :velocloud_12234
+  12235:
+  - :uint8
+  - :velocloud_12235
+  12236:
+  - :uint8
+  - :velocloud_12236
+  12237:
+  - :uint8
+  - :velocloud_12237
+  12239:
+  - :uint8
+  - :velocloud_12239
+  12240:
+  - :octetarray
+  - :velocloud_12240
+  12241:
+  - :uint64
+  - :velocloud_12241
+  12242:
+  - :uint64
+  - :velocloud_12242
+  12243:
+  - :uint64
+  - :velocloud_12243
+  12244:
+  - :uint64
+  - :velocloud_12244
+  12245:
+  - :ip4_addr
+  - :velocloud_interface_ipv4
+  12310:
+  - :string
+  - :velocloud_12310
+  12312:
+  - :octetarray
+  - :velocloud_12312
+  12314:
+  - :octetarray
+  - :velocloud_12314
+
 # Pluribus Networks
 47269:
   1:
