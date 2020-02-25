@@ -8467,7 +8467,7 @@
   - :velocloud_12239
   12240:
   - :octetarray
-  - :velocloud_12240
+  - :velocloud_internal_id
   12241:
   - :uint64
   - :velocloud_12241
@@ -8485,7 +8485,7 @@
   - :velocloud_interface_ipv4
   12310:
   - :string
-  - :velocloud_12310
+  - :velocloud_isp
   12312:
   - :octetarray
   - :velocloud_12312
