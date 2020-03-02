@@ -25,6 +25,9 @@ Organization | Feedback
 
 ElastiFlow&trade; is built using the Elastic Stack, including Elasticsearch, Logstash and Kibana. Please refer to [INSTALL.md](https://github.com/robcowart/elastiflow/blob/master/INSTALL.md) for instructions on how to install and configure ElastiFlow&trade;
 
+If you are new to the Elastic Stack, this video goes beyond a simple default installation of Elasticsearch and Kibana. It discusses real-world best practices for hardware sizing and configuration, providing production-level performance and reliability.
+
+[![es_install_thumbnail](https://user-images.githubusercontent.com/10326954/75727859-58301100-5ce6-11ea-9ed7-2c93bb1df111.png)](https://youtu.be/gZb7HpVOges)
 
 > NOTE: Please make sure that have reviewed [KNOWN_ISSUES.md](https://github.com/robcowart/elastiflow/blob/master/KNOWN_ISSUES.md) prior to getting started.
 
