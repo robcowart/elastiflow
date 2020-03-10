@@ -2,13 +2,47 @@
 
 [![patreon](https://user-images.githubusercontent.com/10326954/52966127-c9847680-33a6-11e9-8640-10dd7abc3af0.png)](https://www.patreon.com/elastiflow) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/robcowart) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=ElastiFlow%E2%84%A2%20provides%20Netflow%20v5%2Fv9%2C%20sFlow%20and%20IPFIX%20data%20collection%20and%20visualization%20using%20the%20Elastic%20Stack.&url=https://github.com/robcowart/elastiflow&hashtags=elastiflow,netflow,sflow,ipfix)
 
-> SUPPORTING ElastiFlow&trade; - Today literally 1000s of users leverage ElastiFlow&trade; As a powerful alternative to expensive commercial flow collecting solutions. As its popularity has increased, so has the time commitment necessary to support users and provide further enhancements. If you are one of the organizations who appreciate the value of ElastiFlow&trade;, I would like to ask you to consider becoming a sponsor. The support from sponsors allows me dedicate more time and energy to the project. To become a sponsor, please visit ElastiFlow on [![patreon](https://user-images.githubusercontent.com/10326954/52966127-c9847680-33a6-11e9-8640-10dd7abc3af0.png)](https://www.patreon.com/elastiflow).
+> 
 
 ElastiFlow&trade; provides network flow data collection and visualization using the Elastic Stack (Elasticsearch, Logstash and Kibana). It supports Netflow v5/v9, sFlow and IPFIX flow types (1.x versions support only Netflow v5/v9).
 
 ![ElastiFlow&trade;](https://user-images.githubusercontent.com/10326954/71544999-24eba180-2986-11ea-8c9f-14e901def62c.png)
 
 I was inspired to create ElastiFlow&trade; following the overwhelmingly positive feedback received to an article I posted on Linkedin... [WTFlow?! Are you really still paying for commercial solutions to collect and analyze network flow data?](https://www.linkedin.com/pulse/wtflow-you-really-still-paying-commercial-solutions-collect-cowart)
+
+## SUPPORTING ElastiFlow&trade;
+
+Today literally 1000s of users leverage ElastiFlow&trade; As a powerful alternative to expensive commercial flow collecting solutions. As its popularity has increased, so has the time commitment necessary to support users and provide further enhancements. If you are one of the organizations who appreciate the value of ElastiFlow&trade;, I would like to ask you to consider becoming a sponsor. The support from sponsors allows me dedicate more time and energy to the project. To become a sponsor, please visit ElastiFlow&trade; on [![patreon](https://user-images.githubusercontent.com/10326954/52966127-c9847680-33a6-11e9-8640-10dd7abc3af0.png)](https://www.patreon.com/elastiflow).
+
+A special thanks to...
+
+### VyoPath - [www.vyopath.com](https://www.vyopath.com)
+
+![VyoPath](https://user-images.githubusercontent.com/10326954/56861440-066d7a80-69a1-11e9-952d-8c7a1ac350c6.png)
+
+VyoPath is the trusted advisor to business leaders seeking innovative, creative and strategic solutions to help them plan for and navigate the challenges of the ever changing digital landscape. Speak to VyoPath for ElastiFlow-as-a-Service.
+
+```text
+VyoPath, Inc.
+9689 Avalon Drive
+Frisco, Texas 75035
+
+Phone: +1 469 850 2419
+Email: info@vyopath.com
+```
+
+### Dynamite Analytics - [dynamite.ai](https://dynamite.ai/)
+
+![Dynamite Analytics](https://user-images.githubusercontent.com/10326954/76325789-0855d900-62e8-11ea-9e9f-107f28504ca3.png)
+
+Dynamite-NSM is the open-source network security monitor developed by Dynamite Analytics. It provides network and cybersecurity operators with holistic insights into their networks while giving them the ability to deep-dive into lower-level activities. Dynamite-NSM builds upon the ELK stack (ElasticSearch, LogStash, Kibana) and is coupled with the fine-tuned Zeek sensor (a.k.a. Bro), flow data inputs (powered by ElastiFlow), and Suricata IDS security alerts. The solution now includes the Dynamite Lab component made of the python API for easy data access and the integrated JupyterHub data science environment.
+
+```text
+Dynamite Analytics
+7742 Spalding Drive #359
+Norcross, GA 30092
+USA
+```
 
 ## User Testimonials
 
