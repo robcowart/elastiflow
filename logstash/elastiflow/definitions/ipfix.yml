@@ -1874,6 +1874,85 @@
   12363:
   - :uint16
   - :cisco_nvzflow_parent_proc_user_acct_type
+
+
+
+  12230:
+  - :string
+  - :cisco_sdwan_12230
+  12231:
+  - :string
+  - :cisco_sdwan_12231
+
+  12432:
+  - :uint32
+  - :cisco_sdwan_ingress_overlay_sess_id
+  12433:
+  - :uint32
+  - :cisco_sdwan_egress_overlay_sess_id
+  12434:
+  - :uint32
+  - :cisco_sdwan_vpn_id
+  12435:
+  - :uint32
+  - :cisco_sdwan_12435
+  12436:
+  - :uint32
+  - :cisco_sdwan_12436
+  12437:
+  - :string
+  - :cisco_sdwan_12437
+  12438:
+  - :uint32
+  - :cisco_sdwan_12438
+  12439:
+  - :string
+  - :cisco_sdwan_12439
+  12440:
+  - :string
+  - :cisco_sdwan_12440
+  12441:
+  - :uint64
+  - :cisco_sdwan_connection_id
+  12442:
+  - :uint16
+  - :cisco_sdwan_drop_cause
+  12443:
+  - :uint64
+  - :cisco_sdwan_dropped_bytes
+  12444:
+  - :uint8
+  - :cisco_sdwan_sla_not_met
+  12445:
+  - :uint8
+  - :cisco_sdwan_pref_color_not_met
+  12446:
+  - :uint8
+  - :cisco_sdwan_qos_queue_id
+  12447:
+  - :string
+  - :cisco_sdwan_drop_cause_descr
+  12448:
+  - :uint32
+  - :cisco_sdwan_12448
+  12449:
+  - :uint32
+  - :cisco_sdwan_12449
+  12450:
+  - :uint32
+  - :cisco_sdwan_12450
+  12451:
+  - :uint32
+  - :cisco_sdwan_12451
+  12452:
+  - :uint32
+  - :cisco_sdwan_12452
+  12453:
+  - :uint32
+  - :cisco_sdwan_12453
+
+
+
   15901:
   - :ip4_addr
   - :cisco_nexus_fastpath_src_addr
@@ -3643,7 +3722,7 @@
   - :calix_sample_time
   12:
   - :string
-  - :calix_lag_group1
+  - :calix_lag_group
   20:
   - :string
   - :calix_bin_duration
@@ -3970,22 +4049,22 @@
   - :calix_upstream_undersize_packets
   292:
   - :uint64
-  - :calix_upstream_packets_64_octets
+  - :calix_upstream_packets_to_64_bytes
   293:
   - :uint64
-  - :calix_upstream_packets_64_to_127_octets
+  - :calix_upstream_packets_64_to_127_bytes
   294:
   - :uint64
-  - :calix_upstream_packets_128_to_255_octets
+  - :calix_upstream_packets_128_to_255_bytes
   295:
   - :uint64
-  - :calix_upstream_packets_256_to_511_octets
+  - :calix_upstream_packets_256_to_511_bytes
   296:
   - :uint64
-  - :calix_upstream_packets_512_to_1023_octets
+  - :calix_upstream_packets_512_to_1023_bytes
   297:
   - :uint64
-  - :calix_upstream_packets_1024_to_1518_octets
+  - :calix_upstream_packets_1024_to_1518_bytes
   298:
   - :uint64
   - :calix_downstream_drop_events
@@ -4405,7 +4484,7 @@
   - :calix_drop_events
   602:
   - :uint64
-  - :calix_octets
+  - :calix_bytes
   603:
   - :uint64
   - :calix_pkts
@@ -4429,34 +4508,34 @@
   - :calix_fragments
   610:
   - :uint64
-  - :calix_pkts_to_64
+  - :calix_pkts_to_64_bytes
   611:
   - :uint64
-  - :calix_pkts_65_to_127
+  - :calix_pkts_65_to_127_bytes
   612:
   - :uint64
-  - :calix_pkts_128_to_255
+  - :calix_pkts_128_to_255_bytes
   613:
   - :uint64
-  - :calix_pkts_256_to_511
+  - :calix_pkts_256_to_511_bytes
   614:
   - :uint64
-  - :calix_pkts_512_to_1023
+  - :calix_pkts_512_to_1023_bytes
   615:
   - :uint64
-  - :calix_pkts_1024_to_1518
+  - :calix_pkts_1024_to_1518_bytes
   616:
   - :uint64
-  - :calix_pkts_1519_to_2047
+  - :calix_pkts_1519_to_2047_bytes
   617:
   - :uint64
-  - :calix_pkts_2048_to_4095
+  - :calix_pkts_2048_to_4095_bytes
   618:
   - :uint64
-  - :calix_pkts_4096_to_9216
+  - :calix_pkts_4096_to_9216_bytes
   619:
   - :uint64
-  - :calix_pkts_9217_to_16383
+  - :calix_pkts_9217_to_16383_bytes
   620:
   - :uint64
   - :calix_rx_unicast_pkts
@@ -4720,10 +4799,10 @@
   - :calix_pon_ont_util_aid
   904:
   - :uint64
-  - :upstream_bytes
+  - :calix_upstream_bytes
   905:
   - :uint64
-  - :downstream_bytes
+  - :calix_downstream_bytes
   906:
   - :uint32
   - :calix_upstream_percentage

@@ -13,92 +13,6 @@
           "limit": 5000
         }
       },
-      "query": {
-        "default_field": [
-          "agent.type",
-          "as.organization.name",
-          "client.as.number",
-          "client.as.organization.name",
-          "client.domain",
-          "client.geo.city_name",
-          "client.geo.country_iso_code",
-          "client.geo.country_name",
-          "client.geo.location",
-          "client.ip",
-          "destination.as.number",
-          "destination.as.organization.name",
-          "destination.domain",
-          "destination.geo.city_name",
-          "destination.geo.country_iso_code",
-          "destination.geo.country_name",
-          "destination.geo.location",
-          "destination.ip",
-          "destination.mac",
-          "destination.nat.ip",
-          "destination.nat.port",
-          "destination.port",
-          "flow.bgp_next_hop",
-          "flow.bgp_valid_state",
-          "flow.client_rep_tags",
-          "flow.direction",
-          "flow.dst_mask_len",
-          "flow.dst_port_name",
-          "flow.dst_rep_tags",
-          "flow.input_ifname",
-          "flow.input_snmp",
-          "flow.next_hop",
-          "flow.output_ifname",
-          "flow.output_snmp",
-          "flow.rep_tags",
-          "flow.server_rep_tags",
-          "flow.service_name",
-          "flow.service_port",
-          "flow.src_mask_len",
-          "flow.src_port_name",
-          "flow.src_rep_tags",
-          "flow.tcp_flags",
-          "flow.tos",
-          "flow.traffic_direction",
-          "flow.traffic_locality",
-          "flow.type",
-          "flow.vlan",
-          "flow.wifi_ssid",
-          "flow.wifi_sta_mac",
-          "flow.wifi_wtp_mac",
-          "geo.city_name",
-          "geo.country_iso_code",
-          "geo.country_name",
-          "host.hostname",
-          "host.ip",
-          "logstash.host",
-          "message",
-          "network.application",
-          "network.iana_number",
-          "network.transport",
-          "network.type",
-          "server.as.number",
-          "server.as.organization.name",
-          "server.domain",
-          "server.geo.city_name",
-          "server.geo.country_iso_code",
-          "server.geo.country_name",
-          "server.geo.location",
-          "server.ip",
-          "source.as.number",
-          "source.as.organization.name",
-          "source.domain",
-          "source.geo.city_name",
-          "source.geo.country_iso_code",
-          "source.geo.country_name",
-          "source.geo.location",
-          "source.ip",
-          "source.mac",
-          "source.nat.ip",
-          "source.nat.port",
-          "source.port",
-          "tags"
-        ]
-      },
       "lifecycle": {
         "name": "elastiflow"
       }
@@ -6981,6 +6895,2929 @@
           "path_match": "ipfix.cace_local_proc_command",
           "mapping": {
             "type": "keyword"
+          }
+        }
+      },
+
+
+
+      {
+        "ipfix.calix_hostname": {
+          "path_match": "ipfix.calix_hostname",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_shelf": {
+          "path_match": "ipfix.calix_shelf",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_slot": {
+          "path_match": "ipfix.calix_slot",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_port": {
+          "path_match": "ipfix.calix_port",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ont_id": {
+          "path_match": "ipfix.calix_ont_id",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_svlan": {
+          "path_match": "ipfix.calix_svlan",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_cvlan": {
+          "path_match": "ipfix.calix_cvlan",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_sample_time": {
+          "path_match": "ipfix.calix_sample_time",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lag_group": {
+          "path_match": "ipfix.calix_lag_group",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_bin_duration": {
+          "path_match": "ipfix.calix_bin_duration",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_bin_number": {
+          "path_match": "ipfix.calix_bin_number",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_start_time": {
+          "path_match": "ipfix.calix_start_time",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_end_time": {
+          "path_match": "ipfix.calix_end_time",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_time_elapsed": {
+          "path_match": "ipfix.calix_time_elapsed",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_suspect": {
+          "path_match": "ipfix.calix_suspect",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_cause": {
+          "path_match": "ipfix.calix_cause",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_subscriber_uid": {
+          "path_match": "ipfix.calix_subscriber_uid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ont_ifstats_aid": {
+          "path_match": "ipfix.calix_ont_ifstats_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_olt_pon_util_aid": {
+          "path_match": "ipfix.calix_olt_pon_util_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ont_evcstats_aid": {
+          "path_match": "ipfix.calix_ont_evcstats_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_olt_pon_optical_aid": {
+          "path_match": "ipfix.calix_olt_pon_optical_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_olt_ont_bin_aid": {
+          "path_match": "ipfix.calix_olt_ont_bin_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ont_eth_util_aid": {
+          "path_match": "ipfix.calix_ont_eth_util_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_mep_stats_aid": {
+          "path_match": "ipfix.calix_mep_stats_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_mip_stats_aid": {
+          "path_match": "ipfix.calix_mip_stats_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_delay_measurement_aid": {
+          "path_match": "ipfix.calix_delay_measurement_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_loss_measurement_aid": {
+          "path_match": "ipfix.calix_loss_measurement_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lm_availability_aid": {
+          "path_match": "ipfix.calix_lm_availability_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_subscriber_flows_aid": {
+          "path_match": "ipfix.calix_subscriber_flows_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ont_evccos_stats_aid": {
+          "path_match": "ipfix.calix_ont_evccos_stats_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ont_eth_total_aid": {
+          "path_match": "ipfix.calix_ont_eth_total_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_bng_dhcp_pool_aid": {
+          "path_match": "ipfix.calix_bng_dhcp_pool_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_bng_dhcp_subscriber_aid": {
+          "path_match": "ipfix.calix_bng_dhcp_subscriber_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_bng_static_subscriber_aid": {
+          "path_match": "ipfix.calix_bng_static_subscriber_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_bng_gx_counter_aid": {
+          "path_match": "ipfix.calix_bng_gx_counter_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_bng_url_redirect_aid": {
+          "path_match": "ipfix.calix_bng_url_redirect_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_bng_policy_mgmt_aid": {
+          "path_match": "ipfix.calix_bng_policy_mgmt_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_bng_arp_counters_aid": {
+          "path_match": "ipfix.calix_bng_arp_counters_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_bng_diameter_client_aid": {
+          "path_match": "ipfix.calix_bng_diameter_client_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_bng_radius_client_aid": {
+          "path_match": "ipfix.calix_bng_radius_client_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_interface_ethernet_aid": {
+          "path_match": "ipfix.calix_interface_ethernet_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_interface_lag_aid": {
+          "path_match": "ipfix.calix_interface_lag_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_octets": {
+          "path_match": "ipfix.calix_tx_octets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_pkts": {
+          "path_match": "ipfix.calix_tx_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_discards": {
+          "path_match": "ipfix.calix_tx_discards",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_errors": {
+          "path_match": "ipfix.calix_tx_errors",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_octets": {
+          "path_match": "ipfix.calix_rx_octets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_pkts": {
+          "path_match": "ipfix.calix_rx_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_discards": {
+          "path_match": "ipfix.calix_rx_discards",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_errors": {
+          "path_match": "ipfix.calix_rx_errors",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_octets": {
+          "path_match": "ipfix.calix_upstream_octets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_octets": {
+          "path_match": "ipfix.calix_downstream_octets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_admitted_fixed_upstream_bw": {
+          "path_match": "ipfix.calix_admitted_fixed_upstream_bw",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_available_fixed_upstream_bw": {
+          "path_match": "ipfix.calix_available_fixed_upstream_bw",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_admitted_excess_upstream_bw": {
+          "path_match": "ipfix.calix_admitted_excess_upstream_bw",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_available_excess_upstream_bw": {
+          "path_match": "ipfix.calix_available_excess_upstream_bw",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_green_octets_uni": {
+          "path_match": "ipfix.calix_green_octets_uni",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_yellow_octets_uni": {
+          "path_match": "ipfix.calix_yellow_octets_uni",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_red_octets_uni": {
+          "path_match": "ipfix.calix_red_octets_uni",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_green_pkts_uni": {
+          "path_match": "ipfix.calix_green_pkts_uni",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_yellow_pkts_uni": {
+          "path_match": "ipfix.calix_yellow_pkts_uni",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_red_pkts_uni": {
+          "path_match": "ipfix.calix_red_pkts_uni",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_octets_policer_discards": {
+          "path_match": "ipfix.calix_octets_policer_discards",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pkts_policer_discards": {
+          "path_match": "ipfix.calix_pkts_policer_discards",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_green_octets_pon": {
+          "path_match": "ipfix.calix_green_octets_pon",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_yellow_octets_pon": {
+          "path_match": "ipfix.calix_yellow_octets_pon",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_green_pkts_pon": {
+          "path_match": "ipfix.calix_green_pkts_pon",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_yellow_pkts_pon": {
+          "path_match": "ipfix.calix_yellow_pkts_pon",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_power_feed_voltage": {
+          "path_match": "ipfix.calix_power_feed_voltage",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_optical_power": {
+          "path_match": "ipfix.calix_rx_optical_power",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_mean_optical_launch_power": {
+          "path_match": "ipfix.calix_mean_optical_launch_power",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_laser_bias_current": {
+          "path_match": "ipfix.calix_laser_bias_current",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_temperature": {
+          "path_match": "ipfix.calix_temperature",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_optical_channel": {
+          "path_match": "ipfix.calix_optical_channel",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_bip_errors": {
+          "path_match": "ipfix.calix_upstream_bip_errors",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_missed_bursts": {
+          "path_match": "ipfix.calix_upstream_missed_bursts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_gem_hec_errors": {
+          "path_match": "ipfix.calix_upstream_gem_hec_errors",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_bip8_err_sec": {
+          "path_match": "ipfix.calix_upstream_bip8_err_sec",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_bip8_severely_err_sec": {
+          "path_match": "ipfix.calix_upstream_bip8_severely_err_sec",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_bip8_unavail_sec": {
+          "path_match": "ipfix.calix_upstream_bip8_unavail_sec",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_missed_bursts_err_sec": {
+          "path_match": "ipfix.calix_upstream_missed_bursts_err_sec",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_fec_corrected_bytes": {
+          "path_match": "ipfix.calix_upstream_fec_corrected_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_fec_corrected_code_words": {
+          "path_match": "ipfix.calix_upstream_fec_corrected_code_words",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_fec_uncorrected_code_words": {
+          "path_match": "ipfix.calix_upstream_fec_uncorrected_code_words",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_fec_total_code_words": {
+          "path_match": "ipfix.calix_upstream_fec_total_code_words",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_fec_sec": {
+          "path_match": "ipfix.calix_upstream_fec_sec",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_bip_errors": {
+          "path_match": "ipfix.calix_downstream_bip_errors",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_bip8_err_sec": {
+          "path_match": "ipfix.calix_downstream_bip8_err_sec",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_bip8_severely_err_sec": {
+          "path_match": "ipfix.calix_downstream_bip8_severely_err_sec",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_bip8_unavail_sec": {
+          "path_match": "ipfix.calix_downstream_bip8_unavail_sec",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_fec_corrected_bytes": {
+          "path_match": "ipfix.calix_downstream_fec_corrected_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_fec_corrected_code_words": {
+          "path_match": "ipfix.calix_downstream_fec_corrected_code_words",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_fec_uncorrected_code_words": {
+          "path_match": "ipfix.calix_downstream_fec_uncorrected_code_words",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_fec_total_code_words": {
+          "path_match": "ipfix.calix_downstream_fec_total_code_words",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_fec_sec": {
+          "path_match": "ipfix.calix_downstream_fec_sec",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_fcs_errors": {
+          "path_match": "ipfix.calix_fcs_errors",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_excessive_collision": {
+          "path_match": "ipfix.calix_excessive_collision",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_late_collision": {
+          "path_match": "ipfix.calix_late_collision",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_too_long": {
+          "path_match": "ipfix.calix_frame_too_long",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_buffer_overflow_xmit": {
+          "path_match": "ipfix.calix_buffer_overflow_xmit",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_buffer_overflow_recv": {
+          "path_match": "ipfix.calix_buffer_overflow_recv",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_single_collision": {
+          "path_match": "ipfix.calix_single_collision",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_multiple_collision": {
+          "path_match": "ipfix.calix_multiple_collision",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_sqe_counter": {
+          "path_match": "ipfix.calix_sqe_counter",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_deferred_xmit_count": {
+          "path_match": "ipfix.calix_deferred_xmit_count",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_internal_mac_xmit_error": {
+          "path_match": "ipfix.calix_internal_mac_xmit_error",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_internal_mac_recv_error": {
+          "path_match": "ipfix.calix_internal_mac_recv_error",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_carrier_sense_error": {
+          "path_match": "ipfix.calix_carrier_sense_error",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_alignment_error": {
+          "path_match": "ipfix.calix_alignment_error",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_drop_events": {
+          "path_match": "ipfix.calix_upstream_drop_events",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_packets": {
+          "path_match": "ipfix.calix_upstream_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_broadcast_packets": {
+          "path_match": "ipfix.calix_upstream_broadcast_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_multicast_packets": {
+          "path_match": "ipfix.calix_upstream_multicast_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_unicast_packets": {
+          "path_match": "ipfix.calix_upstream_unicast_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_crc_errored_packets": {
+          "path_match": "ipfix.calix_upstream_crc_errored_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_oversize_packets": {
+          "path_match": "ipfix.calix_upstream_oversize_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_undersize_packets": {
+          "path_match": "ipfix.calix_upstream_undersize_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_packets_to_64_bytes": {
+          "path_match": "ipfix.calix_upstream_packets_to_64_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_packets_64_to_127_bytes": {
+          "path_match": "ipfix.calix_upstream_packets_64_to_127_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_packets_128_to_255_bytes": {
+          "path_match": "ipfix.calix_upstream_packets_128_to_255_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_packets_256_to_511_bytes": {
+          "path_match": "ipfix.calix_upstream_packets_256_to_511_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_packets_512_to_1023_bytes": {
+          "path_match": "ipfix.calix_upstream_packets_512_to_1023_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_packets_1024_to_1518_bytes": {
+          "path_match": "ipfix.calix_upstream_packets_1024_to_1518_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_drop_events": {
+          "path_match": "ipfix.calix_downstream_drop_events",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_packets": {
+          "path_match": "ipfix.calix_downstream_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_broadcast_packets": {
+          "path_match": "ipfix.calix_downstream_broadcast_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_multicast_packets": {
+          "path_match": "ipfix.calix_downstream_multicast_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_unicast_packets": {
+          "path_match": "ipfix.calix_downstream_unicast_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_crc_errored_packets": {
+          "path_match": "ipfix.calix_downstream_crc_errored_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_oversize_packets": {
+          "path_match": "ipfix.calix_downstream_oversize_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_undersize_packets": {
+          "path_match": "ipfix.calix_downstream_undersize_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_gem_frames": {
+          "path_match": "ipfix.calix_upstream_gem_frames",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_gem_payload_bytes": {
+          "path_match": "ipfix.calix_upstream_gem_payload_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_gem_frames": {
+          "path_match": "ipfix.calix_downstream_gem_frames",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_gem_payload_bytes": {
+          "path_match": "ipfix.calix_downstream_gem_payload_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_gem_encryption_key_errors": {
+          "path_match": "ipfix.calix_gem_encryption_key_errors",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_admitted_assured_upstream_bw": {
+          "path_match": "ipfix.calix_admitted_assured_upstream_bw",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_available_assured_upstream_bw": {
+          "path_match": "ipfix.calix_available_assured_upstream_bw",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_fixed_upstream_bytes": {
+          "path_match": "ipfix.calix_fixed_upstream_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_assured_upstream_bytes": {
+          "path_match": "ipfix.calix_assured_upstream_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_excess_upstream_bytes": {
+          "path_match": "ipfix.calix_excess_upstream_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_flow_direction": {
+          "path_match": "ipfix.calix_flow_direction",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_flow_number": {
+          "path_match": "ipfix.calix_flow_number",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_flow_pkts": {
+          "path_match": "ipfix.calix_flow_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_flow_bytes": {
+          "path_match": "ipfix.calix_flow_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_flow_drop_pkts": {
+          "path_match": "ipfix.calix_flow_drop_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_flow_drop_bytes": {
+          "path_match": "ipfix.calix_flow_drop_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ingress_bucket_seconds": {
+          "path_match": "ipfix.calix_ingress_bucket_seconds",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ingress_bucket_bps": {
+          "path_match": "ipfix.calix_ingress_bucket_bps",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ingress_bucket_percent": {
+          "path_match": "ipfix.calix_ingress_bucket_percent",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_egress_bucket_seconds": {
+          "path_match": "ipfix.calix_egress_bucket_seconds",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_egress_bucket_bps": {
+          "path_match": "ipfix.calix_egress_bucket_bps",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_egress_bucket_percent": {
+          "path_match": "ipfix.calix_egress_bucket_percent",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ccm_received": {
+          "path_match": "ipfix.calix_ccm_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ccm_transmitted": {
+          "path_match": "ipfix.calix_ccm_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ccm_received_rdi": {
+          "path_match": "ipfix.calix_ccm_received_rdi",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ccm_transmitted_rdi": {
+          "path_match": "ipfix.calix_ccm_transmitted_rdi",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ccm_received_bad_sender_id": {
+          "path_match": "ipfix.calix_ccm_received_bad_sender_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ccm_received_bad_port_status": {
+          "path_match": "ipfix.calix_ccm_received_bad_port_status",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ccm_received_bad_if_status": {
+          "path_match": "ipfix.calix_ccm_received_bad_if_status",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ccm_received_bad_seq_errors": {
+          "path_match": "ipfix.calix_ccm_received_bad_seq_errors",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dmm_transmitted": {
+          "path_match": "ipfix.calix_dmm_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dmr_received": {
+          "path_match": "ipfix.calix_dmr_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dmm_received": {
+          "path_match": "ipfix.calix_dmm_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dmr_transmitted": {
+          "path_match": "ipfix.calix_dmr_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dm1_transmitted": {
+          "path_match": "ipfix.calix_dm1_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dm1_received": {
+          "path_match": "ipfix.calix_dm1_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_slm_transmitted": {
+          "path_match": "ipfix.calix_slm_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_slr_received": {
+          "path_match": "ipfix.calix_slr_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_slm_received": {
+          "path_match": "ipfix.calix_slm_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_slr_transmitted": {
+          "path_match": "ipfix.calix_slr_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lmm_transmitted": {
+          "path_match": "ipfix.calix_lmm_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lmr_received": {
+          "path_match": "ipfix.calix_lmr_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lmm_received": {
+          "path_match": "ipfix.calix_lmm_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lmr_transmitted": {
+          "path_match": "ipfix.calix_lmr_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ltm_transmitted": {
+          "path_match": "ipfix.calix_ltm_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ltr_received": {
+          "path_match": "ipfix.calix_ltr_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ltm_received": {
+          "path_match": "ipfix.calix_ltm_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ltr_transmitted": {
+          "path_match": "ipfix.calix_ltr_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_ltr_unexpected": {
+          "path_match": "ipfix.calix_ltr_unexpected",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lbm_transmitted": {
+          "path_match": "ipfix.calix_lbm_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lbr_received": {
+          "path_match": "ipfix.calix_lbr_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lbm_received": {
+          "path_match": "ipfix.calix_lbm_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lbr_transmitted": {
+          "path_match": "ipfix.calix_lbr_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lbr_received_out_of_order": {
+          "path_match": "ipfix.calix_lbr_received_out_of_order",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lbr_received_bad_msdu": {
+          "path_match": "ipfix.calix_lbr_received_bad_msdu",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_up_mhf_lbm_received": {
+          "path_match": "ipfix.calix_up_mhf_lbm_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_up_mhf_lbr_transmitted": {
+          "path_match": "ipfix.calix_up_mhf_lbr_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_up_mhf_ltm_received": {
+          "path_match": "ipfix.calix_up_mhf_ltm_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_up_mhf_ltm_forwarded": {
+          "path_match": "ipfix.calix_up_mhf_ltm_forwarded",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_up_mhf_ltr_transmitted": {
+          "path_match": "ipfix.calix_up_mhf_ltr_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dn_mhf_lbm_received": {
+          "path_match": "ipfix.calix_dn_mhf_lbm_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dn_mhf_lbr_transmitted": {
+          "path_match": "ipfix.calix_dn_mhf_lbr_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dn_mhf_ltm_received": {
+          "path_match": "ipfix.calix_dn_mhf_ltm_received",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dn_mhf_ltm_forwarded": {
+          "path_match": "ipfix.calix_dn_mhf_ltm_forwarded",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dn_mhf_ltr_transmitted": {
+          "path_match": "ipfix.calix_dn_mhf_ltr_transmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_stats_index": {
+          "path_match": "ipfix.calix_stats_index",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_elapsed_time": {
+          "path_match": "ipfix.calix_elapsed_time",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_two_way_min": {
+          "path_match": "ipfix.calix_frame_delay_two_way_min",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_two_way_max": {
+          "path_match": "ipfix.calix_frame_delay_two_way_max",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_two_way_avg": {
+          "path_match": "ipfix.calix_frame_delay_two_way_avg",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_forward_min": {
+          "path_match": "ipfix.calix_frame_delay_forward_min",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_forward_max": {
+          "path_match": "ipfix.calix_frame_delay_forward_max",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_forward_avg": {
+          "path_match": "ipfix.calix_frame_delay_forward_avg",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_backward_min": {
+          "path_match": "ipfix.calix_frame_delay_backward_min",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_backward_max": {
+          "path_match": "ipfix.calix_frame_delay_backward_max",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_backward_avg": {
+          "path_match": "ipfix.calix_frame_delay_backward_avg",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_inter_frame_delay_variation_two_way_min": {
+          "path_match": "ipfix.calix_inter_frame_delay_variation_two_way_min",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_inter_frame_delay_variation_two_way_max": {
+          "path_match": "ipfix.calix_inter_frame_delay_variation_two_way_max",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_inter_frame_delay_variation_two_way_avg": {
+          "path_match": "ipfix.calix_inter_frame_delay_variation_two_way_avg",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_inter_frame_delay_variation_forward_min": {
+          "path_match": "ipfix.calix_inter_frame_delay_variation_forward_min",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_inter_frame_delay_variation_forward_max": {
+          "path_match": "ipfix.calix_inter_frame_delay_variation_forward_max",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_inter_frame_delay_variation_forward_avg": {
+          "path_match": "ipfix.calix_inter_frame_delay_variation_forward_avg",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_inter_frame_delay_variation_backward_min": {
+          "path_match": "ipfix.calix_inter_frame_delay_variation_backward_min",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_inter_frame_delay_variation_backward_max": {
+          "path_match": "ipfix.calix_inter_frame_delay_variation_backward_max",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_inter_frame_delay_variation_backward_avg": {
+          "path_match": "ipfix.calix_inter_frame_delay_variation_backward_avg",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_range_two_way_max": {
+          "path_match": "ipfix.calix_frame_delay_range_two_way_max",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_range_two_way_avg": {
+          "path_match": "ipfix.calix_frame_delay_range_two_way_avg",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_range_forward_max": {
+          "path_match": "ipfix.calix_frame_delay_range_forward_max",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_range_forward_avg": {
+          "path_match": "ipfix.calix_frame_delay_range_forward_avg",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_range_backward_max": {
+          "path_match": "ipfix.calix_frame_delay_range_backward_max",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_frame_delay_range_backward_avg": {
+          "path_match": "ipfix.calix_frame_delay_range_backward_avg",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_out_oam_pdus": {
+          "path_match": "ipfix.calix_out_oam_pdus",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_in_oam_pdus": {
+          "path_match": "ipfix.calix_in_oam_pdus",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_stats_index": {
+          "path_match": "ipfix.calix_stats_index",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_elapsed_time": {
+          "path_match": "ipfix.calix_elapsed_time",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_forward_transmitted_frames": {
+          "path_match": "ipfix.calix_forward_transmitted_frames",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_forward_received_frames": {
+          "path_match": "ipfix.calix_forward_received_frames",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_forward_min_frame_loss_ratio": {
+          "path_match": "ipfix.calix_forward_min_frame_loss_ratio",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_forward_max_frame_loss_ratio": {
+          "path_match": "ipfix.calix_forward_max_frame_loss_ratio",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_forward_avg_frame_loss_ratio": {
+          "path_match": "ipfix.calix_forward_avg_frame_loss_ratio",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_backward_transmitted_frames": {
+          "path_match": "ipfix.calix_backward_transmitted_frames",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_backward_received_frames": {
+          "path_match": "ipfix.calix_backward_received_frames",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_backward_min_frame_loss_ratio": {
+          "path_match": "ipfix.calix_backward_min_frame_loss_ratio",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_backward_max_frame_loss_ratio": {
+          "path_match": "ipfix.calix_backward_max_frame_loss_ratio",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_backward_avg_frame_loss_ratio": {
+          "path_match": "ipfix.calix_backward_avg_frame_loss_ratio",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_out_oam_pdus": {
+          "path_match": "ipfix.calix_out_oam_pdus",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_in_oam_pdus": {
+          "path_match": "ipfix.calix_in_oam_pdus",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_stats_index": {
+          "path_match": "ipfix.calix_stats_index",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_elapsed_time": {
+          "path_match": "ipfix.calix_elapsed_time",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_forward_high_loss_intervals": {
+          "path_match": "ipfix.calix_forward_high_loss_intervals",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_backward_high_loss_intervals": {
+          "path_match": "ipfix.calix_backward_high_loss_intervals",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_forward_consecutive_high_loss_intervals": {
+          "path_match": "ipfix.calix_forward_consecutive_high_loss_intervals",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_backward_consecutive_high_loss_intervals": {
+          "path_match": "ipfix.calix_backward_consecutive_high_loss_intervals",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_forward_available_indicators": {
+          "path_match": "ipfix.calix_forward_available_indicators",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_backward_available_indicators": {
+          "path_match": "ipfix.calix_backward_available_indicators",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_forward_unavailable_indicators": {
+          "path_match": "ipfix.calix_forward_unavailable_indicators",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_backward_unavailable_indicators": {
+          "path_match": "ipfix.calix_backward_unavailable_indicators",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_forward_min_frame_loss_ratio": {
+          "path_match": "ipfix.calix_forward_min_frame_loss_ratio",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_forward_max_frame_loss_ratio": {
+          "path_match": "ipfix.calix_forward_max_frame_loss_ratio",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_forward_avg_frame_loss_ratio": {
+          "path_match": "ipfix.calix_forward_avg_frame_loss_ratio",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_backward_min_frame_loss_ratio": {
+          "path_match": "ipfix.calix_backward_min_frame_loss_ratio",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_backward_max_frame_loss_ratio": {
+          "path_match": "ipfix.calix_backward_max_frame_loss_ratio",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_backward_avg_frame_loss_ratio": {
+          "path_match": "ipfix.calix_backward_avg_frame_loss_ratio",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_if_index": {
+          "path_match": "ipfix.calix_if_index",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_drop_events": {
+          "path_match": "ipfix.calix_drop_events",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_bytes": {
+          "path_match": "ipfix.calix_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pkts": {
+          "path_match": "ipfix.calix_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_broadcast_pkts": {
+          "path_match": "ipfix.calix_broadcast_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_multicast_pkts": {
+          "path_match": "ipfix.calix_multicast_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_crc_align_errors": {
+          "path_match": "ipfix.calix_crc_align_errors",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_undersize_pkts": {
+          "path_match": "ipfix.calix_undersize_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_oversize_pkts": {
+          "path_match": "ipfix.calix_oversize_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_fragments": {
+          "path_match": "ipfix.calix_fragments",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pkts_to_64_bytes": {
+          "path_match": "ipfix.calix_pkts_to_64_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pkts_65_to_127_bytes": {
+          "path_match": "ipfix.calix_pkts_65_to_127_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pkts_128_to_255_bytes": {
+          "path_match": "ipfix.calix_pkts_128_to_255_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pkts_256_to_511_bytes": {
+          "path_match": "ipfix.calix_pkts_256_to_511_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pkts_512_to_1023_bytes": {
+          "path_match": "ipfix.calix_pkts_512_to_1023_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pkts_1024_to_1518_bytes": {
+          "path_match": "ipfix.calix_pkts_1024_to_1518_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pkts_1519_to_2047_bytes": {
+          "path_match": "ipfix.calix_pkts_1519_to_2047_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pkts_2048_to_4095_bytes": {
+          "path_match": "ipfix.calix_pkts_2048_to_4095_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pkts_4096_to_9216_bytes": {
+          "path_match": "ipfix.calix_pkts_4096_to_9216_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pkts_9217_to_16383_bytes": {
+          "path_match": "ipfix.calix_pkts_9217_to_16383_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_unicast_pkts": {
+          "path_match": "ipfix.calix_rx_unicast_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_multicast_pkts": {
+          "path_match": "ipfix.calix_rx_multicast_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_broadcast_pkts": {
+          "path_match": "ipfix.calix_rx_broadcast_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_pause_frames": {
+          "path_match": "ipfix.calix_rx_pause_frames",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_unknown_protos": {
+          "path_match": "ipfix.calix_rx_unknown_protos",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_unicast_pkts": {
+          "path_match": "ipfix.calix_tx_unicast_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_multicast_pkts": {
+          "path_match": "ipfix.calix_tx_multicast_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_broadcast_pkts": {
+          "path_match": "ipfix.calix_tx_broadcast_pkts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_pause_frames": {
+          "path_match": "ipfix.calix_tx_pause_frames",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_align_errors": {
+          "path_match": "ipfix.calix_align_errors",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_jabbers": {
+          "path_match": "ipfix.calix_jabbers",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_utilization": {
+          "path_match": "ipfix.calix_rx_utilization",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_utilization": {
+          "path_match": "ipfix.calix_tx_utilization",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_pps": {
+          "path_match": "ipfix.calix_rx_pps",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_pps": {
+          "path_match": "ipfix.calix_tx_pps",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_bps": {
+          "path_match": "ipfix.calix_rx_bps",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_bps": {
+          "path_match": "ipfix.calix_tx_bps",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_role": {
+          "path_match": "ipfix.calix_role",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_subscriber": {
+          "path_match": "ipfix.calix_subscriber",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pool_name": {
+          "path_match": "ipfix.calix_pool_name",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_configured_pool_size": {
+          "path_match": "ipfix.calix_configured_pool_size",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_leases_in_grace": {
+          "path_match": "ipfix.calix_leases_in_grace",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_active_leases": {
+          "path_match": "ipfix.calix_active_leases",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_max_leases": {
+          "path_match": "ipfix.calix_max_leases",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_min_leases": {
+          "path_match": "ipfix.calix_min_leases",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_avg_leases": {
+          "path_match": "ipfix.calix_avg_leases",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_offers_sent": {
+          "path_match": "ipfix.calix_offers_sent",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_offers_accepted": {
+          "path_match": "ipfix.calix_offers_accepted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_requests_granted": {
+          "path_match": "ipfix.calix_requests_granted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_requests_declined": {
+          "path_match": "ipfix.calix_requests_declined",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_request_timeouts": {
+          "path_match": "ipfix.calix_request_timeouts",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lease_renewals": {
+          "path_match": "ipfix.calix_lease_renewals",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_lease_timer_expiries": {
+          "path_match": "ipfix.calix_lease_timer_expiries",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_grace_timer_expiries": {
+          "path_match": "ipfix.calix_grace_timer_expiries",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_configured_dynamic_subscribers": {
+          "path_match": "ipfix.calix_configured_dynamic_subscribers",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_active_dynamic_ips": {
+          "path_match": "ipfix.calix_active_dynamic_ips",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_active_dynamic_subscribers": {
+          "path_match": "ipfix.calix_active_dynamic_subscribers",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_max_active_dynamic_subscribers": {
+          "path_match": "ipfix.calix_max_active_dynamic_subscribers",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_min_active_dynamic_subscribers": {
+          "path_match": "ipfix.calix_min_active_dynamic_subscribers",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_avg_active_dynamic_subscribers": {
+          "path_match": "ipfix.calix_avg_active_dynamic_subscribers",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_configured_active_subscribers": {
+          "path_match": "ipfix.calix_configured_active_subscribers",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_active_static_ips": {
+          "path_match": "ipfix.calix_active_static_ips",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_active_static_subscribers": {
+          "path_match": "ipfix.calix_active_static_subscribers",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_max_active_static_subscribers": {
+          "path_match": "ipfix.calix_max_active_static_subscribers",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_min_active_static_subscribers": {
+          "path_match": "ipfix.calix_min_active_static_subscribers",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_avg_active_static_subscribers": {
+          "path_match": "ipfix.calix_avg_active_static_subscribers",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_ccr_i": {
+          "path_match": "ipfix.calix_tx_ccr_i",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_cca_i": {
+          "path_match": "ipfix.calix_rx_cca_i",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_ccr_u": {
+          "path_match": "ipfix.calix_tx_ccr_u",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_cca_u": {
+          "path_match": "ipfix.calix_rx_cca_u",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_rar": {
+          "path_match": "ipfix.calix_rx_rar",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_raa": {
+          "path_match": "ipfix.calix_tx_raa",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_raa_session_id_mismatch": {
+          "path_match": "ipfix.calix_raa_session_id_mismatch",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pcrf_timer_expiries": {
+          "path_match": "ipfix.calix_pcrf_timer_expiries",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_configured_subscribers_with_pcrf_enabled": {
+          "path_match": "ipfix.calix_configured_subscribers_with_pcrf_enabled",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_active_subscribers_with_pcrf_enabled": {
+          "path_match": "ipfix.calix_active_subscribers_with_pcrf_enabled",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_active_default_subscribers_with_pcrf_enabled": {
+          "path_match": "ipfix.calix_active_default_subscribers_with_pcrf_enabled",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_url_redirect_subscribers": {
+          "path_match": "ipfix.calix_url_redirect_subscribers",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_url_redirect_policies_applied": {
+          "path_match": "ipfix.calix_url_redirect_policies_applied",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_url_updates": {
+          "path_match": "ipfix.calix_url_updates",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dynamic_policy_apply_requests": {
+          "path_match": "ipfix.calix_dynamic_policy_apply_requests",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dynamic_policy_apply_successes": {
+          "path_match": "ipfix.calix_dynamic_policy_apply_successes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_dynamic_policy_apply_failures": {
+          "path_match": "ipfix.calix_dynamic_policy_apply_failures",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_arp_req": {
+          "path_match": "ipfix.calix_rx_arp_req",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_arp_resp": {
+          "path_match": "ipfix.calix_tx_arp_resp",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_arp_timer_expiries": {
+          "path_match": "ipfix.calix_arp_timer_expiries",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_diameter_client_name": {
+          "path_match": "ipfix.calix_diameter_client_name",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_cer": {
+          "path_match": "ipfix.calix_tx_cer",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_cea": {
+          "path_match": "ipfix.calix_rx_cea",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rtx_msg": {
+          "path_match": "ipfix.calix_rtx_msg",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_msg_timeout": {
+          "path_match": "ipfix.calix_msg_timeout",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_peer_up": {
+          "path_match": "ipfix.calix_peer_up",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_peer_down": {
+          "path_match": "ipfix.calix_peer_down",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_watchdog_timer_expiries": {
+          "path_match": "ipfix.calix_watchdog_timer_expiries",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_peer_disconnect": {
+          "path_match": "ipfix.calix_peer_disconnect",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_radius_client_name": {
+          "path_match": "ipfix.calix_radius_client_name",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_accounting_start": {
+          "path_match": "ipfix.calix_tx_accounting_start",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_accounting_interim": {
+          "path_match": "ipfix.calix_tx_accounting_interim",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_tx_accounting_stop": {
+          "path_match": "ipfix.calix_tx_accounting_stop",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rtx_accounting_start": {
+          "path_match": "ipfix.calix_rtx_accounting_start",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rtx_accounting_interim": {
+          "path_match": "ipfix.calix_rtx_accounting_interim",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rtx_accounting_stop": {
+          "path_match": "ipfix.calix_rtx_accounting_stop",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_accounting_success_resp": {
+          "path_match": "ipfix.calix_rx_accounting_success_resp",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_rx_accounting_failure_resp": {
+          "path_match": "ipfix.calix_rx_accounting_failure_resp",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_discard_events": {
+          "path_match": "ipfix.calix_upstream_discard_events",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_discard_events": {
+          "path_match": "ipfix.calix_downstream_discard_events",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_pon_ont_util_aid": {
+          "path_match": "ipfix.calix_pon_ont_util_aid",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_bytes": {
+          "path_match": "ipfix.calix_upstream_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_bytes": {
+          "path_match": "ipfix.calix_downstream_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_upstream_percentage": {
+          "path_match": "ipfix.calix_upstream_percentage",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.calix_downstream_percentage": {
+          "path_match": "ipfix.calix_downstream_percentage",
+          "mapping": {
+            "type": "long"
           }
         }
       },
@@ -17856,6 +20693,41 @@
       
       
       {
+        "ipfix.pmacct_tag1": {
+          "path_match": "ipfix.pmacct_tag1",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.pmacct_tag2": {
+          "path_match": "ipfix.pmacct_tag2",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.pmacct_tag3": {
+          "path_match": "ipfix.pmacct_tag3",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.pmacct_tag4": {
+          "path_match": "ipfix.pmacct_tag4",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+
+
+
+      {
         "ipfix.procera_service": {
           "path_match": "ipfix.procera_service",
           "mapping": {
@@ -19700,6 +22572,209 @@
 
 
       {
+        "ipfix.velocloud_interface_type": {
+          "path_match": "ipfix.velocloud_interface_type",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_dst_id": {
+          "path_match": "ipfix.velocloud_dst_id",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_vc_priority": {
+          "path_match": "ipfix.velocloud_vc_priority",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_policy_route_type": {
+          "path_match": "ipfix.velocloud_policy_route_type",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_policy_link_select_type": {
+          "path_match": "ipfix.velocloud_policy_link_select_type",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_policy_traffic_type": {
+          "path_match": "ipfix.velocloud_policy_traffic_type",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_flow_path": {
+          "path_match": "ipfix.velocloud_flow_path",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_internal_link_id": {
+          "path_match": "ipfix.velocloud_internal_link_id",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_replicated_pkts_in": {
+          "path_match": "ipfix.velocloud_replicated_pkts_in",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_replicated_pkts_out": {
+          "path_match": "ipfix.velocloud_replicated_pkts_out",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_pkts_lost_in": {
+          "path_match": "ipfix.velocloud_pkts_lost_in",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_pkts_retransmitted": {
+          "path_match": "ipfix.velocloud_pkts_retransmitted",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_primary_ipv4": {
+          "path_match": "ipfix.velocloud_primary_ipv4",
+          "mapping": {
+            "type": "ip"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_jitter_ms_out": {
+          "path_match": "ipfix.velocloud_jitter_ms_out",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_latency_ms_out": {
+          "path_match": "ipfix.velocloud_latency_ms_out",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_jitter_ms_in": {
+          "path_match": "ipfix.velocloud_jitter_ms_in",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_latency_ms_in": {
+          "path_match": "ipfix.velocloud_latency_ms_in",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_site_id": {
+          "path_match": "ipfix.velocloud_site_id",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_link_name": {
+          "path_match": "ipfix.velocloud_link_name",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_pkts_lost_out": {
+          "path_match": "ipfix.velocloud_pkts_lost_out",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_biz_pol_rule_id": {
+          "path_match": "ipfix.velocloud_biz_pol_rule_id",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_firewall_policy_rule_id": {
+          "path_match": "ipfix.velocloud_firewall_policy_rule_id",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_route_next_hop_id": {
+          "path_match": "ipfix.velocloud_route_next_hop_id",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_loss_percent_out": {
+          "path_match": "ipfix.velocloud_loss_percent_out",
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+      {
+        "ipfix.velocloud_loss_percent_in": {
+          "path_match": "ipfix.velocloud_loss_percent_in",
+          "mapping": {
+            "type": "float"
+          }
+        }
+      },
+
+
+
+      {
         "ipfix.viptela_vpn_id": {
           "path_match": "ipfix.viptela_vpn_id",
           "mapping": {
@@ -19859,41 +22934,6 @@
           "path_match": "ipfix.vmware_virt_observation_id",
           "mapping": {
             "type": "keyword"
-          }
-        }
-      },
-
-
-
-      {
-        "ipfix.pmacct_tag1": {
-          "path_match": "ipfix.pmacct_tag1",
-          "mapping": {
-            "type": "long"
-          }
-        }
-      },
-      {
-        "ipfix.pmacct_tag2": {
-          "path_match": "ipfix.pmacct_tag2",
-          "mapping": {
-            "type": "long"
-          }
-        }
-      },
-      {
-        "ipfix.pmacct_tag3": {
-          "path_match": "ipfix.pmacct_tag3",
-          "mapping": {
-            "type": "long"
-          }
-        }
-      },
-      {
-        "ipfix.pmacct_tag4": {
-          "path_match": "ipfix.pmacct_tag4",
-          "mapping": {
-            "type": "long"
           }
         }
       },
