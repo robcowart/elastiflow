@@ -19,6 +19,13 @@
     }
   },
   "mappings": {
+    "_meta" : {
+      "beat" : "elastiflow",
+      "version" : "4.0.0"
+    },
+    "_source" : {
+      "enabled" : true
+    },
     "numeric_detection": true,
     "dynamic_templates": [
       {
@@ -13910,6 +13917,198 @@
       {
         "ipfix.cisco_timestamp_abs_monitor_interval_end": {
           "path_match": "ipfix.cisco_timestamp_abs_monitor_interval_end",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_avc_app_family": {
+          "path_match": "ipfix.cisco_avc_app_family",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_avc_app_set": {
+          "path_match": "ipfix.cisco_avc_app_set",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_ingress_overlay_sess_id": {
+          "path_match": "ipfix.cisco_sdwan_ingress_overlay_sess_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_egress_overlay_sess_id": {
+          "path_match": "ipfix.cisco_sdwan_egress_overlay_sess_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_vpn_id": {
+          "path_match": "ipfix.cisco_sdwan_vpn_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_tloc_overlay_sess_id": {
+          "path_match": "ipfix.cisco_sdwan_tloc_overlay_sess_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_tloc_local_ip": {
+          "path_match": "ipfix.cisco_sdwan_tloc_local_ip",
+          "mapping": {
+            "type": "ip4_addr"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_tloc_local_color": {
+          "path_match": "ipfix.cisco_sdwan_tloc_local_color",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_tloc_remote_ip": {
+          "path_match": "ipfix.cisco_sdwan_tloc_remote_ip",
+          "mapping": {
+            "type": "ip4_addr"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_tloc_remote_color": {
+          "path_match": "ipfix.cisco_sdwan_tloc_remote_color",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_tloc_tunnel_proto": {
+          "path_match": "ipfix.cisco_sdwan_tloc_tunnel_proto",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_connection_id": {
+          "path_match": "ipfix.cisco_sdwan_connection_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_drop_cause": {
+          "path_match": "ipfix.cisco_sdwan_drop_cause",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_dropped_bytes": {
+          "path_match": "ipfix.cisco_sdwan_dropped_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_sla_not_met": {
+          "path_match": "ipfix.cisco_sdwan_sla_not_met",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_pref_color_not_met": {
+          "path_match": "ipfix.cisco_sdwan_pref_color_not_met",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_qos_queue_id": {
+          "path_match": "ipfix.cisco_sdwan_qos_queue_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_drop_cause_descr": {
+          "path_match": "ipfix.cisco_sdwan_drop_cause_descr",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_appqoe_fec_packets": {
+          "path_match": "ipfix.cisco_sdwan_appqoe_fec_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_appqoe_fec_packets_reconstructed": {
+          "path_match": "ipfix.cisco_sdwan_appqoe_fec_packets_reconstructed",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_appqoe_orig_tunnel_pkt_dup_packets": {
+          "path_match": "ipfix.cisco_sdwan_appqoe_orig_tunnel_pkt_dup_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_appqoe_dup_tunnel_pkt_dup_packets": {
+          "path_match": "ipfix.cisco_sdwan_appqoe_dup_tunnel_pkt_dup_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_appqoe_pkt_dup_packets_recovered": {
+          "path_match": "ipfix.cisco_sdwan_appqoe_pkt_dup_packets_recovered",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "ipfix.cisco_sdwan_cloud_express_packets": {
+          "path_match": "ipfix.cisco_sdwan_cloud_express_packets",
           "mapping": {
             "type": "long"
           }
@@ -28138,6 +28337,198 @@
           }
         }
       },
+      {
+        "netflow.cisco_avc_app_family": {
+          "path_match": "netflow.cisco_avc_app_family",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "netflow.cisco_avc_app_set": {
+          "path_match": "netflow.cisco_avc_app_set",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_ingress_overlay_sess_id": {
+          "path_match": "netflow.cisco_sdwan_ingress_overlay_sess_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_egress_overlay_sess_id": {
+          "path_match": "netflow.cisco_sdwan_egress_overlay_sess_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_vpn_id": {
+          "path_match": "netflow.cisco_sdwan_vpn_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_tloc_overlay_sess_id": {
+          "path_match": "netflow.cisco_sdwan_tloc_overlay_sess_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_tloc_local_ip": {
+          "path_match": "netflow.cisco_sdwan_tloc_local_ip",
+          "mapping": {
+            "type": "ip4_addr"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_tloc_local_color": {
+          "path_match": "netflow.cisco_sdwan_tloc_local_color",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_tloc_remote_ip": {
+          "path_match": "netflow.cisco_sdwan_tloc_remote_ip",
+          "mapping": {
+            "type": "ip4_addr"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_tloc_remote_color": {
+          "path_match": "netflow.cisco_sdwan_tloc_remote_color",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_tloc_tunnel_proto": {
+          "path_match": "netflow.cisco_sdwan_tloc_tunnel_proto",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_connection_id": {
+          "path_match": "netflow.cisco_sdwan_connection_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_drop_cause": {
+          "path_match": "netflow.cisco_sdwan_drop_cause",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_dropped_bytes": {
+          "path_match": "netflow.cisco_sdwan_dropped_bytes",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_sla_not_met": {
+          "path_match": "netflow.cisco_sdwan_sla_not_met",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_pref_color_not_met": {
+          "path_match": "netflow.cisco_sdwan_pref_color_not_met",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_qos_queue_id": {
+          "path_match": "netflow.cisco_sdwan_qos_queue_id",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_drop_cause_descr": {
+          "path_match": "netflow.cisco_sdwan_drop_cause_descr",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_appqoe_fec_packets": {
+          "path_match": "netflow.cisco_sdwan_appqoe_fec_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_appqoe_fec_packets_reconstructed": {
+          "path_match": "netflow.cisco_sdwan_appqoe_fec_packets_reconstructed",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_appqoe_orig_tunnel_pkt_dup_packets": {
+          "path_match": "netflow.cisco_sdwan_appqoe_orig_tunnel_pkt_dup_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_appqoe_dup_tunnel_pkt_dup_packets": {
+          "path_match": "netflow.cisco_sdwan_appqoe_dup_tunnel_pkt_dup_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_appqoe_pkt_dup_packets_recovered": {
+          "path_match": "netflow.cisco_sdwan_appqoe_pkt_dup_packets_recovered",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
+      {
+        "netflow.cisco_sdwan_cloud_express_packets": {
+          "path_match": "netflow.cisco_sdwan_cloud_express_packets",
+          "mapping": {
+            "type": "long"
+          }
+        }
+      },
 
 
 
@@ -32059,11 +32450,23 @@
         "dynamic": true,
         "type": "object",
         "properties": {
+          "ephemeral_id" : {
+            "type" : "keyword"
+          },
+          "hostname": {
+            "type": "keyword"
+          },
+          "id" : {
+            "type" : "keyword"
+          },
           "name": {
             "type": "keyword"
           },
           "type": {
             "type": "keyword"
+          },
+          "version" : {
+            "type" : "keyword"
           }
         }
       },
@@ -32086,54 +32489,9 @@
         "dynamic": true,
         "type": "object",
         "properties": {
-          "as": {
-            "dynamic": true,
-            "type": "object",
-            "properties": {
-              "number": {
-                "type": "keyword"
-              },
-              "organization": {
-                "dynamic": true,
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "keyword"
-                  }
-                }
-              }
-            }
-          },
-          "domain": {
+          "address": {
             "type": "keyword"
           },
-          "geo": {
-            "dynamic": true,
-            "type": "object",
-            "properties": {
-              "city_name": {
-                "type": "keyword"
-              },
-              "country_name": {
-                "type": "keyword"
-              },
-              "country_iso_code": {
-                "type": "keyword"
-              },
-              "location": {
-                "type": "geo_point"
-              }
-            }
-          },
-          "ip": {
-            "type": "ip"
-          }
-        }
-      },
-      "destination": {
-        "dynamic": true,
-        "type": "object",
-        "properties": {
           "as": {
             "dynamic": true,
             "type": "object",
@@ -32151,6 +32509,9 @@
                 }
               }
             }
+          },
+          "bytes": {
+            "type": "long"
           },
           "domain": {
             "type": "keyword"
@@ -32191,8 +32552,176 @@
               }
             }
           },
+          "packets": {
+            "type": "long"
+          },
           "port": {
             "type": "long"
+          },
+          "registered_domain": {
+            "type": "keyword"
+          },
+          "top_level_domain": {
+            "type": "keyword"
+          },
+          "user": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "domain": {
+                "type": "keyword"
+              },
+              "email": {
+                "type": "keyword"
+              },
+              "full_name": {
+                "type": "keyword"
+              },
+              "group": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "domain": {
+                    "type": "keyword"
+                  },
+                  "id": {
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "hash": {
+                "type": "keyword"
+              },
+              "id": {
+                "type": "keyword"
+              },
+              "name": {
+                "type": "keyword"
+              }
+            }
+          }
+        }
+      },
+      "destination": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "keyword"
+          },
+          "as": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "keyword"
+              },
+              "organization": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          },
+          "bytes": {
+            "type": "long"
+          },
+          "domain": {
+            "type": "keyword"
+          },
+          "geo": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "city_name": {
+                "type": "keyword"
+              },
+              "country_name": {
+                "type": "keyword"
+              },
+              "country_iso_code": {
+                "type": "keyword"
+              },
+              "location": {
+                "type": "geo_point"
+              }
+            }
+          },
+          "ip": {
+            "type": "ip"
+          },
+          "mac": {
+            "type": "keyword"
+          },
+          "nat": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "ip": {
+                "type": "ip"
+              },
+              "port": {
+                "type": "long"
+              }
+            }
+          },
+          "packets": {
+            "type": "long"
+          },
+          "port": {
+            "type": "long"
+          },
+          "registered_domain": {
+            "type": "keyword"
+          },
+          "top_level_domain": {
+            "type": "keyword"
+          },
+          "user": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "domain": {
+                "type": "keyword"
+              },
+              "email": {
+                "type": "keyword"
+              },
+              "full_name": {
+                "type": "keyword"
+              },
+              "group": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "domain": {
+                    "type": "keyword"
+                  },
+                  "id": {
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "hash": {
+                "type": "keyword"
+              },
+              "id": {
+                "type": "keyword"
+              },
+              "name": {
+                "type": "keyword"
+              }
+            }
           }
         }
       },
@@ -32302,9 +32831,6 @@
           "traffic_locality": {
             "type": "keyword"
           },
-          "type": {
-            "type": "keyword"
-          },
           "vlan": {
             "type": "long"
           },
@@ -32338,6 +32864,9 @@
         "dynamic": true,
         "type": "object",
         "properties": {
+          "hostname": {
+            "type": "keyword"
+          },
           "name": {
             "type": "keyword"
           },
@@ -32355,17 +32884,9 @@
           }
         }
       },
-      "logstash": {
-        "dynamic": true,
-        "type": "object",
-        "properties": {
-          "host": {
-            "type": "keyword"
-          }
-        }
-      },
       "message": {
-        "type": "keyword"
+        "type": "text",
+        "norms" : false
       },
       "network": {
         "dynamic": true,
@@ -32391,21 +32912,39 @@
           }
         }
       },
-      "server": {
+      "observer": {
         "dynamic": true,
         "type": "object",
         "properties": {
-          "as": {
+          "address": {
+            "type": "keyword"
+          },
+          "egress": {
             "dynamic": true,
             "type": "object",
             "properties": {
-              "number": {
-                "type": "keyword"
-              },
-              "organization": {
+              "interface": {
                 "dynamic": true,
                 "type": "object",
                 "properties": {
+                  "alias": {
+                    "type": "keyword"
+                  },
+                  "id": {
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "vlan": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "keyword"
+                  },
                   "name": {
                     "type": "keyword"
                   }
@@ -32413,36 +32952,57 @@
               }
             }
           },
-          "domain": {
+          "hostname": {
             "type": "keyword"
           },
-          "geo": {
+          "ingress": {
             "dynamic": true,
             "type": "object",
             "properties": {
-              "city_name": {
-                "type": "keyword"
+              "interface": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "alias": {
+                    "type": "keyword"
+                  },
+                  "id": {
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
               },
-              "country_name": {
-                "type": "keyword"
-              },
-              "country_iso_code": {
-                "type": "keyword"
-              },
-              "location": {
-                "type": "geo_point"
+              "vlan": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
               }
             }
           },
           "ip": {
             "type": "ip"
+          },
+          "mac": {
+            "type": "keyword"
           }
         }
       },
-      "source": {
+      "server": {
         "dynamic": true,
         "type": "object",
         "properties": {
+          "address": {
+            "type": "keyword"
+          },
           "as": {
             "dynamic": true,
             "type": "object",
@@ -32460,6 +33020,9 @@
                 }
               }
             }
+          },
+          "bytes": {
+            "type": "long"
           },
           "domain": {
             "type": "keyword"
@@ -32500,12 +33063,183 @@
               }
             }
           },
+          "packets": {
+            "type": "long"
+          },
           "port": {
             "type": "long"
+          },
+          "registered_domain": {
+            "type": "keyword"
+          },
+          "top_level_domain": {
+            "type": "keyword"
+          },
+          "user": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "domain": {
+                "type": "keyword"
+              },
+              "email": {
+                "type": "keyword"
+              },
+              "full_name": {
+                "type": "keyword"
+              },
+              "group": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "domain": {
+                    "type": "keyword"
+                  },
+                  "id": {
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "hash": {
+                "type": "keyword"
+              },
+              "id": {
+                "type": "keyword"
+              },
+              "name": {
+                "type": "keyword"
+              }
+            }
+          }
+        }
+      },
+      "source": {
+        "dynamic": true,
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "keyword"
+          },
+          "as": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "keyword"
+              },
+              "organization": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          },
+          "bytes": {
+            "type": "long"
+          },
+          "domain": {
+            "type": "keyword"
+          },
+          "geo": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "city_name": {
+                "type": "keyword"
+              },
+              "country_name": {
+                "type": "keyword"
+              },
+              "country_iso_code": {
+                "type": "keyword"
+              },
+              "location": {
+                "type": "geo_point"
+              }
+            }
+          },
+          "ip": {
+            "type": "ip"
+          },
+          "mac": {
+            "type": "keyword"
+          },
+          "nat": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "ip": {
+                "type": "ip"
+              },
+              "port": {
+                "type": "long"
+              }
+            }
+          },
+          "packets": {
+            "type": "long"
+          },
+          "port": {
+            "type": "long"
+          },
+          "registered_domain": {
+            "type": "keyword"
+          },
+          "top_level_domain": {
+            "type": "keyword"
+          },
+          "user": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "domain": {
+                "type": "keyword"
+              },
+              "email": {
+                "type": "keyword"
+              },
+              "full_name": {
+                "type": "keyword"
+              },
+              "group": {
+                "dynamic": true,
+                "type": "object",
+                "properties": {
+                  "domain": {
+                    "type": "keyword"
+                  },
+                  "id": {
+                    "type": "keyword"
+                  },
+                  "name": {
+                    "type": "keyword"
+                  }
+                }
+              },
+              "hash": {
+                "type": "keyword"
+              },
+              "id": {
+                "type": "keyword"
+              },
+              "name": {
+                "type": "keyword"
+              }
+            }
           }
         }
       },
       "tags": {
+        "type": "keyword"
+      },
+      "type": {
         "type": "keyword"
       }
     }

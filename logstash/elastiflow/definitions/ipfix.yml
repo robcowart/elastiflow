@@ -1748,6 +1748,12 @@
   9361:
   - :uint64
   - :cisco_avc_policy_qos_queue_drops
+  12230:
+  - :string
+  - :cisco_avc_app_family
+  12231:
+  - :string
+  - :cisco_avc_app_set
   12232:
   - :string
   - :cisco_avc_app_category
@@ -2091,12 +2097,6 @@
   36010:
   - :uint32
   - :cisco_waas_output_bytes
-  37000:
-  - :uint32
-  - :cisco_avc_transport_short_term_packets_drop
-  37001:
-  - :uint32
-  - :cisco_avc_transport_long_term_packets_drop
   37004:
   - :uint32
   - :cisco_avc_app_media_bytes
@@ -2562,12 +2562,6 @@
   45010:
   - :uint32
   - :cisco_avc_conn_id
-  45011:
-  - :string
-  - :cisco_avc_app_traffic_class
-  45012:
-  - :string
-  - :cisco_avc_app_business_relevance
   45100:
   - :octetarray
   - :cisco_nvzflow_udid
@@ -2655,6 +2649,74 @@
   45131:
   - :uint16
   - :cisco_nvzflow_parent_proc_user_acct_type
+
+
+  12432:
+  - :uint32
+  - :cisco_sdwan_ingress_overlay_sess_id
+  12433:
+  - :uint32
+  - :cisco_sdwan_egress_overlay_sess_id
+  12434:
+  - :uint32
+  - :cisco_sdwan_vpn_id
+  12435:
+  - :uint32
+  - :cisco_sdwan_tloc_overlay_sess_id
+  12436:
+  - :ip4_addr
+  - :cisco_sdwan_tloc_local_ip
+  12437:
+  - :string
+  - :cisco_sdwan_tloc_local_color
+  12438:
+  - :ip4_addr
+  - :cisco_sdwan_tloc_remote_ip
+  12439:
+  - :string
+  - :cisco_sdwan_tloc_remote_color
+  12440:
+  - :string
+  - :cisco_sdwan_tloc_tunnel_proto
+  12441:
+  - :uint64
+  - :cisco_sdwan_connection_id
+  12442:
+  - :uint16
+  - :cisco_sdwan_drop_cause
+  12443:
+  - :uint64
+  - :cisco_sdwan_dropped_bytes
+  12444:
+  - :uint8
+  - :cisco_sdwan_sla_not_met
+  12445:
+  - :uint8
+  - :cisco_sdwan_pref_color_not_met
+  12446:
+  - :uint8
+  - :cisco_sdwan_qos_queue_id
+  12447:
+  - :string
+  - :cisco_sdwan_drop_cause_descr
+  12448:
+  - :uint32
+  - :cisco_sdwan_appqoe_fec_packets
+  12449:
+  - :uint32
+  - :cisco_sdwan_appqoe_fec_packets_reconstructed
+  12450:
+  - :uint32
+  - :cisco_sdwan_appqoe_orig_tunnel_pkt_dup_packets
+  12451:
+  - :uint32
+  - :cisco_sdwan_appqoe_dup_tunnel_pkt_dup_packets
+  12452:
+  - :uint32
+  - :cisco_sdwan_appqoe_pkt_dup_packets_recovered
+  12453:
+  - :uint32
+  - :cisco_sdwan_cloud_express_packets
 
 # Alcatel-Lucent (formerly 'Alcatel Data Network')
 637:
