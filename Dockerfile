@@ -47,6 +47,7 @@ RUN $HOME/bin/logstash-plugin install logstash-codec-sflow \
 WORKDIR /usr/share/logstash/config
 COPY --chown=logstash:logstash ./docker_assets/logstash.yml ./
 COPY --chown=logstash:logstash ./docker_assets/pipelines.yml ./
+COPY --chown=logstash:logstash ./docker_assets/jvm.options ./
 
 WORKDIR /etc/logstash/elastiflow
 COPY --chown=logstash:root ./logstash/elastiflow/ ./
