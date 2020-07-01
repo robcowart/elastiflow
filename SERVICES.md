@@ -27,3 +27,4 @@ Consultant | Location | Email
 --- | --- | ---
 Dmitry Vasilets | Berlin, Germany | pronix.service@gmail.com
 Vasily Shapochka | Sydney, Australia | vasily@astronode.io
+Johan van den Dorpe | London, UK | hello@vdltech.net
