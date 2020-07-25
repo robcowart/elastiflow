@@ -341,6 +341,7 @@ The supported environment variables are:
 
 Environment Variable | Description | Default Value
 --- | --- | ---
+ELASTIFLOW_AGENT_ID | The value assigned to the ECS `agent.id` field. | elastiflow
 ELASTIFLOW_DICT_PATH | The path where dictionary files are located | /etc/logstash/elastiflow/dictionaries
 ELASTIFLOW_USER_SETTINGS_PATH | The path where user-customizable dictionary files are located | /etc/logstash/elastiflow/user_settings
 ELASTIFLOW_DEFINITION_PATH | The path where Netflow and IPFIX field definitions are located | /etc/logstash/elastiflow/definitions
