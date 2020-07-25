@@ -87,7 +87,7 @@ Unfortunately there is no workaround for this issue. However, adding support for
 
 If you can provide this information, I will do my best to turnaround a patch release, or sned you the fix directly.
 
-### 3. Reverse proxy can prevent Kibana dashboard import
+## 3. Reverse proxy can prevent Kibana dashboard import
 
 ### SYMPTOM
 
