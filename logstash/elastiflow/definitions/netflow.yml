@@ -685,10 +685,10 @@
 - :natEvent
 231:
 - 8
-- :fwd_flow_delta_bytes
+- :initiatorOctets
 232:
 - 8
-- :rev_flow_delta_bytes
+- :responderOctets
 233:
 - 1
 - :fw_event

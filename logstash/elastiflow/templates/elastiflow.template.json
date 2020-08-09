@@ -24223,14 +24223,6 @@
         }
       },
       {
-        "netflow.fwd_flow_delta_bytes": {
-          "path_match": "netflow.fwd_flow_delta_bytes",
-          "mapping": {
-            "type": "long"
-          }
-        }
-      },
-      {
         "netflow.greKey": {
           "path_match": "netflow.greKey",
           "mapping": {
@@ -25727,14 +25719,6 @@
         }
       },
       {
-        "netflow.rev_flow_delta_bytes": {
-          "path_match": "netflow.rev_flow_delta_bytes",
-          "mapping": {
-            "type": "long"
-          }
-        }
-      },
-      {
         "netflow.rfc3550JitterMicroseconds": {
           "path_match": "netflow.rfc3550JitterMicroseconds",
           "mapping": {
@@ -26009,6 +25993,14 @@
       {
         "netflow.staMacAddress": {
           "path_match": "netflow.staMacAddress",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      },
+      {
+        "netflow.sub_app_tag": {
+          "path_match": "netflow.sub_app_tag",
           "mapping": {
             "type": "keyword"
           }
@@ -32738,14 +32730,32 @@
         "dynamic": true,
         "type": "object",
         "properties": {
+          "category": {
+            "type": "keyword"
+          },
           "dataset": {
             "type": "keyword"
+          },
+          "duration": {
+            "type": "long"
+          },
+          "end": {
+            "type": "date"
           },
           "kind": {
             "type": "keyword"
           },
+          "module": {
+            "type": "keyword"
+          },
           "severity": {
             "type": "long"
+          },
+          "start": {
+            "type": "date"
+          },
+          "type": {
+            "type": "keyword"
           }
         }
       },
@@ -32864,14 +32874,38 @@
         "dynamic": true,
         "type": "object",
         "properties": {
+          "architecture": {
+            "type": "keyword"
+          },
           "hostname": {
             "type": "keyword"
           },
           "name": {
             "type": "keyword"
           },
+          "id": {
+            "type": "keyword"
+          },
           "ip": {
             "type": "ip"
+          },
+          "os": {
+            "dynamic": true,
+            "type": "object",
+            "properties": {
+              "family": {
+                "type": "keyword"
+              },
+              "name": {
+                "type": "keyword"
+              },
+              "platform": {
+                "type": "keyword"
+              },
+              "version": {
+                "type": "keyword"
+              }
+            }
           }
         }
       },
