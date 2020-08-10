@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------
-# Copyright (C)2019 Robert Cowart
+# Copyright (C)2020 Robert Cowart
 # 
 # The contents of this file and/or repository are subject to the Robert Cowart
 # Public License (the "License") and may not be used or distributed except in
@@ -12,12 +12,11 @@
 # the specific language governing rights and limitations under the License.
 # 
 # The Original Source Code was developed by Robert Cowart. Portions created by
-# Robert Cowart are Copyright (C)2019 Robert Cowart. All Rights Reserved.
+# Robert Cowart are Copyright (C)2020 Robert Cowart. All Rights Reserved.
 #------------------------------------------------------------------------------
 
 output {
   elasticsearch {
-    id => "output_elasticsearch_multi"
     hosts => [ "${ELASTIFLOW_ES_HOST_1:127.0.0.1:9200}", "${ELASTIFLOW_ES_HOST_2:127.0.0.2:9200}", "${ELASTIFLOW_ES_HOST_3:127.0.0.3:9200}" ]
     ssl => "${ELASTIFLOW_ES_SSL_ENABLE:false}"
     ssl_certificate_verification => "${ELASTIFLOW_ES_SSL_VERIFY:false}"
@@ -25,9 +24,9 @@ output {
     #cacert => "/PATH/TO/CERT"
     user => "${ELASTIFLOW_ES_USER:elastic}"
     password => "${ELASTIFLOW_ES_PASSWD:changeme}"
-    index => "elastiflow-3.5.3-%{+YYYY.MM.dd}"
+    index => "elastiflow-4.0.0-%{+YYYY.MM.dd}"
     template => "${ELASTIFLOW_TEMPLATE_PATH:/etc/logstash/elastiflow/templates}/elastiflow.template.json"
-    template_name => "elastiflow-3.5.3"
+    template_name => "elastiflow-4.0.0"
     template_overwrite => "true"
   }
 }

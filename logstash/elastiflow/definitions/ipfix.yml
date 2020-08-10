@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------
-# Portions of this file are Copyright (C)2019 Robert Cowart
+# Portions of this file are Copyright (C)2020 Robert Cowart
 # 
 # Portions of this file are subject to the Robert Cowart Public License (the
 # "License") and may not be used or distributed except in compliance with the
@@ -12,7 +12,7 @@
 # the specific language governing rights and limitations under the License.
 # 
 # The Original Source Code was developed by Robert Cowart. Portions created by
-# Robert Cowart are Copyright (C)2019 Robert Cowart. All Rights Reserved.
+# Robert Cowart are Copyright (C)2020 Robert Cowart. All Rights Reserved.
 #------------------------------------------------------------------------------
 
 ---
@@ -1748,6 +1748,12 @@
   9361:
   - :uint64
   - :cisco_avc_policy_qos_queue_drops
+  12230:
+  - :string
+  - :cisco_avc_app_family
+  12231:
+  - :string
+  - :cisco_avc_app_set
   12232:
   - :string
   - :cisco_avc_app_category
@@ -1874,6 +1880,85 @@
   12363:
   - :uint16
   - :cisco_nvzflow_parent_proc_user_acct_type
+
+
+
+  12230:
+  - :string
+  - :cisco_sdwan_12230
+  12231:
+  - :string
+  - :cisco_sdwan_12231
+
+  12432:
+  - :uint32
+  - :cisco_sdwan_ingress_overlay_sess_id
+  12433:
+  - :uint32
+  - :cisco_sdwan_egress_overlay_sess_id
+  12434:
+  - :uint32
+  - :cisco_sdwan_vpn_id
+  12435:
+  - :uint32
+  - :cisco_sdwan_12435
+  12436:
+  - :uint32
+  - :cisco_sdwan_12436
+  12437:
+  - :string
+  - :cisco_sdwan_12437
+  12438:
+  - :uint32
+  - :cisco_sdwan_12438
+  12439:
+  - :string
+  - :cisco_sdwan_12439
+  12440:
+  - :string
+  - :cisco_sdwan_12440
+  12441:
+  - :uint64
+  - :cisco_sdwan_connection_id
+  12442:
+  - :uint16
+  - :cisco_sdwan_drop_cause
+  12443:
+  - :uint64
+  - :cisco_sdwan_dropped_bytes
+  12444:
+  - :uint8
+  - :cisco_sdwan_sla_not_met
+  12445:
+  - :uint8
+  - :cisco_sdwan_pref_color_not_met
+  12446:
+  - :uint8
+  - :cisco_sdwan_qos_queue_id
+  12447:
+  - :string
+  - :cisco_sdwan_drop_cause_descr
+  12448:
+  - :uint32
+  - :cisco_sdwan_12448
+  12449:
+  - :uint32
+  - :cisco_sdwan_12449
+  12450:
+  - :uint32
+  - :cisco_sdwan_12450
+  12451:
+  - :uint32
+  - :cisco_sdwan_12451
+  12452:
+  - :uint32
+  - :cisco_sdwan_12452
+  12453:
+  - :uint32
+  - :cisco_sdwan_12453
+
+
+
   15901:
   - :ip4_addr
   - :cisco_nexus_fastpath_src_addr
@@ -2012,12 +2097,6 @@
   36010:
   - :uint32
   - :cisco_waas_output_bytes
-  37000:
-  - :uint32
-  - :cisco_avc_transport_short_term_packets_drop
-  37001:
-  - :uint32
-  - :cisco_avc_transport_long_term_packets_drop
   37004:
   - :uint32
   - :cisco_avc_app_media_bytes
@@ -2483,12 +2562,6 @@
   45010:
   - :uint32
   - :cisco_avc_conn_id
-  45011:
-  - :string
-  - :cisco_avc_app_traffic_class
-  45012:
-  - :string
-  - :cisco_avc_app_business_relevance
   45100:
   - :octetarray
   - :cisco_nvzflow_udid
@@ -2576,6 +2649,74 @@
   45131:
   - :uint16
   - :cisco_nvzflow_parent_proc_user_acct_type
+
+
+  12432:
+  - :uint32
+  - :cisco_sdwan_ingress_overlay_sess_id
+  12433:
+  - :uint32
+  - :cisco_sdwan_egress_overlay_sess_id
+  12434:
+  - :uint32
+  - :cisco_sdwan_vpn_id
+  12435:
+  - :uint32
+  - :cisco_sdwan_tloc_overlay_sess_id
+  12436:
+  - :ip4_addr
+  - :cisco_sdwan_tloc_local_ip
+  12437:
+  - :string
+  - :cisco_sdwan_tloc_local_color
+  12438:
+  - :ip4_addr
+  - :cisco_sdwan_tloc_remote_ip
+  12439:
+  - :string
+  - :cisco_sdwan_tloc_remote_color
+  12440:
+  - :string
+  - :cisco_sdwan_tloc_tunnel_proto
+  12441:
+  - :uint64
+  - :cisco_sdwan_connection_id
+  12442:
+  - :uint16
+  - :cisco_sdwan_drop_cause
+  12443:
+  - :uint64
+  - :cisco_sdwan_dropped_bytes
+  12444:
+  - :uint8
+  - :cisco_sdwan_sla_not_met
+  12445:
+  - :uint8
+  - :cisco_sdwan_pref_color_not_met
+  12446:
+  - :uint8
+  - :cisco_sdwan_qos_queue_id
+  12447:
+  - :string
+  - :cisco_sdwan_drop_cause_descr
+  12448:
+  - :uint32
+  - :cisco_sdwan_appqoe_fec_packets
+  12449:
+  - :uint32
+  - :cisco_sdwan_appqoe_fec_packets_reconstructed
+  12450:
+  - :uint32
+  - :cisco_sdwan_appqoe_orig_tunnel_pkt_dup_packets
+  12451:
+  - :uint32
+  - :cisco_sdwan_appqoe_dup_tunnel_pkt_dup_packets
+  12452:
+  - :uint32
+  - :cisco_sdwan_appqoe_pkt_dup_packets_recovered
+  12453:
+  - :uint32
+  - :cisco_sdwan_cloud_express_packets
 
 # Alcatel-Lucent (formerly 'Alcatel Data Network')
 637:
@@ -3614,6 +3755,1122 @@
   541:
   - :uint32
   - :netscaler_unk_541
+
+# Calix
+6321:
+  1:
+  - :string
+  - :calix_hostname
+  2:
+  - :uint32
+  - :calix_shelf
+  3:
+  - :uint32
+  - :calix_slot
+  4:
+  - :string
+  - :calix_port
+  7:
+  - :string
+  - :calix_ont_id
+  8:
+  - :uint32
+  - :calix_svlan
+  9:
+  - :uint32
+  - :calix_cvlan
+  10:
+  - :uint32
+  - :calix_sample_time
+  12:
+  - :string
+  - :calix_lag_group
+  20:
+  - :string
+  - :calix_bin_duration
+  21:
+  - :uint32
+  - :calix_bin_number
+  22:
+  - :uint32
+  - :calix_start_time
+  23:
+  - :uint32
+  - :calix_end_time
+  24:
+  - :uint32
+  - :calix_time_elapsed
+  25:
+  - :uint8
+  - :calix_suspect
+  26:
+  - :string
+  - :calix_cause
+  99:
+  - :string
+  - :calix_subscriber_uid
+  102:
+  - :string
+  - :calix_ont_ifstats_aid
+  103:
+  - :string
+  - :calix_olt_pon_util_aid
+  104:
+  - :string
+  - :calix_ont_evcstats_aid
+  105:
+  - :string
+  - :calix_olt_pon_optical_aid
+  106:
+  - :string
+  - :calix_olt_ont_bin_aid
+  107:
+  - :string
+  - :calix_ont_eth_util_aid
+  108:
+  - :string
+  - :calix_mep_stats_aid
+  109:
+  - :string
+  - :calix_mip_stats_aid
+  110:
+  - :string
+  - :calix_delay_measurement_aid
+  111:
+  - :string
+  - :calix_loss_measurement_aid
+  112:
+  - :string
+  - :calix_lm_availability_aid
+  113:
+  - :string
+  - :calix_subscriber_flows_aid
+  #113:
+  #- :string
+  #- :calix_ont_evccos_stats_aid
+  114:
+  - :string
+  - :calix_ont_eth_total_aid
+  115:
+  - :string
+  - :calix_bng_dhcp_pool_aid
+  116:
+  - :string
+  - :calix_bng_dhcp_subscriber_aid
+  117:
+  - :string
+  - :calix_bng_static_subscriber_aid
+  118:
+  - :string
+  - :calix_bng_gx_counter_aid
+  119:
+  - :string
+  - :calix_bng_url_redirect_aid
+  120:
+  - :string
+  - :calix_bng_policy_mgmt_aid
+  121:
+  - :string
+  - :calix_bng_arp_counters_aid
+  122:
+  - :string
+  - :calix_bng_diameter_client_aid
+  123:
+  - :string
+  - :calix_bng_radius_client_aid
+  130:
+  - :string
+  - :calix_interface_ethernet_aid
+  131:
+  - :string
+  - :calix_interface_lag_aid
+  200:
+  - :uint64
+  - :calix_tx_octets
+  201:
+  - :uint64
+  - :calix_tx_pkts
+  202:
+  - :uint64
+  - :calix_tx_discards
+  203:
+  - :uint64
+  - :calix_tx_errors
+  204:
+  - :uint64
+  - :calix_rx_octets
+  205:
+  - :uint64
+  - :calix_rx_pkts
+  206:
+  - :uint64
+  - :calix_rx_discards
+  207:
+  - :uint64
+  - :calix_rx_errors
+  208:
+  - :uint64
+  - :calix_upstream_octets
+  209:
+  - :uint64
+  - :calix_downstream_octets
+  210:
+  - :uint32
+  - :calix_admitted_fixed_upstream_bw
+  211:
+  - :uint32
+  - :calix_available_fixed_upstream_bw
+  212:
+  - :uint32
+  - :calix_admitted_excess_upstream_bw
+  213:
+  - :uint32
+  - :calix_available_excess_upstream_bw
+  214:
+  - :uint64
+  - :calix_green_octets_uni
+  215:
+  - :uint64
+  - :calix_yellow_octets_uni
+  216:
+  - :uint64
+  - :calix_red_octets_uni
+  217:
+  - :uint64
+  - :calix_green_pkts_uni
+  218:
+  - :uint64
+  - :calix_yellow_pkts_uni
+  219:
+  - :uint64
+  - :calix_red_pkts_uni
+  220:
+  - :uint64
+  - :calix_octets_policer_discards
+  221:
+  - :uint64
+  - :calix_pkts_policer_discards
+  222:
+  - :uint64
+  - :calix_green_octets_pon
+  223:
+  - :uint64
+  - :calix_yellow_octets_pon
+  224:
+  - :uint64
+  - :calix_green_pkts_pon
+  225:
+  - :uint64
+  - :calix_yellow_pkts_pon
+  230:
+  - :int8
+  - :calix_power_feed_voltage
+  231:
+  - :int16
+  - :calix_rx_optical_power
+  232:
+  - :int32
+  - :calix_mean_optical_launch_power
+  233:
+  - :uint16
+  - :calix_laser_bias_current
+  234:
+  - :int16
+  - :calix_temperature
+  235:
+  - :uint8
+  - :calix_optical_channel
+  240:
+  - :uint32
+  - :calix_upstream_bip_errors
+  241:
+  - :uint32
+  - :calix_upstream_missed_bursts
+  242:
+  - :uint32
+  - :calix_upstream_gem_hec_errors
+  243:
+  - :uint32
+  - :calix_upstream_bip8_err_sec
+  244:
+  - :uint32
+  - :calix_upstream_bip8_severely_err_sec
+  245:
+  - :uint32
+  - :calix_upstream_bip8_unavail_sec
+  246:
+  - :uint32
+  - :calix_upstream_missed_bursts_err_sec
+  247:
+  - :uint32
+  - :calix_upstream_fec_corrected_bytes
+  248:
+  - :uint32
+  - :calix_upstream_fec_corrected_code_words
+  249:
+  - :uint32
+  - :calix_upstream_fec_uncorrected_code_words
+  250:
+  - :uint32
+  - :calix_upstream_fec_total_code_words
+  251:
+  - :uint32
+  - :calix_upstream_fec_sec
+  252:
+  - :uint32
+  - :calix_downstream_bip_errors
+  253:
+  - :uint32
+  - :calix_downstream_bip8_err_sec
+  254:
+  - :uint32
+  - :calix_downstream_bip8_severely_err_sec
+  255:
+  - :uint32
+  - :calix_downstream_bip8_unavail_sec
+  256:
+  - :uint32
+  - :calix_downstream_fec_corrected_bytes
+  257:
+  - :uint32
+  - :calix_downstream_fec_corrected_code_words
+  258:
+  - :uint32
+  - :calix_downstream_fec_uncorrected_code_words
+  259:
+  - :uint32
+  - :calix_downstream_fec_total_code_words
+  260:
+  - :uint32
+  - :calix_downstream_fec_sec
+  270:
+  - :uint64
+  - :calix_fcs_errors
+  271:
+  - :uint32
+  - :calix_excessive_collision
+  272:
+  - :uint32
+  - :calix_late_collision
+  273:
+  - :uint32
+  - :calix_frame_too_long
+  274:
+  - :uint64
+  - :calix_buffer_overflow_xmit
+  275:
+  - :uint64
+  - :calix_buffer_overflow_recv
+  276:
+  - :uint32
+  - :calix_single_collision
+  277:
+  - :uint32
+  - :calix_multiple_collision
+  278:
+  - :uint32
+  - :calix_sqe_counter
+  279:
+  - :uint32
+  - :calix_deferred_xmit_count
+  280:
+  - :uint64
+  - :calix_internal_mac_xmit_error
+  281:
+  - :uint64
+  - :calix_internal_mac_recv_error
+  282:
+  - :uint32
+  - :calix_carrier_sense_error
+  283:
+  - :uint32
+  - :calix_alignment_error
+  284:
+  - :uint64
+  - :calix_upstream_drop_events
+  285:
+  - :uint64
+  - :calix_upstream_packets
+  286:
+  - :uint64
+  - :calix_upstream_broadcast_packets
+  287:
+  - :uint64
+  - :calix_upstream_multicast_packets
+  288:
+  - :uint64
+  - :calix_upstream_unicast_packets
+  289:
+  - :uint64
+  - :calix_upstream_crc_errored_packets
+  290:
+  - :uint64
+  - :calix_upstream_oversize_packets
+  291:
+  - :uint64
+  - :calix_upstream_undersize_packets
+  292:
+  - :uint64
+  - :calix_upstream_packets_to_64_bytes
+  293:
+  - :uint64
+  - :calix_upstream_packets_64_to_127_bytes
+  294:
+  - :uint64
+  - :calix_upstream_packets_128_to_255_bytes
+  295:
+  - :uint64
+  - :calix_upstream_packets_256_to_511_bytes
+  296:
+  - :uint64
+  - :calix_upstream_packets_512_to_1023_bytes
+  297:
+  - :uint64
+  - :calix_upstream_packets_1024_to_1518_bytes
+  298:
+  - :uint64
+  - :calix_downstream_drop_events
+  299:
+  - :uint64
+  - :calix_downstream_packets
+  300:
+  - :uint64
+  - :calix_downstream_broadcast_packets
+  301:
+  - :uint64
+  - :calix_downstream_multicast_packets
+  302:
+  - :uint64
+  - :calix_downstream_unicast_packets
+  303:
+  - :uint64
+  - :calix_downstream_crc_errored_packets
+  304:
+  - :uint64
+  - :calix_downstream_oversize_packets
+  305:
+  - :uint64
+  - :calix_downstream_undersize_packets
+  307:
+  - :uint64
+  - :calix_upstream_gem_frames
+  308:
+  - :uint64
+  - :calix_upstream_gem_payload_bytes
+  309:
+  - :uint64
+  - :calix_downstream_gem_frames
+  310:
+  - :uint64
+  - :calix_downstream_gem_payload_bytes
+  311:
+  - :uint64
+  - :calix_gem_encryption_key_errors
+  320:
+  - :uint32
+  - :calix_admitted_assured_upstream_bw
+  321:
+  - :uint32
+  - :calix_available_assured_upstream_bw
+  322:
+  - :uint64
+  - :calix_fixed_upstream_bytes
+  323:
+  - :uint64
+  - :calix_assured_upstream_bytes
+  324:
+  - :uint64
+  - :calix_excess_upstream_bytes
+  330:
+  - :string
+  - :calix_flow_direction
+  331:
+  - :uint8
+  - :calix_flow_number
+  332:
+  - :uint64
+  - :calix_flow_pkts
+  333:
+  - :uint64
+  - :calix_flow_bytes
+  334:
+  - :uint64
+  - :calix_flow_drop_pkts
+  335:
+  - :uint64
+  - :calix_flow_drop_bytes
+  340:
+  - :uint32
+  - :calix_ingress_bucket_seconds
+  341:
+  - :uint64
+  - :calix_ingress_bucket_bps
+  342:
+  - :uint8
+  - :calix_ingress_bucket_percent
+  343:
+  - :uint32
+  - :calix_egress_bucket_seconds
+  344:
+  - :uint64
+  - :calix_egress_bucket_bps
+  345:
+  - :uint8
+  - :calix_egress_bucket_percent
+  400:
+  - :uint64
+  - :calix_ccm_received
+  401:
+  - :uint64
+  - :calix_ccm_transmitted
+  402:
+  - :uint64
+  - :calix_ccm_received_rdi
+  403:
+  - :uint64
+  - :calix_ccm_transmitted_rdi
+  404:
+  - :uint64
+  - :calix_ccm_received_bad_sender_id
+  405:
+  - :uint64
+  - :calix_ccm_received_bad_port_status
+  406:
+  - :uint64
+  - :calix_ccm_received_bad_if_status
+  407:
+  - :uint64
+  - :calix_ccm_received_bad_seq_errors
+  408:
+  - :uint64
+  - :calix_dmm_transmitted
+  409:
+  - :uint64
+  - :calix_dmr_received
+  410:
+  - :uint64
+  - :calix_dmm_received
+  411:
+  - :uint64
+  - :calix_dmr_transmitted
+  412:
+  - :uint64
+  - :calix_dm1_transmitted
+  413:
+  - :uint64
+  - :calix_dm1_received
+  414:
+  - :uint64
+  - :calix_slm_transmitted
+  415:
+  - :uint64
+  - :calix_slr_received
+  416:
+  - :uint64
+  - :calix_slm_received
+  417:
+  - :uint64
+  - :calix_slr_transmitted
+  418:
+  - :uint64
+  - :calix_lmm_transmitted
+  419:
+  - :uint64
+  - :calix_lmr_received
+  420:
+  - :uint64
+  - :calix_lmm_received
+  421:
+  - :uint64
+  - :calix_lmr_transmitted
+  422:
+  - :uint64
+  - :calix_ltm_transmitted
+  423:
+  - :uint64
+  - :calix_ltr_received
+  424:
+  - :uint64
+  - :calix_ltm_received
+  425:
+  - :uint64
+  - :calix_ltr_transmitted
+  426:
+  - :uint64
+  - :calix_ltr_unexpected
+  427:
+  - :uint64
+  - :calix_lbm_transmitted
+  428:
+  - :uint64
+  - :calix_lbr_received
+  429:
+  - :uint64
+  - :calix_lbm_received
+  430:
+  - :uint64
+  - :calix_lbr_transmitted
+  431:
+  - :uint64
+  - :calix_lbr_received_out_of_order
+  432:
+  - :uint64
+  - :calix_lbr_received_bad_msdu
+  450:
+  - :uint64
+  - :calix_up_mhf_lbm_received
+  451:
+  - :uint64
+  - :calix_up_mhf_lbr_transmitted
+  452:
+  - :uint64
+  - :calix_up_mhf_ltm_received
+  453:
+  - :uint64
+  - :calix_up_mhf_ltm_forwarded
+  454:
+  - :uint64
+  - :calix_up_mhf_ltr_transmitted
+  455:
+  - :uint64
+  - :calix_dn_mhf_lbm_received
+  456:
+  - :uint64
+  - :calix_dn_mhf_lbr_transmitted
+  457:
+  - :uint64
+  - :calix_dn_mhf_ltm_received
+  458:
+  - :uint64
+  - :calix_dn_mhf_ltm_forwarded
+  459:
+  - :uint64
+  - :calix_dn_mhf_ltr_transmitted
+  500:
+  - :uint32
+  - :calix_stats_index
+  501:
+  - :uint32
+  - :calix_end_time
+  502:
+  - :uint32
+  - :calix_elapsed_time
+  503:
+  - :uint8
+  - :calix_suspect
+  504:
+  - :uint32
+  - :calix_frame_delay_two_way_min
+  505:
+  - :uint32
+  - :calix_frame_delay_two_way_max
+  506:
+  - :uint32
+  - :calix_frame_delay_two_way_avg
+  507:
+  - :uint32
+  - :calix_frame_delay_forward_min
+  508:
+  - :uint32
+  - :calix_frame_delay_forward_max
+  509:
+  - :uint32
+  - :calix_frame_delay_forward_avg
+  510:
+  - :uint32
+  - :calix_frame_delay_backward_min
+  511:
+  - :uint32
+  - :calix_frame_delay_backward_max
+  512:
+  - :uint32
+  - :calix_frame_delay_backward_avg
+  513:
+  - :uint32
+  - :calix_inter_frame_delay_variation_two_way_min
+  514:
+  - :uint32
+  - :calix_inter_frame_delay_variation_two_way_max
+  515:
+  - :uint32
+  - :calix_inter_frame_delay_variation_two_way_avg
+  516:
+  - :uint32
+  - :calix_inter_frame_delay_variation_forward_min
+  517:
+  - :uint32
+  - :calix_inter_frame_delay_variation_forward_max
+  518:
+  - :uint32
+  - :calix_inter_frame_delay_variation_forward_avg
+  519:
+  - :uint32
+  - :calix_inter_frame_delay_variation_backward_min
+  520:
+  - :uint32
+  - :calix_inter_frame_delay_variation_backward_max
+  521:
+  - :uint32
+  - :calix_inter_frame_delay_variation_backward_avg
+  522:
+  - :uint32
+  - :calix_frame_delay_range_two_way_max
+  523:
+  - :uint32
+  - :calix_frame_delay_range_two_way_avg
+  524:
+  - :uint32
+  - :calix_frame_delay_range_forward_max
+  525:
+  - :uint32
+  - :calix_frame_delay_range_forward_avg
+  526:
+  - :uint32
+  - :calix_frame_delay_range_backward_max
+  527:
+  - :uint32
+  - :calix_frame_delay_range_backward_avg
+  528:
+  - :uint32
+  - :calix_out_oam_pdus
+  529:
+  - :uint32
+  - :calix_in_oam_pdus
+  550:
+  - :uint32
+  - :calix_stats_index
+  551:
+  - :uint32
+  - :calix_end_time
+  552:
+  - :uint32
+  - :calix_elapsed_time
+  553:
+  - :uint8
+  - :calix_suspect
+  554:
+  - :uint32
+  - :calix_forward_transmitted_frames
+  555:
+  - :uint32
+  - :calix_forward_received_frames
+  556:
+  - :uint32
+  - :calix_forward_min_frame_loss_ratio
+  557:
+  - :uint32
+  - :calix_forward_max_frame_loss_ratio
+  558:
+  - :uint32
+  - :calix_forward_avg_frame_loss_ratio
+  559:
+  - :uint32
+  - :calix_backward_transmitted_frames
+  560:
+  - :uint32
+  - :calix_backward_received_frames
+  561:
+  - :uint32
+  - :calix_backward_min_frame_loss_ratio
+  562:
+  - :uint32
+  - :calix_backward_max_frame_loss_ratio
+  563:
+  - :uint32
+  - :calix_backward_avg_frame_loss_ratio
+  564:
+  - :uint32
+  - :calix_out_oam_pdus
+  565:
+  - :uint32
+  - :calix_in_oam_pdus
+  575:
+  - :uint32
+  - :calix_stats_index
+  576:
+  - :uint32
+  - :calix_end_time
+  577:
+  - :uint32
+  - :calix_elapsed_time
+  578:
+  - :uint8
+  - :calix_suspect
+  579:
+  - :uint32
+  - :calix_forward_high_loss_intervals
+  580:
+  - :uint32
+  - :calix_backward_high_loss_intervals
+  581:
+  - :uint32
+  - :calix_forward_consecutive_high_loss_intervals
+  582:
+  - :uint32
+  - :calix_backward_consecutive_high_loss_intervals
+  583:
+  - :uint32
+  - :calix_forward_available_indicators
+  584:
+  - :uint32
+  - :calix_backward_available_indicators
+  585:
+  - :uint32
+  - :calix_forward_unavailable_indicators
+  586:
+  - :uint32
+  - :calix_backward_unavailable_indicators
+  587:
+  - :uint32
+  - :calix_forward_min_frame_loss_ratio
+  588:
+  - :uint32
+  - :calix_forward_max_frame_loss_ratio
+  589:
+  - :uint32
+  - :calix_forward_avg_frame_loss_ratio
+  590:
+  - :uint32
+  - :calix_backward_min_frame_loss_ratio
+  591:
+  - :uint32
+  - :calix_backward_max_frame_loss_ratio
+  592:
+  - :uint32
+  - :calix_backward_avg_frame_loss_ratio
+  600:
+  - :uint64
+  - :calix_if_index
+  601:
+  - :uint64
+  - :calix_drop_events
+  602:
+  - :uint64
+  - :calix_bytes
+  603:
+  - :uint64
+  - :calix_pkts
+  604:
+  - :uint64
+  - :calix_broadcast_pkts
+  605:
+  - :uint64
+  - :calix_multicast_pkts
+  606:
+  - :uint64
+  - :calix_crc_align_errors
+  607:
+  - :uint64
+  - :calix_undersize_pkts
+  608:
+  - :uint64
+  - :calix_oversize_pkts
+  609:
+  - :uint64
+  - :calix_fragments
+  610:
+  - :uint64
+  - :calix_pkts_to_64_bytes
+  611:
+  - :uint64
+  - :calix_pkts_65_to_127_bytes
+  612:
+  - :uint64
+  - :calix_pkts_128_to_255_bytes
+  613:
+  - :uint64
+  - :calix_pkts_256_to_511_bytes
+  614:
+  - :uint64
+  - :calix_pkts_512_to_1023_bytes
+  615:
+  - :uint64
+  - :calix_pkts_1024_to_1518_bytes
+  616:
+  - :uint64
+  - :calix_pkts_1519_to_2047_bytes
+  617:
+  - :uint64
+  - :calix_pkts_2048_to_4095_bytes
+  618:
+  - :uint64
+  - :calix_pkts_4096_to_9216_bytes
+  619:
+  - :uint64
+  - :calix_pkts_9217_to_16383_bytes
+  620:
+  - :uint64
+  - :calix_rx_unicast_pkts
+  621:
+  - :uint64
+  - :calix_rx_multicast_pkts
+  622:
+  - :uint64
+  - :calix_rx_broadcast_pkts
+  623:
+  - :uint64
+  - :calix_rx_pause_frames
+  624:
+  - :uint64
+  - :calix_rx_unknown_protos
+  625:
+  - :uint64
+  - :calix_tx_unicast_pkts
+  626:
+  - :uint64
+  - :calix_tx_multicast_pkts
+  627:
+  - :uint64
+  - :calix_tx_broadcast_pkts
+  628:
+  - :uint64
+  - :calix_tx_pause_frames
+  629:
+  - :uint64
+  - :calix_align_errors
+  630:
+  - :uint64
+  - :calix_jabbers
+  631:
+  - :uint32
+  - :calix_rx_utilization
+  632:
+  - :uint32
+  - :calix_tx_utilization
+  633:
+  - :uint32
+  - :calix_rx_pps
+  634:
+  - :uint32
+  - :calix_tx_pps
+  635:
+  - :uint32
+  - :calix_rx_bps
+  636:
+  - :uint32
+  - :calix_tx_bps
+  643:
+  - :string
+  - :calix_role
+  699:
+  - :string
+  - :calix_subscriber
+  800:
+  - :string
+  - :calix_pool_name
+  801:
+  - :uint64
+  - :calix_configured_pool_size
+  802:
+  - :uint64
+  - :calix_leases_in_grace
+  803:
+  - :uint64
+  - :calix_active_leases
+  804:
+  - :uint64
+  - :calix_max_leases
+  805:
+  - :uint64
+  - :calix_min_leases
+  806:
+  - :uint64
+  - :calix_avg_leases
+  807:
+  - :uint64
+  - :calix_offers_sent
+  808:
+  - :uint64
+  - :calix_offers_accepted
+  809:
+  - :uint64
+  - :calix_requests_granted
+  810:
+  - :uint64
+  - :calix_requests_declined
+  811:
+  - :uint64
+  - :calix_request_timeouts
+  812:
+  - :uint64
+  - :calix_lease_renewals
+  813:
+  - :uint64
+  - :calix_lease_timer_expiries
+  814:
+  - :uint64
+  - :calix_grace_timer_expiries
+  820:
+  - :uint64
+  - :calix_configured_dynamic_subscribers
+  821:
+  - :uint64
+  - :calix_active_dynamic_ips
+  822:
+  - :uint64
+  - :calix_active_dynamic_subscribers
+  823:
+  - :uint64
+  - :calix_max_active_dynamic_subscribers
+  824:
+  - :uint64
+  - :calix_min_active_dynamic_subscribers
+  825:
+  - :uint64
+  - :calix_avg_active_dynamic_subscribers
+  830:
+  - :uint64
+  - :calix_configured_active_subscribers
+  831:
+  - :uint64
+  - :calix_active_static_ips
+  832:
+  - :uint64
+  - :calix_active_static_subscribers
+  833:
+  - :uint64
+  - :calix_max_active_static_subscribers
+  834:
+  - :uint64
+  - :calix_min_active_static_subscribers
+  835:
+  - :uint64
+  - :calix_avg_active_static_subscribers
+  840:
+  - :uint64
+  - :calix_tx_ccr_i
+  841:
+  - :uint64
+  - :calix_rx_cca_i
+  842:
+  - :uint64
+  - :calix_tx_ccr_u
+  843:
+  - :uint64
+  - :calix_rx_cca_u
+  844:
+  - :uint64
+  - :calix_rx_rar
+  845:
+  - :uint64
+  - :calix_tx_raa
+  846:
+  - :uint64
+  - :calix_raa_session_id_mismatch
+  847:
+  - :uint64
+  - :calix_pcrf_timer_expiries
+  848:
+  - :uint64
+  - :calix_configured_subscribers_with_pcrf_enabled
+  849:
+  - :uint64
+  - :calix_active_subscribers_with_pcrf_enabled
+  850:
+  - :uint64
+  - :calix_active_default_subscribers_with_pcrf_enabled
+  860:
+  - :uint64
+  - :calix_url_redirect_subscribers
+  861:
+  - :uint64
+  - :calix_url_redirect_policies_applied
+  862:
+  - :uint64
+  - :calix_url_updates
+  870:
+  - :uint64
+  - :calix_dynamic_policy_apply_requests
+  871:
+  - :uint64
+  - :calix_dynamic_policy_apply_successes
+  872:
+  - :uint64
+  - :calix_dynamic_policy_apply_failures
+  873:
+  - :uint64
+  - :calix_rx_arp_req
+  874:
+  - :uint64
+  - :calix_tx_arp_resp
+  875:
+  - :uint64
+  - :calix_arp_timer_expiries
+  876:
+  - :string
+  - :calix_diameter_client_name
+  880:
+  - :uint64
+  - :calix_tx_cer
+  881:
+  - :uint64
+  - :calix_rx_cea
+  882:
+  - :uint64
+  - :calix_rtx_msg
+  883:
+  - :uint64
+  - :calix_msg_timeout
+  884:
+  - :uint64
+  - :calix_peer_up
+  885:
+  - :uint64
+  - :calix_peer_down
+  886:
+  - :uint64
+  - :calix_watchdog_timer_expiries
+  887:
+  - :uint64
+  - :calix_peer_disconnect
+  888:
+  - :string
+  - :calix_radius_client_name
+  890:
+  - :uint64
+  - :calix_tx_accounting_start
+  891:
+  - :uint64
+  - :calix_tx_accounting_interim
+  892:
+  - :uint64
+  - :calix_tx_accounting_stop
+  893:
+  - :uint64
+  - :calix_rtx_accounting_start
+  894:
+  - :uint64
+  - :calix_rtx_accounting_interim
+  895:
+  - :uint64
+  - :calix_rtx_accounting_stop
+  896:
+  - :uint64
+  - :calix_rx_accounting_success_resp
+  897:
+  - :uint64
+  - :calix_rx_accounting_failure_resp
+  899:
+  - :uint64
+  - :calix_upstream_discard_events
+  901:
+  - :uint64
+  - :calix_downstream_discard_events
+  903:
+  - :string
+  - :calix_pon_ont_util_aid
+  904:
+  - :uint64
+  - :calix_upstream_bytes
+  905:
+  - :uint64
+  - :calix_downstream_bytes
+  906:
+  - :uint32
+  - :calix_upstream_percentage
+  907:
+  - :uint32
+  - :calix_downstream_percentage
 
 # CERT Coordination Center
 6871:
@@ -8441,6 +9698,84 @@
   20:
   - :string
   - :redsocks_http_hostname
+
+# Velocloud Networks Inc.
+45346:
+  12232:
+  - :uint8
+  - :velocloud_interface_type
+  12233:
+  - :octetarray
+  - :velocloud_dst_id
+  12234:
+  - :uint8
+  - :velocloud_vc_priority
+  12235:
+  - :uint8
+  - :velocloud_policy_route_type
+  12236:
+  - :uint8
+  - :velocloud_policy_link_select_type
+  12237:
+  - :uint8
+  - :velocloud_policy_traffic_type
+  12239:
+  - :uint8
+  - :velocloud_flow_path
+  12240:
+  - :octetarray
+  - :velocloud_internal_link_id
+  12241:
+  - :uint64
+  - :velocloud_replicated_pkts_in
+  12242:
+  - :uint64
+  - :velocloud_replicated_pkts_out
+  12243:
+  - :uint64
+  - :velocloud_pkts_lost_in
+  12244:
+  - :uint64
+  - :velocloud_pkts_retransmitted
+  12245:
+  - :ip4_addr
+  - :velocloud_primary_ipv4
+  12290:
+  - :uint32
+  - :velocloud_jitter_ms_out
+  12292:
+  - :uint32
+  - :velocloud_latency_ms_out
+  12293:
+  - :uint32
+  - :velocloud_jitter_ms_in
+  12295:
+  - :uint32
+  - :velocloud_latency_ms_in
+  12299:
+  - :octetarray
+  - :velocloud_site_id
+  12310:
+  - :string
+  - :velocloud_link_name
+  12311:
+  - :uint64
+  - :velocloud_pkts_lost_out
+  12312:
+  - :octetarray
+  - :velocloud_biz_pol_rule_id
+  12313:
+  - :octetarray
+  - :velocloud_firewall_policy_rule_id
+  12314:
+  - :octetarray
+  - :velocloud_route_next_hop_id
+  12317:
+  - :float
+  - :velocloud_loss_percent_out
+  12318:
+  - :float
+  - :velocloud_loss_percent_in
 
 # Pluribus Networks
 47269:

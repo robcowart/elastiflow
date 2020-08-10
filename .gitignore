@@ -1,4 +1,5 @@
 .gitignore
+logstash/elastiflow/conf.d/20_filter_80_user_custom.logstash.conf
 
 #---------- macOS ----------
 # General

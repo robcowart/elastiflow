@@ -12,4 +12,5 @@ I have received many notes of thanks for the ElastiFlow&trade; project. However 
 * Dmitriy Vasilets
 * Robert Acquah
 * Franklin Shearer
+* Jeremy Markel
 * Romeu Medeiros
