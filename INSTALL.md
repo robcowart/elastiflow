@@ -4,15 +4,20 @@
 
 ElastiFlow&trade; is built using the Elastic Stack, including Elasticsearch, Logstash and Kibana. To install and configure ElastiFlow&trade;, you must first have a working Elastic Stack environment.
 
-## Elastic Stack Compatibility
+> **WARNING!** - ElastiFlow 4.0.0 supports Elastic Common Schema (ECS). Due to significant data model changes there is no upgrade/migration from ElastiFlow 3.x. You should either remove all 3.x indices or deploy ElastiFlow 4.0.0 to a separate environment.
 
-Elastic Stack 7.0-7.4 _*requires*_ ElastiFlow&trade; 3.5.x. To deploy on Elastic Stack 6.x you _*must*_ use ElastiFlow&trade; 3.4.2 or earlier.
+> **IMPORTANT!** - Always use a **RELEASE**. DO NOT use the `master` branch.
+
+> **NOTE** - For full ElastiFlow 4.0.0 functionality, including Kibana's SIEM and Logs apps, you should use X-Pack Basic or one of the commercial X-Pack tiers.
+
+## Elastic Stack Compatibility
 
 Refer to the following compatibility chart to choose a release of ElastiFlow&trade; that is compatible with the version of the Elastic Stack you are using.
 
 Elastic Stack | ElastiFlow&trade; 3.x | ElastiFlow&trade; 4.x
 :---:|:---:|:---:
-7.5+ |  | &#10003;
+7.8+ |  | &#10003; v4.0.0
+7.5-7.7 |  | &#10003; v4.0.0-beta
 7.0-7.4 | &#10003; v3.5.x |
 6.7 | &#10003; v3.4.2 |
 6.6 | &#10003; v3.4.1 |
@@ -45,11 +50,12 @@ It is my experience that most people underestimate the volume of flow data their
 
 flows/sec | (v)CPUs | Memory | Disk (30-days) | ES JVM Heap | LS JVM Heap
 ---:|---:|---:|---:|---:|---:
-250| 4 | 24 GB | 305 GB | 8 GB | 4 GB
-1000| 8 | 32 GB | 1.22 TB  | 12 GB | 4 GB
-2500| 12 | 64 GB | 3.05 TB | 24 GB | 6 GB
+250 | 4 | 32 GB | 512 GB | 12 GB | 4 GB
+500 | 6 | 48 GB | 1 TB | 16 GB | 4 GB
+1000 | 8 | 64 GB | 2 TB | 24 GB | 6 GB
+1500 | 12 | 96 GB | 3 TB | 31 GB | 6 GB
 
-For anything beyond 2500 flows/sec a multi-node cluster should be considered, and that Logstash be run on its own instance/server.
+For anything beyond 1500 flows/sec a multi-node cluster should be considered, and that Logstash be run on its own instance/server.
 
 If you are new to the Elastic Stack, this video goes beyond a simple default installation of Elasticsearch and Kibana. It discusses real-world best practices for hardware sizing and configuration, providing production-level performance and reliability.
 
@@ -82,16 +88,38 @@ The ElastiFlow&trade; Logstash pipeline is the heart of the solution. It is here
 
 Follow these steps to ensure that Logstash and ElastiFlow&trade; are optimally configured to meet your needs. 
 
-### 1. Set JVM heap size.
+### 1. Tune Linux for improved UDP Throughput
 
-To increase performance, ElastiFlow&trade; takes advantage of the caching and queueing features available in many of the Logstash plugins. These features increase the consumption of the JVM heap. The JVM heap space used by Logstash is configured in `jvm.options`. It is recommended that Logstash be given at least 2GB of JVM heap. If all options, incl. DNS lookups (requires version 3.0.10 or later of the DNS filter), are enabled increase this to 4GB. This is configured in `jvm.options` as follows:
+Poor UDP throughput can result in lost flow packets and thus LOST DATA. Default Linux tuning can be improved for increased throughput. The file `sysctl.d/87-elastiflow.conf` is provided to simplify this task.
+
+Copy `87-elastiflow.conf` into `/etc/sysctl.d` on the Linux server where Logstash will run, and reboot the server for the changes to take effect.
+
+### 2. Increase Logstash Priority
+
+By default Logstash is configured to run a daemon with a "nice" level of `19`. This is the lowest priority, which means that any other process will be given compute time before Logstash. This can result in very poor throughput and most likely lost data.
+
+To increase the priority of the Logstash daemon to the default level, you will need to edit its systemd service file at `/etc/systemd/system/logstash.service`. Find the line which sets the nice level:
+
+```text
+Nice=19
+```
+
+Change the nice level to `0`.
+
+```text
+Nice=0
+```
+
+### 3. Set JVM heap size.
+
+To increase performance, ElastiFlow&trade; takes advantage of the caching and queueing features available in many of the Logstash plugins. These features increase the consumption of the JVM heap. The JVM heap space used by Logstash is configured in `jvm.options`. It is recommended that Logstash be given at least 2GB of JVM heap. If all options, incl. DNS lookups, are enabled increase this to 4GB. This is configured in `jvm.options` as follows:
 
 ```text
 -Xms4g
 -Xmx4g
 ```
 
-### 2. Add and Update Required Logstash plugins
+### 4. Add and Update Required Logstash plugins
 
 To use ElastiFlow&trade; you will need to install the community supported [sFlow](https://github.com/ashangit/logstash-codec-sflow) codec for Logstash. It is also recommended that you always use the latest version of the [Netflow](https://www.elastic.co/guide/en/logstash/current/plugins-codecs-netflow.html) codec, the [UDP](https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html) input, and the [DNS](https://www.elastic.co/guide/en/logstash/current/plugins-filters-dns.html) filter. This can achieved by running the following commands:
 
@@ -105,7 +133,7 @@ LS_HOME/bin/logstash-plugin update logstash-filter-geoip
 LS_HOME/bin/logstash-plugin update logstash-filter-translate
 ```
 
-### 3. Copy the pipeline files to the Logstash configuration path.
+### 5. Copy the pipeline files to the Logstash configuration path.
 
 There are five sets of configuration files provided within the `logstash/elastiflow` folder:
 
@@ -129,7 +157,7 @@ ELASTIFLOW_USER_SETTINGS_PATH | The path where user-customizable dictionary file
 ELASTIFLOW_TEMPLATE_PATH | The path to where index templates are located | /etc/logstash/elastiflow/templates
 ELASTIFLOW_GEOIP_DB_PATH | The path where GeoIP DBs are located | /etc/logstash/elastiflow/geoipdbs
 
-### 4. Setup environment variable helper files
+### 6. Setup environment variable helper files
 
 Rather than directly editing the pipeline configuration files for your environment, environment variables are used to provide a single location for most configuration options. These environment variables will be referred to in the remaining instructions. A [reference](#environment-variable-reference) of all environment variables can be found [here](#environment-variable-reference).
 
@@ -139,18 +167,18 @@ Recent versions of both RedHat/CentOS and Ubuntu use systemd to start background
 
 > Remember that for your changes to take effect, you must issue the command `sudo systemctl daemon-reload`.
 
-### 5. Add the ElastiFlow&trade; pipeline to pipelines.yml
+### 7. Add the ElastiFlow&trade; pipeline to pipelines.yml
 
 Logstash 6.0 introduced the ability to run multiple pipelines from a single Logstash instance. The `pipelines.yml` file is where these pipelines are configured. While a single pipeline can be specified directly in `logstash.yml`, it is a good practice to use `pipelines.yml` for consistency across environments.
 
 Edit `pipelines.yml` (usually located at `/etc/logstash/pipelines.yml`) and add the ElastiFlow&trade; pipeline (adjust the path as necessary).
 
-```text
+```yaml
 - pipeline.id: elastiflow
   path.config: "/etc/logstash/elastiflow/conf.d/*.conf"
 ```
 
-### 6. Configure inputs
+### 8. Configure inputs
 
 By default flow data will be recieved on all IPv4 addresses of the Logstash host using the standard ports for each flow type. You can change both the IPs and ports used by modifying the following environment variables:
 
@@ -194,7 +222,7 @@ ELASTIFLOW_IPFIX_UDP_RCV_BUFF | The socket receive buffer size (bytes) for IPFIX
 
 > WARNING! Increasing `queue_size` will increase heap_usage. Make sure have configured JVM heap appropriately as specified in the [Requirements](#requirements)
 
-### 7. Configure the Elasticsearch output
+### 9. Configure the Elasticsearch output
 
 Obviously the data needs to land in Elasticsearch, so you need to tell Logstash where to send it.
 
@@ -229,7 +257,7 @@ ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate
 
 > If `ELASTIFLOW_ES_SSL_ENABLE` and `ELASTIFLOW_ES_SSL_VERIFY` are both `true`, you must uncomment the `cacert` option in the Elasticsearch output and set the path to the certificate.
 
-### 8. Enable DNS name resolution (optional)
+### 10. Enable DNS name resolution (optional)
 
 In the past it was recommended to avoid DNS queries as the latency costs of such lookups had a devastating effect on throughput. While the Logstash DNS filter provides a caching mechanism, its use was not recommended. When the cache was enabled all lookups were performed synchronously. If a name server failed to respond, all other queries were stuck waiting until the query timed out. The end result was even worse performance.
 
@@ -250,13 +278,13 @@ ELASTIFLOW_DNS_HIT_CACHE_TTL | The time in seconds successful DNS queries are ca
 ELASTIFLOW_DNS_FAILED_CACHE_SIZE | The cache size for failed DNS queries | 75000
 ELASTIFLOW_DNS_FAILED_CACHE_TTL | The time in seconds failed DNS queries are cached | 3600
 
-### 9. Configure Application ID enrichment (optional)
+### 11. Configure Application ID enrichment (optional)
 
 Both Netflow and IPFIX allow devices with application identification features to specify the application associated with the traffic in the flow. For Netflow this is the `application_id` field. The IPFIX field is `applicationId`.
 
-The application names which correspond to values of these IDs is vendor-specific. In order for ElastiFlow&trade; to accurately translate the ID values, it must be told the type of device that is exporting the flows. To do so you must edit `elastiflow/dictionaries/app_id_srctype.yml` and specify the source type of your supported device. For example...
+The application names which correspond to values of these IDs is vendor-specific. In order for ElastiFlow&trade; to accurately translate the ID values, it must be told the type of device that is exporting the flows. To do so you must edit `logstash/elastiflow/user_settings/app_id.srctype.yml` and specify the source type of your supported device. For example...
 
-```text
+```yaml
 "192.0.2.1": "cisco_nbar2"
 "192.0.2.2": "fortinet"
 ```
@@ -281,11 +309,25 @@ Application identity is also supported from the following sources, and requires 
 Once configured ElastiFlow&trade; will resolve the ID to an application name, which will be available in the dashboards.
 <img width="902" alt="screen shot 2018-05-13 at 12 40 04" src="https://user-images.githubusercontent.com/10326954/39966360-d8e6e420-56aa-11e8-8514-9a9839ca5fb1.png"> 
 
-### 10. Manually set the sampling interval for devices that don't send it. (optional)
+Applications may also be defined by IP and port number in the file `logstash/elastiflow/user_settings/applications.yml`. For example, to specify that Kafka is listening on port `9092` at IP address `192.0.2.2`, the following entry would be made:
 
-Some devices which collect sampled flows do not include the sampling interval in the flow records that they send (e.g. some Cisco IOS XR and Huawei devices). In such situations the sampling interval can be set manually by adding the IP address and sampling rate for the device in `elastiflow/user_settings/sampling_interval.yml`.
+```yaml
+"192.0.2.2:9092": "kafka"
+```
 
-### 11. Start Logstash
+### 12. Manually set the sampling interval for devices that don't send it. (optional)
+
+Some devices which collect sampled flows do not include the sampling interval in the flow records that they send (e.g. some Cisco IOS XR and Huawei devices). In such situations the sampling interval can be set manually by adding the IP address and sampling rate for the device in `logstash/elastiflow/user_settings/sampling_interval.yml`.
+
+### 13. Update MaxMind GeoIP Databases.
+
+ElastiFlow&trade; leverages MaxMind's GeoLite2 City and ASN databases to populate various geographic and Autonomous System related data for public IP addresses. Changes in California Law related to personnally identifying information, and specifically IP addresses, required changes in the MaxMind license, which limit the ability to include the latest databases with ElastiFlow&trade;.
+
+For this reason the last databases before these changes, from the end of 2019, are included. You can download the latest databases (FOR FREE) after registering on MaxMind's website.
+
+Download the GeoLite2 City and ASN databases and place the `GeoLite2-City.mmdb` and `GeoLite2-ASN.mmdb` files in `logstash/elastiflow/geoipdbs`. To ensure the most accurate data enrichment, it is recommneded to update these databases often. Once a month should be a minimum.
+
+### 14. Start Logstash
 
 You should now be able to start Logstash and begin collecting network flow data. Assuming you are running a recent version of RedHat/CentOS or Ubuntu, and using systemd, complete these steps:
 
@@ -308,25 +350,11 @@ Logstash setup is now complete. If you are receiving flow data, you should have 
 
 ## Setting up Kibana
 
-Kibana 6.5 introduced the ability to export and import Index Patterns through the UI. This greatly simplifies the setup of Kibana.
-
-### Kibana 6.5.x and Later
-
-The Index Patterns, vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.kibana.<VER>.json` file from within the Kibana UI. This is done from the `Management -> Saved Objects` page.
-
-### Kibana 6.4.x and Earlier
-
-An API (yet undocumented) is available to import and export Index Patterns. The JSON file which contains the Index Pattern configuration is `kibana/elastiflow.index_pattern.json`. To setup the `elastiflow-*` Index Pattern run the following command:
-
-```text
-curl -X POST -u USERNAME:PASSWORD http://KIBANASERVER:5601/api/saved_objects/index-pattern/elastiflow-* -H "Content-Type: application/json" -H "kbn-xsrf: true" -d @/PATH/TO/elastiflow.index_pattern.json
-```
-
-Finally the vizualizations and dashboards can be loaded into Kibana by importing the `elastiflow.dashboards.<VER>.json` file from within the Kibana UI. This is done from the `Management -> Saved Objects` page. There are separate dashboard import files for version 6.2.x, 6.3.x and 6.4.x of Kibana. Select the file that corresponds to your version of Kibana.
+The vizualizations and dashboards can be loaded into Kibana by importing the `kibana/elastiflow.kibana.<VER>.ndjson` file from within the Kibana UI. This is done from the `Management -> Stack Management -> Kibana Saved Objects` page. Select the file that corresponds to your version of Kibana.
 
 ### Recommended Kibana Advanced Settings
 
-You may find that modifying a few of the Kibana advanced settings will produce a more user-friendly experience while using ElastiFlow&trade;. These settings are made in Kibana, under `Management -> Advanced Settings`.
+You may find that modifying a few of the Kibana advanced settings will produce a more user-friendly experience while using ElastiFlow&trade;. These settings are made in Kibana, under `Management -> Stack Management -> Kibana Advanced Settings`.
 
 Advanced Setting | Value | Why make the change?
 --- | --- | ---
@@ -375,7 +403,6 @@ ELASTIFLOW_NETFLOW_IPV6_PORT | The UDP port on which to listen for Netflow messa
 ELASTIFLOW_NETFLOW_UDP_WORKERS | The number of Netflow input threads | 4
 ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE | The number of unprocessed Netflow UDP packets the input can buffer | 4096
 ELASTIFLOW_NETFLOW_UDP_RCV_BUFF | The socket receive buffer size (bytes) for Netflow | 33554432
-ELASTIFLOW_NETFLOW_LASTSW_TIMESTAMP | Enable/Disable setting `@timestamp` with the value of netflow.last_switched | false
 ELASTIFLOW_NETFLOW_TZ | The timezone of netflow.last_switched | UTC
 ELASTIFLOW_SFLOW_IPV4_HOST | The IPv4 address on which to listen for sFlow messages | 0.0.0.0
 ELASTIFLOW_SFLOW_IPV4_PORT | The UDP port on which to listen for sFlow messages | 6343
@@ -402,7 +429,7 @@ I recommend configuring `timepicker:quickRanges` for the setting below. The resu
 
 ![timepicker:quickRanges](https://user-images.githubusercontent.com/10326954/57178139-9a8d8500-6e6c-11e9-8539-db61a81b321b.png)
 
-```text
+```json
 [
   {
     "from": "now-15m",
