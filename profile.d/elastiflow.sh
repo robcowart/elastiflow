@@ -16,6 +16,7 @@
 #------------------------------------------------------------------------------
 
 # ElastiFlow global configuration
+export ELASTIFLOW_AGENT_ID=elastiflow
 export ELASTIFLOW_DICT_PATH=/etc/logstash/elastiflow/dictionaries
 export ELASTIFLOW_USER_SETTINGS_PATH=/etc/logstash/elastiflow/user_settings
 export ELASTIFLOW_DEFINITION_PATH=/etc/logstash/elastiflow/definitions
@@ -28,7 +29,6 @@ export ELASTIFLOW_OUI_LOOKUP=false
 export ELASTIFLOW_POPULATE_LOGS=true
 export ELASTIFLOW_KEEP_ORIG_DATA=true
 export ELASTIFLOW_DEFAULT_APPID_SRCTYPE=__UNKNOWN
-
 
 # Name resolution option
 export ELASTIFLOW_RESOLVE_IP2HOST=false
@@ -68,7 +68,6 @@ export ELASTIFLOW_NETFLOW_UDP_WORKERS=4
 export ELASTIFLOW_NETFLOW_UDP_QUEUE_SIZE=4096
 export ELASTIFLOW_NETFLOW_UDP_RCV_BUFF=33554432
 # Netflow timestamp options
-export ELASTIFLOW_NETFLOW_LASTSW_TIMESTAMP=false
 export ELASTIFLOW_NETFLOW_TZ=UTC
 
 
