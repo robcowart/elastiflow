@@ -15,7 +15,7 @@
 # Robert Cowart are Copyright (C)2020 Robert Cowart. All Rights Reserved.
 #------------------------------------------------------------------------------
 
-FROM docker.elastic.co/logstash/logstash-oss:7.6.2
+FROM docker.elastic.co/logstash/logstash:7.8.1
 
 ARG BUILD_DATE
 
@@ -32,17 +32,7 @@ LABEL org.opencontainers.image.created="$BUILD_DATE" \
 ENV ELASTIFLOW_ES_HOST="http://127.0.0.1:9200"
 
 RUN $HOME/bin/logstash-plugin install logstash-codec-sflow \
-    && $HOME/bin/logstash-plugin install --version 10.1.0 logstash-output-elasticsearch \
-    && $HOME/bin/logstash-plugin update logstash-codec-netflow \
-                                        logstash-input-udp \
-                                        logstash-input-tcp \
-                                        logstash-filter-cidr \
-                                        logstash-filter-date \
-                                        logstash-filter-dns \
-                                        logstash-filter-geoip \
-                                        logstash-filter-mutate \
-                                        logstash-filter-ruby \
-                                        logstash-filter-translate
+    && $HOME/bin/logstash-plugin update
 
 WORKDIR /usr/share/logstash/config
 COPY --chown=logstash:logstash ./docker_assets/logstash.yml ./
