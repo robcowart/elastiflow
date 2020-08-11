@@ -94,7 +94,7 @@ At high ingest rates (>10K flows/s), or for data redundancy and high availabilit
 
 The ElastiFlow&trade; Logstash pipeline is the heart of the solution. It is here that the raw flow data is collected, decoded, parsed, formatted and enriched. It is this processing that makes possible the analytics options provided by the Kibana [dashboards](#dashboards).
 
-Follow these steps to ensure that Logstash and ElastiFlow&trade; are optimally configured to meet your needs. 
+Follow these steps to ensure that Logstash and ElastiFlow&trade; are optimally configured to meet your needs.
 
 ### 1. Tune Linux for improved UDP Throughput
 
@@ -118,7 +118,7 @@ Change the nice level to `0`.
 Nice=0
 ```
 
-### 3. Set JVM heap size.
+### 3. Set JVM heap size
 
 To increase performance, ElastiFlow&trade; takes advantage of the caching and queueing features available in many of the Logstash plugins. These features increase the consumption of the JVM heap. The JVM heap space used by Logstash is configured in `jvm.options`. It is recommended that Logstash be given at least 2GB of JVM heap. If all options, incl. DNS lookups, are enabled increase this to 4GB. This is configured in `jvm.options` as follows:
 
@@ -131,7 +131,7 @@ To increase performance, ElastiFlow&trade; takes advantage of the caching and qu
 
 To use ElastiFlow&trade; you will need to install the community supported [sFlow](https://github.com/ashangit/logstash-codec-sflow) codec for Logstash. It is also recommended that you always use the latest version of the [Netflow](https://www.elastic.co/guide/en/logstash/current/plugins-codecs-netflow.html) codec, the [UDP](https://www.elastic.co/guide/en/logstash/current/plugins-inputs-udp.html) input, and the [DNS](https://www.elastic.co/guide/en/logstash/current/plugins-filters-dns.html) filter. This can achieved by running the following commands:
 
-```
+```text
 LS_HOME/bin/logstash-plugin install logstash-codec-sflow
 LS_HOME/bin/logstash-plugin update logstash-codec-netflow
 LS_HOME/bin/logstash-plugin update logstash-input-udp
@@ -141,7 +141,7 @@ LS_HOME/bin/logstash-plugin update logstash-filter-geoip
 LS_HOME/bin/logstash-plugin update logstash-filter-translate
 ```
 
-### 5. Copy the pipeline files to the Logstash configuration path.
+### 5. Copy the pipeline files to the Logstash configuration path
 
 There are five sets of configuration files provided within the `logstash/elastiflow` folder:
 
@@ -315,7 +315,7 @@ Application identity is also supported from the following sources, and requires 
 * Sophos
 
 Once configured ElastiFlow&trade; will resolve the ID to an application name, which will be available in the dashboards.
-<img width="902" alt="screen shot 2018-05-13 at 12 40 04" src="https://user-images.githubusercontent.com/10326954/39966360-d8e6e420-56aa-11e8-8514-9a9839ca5fb1.png"> 
+![app names](https://user-images.githubusercontent.com/10326954/39966360-d8e6e420-56aa-11e8-8514-9a9839ca5fb1.png)
 
 Applications may also be defined by IP and port number in the file `logstash/elastiflow/user_settings/applications.yml`. For example, to specify that Kafka is listening on port `9092` at IP address `192.0.2.2`, the following entry would be made:
 
@@ -327,7 +327,7 @@ Applications may also be defined by IP and port number in the file `logstash/ela
 
 Some devices which collect sampled flows do not include the sampling interval in the flow records that they send (e.g. some Cisco IOS XR and Huawei devices). In such situations the sampling interval can be set manually by adding the IP address and sampling rate for the device in `logstash/elastiflow/user_settings/sampling_interval.yml`.
 
-### 13. Update MaxMind GeoIP Databases.
+### 13. Update MaxMind GeoIP Databases (optional)
 
 ElastiFlow&trade; leverages MaxMind's GeoLite2 City and ASN databases to populate various geographic and Autonomous System related data for public IP addresses. Changes in California Law related to personnally identifying information, and specifically IP addresses, required changes in the MaxMind license, which limit the ability to include the latest databases with ElastiFlow&trade;.
 
@@ -534,4 +534,4 @@ I recommend configuring `timepicker:quickRanges` for the setting below. The resu
 
 ## Attribution
 
-This product includes GeoLite2 data created by MaxMind, available from (http://www.maxmind.com)
+This product includes GeoLite2 data created by MaxMind, available from [http://www.maxmind.com](http://www.maxmind.com)
