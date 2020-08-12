@@ -1,7 +1,7 @@
 {
   "order": 0,
   "version": 40000,
-  "index_patterns": "elastiflow-4.0.0-*",
+  "index_patterns": "elastiflow-4.0.1-*",
   "settings": {
     "index": {
       "number_of_shards": 3,
@@ -21,7 +21,7 @@
   "mappings": {
     "_meta" : {
       "beat" : "elastiflow",
-      "version" : "4.0.0"
+      "version" : "4.0.1"
     },
     "_source" : {
       "enabled" : true

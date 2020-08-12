@@ -2,6 +2,57 @@
 
 ---
 
+## v4.0.1
+
+> **WARNING!** - If you are using a 3.x or earlier release, please refer to the v4.0.0 Breaking Changes.
+
+ElastiFlow v4.0.1 is a minor release. No migration of data from v4.0.0 to v4.0.1 is required.
+
+### Updates
+
+* Update IP reputation dictionary
+
+### Fixes
+
+* Netflow v5 sources reporting zero bytes and packets in ECS fields has been fixed.
+* TSVB visualizations displaying data in bits/s now use the new `bitd` custom formatter.
+
+---
+
+## v4.0.0
+
+> **WARNING!** - ElastiFlow v4.0.0 is a major release, and now supports Elastic Common Schema (ECS). Due to significant data model changes there is no upgrade/migration from ElastiFlow 3.x. You should either remove all 3.x indices or deploy ElastiFlow 4.0.0 to a separate environment.
+
+### Breaking Changes
+
+ElastiFlow v4.0.0 is built for Elasticsearch and Kibana 7.8.1 and later. No earlier versions will be supported. Please use a prior ElastiFlow release if you cannot yet upgrade to Elastic Stack 7.8.1+.
+
+ElastiFlow v4.0.0 takes advantage of X-Pack Basic features, such as the Maps, SIEM and Logs apps, as well as Index Lifecycle Management (ILM). This means that you must use at least the X-Pack Basic licensed release of the Elastic Stack. The pure Apache 2.0 licensed release of the Elastic Stack will not work without disabling many features.
+
+### New Features
+
+* Data model has changed to leverage ECS 1.5.
+* Flow data can now be analyzed using the Kibana SIEM and Log apps.
+* Optional resolution of MAC OUIs to vendor names (disabled by default).
+* Kibana dark theme is now supported.
+* Geo IP dashboards now leverage the new Kibana Maps app.
+* Applications can now be defined manually by IP address and port number.
+* Palo Alto virtual interface indexes are translated to interfaces names.
+* Support for VeloCloud, Calix and various Cisco SD-WAN information elements.
+* KQL is now default
+
+### Updates
+
+* Pipeline refactored to simplify various logic, which might improve performance and throughput for some users.
+* YAML dictionaries intended for customization by users have been moved to the `logstash/elastiflow/user_settings` path.
+* Update IP reputation dictionary
+
+### Fixes
+
+* Client/Server detection using TCP flags is improved.
+
+---
+
 ## v4.0.0-beta1
 
 v4.0.0 is a major release. A data migration will be required if you want to have your older data available in 4.0.0. This `BETA` release does not yet include a migration method and is intended for testing with new flow data only.
@@ -41,7 +92,7 @@ ElastiFlow v3.5.x provides support Elastic Stack 7.x. The support for document t
 
 * Added support for pmacct IEs (needed for VyOS 1.2.x).
 
-------
+---
 
 ## v3.5.2
 
@@ -68,7 +119,7 @@ ElastiFlow v3.5.x provides support Elastic Stack 7.x. The support for document t
 * Added a lot of new Fortinet application IDs.
 * Update IP reputation dictionary and GeoIP DBs.
 
-------
+---
 
 ## v3.5.1
 

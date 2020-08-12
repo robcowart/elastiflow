@@ -24,9 +24,9 @@ output {
     #cacert => "/PATH/TO/CERT"
     user => "${ELASTIFLOW_ES_USER:elastic}"
     password => "${ELASTIFLOW_ES_PASSWD:changeme}"
-    index => "elastiflow-4.0.0-%{+YYYY.MM.dd}"
+    index => "elastiflow-4.0.1-%{+YYYY.MM.dd}"
     template => "${ELASTIFLOW_TEMPLATE_PATH:/etc/logstash/elastiflow/templates}/elastiflow.template.json"
-    template_name => "elastiflow-4.0.0"
+    template_name => "elastiflow-4.0.1"
     template_overwrite => "true"
   }
 }
