@@ -8,6 +8,10 @@
 
 ElastiFlow v4.0.1 is a minor release. No migration of data from v4.0.0 to v4.0.1 is required.
 
+### Updates
+
+* Update IP reputation dictionary
+
 ### Fixes
 
 * Netflow v5 sources reporting zero bytes and packets in ECS fields has been fixed.
@@ -41,6 +45,7 @@ ElastiFlow v4.0.0 takes advantage of X-Pack Basic features, such as the Maps, SI
 
 * Pipeline refactored to simplify various logic, which might improve performance and throughput for some users.
 * YAML dictionaries intended for customization by users have been moved to the `logstash/elastiflow/user_settings` path.
+* Update IP reputation dictionary
 
 ### Fixes
 
