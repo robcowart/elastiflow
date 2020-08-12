@@ -4,11 +4,11 @@
 
 ElastiFlow&trade; is built using the Elastic Stack, including Elasticsearch, Logstash and Kibana. To install and configure ElastiFlow&trade;, you must first have a working Elastic Stack environment.
 
-> **WARNING!** - ElastiFlow 4.0.0 supports Elastic Common Schema (ECS). Due to significant data model changes there is no upgrade/migration from ElastiFlow 3.x. You should either remove all 3.x indices or deploy ElastiFlow 4.0.0 to a separate environment.
+> **WARNING!** - ElastiFlow 4.0.x supports Elastic Common Schema (ECS). Due to significant data model changes there is no upgrade/migration from ElastiFlow 3.x. You should either remove all 3.x indices or deploy ElastiFlow 4.0.x to a separate environment.
 
 > **IMPORTANT!** - Always use a **RELEASE**. DO NOT use the `master` branch.
 
-> **NOTE** - For full ElastiFlow 4.0.0 functionality, including Kibana's SIEM and Logs apps, you should use X-Pack Basic or one of the commercial X-Pack tiers.
+> **NOTE** - For full ElastiFlow 4.0.x functionality, including Kibana's SIEM and Logs apps, you should use X-Pack Basic or one of the commercial X-Pack tiers.
 
 ## Elastic Stack Compatibility
 
@@ -16,7 +16,7 @@ Refer to the following compatibility chart to choose a release of ElastiFlow&tra
 
 Elastic Stack | ElastiFlow&trade; 3.x | ElastiFlow&trade; 4.x
 :---:|:---:|:---:
-7.8+ |  | &#10003; v4.0.0
+7.8+ |  | &#10003; v4.0.x
 7.5-7.7 |  | &#10003; v4.0.0-beta
 7.0-7.4 | &#10003; v3.5.x |
 6.7 | &#10003; v3.4.2 |
@@ -38,7 +38,7 @@ Elastic Stack | ElastiFlow&trade; 1.x | ElastiFlow&trade; 2.x | ElastiFlow&trade
 5.5 | &#10003; |  |  |
 5.4 | &#10003; |  |  |
 
-> NOTE: The instructions that follow are for ElastiFlow&trade; 4.0.0 and above on Elastic Stack 7.5.x and higher.
+> NOTE: The instructions that follow are for ElastiFlow&trade; 4.0.0 and above on Elastic Stack 7.8.x and higher.
 
 ## Requirements
 
