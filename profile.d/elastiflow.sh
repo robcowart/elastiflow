@@ -55,6 +55,7 @@ export ELASTIFLOW_ES_HOST_3=127.0.0.3:9200
 # If ELASTIFLOW_ES_SSL_VERIFY is true then you must edit the output and set the path where the cacert can be found.
 export ELASTIFLOW_ES_SSL_ENABLE=false
 export ELASTIFLOW_ES_SSL_VERIFY=false
+export ELASTIFLOW_ES_SSL_CACERT=/etc/ssl/certs/ca-bundle.crt
 
 
 # Netflow - IPv4

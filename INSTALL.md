@@ -252,10 +252,11 @@ ELASTIFLOW_ES_USER | The username for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The password for the connection to Elasticsearch | changeme
 ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
 ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
+ELASTIFLOW_ES_SSL_CACERT | Path to CA certificate | /etc/ssl/certs/ca-bundle.crt
 
 > If you are only using the open-source version of Elasticsearch, it will ignore the username and password. In that case just leave the defaults.
 
-> If `ELASTIFLOW_ES_SSL_ENABLE` and `ELASTIFLOW_ES_SSL_VERIFY` are both `true`, you must uncomment the `cacert` option in the Elasticsearch output and set the path to the certificate.
+> If `ELASTIFLOW_ES_SSL_ENABLE` and `ELASTIFLOW_ES_SSL_VERIFY` are both `true`, you must set the `ELASTIFLOW_ES_SSL_CACERT` option with the path to the certificate or CA certificate.
 
 ### 10. Enable DNS name resolution (optional)
 
@@ -394,6 +395,7 @@ ELASTIFLOW_ES_HOST_2 | The second Elasticsearch host to which the output will se
 ELASTIFLOW_ES_HOST_3 | The third Elasticsearch host to which the output will send data | 127.0.0.3:9200
 ELASTIFLOW_ES_SSL_ENABLE | Enable or disable SSL connection to Elasticsearch | false
 ELASTIFLOW_ES_SSL_VERIFY | Enable or disable verification of the SSL certificate. If enabled, the output must be edited to set the path to the certificate. | false
+ELASTIFLOW_ES_SSL_CACERT | Path to CA certificate | /etc/ssl/certs/ca-bundle.crt
 ELASTIFLOW_ES_USER | The username for the connection to Elasticsearch | elastic
 ELASTIFLOW_ES_PASSWD | The password for the connection to Elasticsearch | changeme
 ELASTIFLOW_NETFLOW_IPV4_HOST | The IPv4 address on which to listen for Netflow messages | 0.0.0.0
