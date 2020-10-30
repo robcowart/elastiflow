@@ -59,7 +59,7 @@ After some seconds go to `http://<server_ip>:5601`
 
 ```
 If still seeing 502 Bad Gateway please wait for at least 3 minutes 
-(Kibana may take long in less powerful machines)
+(Kibana may take long to start)
 ```
 
 --------------------------------------------------
