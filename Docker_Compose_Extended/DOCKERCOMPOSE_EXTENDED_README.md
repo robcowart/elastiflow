@@ -6,8 +6,9 @@
  
 
 ##### 1. Downloading files 
-
+```
  Download files with Git Clone 
+```
 
 ##### 2. Install Required Packages 
 ```
