@@ -8,7 +8,7 @@
 ##### 1. Downloading files 
 
 ```
-Download files with Git Clone 
+ Download files with Git Clone 
 ``` 
 
 
