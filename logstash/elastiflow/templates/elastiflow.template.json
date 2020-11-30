@@ -1,7 +1,7 @@
 {
   "order": 0,
   "version": 30502,
-  "index_patterns": "elastiflow-3.5.3-*",
+  "index_patterns": "datacenter-networking-*",
   "settings": {
     "index": {
       "number_of_shards": 3,
