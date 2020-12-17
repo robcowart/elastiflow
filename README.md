@@ -1,6 +1,32 @@
 # ElastiFlow&trade;
 
-[![patreon](https://user-images.githubusercontent.com/10326954/52966127-c9847680-33a6-11e9-8640-10dd7abc3af0.png)](https://www.patreon.com/elastiflow) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/robcowart) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=ElastiFlow%E2%84%A2%20provides%20Netflow%20v5%2Fv9%2C%20sFlow%20and%20IPFIX%20data%20collection%20and%20visualization%20using%20the%20Elastic%20Stack.&url=https://github.com/robcowart/elastiflow&hashtags=elastiflow,netflow,sflow,ipfix)
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=ElastiFlow%E2%84%A2%20provides%20Netflow%20v5%2Fv9%2C%20sFlow%20and%20IPFIX%20data%20collection%20and%20visualization%20using%20the%20Elastic%20Stack.&url=https://github.com/robcowart/elastiflow&hashtags=elastiflow,netflow,sflow,ipfix)
+
+# BREAKING NEWS! We have released the first beta of the next generation of ElastiFlow&trade; which introduces the new ElastiFlow Unified Flow Collector for Netflow, IPFIX and sFlow.
+
+### Some of the enhancements included in the all-new collector include:
+
+#### * Proper management templates from different devices. - NO MORE template conflicts!
+
+#### * Improved Scalability - Over 10x more flows/sec than Logstash, over 3x more than Filebeat!
+
+#### * Support for Option Templates - Dynamic enrichment of network interface name and application names and more!
+
+#### * Telemetry Support - sFlow Counter Samples and other metrics from Cisco, Calix and more!
+
+#### * Gracefully handles “unknown” Fields - No more dropped flows when a single unsupported field is encountered.
+
+#### * Fully decodes and translates all available data - DSCP, TCP Options, ECN, Fragmentation Flags, and more.
+
+### You can signup for access to the beta... [HERE](https://www.elastiflow.com/get-started)
+
+### A Docker container with the new collector is available... [HERE](https://hub.docker.com/r/elastiflow/flow-collector)
+
+### The repository with the new dashboards is available... [HERE](https://github.com/elastiflow/elastiflow_for_elasticsearch)
+
+### You can also join the ElastiFlow community Slack... [HERE](https://join.slack.com/t/elastiflowcommunity/shared_invite/zt-k4ri7ftx-vKeqKqAX3jr82nPRgTxV4w)
+
+### When you sign up, we will notify you with additional information and links to the setup instructions. We also want to be able to reach out to you and get your feedback.
 
 ElastiFlow&trade; provides network flow data collection and visualization using the Elastic Stack (Elasticsearch, Logstash and Kibana). It supports Netflow v5/v9, sFlow and IPFIX flow types (1.x versions support only Netflow v5/v9).
 
