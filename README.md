@@ -24,7 +24,7 @@
 
 ### The repository with the new dashboards is available... [HERE](https://github.com/elastiflow/elastiflow_for_elasticsearch)
 
-### You can also join the ElastiFlow community Slack... [HERE](https://join.slack.com/t/elastiflowcommunity/shared_invite/zt-k4ri7ftx-vKeqKqAX3jr82nPRgTxV4w)
+### You can also join the ElastiFlow community Slack... [HERE](https://join.slack.com/t/elastiflowcommunity/shared_invite/zt-lv54rhcx-7esE8r8cqggE5mQlShftpA)
 
 ### When you sign up, we will notify you with additional information and links to the setup instructions. We also want to be able to reach out to you and get your feedback.
 
