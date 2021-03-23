@@ -80,7 +80,7 @@ services:
       LOGGING_QUIET: 'false'
 
   elastiflow-logstash:
-    image: robcowart/elastiflow-logstash:4.0.1
+    image: robcowart/elastiflow-logstash:3.5.3
     container_name: elastiflow-logstash
     restart: 'no'
     depends_on:
