@@ -1,4 +1,4 @@
-# ElastiFlow&trade; - now deprecated ([try the new collector](https://docs.elastiflow.com/docs/))
+# ElastiFlow&trade; - now deprecated ([try the new solution](https://docs.elastiflow.com/docs/))
 
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=ElastiFlow%E2%84%A2%20provides%20Netflow%20v5%2Fv9%2C%20sFlow%20and%20IPFIX%20data%20collection%20and%20visualization%20using%20the%20Elastic%20Stack.&url=https://github.com/robcowart/elastiflow&hashtags=elastiflow,netflow,sflow,ipfix)
 
