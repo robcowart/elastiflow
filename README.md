@@ -1,6 +1,6 @@
 # ElastiFlow&trade; - now deprecated ([try the new solution](https://docs.elastiflow.com/docs/))
 
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=ElastiFlow%E2%84%A2%20provides%20Netflow%20v5%2Fv9%2C%20sFlow%20and%20IPFIX%20data%20collection%20and%20visualization%20using%20the%20Elastic%20Stack.&url=https://github.com/robcowart/elastiflow&hashtags=elastiflow,netflow,sflow,ipfix)
+## PLEASE NOTE: This repository remains for historical purposes, however no part of this legacy solution is shared with the next generation of ElastiFlow&trade;. To install the new solution please refer to the documentation at [docs.elastiflow.com](https://docs.elastiflow.com/docs/)
 
 Now that the new ElastiFlow&trade; Unified Flow Collector is generally available, the legacy Logstash-based solution in this repository is deprecated. It will remain here for historical purposes, but will likely only receive minimal updates, if any. You are encouraged to try out the new collector. See more details below.
 
