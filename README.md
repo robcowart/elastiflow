@@ -1,8 +1,8 @@
 # ElastiFlow&trade; - now deprecated ([try the new solution](https://docs.elastiflow.com/docs/))
 
-## PLEASE NOTE: This repository remains for historical purposes, however no part of this legacy solution is shared with the next generation of ElastiFlow&trade;. To install the new solution please refer to the documentation at [docs.elastiflow.com](https://docs.elastiflow.com/docs/)
+## PLEASE NOTE: This repository remains for historical purposes, however no part of this legacy solution is shared with the next generation of ElastiFlow&trade;. To install the new solution please refer to the documentation at [docs.elastiflow.com](https://docs.elastiflow.com/docs/). For assistance with the new solution, please join the [ElastiFlow Community Slack](https://join.slack.com/t/elastiflowcommunity/shared_invite/zt-lv54rhcx-7esE8r8cqggE5mQlShftpA).
 
-Now that the new ElastiFlow&trade; Unified Flow Collector is generally available, the legacy Logstash-based solution in this repository is deprecated. It will remain here for historical purposes, but will likely only receive minimal updates, if any. You are encouraged to try out the new collector. See more details below.
+Now that the new ElastiFlow&trade; Unified Flow Collector is generally available, the legacy Logstash-based solution in this repository is deprecated. It will remain here for historical purposes, but will not receive updates. You are encouraged to try out the new collector. See more details below.
 
 # We have released the next generation of ElastiFlow&trade; which introduces the new ElastiFlow Unified Flow Collector for Netflow, IPFIX and sFlow.
 
