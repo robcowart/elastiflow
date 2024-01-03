@@ -1,8 +1,8 @@
 # This legacy version of ElastiFlow&trade; is now deprecated.
 
-# [Try the new ElastiFlow&trade;!!!](https://docs.elastiflow.com/docs/)
+# [Try the new ElastiFlow&trade;!!!](https://docs.elastiflow.com)
 
-## PLEASE NOTE: This repository remains for historical purposes, however no part of this legacy solution is shared with the next generation of ElastiFlow&trade;. To install the new solution please refer to the documentation at [docs.elastiflow.com](https://docs.elastiflow.com/docs/). For assistance with the new solution, please join the [ElastiFlow Community Slack](https://join.slack.com/t/elastiflowcommunity/shared_invite/zt-lv54rhcx-7esE8r8cqggE5mQlShftpA).
+## PLEASE NOTE: This repository remains for historical purposes, however no part of this legacy solution is shared with the next generation of ElastiFlow&trade;. To install the new solution please refer to the documentation at [docs.elastiflow.com](https://docs.elastiflow.com). For assistance with the new solution, please join the [ElastiFlow Community Slack](https://join.slack.com/t/elastiflowcommunity/shared_invite/zt-23jpnlw9g-Q4nKOwKKOE1N2MjfA2mXpg).
 
 Now that the new ElastiFlow&trade; Unified Flow Collector is generally available, the legacy Logstash-based solution in this repository is deprecated. It will remain here for historical purposes, but will not receive updates. You are encouraged to try out the new collector. See more details below.
 
@@ -17,9 +17,9 @@ Now that the new ElastiFlow&trade; Unified Flow Collector is generally available
 * **Gracefully handles “unknown” Fields - No more dropped flows when a single unsupported field is encountered.**
 * **Fully decodes and translates all available data - DSCP, TCP Options, ECN, Fragmentation Flags, and more.**
 
-### Get Started with the next generation of ElastiFlow... [HERE](https://docs.elastiflow.com/docs/)
+### Get Started with the next generation of ElastiFlow... [HERE](https://docs.elastiflow.com)
 
-### You can also join the ElastiFlow community Slack... [HERE](https://join.slack.com/t/elastiflowcommunity/shared_invite/zt-lv54rhcx-7esE8r8cqggE5mQlShftpA)
+### You can also join the ElastiFlow community Slack... [HERE](https://join.slack.com/t/elastiflowcommunity/shared_invite/zt-23jpnlw9g-Q4nKOwKKOE1N2MjfA2mXpg)
 
 ElastiFlow&trade; provides network flow data collection and visualization using the Elastic Stack (Elasticsearch, Logstash and Kibana). It supports Netflow v5/v9, sFlow and IPFIX flow types (1.x versions support only Netflow v5/v9).
 
