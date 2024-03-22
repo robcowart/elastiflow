@@ -1,6 +1,6 @@
 # This legacy version of ElastiFlow&trade; is now deprecated.
 
-# [Try the new ElastiFlow&trade;!!!](https://docs.elastiflow.com)
+# [Try the new ElastiFlow&trade;!!!](https://www.elastiflow.com)
 
 ## PLEASE NOTE: This repository remains for historical purposes, however no part of this legacy solution is shared with the next generation of ElastiFlow&trade;. To install the new solution please refer to the documentation at [docs.elastiflow.com](https://docs.elastiflow.com). For assistance with the new solution, please join the [ElastiFlow Community Slack](https://join.slack.com/t/elastiflowcommunity/shared_invite/zt-23jpnlw9g-Q4nKOwKKOE1N2MjfA2mXpg).
 
